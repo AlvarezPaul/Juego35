@@ -1,0 +1,207 @@
+[gd_scene format=3 uid="uid://kuqym73bmrhi"]
+
+[ext_resource type="Script" uid="uid://gila5m6stl8l" path="res://UI/menu.gd" id="1_gj576"]
+[ext_resource type="Texture2D" uid="uid://c367lotxyyhw3" path="res://Interfaz/Fuentes/Im#U00e1genes y Texturas/backgroundfotodeprueba.jpg" id="2_ildal"]
+[ext_resource type="FontFile" uid="uid://ocuqailjsal3" path="res://Fuentes/StayDrips-Regular.otf" id="3_ildal"]
+[ext_resource type="FontFile" uid="uid://blju0ku40nkwn" path="res://Interfaz/Fuentes/Bonechiller Free.otf" id="4_5lcxy"]
+[ext_resource type="FontFile" uid="uid://cuxgyu81j521g" path="res://Fuentes/Trebuchet-MS-Italic.ttf" id="4_ildal"]
+[ext_resource type="Script" uid="uid://yxyv1prp7873" path="res://UI/click_creditos.gd" id="5_gj576"]
+[ext_resource type="Script" uid="uid://btvihadw5yb6" path="res://UI/ajustes.gd" id="8_cmiqy"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xrivr"]
+bg_color = Color(0.77525675, 0.7679488, 0.77882177, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_77tc4"]
+bg_color = Color(0.9372549, 0, 0.105882354, 0.8156863)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qc2no"]
+bg_color = Color(1, 0, 0, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+shadow_size = 25
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l1i76"]
+bg_color = Color(0.34901962, 0, 0, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_13qdw"]
+bg_color = Color(0.28235295, 0.28235295, 0.28235295, 0.25490198)
+border_color = Color(0.06053038, 0.06053035, 0.060530283, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+shadow_size = 15
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wi6ju"]
+bg_color = Color(0.5019608, 0, 0.019607844, 0.74509805)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+shadow_color = Color(0.6627451, 0, 0, 0.6)
+shadow_size = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_b1lj4"]
+bg_color = Color(0.103743516, 0.10374353, 0.103743516, 0.627451)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+shadow_color = Color(0.12225223, 0.12225223, 0.12225223, 0.6)
+shadow_size = 10
+
+[node name="Menu" type="Control" unique_id=342042552]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 2.0
+offset_top = 2.0
+offset_right = 2.0
+offset_bottom = 2.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+script = ExtResource("1_gj576")
+metadata/_edit_use_anchors_ = true
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="." unique_id=1127442198]
+layout_mode = 0
+offset_right = 1155.0
+offset_bottom = 648.0
+autoplay = true
+loop = true
+
+[node name="Panel" type="Panel" parent="." unique_id=742658685]
+layout_mode = 0
+offset_right = 1153.0
+offset_bottom = 645.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_xrivr")
+
+[node name="Fondo" type="TextureRect" parent="." unique_id=1581526351]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -578.0
+offset_top = -1.0
+offset_right = 581.0
+offset_bottom = 645.0
+grow_horizontal = 2
+texture = ExtResource("2_ildal")
+expand_mode = 1
+
+[node name="Titulo" type="Label" parent="." unique_id=292338541]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -472.0
+offset_top = 49.0
+offset_right = 464.0
+offset_bottom = 165.0
+grow_horizontal = 2
+theme_override_constants/line_spacing = 3
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("3_ildal")
+theme_override_font_sizes/font_size = 120
+text = "Escapa de La"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Salir" type="Button" parent="." unique_id=1624329924]
+layout_mode = 0
+offset_left = 1064.0
+offset_top = 18.0
+offset_right = 1129.0
+offset_bottom = 97.0
+theme_override_fonts/font = ExtResource("4_ildal")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_77tc4")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_qc2no")
+theme_override_styles/hover = SubResource("StyleBoxFlat_l1i76")
+text = "×"
+
+[node name="credits" type="Button" parent="." unique_id=548496277]
+layout_mode = 0
+offset_left = 53.0
+offset_top = 434.0
+offset_right = 362.0
+offset_bottom = 569.0
+theme_override_fonts/font = ExtResource("4_5lcxy")
+theme_override_font_sizes/font_size = 90
+theme_override_styles/normal = SubResource("StyleBoxFlat_13qdw")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_wi6ju")
+theme_override_styles/hover = SubResource("StyleBoxFlat_b1lj4")
+text = "Créditos"
+script = ExtResource("5_gj576")
+
+[node name="ajustes" type="Button" parent="." unique_id=698261276]
+layout_mode = 0
+offset_left = 778.0
+offset_top = 430.0
+offset_right = 1087.0
+offset_bottom = 565.0
+theme_override_fonts/font = ExtResource("4_5lcxy")
+theme_override_font_sizes/font_size = 90
+theme_override_styles/normal = SubResource("StyleBoxFlat_13qdw")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_wi6ju")
+theme_override_styles/hover = SubResource("StyleBoxFlat_b1lj4")
+text = "Ajustes"
+script = ExtResource("8_cmiqy")
+
+[node name="jugar" type="Button" parent="." unique_id=1698098690]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -128.0
+offset_top = -253.0
+offset_right = 116.0
+offset_bottom = -100.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("4_5lcxy")
+theme_override_font_sizes/font_size = 100
+theme_override_styles/normal = SubResource("StyleBoxFlat_13qdw")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_wi6ju")
+theme_override_styles/hover = SubResource("StyleBoxFlat_b1lj4")
+text = "JUGAR"
+
+[connection signal="pressed" from="Salir" to="." method="_on_salir_pressed"]
+[connection signal="pressed" from="credits" to="." method="_on_credits_pressed"]
+[connection signal="pressed" from="ajustes" to="." method="_on_ajustes_pressed"]
+[connection signal="pressed" from="jugar" to="." method="_on_jugar_pressed"]

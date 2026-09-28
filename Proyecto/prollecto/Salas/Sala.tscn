@@ -1,0 +1,47 @@
+[gd_scene format=3 uid="uid://b6ncf806r6a0b"]
+
+[ext_resource type="PackedScene" uid="uid://slwd7f6wku1b" path="res://esceneria/escuela.tscn" id="1_kwadh"]
+[ext_resource type="PackedScene" uid="uid://mbsgoh8bcs3w" path="res://jugador/jugador.tscn" id="3_qh0pk"]
+[ext_resource type="Script" uid="uid://31ipksk4tnso" path="res://scriptstamina/canvas_layer.gd" id="3_tgavs"]
+
+[sub_resource type="Environment" id="Environment_kwadh"]
+background_color = Color(0, 0.7058824, 0, 1)
+ambient_light_color = Color(0.65376717, 0.6108536, 0.02966741, 1)
+ambient_light_energy = 0.0
+fog_enabled = true
+fog_light_color = Color(0.13776535, 0.16153541, 0.21700493, 1)
+fog_depth_end = 50.0
+
+[node name="sala" type="Node3D" unique_id=1955352439]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=615291951]
+environment = SubResource("Environment_kwadh")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=603687581]
+transform = Transform3D(-0.29702243, -0.9333547, 0.20156015, -0.21926554, 0.27211398, 0.9369506, -0.92935455, 0.2341002, -0.2854765, -13.765255, 0, 0)
+shadow_enabled = true
+
+[node name="escuela" parent="." unique_id=1293130221 instance=ExtResource("1_kwadh")]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 60.50276, 0, 0)
+
+[node name="Jugador" parent="." unique_id=212553440 groups=["jugador"] instance=ExtResource("3_qh0pk")]
+transform = Transform3D(1.335, 0, 0, 0, 1.335, 0, 0, 0, 1.335, 33.253544, 0.7980933, 9.643519)
+
+[node name="SpotLight3D" parent="Jugador/Cabeza/Camera3D" parent_id_path=PackedInt32Array(212553440, 704986019) index="1" unique_id=1591149388]
+transform = Transform3D(1, 0, 0, 0, 1, 4.743386e-22, 0, -4.743386e-22, 1, 0.45625687, -0.1691935, -0.44921494)
+light_color = Color(1, 1, 0.7647059, 1)
+light_energy = 2.0
+spot_range = 40.0
+spot_attenuation = 0.6
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=792970203]
+script = ExtResource("3_tgavs")
+
+[node name="BarraStamina" type="ProgressBar" parent="CanvasLayer" unique_id=654527658]
+offset_left = 20.0
+offset_top = 600.0
+offset_right = 320.0
+offset_bottom = 627.0
+
+[editable path="Jugador"]
+[editable path="Jugador/Cabeza/Camera3D/linterna"]

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c3dk14l03w00u"
+path="res://.godot/imported/Walk On Concrete - Sound Effect for editing.mp3-e40510b1bba0a046a4ec9cf873e10e0e.mp3str"
+
+[deps]
+
+source_file="res://jugador/Walk On Concrete - Sound Effect for editing.mp3"
+dest_files=["res://.godot/imported/Walk On Concrete - Sound Effect for editing.mp3-e40510b1bba0a046a4ec9cf873e10e0e.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4
