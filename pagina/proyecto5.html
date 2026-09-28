@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style5.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header class="content">
+        <a href="proyecto.html">
+            <h1>Proyecto LAB</h1>
+        </a>
+        <ul>
+            <li>
+                <a href="https://github.com/ianfind38-cyber/Juego35.git" target="_blank">Github</a>
+            </li>
+            <li>
+                <a href="https://docs.google.com/document/d/1GFsjViJiPnZ1obTiey-AY4Ti4-jejEsQxB0f-Myzk28/edit?usp=sharing" class="document" target="_blank">Documento</a>
+            </li>
+        </ul>
+        <img src="descarga.jpg" alt="no imagen">
+        <p class="a"> Profesor: Maria Belen Reynoso 
+            Division: 4°1°
+        </p>
+        <li class="li44">integrantes:</li>
+        <ol class="ol">
+            <li>Arregui Benjamin</li>
+            <li>Findlay Ian</li>
+            <li>Proserpio Manuel</li>
+            <li>Saavedra Ignacio</li>
+            <li>Alvarez Paul</li>
+        </ol>
+    </header>
+    <main>
+        <h2>Guía - Godot Engine</h2>
+        <p>(fundamentos empleados en la creación del proyecto)</p>
+        
+        <p>WASD y Click derecho para moverme dentro del proyecto de Godot.</p>
+        <p>Obviendo que necesito una Camera3D para visualizar, preferentemente <br>incluída en el personaje y en primera persona para el juego que <br>estamos haciendo.</p>
+        <p>Añadir WorldEnvironment y DirectionalLight3D si quiero poner gráficos <br>básicos al mundo, el último es el sol, podemos ajustar ambos para <br>generar un ambiente de oscuridad como es nuestro caso.</p>
+        <p>Crear carpetas para organizar materiales, escenas, sonidos, etc.</p>
+        <p>StandardMaterial3D para darle propiedades de material a nuestros <br>objetos. El albedo es una de las características para cambiar el color.</p>
+        <p>UI Interfaz del Usuario. Importante para el menú, mostrar textos o una <br>barra de progreso.</p>
+        
+        <h2>Recursos fundamentales de UI:</h2>
+        <p>Panel: un panel para poner generalmente de fondo, se puede usar para <br>un menú por ejemplo.</p>
+        <p>TextureRect: para poner una textura o imagen en un UI.</p>
+        <p>Label: para poner texto fijo no editable en la UI.</p>
+        <p>Button: botón al que se le puede añadir un texto y el usuario pueda <br>interactuar con él y hacer algo.</p>
+        <p>ColorRect: parecido a Panel, muestra un rectángulo ajustable con un color.</p>
+        
+        <h2>Al apretar un “Button” que reproduzca un sonido:</h2>
+        <p>- Debo crear el botón dentro de la Escena Interfaz del Usuario primero <br>que todo y decorarlo a mí manera.</p>
+        <p>- Luego debo añadirle un nodo hijo llamado AudioStreamPlayer</p>
+        <p>- Después crear un script en Button y arrastrar el AudioStreamPlayer al <br>script para que se coloque y aparezca como @onready.</p>
+        <p>- Añadir la función _on_pressed() -> void en el script abajo y agregarle <br>a la misma la línea ‘audio_stream_player.playing = true’.</p>
+        
+        <h2>Cómo hacer mi juego con temática oscura para <br> juegos de terror</h2>
+        <p>Tener un WorldEnvironment para configurarlo, por defecto aparece de día</p>
+        <p>Clickear el Environment, luego Sky, luego SkyMaterial y abrir las <br>opciones Sky y Ground</p>
+        <p>Cambiar el Top Color, Horizon Color, Bottom Color y Horizon Color a negro</p>
+        <p>Podemos cambiar el ToneMap dentro de WorldEnvironment para que se vea <br>algo brillante, o aún más oscuro para darle un buen efecto, Filmic viene <br>por defecto, ReinHard para que se vea un poco más brillante, pero el <br>recomendado para este estilo de juego es ACES.</p>
+        <p>En Adjustments dentro de WorldEnvironment si lo habilitamos podemos <br>ajustar el brillo, contraste y saturación, aunque esto podemos dejar <br>que lo haga el usuario porque se puede ver distinto para cada monitor.</p>
+        <p>Podemos habilitar SDFGI sin cambiar nada para agregarle más realismo, <br>otra opción que está en WorldEnvironment.</p>
+        <p>La opción Volumetric Fog sirve para agregar niebla, podemos configurar <br>su color, densidad, emisión, energía de emisión y longitud de la niebla.</p>
+        
+        <h2>Cómo agregar un menú de pausa</h2>
+        <p>Antes de hacer todo, debemos ir a Proyecto y Configuración de Proyecto, <br>luego a Mapa de Entrada y crear una acción con el nombre Pausa y <br>agregarle la tecla Esc (Escape)</p>
+        <p>En “+” creamos la escena del menú de pausa como Interfaz del Usuario.</p>
+        <p>La guardamos en Escenas o en alguna carpeta relacionada.</p>
+        <p>Decoramos el menú a nuestro gusto, con un PanelContainer, botones <br>y ajustamos para que se vea bien estéticamente.</p>
+        
+        <h2>Como bloquear el mouse y que no se vea:</h2>
+        <p>Agregar en el script de la sala 3D, dentro de la función _ready el <br>siguiente comando: “Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)</p>
+        <p>Si en el futuro queremos agregar un menú de pausa debemos hacer que <br>al activar el menú de pausa el mouse sea visible.</p>
+        
+        <h2>Cómo exportar el juego a .exe en PC</h2>
+    </main>
+</body>
+</html>
