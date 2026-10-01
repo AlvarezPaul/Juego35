@@ -93,15 +93,47 @@ header .ol li {
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
-main{
+main {
     width: 55%;
     max-width: 1200px;
+    background: rgba(255,255,255,0.9);
+    border-radius: 12px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+    margin-bottom: 40px;
+}
+main a {
+    text-decoration: none;
+    color: #333;
     text-align: center;
-    height: 50%;
-    padding: 30px 20px;
-    background-color: white;
-    border-radius: 15px;
-    flex-grow: 1; 
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 15px;
+    transition: 0.3s;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+main a:hover {
+    background: #e2e6ea;
+    transform: translateY(-5px);
+}
+main a img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+.fondo{
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(5px); 
+    z-index: -1; 
 }
 a{
     color: #999;
