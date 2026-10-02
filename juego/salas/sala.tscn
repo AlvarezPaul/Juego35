@@ -1,0 +1,59 @@
+[gd_scene format=3 uid="uid://b6ncf806r6a0b"]
+
+[ext_resource type="PackedScene" uid="uid://slwd7f6wku1b" path="res://esceneria/escuela.tscn" id="1_kwadh"]
+[ext_resource type="AudioStream" uid="uid://d4b1w0ui4oxb" path="res://UI/linterna.mp3" id="3_pudgd"]
+[ext_resource type="PackedScene" uid="uid://mbsgoh8bcs3w" path="res://jugador/jugador.tscn" id="3_qh0pk"]
+[ext_resource type="Script" uid="uid://31ipksk4tnso" path="res://scriptstamina/canvas_layer.gd" id="3_tgavs"]
+[ext_resource type="PackedScene" uid="uid://l3360f65cyou" path="res://salas/linterna_suelo.tscn" id="4_tgavs"]
+[ext_resource type="PackedScene" uid="uid://bwcjyqarbdklt" path="res://inventario/llave.tscn" id="6_tbg6u"]
+[ext_resource type="PackedScene" uid="uid://sth73yxvt5tl" path="res://puerta/puertablo.tscn" id="7_4e3q0"]
+
+[sub_resource type="Environment" id="Environment_pvkkf"]
+background_mode = 1
+background_color = Color(0.051970966, 0.05197096, 0.05197095, 1)
+
+[node name="sala" type="Node3D" unique_id=1955352439]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=615291951]
+environment = SubResource("Environment_pvkkf")
+
+[node name="escuela" parent="." unique_id=1293130221 instance=ExtResource("1_kwadh")]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 60.306732, -0.049215555, -0.03195381)
+
+[node name="Jugador" parent="." unique_id=212553440 groups=["jugador"] instance=ExtResource("3_qh0pk")]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 33.253544, 0.7980933, 9.643519)
+
+[node name="llave" parent="Jugador/Cabeza/Camera3D" parent_id_path=PackedInt32Array(212553440, 704986019) index="2" unique_id=2048800679]
+transform = Transform3D(-6.556708e-08, -1.5, 0, -1.5, 6.556708e-08, 1.3113416e-07, -1.3113416e-07, 5.7320566e-15, -1.5, 0.09124756, -0.2613846, -22.900015)
+
+[node name="SpotLight3D" parent="Jugador/Cabeza/Camera3D" parent_id_path=PackedInt32Array(212553440, 704986019) index="3" unique_id=1591149388]
+transform = Transform3D(1, 0, 0, 0, 1, 4.743386e-22, 0, -4.743386e-22, 1, 0.45625687, -0.24910295, -0.70774746)
+light_color = Color(1, 1, 0.7647059, 1)
+light_energy = 2.0
+spot_range = 40.0
+spot_attenuation = 0.6
+
+[node name="linterna" type="AudioStreamPlayer3D" parent="Jugador" unique_id=2091540673]
+transform = Transform3D(0.7490637, -1.1310547e-07, 1.1310547e-07, -1.1310547e-07, -0.7490637, 3.722292e-21, 1.1310547e-07, -1.7078454e-14, -0.7490637, 0.3283348, 0.39369708, -0.554337)
+stream = ExtResource("3_pudgd")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=792970203]
+script = ExtResource("3_tgavs")
+
+[node name="BarraStamina" type="ProgressBar" parent="CanvasLayer" unique_id=654527658]
+offset_left = 20.0
+offset_top = 600.0
+offset_right = 320.0
+offset_bottom = 627.0
+
+[node name="LinternaSuelo" parent="." unique_id=1877330075 instance=ExtResource("4_tgavs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.293808, 0.24809694, 7.320636)
+
+[node name="llave" parent="." unique_id=2023737183 instance=ExtResource("6_tbg6u")]
+transform = Transform3D(0, -1, 0, 1, 0, 0, 0, 0, 1, 33.971294, -0.56, 5.401361)
+
+[node name="puerta" parent="." unique_id=510996679 instance=ExtResource("7_4e3q0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.1302, 1.0043545, 0)
+
+[editable path="Jugador"]
+[editable path="Jugador/Cabeza/Camera3D/linterna"]

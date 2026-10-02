@@ -1,0 +1,196 @@
+[gd_scene format=3 uid="uid://1y82ytyl00pp"]
+
+[ext_resource type="FontFile" uid="uid://ocuqailjsal3" path="res://Fuentes/StayDrips-Regular.otf" id="1_u4kum"]
+[ext_resource type="FontFile" uid="uid://blju0ku40nkwn" path="res://Interfaz/Fuentes/Bonechiller Free.otf" id="2_mon12"]
+[ext_resource type="Script" uid="uid://cdvfbej5sosp" path="res://UI/pantcompleta.gd" id="2_qgyvf"]
+[ext_resource type="Script" uid="uid://dr6ldu5lrqu27" path="res://UI/volverdeaj.gd" id="3_p1khp"]
+[ext_resource type="PackedScene" uid="uid://dav4xsf5v0vn1" path="res://UI/barra_sonidos.tscn" id="4_56yal"]
+[ext_resource type="FontFile" uid="uid://cdu7dgetstelv" path="res://Fuentes/trebuc.ttf" id="5_oxxd6"]
+[ext_resource type="AudioStream" uid="uid://pogmuy6woqyo" path="res://UI/click.mp3" id="7_33ovl"]
+
+[sub_resource type="ImageTexture" id="ImageTexture_p3nki"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_rfr4f"]
+diffuse_texture = SubResource("ImageTexture_p3nki")
+specular_color = Color(0.16924527, 0.1692453, 0.16924527, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_f6o33"]
+bg_color = Color(0.6, 0.6, 0.6, 0.38431373)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 40
+corner_radius_top_right = 40
+corner_radius_bottom_right = 40
+corner_radius_bottom_left = 40
+shadow_color = Color(0.20152658, 0.20152658, 0.20152658, 0.6)
+shadow_size = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_p1khp"]
+bg_color = Color(0.28235295, 0.28235295, 0.28235295, 0.25490198)
+border_color = Color(0.06053038, 0.06053035, 0.060530283, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+shadow_size = 15
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_56yal"]
+bg_color = Color(0.3970236, 0, 0.012507642, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+shadow_color = Color(0.49803922, 0, 0, 0.6)
+shadow_size = 15
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_oxxd6"]
+bg_color = Color(0.06469658, 0.06469651, 0.06469653, 0.80784315)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+shadow_size = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cjdqc"]
+bg_color = Color(0.49747366, 0.49747372, 0.49747354, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[node name="Ajustes" type="Control" unique_id=480375880]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="." unique_id=924506643]
+layout_mode = 0
+offset_left = -4.0
+offset_right = 1148.0
+offset_bottom = 643.0
+
+[node name="Cont de Sliders y CheckBox" type="VBoxContainer" parent="Panel" unique_id=1674673960]
+layout_mode = 0
+offset_left = 590.0
+offset_top = 205.0
+offset_right = 803.0
+offset_bottom = 401.0
+theme_override_constants/separation = 37
+
+[node name="barra_sonidos" parent="Panel/Cont de Sliders y CheckBox" unique_id=1664845339 instance=ExtResource("4_56yal")]
+layout_mode = 2
+
+[node name="sensibilidad" parent="Panel/Cont de Sliders y CheckBox" unique_id=975027753 instance=ExtResource("4_56yal")]
+layout_mode = 2
+script = null
+
+[node name="CheckBox" type="CheckBox" parent="Panel/Cont de Sliders y CheckBox" unique_id=234344850]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+size_flags_stretch_ratio = 0.0
+button_pressed = true
+icon = SubResource("CanvasTexture_rfr4f")
+script = ExtResource("2_qgyvf")
+
+[node name="fov" parent="Panel/Cont de Sliders y CheckBox" unique_id=1725355257 instance=ExtResource("4_56yal")]
+layout_mode = 2
+script = null
+
+[node name="Ajustes Título" type="Label" parent="Panel" unique_id=140143887]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -115.0
+offset_top = 41.0
+offset_right = 120.0
+offset_bottom = 159.0
+grow_horizontal = 2
+theme_override_constants/outline_size = 10
+theme_override_constants/shadow_outline_size = 0
+theme_override_fonts/font = ExtResource("1_u4kum")
+theme_override_font_sizes/font_size = 60
+theme_override_styles/normal = SubResource("StyleBoxFlat_f6o33")
+text = "Ajustes"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="volver" type="Button" parent="Panel" unique_id=1703907111]
+layout_mode = 0
+offset_left = 960.0
+offset_top = 540.0
+offset_right = 1117.0
+offset_bottom = 626.0
+theme_override_fonts/font = ExtResource("2_mon12")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_p1khp")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_56yal")
+theme_override_styles/hover = SubResource("StyleBoxFlat_oxxd6")
+text = "Volver"
+script = ExtResource("3_p1khp")
+
+[node name="Textos" type="VBoxContainer" parent="Panel" unique_id=519686304]
+layout_mode = 0
+offset_left = 279.0
+offset_top = 198.0
+offset_right = 562.0
+offset_bottom = 394.0
+theme_override_constants/separation = 20
+
+[node name="Label2" type="Label" parent="Panel/Textos" unique_id=324615397]
+layout_mode = 2
+theme_override_constants/outline_size = 7
+theme_override_fonts/font = ExtResource("5_oxxd6")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxFlat_cjdqc")
+text = "Sonido"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label3" type="Label" parent="Panel/Textos" unique_id=1354375354]
+layout_mode = 2
+theme_override_constants/outline_size = 7
+theme_override_fonts/font = ExtResource("5_oxxd6")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxFlat_cjdqc")
+text = "Sensibilidad del Mouse"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label4" type="Label" parent="Panel/Textos" unique_id=1067891136]
+layout_mode = 2
+theme_override_constants/outline_size = 7
+theme_override_fonts/font = ExtResource("5_oxxd6")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxFlat_cjdqc")
+text = "Pantalla Completa"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label5" type="Label" parent="Panel/Textos" unique_id=205805489]
+layout_mode = 2
+theme_override_constants/outline_size = 7
+theme_override_fonts/font = ExtResource("5_oxxd6")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxFlat_cjdqc")
+text = "FOV"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Click" type="AudioStreamPlayer" parent="." unique_id=1657340700]
+stream = ExtResource("7_33ovl")
+
+[connection signal="toggled" from="Panel/Cont de Sliders y CheckBox/CheckBox" to="Panel/Cont de Sliders y CheckBox/CheckBox" method="_on_toggled"]
+[connection signal="pressed" from="Panel/volver" to="Panel/volver" method="_on_pressed"]

@@ -1,0 +1,143 @@
+[gd_scene format=3 uid="uid://b42hf1ayd4kt"]
+
+[ext_resource type="AudioStream" uid="uid://ctscdktps5mq" path="res://puertas/dragon-studio-opening-door-450444.mp3" id="1_au01w"]
+[ext_resource type="AudioStream" uid="uid://tirloem7686m" path="res://puertas/dragon-studio-close-door-382723.mp3" id="2_v3fbv"]
+[ext_resource type="Script" uid="uid://b276a1xpf5n8r" path="res://puertas/modelo.gd" id="3_jqqr1"]
+
+[sub_resource type="Animation" id="Animation_4k5d8"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("bisagra:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_8l1k0"]
+resource_name = "abrir_puerta"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("bisagra:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0, 1.5707964, 0)]
+}
+tracks/1/type = "audio"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AudioStreamPlayer3D")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("1_au01w")
+}],
+"times": PackedFloat32Array(0)
+}
+tracks/1/use_blend = true
+
+[sub_resource type="Animation" id="Animation_6tpmj"]
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("bisagra:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 1.5707964, 0), Vector3(0, 0, 0)]
+}
+tracks/1/type = "audio"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AudioStreamPlayer3D")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("2_v3fbv")
+}],
+"times": PackedFloat32Array(0.46666667)
+}
+tracks/1/use_blend = true
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_y4mn0"]
+_data = {
+&"RESET": SubResource("Animation_4k5d8"),
+&"abrir": SubResource("Animation_8l1k0"),
+&"cerrar": SubResource("Animation_6tpmj")
+}
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_7ybsv"]
+size = Vector3(2.4010925, 3.4892578, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_wf52g"]
+size = Vector3(1, 1.6591797, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4caod"]
+albedo_color = Color(0.31764707, 0.7607843, 0.6, 1)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_fdrqe"]
+data = PackedVector3Array(-0.5, 0.8296, 0.5, 0.5, 0.8296, 0.5, -0.5, -0.8296, 0.5, 0.5, 0.8296, 0.5, 0.5, -0.8296, 0.5, -0.5, -0.8296, 0.5, 0.5, 0.8296, -0.5, -0.5, 0.8296, -0.5, 0.5, -0.8296, -0.5, -0.5, 0.8296, -0.5, -0.5, -0.8296, -0.5, 0.5, -0.8296, -0.5, 0.5, 0.8296, 0.5, 0.5, 0.8296, -0.5, 0.5, -0.8296, 0.5, 0.5, 0.8296, -0.5, 0.5, -0.8296, -0.5, 0.5, -0.8296, 0.5, -0.5, 0.8296, -0.5, -0.5, 0.8296, 0.5, -0.5, -0.8296, -0.5, -0.5, 0.8296, 0.5, -0.5, -0.8296, 0.5, -0.5, -0.8296, -0.5, 0.5, 0.8296, 0.5, -0.5, 0.8296, 0.5, 0.5, 0.8296, -0.5, -0.5, 0.8296, 0.5, -0.5, 0.8296, -0.5, 0.5, 0.8296, -0.5, -0.5, -0.8296, 0.5, 0.5, -0.8296, 0.5, -0.5, -0.8296, -0.5, 0.5, -0.8296, 0.5, 0.5, -0.8296, -0.5, -0.5, -0.8296, -0.5)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_b3ec0"]
+
+[node name="puerta_inodoro" type="Node3D" unique_id=1370362943]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1023456880]
+libraries/ = SubResource("AnimationLibrary_y4mn0")
+
+[node name="bisagra" type="Node3D" parent="." unique_id=1884947229]
+transform = Transform3D(1.9999999, 0, 0, 0, 2, 0, 0, 0, 1.9999999, 0, 0, 1.7398701)
+
+[node name="modelo" type="StaticBody3D" parent="bisagra" unique_id=658349858 node_paths=PackedStringArray("animation_player")]
+transform = Transform3D(-2.1855683e-08, 0, 0.4999998, 0, 0.5, 0, -0.4999998, 0, -2.1855683e-08, -0.009692408, 0, -0.87432086)
+script = ExtResource("3_jqqr1")
+animation_player = NodePath("../../AnimationPlayer")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="bisagra/modelo" unique_id=1359705028]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.45218948, 0.11376953, -3.7252903e-09)
+shape = SubResource("BoxShape3D_7ybsv")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="bisagra/modelo" unique_id=900429638]
+transform = Transform3D(2.5661693, 0, 0, 0, 2.0548873, 0, 0, 0, 0.2, -0.4271884, 0.09784138, -8.195639e-08)
+mesh = SubResource("BoxMesh_wf52g")
+skeleton = NodePath("../../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_4caod")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="bisagra/modelo/MeshInstance3D4" unique_id=416214070]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="bisagra/modelo/MeshInstance3D4/StaticBody3D" unique_id=1365601949]
+shape = SubResource("ConcavePolygonShape3D_fdrqe")
+
+[node name="MeshInstance3D8" type="MeshInstance3D" parent="bisagra/modelo" unique_id=1288005676]
+transform = Transform3D(0.2, 0, 0, 0, -2.1855695e-09, -0.2, 0, 0.05, -8.742278e-09, 0.7313428, 0, 0.14594291)
+mesh = SubResource("CylinderMesh_b3ec0")
+skeleton = NodePath("../../..")
+
+[node name="MeshInstance3D10" type="MeshInstance3D" parent="bisagra/modelo" unique_id=69299701]
+transform = Transform3D(0.2, 0, -2.646978e-23, 0, -2.1855695e-09, -0.2, 0, 0.05, -8.742278e-09, 0.7313428, 0, -0.15103665)
+mesh = SubResource("CylinderMesh_b3ec0")
+skeleton = NodePath("../../..")
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="." unique_id=43853400]
+volume_db = -7.0
+max_db = -4.0

@@ -1,0 +1,132 @@
+[gd_scene format=3 uid="uid://b34pxk3m5q6yg"]
+
+[ext_resource type="Script" uid="uid://mmmok66usadm" path="res://inventario/inventario.gd" id="1_6gaym"]
+[ext_resource type="Texture2D" uid="uid://b8ipk7mypr224" path="res://inventario/descarga.jpg" id="2_alj7c"]
+
+[node name="Inventario" type="Node2D" unique_id=445011503]
+script = ExtResource("1_6gaym")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=391686558]
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 855.0
+offset_top = 573.0
+offset_right = 1141.0
+offset_bottom = 637.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_constants/separation = 10
+
+[node name="Panel" type="Panel" parent="HBoxContainer" unique_id=1328584478]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="HBoxContainer/Panel" unique_id=1612472310]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -1.0
+offset_top = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_alj7c")
+expand_mode = 2
+
+[node name="Label" type="Label" parent="HBoxContainer/Panel/TextureRect" unique_id=1614553197]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="LabelNumero" type="Label" parent="HBoxContainer/Panel" unique_id=83798708]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -23.0
+offset_right = 1.0
+grow_vertical = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+
+[node name="Panel2" type="Panel" parent="HBoxContainer" unique_id=316663564]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="HBoxContainer/Panel2" unique_id=1204603694]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="HBoxContainer/Panel2/TextureRect" unique_id=1741550241]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="LabelNumero" type="Label" parent="HBoxContainer/Panel2" unique_id=1589158833]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -23.0
+offset_right = 1.0
+grow_vertical = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+
+[node name="Panel3" type="Panel" parent="HBoxContainer" unique_id=2034228763]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="HBoxContainer/Panel3" unique_id=1143791215]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="HBoxContainer/Panel3/TextureRect" unique_id=489324414]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="LabelNumero" type="Label" parent="HBoxContainer/Panel3" unique_id=692302681]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -23.0
+offset_right = 1.0
+grow_vertical = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+
+[node name="Panel4" type="Panel" parent="HBoxContainer" unique_id=594218001]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="HBoxContainer/Panel4" unique_id=607699405]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="HBoxContainer/Panel4/TextureRect" unique_id=2134136019]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="LabelNumero" type="Label" parent="HBoxContainer/Panel4" unique_id=1094712117]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -23.0
+offset_right = 1.0
+grow_vertical = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
