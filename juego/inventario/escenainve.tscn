@@ -7,24 +7,30 @@
 [node name="Inventario" type="Node2D" unique_id=445011503]
 script = ExtResource("1_6gaym")
 
-[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=391686558]
+[node name="Control" type="Control" parent="." unique_id=1324043451]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 279.0
+offset_top = 697.0
+offset_right = 319.0
+offset_bottom = 737.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Control" unique_id=391686558]
+layout_mode = 1
 anchors_preset = 11
 anchor_left = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 33.0
-offset_top = 644.0
-offset_right = 319.0
-offset_bottom = 708.0
+offset_left = -286.0
 grow_horizontal = 0
 grow_vertical = 2
 theme_override_constants/separation = 10
 
-[node name="Panel" type="Panel" parent="HBoxContainer" unique_id=1328584478]
+[node name="Panel" type="Panel" parent="Control/HBoxContainer" unique_id=1328584478]
 custom_minimum_size = Vector2(64, 64)
 layout_mode = 2
 
-[node name="TextureRect" type="TextureRect" parent="HBoxContainer/Panel" unique_id=1612472310]
+[node name="TextureRect" type="TextureRect" parent="Control/HBoxContainer/Panel" unique_id=1612472310]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -36,12 +42,12 @@ grow_vertical = 2
 texture = ExtResource("2_alj7c")
 expand_mode = 2
 
-[node name="Label" type="Label" parent="HBoxContainer/Panel/TextureRect" unique_id=1614553197]
+[node name="Label" type="Label" parent="Control/HBoxContainer/Panel/TextureRect" unique_id=1614553197]
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 23.0
 
-[node name="LabelNumero" type="Label" parent="HBoxContainer/Panel" unique_id=83798708]
+[node name="LabelNumero" type="Label" parent="Control/HBoxContainer/Panel" unique_id=83798708]
 layout_mode = 1
 anchors_preset = 2
 anchor_top = 1.0
@@ -51,11 +57,11 @@ offset_right = 1.0
 grow_vertical = 0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 
-[node name="Panel2" type="Panel" parent="HBoxContainer" unique_id=316663564]
+[node name="Panel2" type="Panel" parent="Control/HBoxContainer" unique_id=316663564]
 custom_minimum_size = Vector2(64, 64)
 layout_mode = 2
 
-[node name="TextureRect" type="TextureRect" parent="HBoxContainer/Panel2" unique_id=1204603694]
+[node name="TextureRect" type="TextureRect" parent="Control/HBoxContainer/Panel2" unique_id=1204603694]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -65,12 +71,12 @@ grow_vertical = 2
 texture = ExtResource("3_jh551")
 expand_mode = 2
 
-[node name="Label" type="Label" parent="HBoxContainer/Panel2/TextureRect" unique_id=1741550241]
+[node name="Label" type="Label" parent="Control/HBoxContainer/Panel2/TextureRect" unique_id=1741550241]
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 23.0
 
-[node name="LabelNumero" type="Label" parent="HBoxContainer/Panel2" unique_id=1589158833]
+[node name="LabelNumero" type="Label" parent="Control/HBoxContainer/Panel2" unique_id=1589158833]
 layout_mode = 1
 anchors_preset = 2
 anchor_top = 1.0
@@ -80,11 +86,11 @@ offset_right = 1.0
 grow_vertical = 0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 
-[node name="Panel3" type="Panel" parent="HBoxContainer" unique_id=2034228763]
+[node name="Panel3" type="Panel" parent="Control/HBoxContainer" unique_id=2034228763]
 custom_minimum_size = Vector2(64, 64)
 layout_mode = 2
 
-[node name="TextureRect" type="TextureRect" parent="HBoxContainer/Panel3" unique_id=1143791215]
+[node name="TextureRect" type="TextureRect" parent="Control/HBoxContainer/Panel3" unique_id=1143791215]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -92,12 +98,12 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Label" type="Label" parent="HBoxContainer/Panel3/TextureRect" unique_id=489324414]
+[node name="Label" type="Label" parent="Control/HBoxContainer/Panel3/TextureRect" unique_id=489324414]
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 23.0
 
-[node name="LabelNumero" type="Label" parent="HBoxContainer/Panel3" unique_id=692302681]
+[node name="LabelNumero" type="Label" parent="Control/HBoxContainer/Panel3" unique_id=692302681]
 layout_mode = 1
 anchors_preset = 2
 anchor_top = 1.0
@@ -107,11 +113,11 @@ offset_right = 1.0
 grow_vertical = 0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 
-[node name="Panel4" type="Panel" parent="HBoxContainer" unique_id=594218001]
+[node name="Panel4" type="Panel" parent="Control/HBoxContainer" unique_id=594218001]
 custom_minimum_size = Vector2(64, 64)
 layout_mode = 2
 
-[node name="TextureRect" type="TextureRect" parent="HBoxContainer/Panel4" unique_id=607699405]
+[node name="TextureRect" type="TextureRect" parent="Control/HBoxContainer/Panel4" unique_id=607699405]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -119,12 +125,12 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Label" type="Label" parent="HBoxContainer/Panel4/TextureRect" unique_id=2134136019]
+[node name="Label" type="Label" parent="Control/HBoxContainer/Panel4/TextureRect" unique_id=2134136019]
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 23.0
 
-[node name="LabelNumero" type="Label" parent="HBoxContainer/Panel4" unique_id=1094712117]
+[node name="LabelNumero" type="Label" parent="Control/HBoxContainer/Panel4" unique_id=1094712117]
 layout_mode = 1
 anchors_preset = 2
 anchor_top = 1.0

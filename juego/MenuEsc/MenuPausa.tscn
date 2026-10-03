@@ -19,7 +19,7 @@ corner_radius_bottom_right = 10
 corner_radius_bottom_left = 10
 shadow_size = 5
 
-[node name="Node2D" type="Node2D" unique_id=2102388130]
+[node name="MenuPausa" type="Node2D" unique_id=2102388130]
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1482110964]
 

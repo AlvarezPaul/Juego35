@@ -2223,7 +2223,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_c4krr")
 shape = SubResource("ConcavePolygonShape3D_cadfy")
 
 [node name="Cube_019" type="MeshInstance3D" parent="Paredes/paredes" unique_id=486992229]
-transform = Transform3D(4.5690218e-14, -3.5887048e-08, 2.659, -23.913, -3.5887048e-08, -4.4179164e-22, 1.0452704e-06, -0.821, -1.1622858e-07, -25.808, 6.79535, 41.626)
+transform = Transform3D(4.5690218e-14, -3.5887048e-08, 2.219, -23.913, -3.5887048e-08, -3.6868587e-22, 1.0452704e-06, -0.821, -9.699558e-08, -26.342182, 6.79535, 41.626)
 mesh = SubResource("ArrayMesh_x8vmc")
 surface_material_override/0 = SubResource("StandardMaterial3D_c4krr")
 

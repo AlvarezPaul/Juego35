@@ -1,10 +1,10 @@
 extends Node2D
 
 @onready var slots: Array = [
-	$HBoxContainer/Panel,
-	$HBoxContainer/Panel2,
-	$HBoxContainer/Panel3,
-	$HBoxContainer/Panel4,
+	$Control/HBoxContainer/Panel,
+	$Control/HBoxContainer/Panel2,
+	$Control/HBoxContainer/Panel3,
+	$Control/HBoxContainer/Panel4,
 ]
 
 var estilos: Array = []
@@ -25,7 +25,7 @@ const MARGEN_NUMERO = 6
 func _ready() -> void:
 	add_to_group("inventario")
 
-	$HBoxContainer.add_theme_constant_override(
+	$Control/HBoxContainer.add_theme_constant_override(
 		"separation",
 		BORDE_EXPANDIDO * 2 + 6
 	)
