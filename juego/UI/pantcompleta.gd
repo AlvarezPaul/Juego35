@@ -1,6 +1,6 @@
 extends CheckBox
 
-@onready var click = $"../../../Click"
+@onready var click = $"../../../click"
 
 func _on_toggled(toggled_on: bool) -> void:
 	click.playing = true

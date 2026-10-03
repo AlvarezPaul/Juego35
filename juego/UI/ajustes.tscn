@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://1y82ytyl00pp"]
 
 [ext_resource type="FontFile" uid="uid://ocuqailjsal3" path="res://Fuentes/StayDrips-Regular.otf" id="1_u4kum"]
-[ext_resource type="FontFile" uid="uid://blju0ku40nkwn" path="res://Interfaz/Fuentes/Bonechiller Free.otf" id="2_mon12"]
+[ext_resource type="FontFile" uid="uid://blju0ku40nkwn" path="res://Fuentes/Bonechiller Free.otf" id="2_mon12"]
 [ext_resource type="Script" uid="uid://cdvfbej5sosp" path="res://UI/pantcompleta.gd" id="2_qgyvf"]
 [ext_resource type="Script" uid="uid://dr6ldu5lrqu27" path="res://UI/volverdeaj.gd" id="3_p1khp"]
 [ext_resource type="PackedScene" uid="uid://dav4xsf5v0vn1" path="res://UI/barra_sonidos.tscn" id="4_56yal"]
@@ -73,6 +73,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+scale = Vector2(1.1918753, 1.2003461)
 
 [node name="Panel" type="Panel" parent="." unique_id=924506643]
 layout_mode = 0
@@ -102,6 +103,7 @@ size_flags_vertical = 4
 size_flags_stretch_ratio = 0.0
 button_pressed = true
 icon = SubResource("CanvasTexture_rfr4f")
+flat = true
 script = ExtResource("2_qgyvf")
 
 [node name="fov" parent="Panel/Cont de Sliders y CheckBox" unique_id=1725355257 instance=ExtResource("4_56yal")]
@@ -129,10 +131,10 @@ vertical_alignment = 1
 
 [node name="volver" type="Button" parent="Panel" unique_id=1703907111]
 layout_mode = 0
-offset_left = 960.0
-offset_top = 540.0
-offset_right = 1117.0
-offset_bottom = 626.0
+offset_left = 977.2561
+offset_top = 537.34503
+offset_right = 1134.2561
+offset_bottom = 623.34503
 theme_override_fonts/font = ExtResource("2_mon12")
 theme_override_font_sizes/font_size = 50
 theme_override_styles/normal = SubResource("StyleBoxFlat_p1khp")
@@ -189,7 +191,7 @@ text = "FOV"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Click" type="AudioStreamPlayer" parent="." unique_id=1657340700]
+[node name="click" type="AudioStreamPlayer" parent="." unique_id=1657340700]
 stream = ExtResource("7_33ovl")
 
 [connection signal="toggled" from="Panel/Cont de Sliders y CheckBox/CheckBox" to="Panel/Cont de Sliders y CheckBox/CheckBox" method="_on_toggled"]

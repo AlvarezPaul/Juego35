@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://sth73yxvt5tl"]
 
-[ext_resource type="AudioStream" uid="uid://ctscdktps5mq" path="res://puerta/dragon-studio-opening-door-450444.mp3" id="1_r08uq"]
-[ext_resource type="AudioStream" uid="uid://tirloem7686m" path="res://puerta/dragon-studio-close-door-382723.mp3" id="2_f83ae"]
-[ext_resource type="Script" uid="uid://cj50hj5ssc568" path="res://puerta/modeloblo.gd" id="3_ybwp8"]
+[ext_resource type="AudioStream" uid="uid://ctscdktps5mq" path="res://puerta/dragon-studio-opening-door-450444.mp3" id="1_cwpm8"]
+[ext_resource type="AudioStream" uid="uid://tirloem7686m" path="res://puerta/dragon-studio-close-door-382723.mp3" id="2_ayvba"]
+[ext_resource type="Script" uid="uid://cj50hj5ssc568" path="res://puerta/modeloblo.gd" id="3_057jr"]
 
 [sub_resource type="Animation" id="Animation_4k5d8"]
 length = 0.001
@@ -44,7 +44,7 @@ tracks/1/keys = {
 "clips": [{
 "end_offset": 0.0,
 "start_offset": 0.0,
-"stream": ExtResource("1_r08uq")
+"stream": ExtResource("1_cwpm8")
 }],
 "times": PackedFloat32Array(0)
 }
@@ -73,7 +73,7 @@ tracks/1/keys = {
 "clips": [{
 "end_offset": 0.0,
 "start_offset": 0.0,
-"stream": ExtResource("2_f83ae")
+"stream": ExtResource("2_ayvba")
 }],
 "times": PackedFloat32Array(0.46666667)
 }
@@ -127,9 +127,31 @@ size = Vector3(0.001, 1, 18.514648)
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_vyrw3"]
 data = PackedVector3Array(-0.00049999997, 0.5, 9.257299, 0.00049999997, 0.5, 9.257299, -0.00049999997, -0.5, 9.257299, 0.00049999997, 0.5, 9.257299, 0.00049999997, -0.5, 9.257299, -0.00049999997, -0.5, 9.257299, 0.00049999997, 0.5, -9.257299, -0.00049999997, 0.5, -9.257299, 0.00049999997, -0.5, -9.257299, -0.00049999997, 0.5, -9.257299, -0.00049999997, -0.5, -9.257299, 0.00049999997, -0.5, -9.257299, 0.00049999997, 0.5, 9.257299, 0.00049999997, 0.5, -9.257299, 0.00049999997, -0.5, 9.257299, 0.00049999997, 0.5, -9.257299, 0.00049999997, -0.5, -9.257299, 0.00049999997, -0.5, 9.257299, -0.00049999997, 0.5, -9.257299, -0.00049999997, 0.5, 9.257299, -0.00049999997, -0.5, -9.257299, -0.00049999997, 0.5, 9.257299, -0.00049999997, -0.5, 9.257299, -0.00049999997, -0.5, -9.257299, 0.00049999997, 0.5, 9.257299, -0.00049999997, 0.5, 9.257299, 0.00049999997, 0.5, -9.257299, -0.00049999997, 0.5, 9.257299, -0.00049999997, 0.5, -9.257299, 0.00049999997, 0.5, -9.257299, -0.00049999997, -0.5, 9.257299, 0.00049999997, -0.5, 9.257299, -0.00049999997, -0.5, -9.257299, 0.00049999997, -0.5, 9.257299, 0.00049999997, -0.5, -9.257299, -0.00049999997, -0.5, -9.257299)
 
-[sub_resource type="CylinderMesh" id="CylinderMesh_f6o33"]
+[sub_resource type="BoxMesh" id="BoxMesh_v7tld"]
+size = Vector3(0.9822998, 2.5654297, 1.3666992)
 
-[sub_resource type="BoxMesh" id="BoxMesh_6xc37"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_13qdw"]
+albedo_color = Color(0.78039217, 0.61960787, 0.21960784, 1)
+metallic = 0.3
+roughness = 0.45
+
+[sub_resource type="TorusMesh" id="TorusMesh_xrivr"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_24eut"]
+albedo_color = Color(0.48962224, 0.48962224, 0.48962218, 1)
+metallic = 0.3
+roughness = 0.45
+
+[sub_resource type="BoxMesh" id="BoxMesh_13qdw"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_b1lj4"]
+albedo_color = Color(0.30692267, 0.3069227, 0.3069227, 1)
+metallic = 0.3
+roughness = 0.45
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_xrivr"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_cwpm8"]
 
 [node name="puerta" type="Node3D" unique_id=510996679]
 
@@ -141,7 +163,7 @@ transform = Transform3D(1.9999999, 0, 0, 0, 2, 0, 0, 0, 1.9999999, 0, 0, 1.73987
 
 [node name="modelo" type="StaticBody3D" parent="bisagra" unique_id=1443082467 node_paths=PackedStringArray("animation_player")]
 transform = Transform3D(-2.1855683e-08, 0, 0.4999998, 0, 0.5, 0, -0.4999998, 0, -2.1855683e-08, -0.009692408, 0, -0.87432086)
-script = ExtResource("3_ybwp8")
+script = ExtResource("3_057jr")
 animation_player = NodePath("../../AnimationPlayer")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="bisagra/modelo" unique_id=1760057816]
@@ -235,25 +257,38 @@ skeleton = NodePath("../../..")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="bisagra/modelo/MeshInstance3D50/StaticBody3D" unique_id=1060732316]
 shape = SubResource("ConcavePolygonShape3D_vyrw3")
 
-[node name="MeshInstance3D8" type="MeshInstance3D" parent="bisagra/modelo" unique_id=1924139572]
-transform = Transform3D(0.2, 0, 0, 0, -2.1855695e-09, -0.2, 0, 0.05, -8.742278e-09, 0.7313428, 0, 0.14594291)
-mesh = SubResource("CylinderMesh_f6o33")
-skeleton = NodePath("../../..")
+[node name="candado" type="Node3D" parent="bisagra/modelo" unique_id=745499106]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.73044336, -0.27026433, 0.16843393)
 
-[node name="MeshInstance3D9" type="MeshInstance3D" parent="bisagra/modelo" unique_id=641614481]
-transform = Transform3D(0.33375284, 0, 0, 0, 0.12212301, 0, 0, 0, 0.076321654, 0.57213235, 0, 0.22189146)
-mesh = SubResource("BoxMesh_6xc37")
-skeleton = NodePath("../../..")
+[node name="MeshInstance3D12" type="MeshInstance3D" parent="bisagra/modelo/candado" unique_id=400247745]
+transform = Transform3D(0.33375287, 0, 0, 0, 0.12212301, 0, 1.1635137e-13, 0, 0.076321654, 0.0006722212, 0, 3.7252903e-09)
+mesh = SubResource("BoxMesh_v7tld")
+skeleton = NodePath("../../../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_13qdw")
 
-[node name="MeshInstance3D10" type="MeshInstance3D" parent="bisagra/modelo" unique_id=1910119930]
-transform = Transform3D(0.2, 0, -2.646978e-23, 0, -2.1855695e-09, -0.2, 0, 0.05, -8.742278e-09, 0.7313428, 0, -0.15103665)
-mesh = SubResource("CylinderMesh_f6o33")
-skeleton = NodePath("../../..")
+[node name="MeshInstance3D" type="MeshInstance3D" parent="bisagra/modelo/candado" unique_id=963675113]
+transform = Transform3D(0.15, 0, 0, 0, -6.5567085e-09, -0.15, 0, 0.15, -6.5567085e-09, 0, 0.15337789, 0)
+mesh = SubResource("TorusMesh_xrivr")
+surface_material_override/0 = SubResource("StandardMaterial3D_24eut")
 
-[node name="MeshInstance3D11" type="MeshInstance3D" parent="bisagra/modelo" unique_id=438786630]
-transform = Transform3D(0.33375284, 0, 0, 0, 0.12212301, 0, 2.6645353e-15, 0, 0.076321654, 0.57213235, 0, -0.23815197)
-mesh = SubResource("BoxMesh_6xc37")
-skeleton = NodePath("../../..")
+[node name="MeshInstance3D8" type="MeshInstance3D" parent="bisagra/modelo" unique_id=973693281]
+transform = Transform3D(0.06968235, 0, 7.1054274e-15, 0, 0.12667209, 0, 4.440892e-16, 0, 0.4869648, 0.7221123, -0.0030548573, 3.1664968e-08)
+mesh = SubResource("BoxMesh_13qdw")
+surface_material_override/0 = SubResource("StandardMaterial3D_b1lj4")
+
+[node name="MeshInstance3D9" type="MeshInstance3D" parent="bisagra/modelo" unique_id=2010051228]
+transform = Transform3D(0.2, 0, -1.0587912e-22, 0, -8.742278e-09, -0.2, 0, 0.2, -8.742278e-09, 0.7214732, 0.22712737, 3.3527613e-08)
+mesh = SubResource("CylinderMesh_xrivr")
+
+[node name="MeshInstance3D10" type="MeshInstance3D" parent="bisagra/modelo" unique_id=223798603]
+transform = Transform3D(0.333753, 0, 2.220446e-16, 0, 0.12212301, 0, -1.7763568e-15, 0, 0.07632169, 0.5743106, 0.23007601, 0.23711029)
+mesh = SubResource("BoxMesh_cwpm8")
+skeleton = NodePath("../../../../..")
+
+[node name="MeshInstance3D11" type="MeshInstance3D" parent="bisagra/modelo" unique_id=867910755]
+transform = Transform3D(0.333753, 0, 2.220446e-16, 0, 0.12212301, 0, -1.7763568e-15, 0, 0.07632169, 0.5743106, 0.23007601, -0.23003107)
+mesh = SubResource("BoxMesh_cwpm8")
+skeleton = NodePath("../../../../..")
 
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="." unique_id=1169295775]
 volume_db = -7.0

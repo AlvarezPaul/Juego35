@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://jue686qpl16m"]
 
-[ext_resource type="AudioStream" uid="uid://ctscdktps5mq" path="res://puertas/dragon-studio-opening-door-450444.mp3" id="1_tb87v"]
-[ext_resource type="AudioStream" uid="uid://tirloem7686m" path="res://puertas/dragon-studio-close-door-382723.mp3" id="2_jjh2y"]
-[ext_resource type="Script" uid="uid://b276a1xpf5n8r" path="res://puertas/modelo.gd" id="3_ykhvf"]
+[ext_resource type="AudioStream" uid="uid://ctscdktps5mq" path="res://puerta/dragon-studio-opening-door-450444.mp3" id="1_tb87v"]
+[ext_resource type="AudioStream" uid="uid://tirloem7686m" path="res://puerta/dragon-studio-close-door-382723.mp3" id="2_jjh2y"]
+[ext_resource type="Script" uid="uid://cj50hj5ssc568" path="res://puerta/modeloblo.gd" id="3_eyd3d"]
 
 [sub_resource type="Animation" id="Animation_4k5d8"]
 length = 0.001
@@ -128,7 +128,7 @@ transform = Transform3D(1.9999999, 0, 0, 0, 2, 0, 0, 0, 1.9999999, 0, 0, 1.73987
 
 [node name="modelo" type="StaticBody3D" parent="bisagra" unique_id=1083885159 node_paths=PackedStringArray("animation_player")]
 transform = Transform3D(-2.1855683e-08, 0, 0.4999998, 0, 0.5, 0, -0.4999998, 0, -2.1855683e-08, -0.009692408, 0, -0.87432086)
-script = ExtResource("3_ykhvf")
+script = ExtResource("3_eyd3d")
 animation_player = NodePath("../../AnimationPlayer")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="bisagra/modelo" unique_id=370502555]

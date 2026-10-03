@@ -15,7 +15,7 @@ func _on_pressed() -> void:
 func _buscar_click() -> AudioStreamPlayer:
 	var nodo := get_parent()
 	while nodo != null:
-		var encontrado := nodo.find_child("Click", true, false)
+		var encontrado := nodo.find_child("click", true, false)
 		if encontrado is AudioStreamPlayer:
 			return encontrado
 		nodo = nodo.get_parent()

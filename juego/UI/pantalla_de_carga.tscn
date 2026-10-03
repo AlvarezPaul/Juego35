@@ -36,9 +36,9 @@ script = ExtResource("1_w7kbh")
 [node name="TextureRect" type="TextureRect" parent="." unique_id=805912945]
 layout_mode = 0
 offset_left = -13.0
-offset_top = 3.0
-offset_right = 1139.0
-offset_bottom = 660.0
+offset_top = -2.0
+offset_right = 1358.0
+offset_bottom = 771.0
 texture = ExtResource("2_w7kbh")
 expand_mode = 1
 
@@ -51,7 +51,7 @@ autostart = true
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.46006945
-anchor_top = 0.4996142
+anchor_top = 0.46489197
 anchor_right = 0.5147569
 anchor_bottom = 0.46489197
 offset_left = -125.0
