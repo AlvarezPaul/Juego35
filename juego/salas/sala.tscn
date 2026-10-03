@@ -21,7 +21,7 @@ environment = SubResource("Environment_pvkkf")
 transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 60.306732, -0.049215555, -0.03195381)
 
 [node name="Jugador" parent="." unique_id=212553440 groups=["jugador"] instance=ExtResource("3_qh0pk")]
-transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 33.253544, 0.7980933, 9.643519)
+transform = Transform3D(-6.556708e-08, 0, -1.5, 0, 1.5, 0, 1.5, 0, -6.556708e-08, 48.945915, 13.001343, -41.74019)
 
 [node name="llave" parent="Jugador/Cabeza/Camera3D" parent_id_path=PackedInt32Array(212553440, 704986019) index="2" unique_id=2048800679]
 transform = Transform3D(-6.556708e-08, -1.5, 0, -1.5, 6.556708e-08, 1.3113416e-07, -1.3113416e-07, 5.7320566e-15, -1.5, 0.09124756, -0.2613846, -22.900015)
@@ -47,10 +47,10 @@ offset_right = 320.0
 offset_bottom = 627.0
 
 [node name="LinternaSuelo" parent="." unique_id=1877330075 instance=ExtResource("4_tgavs")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.293808, 0.24809694, 7.320636)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 56.991203, 12.025541, -38.288708)
 
 [node name="llave" parent="." unique_id=2023737183 instance=ExtResource("6_tbg6u")]
-transform = Transform3D(0, -1, 0, 1, 0, 0, 0, 0, 1, 33.971294, -0.56, 5.401361)
+transform = Transform3D(0, -1, 0, 1, 0, 0, 0, 0, 1, 57.66869, 11.217443, -40.20799)
 
 [node name="puerta" parent="." unique_id=510996679 instance=ExtResource("7_4e3q0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.1302, 1.0043545, 0)
