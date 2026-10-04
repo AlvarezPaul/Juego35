@@ -7,7 +7,7 @@ extends CharacterBody3D
 @export var velocidad_bob: float = 9.0
 
 @export var stamina_maxima: float = 100.0
-@export var consumo_stamina: float = 25.0
+@export var consumo_stamina: float = 100.0 / 10.0
 @export var regen_stamina: float = 15.0
 @export var retraso_regen: float = 1.0
 

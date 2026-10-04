@@ -271,6 +271,16 @@ albedo_color = Color(0.88235295, 0.8, 0.5803922, 1)
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_4sllc"]
 data = PackedVector3Array(-0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, -0.5)
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gbsay"]
+albedo_color = Color(0.76113147, 0.4596663, 0.2632971, 1)
+albedo_texture = ExtResource("3_rpd8f")
+uv1_scale = Vector3(93.42, 8.22, -87.825)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_oaq7t"]
+albedo_color = Color(0.76113147, 0.4596663, 0.2632971, 1)
+albedo_texture = ExtResource("3_rpd8f")
+uv1_scale = Vector3(-41.915, -8.16, -87.825)
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vtg84"]
 albedo_color = Color(0.60400057, 0.57298696, 0.5725251, 1)
 
@@ -2316,7 +2326,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_vfvbr")
 shape = SubResource("ConcavePolygonShape3D_bgooa")
 
 [node name="MeshInstance3D140" type="MeshInstance3D" parent="salon de actos" unique_id=568716368]
-transform = Transform3D(-0.99999994, 0, 8.742277e-08, 0, 4.5050006, 0, -8.742277e-08, 0, -0.99999994, 315.91, 46.428, 238.038)
+transform = Transform3D(-0.99999994, 0, 8.742277e-08, 0, 4.5050006, 0, -8.742277e-08, 0, -0.99999994, 315.91, 46.428, 241.1173)
 mesh = SubResource("CylinderMesh_obec7")
 surface_material_override/0 = SubResource("StandardMaterial3D_vfvbr")
 
@@ -2326,7 +2336,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_vfvbr")
 shape = SubResource("ConcavePolygonShape3D_bgooa")
 
 [node name="MeshInstance3D141" type="MeshInstance3D" parent="salon de actos" unique_id=999140789]
-transform = Transform3D(-0.99999994, 0, 8.742277e-08, 0, 4.5050006, 0, -8.742277e-08, 0, -0.99999994, 292.62875, 48.304935, 214.80875)
+transform = Transform3D(-0.99999994, 0, 8.742277e-08, 0, 4.5050006, 0, -8.742277e-08, 0, -0.99999994, 315.969, 46.428, 195.48271)
 mesh = SubResource("CylinderMesh_obec7")
 surface_material_override/0 = SubResource("StandardMaterial3D_vfvbr")
 
@@ -2336,7 +2346,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_vfvbr")
 shape = SubResource("ConcavePolygonShape3D_bgooa")
 
 [node name="MeshInstance3D142" type="MeshInstance3D" parent="salon de actos" unique_id=1327229900]
-transform = Transform3D(-0.99999994, 0, 8.742277e-08, 0, 4.5050006, 0, -8.742277e-08, 0, -0.99999994, 316.02542, 46.428, 214.871)
+transform = Transform3D(-0.99999994, 0, 8.742277e-08, 0, 4.5050006, 0, -8.742277e-08, 0, -0.99999994, 316.02542, 46.428, 207.51651)
 mesh = SubResource("CylinderMesh_obec7")
 surface_material_override/0 = SubResource("StandardMaterial3D_vfvbr")
 
@@ -2345,8 +2355,28 @@ surface_material_override/0 = SubResource("StandardMaterial3D_vfvbr")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="salon de actos/MeshInstance3D142/StaticBody3D" unique_id=1523469168]
 shape = SubResource("ConcavePolygonShape3D_bgooa")
 
+[node name="MeshInstance3D145" type="MeshInstance3D" parent="salon de actos" unique_id=1818566450]
+transform = Transform3D(-0.99999994, 0, 8.742277e-08, 0, 4.5050006, 0, -8.742277e-08, 0, -0.99999994, 316.02542, 46.428, 219.4943)
+mesh = SubResource("CylinderMesh_obec7")
+surface_material_override/0 = SubResource("StandardMaterial3D_vfvbr")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="salon de actos/MeshInstance3D145" unique_id=1902636288]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="salon de actos/MeshInstance3D145/StaticBody3D" unique_id=770660256]
+shape = SubResource("ConcavePolygonShape3D_bgooa")
+
+[node name="MeshInstance3D146" type="MeshInstance3D" parent="salon de actos" unique_id=911095453]
+transform = Transform3D(-0.99999994, 0, 8.742277e-08, 0, 4.5050006, 0, -8.742277e-08, 0, -0.99999994, 316.02542, 46.428, 230.85796)
+mesh = SubResource("CylinderMesh_obec7")
+surface_material_override/0 = SubResource("StandardMaterial3D_vfvbr")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="salon de actos/MeshInstance3D146" unique_id=464334673]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="salon de actos/MeshInstance3D146/StaticBody3D" unique_id=1079238610]
+shape = SubResource("ConcavePolygonShape3D_bgooa")
+
 [node name="MeshInstance3D143" type="MeshInstance3D" parent="salon de actos" unique_id=1437461497]
-transform = Transform3D(-0.99999994, 0, 8.742277e-08, 0, 4.5050006, 0, -8.742277e-08, 0, -0.99999994, 315.969, 46.428, 187.176)
+transform = Transform3D(-0.99999994, 0, 8.742277e-08, 0, 4.5050006, 0, -8.742277e-08, 0, -0.99999994, 315.969, 46.428, 182.5646)
 mesh = SubResource("CylinderMesh_obec7")
 surface_material_override/0 = SubResource("StandardMaterial3D_vfvbr")
 
@@ -2467,7 +2497,7 @@ shape = SubResource("ConcavePolygonShape3D_e4v1y")
 [node name="MeshInstance3D3" type="MeshInstance3D" parent="." unique_id=420512144]
 transform = Transform3D(380, 0, 0, 0, 1.093, 0, 0, 0, 39.799026, 252.576, 43.256, 153.64114)
 mesh = SubResource("BoxMesh_e4v1y")
-surface_material_override/0 = SubResource("StandardMaterial3D_pkj3c")
+surface_material_override/0 = SubResource("StandardMaterial3D_gbsay")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D3" unique_id=1192336299]
 
@@ -2475,9 +2505,9 @@ surface_material_override/0 = SubResource("StandardMaterial3D_pkj3c")
 shape = SubResource("ConcavePolygonShape3D_e4v1y")
 
 [node name="MeshInstance3D4" type="MeshInstance3D" parent="." unique_id=1063158639]
-transform = Transform3D(-1.3113417e-05, 0, 51.464, 0, 1.093, 0, -300, 0, -2.2495628e-06, 382.769, 43.256, 54.317764)
+transform = Transform3D(-8.584699e-06, 0, 51.464, 0, 1.093, 0, -196.395, 0, -2.2495628e-06, 382.769, 43.256, 36.028564)
 mesh = SubResource("BoxMesh_e4v1y")
-surface_material_override/0 = SubResource("StandardMaterial3D_pkj3c")
+surface_material_override/0 = SubResource("StandardMaterial3D_oaq7t")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D4" unique_id=939719472]
 
@@ -2529,79 +2559,79 @@ surface_material_override/0 = SubResource("StandardMaterial3D_pkj3c")
 shape = SubResource("ConcavePolygonShape3D_e4v1y")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Escaleras" unique_id=1449245011]
-transform = Transform3D(35, 0, 0, 0, 4, 0, 0, 0, 4, 286.76474, -3.6819882, 174.6659)
+transform = Transform3D(40.47, 0, 0, 0, 4, 0, 0, 0, 4, 287.55615, -3.6819882, 174.6659)
 mesh = SubResource("BoxMesh_lxikg")
 
 [node name="MeshInstance3D2" type="MeshInstance3D" parent="Escaleras" unique_id=1169325512]
-transform = Transform3D(35, 0, 0, 0, 4, 0, 0, 0, 4, 286.76474, -1.3678174, 178.63086)
+transform = Transform3D(40.47, 0, 0, 0, 4, 0, 0, 0, 4, 287.55615, -1.3678174, 178.63086)
 mesh = SubResource("BoxMesh_lxikg")
 
 [node name="MeshInstance3D3" type="MeshInstance3D" parent="Escaleras" unique_id=642699906]
-transform = Transform3D(35, 0, 0, 0, 4, 0, 0, 0, 4, 286.76474, 1.1355929, 182.61545)
+transform = Transform3D(40.47, 0, 0, 0, 4, 0, 0, 0, 4, 287.55615, 1.1355929, 182.61545)
 mesh = SubResource("BoxMesh_lxikg")
 
 [node name="MeshInstance3D4" type="MeshInstance3D" parent="Escaleras" unique_id=884528542]
-transform = Transform3D(35, 0, 0, 0, 4, 0, 0, 0, 4, 286.76474, 3.752615, 186.57182)
+transform = Transform3D(40.47, 0, 0, 0, 4, 0, 0, 0, 4, 287.55615, 3.752615, 186.57182)
 mesh = SubResource("BoxMesh_lxikg")
 
 [node name="MeshInstance3D5" type="MeshInstance3D" parent="Escaleras" unique_id=244112216]
-transform = Transform3D(35, 0, 0, 0, 4, 0, 0, 0, 4, 286.76474, 6.061249, 190.38007)
+transform = Transform3D(40.47, 0, 0, 0, 4, 0, 0, 0, 4, 287.55615, 6.061249, 190.38007)
 mesh = SubResource("BoxMesh_lxikg")
 
 [node name="MeshInstance3D12" type="MeshInstance3D" parent="Escaleras" unique_id=643626359]
-transform = Transform3D(35, 0, 0, 0, 4, 0, 0, 0, 4, 286.76474, 8.544296, 194.37769)
+transform = Transform3D(40.47, 0, 0, 0, 4, 0, 0, 0, 4, 287.55615, 8.544296, 194.37769)
 mesh = SubResource("BoxMesh_lxikg")
 
 [node name="MeshInstance3D13" type="MeshInstance3D" parent="Escaleras" unique_id=1883732077]
-transform = Transform3D(35, 0, 0, 0, 4, 0, 0, 0, 4, 286.76474, 10.858467, 198.34265)
+transform = Transform3D(40.47, 0, 0, 0, 4, 0, 0, 0, 4, 287.55615, 10.858467, 198.34265)
 mesh = SubResource("BoxMesh_lxikg")
 
 [node name="MeshInstance3D14" type="MeshInstance3D" parent="Escaleras" unique_id=1687328060]
-transform = Transform3D(35, 0, 0, 0, 4, 0, 0, 0, 4, 286.76474, 13.361877, 202.11397)
+transform = Transform3D(40.47, 0, 0, 0, 4, 0, 0, 0, 4, 287.55615, 13.361877, 202.11397)
 mesh = SubResource("BoxMesh_lxikg")
 
 [node name="MeshInstance3D15" type="MeshInstance3D" parent="Escaleras" unique_id=600281873]
-transform = Transform3D(35, 0, 0, 0, 4, 0, 0, 0, 4, 286.76474, 15.978899, 206.05006)
+transform = Transform3D(40.47, 0, 0, 0, 4, 0, 0, 0, 4, 287.55615, 15.978899, 206.05006)
 mesh = SubResource("BoxMesh_lxikg")
 
 [node name="MeshInstance3D16" type="MeshInstance3D" parent="Escaleras" unique_id=317615258]
-transform = Transform3D(35, 0, 0, 0, 4, 0, 0, 0, 4, 286.76474, 18.287533, 210.02177)
+transform = Transform3D(40.47, 0, 0, 0, 4, 0, 0, 0, 4, 287.55615, 18.287533, 210.02177)
 mesh = SubResource("BoxMesh_lxikg")
 
 [node name="MeshInstance3D6" type="MeshInstance3D" parent="Escaleras" unique_id=384798704]
-transform = Transform3D(35, 0, 0, 0, 4, 0, 0, 0, 4, 286.76474, 20.883442, 213.76619)
+transform = Transform3D(40.47, 0, 0, 0, 4, 0, 0, 0, 4, 287.55615, 20.883442, 213.76619)
 mesh = SubResource("BoxMesh_lxikg")
 
 [node name="MeshInstance3D8" type="MeshInstance3D" parent="Escaleras" unique_id=1559843666]
-transform = Transform3D(35, 0, 0, 0, 4, 0, 0, 0, 4, 286.76474, 23.197613, 217.73116)
+transform = Transform3D(40.47, 0, 0, 0, 4, 0, 0, 0, 4, 287.55615, 23.197613, 217.73116)
 mesh = SubResource("BoxMesh_lxikg")
 
 [node name="MeshInstance3D9" type="MeshInstance3D" parent="Escaleras" unique_id=1573171935]
-transform = Transform3D(35, 0, 0, 0, 4, 0, 0, 0, 4, 286.76474, 25.701023, 221.71574)
+transform = Transform3D(40.47, 0, 0, 0, 4, 0, 0, 0, 4, 287.55615, 25.701023, 221.71574)
 mesh = SubResource("BoxMesh_lxikg")
 
 [node name="MeshInstance3D10" type="MeshInstance3D" parent="Escaleras" unique_id=955703086]
-transform = Transform3D(35, 0, 0, 0, 4, 0, 0, 0, 4, 286.76474, 28.318045, 225.67212)
+transform = Transform3D(40.47, 0, 0, 0, 4, 0, 0, 0, 4, 287.55615, 28.318045, 225.67212)
 mesh = SubResource("BoxMesh_lxikg")
 
 [node name="MeshInstance3D11" type="MeshInstance3D" parent="Escaleras" unique_id=1467714975]
-transform = Transform3D(35, 0, 0, 0, 4, 0, 0, 0, 4, 286.76474, 30.626678, 229.48036)
+transform = Transform3D(40.47, 0, 0, 0, 4, 0, 0, 0, 4, 287.55615, 30.626678, 229.48036)
 mesh = SubResource("BoxMesh_lxikg")
 
 [node name="MeshInstance3D17" type="MeshInstance3D" parent="Escaleras" unique_id=580423414]
-transform = Transform3D(35, 0, 0, 0, 4, 0, 0, 0, 4, 286.76474, 33.109726, 233.47798)
+transform = Transform3D(40.47, 0, 0, 0, 4, 0, 0, 0, 4, 287.55615, 33.109726, 233.47798)
 mesh = SubResource("BoxMesh_lxikg")
 
 [node name="MeshInstance3D18" type="MeshInstance3D" parent="Escaleras" unique_id=571630823]
-transform = Transform3D(35, 0, 0, 0, 4, 0, 0, 0, 4, 286.76474, 35.423897, 237.44295)
+transform = Transform3D(40.47, 0, 0, 0, 4, 0, 0, 0, 4, 287.55615, 35.423897, 237.44295)
 mesh = SubResource("BoxMesh_lxikg")
 
 [node name="MeshInstance3D19" type="MeshInstance3D" parent="Escaleras" unique_id=12602084]
-transform = Transform3D(35, 0, 0, 0, 4, 0, 0, 0, 4, 286.76474, 37.927307, 241.21426)
+transform = Transform3D(40.47, 0, 0, 0, 4, 0, 0, 0, 4, 287.55615, 37.927307, 241.21426)
 mesh = SubResource("BoxMesh_lxikg")
 
 [node name="MeshInstance3D20" type="MeshInstance3D" parent="Escaleras" unique_id=597075020]
-transform = Transform3D(35, 0, 0, 0, 4, 0, 0, 0, 4, 286.76474, 40.54433, 245.15036)
+transform = Transform3D(40.47, 0, 0, 0, 4, 0, 0, 0, 4, 287.55615, 40.54433, 245.15036)
 mesh = SubResource("BoxMesh_lxikg")
 
 [node name="MeshInstance3D21" type="MeshInstance3D" parent="Escaleras" unique_id=479092660]

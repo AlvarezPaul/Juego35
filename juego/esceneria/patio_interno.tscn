@@ -3,8 +3,8 @@
 [ext_resource type="Texture2D" uid="uid://feybsjugp3tr" path="res://fotos/texturapiso.jpg" id="1_yqd0h"]
 [ext_resource type="PackedScene" uid="uid://c3hgvbmrr2guo" path="res://glb_modelos/check.glb" id="2_7hvex"]
 [ext_resource type="PackedScene" uid="uid://sinu6yp0j0x7" path="res://esceneria/aula_chica.tscn" id="2_unogn"]
-[ext_resource type="PackedScene" uid="uid://codssy2nwpu2e" path="res://glb_modelos/quaternius_cc0-common-tree-836.glb" id="3_unogn"]
 [ext_resource type="PackedScene" uid="uid://beg6i8m42k74w" path="res://esceneria/banquito.tscn" id="4_dxm14"]
+[ext_resource type="PackedScene" uid="uid://qbhejj0ecp3f" path="res://esceneria/arbolito.tscn" id="5_yqd0h"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_f6o33"]
 
@@ -537,9 +537,6 @@ surface_material_override/0 = SubResource("StandardMaterial3D_7hvex")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D50/StaticBody3D" unique_id=733851140]
 shape = SubResource("ConcavePolygonShape3D_dxm14")
 
-[node name="quaternius_cc0-common-tree-836" parent="." unique_id=1768786938 instance=ExtResource("3_unogn")]
-transform = Transform3D(8.728819, 0, -19.006445, 0, 20.914999, 0, 19.006445, 0, 8.728819, 44.531452, 10.115754, -65.39992)
-
 [node name="banquito" parent="." unique_id=301408409 instance=ExtResource("4_dxm14")]
 transform = Transform3D(9.67, 0, 0, 0, 9.67, 0, 0, 0, 9.67, 35.715683, 1.6928002, 88.9367)
 
@@ -563,5 +560,8 @@ transform = Transform3D(-4.2268914e-07, 0, 9.67, 0, 9.67, 0, -9.67, 0, -4.226891
 
 [node name="banquito8" parent="." unique_id=477862181 instance=ExtResource("4_dxm14")]
 transform = Transform3D(-4.2268914e-07, 0, 9.67, 0, 9.67, 0, -9.67, 0, -4.2268914e-07, -109.41442, 1.6928002, -52.357475)
+
+[node name="quaternius_cc0-common-tree-836" parent="." unique_id=1768786938 instance=ExtResource("5_yqd0h")]
+transform = Transform3D(5.059797, 0, -20.293736, 0, 20.915, 0, 20.293736, 0, 5.059797, 44.491512, 10.579429, -64.86946)
 
 [editable path="check"]
