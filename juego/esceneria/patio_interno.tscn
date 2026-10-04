@@ -339,7 +339,7 @@ transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 155.
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 155.699, 4.991, -45.42)
 
 [node name="MeshInstance3D32" type="MeshInstance3D" parent="." unique_id=2050041760]
-transform = Transform3D(-1.1998776e-06, 0, 1, 0, 39.115, 0, -27.45, 0, -4.371139e-08, 115.193, 17.949186, -80.36812)
+transform = Transform3D(-1.097593e-06, 0, 1, 0, 39.115, 0, -25.11, 0, -4.371139e-08, 115.193, 17.949, -80.371)
 mesh = SubResource("BoxMesh_3pbdm")
 surface_material_override/0 = SubResource("StandardMaterial3D_7hvex")
 
