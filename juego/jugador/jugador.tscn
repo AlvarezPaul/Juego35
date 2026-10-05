@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://bavenhmlmlucf" path="res://glb_modelos/linterna.glb" id="3_a407c"]
 [ext_resource type="AudioStream" uid="uid://c3dk14l03w00u" path="res://jugador/Walk On Concrete - Sound Effect for editing.mp3" id="3_im34r"]
 [ext_resource type="Script" uid="uid://cmtodncvxsra2" path="res://jugador/ray_cast_3d.gd" id="4_xreb1"]
+[ext_resource type="PackedScene" uid="uid://cjh7u2io5d7mc" path="res://items/ganzua.tscn" id="5_uo3ig"]
 [ext_resource type="PackedScene" uid="uid://b3x7splwvmv2t" path="res://MenuEsc/MenuPausa.tscn" id="5_vu2ya"]
 [ext_resource type="PackedScene" uid="uid://fujo4jxvrmdd" path="res://inventario/escenainve.tscn" id="6_inv01"]
 [ext_resource type="PackedScene" uid="uid://bwcjyqarbdklt" path="res://inventario/llave.tscn" id="8_yl2o6"]
@@ -52,7 +53,11 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_tkcrs")
 transform = Transform3D(1.5, -2.2649371e-07, 2.2649371e-07, -2.2649371e-07, -1.5, 4.0657583e-21, 2.2649371e-07, -3.4199606e-14, -1.5, 0.43832842, -0.259502, -0.43518722)
 
 [node name="llave" parent="Cabeza/Camera3D" unique_id=2048800679 instance=ExtResource("8_yl2o6")]
-transform = Transform3D(1.5, 0, -6.556708e-08, -6.556708e-08, 2.8660283e-15, -1.5, 0, 1.5, 2.8660283e-15, 0.5750686, -0.2613846, -1.121706)
+transform = Transform3D(1.5, 0, -6.556708e-08, -6.556708e-08, 2.8660283e-15, -1.5, 0, 1.5, 2.8660283e-15, 0.5750686, -0.2613846, -0.7567798)
+
+[node name="ganzua" parent="Cabeza/Camera3D" unique_id=1006482489 instance=ExtResource("5_uo3ig")]
+transform = Transform3D(-1, -8.742278e-08, 3.821371e-15, 0, -4.371139e-08, -1, 8.742278e-08, -1, 4.371139e-08, 0.594, -0.303, -0.55)
+visible = false
 
 [node name="SpotLight3D" type="SpotLight3D" parent="Cabeza/Camera3D" unique_id=1591149388]
 transform = Transform3D(1, 0, 0, 0, 1, 4.743386e-22, 0, -4.743386e-22, 1, 0.4393829, -0.25113702, -1.1017106)

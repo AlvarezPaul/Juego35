@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://nn6vmtjii8aw"
-path="res://.godot/imported/images.jpg-f7d4156f3f458bd1cb3208941b9555ef.ctex"
+uid="uid://cyshstyms8hlx"
+path="res://.godot/imported/ganzua.jpg-a0706e4677a01924209d17fb0836edf7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://inventario/images.jpg"
-dest_files=["res://.godot/imported/images.jpg-f7d4156f3f458bd1cb3208941b9555ef.ctex"]
+source_file="res://inventario/ganzua.jpg"
+dest_files=["res://.godot/imported/ganzua.jpg-a0706e4677a01924209d17fb0836edf7.ctex"]
 
 [params]
 

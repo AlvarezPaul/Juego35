@@ -1,8 +1,8 @@
-[gd_scene format=3 uid="uid://bwcjyqarbdklt"]
+[gd_scene format=3 uid="uid://dritbipkbhcpd"]
 
-[ext_resource type="ArrayMesh" uid="uid://cd0ll4u3r32q6" path="res://salas/key.obj" id="1_7bknt"]
-[ext_resource type="Script" uid="uid://bti2i5yeismck" path="res://inventario/caealsuelo.gd" id="1_cr5s1"]
-[ext_resource type="Texture2D" uid="uid://biavhjorb8j16" path="res://inventario/images.jpg" id="3_icono"]
+[ext_resource type="Script" uid="uid://bti2i5yeismck" path="res://inventario/caealsuelo.gd" id="1_q5oiw"]
+[ext_resource type="Texture2D" uid="uid://biavhjorb8j16" path="res://inventario/images.jpg" id="2_3qhsm"]
+[ext_resource type="ArrayMesh" uid="uid://cd0ll4u3r32q6" path="res://salas/key.obj" id="3_eu11u"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tbg6u"]
 albedo_color = Color(0.78, 0.62, 0.22, 1)
@@ -15,14 +15,14 @@ size = Vector3(0.3, 0.9, 0.45)
 [node name="Llave" type="Node3D" unique_id=2048800679]
 
 [node name="Area3D" type="Area3D" parent="." unique_id=1755348829]
-script = ExtResource("1_cr5s1")
+script = ExtResource("1_q5oiw")
 nombre_item = "Llave"
-icono = ExtResource("3_icono")
+icono = ExtResource("2_3qhsm")
 
 [node name="Key" type="MeshInstance3D" parent="Area3D" unique_id=1287634691]
 transform = Transform3D(0.0063693, 0, 0, 0, 0.0063693, 0, 0, 0, 0.0063693, 0, -0.015556, 0.003691)
 material_override = SubResource("StandardMaterial3D_tbg6u")
-mesh = ExtResource("1_7bknt")
+mesh = ExtResource("3_eu11u")
 skeleton = NodePath("../..")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=396685222]

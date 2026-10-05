@@ -30,6 +30,7 @@ extends CharacterBody3D
 @onready var modelo_linterna: Node3D = $Cabeza/Camera3D/linterna
 @onready var modelo_llave: Node3D = $Cabeza/Camera3D/llave
 @onready var sonido_linterna: AudioStreamPlayer3D = $linterna
+@onready var modelo_ganzua: Node3D = $Cabeza/Camera3D/ganzua
 
 var _posicion_camara_inicial: Vector3
 var _tiempo_bob: float = 0.0
@@ -82,6 +83,16 @@ func _preparar_llave_en_mano() -> void:
 
 	modelo_llave.visible = false
 
+func _preparar_ganzua_en_mano() -> void:
+	# La ganzúa de la mano no debe poder ser "mirada" ni agarrada por el RayCast.
+	var area := modelo_ganzua.get_node_or_null("Area3D") as Area3D
+	if area != null:
+		area.collision_layer = 0
+		area.collision_mask = 0
+		area.monitoring = false
+		area.monitorable = false
+
+	modelo_ganzua.visible = false
 
 func _agregar_item_inicial() -> void:
 	inventario_ui = get_tree().get_first_node_in_group("inventario")
@@ -151,6 +162,7 @@ func _actualizar_item_en_mano(_numero: int) -> void:
 	var es_linterna := nombre == "Linterna"
 	modelo_linterna.visible = es_linterna
 	modelo_llave.visible = nombre == "Llave"
+	modelo_ganzua.visible = nombre == "Ganzua"
 
 	if not es_linterna:
 		luz_linterna.visible = false

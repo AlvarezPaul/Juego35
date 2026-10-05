@@ -30,7 +30,12 @@ data = PackedVector3Array(-0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pkj3c"]
 albedo_color = Color(0.76113147, 0.4596663, 0.2632971, 1)
 albedo_texture = ExtResource("3_rpd8f")
-uv1_scale = Vector3(-12.365, -64.295, -87.825)
+uv1_scale = Vector3(10, 35, 10)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gbsay"]
+albedo_color = Color(0.76113147, 0.4596663, 0.2632971, 1)
+albedo_texture = ExtResource("3_rpd8f")
+uv1_scale = Vector3(10, 70, 10)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fdlrj"]
 albedo_color = Color(0.88117886, 0.7995965, 0.5803532, 1)
@@ -367,7 +372,7 @@ shape = SubResource("ConcavePolygonShape3D_e4v1y")
 [node name="MeshInstance3D53" type="MeshInstance3D" parent="pasillo (salon)" unique_id=857186660]
 transform = Transform3D(-2.100772e-06, 0, 440.4294, 0, 1.093, 0, -48.060062, 0, -1.925178e-05, 231.4689, 43.256016, -85.73593)
 mesh = SubResource("BoxMesh_e4v1y")
-surface_material_override/0 = SubResource("StandardMaterial3D_pkj3c")
+surface_material_override/0 = SubResource("StandardMaterial3D_gbsay")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="pasillo (salon)/MeshInstance3D53" unique_id=1311376222]
 
@@ -2679,7 +2684,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_bgooa")
 shape = SubResource("ConcavePolygonShape3D_6tvaq")
 
 [node name="MeshInstance3D47" type="MeshInstance3D" parent="." unique_id=1092865671]
-transform = Transform3D(82.8, 0, 0, 0, 20.443, 0, 0, 0, 6.444, 363.0657, 31.404984, -48.034317)
+transform = Transform3D(82.8, 0, 0, 0, 20.443, 0, 0, 0, 1.4884481, 363.0657, 31.404984, -50.47412)
 mesh = SubResource("BoxMesh_pkj3c")
 surface_material_override/0 = SubResource("StandardMaterial3D_bgooa")
 

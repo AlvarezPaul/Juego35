@@ -1,4 +1,3 @@
-
 extends StaticBody3D
 
 var abierto = false

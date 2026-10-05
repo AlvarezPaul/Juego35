@@ -2,7 +2,7 @@
 
 [ext_resource type="AudioStream" uid="uid://ctscdktps5mq" path="res://puerta/dragon-studio-opening-door-450444.mp3" id="1_tb87v"]
 [ext_resource type="AudioStream" uid="uid://tirloem7686m" path="res://puerta/dragon-studio-close-door-382723.mp3" id="2_jjh2y"]
-[ext_resource type="Script" uid="uid://cj50hj5ssc568" path="res://puerta/modeloblo.gd" id="3_eyd3d"]
+[ext_resource type="Script" uid="uid://bkrtxmuff8lcb" path="res://puerta/puerta_banio.gd" id="3_eyd3d"]
 
 [sub_resource type="Animation" id="Animation_4k5d8"]
 length = 0.001

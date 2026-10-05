@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://l3360f65cyou" path="res://salas/linterna_suelo.tscn" id="4_tgavs"]
 [ext_resource type="PackedScene" uid="uid://bwcjyqarbdklt" path="res://inventario/llave.tscn" id="6_tbg6u"]
 [ext_resource type="PackedScene" uid="uid://sth73yxvt5tl" path="res://puerta/puerta_llave.tscn" id="7_4e3q0"]
+[ext_resource type="PackedScene" uid="uid://cjh7u2io5d7mc" path="res://items/ganzua.tscn" id="8_rvme7"]
 
 [sub_resource type="Environment" id="Environment_pvkkf"]
 background_mode = 1
@@ -62,10 +63,13 @@ offset_bottom = 627.0
 transform = Transform3D(-0.94551855, 0.034031056, 0.32378462, 8.694387e-08, -0.9945219, 0.10452845, 0.32556814, 0.098833635, 0.9403388, 48.437687, 11.965571, -35.489388)
 
 [node name="llave" parent="." unique_id=2023737183 instance=ExtResource("6_tbg6u")]
-transform = Transform3D(0, -1, 0, 1, 0, 0, 0, 0, 1, 66.08973, -0.10783714, -9.026065)
+transform = Transform3D(0, -1, 0, 1, 0, 0, 0, 0, 1, 60.362663, 11.124678, -37.177883)
 
 [node name="puerta" parent="." unique_id=510996679 instance=ExtResource("7_4e3q0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.1302, 1.0043545, 0)
+
+[node name="ganzua" parent="." unique_id=1006482489 instance=ExtResource("8_rvme7")]
+transform = Transform3D(1.9106855e-15, -4.371139e-08, 1, -1, -4.371139e-08, 0, 4.371139e-08, -1, -4.371139e-08, 52.73694, 11.017213, -46.206028)
 
 [editable path="Jugador"]
 [editable path="Jugador/Cabeza/Camera3D/linterna"]

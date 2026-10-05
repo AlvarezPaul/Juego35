@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://mmmok66usadm" path="res://inventario/inventario.gd" id="1_6gaym"]
 [ext_resource type="Texture2D" uid="uid://b8ipk7mypr224" path="res://Interfaz/inventario/descarga.jpg" id="2_alj7c"]
-[ext_resource type="Texture2D" uid="uid://biavhjorb8j16" path="res://inventario/images.jpg" id="3_jh551"]
+[ext_resource type="Texture2D" uid="uid://nn6vmtjii8aw" path="res://inventario/images.jpg" id="3_jh551"]
 
 [node name="Inventario" type="Node2D" unique_id=445011503]
 script = ExtResource("1_6gaym")
@@ -97,6 +97,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+expand_mode = 2
 
 [node name="Label" type="Label" parent="Control/HBoxContainer/Panel3/TextureRect" unique_id=489324414]
 layout_mode = 0
@@ -124,6 +125,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+expand_mode = 2
 
 [node name="Label" type="Label" parent="Control/HBoxContainer/Panel4/TextureRect" unique_id=2134136019]
 layout_mode = 0

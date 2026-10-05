@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://cq3yxkgy04gd4" path="res://glb_modelos/quaternius_cc0-toilet-676.glb" id="1_46w4g"]
 [ext_resource type="PackedScene" uid="uid://jue686qpl16m" path="res://puerta/puerta_banio.tscn" id="1_j81xu"]
 [ext_resource type="PackedScene" uid="uid://b42hf1ayd4kt" path="res://puerta/puerta_inodoro.tscn" id="2_a8akp"]
+[ext_resource type="Texture2D" uid="uid://feybsjugp3tr" path="res://fotos/texturapiso.jpg" id="2_wqt78"]
 [ext_resource type="Texture2D" uid="uid://db3u55618ac52" path="res://fotos/aa.png" id="4_nfqsi"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nfqsi"]
@@ -22,10 +23,16 @@ data = PackedVector3Array(0.5434, 0.91859996, 0.2061, -0.4696, 0.91859996, 0.446
 [sub_resource type="BoxMesh" id="BoxMesh_f6o33"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6xc37"]
-albedo_color = Color(0.92941177, 0.5803922, 0.26666668, 1)
+albedo_color = Color(0.7607843, 0.45882353, 0.2627451, 1)
+albedo_texture = ExtResource("2_wqt78")
+uv1_scale = Vector3(20, 20, 20)
 
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_igide"]
 data = PackedVector3Array(-0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gaxx6"]
+albedo_color = Color(0.7607843, 0.45882353, 0.2627451, 1)
+uv1_scale = Vector3(10, 10, 10)
 
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_gaxx6"]
 data = PackedVector3Array(-0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, -0.5)
@@ -270,7 +277,7 @@ shape = SubResource("ConcavePolygonShape3D_igide")
 transform = Transform3D(30.54642, 0, 0, 0, 0.5, 0, 0, 0, 41.62016, -5.2941227, 15.337504, -6.3800163)
 mesh = SubResource("BoxMesh_f6o33")
 skeleton = NodePath("../..")
-surface_material_override/0 = SubResource("StandardMaterial3D_6xc37")
+surface_material_override/0 = SubResource("StandardMaterial3D_gaxx6")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="estructura/MeshInstance3D2" unique_id=1064935024]
 

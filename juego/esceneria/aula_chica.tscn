@@ -1,5 +1,6 @@
 [gd_scene format=4 uid="uid://sinu6yp0j0x7"]
 
+[ext_resource type="Texture2D" uid="uid://feybsjugp3tr" path="res://fotos/texturapiso.jpg" id="1_b00sv"]
 [ext_resource type="PackedScene" uid="uid://byjaehmv1t72i" path="res://puerta/puerta.tscn" id="1_x1r6v"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nkf3c"]
@@ -42,6 +43,8 @@ shadow_mesh = SubResource("ArrayMesh_6jy1f")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_par7l"]
 albedo_color = Color(0.9295276, 0.581052, 0.2668881, 1)
+albedo_texture = ExtResource("1_b00sv")
+uv1_scale = Vector3(25, 25, 25)
 
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_xjnri"]
 data = PackedVector3Array(1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, 1, 1, 1, -1, 1, 1, 1, -1, 1, -1, 1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, 1, -1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1, -1, -1, 1, 1, -1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, 1, 1, 1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, -1)
