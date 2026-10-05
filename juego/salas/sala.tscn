@@ -34,11 +34,12 @@ offset_left = 0.0
 offset_top = 0.0
 offset_right = 0.0
 offset_bottom = 0.0
+metadata/_edit_use_anchors_ = true
 
 [node name="llave" parent="Jugador/Cabeza/Camera3D" parent_id_path=PackedInt32Array(212553440, 704986019) index="2" unique_id=2048800679]
 transform = Transform3D(-6.556708e-08, -1.5, 0, -1.5, 6.556708e-08, 1.3113416e-07, -1.3113416e-07, 5.7320566e-15, -1.5, 0.09124756, -0.2613846, -22.900015)
 
-[node name="SpotLight3D" parent="Jugador/Cabeza/Camera3D" parent_id_path=PackedInt32Array(212553440, 704986019) index="3" unique_id=1591149388]
+[node name="SpotLight3D" parent="Jugador/Cabeza/Camera3D" parent_id_path=PackedInt32Array(212553440, 704986019) index="4" unique_id=1591149388]
 transform = Transform3D(1, 0, 0, 0, 1, 4.743386e-22, 0, -4.743386e-22, 1, 0.45625687, -0.24910295, -0.70774746)
 light_color = Color(1, 1, 0.7647059, 1)
 light_energy = 3.333
@@ -54,10 +55,11 @@ follow_viewport_enabled = true
 script = ExtResource("3_tgavs")
 
 [node name="BarraStamina" type="ProgressBar" parent="CanvasLayer" unique_id=654527658]
-offset_left = 20.0
-offset_top = 600.0
-offset_right = 320.0
-offset_bottom = 627.0
+offset_left = 24.0
+offset_top = 650.0
+offset_right = 324.0
+offset_bottom = 677.0
+metadata/_edit_use_anchors_ = true
 
 [node name="LinternaSuelo" parent="." unique_id=1877330075 instance=ExtResource("4_tgavs")]
 transform = Transform3D(-0.94551855, 0.034031056, 0.32378462, 8.694387e-08, -0.9945219, 0.10452845, 0.32556814, 0.098833635, 0.9403388, 48.437687, 11.965571, -35.489388)

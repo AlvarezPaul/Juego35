@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://1y82ytyl00pp"]
 
 [ext_resource type="FontFile" uid="uid://ocuqailjsal3" path="res://Fuentes/StayDrips-Regular.otf" id="1_u4kum"]
-[ext_resource type="FontFile" uid="uid://blju0ku40nkwn" path="res://Fuentes/Bonechiller Free.otf" id="2_mon12"]
+[ext_resource type="FontFile" uid="uid://blju0ku40nkwn" path="res://Interfaz/Fuentes/Bonechiller Free.otf" id="2_mon12"]
 [ext_resource type="Script" uid="uid://cdvfbej5sosp" path="res://UI/pantcompleta.gd" id="2_qgyvf"]
 [ext_resource type="Script" uid="uid://dr6ldu5lrqu27" path="res://UI/volverdeaj.gd" id="3_p1khp"]
 [ext_resource type="PackedScene" uid="uid://dav4xsf5v0vn1" path="res://UI/barra_sonidos.tscn" id="4_56yal"]
@@ -80,14 +80,15 @@ layout_mode = 0
 offset_left = -4.0
 offset_right = 1148.0
 offset_bottom = 643.0
+metadata/_edit_use_anchors_ = true
 
 [node name="Cont de Sliders y CheckBox" type="VBoxContainer" parent="Panel" unique_id=1674673960]
 layout_mode = 0
-offset_left = 590.0
-offset_top = 205.0
-offset_right = 803.0
-offset_bottom = 401.0
-theme_override_constants/separation = 37
+offset_left = 620.67523
+offset_top = 202.4416
+offset_right = 833.67523
+offset_bottom = 481.4416
+theme_override_constants/separation = 65
 
 [node name="barra_sonidos" parent="Panel/Cont de Sliders y CheckBox" unique_id=1664845339 instance=ExtResource("4_56yal")]
 layout_mode = 2
@@ -128,6 +129,7 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_f6o33")
 text = "Ajustes"
 horizontal_alignment = 1
 vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
 
 [node name="volver" type="Button" parent="Panel" unique_id=1703907111]
 layout_mode = 0
@@ -142,14 +144,15 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_56yal")
 theme_override_styles/hover = SubResource("StyleBoxFlat_oxxd6")
 text = "Volver"
 script = ExtResource("3_p1khp")
+metadata/_edit_use_anchors_ = true
 
 [node name="Textos" type="VBoxContainer" parent="Panel" unique_id=519686304]
 layout_mode = 0
-offset_left = 279.0
-offset_top = 198.0
-offset_right = 562.0
-offset_bottom = 394.0
-theme_override_constants/separation = 20
+offset_left = 316.95218
+offset_top = 192.44449
+offset_right = 599.95215
+offset_bottom = 478.4445
+theme_override_constants/separation = 50
 
 [node name="Label2" type="Label" parent="Panel/Textos" unique_id=324615397]
 layout_mode = 2
@@ -157,7 +160,7 @@ theme_override_constants/outline_size = 7
 theme_override_fonts/font = ExtResource("5_oxxd6")
 theme_override_font_sizes/font_size = 25
 theme_override_styles/normal = SubResource("StyleBoxFlat_cjdqc")
-text = "Sonido"
+text = "Sonido General"
 horizontal_alignment = 1
 vertical_alignment = 1
 

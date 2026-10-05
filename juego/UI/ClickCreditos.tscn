@@ -2,10 +2,8 @@
 
 [ext_resource type="Script" uid="uid://dr6ldu5lrqu27" path="res://UI/volverdeaj.gd" id="2_qc2no"]
 [ext_resource type="FontFile" uid="uid://cdu7dgetstelv" path="res://Fuentes/trebuc.ttf" id="4_qc2no"]
-[ext_resource type="FontFile" uid="uid://blju0ku40nkwn" path="res://Fuentes/Bonechiller Free.otf" id="4_skinw"]
-[ext_resource type="FontFile" uid="uid://8gmyxd0sc518" path="res://Fuentes/ghoulish_fright_aoe/Truetype/GhoulFriAOE.ttf" id="5_l15ch"]
+[ext_resource type="FontFile" uid="uid://blju0ku40nkwn" path="res://Interfaz/Fuentes/Bonechiller Free.otf" id="4_skinw"]
 [ext_resource type="Texture2D" uid="uid://cgstjq687v5ae" path="res://fotos/et35logo.png" id="6_l15ch"]
-[ext_resource type="PackedScene" uid="uid://dav4xsf5v0vn1" path="res://UI/barra_sonidos.tscn" id="6_q8ctp"]
 [ext_resource type="AudioStream" uid="uid://pogmuy6woqyo" path="res://UI/click.mp3" id="8_l15ch"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qc2no"]
@@ -76,16 +74,17 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_l15ch")
 theme_override_styles/hover = SubResource("StyleBoxFlat_j2evt")
 text = "Volver"
 script = ExtResource("2_qc2no")
+metadata/_edit_use_anchors_ = true
 
 [node name="Label" type="Label" parent="." unique_id=2016479838]
 layout_mode = 1
-offset_left = 117.0
-offset_top = 29.0
-offset_right = 1105.0
-offset_bottom = 174.0
-theme_override_constants/outline_size = 11
+offset_left = 37.0
+offset_top = 65.0
+offset_right = 1025.0
+offset_bottom = 210.0
+theme_override_constants/outline_size = 16
 theme_override_fonts/font = ExtResource("4_qc2no")
-theme_override_font_sizes/font_size = 60
+theme_override_font_sizes/font_size = 65
 text = "Hecho por alumnos de la 
 Escuela Técnica N°35"
 vertical_alignment = 1
@@ -97,14 +96,15 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -559.0
-offset_top = -100.0
-offset_right = -129.0
-offset_bottom = 328.0
+offset_left = -639.0
+offset_top = -108.0
+offset_right = -138.0
+offset_bottom = 320.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 10
-theme_override_fonts/font = ExtResource("5_l15ch")
+theme_override_fonts/font = ExtResource("4_qc2no")
 theme_override_font_sizes/font_size = 65
 text = "Ignacio Saavedra
 Manuel Proserpio
@@ -112,24 +112,16 @@ Paúl Álvarez
 Benjamín Arregui
 Ian Findlay"
 vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=765982884]
 layout_mode = 0
-offset_left = 1205.0
-offset_top = 45.0
-offset_right = 1314.0
-offset_bottom = 173.0
+offset_left = 777.0
+offset_top = 48.0
+offset_right = 935.0
+offset_bottom = 230.0
 texture = ExtResource("6_l15ch")
 expand_mode = 1
-
-[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=2068286232]
-
-[node name="barra_sonidos" parent="CanvasLayer" unique_id=1664845339 instance=ExtResource("6_q8ctp")]
-custom_minimum_size = Vector2(0, 0)
-custom_maximum_size = Vector2(0, 0)
-offset_left = -212.0
-offset_right = -212.0
-offset_bottom = 582.0
 
 [node name="Click" type="AudioStreamPlayer" parent="." unique_id=2119150274]
 stream = ExtResource("8_l15ch")
