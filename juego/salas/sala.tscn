@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://bwcjyqarbdklt" path="res://inventario/llave.tscn" id="6_tbg6u"]
 [ext_resource type="PackedScene" uid="uid://sth73yxvt5tl" path="res://puerta/puerta_llave.tscn" id="7_4e3q0"]
 [ext_resource type="PackedScene" uid="uid://cjh7u2io5d7mc" path="res://items/ganzua.tscn" id="8_rvme7"]
+[ext_resource type="PackedScene" uid="uid://hu1wjlyx3h6x" path="res://tacho.tscn" id="9_dpq4x"]
 
 [sub_resource type="Environment" id="Environment_pvkkf"]
 background_mode = 1
@@ -38,7 +39,7 @@ offset_bottom = 0.0
 [node name="llave" parent="Jugador/Cabeza/Camera3D" parent_id_path=PackedInt32Array(212553440, 704986019) index="2" unique_id=2048800679]
 transform = Transform3D(-6.556708e-08, -1.5, 0, -1.5, 6.556708e-08, 1.3113416e-07, -1.3113416e-07, 5.7320566e-15, -1.5, 0.09124756, -0.2613846, -22.900015)
 
-[node name="SpotLight3D" parent="Jugador/Cabeza/Camera3D" parent_id_path=PackedInt32Array(212553440, 704986019) index="3" unique_id=1591149388]
+[node name="SpotLight3D" parent="Jugador/Cabeza/Camera3D" parent_id_path=PackedInt32Array(212553440, 704986019) index="4" unique_id=1591149388]
 transform = Transform3D(1, 0, 0, 0, 1, 4.743386e-22, 0, -4.743386e-22, 1, 0.45625687, -0.24910295, -0.70774746)
 light_color = Color(1, 1, 0.7647059, 1)
 light_energy = 3.333
@@ -63,13 +64,16 @@ offset_bottom = 627.0
 transform = Transform3D(-0.94551855, 0.034031056, 0.32378462, 8.694387e-08, -0.9945219, 0.10452845, 0.32556814, 0.098833635, 0.9403388, 48.437687, 11.965571, -35.489388)
 
 [node name="llave" parent="." unique_id=2023737183 instance=ExtResource("6_tbg6u")]
-transform = Transform3D(0, -1, 0, 1, 0, 0, 0, 0, 1, 60.362663, 11.124678, -37.177883)
+transform = Transform3D(0, -1, 0, 1, 0, 0, 0, 0, 1, 7.4958744, -0.9984191, 32.66806)
 
 [node name="puerta" parent="." unique_id=510996679 instance=ExtResource("7_4e3q0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.1302, 1.0043545, 0)
 
 [node name="ganzua" parent="." unique_id=1006482489 instance=ExtResource("8_rvme7")]
-transform = Transform3D(1.9106855e-15, -4.371139e-08, 1, -1, -4.371139e-08, 0, 4.371139e-08, -1, -4.371139e-08, 52.73694, 11.017213, -46.206028)
+transform = Transform3D(3.018883e-15, -6.9063994e-08, 1.58, -1.58, -6.9063994e-08, 0, 6.9063994e-08, -1.58, -6.9063994e-08, 61.532516, 12.2890215, -33.80005)
+
+[node name="tacho" parent="." unique_id=1882633849 instance=ExtResource("9_dpq4x")]
+transform = Transform3D(2.5, 0, 0, 0, 2.5, 0, 0, 0, 2.5, 61.529045, 11, -33.745834)
 
 [editable path="Jugador"]
 [editable path="Jugador/Cabeza/Camera3D/linterna"]

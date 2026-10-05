@@ -215,7 +215,7 @@ albedo_color = Color(0.7989165, 0.7045978, 0.45038158, 1)
 [node name="inodoro" parent="." unique_id=1190789017 instance=ExtResource("1_46w4g")]
 transform = Transform3D(1, 0, 0, 0, 0.99999976, 0, -2.1316282e-14, 0, 1, -8.171913, 2.1110282, -9.775371)
 
-[node name="Bathroom_Toilet" parent="inodoro" index="0" unique_id=2060721250]
+[node name="Bathroom_Toilet" parent="inodoro" index="0" unique_id=724478187]
 transform = Transform3D(-8.742278e-08, 0, 2, 0, 2, 0, -2, 0, -8.742278e-08, -10.436644, -1.888061, 0)
 surface_material_override/0 = SubResource("StandardMaterial3D_nfqsi")
 
@@ -227,7 +227,7 @@ shape = SubResource("ConcavePolygonShape3D_46w4g")
 [node name="inodoro2" parent="." unique_id=1103507666 instance=ExtResource("1_46w4g")]
 transform = Transform3D(1, 0, 0, 0, 0.99999976, 0, -2.1316282e-14, 0, 1, -8.171913, 2.1110282, -16.891373)
 
-[node name="Bathroom_Toilet" parent="inodoro2" index="0" unique_id=2060721250]
+[node name="Bathroom_Toilet" parent="inodoro2" index="0" unique_id=724478187]
 transform = Transform3D(-8.742278e-08, 0, 2, 0, 2, 0, -2, 0, -8.742278e-08, -10.436644, -1.888061, 0)
 surface_material_override/0 = SubResource("StandardMaterial3D_nfqsi")
 
@@ -239,7 +239,7 @@ shape = SubResource("ConcavePolygonShape3D_nfqsi")
 [node name="inodoro3" parent="." unique_id=1280587275 instance=ExtResource("1_46w4g")]
 transform = Transform3D(1, 0, 0, 0, 0.99999976, 0, -2.1316282e-14, 0, 1, -8.171913, 2.1110282, -2.842401)
 
-[node name="Bathroom_Toilet" parent="inodoro3" index="0" unique_id=2060721250]
+[node name="Bathroom_Toilet" parent="inodoro3" index="0" unique_id=724478187]
 transform = Transform3D(-8.742278e-08, 0, 2, 0, 2, 0, -2, 0, -8.742278e-08, -10.436644, -1.888061, 0)
 surface_material_override/0 = SubResource("StandardMaterial3D_nfqsi")
 
@@ -251,7 +251,7 @@ shape = SubResource("ConcavePolygonShape3D_wqt78")
 [node name="inodoro4" parent="." unique_id=804220084 instance=ExtResource("1_46w4g")]
 transform = Transform3D(1, 0, 0, 0, 0.99999976, 0, -2.1316282e-14, 0, 1, -8.171913, 2.1110282, 4.4253488)
 
-[node name="Bathroom_Toilet" parent="inodoro4" index="0" unique_id=2060721250]
+[node name="Bathroom_Toilet" parent="inodoro4" index="0" unique_id=724478187]
 transform = Transform3D(-8.742278e-08, 0, 2, 0, 2, 0, -2, 0, -8.742278e-08, -10.436644, -1.888061, 0)
 surface_material_override/0 = SubResource("StandardMaterial3D_nfqsi")
 
@@ -296,7 +296,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_yhian")
 shape = SubResource("ConcavePolygonShape3D_4nfin")
 
 [node name="MeshInstance3D9" type="MeshInstance3D" parent="estructura" unique_id=1887673366]
-transform = Transform3D(2.928687e-14, 2.1855694e-08, 11.648479, 15.327938, -2.1855694e-08, 0, 6.700055e-07, 0.5, -5.091712e-07, 4.110577, 7.709608, -0.87158966)
+transform = Transform3D(2.928687e-14, 2.1855694e-08, 9.893652, 15.327938, -2.1855694e-08, 0, 6.700055e-07, 0.5, -4.3246524e-07, 5.17423, 7.709608, -0.87158966)
 mesh = SubResource("BoxMesh_f6o33")
 skeleton = NodePath("../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_yhian")
