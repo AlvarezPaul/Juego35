@@ -125,6 +125,10 @@ uv1_scale = Vector3(25, 25, 25)
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_meo7i"]
 data = PackedVector3Array(1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, 1, 1, 1, -1, 1, 1, 1, -1, 1, -1, 1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, 1, -1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1, -1, -1, 1, 1, -1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, 1, 1, 1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, -1)
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5sh3g"]
+albedo_color = Color(0.88235295, 0.8, 0.5803922, 1)
+uv1_scale = Vector3(25, 25, 25)
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rhepq"]
 resource_name = "Material.024"
 cull_mode = 2
@@ -779,7 +783,7 @@ shape = SubResource("ConcavePolygonShape3D_meo7i")
 [node name="Cube2" type="MeshInstance3D" parent="Paredes" unique_id=2084580852]
 transform = Transform3D(34.47362, 0, 0, 0, 0.45079166, 0, 0, 0, 41.069103, -51.551807, 30.292881, -0.15582404)
 mesh = SubResource("ArrayMesh_o6x0m")
-surface_material_override/0 = SubResource("StandardMaterial3D_lveqv")
+surface_material_override/0 = SubResource("StandardMaterial3D_5sh3g")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Paredes/Cube2" unique_id=968450892]
 
