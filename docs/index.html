@@ -1,53 +1,330 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto LAB</title>
+    <title>Escapa de la 35 - 4°1° Computación</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Inter & JetBrains Mono -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .font-mono { font-family: 'JetBrains Mono', monospace; }
+        .glow-text { text-shadow: 0 0 20px rgba(239, 68, 68, 0.4); }
+        .glow-box { box-shadow: 0 0 25px rgba(239, 68, 68, 0.15); }
+    </style>
 </head>
-<body>
-    <img src="juego.png" alt="no imagen" class="fondo">
-    <header class="content">
-        <a href="index.html" class="titulo">Proyecto LAB</a>
-        <ul>
-            <li>
-                <a class="boton" href="https://github.com/ianfind38-cyber/Juego35.git" target="_blank">Github</a>
-            </li>
-            <li>
-                <a class="boton" href="https://docs.google.com/document/d/1GFsjViJiPnZ1obTiey-AY4Ti4-jejEsQxB0f-Myzk28/edit?usp=sharing" class="document" target="_blank">Documento</a>
-            </li>
-        </ul>
-        <img src="descarga.jpg" alt="no imagen">
-        <p class="a"> 
-            Division: 4°1°
-        </p>
-        <li class="li44">integrantes:</li>
-        <ol class="ol">
-            <li>Arregui Benjamin</li>
-            <li>Findlay Ian</li>
-            <li>Proserpio Manuel</li>
-            <li>Saavedra Ignacio</li>
-            <li>Alvarez Paul</li>
-        </ol>
+<body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col selection:bg-red-600 selection:text-white">
+
+    <header class="sticky top-0 z-50 bg-slate-900/90 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="bg-red-600 text-white p-2 rounded-lg font-mono font-bold text-sm">E.T.35</div>
+                <div>
+                    <span class="text-xs text-slate-400 block">4°1° Computación</span>
+                    <span class="font-bold text-white tracking-wide">Escapa de la 35</span>
+                </div>
+            </div>
+            <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-slate-300">
+                <a href="#juego" class="hover:text-red-400 transition">El Juego</a>
+                <a href="#avances" class="hover:text-red-400 transition">Avances</a>
+                <a href="#guia" class="hover:text-red-400 transition">Guía Godot</a>
+                <a href="#bibliografia" class="hover:text-red-400 transition">Bibliografía</a>
+                <a href="#equipo" class="hover:text-red-400 transition">Equipo</a>
+            </nav>
+        </div>
     </header>
-    <main class="ian">
-        <a href="carpeta_de_campo.html">
-            <h2>Carpeta de campo</h2>
-            <img src="carpeta de campo.png" alt="no imagen" class="carpeta">
-        </a>
-        <a href="bibliografia.html">
-            <h2>Bibliografia</h2>
-            <img src="bibliografia.jpg" alt="no imagen" class="bibliografia">
-        </a>
-        <a href="guia_godot.html">
-            <h2>Guia Godot</h2>
-            <img src="godot.png" alt="no imagen" class="godot">
-        </a>
-        <a href="propuestas.html">
-            <h2>Propuestas</h2>
-            <img src="propuestas.png" alt="no imagen" class="propuestas">
-        </a>
+
+    <main class="flex-grow">
+        <section class="relative py-20 px-4 sm:px-6 lg:px-8 overflow-hidden bg-gradient-to-b from-slate-900 via-slate-950 to-slate-950 border-b border-slate-800/60">
+            <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#ef4444_1px,transparent_1px)] [background-size:16px_16px]"></div>
+            <div class="max-w-4xl mx-auto text-center relative z-10 space-y-6">
+                <span class="px-3 py-1 text-xs font-mono tracking-wider text-red-400 bg-red-950/60 border border-red-800/50 rounded-full inline-block">
+                    ESCUELA TÉCNICA N°35 ING. E. LATZINA
+                </span>
+                <h1 class="text-4xl sm:text-6xl font-black text-white tracking-tight">
+                    Escapa de <span class="text-red-500 glow-text">la 35</span>
+                </h1>
+                <p class="text-lg text-slate-400 max-w-2xl mx-auto">
+                    Proyecto escolar de desarrollo de videojuegos en Godot Engine. Misterio, pasillos oscuros y supervivencia escolar.
+                </p>
+                
+                <!-- Action Buttons -->
+                <div class="flex flex-wrap justify-center gap-4 pt-4">
+                    <a href="#" class="flex items-center gap-2 px-5 py-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-medium border border-slate-700 transition shadow-lg">
+                        <i class="fa-solid fa-folder-open text-red-400"></i> Carpeta de Campo
+                    </a>
+                    <a href="#" class="flex items-center gap-2 px-5 py-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-medium border border-slate-700 transition shadow-lg">
+                        <i class="fa-solid fa-file-lines text-blue-400"></i> Informe Técnico
+                    </a>
+                    <a href="#" class="flex items-center gap-2 px-5 py-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-medium border border-slate-700 transition shadow-lg">
+                        <i class="fa-brands fa-github text-purple-400"></i> Repositorio GitHub
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="juego" class="py-16 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
+            <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-6 sm:p-10 glow-box">
+                <div class="flex items-center gap-3 mb-6">
+                    <div class="p-3 bg-red-600/20 text-red-500 rounded-xl">
+                        <i class="fa-solid fa-gamepad text-2xl"></i>
+                    </div>
+                    <div>
+                        <h2 class="text-2xl sm:text-3xl font-bold text-white">¿De qué trata el juego?</h2>
+                        <span class="text-xs text-red-400 font-mono">Sinopsis Oficial</span>
+                    </div>
+                </div>
+                <div class="space-y-4 text-slate-300 leading-relaxed text-base sm:text-lg">
+                    <p>
+                        Vas a jugar como un alumno del turno noche que durante la última clase va al baño del primer piso. Pero cuando sale, se da cuenta que se demoró tanto que ya se fueron todos, y <strong class="text-white">quedó encerrado</strong>.
+                    </p>
+                    <p>
+                        Tu objetivo es a través de pistas y objetos escondidos ir resolviendo pequeños rompecabezas y así salir del colegio. Un minijuego de terror en los pasillos del colegio, a oscuras, sin terror extremo, sino con el objetivo de generar incomodidad.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="avances" class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-bold text-white">Muestras de los Avances</h2>
+                <p class="text-slate-400 mt-2">Capturas del desarrollo, diseño de niveles y pruebas en Godot.</p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Image Card 1 -->
+                <div class="bg-slate-900 border border-slate-800 rounded-xl overflow-hidden group">
+                    <div class="h-40 bg-slate-800 relative overflow-hidden">
+                        <img src="https://placehold.co/600x400/1e293b/ef4444?text=Pasillo+Oscuro" alt="Avance 1" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                    </div>
+                    <div class="p-4">
+                        <span class="text-xs text-red-400 font-mono">Escena 01</span>
+                        <h3 class="font-bold text-white text-sm mt-1">Iluminación de Pasillos</h3>
+                    </div>
+                </div>
+                <!-- Image Card 2 -->
+                <div class="bg-slate-900 border border-slate-800 rounded-xl overflow-hidden group">
+                    <div class="h-40 bg-slate-800 relative overflow-hidden">
+                        <img src="https://placehold.co/600x400/1e293b/ef4444?text=Menu+Principal" alt="Avance 2" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                    </div>
+                    <div class="p-4">
+                        <span class="text-xs text-red-400 font-mono">Interfaz</span>
+                        <h3 class="font-bold text-white text-sm mt-1">Diseño de Menú UI</h3>
+                    </div>
+                </div>
+                <!-- Image Card 3 -->
+                <div class="bg-slate-900 border border-slate-800 rounded-xl overflow-hidden group">
+                    <div class="h-40 bg-slate-800 relative overflow-hidden">
+                        <img src="https://placehold.co/600x400/1e293b/ef4444?text=Entrada+Bano" alt="Avance 3" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                    </div>
+                    <div class="p-4">
+                        <span class="text-xs text-red-400 font-mono">Modelado 3D</span>
+                        <h3 class="font-bold text-white text-sm mt-1">Baños del 1er Piso</h3>
+                    </div>
+                </div>
+                <!-- Image Card 4 -->
+                <div class="bg-slate-900 border border-slate-800 rounded-xl overflow-hidden group">
+                    <div class="h-40 bg-slate-800 relative overflow-hidden">
+                        <img src="https://placehold.co/600x400/1e293b/ef4444?text=Sistema+Pausas" alt="Avance 4" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                    </div>
+                    <div class="p-4">
+                        <span class="text-xs text-red-400 font-mono">Scripting</span>
+                        <h3 class="font-bold text-white text-sm mt-1">Menú de Pausa Activo</h3>
+                    </div>
+                </div>
+                <!-- Image Card 5 -->
+                <div class="bg-slate-900 border border-slate-800 rounded-xl overflow-hidden group">
+                    <div class="h-40 bg-slate-800 relative overflow-hidden">
+                        <img src="https://placehold.co/600x400/1e293b/ef4444?text=Contador+FPS" alt="Avance 5" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                    </div>
+                    <div class="p-4">
+                        <span class="text-xs text-red-400 font-mono">Rendimiento</span>
+                        <h3 class="font-bold text-white text-sm mt-1">Supervisión de FPS</h3>
+                    </div>
+                </div>
+                <!-- Image Card 6 -->
+                <div class="bg-slate-900 border border-slate-800 rounded-xl overflow-hidden group">
+                    <div class="h-40 bg-slate-800 relative overflow-hidden">
+                        <img src="https://placehold.co/600x400/1e293b/ef4444?text=Niebla+Volumetrica" alt="Avance 6" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                    </div>
+                    <div class="p-4">
+                        <span class="text-xs text-red-400 font-mono">Atmósfera</span>
+                        <h3 class="font-bold text-white text-sm mt-1">Efectos de Niebla</h3>
+                    </div>
+                </div>
+                <!-- Image Card 7 -->
+                <div class="bg-slate-900 border border-slate-800 rounded-xl overflow-hidden group">
+                    <div class="h-40 bg-slate-800 relative overflow-hidden">
+                        <img src="https://placehold.co/600x400/1e293b/ef4444?text=Audio+Botones" alt="Avance 7" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                    </div>
+                    <div class="p-4">
+                        <span class="text-xs text-red-400 font-mono">Audio</span>
+                        <h3 class="font-bold text-white text-sm mt-1">Efectos de Sonido UI</h3>
+                    </div>
+                </div>
+                <!-- Image Card 8 -->
+                <div class="bg-slate-900 border border-slate-800 rounded-xl overflow-hidden group">
+                    <div class="h-40 bg-slate-800 relative overflow-hidden">
+                        <img src="https://placehold.co/600x400/1e293b/ef4444?text=Prueba+Final" alt="Avance 8" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                    </div>
+                    <div class="p-4">
+                        <span class="text-xs text-red-400 font-mono">Testeo</span>
+                        <h3 class="font-bold text-white text-sm mt-1">Pruebas con Jugadores</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="guia" class="py-16 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-bold text-white">Guía Godot Engine</h2>
+                <p class="text-slate-400 mt-2">Fundamentos y herramientas técnicas empleadas en el proyecto.</p>
+            </div>
+            
+            <div class="space-y-4">
+                <!-- Accordion Item 1 -->
+                <details class="bg-slate-900 border border-slate-800 rounded-xl p-6 group">
+                    <summary class="font-bold text-white cursor-pointer flex justify-between items-center">
+                        <span class="flex items-center gap-3"><i class="fa-solid fa-cube text-red-500"></i> Primeros pasos en Godot 3D</span>
+                        <i class="fa-solid fa-chevron-down text-slate-500 group-open:rotate-180 transition"></i>
+                    </summary>
+                    <div class="mt-4 text-slate-300 text-sm space-y-2 border-t border-slate-800 pt-4">
+                        <p>• <strong>WASD y Click derecho</strong> para moverme libremente dentro del proyecto de Godot.</p>
+                        <p>• <strong>Camera3D</strong> obligatoria, preferentemente incluida en el personaje y en primera persona.</p>
+                        <p>• <strong>WorldEnvironment y DirectionalLight3D</strong> para configurar la luz del sol y generar ambientes de oscuridad.</p>
+                        <p>• Creación de carpetas para organizar materiales, escenas y sonidos.</p>
+                        <p>• <strong>StandardMaterial3D</strong> para modificar el color albedo de los objetos.</p>
+                    </div>
+                </details>
+
+                <!-- Accordion Item 2 -->
+                <details class="bg-slate-900 border border-slate-800 rounded-xl p-6 group">
+                    <summary class="font-bold text-white cursor-pointer flex justify-between items-center">
+                        <span class="flex items-center gap-3"><i class="fa-solid fa-desktop text-red-500"></i> Interfaz de Usuario (UI) y Botones con Sonido</span>
+                        <i class="fa-solid fa-chevron-down text-slate-500 group-open:rotate-180 transition"></i>
+                    </summary>
+                    <div class="mt-4 text-slate-300 text-sm space-y-2 border-t border-slate-800 pt-4">
+                        <p><strong>Recursos fundamentales de UI:</strong> Panel, TextureRect, Label, Button y ColorRect.</p>
+                        <p><strong>Cómo hacer que un botón reproduzca sonido:</strong></p>
+                        <p class="pl-4">1. Crear el botón dentro de la escena de Interfaz de Usuario.</p>
+                        <p class="pl-4">2. Añadirle un nodo hijo llamado <code>AudioStreamPlayer</code>.</p>
+                        <p class="pl-4">3. Crear un script en el Botón y arrastrar el reproductor para definirlo con <code>@onready</code>.</p>
+                        <p class="pl-4">4. Agregar la función <code>_on_pressed() -> void</code> con la línea <code>audio_stream_player.playing = true</code>.</p>
+                    </div>
+                </details>
+
+                <!-- Accordion Item 3 -->
+                <details class="bg-slate-900 border border-slate-800 rounded-xl p-6 group">
+                    <summary class="font-bold text-white cursor-pointer flex justify-between items-center">
+                        <span class="flex items-center gap-3"><i class="fa-solid fa-moon text-red-500"></i> Atmósfera y Temática Oscura para Terror</span>
+                        <i class="fa-solid fa-chevron-down text-slate-500 group-open:rotate-180 transition"></i>
+                    </summary>
+                    <div class="mt-4 text-slate-300 text-sm space-y-2 border-t border-slate-800 pt-4">
+                        <p>• Configurar el <strong>WorldEnvironment</strong>, ingresando a Sky -> SkyMaterial y ajustando el Top, Horizon y Bottom color a negro.</p>
+                        <p>• Cambiar el <strong>ToneMap</strong> a <strong>ACES</strong> para conseguir el mejor acabado visual en juegos oscuros.</p>
+                        <p>• Habilitar <strong>SDFGI</strong> para aportar mayor realismo lumínico.</p>
+                        <p>• Emplear <strong>Volumetric Fog</strong> para configurar densidad, emisión y la longitud de la niebla en los pasillos.</p>
+                    </div>
+                </details>
+
+                <!-- Accordion Item 4 -->
+                <details class="bg-slate-900 border border-slate-800 rounded-xl p-6 group">
+                    <summary class="font-bold text-white cursor-pointer flex justify-between items-center">
+                        <span class="flex items-center gap-3"><i class="fa-solid fa-gear text-red-500"></i> Menú de Pausa, Mouse y Contador de FPS</span>
+                        <i class="fa-solid fa-chevron-down text-slate-500 group-open:rotate-180 transition"></i>
+                    </summary>
+                    <div class="mt-4 text-slate-300 text-sm space-y-2 border-t border-slate-800 pt-4">
+                        <p><strong>Bloquear el mouse:</strong> Agregar en la función <code>_ready</code> de la sala 3D: <code>Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)</code>.</p>
+                        <p><strong>Menú de Pausa:</strong> Configurar el Mapa de Entrada con la tecla Esc, crear la escena UI del menú de pausa y alternar la visibilidad del mouse al activarlo.</p>
+                        <p><strong>Contador de FPS:</strong> Añadir un CanvasLayer con un Label y actualizar por fotograma con:</p>
+                        <pre class="bg-slate-950 p-3 rounded font-mono text-xs text-red-400 mt-2">$TextoFPS.text = str(int(Engine.get_frames_per_second())) + " FPS"</pre>
+                    </div>
+                </details>
+            </div>
+        </section>
+
+        <section id="bibliografia" class="py-16 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-bold text-white">Bibliografía y Referencias</h2>
+                <p class="text-slate-400 mt-2">Documentos y videos utilizados durante el desarrollo del proyecto.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Docs Card -->
+                <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 space-y-4">
+                    <h3 class="text-lg font-bold text-white flex items-center gap-2">
+                        <i class="fa-solid fa-book text-red-500"></i> Documentación Oficial
+                    </h3>
+                    <ul class="space-y-3 text-sm text-slate-300">
+                        <li>
+                            <a href="https://docs.godotengine.org" target="_blank" class="hover:text-red-400 font-semibold block">Documentación de Godot Engine (4.x) en español</a>
+                            <span class="text-xs text-slate-500">Guía general de fundamentos y referencias.</span>
+                        </li>
+                        <li>
+                            <a href="https://docs.godotengine.org" target="_blank" class="hover:text-red-400 font-semibold block">Aprende a programar con GDScript</a>
+                            <span class="text-xs text-slate-500">Explicación teórica y app interactiva.</span>
+                        </li>
+                        <li>
+                            <a href="https://docs.godotengine.org" target="_blank" class="hover:text-red-400 font-semibold block">Crear tu primer script y lectura de entrada</a>
+                            <span class="text-xs text-slate-500">Movimiento, rotación y manejo de teclas.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Videos Card -->
+                <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 space-y-4">
+                    <h3 class="text-lg font-bold text-white flex items-center gap-2">
+                        <i class="fa-solid fa-video text-red-500"></i> Tutoriales en Video
+                    </h3>
+                    <ul class="space-y-3 text-sm text-slate-300">
+                        <li>
+                            <span class="text-xs text-red-400 block font-mono">Visto por Benjamín e Ignacio</span>
+                            <a href="https://www.youtube.com" target="_blank" class="hover:text-red-400 font-semibold block">Curso Godot - freeCodeCamp Español</a>
+                        </li>
+                        <li>
+                            <span class="text-xs text-red-400 block font-mono">Visto por Benjamín</span>
+                            <a href="https://www.youtube.com/watch?v=hNM6ETntl8g" target="_blank" class="hover:text-red-400 font-semibold block">Tutorial: Cómo hacer una puerta en Godot</a>
+                        </li>
+                        <li>
+                            <span class="text-xs text-slate-400 block font-mono">Guías complementarias</span>
+                            <a href="#" class="hover:text-red-400 font-semibold block">Transición al cambiar de escena / Pantalla de Carga</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="equipo" class="py-16 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto border-t border-slate-900">
+            <div class="text-center mb-8">
+                <span class="text-xs font-mono text-red-500 tracking-wider">INTEGRANTES DEL PROYECTO</span>
+                <h2 class="text-2xl font-bold text-white mt-1">4°1° Computación</h2>
+            </div>
+            <div class="flex flex-wrap justify-center gap-3">
+                <div class="px-5 py-2.5 bg-slate-900 border border-slate-800 rounded-full text-slate-200 font-medium text-sm">
+                    Ignacio Saavedra
+                </div>
+                <div class="px-5 py-2.5 bg-slate-900 border border-slate-800 rounded-full text-slate-200 font-medium text-sm">
+                    Ian Findlay
+                </div>
+                <div class="px-5 py-2.5 bg-slate-900 border border-slate-800 rounded-full text-slate-200 font-medium text-sm">
+                    Benjamín Arregui
+                </div>
+                <div class="px-5 py-2.5 bg-slate-900 border border-slate-800 rounded-full text-slate-200 font-medium text-sm">
+                    Manuel Proserpio
+                </div>
+                <div class="px-5 py-2.5 bg-slate-900 border border-slate-800 rounded-full text-slate-200 font-medium text-sm">
+                    Paul Alvarez
+                </div>
+            </div>
+        </section>
     </main>
+
+    <footer class="border-t border-slate-900 bg-slate-950 py-8 text-center text-slate-500 text-sm">
+        <p>&copy; 2026 Escapa de la 35. Escuela Técnica N°35 Ing. E. Latzina.</p>
+    </footer>
+
 </body>
 </html>
