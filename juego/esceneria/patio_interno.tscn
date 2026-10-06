@@ -1,7 +1,6 @@
 [gd_scene format=3 uid="uid://ckty31vlxumu3"]
 
 [ext_resource type="Texture2D" uid="uid://feybsjugp3tr" path="res://fotos/texturapiso.jpg" id="1_yqd0h"]
-[ext_resource type="AudioStream" uid="uid://btg8p4au4qsc7" path="res://UI/grillos.mp3" id="2_1muvh"]
 [ext_resource type="PackedScene" uid="uid://c3hgvbmrr2guo" path="res://glb_modelos/check.glb" id="2_7hvex"]
 [ext_resource type="PackedScene" uid="uid://sinu6yp0j0x7" path="res://esceneria/aula_chica.tscn" id="2_unogn"]
 [ext_resource type="PackedScene" uid="uid://beg6i8m42k74w" path="res://esceneria/banquito.tscn" id="4_dxm14"]
@@ -186,21 +185,15 @@ surface_material_override/0 = SubResource("StandardMaterial3D_4a6h3")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D25/StaticBody3D" unique_id=776539125]
 shape = SubResource("ConcavePolygonShape3D_sgprd")
 
-[node name="Tierra" type="MeshInstance3D" parent="." unique_id=1260282177]
+[node name="MeshInstance3D26" type="MeshInstance3D" parent="." unique_id=1260282177]
 transform = Transform3D(-9.577166e-07, 0, 21.345, 0, 3.43, 0, -21.91, 0, -9.330196e-07, 43.599472, 8.810385, -64.789795)
 mesh = SubResource("BoxMesh_f6o33")
 surface_material_override/0 = SubResource("StandardMaterial3D_dxm14")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Tierra" unique_id=987394010]
+[node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D26" unique_id=987394010]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Tierra/StaticBody3D" unique_id=585321120]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D26/StaticBody3D" unique_id=585321120]
 shape = SubResource("ConcavePolygonShape3D_sgprd")
-
-[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="Tierra" unique_id=543423470]
-stream = ExtResource("2_1muvh")
-volume_db = -18.0
-autoplay = true
-max_distance = 40.0
 
 [node name="MeshInstance3D2" type="MeshInstance3D" parent="." unique_id=231296936]
 transform = Transform3D(41.177, 0, 0, 0, 1.436, 0, 0, 0, 47.88, 94.079, 0.619, -117.673)
@@ -365,7 +358,7 @@ shape = SubResource("ConcavePolygonShape3D_3pbdm")
 [node name="check" parent="." unique_id=1400073117 instance=ExtResource("2_7hvex")]
 transform = Transform3D(1.175, 0, 0, 0, 1.175, 0, 0, 0, 1.175, 0.6789236, 0, 0)
 
-[node name="Cube" parent="check" index="0" unique_id=202233509]
+[node name="Cube" parent="check" index="0" unique_id=961011459]
 transform = Transform3D(79.8, 0, 0, 0, 1.33, 0, 0, 0, 79.8, -17.826, -0.134, -0.095)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="check/Cube" index="0" unique_id=1503869718]

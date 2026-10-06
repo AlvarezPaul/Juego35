@@ -29,17 +29,11 @@ func _abrir() -> void:
 
 
 func _reanudar() -> void:
-	Autoloadsonido.play_click()
 	visible = false
 	get_tree().paused = false
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 
 
 func _salir_al_menu() -> void:
-	Autoloadsonido.play_click()
 	get_tree().paused = false
 	get_tree().change_scene_to_file("res://UI/Menu.tscn")
-
-
-func _on_ajustes_pressed() -> void:
-	Autoloadsonido.play_click()

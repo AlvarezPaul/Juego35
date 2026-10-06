@@ -2,9 +2,10 @@
 
 [ext_resource type="Script" uid="uid://gila5m6stl8l" path="res://UI/menu.gd" id="1_gj576"]
 [ext_resource type="Texture2D" uid="uid://c80sue7xddtbx" path="res://fotos/fondoblur.jpg" id="2_cmiqy"]
-[ext_resource type="FontFile" uid="uid://c5bowsxg35hv" path="res://Fuentes/Bloody Scary.ttf" id="3_ildal"]
+[ext_resource type="FontFile" uid="uid://ocuqailjsal3" path="res://Fuentes/StayDrips-Regular.otf" id="3_ildal"]
 [ext_resource type="FontFile" uid="uid://blju0ku40nkwn" path="res://Interfaz/Fuentes/Bonechiller Free.otf" id="4_5lcxy"]
 [ext_resource type="FontFile" uid="uid://cuxgyu81j521g" path="res://Fuentes/Trebuchet-MS-Italic.ttf" id="4_ildal"]
+[ext_resource type="Texture2D" uid="uid://cgstjq687v5ae" path="res://fotos/et35logo.png" id="7_cmiqy"]
 [ext_resource type="Script" uid="uid://btvihadw5yb6" path="res://UI/ajustes.gd" id="8_cmiqy"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_77tc4"]
@@ -114,19 +115,21 @@ layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -468.0
-offset_right = 468.0
-offset_bottom = 204.0
+offset_left = -560.0
+offset_top = 56.0
+offset_right = 376.0
+offset_bottom = 172.0
 grow_horizontal = 2
 theme_override_colors/font_color = Color(1, 1, 1, 0.8745098)
 theme_override_constants/line_spacing = 3
-theme_override_constants/outline_size = 40
+theme_override_constants/outline_size = 10
 theme_override_constants/shadow_outline_size = 10
 theme_override_fonts/font = ExtResource("3_ildal")
-theme_override_font_sizes/font_size = 130
-text = "ESCAPA DE LA 35"
+theme_override_font_sizes/font_size = 120
+text = "Escapa de La"
 horizontal_alignment = 1
 vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
 
 [node name="Salir" type="Button" parent="." unique_id=1624329924]
 layout_mode = 0
@@ -148,7 +151,6 @@ offset_left = 84.0
 offset_top = 490.0
 offset_right = 393.0
 offset_bottom = 625.0
-theme_override_constants/outline_size = 30
 theme_override_fonts/font = ExtResource("4_5lcxy")
 theme_override_font_sizes/font_size = 90
 theme_override_styles/normal = SubResource("StyleBoxFlat_13qdw")
@@ -164,7 +166,6 @@ offset_left = 969.0
 offset_top = 490.0
 offset_right = 1278.0
 offset_bottom = 625.0
-theme_override_constants/outline_size = 30
 theme_override_fonts/font = ExtResource("4_5lcxy")
 theme_override_font_sizes/font_size = 90
 theme_override_styles/normal = SubResource("StyleBoxFlat_13qdw")
@@ -187,13 +188,25 @@ offset_right = 135.0
 offset_bottom = 179.5
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_constants/outline_size = 30
 theme_override_fonts/font = ExtResource("4_5lcxy")
 theme_override_font_sizes/font_size = 100
 theme_override_styles/normal = SubResource("StyleBoxFlat_13qdw")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_wi6ju")
 theme_override_styles/hover = SubResource("StyleBoxFlat_b1lj4")
 text = "JUGAR"
+metadata/_edit_use_anchors_ = true
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=943373331]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.032210834
+anchor_right = -0.032210834
+offset_left = 1024.0
+offset_top = 53.0
+offset_right = 1133.0
+offset_bottom = 181.0
+texture = ExtResource("7_cmiqy")
+expand_mode = 1
 metadata/_edit_use_anchors_ = true
 
 [connection signal="pressed" from="Salir" to="." method="_on_salir_pressed"]

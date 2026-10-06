@@ -5,7 +5,6 @@
 [ext_resource type="PackedScene" uid="uid://b42hf1ayd4kt" path="res://puerta/puerta_inodoro.tscn" id="2_a8akp"]
 [ext_resource type="Texture2D" uid="uid://feybsjugp3tr" path="res://fotos/texturapiso.jpg" id="2_wqt78"]
 [ext_resource type="Texture2D" uid="uid://db3u55618ac52" path="res://fotos/aa.png" id="4_nfqsi"]
-[ext_resource type="AudioStream" uid="uid://dimkkvvcf7gu8" path="res://UI/sonidocanilla.mp3" id="6_igtkx"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nfqsi"]
 
@@ -216,7 +215,7 @@ albedo_color = Color(0.7989165, 0.7045978, 0.45038158, 1)
 [node name="inodoro" parent="." unique_id=1190789017 instance=ExtResource("1_46w4g")]
 transform = Transform3D(1, 0, 0, 0, 0.99999976, 0, -2.1316282e-14, 0, 1, -8.171913, 2.1110282, -9.775371)
 
-[node name="Bathroom_Toilet" parent="inodoro" index="0" unique_id=1333938397]
+[node name="Bathroom_Toilet" parent="inodoro" index="0" unique_id=2060721250]
 transform = Transform3D(-8.742278e-08, 0, 2, 0, 2, 0, -2, 0, -8.742278e-08, -10.436644, -1.888061, 0)
 surface_material_override/0 = SubResource("StandardMaterial3D_nfqsi")
 
@@ -228,7 +227,7 @@ shape = SubResource("ConcavePolygonShape3D_46w4g")
 [node name="inodoro2" parent="." unique_id=1103507666 instance=ExtResource("1_46w4g")]
 transform = Transform3D(1, 0, 0, 0, 0.99999976, 0, -2.1316282e-14, 0, 1, -8.171913, 2.1110282, -16.891373)
 
-[node name="Bathroom_Toilet" parent="inodoro2" index="0" unique_id=1333938397]
+[node name="Bathroom_Toilet" parent="inodoro2" index="0" unique_id=2060721250]
 transform = Transform3D(-8.742278e-08, 0, 2, 0, 2, 0, -2, 0, -8.742278e-08, -10.436644, -1.888061, 0)
 surface_material_override/0 = SubResource("StandardMaterial3D_nfqsi")
 
@@ -240,7 +239,7 @@ shape = SubResource("ConcavePolygonShape3D_nfqsi")
 [node name="inodoro3" parent="." unique_id=1280587275 instance=ExtResource("1_46w4g")]
 transform = Transform3D(1, 0, 0, 0, 0.99999976, 0, -2.1316282e-14, 0, 1, -8.171913, 2.1110282, -2.842401)
 
-[node name="Bathroom_Toilet" parent="inodoro3" index="0" unique_id=1333938397]
+[node name="Bathroom_Toilet" parent="inodoro3" index="0" unique_id=2060721250]
 transform = Transform3D(-8.742278e-08, 0, 2, 0, 2, 0, -2, 0, -8.742278e-08, -10.436644, -1.888061, 0)
 surface_material_override/0 = SubResource("StandardMaterial3D_nfqsi")
 
@@ -252,7 +251,7 @@ shape = SubResource("ConcavePolygonShape3D_wqt78")
 [node name="inodoro4" parent="." unique_id=804220084 instance=ExtResource("1_46w4g")]
 transform = Transform3D(1, 0, 0, 0, 0.99999976, 0, -2.1316282e-14, 0, 1, -8.171913, 2.1110282, 4.4253488)
 
-[node name="Bathroom_Toilet" parent="inodoro4" index="0" unique_id=1333938397]
+[node name="Bathroom_Toilet" parent="inodoro4" index="0" unique_id=2060721250]
 transform = Transform3D(-8.742278e-08, 0, 2, 0, 2, 0, -2, 0, -8.742278e-08, -10.436644, -1.888061, 0)
 surface_material_override/0 = SubResource("StandardMaterial3D_nfqsi")
 
@@ -562,13 +561,6 @@ transform = Transform3D(0.248, 0, 0, 0, 0.06365387, 0, 0, 0, 0.2878293, 8.886208
 mesh = SubResource("CylinderMesh_bopqd")
 skeleton = NodePath("../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_wqt78")
-
-[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="lavamanos/MeshInstance3D10" unique_id=2140554736]
-stream = ExtResource("6_igtkx")
-pitch_scale = 0.9
-autoplay = true
-stream_paused = true
-max_distance = 15.0
 
 [node name="MeshInstance3D11" type="MeshInstance3D" parent="lavamanos" unique_id=552766821]
 transform = Transform3D(0.28165492, 0, 0, 0, 0.324556, 0, 0, 0, 0.2878293, 8.891152, 4.5891037, -21.197853)
