@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://b42hf1ayd4kt" path="res://puerta/puerta_inodoro.tscn" id="2_a8akp"]
 [ext_resource type="Texture2D" uid="uid://feybsjugp3tr" path="res://fotos/texturapiso.jpg" id="2_wqt78"]
 [ext_resource type="Texture2D" uid="uid://db3u55618ac52" path="res://fotos/aa.png" id="4_nfqsi"]
+[ext_resource type="AudioStream" uid="uid://dimkkvvcf7gu8" path="res://UI/sonidocanilla.mp3" id="6_igtkx"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nfqsi"]
 
@@ -561,6 +562,13 @@ transform = Transform3D(0.248, 0, 0, 0, 0.06365387, 0, 0, 0, 0.2878293, 8.886208
 mesh = SubResource("CylinderMesh_bopqd")
 skeleton = NodePath("../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_wqt78")
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="lavamanos/MeshInstance3D10" unique_id=2140554736]
+stream = ExtResource("6_igtkx")
+pitch_scale = 0.9
+autoplay = true
+stream_paused = true
+max_distance = 15.0
 
 [node name="MeshInstance3D11" type="MeshInstance3D" parent="lavamanos" unique_id=552766821]
 transform = Transform3D(0.28165492, 0, 0, 0, 0.324556, 0, 0, 0, 0.2878293, 8.891152, 4.5891037, -21.197853)

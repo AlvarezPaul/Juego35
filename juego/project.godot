@@ -20,8 +20,8 @@ config/features=PackedStringArray("4.7", "Forward Plus")
 
 [autoload]
 
-Musica="*res://UI/Musica.tscn"
 PantallaDeCarga="*res://UI/autoloadpcarga.gd"
+Autoloadsonido="*uid://cdabp06y5x0jg"
 
 [display]
 

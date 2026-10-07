@@ -6,7 +6,6 @@
 [ext_resource type="Script" uid="uid://dr6ldu5lrqu27" path="res://UI/volverdeaj.gd" id="3_p1khp"]
 [ext_resource type="PackedScene" uid="uid://dav4xsf5v0vn1" path="res://UI/barra_sonidos.tscn" id="4_56yal"]
 [ext_resource type="FontFile" uid="uid://cdu7dgetstelv" path="res://Fuentes/trebuc.ttf" id="5_oxxd6"]
-[ext_resource type="AudioStream" uid="uid://pogmuy6woqyo" path="res://UI/click.mp3" id="7_33ovl"]
 
 [sub_resource type="ImageTexture" id="ImageTexture_p3nki"]
 
@@ -193,9 +192,6 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_cjdqc")
 text = "FOV"
 horizontal_alignment = 1
 vertical_alignment = 1
-
-[node name="click" type="AudioStreamPlayer" parent="." unique_id=1657340700]
-stream = ExtResource("7_33ovl")
 
 [connection signal="toggled" from="Panel/Cont de Sliders y CheckBox/CheckBox" to="Panel/Cont de Sliders y CheckBox/CheckBox" method="_on_toggled"]
 [connection signal="pressed" from="Panel/volver" to="Panel/volver" method="_on_pressed"]
