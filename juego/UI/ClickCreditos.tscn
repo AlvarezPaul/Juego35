@@ -1,10 +1,24 @@
 [gd_scene format=3 uid="uid://bwk71kmap6lkq"]
 
+[ext_resource type="Texture2D" uid="uid://c80sue7xddtbx" path="res://fotos/fondoblur.jpg" id="1_qc2no"]
 [ext_resource type="Script" uid="uid://dr6ldu5lrqu27" path="res://UI/volverdeaj.gd" id="2_qc2no"]
 [ext_resource type="FontFile" uid="uid://cdu7dgetstelv" path="res://Fuentes/trebuc.ttf" id="4_qc2no"]
 [ext_resource type="FontFile" uid="uid://blju0ku40nkwn" path="res://Interfaz/Fuentes/Bonechiller Free.otf" id="4_skinw"]
+[ext_resource type="FontFile" uid="uid://ocuqailjsal3" path="res://Fuentes/StayDrips-Regular.otf" id="5_skipg"]
 [ext_resource type="Texture2D" uid="uid://cgstjq687v5ae" path="res://fotos/et35logo.png" id="6_l15ch"]
 [ext_resource type="AudioStream" uid="uid://pogmuy6woqyo" path="res://UI/click.mp3" id="8_l15ch"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xrivr"]
+bg_color = Color(0.8089983, 0.8089983, 0.80899817, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qc2no"]
 bg_color = Color(0.28235295, 0.28235295, 0.28235295, 0.25490198)
@@ -47,19 +61,103 @@ size_flags_horizontal = 4
 size_flags_vertical = 4
 metadata/_edit_use_anchors_ = true
 
-[node name="Panel" type="Panel" parent="." unique_id=1899660082]
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1992669717]
 layout_mode = 0
-offset_right = 1153.0
-offset_bottom = 645.0
-scale = Vector2(1.1967261, 1.2039081)
+offset_left = -19.0
+offset_top = -4.0
+offset_right = 1368.0
+offset_bottom = 780.0
+texture = ExtResource("1_qc2no")
 
-[node name="ColorRect" type="ColorRect" parent="." unique_id=71634040]
-layout_mode = 0
-offset_left = -2269.0
-offset_top = 3.0
-offset_right = -1293.0
-offset_bottom = 608.0
-color = Color(0.27387273, 0.27387273, 0.27387273, 0.28627452)
+[node name="Panel2" type="Panel" parent="." unique_id=1826835917]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -308.5
+offset_top = -232.5
+offset_right = 308.5
+offset_bottom = 232.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_xrivr")
+
+[node name="Panel3" type="Panel" parent="." unique_id=577374624]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -308.5
+offset_top = 301.0
+offset_right = 308.5
+offset_bottom = 359.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_xrivr")
+
+[node name="Label" type="Label" parent="Panel3" unique_id=419192565]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -262.25
+offset_top = -27.5
+offset_right = 218.25
+offset_bottom = 27.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 40
+text = "4°1° - 2026"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="Panel3" unique_id=765982884]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 88.5
+offset_top = -22.5
+offset_right = 129.5
+offset_bottom = 22.5
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("6_l15ch")
+expand_mode = 1
+
+[node name="Label2" type="Label" parent="." unique_id=368821874]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -300.5
+offset_top = -269.5
+offset_right = 300.5
+offset_bottom = 269.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("4_qc2no")
+theme_override_font_sizes/font_size = 71
+text = "Ignacio Saavedra
+Manuel Proserpio
+Paúl Álvarez
+Benjamín Arregui
+Ian Findlay"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="volver" type="Button" parent="." unique_id=144155832]
 layout_mode = 0
@@ -78,50 +176,19 @@ metadata/_edit_use_anchors_ = true
 
 [node name="Label" type="Label" parent="." unique_id=2016479838]
 layout_mode = 1
-offset_left = 37.0
-offset_top = 65.0
-offset_right = 1025.0
-offset_bottom = 210.0
-theme_override_constants/outline_size = 16
-theme_override_fonts/font = ExtResource("4_qc2no")
-theme_override_font_sizes/font_size = 65
-text = "Hecho por alumnos de la 
-Escuela Técnica N°35"
-vertical_alignment = 1
-
-[node name="Label2" type="Label" parent="." unique_id=368821874]
-layout_mode = 1
-anchors_preset = 8
+anchors_preset = 5
 anchor_left = 0.5
-anchor_top = 0.5
 anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -639.0
-offset_top = -108.0
-offset_right = -138.0
-offset_bottom = 320.0
+offset_left = -252.5
+offset_right = 252.5
+offset_bottom = 145.0
 grow_horizontal = 2
-grow_vertical = 2
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_constants/outline_size = 10
-theme_override_fonts/font = ExtResource("4_qc2no")
+theme_override_constants/outline_size = 16
+theme_override_fonts/font = ExtResource("5_skipg")
 theme_override_font_sizes/font_size = 65
-text = "Ignacio Saavedra
-Manuel Proserpio
-Paúl Álvarez
-Benjamín Arregui
-Ian Findlay"
+text = "Desarrollado por:"
+horizontal_alignment = 1
 vertical_alignment = 1
-metadata/_edit_use_anchors_ = true
-
-[node name="TextureRect" type="TextureRect" parent="." unique_id=765982884]
-layout_mode = 0
-offset_left = 777.0
-offset_top = 48.0
-offset_right = 935.0
-offset_bottom = 230.0
-texture = ExtResource("6_l15ch")
-expand_mode = 1
 
 [node name="Click" type="AudioStreamPlayer" parent="." unique_id=2119150274]
 stream = ExtResource("8_l15ch")

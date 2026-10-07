@@ -1,10 +1,13 @@
 [gd_scene format=3 uid="uid://b6ncf806r6a0b"]
 
 [ext_resource type="PackedScene" uid="uid://slwd7f6wku1b" path="res://esceneria/escuela.tscn" id="1_kwadh"]
+[ext_resource type="Script" uid="uid://d2maeb5p5ya8m" path="res://UI/confirmar_salir.gd" id="3_3q2x0"]
+[ext_resource type="FontFile" uid="uid://ocuqailjsal3" path="res://Fuentes/StayDrips-Regular.otf" id="3_cekhq"]
 [ext_resource type="AudioStream" uid="uid://d4b1w0ui4oxb" path="res://UI/linterna.mp3" id="3_pudgd"]
 [ext_resource type="PackedScene" uid="uid://mbsgoh8bcs3w" path="res://jugador/jugador.tscn" id="3_qh0pk"]
 [ext_resource type="Script" uid="uid://31ipksk4tnso" path="res://scriptstamina/canvas_layer.gd" id="3_tgavs"]
 [ext_resource type="PackedScene" uid="uid://l3360f65cyou" path="res://salas/linterna_suelo.tscn" id="4_tgavs"]
+[ext_resource type="FontFile" uid="uid://blju0ku40nkwn" path="res://Fuentes/Bonechiller Free.otf" id="5_bl8tx"]
 [ext_resource type="PackedScene" uid="uid://bwcjyqarbdklt" path="res://inventario/llave.tscn" id="6_tbg6u"]
 [ext_resource type="PackedScene" uid="uid://sth73yxvt5tl" path="res://puerta/puerta_llave.tscn" id="7_4e3q0"]
 [ext_resource type="PackedScene" uid="uid://cjh7u2io5d7mc" path="res://items/ganzua.tscn" id="8_rvme7"]
@@ -15,6 +18,42 @@
 [sub_resource type="Environment" id="Environment_pvkkf"]
 background_mode = 1
 background_color = Color(0.051970966, 0.05197096, 0.05197095, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bl8tx"]
+bg_color = Color(0.16078432, 0.16078432, 0.16078432, 0.65882355)
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 35
+corner_radius_top_right = 35
+corner_radius_bottom_right = 35
+corner_radius_bottom_left = 35
+shadow_color = Color(0, 0, 0, 0.8509804)
+shadow_size = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cekhq"]
+bg_color = Color(0.078431375, 0.078431375, 0.078431375, 0.78431374)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+shadow_size = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_no552"]
+bg_color = Color(0.5411765, 0, 0, 0.78431374)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+shadow_color = Color(0.5411765, 0, 0, 0.6)
+shadow_size = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3q2x0"]
+bg_color = Color(0.22745098, 0.22745098, 0.22745098, 0.78431374)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+shadow_color = Color(0.3529412, 0.3529412, 0.3529412, 0.6)
+shadow_size = 10
 
 [node name="sala" type="Node3D" unique_id=1955352439]
 
@@ -51,6 +90,84 @@ spot_attenuation = 0.6
 
 [node name="CanvasLayer" parent="Jugador/Node2D" parent_id_path=PackedInt32Array(212553440, 2102388130) index="0" unique_id=1482110964]
 layer = 10
+
+[node name="ConfirmarSalir" type="Control" parent="Jugador/Node2D/CanvasLayer" index="1" unique_id=1499653716]
+visible = false
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -276.375
+offset_top = -133.25
+offset_right = 276.375
+offset_bottom = 133.25
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("3_3q2x0")
+metadata/_edit_use_anchors_ = true
+
+[node name="Panel" type="Panel" parent="Jugador/Node2D/CanvasLayer/ConfirmarSalir" unique_id=458669873]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -276.375
+offset_top = -133.4375
+offset_right = 276.375
+offset_bottom = 133.4375
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_bl8tx")
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="Jugador/Node2D/CanvasLayer/ConfirmarSalir" unique_id=1571617877]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -306.5
+offset_right = 306.5
+offset_bottom = 124.25
+grow_horizontal = 2
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("3_cekhq")
+theme_override_font_sizes/font_size = 25
+text = "¿Estás seguro de que querés salir al Menú?
+Perderás todo tu progreso"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Si" type="Button" parent="Jugador/Node2D/CanvasLayer/ConfirmarSalir" unique_id=1384034807]
+process_mode = 2
+layout_mode = 0
+offset_left = 28.375
+offset_top = 160.25
+offset_right = 173.375
+offset_bottom = 236.25
+theme_override_fonts/font = ExtResource("5_bl8tx")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_cekhq")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_no552")
+theme_override_styles/hover = SubResource("StyleBoxFlat_3q2x0")
+text = "Sí"
+
+[node name="No" type="Button" parent="Jugador/Node2D/CanvasLayer/ConfirmarSalir" unique_id=1271852727]
+process_mode = 2
+layout_mode = 0
+offset_left = 383.375
+offset_top = 159.25
+offset_right = 528.375
+offset_bottom = 235.25
+theme_override_fonts/font = ExtResource("5_bl8tx")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_cekhq")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_no552")
+theme_override_styles/hover = SubResource("StyleBoxFlat_3q2x0")
+text = "No"
 
 [node name="linterna" type="AudioStreamPlayer3D" parent="Jugador" unique_id=2091540673]
 transform = Transform3D(0.7490637, -1.1310547e-07, 1.1310547e-07, -1.1310547e-07, -0.7490637, 3.722292e-21, 1.1310547e-07, -1.7078454e-14, -0.7490637, 0.3283348, 0.39369708, -0.554337)
@@ -92,9 +209,12 @@ theme_override_fonts/font = ExtResource("10_erchp")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=394394416]
 stream = ExtResource("11_erchp")
-volume_db = -35.0
+volume_db = -20.0
 autoplay = true
 parameters/looping = false
+
+[connection signal="pressed" from="Jugador/Node2D/CanvasLayer/ConfirmarSalir/Si" to="Jugador/Node2D/CanvasLayer/ConfirmarSalir" method="_on_si_pressed"]
+[connection signal="pressed" from="Jugador/Node2D/CanvasLayer/ConfirmarSalir/No" to="Jugador/Node2D/CanvasLayer/ConfirmarSalir" method="_on_no_pressed"]
 
 [editable path="Jugador"]
 [editable path="Jugador/Cabeza/Camera3D/linterna"]

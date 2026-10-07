@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://mmmok66usadm" path="res://inventario/inventario.gd" id="1_6gaym"]
 [ext_resource type="Texture2D" uid="uid://b8ipk7mypr224" path="res://Interfaz/inventario/descarga.jpg" id="2_alj7c"]
 [ext_resource type="Texture2D" uid="uid://nn6vmtjii8aw" path="res://inventario/images.jpg" id="3_jh551"]
+[ext_resource type="FontFile" uid="uid://cdu7dgetstelv" path="res://Fuentes/trebuc.ttf" id="3_tdt1t"]
 
 [node name="Inventario" type="Node2D" unique_id=445011503]
 script = ExtResource("1_6gaym")
@@ -55,7 +56,9 @@ anchor_bottom = 1.0
 offset_top = -23.0
 offset_right = 1.0
 grow_vertical = 0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 7
+theme_override_fonts/font = ExtResource("3_tdt1t")
 
 [node name="Panel2" type="Panel" parent="Control/HBoxContainer" unique_id=316663564]
 custom_minimum_size = Vector2(64, 64)
@@ -84,7 +87,9 @@ anchor_bottom = 1.0
 offset_top = -23.0
 offset_right = 1.0
 grow_vertical = 0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 7
+theme_override_fonts/font = ExtResource("3_tdt1t")
 
 [node name="Panel3" type="Panel" parent="Control/HBoxContainer" unique_id=2034228763]
 custom_minimum_size = Vector2(64, 64)
@@ -112,7 +117,9 @@ anchor_bottom = 1.0
 offset_top = -23.0
 offset_right = 1.0
 grow_vertical = 0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 7
+theme_override_fonts/font = ExtResource("3_tdt1t")
 
 [node name="Panel4" type="Panel" parent="Control/HBoxContainer" unique_id=594218001]
 custom_minimum_size = Vector2(64, 64)
@@ -140,4 +147,6 @@ anchor_bottom = 1.0
 offset_top = -23.0
 offset_right = 1.0
 grow_vertical = 0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 7
+theme_override_fonts/font = ExtResource("3_tdt1t")

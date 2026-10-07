@@ -5,7 +5,7 @@ extends Control
 
 @onready var _btn_reanudar: Button = $VBoxContainer/Reanudar
 @onready var _btn_salir: Button = $VBoxContainer/salir
-
+@onready var conf: Control = $"../ConfirmarSalir"
 
 func _ready() -> void:
 	process_mode = Node.PROCESS_MODE_ALWAYS
@@ -37,9 +37,7 @@ func _reanudar() -> void:
 
 func _salir_al_menu() -> void:
 	Autoloadsonido.play_click()
-	get_tree().paused = false
-	get_tree().change_scene_to_file("res://UI/Menu.tscn")
-
+	conf.visible=true
 
 func _on_ajustes_pressed() -> void:
 	Autoloadsonido.play_click()
