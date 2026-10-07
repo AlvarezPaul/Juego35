@@ -951,6 +951,24 @@ mesh = SubResource("BoxMesh_13qdw")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="estructura/detalles/puesto/MeshInstance3D5/StaticBody3D" unique_id=99810586]
 shape = SubResource("ConcavePolygonShape3D_rc72u")
 
+[node name="MeshInstance3D6" type="MeshInstance3D" parent="estructura/detalles/puesto" unique_id=285873408]
+transform = Transform3D(19.818, 0, 0, 0, 8.369, 0, 0, 0, 0.471, -31.126066, 9.184923, 170.62291)
+mesh = SubResource("BoxMesh_13qdw")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="estructura/detalles/puesto/MeshInstance3D6" unique_id=1183735472]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="estructura/detalles/puesto/MeshInstance3D6/StaticBody3D" unique_id=621294706]
+shape = SubResource("ConcavePolygonShape3D_rc72u")
+
+[node name="MeshInstance3D7" type="MeshInstance3D" parent="estructura/detalles/puesto" unique_id=1800548626]
+transform = Transform3D(19.818, 0, 0, 0, 8.369, 0, 0, 0, 0.471, -60.42011, 9.184923, 170.62291)
+mesh = SubResource("BoxMesh_13qdw")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="estructura/detalles/puesto/MeshInstance3D7" unique_id=1746550179]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="estructura/detalles/puesto/MeshInstance3D7/StaticBody3D" unique_id=544250562]
+shape = SubResource("ConcavePolygonShape3D_rc72u")
+
 [node name="muebles" type="Node3D" parent="." unique_id=1295251171]
 
 [node name="bancos" type="Node3D" parent="muebles" unique_id=1874118239]
