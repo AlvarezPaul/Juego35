@@ -118,7 +118,7 @@ blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_b3klk")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lveqv"]
-albedo_color = Color(0.9295276, 0.581052, 0.2668881, 1)
+albedo_color = Color(0.88235295, 0.88235295, 0.88235295, 1)
 albedo_texture = ExtResource("2_n48c0")
 uv1_scale = Vector3(25, 25, 25)
 
@@ -2273,7 +2273,7 @@ shape = SubResource("ConcavePolygonShape3D_w4aw1")
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, -51.690094, 26.407269, 0.46839952)
 light_color = Color(0.9999997, 0.8686257, 0.9951834, 1)
 light_energy = 0.3
-spot_range = 61.51728
+spot_range = 40.0
 
 [node name="Ventanagrande" type="Node3D" parent="." unique_id=2114532491]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 131.782, -0.545, 113.941)
