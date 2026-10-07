@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://gila5m6stl8l" path="res://UI/menu.gd" id="1_gj576"]
 [ext_resource type="Texture2D" uid="uid://c80sue7xddtbx" path="res://fotos/fondoblur.jpg" id="2_cmiqy"]
 [ext_resource type="FontFile" uid="uid://c5bowsxg35hv" path="res://Fuentes/Bloody Scary.ttf" id="3_ildal"]
-[ext_resource type="FontFile" uid="uid://blju0ku40nkwn" path="res://Interfaz/Fuentes/Bonechiller Free.otf" id="4_5lcxy"]
+[ext_resource type="FontFile" uid="uid://blju0ku40nkwn" path="res://Fuentes/Bonechiller Free.otf" id="4_5lcxy"]
 [ext_resource type="FontFile" uid="uid://cuxgyu81j521g" path="res://Fuentes/Trebuchet-MS-Italic.ttf" id="4_ildal"]
 [ext_resource type="Script" uid="uid://btvihadw5yb6" path="res://UI/ajustes.gd" id="8_cmiqy"]
 
@@ -92,7 +92,7 @@ metadata/_edit_use_anchors_ = true
 [node name="VideoLoop" type="VideoStreamPlayer" parent="." unique_id=1127442198]
 layout_mode = 0
 offset_right = 1365.0
-offset_bottom = 648.0
+offset_bottom = 771.0
 autoplay = true
 loop = true
 

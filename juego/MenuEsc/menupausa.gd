@@ -6,6 +6,7 @@ extends Control
 @onready var _btn_reanudar: Button = $VBoxContainer/Reanudar
 @onready var _btn_salir: Button = $VBoxContainer/salir
 @onready var conf: Control = $"../ConfirmarSalir"
+@onready var aj: Control = $"../Ajustes"
 
 func _ready() -> void:
 	process_mode = Node.PROCESS_MODE_ALWAYS
@@ -41,3 +42,4 @@ func _salir_al_menu() -> void:
 
 func _on_ajustes_pressed() -> void:
 	Autoloadsonido.play_click()
+	aj.visible = true

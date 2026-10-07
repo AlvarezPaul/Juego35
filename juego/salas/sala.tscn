@@ -8,6 +8,7 @@
 [ext_resource type="Script" uid="uid://31ipksk4tnso" path="res://scriptstamina/canvas_layer.gd" id="3_tgavs"]
 [ext_resource type="PackedScene" uid="uid://l3360f65cyou" path="res://salas/linterna_suelo.tscn" id="4_tgavs"]
 [ext_resource type="FontFile" uid="uid://blju0ku40nkwn" path="res://Fuentes/Bonechiller Free.otf" id="5_bl8tx"]
+[ext_resource type="Script" uid="uid://v4xmv2vcxdob" path="res://UI/ajustesmenuesc.gd" id="6_3q2x0"]
 [ext_resource type="PackedScene" uid="uid://bwcjyqarbdklt" path="res://inventario/llave.tscn" id="6_tbg6u"]
 [ext_resource type="PackedScene" uid="uid://cjh7u2io5d7mc" path="res://items/ganzua.tscn" id="8_rvme7"]
 [ext_resource type="Script" uid="uid://33wicx838os6" path="res://UI/contador_fps.gd" id="9_a4few"]
@@ -47,13 +48,82 @@ shadow_color = Color(0.5411765, 0, 0, 0.6)
 shadow_size = 10
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3q2x0"]
-bg_color = Color(0.22745098, 0.22745098, 0.22745098, 0.78431374)
+bg_color = Color(0.15167356, 1.0979828e-07, 6.016344e-09, 0.78431374)
 corner_radius_top_left = 15
 corner_radius_top_right = 15
 corner_radius_bottom_right = 15
 corner_radius_bottom_left = 15
-shadow_color = Color(0.3529412, 0.3529412, 0.3529412, 0.6)
+shadow_color = Color(0.26208854, 2.6171097e-07, 9.62615e-08, 0.6)
 shadow_size = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mhgjs"]
+bg_color = Color(0, 0.15686275, 0, 0.78431374)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+shadow_color = Color(0, 0.11210611, 0, 0.6)
+shadow_size = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cjdqc"]
+bg_color = Color(0.10747974, 0.10747974, 0.10747967, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0eft3"]
+bg_color = Color(0.61960787, 0.09411765, 0.09411765, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 25
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+corner_radius_bottom_left = 25
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ud54u"]
+bg_color = Color(1, 0, 0, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 25
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+corner_radius_bottom_left = 25
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_oaqsx"]
+bg_color = Color(0.26666668, 0, 0, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 25
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+corner_radius_bottom_left = 25
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3yiwo"]
+bg_color = Color(0.49747366, 0.49747372, 0.49747354, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
 
 [node name="sala" type="Node3D" unique_id=1955352439]
 
@@ -90,6 +160,9 @@ spot_attenuation = 0.6
 
 [node name="CanvasLayer" parent="Jugador/Node2D" parent_id_path=PackedInt32Array(212553440, 2102388130) index="0" unique_id=1482110964]
 layer = 10
+
+[node name="VBoxContainer" parent="Jugador/Node2D/CanvasLayer/Control" parent_id_path=PackedInt32Array(212553440, 2102388130, 968487047) index="1" unique_id=1976221300]
+theme_override_constants/separation = 80
 
 [node name="ConfirmarSalir" type="Control" parent="Jugador/Node2D/CanvasLayer" index="1" unique_id=1499653716]
 visible = false
@@ -166,8 +239,113 @@ theme_override_fonts/font = ExtResource("5_bl8tx")
 theme_override_font_sizes/font_size = 30
 theme_override_styles/normal = SubResource("StyleBoxFlat_cekhq")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_no552")
-theme_override_styles/hover = SubResource("StyleBoxFlat_3q2x0")
+theme_override_styles/hover = SubResource("StyleBoxFlat_mhgjs")
 text = "No"
+
+[node name="Ajustes" type="Control" parent="Jugador/Node2D/CanvasLayer" index="2" unique_id=1008471991]
+visible = false
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -380.0
+offset_top = -324.5
+offset_right = 380.0
+offset_bottom = 324.5
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("6_3q2x0")
+
+[node name="Panel" type="Panel" parent="Jugador/Node2D/CanvasLayer/Ajustes" unique_id=1816360628]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -380.0
+offset_top = -324.5
+offset_right = 380.0
+offset_bottom = 324.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_cjdqc")
+metadata/_edit_use_anchors_ = true
+
+[node name="Cerrar" type="Button" parent="Jugador/Node2D/CanvasLayer/Ajustes" unique_id=1119646534]
+process_mode = 2
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -74.5
+offset_top = 12.0
+offset_right = -17.0
+offset_bottom = 69.5
+grow_horizontal = 0
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxFlat_0eft3")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ud54u")
+theme_override_styles/hover = SubResource("StyleBoxFlat_oaqsx")
+text = "X"
+icon_alignment = 1
+
+[node name="Textos" type="VBoxContainer" parent="Jugador/Node2D/CanvasLayer/Ajustes" unique_id=1868445670]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -306.5
+offset_top = -254.0
+offset_right = -23.5
+offset_bottom = 254.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 100
+
+[node name="Label2" type="Label" parent="Jugador/Node2D/CanvasLayer/Ajustes/Textos" unique_id=1977377584]
+layout_mode = 2
+theme_override_constants/outline_size = 7
+theme_override_fonts/font = ExtResource("10_erchp")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxFlat_3yiwo")
+text = "Sonido General"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label3" type="Label" parent="Jugador/Node2D/CanvasLayer/Ajustes/Textos" unique_id=1331939679]
+layout_mode = 2
+theme_override_constants/outline_size = 7
+theme_override_fonts/font = ExtResource("10_erchp")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxFlat_3yiwo")
+text = "Sensibilidad del Mouse"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label5" type="Label" parent="Jugador/Node2D/CanvasLayer/Ajustes/Textos" unique_id=147152530]
+layout_mode = 2
+theme_override_constants/outline_size = 7
+theme_override_fonts/font = ExtResource("10_erchp")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxFlat_3yiwo")
+text = "FOV"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label4" type="Label" parent="Jugador/Node2D/CanvasLayer/Ajustes/Textos" unique_id=576721832]
+layout_mode = 2
+theme_override_constants/outline_size = 7
+theme_override_fonts/font = ExtResource("10_erchp")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxFlat_3yiwo")
+text = "Pantalla Completa"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="linterna" type="AudioStreamPlayer3D" parent="Jugador" unique_id=2091540673]
 transform = Transform3D(0.7490637, -1.1310547e-07, 1.1310547e-07, -1.1310547e-07, -0.7490637, 3.722292e-21, 1.1310547e-07, -1.7078454e-14, -0.7490637, 0.3283348, 0.39369708, -0.554337)
@@ -212,6 +390,7 @@ parameters/looping = false
 
 [connection signal="pressed" from="Jugador/Node2D/CanvasLayer/ConfirmarSalir/Si" to="Jugador/Node2D/CanvasLayer/ConfirmarSalir" method="_on_si_pressed"]
 [connection signal="pressed" from="Jugador/Node2D/CanvasLayer/ConfirmarSalir/No" to="Jugador/Node2D/CanvasLayer/ConfirmarSalir" method="_on_no_pressed"]
+[connection signal="pressed" from="Jugador/Node2D/CanvasLayer/Ajustes/Cerrar" to="Jugador/Node2D/CanvasLayer/Ajustes" method="_on_cerrar_pressed"]
 
 [editable path="Jugador"]
 [editable path="Jugador/Cabeza/Camera3D/linterna"]
