@@ -9,7 +9,7 @@
 [sub_resource type="BoxMesh" id="BoxMesh_f6o33"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wqt78"]
-albedo_color = Color(0.7607843, 0.45882353, 0.2627451, 1)
+albedo_color = Color(0.88235295, 0.88235295, 0.88235295, 1)
 albedo_texture = ExtResource("1_yqd0h")
 uv1_scale = Vector3(-13.505, -42.54, 1)
 
@@ -31,7 +31,7 @@ albedo_color = Color(0.3656178, 0.20206705, 0, 1)
 [sub_resource type="BoxMesh" id="BoxMesh_6xc37"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_igtkx"]
-albedo_color = Color(0.7607843, 0.45882353, 0.2627451, 1)
+albedo_color = Color(0.88235295, 0.88235295, 0.88235295, 1)
 albedo_texture = ExtResource("1_yqd0h")
 uv1_scale = Vector3(-13.47, 12.48, 1)
 
@@ -39,7 +39,7 @@ uv1_scale = Vector3(-13.47, 12.48, 1)
 data = PackedVector3Array(-0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, -0.5)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_f6o33"]
-albedo_color = Color(0.7607843, 0.45882353, 0.2627451, 1)
+albedo_color = Color(0.88235295, 0.88235295, 0.88235295, 1)
 albedo_texture = ExtResource("1_yqd0h")
 uv1_scale = Vector3(16.545, 48.24, 1)
 

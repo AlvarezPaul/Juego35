@@ -83,6 +83,39 @@ func _preparar_llave_en_mano() -> void:
 
 	modelo_llave.visible = false
 
+# Hace que un modelo se vea en la mano aunque la linterna esté apagada:
+# aclara los colores muy oscuros y le agrega un brillo propio suave,
+# igual que la llave. Solo afecta a la copia que está en la mano.
+func _hacer_visible_en_mano(modelo: Node, brillo: float = 0.8) -> void:
+	for nodo in modelo.find_children("*", "MeshInstance3D", true, false):
+		var malla := nodo as MeshInstance3D
+		if malla == null or malla.mesh == null:
+			continue
+
+		for i in malla.mesh.get_surface_count():
+			var original := malla.get_active_material(i) as StandardMaterial3D
+			if original == null:
+				continue
+
+			var material := original.duplicate() as StandardMaterial3D
+
+			var color := material.albedo_color
+			color.v = max(color.v, 0.45)
+			material.albedo_color = color
+			material.metallic = min(material.metallic, 0.1)
+
+			# El brillo usa un color claro aparte, así lo oscuro también se ve.
+			var color_brillo := color
+			color_brillo.v = max(color_brillo.v, 0.7)
+			material.emission_enabled = true
+			material.emission = color_brillo
+			material.emission_energy_multiplier = brillo
+
+			if malla.material_override != null:
+				malla.material_override = material
+			else:
+				malla.set_surface_override_material(i, material)
+
 func _preparar_ganzua_en_mano() -> void:
 	# La ganzúa de la mano no debe poder ser "mirada" ni agarrada por el RayCast.
 	var area := modelo_ganzua.get_node_or_null("Area3D") as Area3D

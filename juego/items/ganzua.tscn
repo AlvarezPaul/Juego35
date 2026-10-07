@@ -1,26 +1,22 @@
 [gd_scene format=3 uid="uid://cjh7u2io5d7mc"]
 
 [ext_resource type="Script" uid="uid://b7f76hd0iv5lq" path="res://items/ganzua.gd" id="1_6kdj8"]
-[ext_resource type="Texture2D" uid="uid://cyshstyms8hlx" path="res://inventario/ganzua.jpg" id="2_0j2i0"]
+[ext_resource type="Texture2D" uid="uid://bm1aj08ptop0d" path="res://inventario/ganzua.jpg" id="2_0j2i0"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_exekb"]
 size = Vector3(0.3, 0.9, 0.2878174)
 
 [sub_resource type="BoxMesh" id="BoxMesh_13qdw"]
-size = Vector3(0.14743042, 0.42340088, 0.18669128)
+size = Vector3(0.14743042, 0.44276428, 0.18669128)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_13qdw"]
-albedo_color = Color(0.16565639, 0.16565642, 0.16565639, 1)
-metallic = 0.5
-roughness = 0.8
+albedo_color = Color(0.4045111, 0.40451118, 0.40451103, 1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_0j2i0"]
-size = Vector3(0.14743042, 0.42340088, 0.18669128)
+size = Vector3(0.14743042, 0.35853577, 0.18669128)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_b1lj4"]
 albedo_color = Color(0.5370113, 0.5370113, 0.5370113, 1)
-metallic = 0.5
-roughness = 0.3
 
 [sub_resource type="PrismMesh" id="PrismMesh_xrivr"]
 
@@ -36,31 +32,31 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.026208505)
 shape = SubResource("BoxShape3D_exekb")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Area3D" unique_id=1476437831]
-transform = Transform3D(0.70191866, 0, 0, 0, 1, 0, 0, 0, 0.7752348, -0.0060577393, -0.26828003, -0.010795593)
+transform = Transform3D(0.70191866, 0, 0, 0, 1, 0, 0, 0, 0.7752348, -0.0026301742, -0.20900726, -0.010795593)
 mesh = SubResource("BoxMesh_13qdw")
 surface_material_override/0 = SubResource("StandardMaterial3D_13qdw")
 
 [node name="MeshInstance3D2" type="MeshInstance3D" parent="Area3D" unique_id=2010184417]
-transform = Transform3D(0.25173062, 0, 0, 0, 1, 0, 0, 0, 0.2158182, -0.0060577393, 0.1564883, -0.010795593)
+transform = Transform3D(0.25173062, 0, 0, 0, 1, 0, 0, 0, 0.2158182, -0.0026301742, 0.18892086, -0.010795593)
 mesh = SubResource("BoxMesh_0j2i0")
 surface_material_override/0 = SubResource("StandardMaterial3D_b1lj4")
 
 [node name="MeshInstance3D3" type="MeshInstance3D" parent="Area3D" unique_id=375941571]
-transform = Transform3D(0.25173062, 0, 0, 0, 0.09343516, 0, 0, 0, 0.5051361, -0.0060577393, 0.3486726, -0.041539133)
+transform = Transform3D(0.25173062, 0, 0, 0, 0.09343516, 0, 0, 0, 0.5051361, -0.0026301742, 0.3486726, -0.041539133)
 mesh = SubResource("BoxMesh_0j2i0")
 surface_material_override/0 = SubResource("StandardMaterial3D_b1lj4")
 
 [node name="MeshInstance3D4" type="MeshInstance3D" parent="Area3D" unique_id=908804669]
-transform = Transform3D(0.25173062, 0, 0, 0, 0.09343516, 0, 0, 0, 0.39868724, -0.0060577393, 0.26878956, -0.032562204)
+transform = Transform3D(0.25173062, 0, 0, 0, 0.09343516, 0, 0, 0, 0.39868724, -0.0026301742, 0.26878956, -0.032562204)
 mesh = SubResource("BoxMesh_0j2i0")
 surface_material_override/0 = SubResource("StandardMaterial3D_b1lj4")
 
 [node name="MeshInstance3D6" type="MeshInstance3D" parent="Area3D" unique_id=1103286721]
-transform = Transform3D(0.036229998, 0, 0, 0, -1.3113416e-09, 0.039962783, 0, -0.03, -1.7468287e-09, -0.006265875, 0.26867658, -0.08447229)
+transform = Transform3D(0.036229998, 0, 0, 0, -1.3113416e-09, 0.039962783, 0, -0.03, -1.7468287e-09, -0.0028383099, 0.26867658, -0.08447229)
 mesh = SubResource("PrismMesh_xrivr")
 surface_material_override/0 = SubResource("StandardMaterial3D_b1lj4")
 
 [node name="MeshInstance3D7" type="MeshInstance3D" parent="Area3D" unique_id=96702985]
-transform = Transform3D(0.036229998, 0, 0, 0, -1.3113416e-09, 0.039962783, 0, -0.03, -1.7468287e-09, -0.006265875, 0.34861678, -0.10363432)
+transform = Transform3D(0.036229998, 0, 0, 0, -1.3113416e-09, 0.039962783, 0, -0.03, -1.7468287e-09, -0.0028383099, 0.34861678, -0.10363432)
 mesh = SubResource("PrismMesh_xrivr")
 surface_material_override/0 = SubResource("StandardMaterial3D_b1lj4")
