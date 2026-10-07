@@ -1619,7 +1619,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_xhdhp")
 shape = SubResource("ConcavePolygonShape3D_vtg84")
 
 [node name="MeshInstance3D87" type="MeshInstance3D" parent="pasillo (salon)" unique_id=703153275]
-transform = Transform3D(-5.499923e-06, 0, 1.192, 0, 41.89, 0, -125.823586, 0, -5.2103974e-08, -25.90974, 11.638, 194.91614)
+transform = Transform3D(-5.499923e-06, 0, 1.192, 0, 41.89, 0, -125.823586, 0, -5.2103974e-08, -26.441841, 11.638, 194.91614)
 mesh = SubResource("BoxMesh_oaqsx")
 surface_material_override/0 = SubResource("StandardMaterial3D_xhdhp")
 
@@ -3260,44 +3260,26 @@ surface_material_override/0 = SubResource("StandardMaterial3D_0eft3")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="salon de actos/MeshInstance3D126/StaticBody3D" unique_id=1459441097]
 shape = SubResource("ConcavePolygonShape3D_rkkgu")
 
-[node name="MeshInstance3D27" type="MeshInstance3D" parent="salon de actos" unique_id=1191066609]
-transform = Transform3D(-6.5920875e-07, 0, 3.320041, 0, 5.471784, 0, -15.080937, 0, -1.451236e-07, -195.41397, -3.1705601, -62.328037)
-mesh = SubResource("BoxMesh_lxikg")
-skeleton = NodePath("../../Escaleras")
-surface_material_override/0 = SubResource("StandardMaterial3D_xmlsk")
-
-[node name="MeshInstance3D147" type="MeshInstance3D" parent="salon de actos" unique_id=30730019]
-transform = Transform3D(-6.5920875e-07, 0, 3.320041, 0, 7.0694857, 0, -15.080937, 0, -1.451236e-07, -198.69772, -5.723976, -62.328037)
-mesh = SubResource("BoxMesh_lxikg")
-skeleton = NodePath("../../Escaleras")
-surface_material_override/0 = SubResource("StandardMaterial3D_xmlsk")
-
-[node name="MeshInstance3D28" type="MeshInstance3D" parent="salon de actos" unique_id=833123554]
-transform = Transform3D(-6.5920875e-07, 0, 3.320041, 0, 7.770397, 0, -15.080937, 0, -1.451236e-07, -192.29697, -1.7288213, -62.195953)
-mesh = SubResource("BoxMesh_lxikg")
-skeleton = NodePath("../../Escaleras")
-surface_material_override/0 = SubResource("StandardMaterial3D_xmlsk")
-
-[node name="MeshInstance3D29" type="MeshInstance3D" parent="salon de actos" unique_id=1568164131]
-transform = Transform3D(-6.592087e-07, 0, 10.985145, 0, 9.666424, 0, -15.080936, 0, -4.801759e-07, -185.33418, 0.6791568, -62.0581)
-mesh = SubResource("BoxMesh_lxikg")
-skeleton = NodePath("../../Escaleras")
-surface_material_override/0 = SubResource("StandardMaterial3D_xmlsk")
-
 [node name="MeshInstance3D148" type="MeshInstance3D" parent="salon de actos" unique_id=1811453359]
-transform = Transform3D(-6.592087e-07, 0, -3.3200405, 0, 5.4717836, 0, 15.080936, 0, -1.451236e-07, -59.099983, -3.1705601, -62.15308)
+transform = Transform3D(-6.592087e-07, 0, -3.3200405, 0, 5.4717836, 0, 15.080936, 0, -1.451236e-07, -59.099983, -1.4674456, -62.15308)
 mesh = SubResource("BoxMesh_lxikg")
 skeleton = NodePath("../../Escaleras")
 surface_material_override/0 = SubResource("StandardMaterial3D_xmlsk")
 
 [node name="MeshInstance3D149" type="MeshInstance3D" parent="salon de actos" unique_id=2092907721]
-transform = Transform3D(-6.592087e-07, 0, -3.3200405, 0, 7.069485, 0, 15.080936, 0, -1.451236e-07, -55.816345, -5.723976, -62.1876)
+transform = Transform3D(-6.592087e-07, 0, -3.3200405, 0, 7.069485, 0, 15.080936, 0, -1.451236e-07, -55.816345, -4.3008566, -62.1876)
+mesh = SubResource("BoxMesh_lxikg")
+skeleton = NodePath("../../Escaleras")
+surface_material_override/0 = SubResource("StandardMaterial3D_xmlsk")
+
+[node name="MeshInstance3D162" type="MeshInstance3D" parent="salon de actos" unique_id=1615461822]
+transform = Transform3D(-6.592087e-07, 0, -3.3200405, 0, 7.069485, 0, 15.080936, 0, -1.451236e-07, -52.497715, -6.28456, -62.1876)
 mesh = SubResource("BoxMesh_lxikg")
 skeleton = NodePath("../../Escaleras")
 surface_material_override/0 = SubResource("StandardMaterial3D_xmlsk")
 
 [node name="MeshInstance3D150" type="MeshInstance3D" parent="salon de actos" unique_id=520380]
-transform = Transform3D(-6.592086e-07, 0, -3.3200405, 0, 7.770396, 0, 15.080935, 0, -1.4512358e-07, -62.21781, -1.7288213, -62.25239)
+transform = Transform3D(-6.592086e-07, 0, -3.3200405, 0, 7.770396, 0, 15.080935, 0, -1.4512358e-07, -62.21781, -0.41882992, -62.25239)
 mesh = SubResource("BoxMesh_lxikg")
 skeleton = NodePath("../../Escaleras")
 surface_material_override/0 = SubResource("StandardMaterial3D_xmlsk")
@@ -3661,6 +3643,26 @@ surface_material_override/0 = SubResource("StandardMaterial3D_pkj3c")
 [node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D9" unique_id=464486463]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D9/StaticBody3D" unique_id=5444158]
+shape = SubResource("ConcavePolygonShape3D_e4v1y")
+
+[node name="MeshInstance3D18" type="MeshInstance3D" parent="." unique_id=1537876460]
+transform = Transform3D(-15.866808, 0.47813937, -1.5147336e-06, 9.723192, 0.78025246, 0, 1.3871204e-06, -4.1800266e-08, -17.326532, -60.00022, 0.19379473, -63.71966)
+mesh = SubResource("BoxMesh_e4v1y")
+surface_material_override/0 = SubResource("StandardMaterial3D_pkj3c")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D18" unique_id=1611653964]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D18/StaticBody3D" unique_id=238878158]
+shape = SubResource("ConcavePolygonShape3D_e4v1y")
+
+[node name="MeshInstance3D19" type="MeshInstance3D" parent="." unique_id=670412842]
+transform = Transform3D(-17.044163, 0, 1.3045827e-06, 0, 0.94854474, 0, -1.490048e-06, 0, -14.922688, -74.096214, 4.643667, -62.51971)
+mesh = SubResource("BoxMesh_e4v1y")
+surface_material_override/0 = SubResource("StandardMaterial3D_pkj3c")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D19" unique_id=1013635649]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D19/StaticBody3D" unique_id=1707151979]
 shape = SubResource("ConcavePolygonShape3D_e4v1y")
 
 [node name="MeshInstance3D3" type="MeshInstance3D" parent="." unique_id=420512144]
