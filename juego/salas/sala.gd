@@ -11,3 +11,6 @@ func _on_salida_final_body_entered(body):
 		get_tree().paused = true
 		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 		$PantallaFinal.visible = true
+		$ContadorFPS.visible = false
+		$CanvasLayer.visible = false
+		$Jugador/Inventario.visible = false
