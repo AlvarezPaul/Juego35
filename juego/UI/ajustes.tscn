@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://1y82ytyl00pp"]
 
 [ext_resource type="FontFile" uid="uid://ocuqailjsal3" path="res://Fuentes/StayDrips-Regular.otf" id="1_u4kum"]
-[ext_resource type="FontFile" uid="uid://blju0ku40nkwn" path="res://Interfaz/Fuentes/Bonechiller Free.otf" id="2_mon12"]
+[ext_resource type="FontFile" uid="uid://blju0ku40nkwn" path="res://Fuentes/Bonechiller Free.otf" id="2_mon12"]
 [ext_resource type="Script" uid="uid://cdvfbej5sosp" path="res://UI/pantcompleta.gd" id="2_qgyvf"]
 [ext_resource type="Script" uid="uid://dr6ldu5lrqu27" path="res://UI/volverdeaj.gd" id="3_p1khp"]
 [ext_resource type="PackedScene" uid="uid://dav4xsf5v0vn1" path="res://UI/barra_sonidos.tscn" id="4_56yal"]
@@ -96,6 +96,10 @@ layout_mode = 2
 layout_mode = 2
 script = null
 
+[node name="fov" parent="Panel/Cont de Sliders y CheckBox" unique_id=1725355257 instance=ExtResource("4_56yal")]
+layout_mode = 2
+script = null
+
 [node name="CheckBox" type="CheckBox" parent="Panel/Cont de Sliders y CheckBox" unique_id=234344850]
 layout_mode = 2
 size_flags_horizontal = 4
@@ -105,10 +109,6 @@ button_pressed = true
 icon = SubResource("CanvasTexture_rfr4f")
 flat = true
 script = ExtResource("2_qgyvf")
-
-[node name="fov" parent="Panel/Cont de Sliders y CheckBox" unique_id=1725355257 instance=ExtResource("4_56yal")]
-layout_mode = 2
-script = null
 
 [node name="Ajustes Título" type="Label" parent="Panel" unique_id=140143887]
 layout_mode = 1
@@ -173,16 +173,6 @@ text = "Sensibilidad del Mouse"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Label4" type="Label" parent="Panel/Textos" unique_id=1067891136]
-layout_mode = 2
-theme_override_constants/outline_size = 7
-theme_override_fonts/font = ExtResource("5_oxxd6")
-theme_override_font_sizes/font_size = 25
-theme_override_styles/normal = SubResource("StyleBoxFlat_cjdqc")
-text = "Pantalla Completa"
-horizontal_alignment = 1
-vertical_alignment = 1
-
 [node name="Label5" type="Label" parent="Panel/Textos" unique_id=205805489]
 layout_mode = 2
 theme_override_constants/outline_size = 7
@@ -190,6 +180,16 @@ theme_override_fonts/font = ExtResource("5_oxxd6")
 theme_override_font_sizes/font_size = 25
 theme_override_styles/normal = SubResource("StyleBoxFlat_cjdqc")
 text = "FOV"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label4" type="Label" parent="Panel/Textos" unique_id=1067891136]
+layout_mode = 2
+theme_override_constants/outline_size = 7
+theme_override_fonts/font = ExtResource("5_oxxd6")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxFlat_cjdqc")
+text = "Pantalla Completa"
 horizontal_alignment = 1
 vertical_alignment = 1
 

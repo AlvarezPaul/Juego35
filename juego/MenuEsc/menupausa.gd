@@ -6,6 +6,8 @@ extends Control
 @onready var _btn_reanudar: Button = $VBoxContainer/Reanudar
 @onready var _btn_salir: Button = $VBoxContainer/salir
 @onready var conf: Control = $"../ConfirmarSalir"
+@onready var aj: Control = $"../Ajustes"
+var partida_terminada = false
 
 func _ready() -> void:
 	process_mode = Node.PROCESS_MODE_ALWAYS
@@ -15,6 +17,8 @@ func _ready() -> void:
 
 
 func _process(_delta: float) -> void:
+	if partida_terminada == true:
+		return
 	if Input.is_action_just_pressed("ui_cancel"):
 		if visible:
 			_reanudar()
@@ -41,3 +45,4 @@ func _salir_al_menu() -> void:
 
 func _on_ajustes_pressed() -> void:
 	Autoloadsonido.play_click()
+	aj.visible = true
