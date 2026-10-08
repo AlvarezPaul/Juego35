@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://b6ncf806r6a0b"]
 
+[ext_resource type="Script" uid="uid://cto1h4oask7ao" path="res://salas/sala.gd" id="1_bl8tx"]
 [ext_resource type="PackedScene" uid="uid://slwd7f6wku1b" path="res://esceneria/escuela.tscn" id="1_kwadh"]
 [ext_resource type="Script" uid="uid://d2maeb5p5ya8m" path="res://UI/confirmar_salir.gd" id="3_3q2x0"]
 [ext_resource type="FontFile" uid="uid://ocuqailjsal3" path="res://Fuentes/StayDrips-Regular.otf" id="3_cekhq"]
@@ -7,18 +8,26 @@
 [ext_resource type="PackedScene" uid="uid://mbsgoh8bcs3w" path="res://jugador/jugador.tscn" id="3_qh0pk"]
 [ext_resource type="Script" uid="uid://31ipksk4tnso" path="res://scriptstamina/canvas_layer.gd" id="3_tgavs"]
 [ext_resource type="PackedScene" uid="uid://l3360f65cyou" path="res://salas/linterna_suelo.tscn" id="4_tgavs"]
-[ext_resource type="FontFile" uid="uid://blju0ku40nkwn" path="res://Fuentes/Bonechiller Free.otf" id="5_bl8tx"]
+[ext_resource type="FontFile" uid="uid://blju0ku40nkwn" path="res://Interfaz/Fuentes/Bonechiller Free.otf" id="5_bl8tx"]
 [ext_resource type="Script" uid="uid://v4xmv2vcxdob" path="res://UI/ajustesmenuesc.gd" id="6_3q2x0"]
 [ext_resource type="PackedScene" uid="uid://bwcjyqarbdklt" path="res://inventario/llave.tscn" id="6_tbg6u"]
 [ext_resource type="PackedScene" uid="uid://cjh7u2io5d7mc" path="res://items/ganzua.tscn" id="8_rvme7"]
 [ext_resource type="Script" uid="uid://33wicx838os6" path="res://UI/contador_fps.gd" id="9_a4few"]
 [ext_resource type="FontFile" uid="uid://cdu7dgetstelv" path="res://Fuentes/trebuc.ttf" id="10_erchp"]
 [ext_resource type="AudioStream" uid="uid://deksytmtdq141" path="res://UI/sonidoambiente.mp3" id="11_erchp"]
+[ext_resource type="Shader" uid="uid://dbit8djafjspy" path="res://MenuEsc/blur.gdshader" id="15_3yiwo"]
+[ext_resource type="Script" uid="uid://cbtmpdwgai7qm" path="res://UI/pantalla_final.gd" id="15_mhgjs"]
+[ext_resource type="FontFile" uid="uid://g00wcuajk3nk" path="res://Fuentes/Bonechiller Free.ttf" id="17_f1ihl"]
+[ext_resource type="Texture2D" uid="uid://cgstjq687v5ae" path="res://fotos/et35logo.png" id="18_f1ihl"]
 
 [sub_resource type="Environment" id="Environment_pvkkf"]
 background_mode = 1
 background_color = Color(0.15640268, 0.17418766, 0.2030974, 1)
 background_energy_multiplier = 0.2
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_xrivr"]
+shader = ExtResource("15_3yiwo")
+shader_parameter/blur_amount = 3.0930001469175
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bl8tx"]
 bg_color = Color(0.16078432, 0.16078432, 0.16078432, 0.65882355)
@@ -125,7 +134,57 @@ corner_radius_top_right = 15
 corner_radius_bottom_right = 15
 corner_radius_bottom_left = 15
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xrivr"]
+bg_color = Color(0.13682586, 0.13682568, 0.13682571, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_13qdw"]
+bg_color = Color(0, 0, 0, 0.61960787)
+corner_radius_top_left = 45
+corner_radius_top_right = 45
+corner_radius_bottom_right = 45
+corner_radius_bottom_left = 45
+shadow_size = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_b1lj4"]
+bg_color = Color(0.15912649, 1.2559117e-07, 3.008172e-08, 1)
+corner_radius_top_left = 45
+corner_radius_top_right = 45
+corner_radius_bottom_right = 45
+corner_radius_bottom_left = 45
+shadow_color = Color(0.20181593, 1.1431053e-07, 7.219613e-08, 0.6)
+shadow_size = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_njqwk"]
+bg_color = Color(0, 0, 0, 0.9019608)
+corner_radius_top_left = 45
+corner_radius_top_right = 45
+corner_radius_bottom_right = 45
+corner_radius_bottom_left = 45
+shadow_size = 15
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mnxya"]
+bg_color = Color(0.8089983, 0.8089983, 0.80899817, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
 [node name="sala" type="Node3D" unique_id=1955352439]
+script = ExtResource("1_bl8tx")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=615291951]
 environment = SubResource("Environment_pvkkf")
@@ -160,6 +219,9 @@ spot_attenuation = 0.6
 
 [node name="CanvasLayer" parent="Jugador/Node2D" parent_id_path=PackedInt32Array(212553440, 2102388130) index="0" unique_id=1482110964]
 layer = 10
+
+[node name="ColorRect" parent="Jugador/Node2D/CanvasLayer/Control" parent_id_path=PackedInt32Array(212553440, 2102388130, 968487047) index="0" unique_id=264834643]
+material = SubResource("ShaderMaterial_xrivr")
 
 [node name="VBoxContainer" parent="Jugador/Node2D/CanvasLayer/Control" parent_id_path=PackedInt32Array(212553440, 2102388130, 968487047) index="1" unique_id=1976221300]
 theme_override_constants/separation = 80
@@ -382,15 +444,148 @@ offset_bottom = 42.0
 theme_override_constants/outline_size = 3
 theme_override_fonts/font = ExtResource("10_erchp")
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=394394416]
+[node name="PantallaFinal" type="CanvasLayer" parent="." unique_id=787803605]
+process_mode = 2
+visible = false
+script = ExtResource("15_mhgjs")
+
+[node name="EfectoBlur" type="ColorRect" parent="PantallaFinal" unique_id=978504517]
+material = SubResource("ShaderMaterial_xrivr")
+offset_right = 1390.0
+offset_bottom = 776.0
+
+[node name="¡Escapaste!" type="Label" parent="PantallaFinal" unique_id=20863535]
+z_index = 10
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -213.5
+offset_top = 25.0
+offset_right = 213.5
+offset_bottom = 95.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1.4439226e-07, 0.70104903, 1.540184e-06, 1)
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("3_cekhq")
+theme_override_font_sizes/font_size = 80
+text = "¡Escapaste!"
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="PantallaFinal" unique_id=1533866491]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -285.5
+offset_top = 100.0
+offset_right = 285.5
+offset_bottom = 190.0
+grow_horizontal = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("10_erchp")
+theme_override_font_sizes/font_size = 23
+text = "Ahora vas a tener que volver a casa caminando porque 
+no hay colectivos..."
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TiempoDeEscapeText" type="Label" parent="PantallaFinal" unique_id=1916550164]
+offset_left = 412.0
+offset_top = 242.0
+offset_right = 644.0
+offset_bottom = 287.0
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxFlat_xrivr")
+text = "Tiempo de Escape:"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="IntentarDeNuevo" type="Button" parent="PantallaFinal" unique_id=1981781326]
+offset_left = 788.0
+offset_top = 521.0
+offset_right = 1047.0
+offset_bottom = 614.0
+theme_override_constants/outline_size = 25
+theme_override_fonts/font = ExtResource("17_f1ihl")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/normal = SubResource("StyleBoxFlat_13qdw")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_b1lj4")
+theme_override_styles/hover = SubResource("StyleBoxFlat_njqwk")
+text = "Intentar de Nuevo"
+
+[node name="VolverAlMenu" type="Button" parent="PantallaFinal" unique_id=2105853672]
+offset_left = 349.0
+offset_top = 520.0
+offset_right = 608.0
+offset_bottom = 613.0
+theme_override_constants/outline_size = 25
+theme_override_fonts/font = ExtResource("17_f1ihl")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/normal = SubResource("StyleBoxFlat_13qdw")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_b1lj4")
+theme_override_styles/hover = SubResource("StyleBoxFlat_njqwk")
+text = "Volver al menú"
+
+[node name="Panel3" type="Panel" parent="PantallaFinal" unique_id=1249665396]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -165.75
+offset_top = -88.0
+offset_right = 165.75
+offset_bottom = -30.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_mnxya")
+
+[node name="Label" type="Label" parent="PantallaFinal/Panel3" unique_id=2141958205]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -262.25
+offset_top = -27.5
+offset_right = 218.25
+offset_bottom = 27.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 40
+text = "4°1° - 2026"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="PantallaFinal/Panel3" unique_id=670180802]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 88.5
+offset_top = -22.5
+offset_right = 129.5
+offset_bottom = 22.5
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("18_f1ihl")
+expand_mode = 1
+
+[node name="SonidoAmbiente" type="AudioStreamPlayer" parent="." unique_id=394394416]
 stream = ExtResource("11_erchp")
-volume_db = -20.0
+volume_db = -15.0
 autoplay = true
 parameters/looping = false
 
 [connection signal="pressed" from="Jugador/Node2D/CanvasLayer/ConfirmarSalir/Si" to="Jugador/Node2D/CanvasLayer/ConfirmarSalir" method="_on_si_pressed"]
 [connection signal="pressed" from="Jugador/Node2D/CanvasLayer/ConfirmarSalir/No" to="Jugador/Node2D/CanvasLayer/ConfirmarSalir" method="_on_no_pressed"]
 [connection signal="pressed" from="Jugador/Node2D/CanvasLayer/Ajustes/Cerrar" to="Jugador/Node2D/CanvasLayer/Ajustes" method="_on_cerrar_pressed"]
+[connection signal="pressed" from="PantallaFinal/IntentarDeNuevo" to="PantallaFinal" method="_on_intentar_de_nuevo_pressed"]
+[connection signal="pressed" from="PantallaFinal/VolverAlMenu" to="PantallaFinal" method="_on_volver_al_menu_pressed"]
 
 [editable path="Jugador"]
 [editable path="Jugador/Cabeza/Camera3D/linterna"]
