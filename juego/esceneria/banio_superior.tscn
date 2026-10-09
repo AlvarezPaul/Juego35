@@ -211,6 +211,12 @@ size = Vector3(3.4083033, 4.53734, 0.33447266)
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8xuoa"]
 albedo_color = Color(0.7989165, 0.7045978, 0.45038158, 1)
 
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_ne8gd"]
+data = PackedVector3Array(-1.7041999, 2.2687, 0.1672, 1.7041999, 2.2687, 0.1672, -1.7041999, -2.2687, 0.1672, 1.7041999, 2.2687, 0.1672, 1.7041999, -2.2687, 0.1672, -1.7041999, -2.2687, 0.1672, 1.7041999, 2.2687, -0.1672, -1.7041999, 2.2687, -0.1672, 1.7041999, -2.2687, -0.1672, -1.7041999, 2.2687, -0.1672, -1.7041999, -2.2687, -0.1672, 1.7041999, -2.2687, -0.1672, 1.7041999, 2.2687, 0.1672, 1.7041999, 2.2687, -0.1672, 1.7041999, -2.2687, 0.1672, 1.7041999, 2.2687, -0.1672, 1.7041999, -2.2687, -0.1672, 1.7041999, -2.2687, 0.1672, -1.7041999, 2.2687, -0.1672, -1.7041999, 2.2687, 0.1672, -1.7041999, -2.2687, -0.1672, -1.7041999, 2.2687, 0.1672, -1.7041999, -2.2687, 0.1672, -1.7041999, -2.2687, -0.1672, 1.7041999, 2.2687, 0.1672, -1.7041999, 2.2687, 0.1672, 1.7041999, 2.2687, -0.1672, -1.7041999, 2.2687, 0.1672, -1.7041999, 2.2687, -0.1672, 1.7041999, 2.2687, -0.1672, -1.7041999, -2.2687, 0.1672, 1.7041999, -2.2687, 0.1672, -1.7041999, -2.2687, -0.1672, 1.7041999, -2.2687, 0.1672, 1.7041999, -2.2687, -0.1672, -1.7041999, -2.2687, -0.1672)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_acu16"]
+data = PackedVector3Array(-1.7041999, 2.2687, 0.1672, 1.7041999, 2.2687, 0.1672, -1.7041999, -2.2687, 0.1672, 1.7041999, 2.2687, 0.1672, 1.7041999, -2.2687, 0.1672, -1.7041999, -2.2687, 0.1672, 1.7041999, 2.2687, -0.1672, -1.7041999, 2.2687, -0.1672, 1.7041999, -2.2687, -0.1672, -1.7041999, 2.2687, -0.1672, -1.7041999, -2.2687, -0.1672, 1.7041999, -2.2687, -0.1672, 1.7041999, 2.2687, 0.1672, 1.7041999, 2.2687, -0.1672, 1.7041999, -2.2687, 0.1672, 1.7041999, 2.2687, -0.1672, 1.7041999, -2.2687, -0.1672, 1.7041999, -2.2687, 0.1672, -1.7041999, 2.2687, -0.1672, -1.7041999, 2.2687, 0.1672, -1.7041999, -2.2687, -0.1672, -1.7041999, 2.2687, 0.1672, -1.7041999, -2.2687, 0.1672, -1.7041999, -2.2687, -0.1672, 1.7041999, 2.2687, 0.1672, -1.7041999, 2.2687, 0.1672, 1.7041999, 2.2687, -0.1672, -1.7041999, 2.2687, 0.1672, -1.7041999, 2.2687, -0.1672, 1.7041999, 2.2687, -0.1672, -1.7041999, -2.2687, 0.1672, 1.7041999, -2.2687, 0.1672, -1.7041999, -2.2687, -0.1672, 1.7041999, -2.2687, 0.1672, 1.7041999, -2.2687, -0.1672, -1.7041999, -2.2687, -0.1672)
+
 [node name="baño_superior" type="Node3D" unique_id=2075413175]
 
 [node name="inodoro" parent="." unique_id=1190789017 instance=ExtResource("1_46w4g")]
@@ -297,7 +303,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_yhian")
 shape = SubResource("ConcavePolygonShape3D_4nfin")
 
 [node name="MeshInstance3D9" type="MeshInstance3D" parent="estructura" unique_id=1887673366]
-transform = Transform3D(2.928687e-14, 2.1855694e-08, 11.648479, 15.327938, -2.1855694e-08, 0, 6.700055e-07, 0.5, -5.091712e-07, 4.110577, 7.709608, -0.87158966)
+transform = Transform3D(2.928687e-14, 2.1855694e-08, 10.673936, 15.327938, -2.1855694e-08, 0, 6.700055e-07, 0.5, -4.6657252e-07, 4.580444, 7.709608, -0.87158966)
 mesh = SubResource("BoxMesh_f6o33")
 skeleton = NodePath("../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_yhian")
@@ -567,7 +573,6 @@ surface_material_override/0 = SubResource("StandardMaterial3D_wqt78")
 stream = ExtResource("6_igtkx")
 pitch_scale = 0.9
 autoplay = true
-stream_paused = true
 max_distance = 15.0
 
 [node name="MeshInstance3D11" type="MeshInstance3D" parent="lavamanos" unique_id=552766821]
@@ -910,11 +915,21 @@ mesh = SubResource("BoxMesh_acu16")
 skeleton = NodePath("../mingitorio3/MeshInstance3D2")
 surface_material_override/0 = SubResource("StandardMaterial3D_8xuoa")
 
+[node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D8" unique_id=829690650]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D8/StaticBody3D" unique_id=343950904]
+shape = SubResource("ConcavePolygonShape3D_ne8gd")
+
 [node name="MeshInstance3D9" type="MeshInstance3D" parent="." unique_id=1486564084]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.131462, 4.304161, -6.400975)
 mesh = SubResource("BoxMesh_acu16")
 skeleton = NodePath("../mingitorio3/MeshInstance3D2")
 surface_material_override/0 = SubResource("StandardMaterial3D_8xuoa")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D9" unique_id=1897026826]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D9/StaticBody3D" unique_id=986299063]
+shape = SubResource("ConcavePolygonShape3D_acu16")
 
 [editable path="inodoro"]
 [editable path="inodoro2"]
