@@ -894,6 +894,9 @@ albedo_color = Color(0.88235295, 0.88235295, 0.88235295, 1)
 albedo_texture = ExtResource("3_rpd8f")
 uv1_scale = Vector3(15, 2, 1)
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_b1lj4"]
+size = Vector3(20, 30, 1)
+
 [node name="escuela" type="Node3D" unique_id=905997500]
 
 [node name="aula" parent="." unique_id=1400564712 instance=ExtResource("2_ic0mm")]
@@ -7010,6 +7013,8 @@ transform = Transform3D(6.2188256e-08, 0, -5.215, 0, 5.215, 0, 5.215, 0, 6.21882
 [node name="Puertabloqueada4" parent="." unique_id=1581704983 instance=ExtResource("5_yujmg")]
 transform = Transform3D(-4.09, 0, -3.5755917e-07, 0, 4.09, 0, 3.5755917e-07, 0, -4.09, 11.779608, 3.8048086, 241.97296)
 
+
+
 [node name="MeshInstance3D80" type="MeshInstance3D" parent="." unique_id=1657532808]
 transform = Transform3D(-1.869316e-06, -18.373693, 0, 42.764965, -8.031396e-07, 0, 0, 0, 2.45508, -20.167128, 56.862972, 175.02304)
 mesh = SubResource("BoxMesh_oaqsx")
@@ -7316,6 +7321,13 @@ surface_material_override/0 = SubResource("StandardMaterial3D_rc72u")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D172/StaticBody3D" unique_id=2022678084]
 shape = SubResource("ConcavePolygonShape3D_0fqj5")
+
+[node name="SALIDAFINAL" type="Area3D" parent="." unique_id=248477425]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 304.60547, 8.457818, 190.4098)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SALIDAFINAL" unique_id=1402191884]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.67614746, 2.5349445, 0)
+shape = SubResource("BoxShape3D_b1lj4")
 
 [editable path="puerta"]
 [editable path="puerta2"]

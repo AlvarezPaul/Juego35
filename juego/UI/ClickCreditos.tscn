@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://c80sue7xddtbx" path="res://fotos/fondoblur.jpg" id="1_qc2no"]
 [ext_resource type="Script" uid="uid://dr6ldu5lrqu27" path="res://UI/volverdeaj.gd" id="2_qc2no"]
 [ext_resource type="FontFile" uid="uid://cdu7dgetstelv" path="res://Fuentes/trebuc.ttf" id="4_qc2no"]
-[ext_resource type="FontFile" uid="uid://blju0ku40nkwn" path="res://Interfaz/Fuentes/Bonechiller Free.otf" id="4_skinw"]
+[ext_resource type="FontFile" uid="uid://blju0ku40nkwn" path="res://Fuentes/Bonechiller Free.otf" id="4_skinw"]
 [ext_resource type="FontFile" uid="uid://ocuqailjsal3" path="res://Fuentes/StayDrips-Regular.otf" id="5_skipg"]
 [ext_resource type="Texture2D" uid="uid://cgstjq687v5ae" path="res://fotos/et35logo.png" id="6_l15ch"]
 [ext_resource type="AudioStream" uid="uid://pogmuy6woqyo" path="res://UI/click.mp3" id="8_l15ch"]
@@ -86,17 +86,17 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_xrivr")
 
 [node name="Panel3" type="Panel" parent="." unique_id=577374624]
 layout_mode = 1
-anchors_preset = 8
+anchors_preset = 7
 anchor_left = 0.5
-anchor_top = 0.5
+anchor_top = 1.0
 anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -308.5
-offset_top = 301.0
-offset_right = 308.5
-offset_bottom = 359.0
+anchor_bottom = 1.0
+offset_left = -165.75
+offset_top = -118.0
+offset_right = 165.75
+offset_bottom = -60.0
 grow_horizontal = 2
-grow_vertical = 2
+grow_vertical = 0
 theme_override_styles/panel = SubResource("StyleBoxFlat_xrivr")
 
 [node name="Label" type="Label" parent="Panel3" unique_id=419192565]
@@ -150,7 +150,7 @@ grow_vertical = 2
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 20
 theme_override_fonts/font = ExtResource("4_qc2no")
-theme_override_font_sizes/font_size = 71
+theme_override_font_sizes/font_size = 65
 text = "Ignacio Saavedra
 Manuel Proserpio
 Paúl Álvarez
