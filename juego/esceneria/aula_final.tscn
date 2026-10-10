@@ -1879,6 +1879,7 @@ mesh = SubResource("BoxMesh_0hna2")
 [node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D28" unique_id=897882922]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D28/StaticBody3D" unique_id=1140179706]
+transform = Transform3D(1.0000001, 0, 2.7755576e-17, 0, 1, 0, 0, 0, 1.0000002, 0, 0.023349106, 8.511475)
 shape = SubResource("ConcavePolygonShape3D_2hj3n")
 
 [editable path="puerta"]
