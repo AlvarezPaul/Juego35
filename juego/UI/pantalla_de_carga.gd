@@ -1,7 +1,6 @@
 extends Control
 
 @onready var texto: Label = $Consejos
-@onready var contador: Timer = $PdC
 @onready var barra: ProgressBar = $ProgressBar
 
 var progreso: Array = []
@@ -13,7 +12,6 @@ var consejos: Array[String] = [
 
 func _ready() -> void:
 	imprimir_texto()
-	contador.timeout.connect(_on_timer_timeout)
 
 	# Empieza a cargar la escena en segundo plano.
 	# La escena a cargar está en el autoload PantallaDeCarga (autoloadpcarga.gd).
@@ -41,13 +39,6 @@ func _process(_delta: float) -> void:
 			# Si la carga falla, avisamos en vez de quedarnos trabados sin saber por qué.
 			push_error("No se pudo cargar la escena: " + PantallaDeCarga.change_scene)
 			set_process(false)
-
-
-# Cada 3 segundos se cambia el consejo.
-func _on_timer_timeout() -> void:
-	imprimir_texto()
-	contador.start()
-
 
 # Elige un consejo al azar (distinto al anterior).
 func imprimir_texto() -> void:

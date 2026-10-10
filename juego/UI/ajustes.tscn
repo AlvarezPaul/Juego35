@@ -1,18 +1,54 @@
 [gd_scene format=3 uid="uid://1y82ytyl00pp"]
 
 [ext_resource type="FontFile" uid="uid://ocuqailjsal3" path="res://Fuentes/StayDrips-Regular.otf" id="1_u4kum"]
-[ext_resource type="FontFile" uid="uid://blju0ku40nkwn" path="res://Fuentes/Bonechiller Free.otf" id="2_mon12"]
+[ext_resource type="FontFile" uid="uid://blju0ku40nkwn" path="res://Interfaz/Fuentes/Bonechiller Free.otf" id="2_mon12"]
 [ext_resource type="Script" uid="uid://cdvfbej5sosp" path="res://UI/pantcompleta.gd" id="2_qgyvf"]
 [ext_resource type="Script" uid="uid://dr6ldu5lrqu27" path="res://UI/volverdeaj.gd" id="3_p1khp"]
 [ext_resource type="PackedScene" uid="uid://dav4xsf5v0vn1" path="res://UI/barra_sonidos.tscn" id="4_56yal"]
 [ext_resource type="FontFile" uid="uid://cdu7dgetstelv" path="res://Fuentes/trebuc.ttf" id="5_oxxd6"]
-[ext_resource type="AudioStream" uid="uid://pogmuy6woqyo" path="res://UI/click.mp3" id="7_33ovl"]
+[ext_resource type="Script" path="res://UI/timer_botones.gd" id="90_timerbtn"]
 
 [sub_resource type="ImageTexture" id="ImageTexture_p3nki"]
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_rfr4f"]
 diffuse_texture = SubResource("ImageTexture_p3nki")
 specular_color = Color(0.16924527, 0.1692453, 0.16924527, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kcw23"]
+bg_color = Color(0.45452422, 0.45452428, 0.45452416, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ink1u"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lgb8o"]
+bg_color = Color(0.3854925, 0.3854925, 0.38549235, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_f6o33"]
 bg_color = Color(0.6, 0.6, 0.6, 0.38431373)
@@ -80,19 +116,24 @@ layout_mode = 0
 offset_left = -4.0
 offset_right = 1148.0
 offset_bottom = 643.0
+metadata/_edit_use_anchors_ = true
 
 [node name="Cont de Sliders y CheckBox" type="VBoxContainer" parent="Panel" unique_id=1674673960]
 layout_mode = 0
-offset_left = 590.0
-offset_top = 205.0
-offset_right = 803.0
-offset_bottom = 401.0
-theme_override_constants/separation = 37
+offset_left = 620.67523
+offset_top = 202.4416
+offset_right = 833.67523
+offset_bottom = 481.4416
+theme_override_constants/separation = 65
 
 [node name="barra_sonidos" parent="Panel/Cont de Sliders y CheckBox" unique_id=1664845339 instance=ExtResource("4_56yal")]
 layout_mode = 2
 
 [node name="sensibilidad" parent="Panel/Cont de Sliders y CheckBox" unique_id=975027753 instance=ExtResource("4_56yal")]
+layout_mode = 2
+script = null
+
+[node name="fov" parent="Panel/Cont de Sliders y CheckBox" unique_id=1725355257 instance=ExtResource("4_56yal")]
 layout_mode = 2
 script = null
 
@@ -106,9 +147,56 @@ icon = SubResource("CanvasTexture_rfr4f")
 flat = true
 script = ExtResource("2_qgyvf")
 
-[node name="fov" parent="Panel/Cont de Sliders y CheckBox" unique_id=1725355257 instance=ExtResource("4_56yal")]
+[node name="OcultarMostrar" type="HBoxContainer" parent="Panel/Cont de Sliders y CheckBox" unique_id=1108191122]
 layout_mode = 2
-script = null
+theme_override_constants/separation = 2
+alignment = 1
+
+[node name="Ocultar" type="Button" parent="Panel/Cont de Sliders y CheckBox/OcultarMostrar" unique_id=216490050]
+layout_mode = 2
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("5_oxxd6")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_kcw23")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ink1u")
+theme_override_styles/hover = SubResource("StyleBoxFlat_lgb8o")
+text = "Ocultar"
+
+[node name="Mostrar" type="Button" parent="Panel/Cont de Sliders y CheckBox/OcultarMostrar" unique_id=962186902]
+layout_mode = 2
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("5_oxxd6")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_kcw23")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ink1u")
+theme_override_styles/hover = SubResource("StyleBoxFlat_lgb8o")
+text = "Mostrar"
+
+[node name="OcultarMostrar2" type="HBoxContainer" parent="Panel/Cont de Sliders y CheckBox" unique_id=1272293904]
+layout_mode = 2
+script = ExtResource("90_timerbtn")
+theme_override_constants/separation = 2
+alignment = 1
+
+[node name="Ocultar" type="Button" parent="Panel/Cont de Sliders y CheckBox/OcultarMostrar2" unique_id=992810686]
+layout_mode = 2
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("5_oxxd6")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_kcw23")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ink1u")
+theme_override_styles/hover = SubResource("StyleBoxFlat_lgb8o")
+text = "Ocultar"
+
+[node name="Mostrar" type="Button" parent="Panel/Cont de Sliders y CheckBox/OcultarMostrar2" unique_id=1921663301]
+layout_mode = 2
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("5_oxxd6")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_kcw23")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ink1u")
+theme_override_styles/hover = SubResource("StyleBoxFlat_lgb8o")
+text = "Mostrar"
 
 [node name="Ajustes Título" type="Label" parent="Panel" unique_id=140143887]
 layout_mode = 1
@@ -128,6 +216,7 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_f6o33")
 text = "Ajustes"
 horizontal_alignment = 1
 vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
 
 [node name="volver" type="Button" parent="Panel" unique_id=1703907111]
 layout_mode = 0
@@ -142,26 +231,27 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_56yal")
 theme_override_styles/hover = SubResource("StyleBoxFlat_oxxd6")
 text = "Volver"
 script = ExtResource("3_p1khp")
+metadata/_edit_use_anchors_ = true
 
 [node name="Textos" type="VBoxContainer" parent="Panel" unique_id=519686304]
 layout_mode = 0
-offset_left = 279.0
-offset_top = 198.0
-offset_right = 562.0
-offset_bottom = 394.0
-theme_override_constants/separation = 20
+offset_left = 316.952
+offset_top = 165.444
+offset_right = 599.95197
+offset_bottom = 619.444
+theme_override_constants/separation = 50
 
-[node name="Label2" type="Label" parent="Panel/Textos" unique_id=324615397]
+[node name="Sonido" type="Label" parent="Panel/Textos" unique_id=324615397]
 layout_mode = 2
 theme_override_constants/outline_size = 7
 theme_override_fonts/font = ExtResource("5_oxxd6")
 theme_override_font_sizes/font_size = 25
 theme_override_styles/normal = SubResource("StyleBoxFlat_cjdqc")
-text = "Sonido"
+text = "Sonido General"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Label3" type="Label" parent="Panel/Textos" unique_id=1354375354]
+[node name="SensMouse" type="Label" parent="Panel/Textos" unique_id=1354375354]
 layout_mode = 2
 theme_override_constants/outline_size = 7
 theme_override_fonts/font = ExtResource("5_oxxd6")
@@ -171,17 +261,7 @@ text = "Sensibilidad del Mouse"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Label4" type="Label" parent="Panel/Textos" unique_id=1067891136]
-layout_mode = 2
-theme_override_constants/outline_size = 7
-theme_override_fonts/font = ExtResource("5_oxxd6")
-theme_override_font_sizes/font_size = 25
-theme_override_styles/normal = SubResource("StyleBoxFlat_cjdqc")
-text = "Pantalla Completa"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="Label5" type="Label" parent="Panel/Textos" unique_id=205805489]
+[node name="FOV" type="Label" parent="Panel/Textos" unique_id=205805489]
 layout_mode = 2
 theme_override_constants/outline_size = 7
 theme_override_fonts/font = ExtResource("5_oxxd6")
@@ -191,8 +271,35 @@ text = "FOV"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="click" type="AudioStreamPlayer" parent="." unique_id=1657340700]
-stream = ExtResource("7_33ovl")
+[node name="PantCompleta" type="Label" parent="Panel/Textos" unique_id=1067891136]
+layout_mode = 2
+theme_override_constants/outline_size = 7
+theme_override_fonts/font = ExtResource("5_oxxd6")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxFlat_cjdqc")
+text = "Pantalla Completa"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ContadorDeFPS" type="Label" parent="Panel/Textos" unique_id=348352255]
+layout_mode = 2
+theme_override_constants/outline_size = 7
+theme_override_fonts/font = ExtResource("5_oxxd6")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxFlat_cjdqc")
+text = "Contador de FPS"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Contador" type="Label" parent="Panel/Textos" unique_id=1779193671]
+layout_mode = 2
+theme_override_constants/outline_size = 7
+theme_override_fonts/font = ExtResource("5_oxxd6")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxFlat_cjdqc")
+text = "Timer"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [connection signal="toggled" from="Panel/Cont de Sliders y CheckBox/CheckBox" to="Panel/Cont de Sliders y CheckBox/CheckBox" method="_on_toggled"]
 [connection signal="pressed" from="Panel/volver" to="Panel/volver" method="_on_pressed"]

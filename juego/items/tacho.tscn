@@ -18,17 +18,20 @@ albedo_color = Color(0.2627451, 0.16078432, 0.09411765, 1)
 
 [node name="Sketchfab_Scene" unique_id=156823456 instance=ExtResource("1_ae7oh")]
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Sketchfab_model/Collada visual scene group/plastic_low/defaultMaterial" parent_id_path=PackedInt32Array(1256097842) index="0" unique_id=1424574135]
+[node name="Sketchfab_model" parent="." index="0" unique_id=812263188]
+transform = Transform3D(0.02, 0, 0, 0, -8.7422775e-10, 0.02, 0, -0.02, -8.7422775e-10, 0, 0, 0)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Sketchfab_model/Collada visual scene group/plastic_low/defaultMaterial" parent_id_path=PackedInt32Array(1094218913) index="0" unique_id=1424574135]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Sketchfab_model/Collada visual scene group/plastic_low/defaultMaterial/StaticBody3D" index="0" unique_id=498837330]
 shape = SubResource("ConcavePolygonShape3D_ae7oh")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Sketchfab_model/Collada visual scene group/balti_low/defaultMaterial2" parent_id_path=PackedInt32Array(1697226470) index="0" unique_id=976365495]
+[node name="StaticBody3D" type="StaticBody3D" parent="Sketchfab_model/Collada visual scene group/balti_low/defaultMaterial2" parent_id_path=PackedInt32Array(607055420) index="0" unique_id=976365495]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Sketchfab_model/Collada visual scene group/balti_low/defaultMaterial2/StaticBody3D" index="0" unique_id=107174035]
 shape = SubResource("ConcavePolygonShape3D_bfj6w")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Sketchfab_model/Collada visual scene group" parent_id_path=PackedInt32Array(758954917) index="2" unique_id=325600841]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Sketchfab_model/Collada visual scene group" parent_id_path=PackedInt32Array(418872296) index="2" unique_id=325600841]
 transform = Transform3D(70.045, 0, 0, 0, 70.045, -2.3304638e-13, 0, 2.3304638e-13, 70.045, 0, 46.481506, -2.0206694e-06)
 mesh = SubResource("CylinderMesh_ceubk")
 surface_material_override/0 = SubResource("StandardMaterial3D_wk4mu")

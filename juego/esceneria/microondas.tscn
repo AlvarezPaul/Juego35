@@ -1,0 +1,53 @@
+[gd_scene format=3 uid="uid://bo648njdxych4"]
+
+[ext_resource type="PackedScene" uid="uid://dxn0ri1f0oh1m" path="res://glb_modelos/low_poly_microwave.glb" id="1_3720j"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3720j"]
+metallic_specular = 0.0
+roughness = 0.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_k6gqu"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_a4few"]
+metallic_specular = 0.0
+roughness = 0.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_p2pum"]
+metallic_specular = 0.0
+roughness = 0.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dpq4x"]
+metallic_specular = 0.0
+roughness = 0.0
+emission_energy_multiplier = 0.0
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0eft3"]
+size = Vector3(4.6561584, 2.6447144, 2.7125778)
+
+[node name="microondas" type="Node3D" unique_id=1815375819]
+
+[node name="Sketchfab_Scene" parent="." unique_id=518566715 instance=ExtResource("1_3720j")]
+transform = Transform3D(1.35, 0, 0, 0, 1.35, 0, 0, 0, 1.35, 0.13042355, 0, 0.40641475)
+
+[node name="Cube_002_3rdWindow_0" parent="Sketchfab_Scene/Sketchfab_model/4b1bfa80152942d4a8d8ab0d7da94be1_fbx/RootNode/Cube_002" parent_id_path=PackedInt32Array(518566715, 2100015041) index="0" unique_id=1087090601]
+surface_material_override/0 = SubResource("StandardMaterial3D_3720j")
+
+[node name="Cube_003__0" parent="Sketchfab_Scene/Sketchfab_model/4b1bfa80152942d4a8d8ab0d7da94be1_fbx/RootNode/Cube_003" parent_id_path=PackedInt32Array(518566715, 99597199) index="0" unique_id=1477113932]
+surface_material_override/0 = SubResource("StandardMaterial3D_k6gqu")
+
+[node name="Cube_004__0" parent="Sketchfab_Scene/Sketchfab_model/4b1bfa80152942d4a8d8ab0d7da94be1_fbx/RootNode/Cube_004" parent_id_path=PackedInt32Array(518566715, 1301671566) index="0" unique_id=901655288]
+surface_material_override/0 = SubResource("StandardMaterial3D_a4few")
+
+[node name="Cube_005_Black_0" parent="Sketchfab_Scene/Sketchfab_model/4b1bfa80152942d4a8d8ab0d7da94be1_fbx/RootNode/Cube_005" parent_id_path=PackedInt32Array(518566715, 991052495) index="0" unique_id=999743263]
+surface_material_override/0 = SubResource("StandardMaterial3D_p2pum")
+
+[node name="Microwave_Silver_0" parent="Sketchfab_Scene/Sketchfab_model/4b1bfa80152942d4a8d8ab0d7da94be1_fbx/RootNode/Microwave" parent_id_path=PackedInt32Array(518566715, 1928169013) index="0" unique_id=1877395942]
+surface_material_override/0 = SubResource("StandardMaterial3D_dpq4x")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=371540475]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.25801086, 2.472458, 1.4587243)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=1101228942]
+shape = SubResource("BoxShape3D_0eft3")
+
+[editable path="Sketchfab_Scene"]

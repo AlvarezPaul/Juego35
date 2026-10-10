@@ -6,14 +6,18 @@ const ESCENA_JUGAR := "res://UI/pantalla_de_carga.tscn"
 const ESCENA_CREDITOS := "res://UI/ClickCreditos.tscn"
 const ESCENA_AJUSTES := "res://UI/ajustes.tscn"
 func _on_credits_pressed() -> void:
+	Autoloadsonido.play_click()
 	get_tree().change_scene_to_file(ESCENA_CREDITOS)
 
 func _on_jugar_pressed() -> void:
+	Autoloadsonido.jugar_click()
 	get_tree().change_scene_to_file(ESCENA_JUGAR)
 
 func _on_salir_pressed() -> void:
+	Autoloadsonido.play_click()
 	get_tree().quit()
 
 
 func _on_ajustes_pressed() -> void:
+	Autoloadsonido.play_click()
 	get_tree().change_scene_to_file(ESCENA_AJUSTES)
