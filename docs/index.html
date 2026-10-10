@@ -1,330 +1,690 @@
 <!DOCTYPE html>
-<html lang="es" class="scroll-smooth">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Escapa de la 35 - 4°1° Computación</title>
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- FontAwesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Google Fonts: Inter & JetBrains Mono -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        body { font-family: 'Inter', sans-serif; }
-        .font-mono { font-family: 'JetBrains Mono', monospace; }
-        .glow-text { text-shadow: 0 0 20px rgba(239, 68, 68, 0.4); }
-        .glow-box { box-shadow: 0 0 25px rgba(239, 68, 68, 0.15); }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ESCAPA DE LA 35 - Proyecto Institucional</title>
+  <!-- Fuentes Google: Orbitron, Rajdhani y Share Tech Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700;800;900&family=Rajdhani:wght@500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-main: #0f1722;
+      --bg-panel: #162435;
+      --bg-subcard: #101a26;
+      --border-panel: #263b52;
+      --border-accent: #3d5d82;
+      --circuit-cyan: #7ea8cc;
+      --circuit-glow: #4fa3e3;
+      --circuit-bright: #9ec9eb;
+      --text-white: #f0f6fc;
+      --text-muted: #9bb2c9;
+      --text-dim: #5c748d;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-main);
+      color: var(--text-white);
+      font-family: 'Rajdhani', sans-serif;
+      line-height: 1.6;
+      font-size: 17px;
+      position: relative;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    /* Fondo cuadriculado táctico */
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background-image: 
+        radial-gradient(rgba(126, 168, 204, 0.08) 1.5px, transparent 1.5px),
+        linear-gradient(rgba(126, 168, 204, 0.02) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(126, 168, 204, 0.02) 1px, transparent 1px);
+      background-size: 28px 28px, 28px 28px, 28px 28px;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* BARRA DE NAVEGACIÓN SUPERIOR */
+    .top-navbar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(15, 23, 34, 0.92);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border-panel);
+      padding: 12px 25px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    }
+    .nav-brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+    }
+    .brand-chip {
+      width: 26px;
+      height: 26px;
+      background: #17283c;
+      border: 1.5px solid var(--circuit-cyan);
+      display: grid;
+      place-items: center;
+      clip-path: polygon(0 0, calc(100% - 6px) 0, 100% 6px, 100% 100%, 6px 100%, 0 calc(100% - 6px));
+    }
+    .brand-chip span {
+      width: 8px;
+      height: 8px;
+      background: var(--circuit-glow);
+    }
+
+    .brand-title {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 1.05rem;
+      font-weight: 800;
+      letter-spacing: 2px;
+      color: var(--text-white);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      text-decoration: none;
+      transition: color 0.2s;
+      letter-spacing: 1px;
+    }
+
+    .nav-links a:hover {
+      color: var(--circuit-bright);
+    }
+
+    /* CONTENEDOR PRINCIPAL */
+    .container {
+      position: relative;
+      z-index: 1;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 30px 20px 60px 20px;
+    }
+
+    /* BANNER PRINCIPAL CON PISTAS DE CIRCUITO */
+    .hero-banner {
+      position: relative;
+      background: linear-gradient(180deg, #18283b 0%, #121e2d 100%);
+      border: 1px solid var(--border-panel);
+      padding: 60px 20px 50px 20px;
+      text-align: center;
+      margin-bottom: 35px;
+      clip-path: polygon(0 0, calc(100% - 25px) 0, 100% 25px, 100% 100%, 25px 100%, 0 calc(100% - 25px));
+      box-shadow: 0 12px 35px rgba(0, 0, 0, 0.45);
+    }
+
+    .circuit-svg {
+      position: absolute;
+      top: 0;
+      width: 270px;
+      height: 100%;
+      pointer-events: none;
+    }
+
+    .circuit-svg.left {
+      left: 0;
+    }
+
+    .circuit-svg.right {
+      right: 0;
+      transform: scaleX(-1);
+    }
+
+    .circuit-track {
+      fill: none;
+      stroke: var(--circuit-cyan);
+      stroke-width: 3.5;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .circuit-pad {
+      fill: #18283b;
+      stroke: var(--circuit-cyan);
+      stroke-width: 3.5;
+    }
+
+    .banner-badge {
+      display: inline-block;
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 0.85rem;
+      letter-spacing: 2px;
+      color: var(--circuit-bright);
+      background: rgba(126, 168, 204, 0.12);
+      border: 1px solid var(--border-accent);
+      padding: 4px 14px;
+      border-radius: 2px;
+      margin-bottom: 12px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .banner-title {
+      font-family: 'Orbitron', sans-serif;
+      font-size: clamp(2.3rem, 6vw, 4.2rem);
+      font-weight: 900;
+      letter-spacing: 5px;
+      color: #f2f7fc;
+      text-transform: uppercase;
+      text-shadow: 
+        0px 3px 0px #0b1118,
+        0px 6px 15px rgba(0, 0, 0, 0.8);
+      position: relative;
+      z-index: 2;
+    }
+
+    .banner-school {
+      font-size: 1.2rem;
+      color: var(--text-muted);
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      margin-top: 10px;
+      position: relative;
+      z-index: 2;
+    }
+
+    /* PANELES DE CONTENIDO */
+    .card-panel {
+      background: var(--bg-panel);
+      border: 1px solid var(--border-panel);
+      border-radius: 4px;
+      padding: 26px 30px;
+      margin-bottom: 26px;
+      position: relative;
+    }
+
+    .card-panel::before {
+      content: "";
+      position: absolute;
+      top: -1px;
+      left: 20px;
+      width: 50px;
+      height: 2px;
+      background: var(--circuit-cyan);
+    }
+
+    .panel-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid var(--border-panel);
+      padding-bottom: 12px;
+      margin-bottom: 22px;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .panel-title {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 1.25rem;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      color: #fff;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .title-mark {
+      width: 12px;
+      height: 12px;
+      background: var(--circuit-cyan);
+      clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    }
+
+    .division-tag {
+      font-family: 'Share Tech Mono', monospace;
+      background: var(--bg-subcard);
+      border: 1.5px solid var(--circuit-cyan);
+      color: var(--circuit-bright);
+      padding: 4px 14px;
+      border-radius: 3px;
+      font-size: 0.95rem;
+      font-weight: bold;
+      letter-spacing: 1.5px;
+    }
+
+    /* GRILLA DATOS BÁSICOS */
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+    }
+
+    .info-box {
+      background: var(--bg-subcard);
+      border: 1px solid var(--border-panel);
+      padding: 16px 18px;
+      border-radius: 4px;
+      border-left: 3px solid var(--circuit-cyan);
+    }
+
+    .info-label {
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 0.8rem;
+      color: var(--text-dim);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .info-val {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--text-white);
+    }
+
+    /* EL JUEGO */
+    .game-text {
+      color: var(--text-muted);
+      font-size: 1.08rem;
+      margin-bottom: 15px;
+    }
+
+    .game-subcards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 14px;
+      margin-top: 15px;
+    }
+
+    .game-subcard {
+      background: var(--bg-subcard);
+      border: 1px solid var(--border-panel);
+      border-left: 3px solid var(--circuit-glow);
+      padding: 15px 18px;
+      border-radius: 3px;
+    }
+
+    .subcard-title {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 0.95rem;
+      color: var(--circuit-bright);
+      margin-bottom: 6px;
+    }
+
+    /* ENLACES / REPOSITORIO */
+    .links-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+      gap: 15px;
+    }
+
+    .link-tile {
+      background: var(--bg-subcard);
+      border: 1px solid var(--border-panel);
+      border-radius: 4px;
+      padding: 16px 18px;
+      text-decoration: none;
+      transition: border-color 0.2s, background-color 0.2s;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .link-tile:hover {
+      border-color: var(--circuit-cyan);
+      background: #142130;
+    }
+
+    .link-name {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 0.95rem;
+      color: var(--circuit-cyan);
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .link-href {
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 0.85rem;
+      color: var(--text-white);
+      word-break: break-all;
+      margin-bottom: 6px;
+    }
+
+    .link-role {
+      font-size: 0.85rem;
+      color: var(--text-dim);
+    }
+
+    /* INTEGRANTES Y TAREAS */
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 16px;
+    }
+
+    .team-box {
+      background: var(--bg-subcard);
+      border: 1px solid var(--border-panel);
+      border-left: 4px solid var(--circuit-cyan);
+      padding: 16px 18px;
+      border-radius: 3px;
+    }
+
+    .member-name {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 1.05rem;
+      color: #fff;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    .member-desc {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+
+    /* BIBLIOGRAFÍA */
+    .biblio-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .biblio-item {
+      background: var(--bg-subcard);
+      border: 1px solid var(--border-panel);
+      padding: 11px 16px;
+      border-radius: 4px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .biblio-source {
+      font-weight: 600;
+      color: #dce7f2;
+      font-size: 0.95rem;
+    }
+
+    .biblio-url {
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 0.85rem;
+      color: var(--circuit-cyan);
+      text-decoration: none;
+    }
+
+    .biblio-url:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--text-dim);
+      font-size: 0.9rem;
+      margin-top: 40px;
+      border-top: 1px solid var(--border-panel);
+      padding-top: 25px;
+    }
+
+    @media (max-width: 768px) {
+      .circuit-svg {
+        width: 120px;
+        opacity: 0.3;
+      }
+      .hero-banner {
+        padding: 45px 15px;
+      }
+      .nav-links {
+        display: none;
+      }
+    }
+  </style>
 </head>
-<body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col selection:bg-red-600 selection:text-white">
+<body>
 
-    <header class="sticky top-0 z-50 bg-slate-900/90 backdrop-blur-md border-b border-slate-800">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-            <div class="flex items-center gap-3">
-                <div class="bg-red-600 text-white p-2 rounded-lg font-mono font-bold text-sm">E.T.35</div>
-                <div>
-                    <span class="text-xs text-slate-400 block">4°1° Computación</span>
-                    <span class="font-bold text-white tracking-wide">Escapa de la 35</span>
-                </div>
-            </div>
-            <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-slate-300">
-                <a href="#juego" class="hover:text-red-400 transition">El Juego</a>
-                <a href="#avances" class="hover:text-red-400 transition">Avances</a>
-                <a href="#guia" class="hover:text-red-400 transition">Guía Godot</a>
-                <a href="#bibliografia" class="hover:text-red-400 transition">Bibliografía</a>
-                <a href="#equipo" class="hover:text-red-400 transition">Equipo</a>
-            </nav>
+  <!-- HEADER / BARRA DE NAVEGACIÓN SUPERIOR -->
+  <header class="top-navbar">
+    <div class="nav-brand">
+      <div class="brand-chip"><span></span></div>
+      <div class="brand-title">E.T. N°35 D.E. 18</div>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#datos">DATOS GENERALES</a></li>
+        <li><a href="#juego">JUEGO</a></li>
+        <li><a href="#enlaces">ENLACES</a></li>
+        <li><a href="#equipo">EQUIPO</a></li>
+        <li><a href="#bibliografia">BIBLIOGRAFÍA</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+
+    <!-- BANNER HERO CON CIRCUITOS Y TIPOGRAFÍA DE LA IMAGEN -->
+    <section class="hero-banner">
+      <!-- Circuitos Vectoriales Izquierda -->
+      <svg class="circuit-svg left" viewBox="0 0 270 200" preserveAspectRatio="none">
+        <path class="circuit-track" d="M 0,30 L 80,30 L 130,75 L 130,115 L 90,145 L 45,145" />
+        <circle class="circuit-pad" cx="45" cy="145" r="4.5" />
+
+        <path class="circuit-track" d="M 0,55 L 70,55 L 115,95 L 115,135 L 75,165 L 25,165" />
+        <circle class="circuit-pad" cx="25" cy="165" r="4.5" />
+
+        <path class="circuit-track" d="M 0,80 L 60,80 L 100,118 L 100,155 L 60,185" />
+        <circle class="circuit-pad" cx="60" cy="185" r="4.5" />
+
+        <path class="circuit-track" d="M 0,110 L 45,110 L 85,148 L 85,180" />
+        <circle class="circuit-pad" cx="85" cy="180" r="4.5" />
+      </svg>
+
+      <!-- Circuitos Vectoriales Derecha -->
+      <svg class="circuit-svg right" viewBox="0 0 270 200" preserveAspectRatio="none">
+        <path class="circuit-track" d="M 0,30 L 80,30 L 130,75 L 130,115 L 90,145 L 45,145" />
+        <circle class="circuit-pad" cx="45" cy="145" r="4.5" />
+
+        <path class="circuit-track" d="M 0,55 L 70,55 L 115,95 L 115,135 L 75,165 L 25,165" />
+        <circle class="circuit-pad" cx="25" cy="165" r="4.5" />
+
+        <path class="circuit-track" d="M 0,80 L 60,80 L 100,118 L 100,155 L 60,185" />
+        <circle class="circuit-pad" cx="60" cy="185" r="4.5" />
+
+        <path class="circuit-track" d="M 0,110 L 45,110 L 85,148 L 85,180" />
+        <circle class="circuit-pad" cx="85" cy="180" r="4.5" />
+      </svg>
+
+      <span class="banner-badge">PROYECTO INSTITUCIONAL & DESARROLLO</span>
+      <h1 class="banner-title">ESCAPA DE LA 35</h1>
+      <div class="banner-school">Escuela Técnica N°35 D.E. 18 "Ingeniero Eduardo Latzina" (Monte Castro)</div>
+    </section>
+
+    <!-- DATOS GENERALES / BÁSICOS DEL PROYECTO -->
+    <section class="card-panel" id="datos">
+      <div class="panel-header">
+        <h2 class="panel-title"><span class="title-mark"></span>Datos Generales</h2>
+      </div>
+      <div class="info-grid">
+        <div class="info-box">
+          <span class="info-label">Institución</span>
+          <span class="info-val">E.T. N°35 D.E. 18 "Ing. E. Latzina"</span>
         </div>
-    </header>
+        <div class="info-box">
+          <span class="info-label">Materia</span>
+          <span class="info-val">Lab. de Algoritmos y Estructura de Datos</span>
+        </div>
+        <div class="info-box">
+          <span class="info-label">Motor & Lenguaje</span>
+          <span class="info-val">Godot Engine 4.7.2 | GDScript</span>
+        </div>
+      </div>
+    </section>
 
-    <main class="flex-grow">
-        <section class="relative py-20 px-4 sm:px-6 lg:px-8 overflow-hidden bg-gradient-to-b from-slate-900 via-slate-950 to-slate-950 border-b border-slate-800/60">
-            <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#ef4444_1px,transparent_1px)] [background-size:16px_16px]"></div>
-            <div class="max-w-4xl mx-auto text-center relative z-10 space-y-6">
-                <span class="px-3 py-1 text-xs font-mono tracking-wider text-red-400 bg-red-950/60 border border-red-800/50 rounded-full inline-block">
-                    ESCUELA TÉCNICA N°35 ING. E. LATZINA
-                </span>
-                <h1 class="text-4xl sm:text-6xl font-black text-white tracking-tight">
-                    Escapa de <span class="text-red-500 glow-text">la 35</span>
-                </h1>
-                <p class="text-lg text-slate-400 max-w-2xl mx-auto">
-                    Proyecto escolar de desarrollo de videojuegos en Godot Engine. Misterio, pasillos oscuros y supervivencia escolar.
-                </p>
-                
-                <!-- Action Buttons -->
-                <div class="flex flex-wrap justify-center gap-4 pt-4">
-                    <a href="#" class="flex items-center gap-2 px-5 py-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-medium border border-slate-700 transition shadow-lg">
-                        <i class="fa-solid fa-folder-open text-red-400"></i> Carpeta de Campo
-                    </a>
-                    <a href="#" class="flex items-center gap-2 px-5 py-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-medium border border-slate-700 transition shadow-lg">
-                        <i class="fa-solid fa-file-lines text-blue-400"></i> Informe Técnico
-                    </a>
-                    <a href="#" class="flex items-center gap-2 px-5 py-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-medium border border-slate-700 transition shadow-lg">
-                        <i class="fa-brands fa-github text-purple-400"></i> Repositorio GitHub
-                    </a>
-                </div>
-            </div>
-        </section>
+    <!-- EL JUEGO -->
+    <section class="card-panel" id="juego">
+      <div class="panel-header">
+        <h2 class="panel-title"><span class="title-mark"></span>El Juego</h2>
+      </div>
+      <p class="game-text">
+        Vas a jugar como un alumno del turno noche que durante la última clase va al baño del primer piso, pero cuando sale, se da cuenta que se demoró tanto que ya se fueron todos y quedó encerrado en el colegio.
+      </p>
+      <div class="game-subcards">
+        <div class="game-subcard">
+          <div class="subcard-title">OBJETIVO</div>
+          <div style="color: var(--text-muted);">A través de pistas y objetos escondidos, ir resolviendo pequeños rompecabezas para salir del colegio.</div>
+        </div>
+        <div class="game-subcard">
+          <div class="subcard-title">ESCENARIOS REPRODUCIDOS</div>
+          <div style="color: var(--text-muted);">Réplica del colegio que cuenta con: salón de actos, aulas y patio inferior.</div>
+        </div>
+      </div>
+    </section>
 
-        <section id="juego" class="py-16 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
-            <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-6 sm:p-10 glow-box">
-                <div class="flex items-center gap-3 mb-6">
-                    <div class="p-3 bg-red-600/20 text-red-500 rounded-xl">
-                        <i class="fa-solid fa-gamepad text-2xl"></i>
-                    </div>
-                    <div>
-                        <h2 class="text-2xl sm:text-3xl font-bold text-white">¿De qué trata el juego?</h2>
-                        <span class="text-xs text-red-400 font-mono">Sinopsis Oficial</span>
-                    </div>
-                </div>
-                <div class="space-y-4 text-slate-300 leading-relaxed text-base sm:text-lg">
-                    <p>
-                        Vas a jugar como un alumno del turno noche que durante la última clase va al baño del primer piso. Pero cuando sale, se da cuenta que se demoró tanto que ya se fueron todos, y <strong class="text-white">quedó encerrado</strong>.
-                    </p>
-                    <p>
-                        Tu objetivo es a través de pistas y objetos escondidos ir resolviendo pequeños rompecabezas y así salir del colegio. Un minijuego de terror en los pasillos del colegio, a oscuras, sin terror extremo, sino con el objetivo de generar incomodidad.
-                    </p>
-                </div>
-            </div>
-        </section>
+    <!-- ENLACES OFICIALES -->
+    <section class="card-panel" id="enlaces">
+      <div class="panel-header">
+        <h2 class="panel-title"><span class="title-mark"></span>Enlaces Oficiales</h2>
+      </div>
+      <div class="links-grid">
+        <a href="https://github.com/AlvarezPaul/Juego35" target="_blank" class="link-tile">
+          <span class="link-name">Repositorio en GitHub</span>
+          <span class="link-href">github.com/AlvarezPaul/Juego35</span>
+          <span class="link-role">Creador: Ian Findlay | Admin: Paul Álvarez</span>
+        </a>
+        <a href="https://alvarezpaul.github.io/Juego35/" target="_blank" class="link-tile">
+          <span class="link-name">Página Web</span>
+          <span class="link-href">alvarezpaul.github.io/Juego35/</span>
+          <span class="link-role">Creador: Paul Álvarez</span>
+        </a>
+        <a href="https://canva.link/eslferoar0k0ik5" target="_blank" class="link-tile">
+          <span class="link-name">Infografía del Proyecto</span>
+          <span class="link-href">canva.link/eslferoar0k0ik5</span>
+          <span class="link-role">Creador: Paul Álvarez</span>
+        </a>
+      </div>
+    </section>
 
-        <section id="avances" class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-            <div class="text-center mb-10">
-                <h2 class="text-3xl font-bold text-white">Muestras de los Avances</h2>
-                <p class="text-slate-400 mt-2">Capturas del desarrollo, diseño de niveles y pruebas en Godot.</p>
-            </div>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                <!-- Image Card 1 -->
-                <div class="bg-slate-900 border border-slate-800 rounded-xl overflow-hidden group">
-                    <div class="h-40 bg-slate-800 relative overflow-hidden">
-                        <img src="https://placehold.co/600x400/1e293b/ef4444?text=Pasillo+Oscuro" alt="Avance 1" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
-                    </div>
-                    <div class="p-4">
-                        <span class="text-xs text-red-400 font-mono">Escena 01</span>
-                        <h3 class="font-bold text-white text-sm mt-1">Iluminación de Pasillos</h3>
-                    </div>
-                </div>
-                <!-- Image Card 2 -->
-                <div class="bg-slate-900 border border-slate-800 rounded-xl overflow-hidden group">
-                    <div class="h-40 bg-slate-800 relative overflow-hidden">
-                        <img src="https://placehold.co/600x400/1e293b/ef4444?text=Menu+Principal" alt="Avance 2" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
-                    </div>
-                    <div class="p-4">
-                        <span class="text-xs text-red-400 font-mono">Interfaz</span>
-                        <h3 class="font-bold text-white text-sm mt-1">Diseño de Menú UI</h3>
-                    </div>
-                </div>
-                <!-- Image Card 3 -->
-                <div class="bg-slate-900 border border-slate-800 rounded-xl overflow-hidden group">
-                    <div class="h-40 bg-slate-800 relative overflow-hidden">
-                        <img src="https://placehold.co/600x400/1e293b/ef4444?text=Entrada+Bano" alt="Avance 3" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
-                    </div>
-                    <div class="p-4">
-                        <span class="text-xs text-red-400 font-mono">Modelado 3D</span>
-                        <h3 class="font-bold text-white text-sm mt-1">Baños del 1er Piso</h3>
-                    </div>
-                </div>
-                <!-- Image Card 4 -->
-                <div class="bg-slate-900 border border-slate-800 rounded-xl overflow-hidden group">
-                    <div class="h-40 bg-slate-800 relative overflow-hidden">
-                        <img src="https://placehold.co/600x400/1e293b/ef4444?text=Sistema+Pausas" alt="Avance 4" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
-                    </div>
-                    <div class="p-4">
-                        <span class="text-xs text-red-400 font-mono">Scripting</span>
-                        <h3 class="font-bold text-white text-sm mt-1">Menú de Pausa Activo</h3>
-                    </div>
-                </div>
-                <!-- Image Card 5 -->
-                <div class="bg-slate-900 border border-slate-800 rounded-xl overflow-hidden group">
-                    <div class="h-40 bg-slate-800 relative overflow-hidden">
-                        <img src="https://placehold.co/600x400/1e293b/ef4444?text=Contador+FPS" alt="Avance 5" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
-                    </div>
-                    <div class="p-4">
-                        <span class="text-xs text-red-400 font-mono">Rendimiento</span>
-                        <h3 class="font-bold text-white text-sm mt-1">Supervisión de FPS</h3>
-                    </div>
-                </div>
-                <!-- Image Card 6 -->
-                <div class="bg-slate-900 border border-slate-800 rounded-xl overflow-hidden group">
-                    <div class="h-40 bg-slate-800 relative overflow-hidden">
-                        <img src="https://placehold.co/600x400/1e293b/ef4444?text=Niebla+Volumetrica" alt="Avance 6" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
-                    </div>
-                    <div class="p-4">
-                        <span class="text-xs text-red-400 font-mono">Atmósfera</span>
-                        <h3 class="font-bold text-white text-sm mt-1">Efectos de Niebla</h3>
-                    </div>
-                </div>
-                <!-- Image Card 7 -->
-                <div class="bg-slate-900 border border-slate-800 rounded-xl overflow-hidden group">
-                    <div class="h-40 bg-slate-800 relative overflow-hidden">
-                        <img src="https://placehold.co/600x400/1e293b/ef4444?text=Audio+Botones" alt="Avance 7" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
-                    </div>
-                    <div class="p-4">
-                        <span class="text-xs text-red-400 font-mono">Audio</span>
-                        <h3 class="font-bold text-white text-sm mt-1">Efectos de Sonido UI</h3>
-                    </div>
-                </div>
-                <!-- Image Card 8 -->
-                <div class="bg-slate-900 border border-slate-800 rounded-xl overflow-hidden group">
-                    <div class="h-40 bg-slate-800 relative overflow-hidden">
-                        <img src="https://placehold.co/600x400/1e293b/ef4444?text=Prueba+Final" alt="Avance 8" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
-                    </div>
-                    <div class="p-4">
-                        <span class="text-xs text-red-400 font-mono">Testeo</span>
-                        <h3 class="font-bold text-white text-sm mt-1">Pruebas con Jugadores</h3>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <!-- INTEGRANTES CON 4° 1° EN EL ENCABEZADO -->
+    <section class="card-panel" id="equipo">
+      <div class="panel-header">
+        <h2 class="panel-title"><span class="title-mark"></span>Integrantes y Tareas Realizadas</h2>
+        <span class="division-tag">División: 4° 1°</span>
+      </div>
+      <div class="team-grid">
+        <div class="team-box">
+          <div class="member-name">Ian Findlay</div>
+          <div class="member-desc">Creación del repositorio de GitHub, programación completa del sistema de inventario, interacción para agarrar y tirar objetos, y sistema para abrir puertas exclusivamente con llave.</div>
+        </div>
+        <div class="team-box">
+          <div class="member-name">Paul Álvarez</div>
+          <div class="member-desc">Administración del repositorio de GitHub, desarrollo y despliegue del sitio web oficial, y diseño de la infografía del proyecto.</div>
+        </div>
+        <div class="team-box">
+          <div class="member-name">Benjamín Arregui</div>
+          <div class="member-desc">Modelado de gran parte del mapa del colegio, recreación de varias salas (incluyendo el baño) y lógica funcional de puertas.</div>
+        </div>
+        <div class="team-box">
+          <div class="member-name">Manuel Proserpio</div>
+          <div class="member-desc">Modelado de escenarios junto a Benjamín, mecánicas de movimiento y salto del personaje, y modelado 3D e implementación de la linterna.</div>
+        </div>
+        <div class="team-box">
+          <div class="member-name">Ignacio Saavedra</div>
+          <div class="member-desc">Implementación y ambientación de efectos de sonido, diseño y programación de las pantallas de interfaz (menú principal y menú de pausa).</div>
+        </div>
+      </div>
+    </section>
 
-        <section id="guia" class="py-16 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
-            <div class="text-center mb-10">
-                <h2 class="text-3xl font-bold text-white">Guía Godot Engine</h2>
-                <p class="text-slate-400 mt-2">Fundamentos y herramientas técnicas empleadas en el proyecto.</p>
-            </div>
-            
-            <div class="space-y-4">
-                <!-- Accordion Item 1 -->
-                <details class="bg-slate-900 border border-slate-800 rounded-xl p-6 group">
-                    <summary class="font-bold text-white cursor-pointer flex justify-between items-center">
-                        <span class="flex items-center gap-3"><i class="fa-solid fa-cube text-red-500"></i> Primeros pasos en Godot 3D</span>
-                        <i class="fa-solid fa-chevron-down text-slate-500 group-open:rotate-180 transition"></i>
-                    </summary>
-                    <div class="mt-4 text-slate-300 text-sm space-y-2 border-t border-slate-800 pt-4">
-                        <p>• <strong>WASD y Click derecho</strong> para moverme libremente dentro del proyecto de Godot.</p>
-                        <p>• <strong>Camera3D</strong> obligatoria, preferentemente incluida en el personaje y en primera persona.</p>
-                        <p>• <strong>WorldEnvironment y DirectionalLight3D</strong> para configurar la luz del sol y generar ambientes de oscuridad.</p>
-                        <p>• Creación de carpetas para organizar materiales, escenas y sonidos.</p>
-                        <p>• <strong>StandardMaterial3D</strong> para modificar el color albedo de los objetos.</p>
-                    </div>
-                </details>
+    <!-- BIBLIOGRAFÍA -->
+    <section class="card-panel" id="bibliografia">
+      <div class="panel-header">
+        <h2 class="panel-title"><span class="title-mark"></span>Bibliografía</h2>
+      </div>
+      <ul class="biblio-list">
+        <li class="biblio-item">
+          <span class="biblio-source">Documentación Oficial de Godot Engine (4.x en español)</span>
+          <a class="biblio-url" href="https://docs.godotengine.org" target="_blank">docs.godotengine.org</a>
+        </li>
+        <li class="biblio-item">
+          <span class="biblio-source">Referencia de GDScript (Godot Engine)</span>
+          <a class="biblio-url" href="https://docs.godotengine.org" target="_blank">docs.godotengine.org</a>
+        </li>
+        <li class="biblio-item">
+          <span class="biblio-source">Aprende a programar con GDScript</span>
+          <a class="biblio-url" href="https://docs.godotengine.org" target="_blank">docs.godotengine.org</a>
+        </li>
+        <li class="biblio-item">
+          <span class="biblio-source">Crear tu primer script</span>
+          <a class="biblio-url" href="https://docs.godotengine.org" target="_blank">docs.godotengine.org</a>
+        </li>
+        <li class="biblio-item">
+          <span class="biblio-source">Escuchando la entrada del jugador</span>
+          <a class="biblio-url" href="https://docs.godotengine.org" target="_blank">docs.godotengine.org</a>
+        </li>
+        <li class="biblio-item">
+          <span class="biblio-source">Aprende Godot - Curso completo desde cero (freeCodeCamp)</span>
+          <span class="biblio-url">YouTube</span>
+        </li>
+        <li class="biblio-item">
+          <span class="biblio-source">Cómo hacer una puerta en Godot</span>
+          <a class="biblio-url" href="https://www.youtube.com/watch?v=hNM6ETntl8g" target="_blank">youtube.com/watch?v=hNM6ETntl8g</a>
+        </li>
+        <li class="biblio-item">
+          <span class="biblio-source">Curso de GDScript Básico para Godot 4</span>
+          <span class="biblio-url">YouTube</span>
+        </li>
+        <li class="biblio-item">
+          <span class="biblio-source">Tutorial Godot 3D: Atmósfera de juego de terror</span>
+          <span class="biblio-url">YouTube</span>
+        </li>
+        <li class="biblio-item">
+          <span class="biblio-source">Godot Crear Botón con Sonido</span>
+          <span class="biblio-url">YouTube</span>
+        </li>
+        <li class="biblio-item">
+          <span class="biblio-source">Transición al cambiar de escena</span>
+          <span class="biblio-url">YouTube</span>
+        </li>
+        <li class="biblio-item">
+          <span class="biblio-source">Pantalla Completa Opción Tutorial</span>
+          <span class="biblio-url">YouTube</span>
+        </li>
+        <li class="biblio-item">
+          <span class="biblio-source">Pantalla de Carga</span>
+          <span class="biblio-url">YouTube</span>
+        </li>
+        <li class="biblio-item">
+          <span class="biblio-source">Contador de FPS</span>
+          <span class="biblio-url">YouTube</span>
+        </li>
+      </ul>
+    </section>
 
-                <!-- Accordion Item 2 -->
-                <details class="bg-slate-900 border border-slate-800 rounded-xl p-6 group">
-                    <summary class="font-bold text-white cursor-pointer flex justify-between items-center">
-                        <span class="flex items-center gap-3"><i class="fa-solid fa-desktop text-red-500"></i> Interfaz de Usuario (UI) y Botones con Sonido</span>
-                        <i class="fa-solid fa-chevron-down text-slate-500 group-open:rotate-180 transition"></i>
-                    </summary>
-                    <div class="mt-4 text-slate-300 text-sm space-y-2 border-t border-slate-800 pt-4">
-                        <p><strong>Recursos fundamentales de UI:</strong> Panel, TextureRect, Label, Button y ColorRect.</p>
-                        <p><strong>Cómo hacer que un botón reproduzca sonido:</strong></p>
-                        <p class="pl-4">1. Crear el botón dentro de la escena de Interfaz de Usuario.</p>
-                        <p class="pl-4">2. Añadirle un nodo hijo llamado <code>AudioStreamPlayer</code>.</p>
-                        <p class="pl-4">3. Crear un script en el Botón y arrastrar el reproductor para definirlo con <code>@onready</code>.</p>
-                        <p class="pl-4">4. Agregar la función <code>_on_pressed() -> void</code> con la línea <code>audio_stream_player.playing = true</code>.</p>
-                    </div>
-                </details>
-
-                <!-- Accordion Item 3 -->
-                <details class="bg-slate-900 border border-slate-800 rounded-xl p-6 group">
-                    <summary class="font-bold text-white cursor-pointer flex justify-between items-center">
-                        <span class="flex items-center gap-3"><i class="fa-solid fa-moon text-red-500"></i> Atmósfera y Temática Oscura para Terror</span>
-                        <i class="fa-solid fa-chevron-down text-slate-500 group-open:rotate-180 transition"></i>
-                    </summary>
-                    <div class="mt-4 text-slate-300 text-sm space-y-2 border-t border-slate-800 pt-4">
-                        <p>• Configurar el <strong>WorldEnvironment</strong>, ingresando a Sky -> SkyMaterial y ajustando el Top, Horizon y Bottom color a negro.</p>
-                        <p>• Cambiar el <strong>ToneMap</strong> a <strong>ACES</strong> para conseguir el mejor acabado visual en juegos oscuros.</p>
-                        <p>• Habilitar <strong>SDFGI</strong> para aportar mayor realismo lumínico.</p>
-                        <p>• Emplear <strong>Volumetric Fog</strong> para configurar densidad, emisión y la longitud de la niebla en los pasillos.</p>
-                    </div>
-                </details>
-
-                <!-- Accordion Item 4 -->
-                <details class="bg-slate-900 border border-slate-800 rounded-xl p-6 group">
-                    <summary class="font-bold text-white cursor-pointer flex justify-between items-center">
-                        <span class="flex items-center gap-3"><i class="fa-solid fa-gear text-red-500"></i> Menú de Pausa, Mouse y Contador de FPS</span>
-                        <i class="fa-solid fa-chevron-down text-slate-500 group-open:rotate-180 transition"></i>
-                    </summary>
-                    <div class="mt-4 text-slate-300 text-sm space-y-2 border-t border-slate-800 pt-4">
-                        <p><strong>Bloquear el mouse:</strong> Agregar en la función <code>_ready</code> de la sala 3D: <code>Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)</code>.</p>
-                        <p><strong>Menú de Pausa:</strong> Configurar el Mapa de Entrada con la tecla Esc, crear la escena UI del menú de pausa y alternar la visibilidad del mouse al activarlo.</p>
-                        <p><strong>Contador de FPS:</strong> Añadir un CanvasLayer con un Label y actualizar por fotograma con:</p>
-                        <pre class="bg-slate-950 p-3 rounded font-mono text-xs text-red-400 mt-2">$TextoFPS.text = str(int(Engine.get_frames_per_second())) + " FPS"</pre>
-                    </div>
-                </details>
-            </div>
-        </section>
-
-        <section id="bibliografia" class="py-16 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
-            <div class="text-center mb-10">
-                <h2 class="text-3xl font-bold text-white">Bibliografía y Referencias</h2>
-                <p class="text-slate-400 mt-2">Documentos y videos utilizados durante el desarrollo del proyecto.</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <!-- Docs Card -->
-                <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 space-y-4">
-                    <h3 class="text-lg font-bold text-white flex items-center gap-2">
-                        <i class="fa-solid fa-book text-red-500"></i> Documentación Oficial
-                    </h3>
-                    <ul class="space-y-3 text-sm text-slate-300">
-                        <li>
-                            <a href="https://docs.godotengine.org" target="_blank" class="hover:text-red-400 font-semibold block">Documentación de Godot Engine (4.x) en español</a>
-                            <span class="text-xs text-slate-500">Guía general de fundamentos y referencias.</span>
-                        </li>
-                        <li>
-                            <a href="https://docs.godotengine.org" target="_blank" class="hover:text-red-400 font-semibold block">Aprende a programar con GDScript</a>
-                            <span class="text-xs text-slate-500">Explicación teórica y app interactiva.</span>
-                        </li>
-                        <li>
-                            <a href="https://docs.godotengine.org" target="_blank" class="hover:text-red-400 font-semibold block">Crear tu primer script y lectura de entrada</a>
-                            <span class="text-xs text-slate-500">Movimiento, rotación y manejo de teclas.</span>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- Videos Card -->
-                <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 space-y-4">
-                    <h3 class="text-lg font-bold text-white flex items-center gap-2">
-                        <i class="fa-solid fa-video text-red-500"></i> Tutoriales en Video
-                    </h3>
-                    <ul class="space-y-3 text-sm text-slate-300">
-                        <li>
-                            <span class="text-xs text-red-400 block font-mono">Visto por Benjamín e Ignacio</span>
-                            <a href="https://www.youtube.com" target="_blank" class="hover:text-red-400 font-semibold block">Curso Godot - freeCodeCamp Español</a>
-                        </li>
-                        <li>
-                            <span class="text-xs text-red-400 block font-mono">Visto por Benjamín</span>
-                            <a href="https://www.youtube.com/watch?v=hNM6ETntl8g" target="_blank" class="hover:text-red-400 font-semibold block">Tutorial: Cómo hacer una puerta en Godot</a>
-                        </li>
-                        <li>
-                            <span class="text-xs text-slate-400 block font-mono">Guías complementarias</span>
-                            <a href="#" class="hover:text-red-400 font-semibold block">Transición al cambiar de escena / Pantalla de Carga</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section id="equipo" class="py-16 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto border-t border-slate-900">
-            <div class="text-center mb-8">
-                <span class="text-xs font-mono text-red-500 tracking-wider">INTEGRANTES DEL PROYECTO</span>
-                <h2 class="text-2xl font-bold text-white mt-1">4°1° Computación</h2>
-            </div>
-            <div class="flex flex-wrap justify-center gap-3">
-                <div class="px-5 py-2.5 bg-slate-900 border border-slate-800 rounded-full text-slate-200 font-medium text-sm">
-                    Ignacio Saavedra
-                </div>
-                <div class="px-5 py-2.5 bg-slate-900 border border-slate-800 rounded-full text-slate-200 font-medium text-sm">
-                    Ian Findlay
-                </div>
-                <div class="px-5 py-2.5 bg-slate-900 border border-slate-800 rounded-full text-slate-200 font-medium text-sm">
-                    Benjamín Arregui
-                </div>
-                <div class="px-5 py-2.5 bg-slate-900 border border-slate-800 rounded-full text-slate-200 font-medium text-sm">
-                    Manuel Proserpio
-                </div>
-                <div class="px-5 py-2.5 bg-slate-900 border border-slate-800 rounded-full text-slate-200 font-medium text-sm">
-                    Paul Alvarez
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="border-t border-slate-900 bg-slate-950 py-8 text-center text-slate-500 text-sm">
-        <p>&copy; 2026 Escapa de la 35. Escuela Técnica N°35 Ing. E. Latzina.</p>
+    <footer>
+      Escuela Técnica N°35 D.E. 18 "Ingeniero Eduardo Latzina" — Monte Castro, CABA.
     </footer>
+
+  </div>
 
 </body>
 </html>

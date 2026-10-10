@@ -1362,16 +1362,19 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.114376, 0, 69.50308)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.93976, 0, 69.50308)
 
 [node name="mesa_circular" parent="muebles/mesas" unique_id=1613104560 instance=ExtResource("4_v75ln")]
-transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -12.185745, 6.70371, 34.682774)
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -12.185745, 6.70371, 28.585384)
 
 [node name="mesa_circular2" parent="muebles/mesas" unique_id=1391224528 instance=ExtResource("4_v75ln")]
-transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 19.18616, 6.70371, 34.682774)
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 22.573368, 6.70371, 28.585384)
 
 [node name="mesita" parent="muebles/mesas" unique_id=1332182121 instance=ExtResource("5_a5yc5")]
 transform = Transform3D(-6.556708e-08, 0, 1.5000002, 0, 1.5000002, 0, -1.5000002, 0, -6.556708e-08, -83.28219, 3.5891123, 157.31998)
 
 [node name="mesita2" parent="muebles/mesas" unique_id=1689686482 instance=ExtResource("5_a5yc5")]
-transform = Transform3D(-6.556708e-08, 0, 1.5000002, 0, 1.5000002, 0, -1.5000002, 0, -6.556708e-08, -83.28219, 3.5891123, 123.34395)
+transform = Transform3D(-6.556708e-08, 0, 1.5000002, 0, 1.5000002, 0, -1.5000002, 0, -6.556708e-08, -83.28219, 3.5891123, 128.98944)
+
+[node name="mesita3" parent="muebles/mesas" unique_id=871865476 instance=ExtResource("5_a5yc5")]
+transform = Transform3D(-6.556708e-08, 0, 1.5000002, 0, 1.5000002, 0, -1.5000002, 0, -6.556708e-08, -83.28219, 3.5891123, 100.43535)
 
 [node name="mesita4" parent="muebles/mesas" unique_id=548064326 instance=ExtResource("5_a5yc5")]
 transform = Transform3D(1.5000002, 0, 0, 0, 1.5000002, 0, 0, 0, 1.5000002, -48.99211, 3.5891123, 82.13324)

@@ -92,7 +92,7 @@ metadata/_edit_use_anchors_ = true
 [node name="VideoLoop" type="VideoStreamPlayer" parent="." unique_id=1127442198]
 layout_mode = 0
 offset_right = 1365.0
-offset_bottom = 648.0
+offset_bottom = 771.0
 autoplay = true
 loop = true
 

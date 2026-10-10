@@ -31,7 +31,6 @@ corner_radius_top_left = 10
 corner_radius_top_right = 10
 corner_radius_bottom_right = 10
 corner_radius_bottom_left = 10
-shadow_color = Color(0.18359044, 0.18359044, 0.18359044, 0.6)
 shadow_size = 5
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cjdqc"]
@@ -57,7 +56,6 @@ corner_radius_top_left = 10
 corner_radius_top_right = 10
 corner_radius_bottom_right = 10
 corner_radius_bottom_left = 10
-shadow_color = Color(0.18431373, 0.18431373, 0.18431373, 0.6)
 shadow_size = 5
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jf1qn"]
@@ -75,7 +73,6 @@ corner_radius_top_left = 10
 corner_radius_top_right = 10
 corner_radius_bottom_right = 10
 corner_radius_bottom_left = 10
-shadow_color = Color(0.18431373, 0.18431373, 0.18431373, 0.6)
 shadow_size = 5
 
 [node name="MenuPausa" type="Node2D" unique_id=2102388130]
