@@ -130,6 +130,16 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_tot2t")
 theme_override_styles/hover = SubResource("StyleBoxFlat_cmiqy")
 text = "Ajustes"
 
+[node name="controles" type="Button" parent="CanvasLayer/Control/VBoxContainer" unique_id=2026285126]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("2_vmkpt")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_cjdqc")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_tot2t")
+theme_override_styles/hover = SubResource("StyleBoxFlat_cmiqy")
+text = "Controles"
+
 [node name="salir" type="Button" parent="CanvasLayer/Control/VBoxContainer" unique_id=84653287]
 layout_mode = 2
 size_flags_vertical = 3

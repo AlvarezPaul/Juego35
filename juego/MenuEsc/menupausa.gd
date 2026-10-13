@@ -7,6 +7,7 @@ extends Control
 @onready var _btn_salir: Button = $VBoxContainer/salir
 @onready var conf: Control = $"../ConfirmarSalir"
 @onready var aj: Control = $"../Ajustes"
+@onready var contr: Control = $"../Controles"
 var partida_terminada = false
 
 func _ready() -> void:
@@ -46,3 +47,8 @@ func _salir_al_menu() -> void:
 func _on_ajustes_pressed() -> void:
 	Autoloadsonido.play_click()
 	aj.visible = true
+
+
+func _on_controles_pressed() -> void:
+	Autoloadsonido.play_click()
+	contr.visible = true

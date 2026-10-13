@@ -119,20 +119,16 @@ metadata/_edit_use_anchors_ = true
 
 [node name="Cont de Sliders y CheckBox" type="VBoxContainer" parent="Panel" unique_id=1674673960]
 layout_mode = 0
-offset_left = 620.67523
-offset_top = 202.4416
-offset_right = 833.67523
-offset_bottom = 481.4416
+offset_left = 601.3779
+offset_top = 162.45314
+offset_right = 814.3779
+offset_bottom = 530.4531
 theme_override_constants/separation = 65
 
 [node name="barra_sonidos" parent="Panel/Cont de Sliders y CheckBox" unique_id=1664845339 instance=ExtResource("4_56yal")]
 layout_mode = 2
 
 [node name="sensibilidad" parent="Panel/Cont de Sliders y CheckBox" unique_id=975027753 instance=ExtResource("4_56yal")]
-layout_mode = 2
-script = null
-
-[node name="fov" parent="Panel/Cont de Sliders y CheckBox" unique_id=1725355257 instance=ExtResource("4_56yal")]
 layout_mode = 2
 script = null
 
@@ -256,16 +252,6 @@ theme_override_fonts/font = ExtResource("5_oxxd6")
 theme_override_font_sizes/font_size = 25
 theme_override_styles/normal = SubResource("StyleBoxFlat_cjdqc")
 text = "Sensibilidad del Mouse"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="FOV" type="Label" parent="Panel/Textos" unique_id=205805489]
-layout_mode = 2
-theme_override_constants/outline_size = 7
-theme_override_fonts/font = ExtResource("5_oxxd6")
-theme_override_font_sizes/font_size = 25
-theme_override_styles/normal = SubResource("StyleBoxFlat_cjdqc")
-text = "FOV"
 horizontal_alignment = 1
 vertical_alignment = 1
 
