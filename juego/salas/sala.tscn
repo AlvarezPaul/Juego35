@@ -579,10 +579,10 @@ stream = ExtResource("3_pudgd")
 transform = Transform3D(-0.94551855, 0.034031056, 0.32378462, 8.694387e-08, -0.9945219, 0.10452845, 0.32556814, 0.098833635, 0.9403388, 48.437687, 11.965571, -35.489388)
 
 [node name="llave" parent="." unique_id=2023737183 instance=ExtResource("6_tbg6u")]
-transform = Transform3D(0, -1, 0, 1, 0, 0, 0, 0, 1, 60.362663, 11.124678, -37.177883)
+transform = Transform3D(0, -1, 0, 1, 0, 0, 0, 0, 1, 6.3766646, -0.9952249, 28.968405)
 
 [node name="ganzua" parent="." unique_id=1006482489 instance=ExtResource("8_rvme7")]
-transform = Transform3D(1.9106855e-15, -4.371139e-08, 1, -1, -4.371139e-08, 0, 4.371139e-08, -1, -4.371139e-08, 52.73694, 11.017213, -46.206028)
+transform = Transform3D(1.9106855e-15, -4.371139e-08, 1, -1, -4.371139e-08, 0, 4.371139e-08, -1, -4.371139e-08, 61.588078, 12.612159, -41.44521)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=792970203]
 follow_viewport_enabled = true
