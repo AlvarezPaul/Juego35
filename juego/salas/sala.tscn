@@ -17,6 +17,7 @@
 [ext_resource type="PackedScene" uid="uid://dav4xsf5v0vn1" path="res://UI/barra_sonidos.tscn" id="10_mnxya"]
 [ext_resource type="AudioStream" uid="uid://deksytmtdq141" path="res://UI/sonidoambiente.mp3" id="11_erchp"]
 [ext_resource type="Script" uid="uid://cdvfbej5sosp" path="res://UI/pantcompleta.gd" id="11_os015"]
+[ext_resource type="Script" uid="uid://dykvqilb2lf6a" path="res://UI/sensibilidadmouse.gd" id="11_uph1g"]
 [ext_resource type="Script" uid="uid://dx2qogxgp1c1q" path="res://UI/controles.gd" id="12_os015"]
 [ext_resource type="Texture2D" uid="uid://c225j5kxjr2c7" path="res://fotos/controlesimg/TeclaD.png" id="13_vwwu6"]
 [ext_resource type="Texture2D" uid="uid://dhjjwabq1w83i" path="res://fotos/controlesimg/TeclaS.png" id="14_uph1g"]
@@ -156,6 +157,13 @@ corner_radius_top_left = 15
 corner_radius_top_right = 15
 corner_radius_bottom_right = 15
 corner_radius_bottom_left = 15
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uph1g"]
+bg_color = Color(0.03137255, 0.03137255, 0.03137255, 0.7058824)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
 
 [sub_resource type="ImageTexture" id="ImageTexture_p3nki"]
 
@@ -510,12 +518,44 @@ offset_right = 650.0
 offset_bottom = 559.5
 theme_override_constants/separation = 65
 
-[node name="barra_sonidos" parent="Jugador/Node2D/CanvasLayer/Ajustes/Cont de Sliders y CheckBox" unique_id=1664845339 instance=ExtResource("10_mnxya")]
+[node name="Sonido" type="HBoxContainer" parent="Jugador/Node2D/CanvasLayer/Ajustes/Cont de Sliders y CheckBox" unique_id=1397595337]
 layout_mode = 2
 
-[node name="sensibilidad" parent="Jugador/Node2D/CanvasLayer/Ajustes/Cont de Sliders y CheckBox" unique_id=521819645 instance=ExtResource("10_mnxya")]
+[node name="barra_sonidos" parent="Jugador/Node2D/CanvasLayer/Ajustes/Cont de Sliders y CheckBox/Sonido" unique_id=1664845339 instance=ExtResource("10_mnxya")]
 layout_mode = 2
-script = null
+
+[node name="ValorVolumen" type="Label" parent="Jugador/Node2D/CanvasLayer/Ajustes/Cont de Sliders y CheckBox/Sonido" unique_id=573728774]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("10_erchp")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_uph1g")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MouseSens" type="HBoxContainer" parent="Jugador/Node2D/CanvasLayer/Ajustes/Cont de Sliders y CheckBox" unique_id=2128170862]
+layout_mode = 2
+theme_override_constants/separation = 30
+alignment = 1
+
+[node name="sensibilidad" parent="Jugador/Node2D/CanvasLayer/Ajustes/Cont de Sliders y CheckBox/MouseSens" unique_id=397197305 instance=ExtResource("10_mnxya")]
+layout_mode = 2
+min_value = 0.0
+max_value = 10.0
+value = 5.0
+script = ExtResource("11_uph1g")
+
+[node name="ValorSensMouse" type="Label" parent="Jugador/Node2D/CanvasLayer/Ajustes/Cont de Sliders y CheckBox/MouseSens" unique_id=2142039249]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("10_erchp")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_uph1g")
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="CheckBox" type="CheckBox" parent="Jugador/Node2D/CanvasLayer/Ajustes/Cont de Sliders y CheckBox" unique_id=6980545]
 layout_mode = 2
