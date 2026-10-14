@@ -13,6 +13,7 @@
 [ext_resource type="PackedScene" uid="uid://bfrkn2qe3068d" path="res://esceneria/red.tscn" id="10_bfrkn"]
 [ext_resource type="PackedScene" uid="uid://byjaehmv1t72i" path="res://puerta/puerta.tscn" id="11_uapj5"]
 [ext_resource type="PackedScene" uid="uid://dowur2vef7tna" path="res://esceneria/puertaverde.tscn" id="12_srsxd"]
+[ext_resource type="PackedScene" uid="uid://dnt32otq40rk3" path="res://puerta/reja.tscn" id="14_flxb5"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_e4v1y"]
 
@@ -1869,7 +1870,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_flxb5")
 shape = SubResource("ConcavePolygonShape3D_yujmg")
 
 [node name="MeshInstance3D31" type="MeshInstance3D" parent="salon de actos" unique_id=1745415790]
-transform = Transform3D(4.679, 0, 0, 0, 21.535606, 0, 0, 0, 36.028, -197.17978, 6.2510777, 122.72582)
+transform = Transform3D(4.679, 0, 0, 0, 20.161, 0, 0, 0, 36.028, -191.79494, 5.84511, 122.72582)
 mesh = SubResource("BoxMesh_0eft3")
 surface_material_override/0 = SubResource("StandardMaterial3D_oaqsx")
 
@@ -2828,7 +2829,7 @@ mesh = SubResource("PlaneMesh_lbw6h")
 surface_material_override/0 = SubResource("StandardMaterial3D_feb0j")
 
 [node name="MeshInstance3D126" type="MeshInstance3D" parent="salon de actos" unique_id=1907452618]
-transform = Transform3D(-1.2370323e-06, 3.9385989, 28.024586, 0, 28.024586, -3.9385989, -28.3, -1.7216162e-07, -1.2249935e-06, -126.231735, -8.712894, 119.46379)
+transform = Transform3D(-1.2370323e-06, 3.9385989, 28.024586, 0, 28.024586, -3.9385989, -28.3, -1.7216162e-07, -1.2249935e-06, -121.27545, -8.712894, 119.46379)
 mesh = SubResource("BoxMesh_cjdqc")
 skeleton = NodePath("../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_0eft3")
@@ -6538,5 +6539,12 @@ transform = Transform3D(75.423, 0, 0, 0, 32.729, 0, 0, 0, 2.541, 305.47006, 61.8
 mesh = SubResource("BoxMesh_jfgqh")
 skeleton = NodePath("../Node3D11")
 
+[node name="Node3D13" parent="." unique_id=1796444700 instance=ExtResource("14_flxb5")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -212.44699, 5.495, 105.13)
+
+[node name="bisagra" parent="Node3D13" index="1" unique_id=63260612]
+transform = Transform3D(11.915, 0, 0, 0, 12.745, 0, 0, 0, 11.645, 0, 0.500721, 18.449387)
+
 [editable path="puerta"]
 [editable path="puerta2"]
+[editable path="Node3D13"]
