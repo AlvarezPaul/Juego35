@@ -43,6 +43,7 @@ body::after{
   background-size:28px 28px,28px 28px,28px 28px;
   z-index:-1;
 }
+
 .top-navbar{
   position:sticky;
   top:0;
