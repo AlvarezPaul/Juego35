@@ -358,12 +358,15 @@ metadata/_edit_use_anchors_ = true
 
 [node name="Label" type="Label" parent="Jugador/Node2D/CanvasLayer/ConfirmarSalir" unique_id=1571617877]
 layout_mode = 1
-anchors_preset = 5
+anchors_preset = -1
 anchor_left = 0.5
+anchor_top = 0.23300001
 anchor_right = 0.5
+anchor_bottom = 0.23300001
 offset_left = -306.5
+offset_top = -62.0945
 offset_right = 306.5
-offset_bottom = 124.25
+offset_bottom = 62.1555
 grow_horizontal = 2
 theme_override_constants/outline_size = 10
 theme_override_fonts/font = ExtResource("3_cekhq")
@@ -375,11 +378,16 @@ vertical_alignment = 1
 
 [node name="Si" type="Button" parent="Jugador/Node2D/CanvasLayer/ConfirmarSalir" unique_id=1384034807]
 process_mode = 2
-layout_mode = 0
-offset_left = 28.375
-offset_top = 160.25
-offset_right = 173.375
-offset_bottom = 236.25
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.18200001
+anchor_top = 0.744
+anchor_right = 0.18200001
+anchor_bottom = 0.744
+offset_left = -72.22551
+offset_top = -38.026
+offset_right = 72.77449
+offset_bottom = 37.974
 theme_override_fonts/font = ExtResource("5_bl8tx")
 theme_override_font_sizes/font_size = 30
 theme_override_styles/normal = SubResource("StyleBoxFlat_cekhq")
@@ -389,11 +397,16 @@ text = "Sí"
 
 [node name="No" type="Button" parent="Jugador/Node2D/CanvasLayer/ConfirmarSalir" unique_id=1271852727]
 process_mode = 2
-layout_mode = 0
-offset_left = 383.375
-offset_top = 159.25
-offset_right = 528.375
-offset_bottom = 235.25
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.82500005
+anchor_top = 0.74
+anchor_right = 0.82500005
+anchor_bottom = 0.74
+offset_left = -72.64377
+offset_top = -37.960007
+offset_right = 72.35623
+offset_bottom = 38.039993
 theme_override_fonts/font = ExtResource("5_bl8tx")
 theme_override_font_sizes/font_size = 30
 theme_override_styles/normal = SubResource("StyleBoxFlat_cekhq")
@@ -436,13 +449,15 @@ metadata/_edit_use_anchors_ = true
 [node name="Cerrar" type="Button" parent="Jugador/Node2D/CanvasLayer/Ajustes" unique_id=1119646534]
 process_mode = 2
 layout_mode = 1
-anchors_preset = 1
-anchor_left = 1.0
-anchor_right = 1.0
-offset_left = -74.5
-offset_top = 12.0
-offset_right = -17.0
-offset_bottom = 69.5
+anchors_preset = -1
+anchor_left = 0.94000006
+anchor_top = 0.063
+anchor_right = 0.94000006
+anchor_bottom = 0.063
+offset_left = -28.900024
+offset_top = -28.887001
+offset_right = 28.599976
+offset_bottom = 28.612999
 grow_horizontal = 0
 theme_override_font_sizes/font_size = 25
 theme_override_styles/normal = SubResource("StyleBoxFlat_0eft3")
@@ -452,11 +467,16 @@ text = "X"
 icon_alignment = 1
 
 [node name="Textos" type="VBoxContainer" parent="Jugador/Node2D/CanvasLayer/Ajustes" unique_id=1065503858]
-layout_mode = 0
-offset_left = 110.0
-offset_top = 104.5
-offset_right = 392.99997
-offset_bottom = 558.5
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.33100003
+anchor_top = 0.5
+anchor_right = 0.33100003
+anchor_bottom = 0.5
+offset_left = -141.56003
+offset_top = -220.0
+offset_right = 141.43994
+offset_bottom = 234.0
 theme_override_constants/separation = 50
 
 [node name="Sonido" type="Label" parent="Jugador/Node2D/CanvasLayer/Ajustes/Textos" unique_id=130994906]
@@ -511,11 +531,16 @@ vertical_alignment = 1
 
 [node name="Cont de Sliders y CheckBox" type="VBoxContainer" parent="Jugador/Node2D/CanvasLayer/Ajustes" unique_id=100336466]
 process_mode = 2
-layout_mode = 0
-offset_left = 437.00003
-offset_top = 110.500015
-offset_right = 650.0
-offset_bottom = 559.5
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.75900006
+anchor_top = 0.5
+anchor_right = 0.75900006
+anchor_bottom = 0.5
+offset_left = -139.84
+offset_top = -213.99998
+offset_right = 73.15997
+offset_bottom = 235.0
 theme_override_constants/separation = 65
 
 [node name="Sonido" type="HBoxContainer" parent="Jugador/Node2D/CanvasLayer/Ajustes/Cont de Sliders y CheckBox" unique_id=1397595337]
@@ -622,9 +647,14 @@ text = "Mostrar"
 [node name="Controles" type="Control" parent="Jugador/Node2D/CanvasLayer" index="3" unique_id=1922147113]
 visible = false
 layout_mode = 3
-anchors_preset = 0
-offset_right = 1371.0
-offset_bottom = 771.0
+anchor_left = 0.50200003
+anchor_top = 0.5
+anchor_right = 0.50200003
+anchor_bottom = 0.5
+offset_left = -685.73206
+offset_top = -384.0
+offset_right = 685.26794
+offset_bottom = 387.0
 script = ExtResource("12_os015")
 
 [node name="Panel" type="Panel" parent="Jugador/Node2D/CanvasLayer/Controles" unique_id=1229252228]
@@ -645,13 +675,15 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_cjdqc")
 [node name="Cerrar" type="Button" parent="Jugador/Node2D/CanvasLayer/Controles" unique_id=1448530637]
 process_mode = 2
 layout_mode = 1
-anchors_preset = 1
-anchor_left = 1.0
-anchor_right = 1.0
-offset_left = -109.0
-offset_top = 78.0
-offset_right = -51.5
-offset_bottom = 135.5
+anchors_preset = -1
+anchor_left = 0.94100004
+anchor_top = 0.13800001
+anchor_right = 0.94100004
+anchor_bottom = 0.13800001
+offset_left = -28.111084
+offset_top = -28.39801
+offset_right = 29.388916
+offset_bottom = 29.10199
 grow_horizontal = 0
 theme_override_font_sizes/font_size = 25
 theme_override_styles/normal = SubResource("StyleBoxFlat_0eft3")
@@ -661,200 +693,310 @@ text = "X"
 icon_alignment = 1
 
 [node name="TeclaD" type="TextureRect" parent="Jugador/Node2D/CanvasLayer/Controles" unique_id=1132098498]
-layout_mode = 0
-offset_left = 210.0
-offset_top = 149.0
-offset_right = 280.0
-offset_bottom = 219.0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.179
+anchor_top = 0.23900001
+anchor_right = 0.179
+anchor_bottom = 0.23900001
+offset_left = -35.40901
+offset_top = -35.269012
+offset_right = 34.59099
+offset_bottom = 34.730988
 texture = ExtResource("13_vwwu6")
 expand_mode = 1
 
 [node name="TeclaS" type="TextureRect" parent="Jugador/Node2D/CanvasLayer/Controles" unique_id=794805129]
-layout_mode = 0
-offset_left = 139.0
-offset_top = 149.0
-offset_right = 209.0
-offset_bottom = 219.0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.127
+anchor_top = 0.23900001
+anchor_right = 0.127
+anchor_bottom = 0.23900001
+offset_left = -35.117004
+offset_top = -35.269012
+offset_right = 34.882996
+offset_bottom = 34.730988
 texture = ExtResource("14_uph1g")
 expand_mode = 1
 
 [node name="TeclaA" type="TextureRect" parent="Jugador/Node2D/CanvasLayer/Controles" unique_id=2066660564]
-layout_mode = 0
-offset_left = 71.0
-offset_top = 149.0
-offset_right = 141.0
-offset_bottom = 219.0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.07700001
+anchor_top = 0.23900001
+anchor_right = 0.07700001
+anchor_bottom = 0.23900001
+offset_left = -34.56701
+offset_top = -35.269012
+offset_right = 35.43299
+offset_bottom = 34.730988
 texture = ExtResource("15_iqlxx")
 expand_mode = 1
 
 [node name="FotoInventario" type="TextureRect" parent="Jugador/Node2D/CanvasLayer/Controles" unique_id=1196004562]
-layout_mode = 0
-offset_left = 450.0
-offset_top = 534.0
-offset_right = 805.0
-offset_bottom = 631.0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.45800003
+anchor_top = 0.75600004
+anchor_right = 0.45800003
+anchor_bottom = 0.75600004
+offset_left = -177.91803
+offset_top = -48.876038
+offset_right = 177.08197
+offset_bottom = 48.123962
 texture = ExtResource("16_egg21")
 expand_mode = 1
 
 [node name="FotoObjetoEnMano" type="TextureRect" parent="Jugador/Node2D/CanvasLayer/Controles" unique_id=2093523473]
-layout_mode = 0
-offset_left = 827.0
-offset_top = 529.0
-offset_right = 1066.0
-offset_bottom = 628.0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.69000006
+anchor_top = 0.75000006
+anchor_right = 0.69000006
+anchor_bottom = 0.75000006
+offset_left = -118.99005
+offset_top = -49.25006
+offset_right = 120.00995
+offset_bottom = 49.74994
 texture = ExtResource("17_avcb8")
 expand_mode = 1
 
 [node name="FotoObjetoEnPiso" type="TextureRect" parent="Jugador/Node2D/CanvasLayer/Controles" unique_id=1126976470]
-layout_mode = 0
-offset_left = 1086.0
-offset_top = 519.0
-offset_right = 1315.0
-offset_bottom = 663.0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.87600005
+anchor_top = 0.767
+anchor_right = 0.87600005
+anchor_bottom = 0.767
+offset_left = -114.99609
+offset_top = -72.356995
+offset_right = 114.00391
+offset_bottom = 71.643005
 texture = ExtResource("18_eew5s")
 expand_mode = 1
 
 [node name="FotoStamina" type="TextureRect" parent="Jugador/Node2D/CanvasLayer/Controles" unique_id=2112358558]
-layout_mode = 0
-offset_left = 514.0
-offset_top = 263.0
-offset_right = 799.0
-offset_bottom = 357.0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.47900003
+anchor_top = 0.402
+anchor_right = 0.47900003
+anchor_bottom = 0.402
+offset_left = -142.70905
+offset_top = -46.942017
+offset_right = 142.29095
+offset_bottom = 47.057983
 texture = ExtResource("19_7bf7e")
 expand_mode = 1
 
 [node name="FotoLintPrendida" type="TextureRect" parent="Jugador/Node2D/CanvasLayer/Controles" unique_id=890624833]
-layout_mode = 0
-offset_left = 1073.0
-offset_top = 227.0
-offset_right = 1317.0
-offset_bottom = 364.0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.87200004
+anchor_top = 0.38300002
+anchor_right = 0.87200004
+anchor_bottom = 0.38300002
+offset_left = -122.512085
+offset_top = -68.293
+offset_right = 121.487915
+offset_bottom = 68.707
 texture = ExtResource("20_ud0b3")
 expand_mode = 1
 
 [node name="FotoLintApagada" type="TextureRect" parent="Jugador/Node2D/CanvasLayer/Controles" unique_id=1413914049]
-layout_mode = 0
-offset_left = 823.0
-offset_top = 225.0
-offset_right = 1077.0
-offset_bottom = 364.0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.693
+anchor_top = 0.38200003
+anchor_right = 0.693
+anchor_bottom = 0.38200003
+offset_left = -127.10303
+offset_top = -69.52203
+offset_right = 126.89697
+offset_bottom = 69.47797
 texture = ExtResource("21_s8c8j")
 expand_mode = 1
 
 [node name="FotoSinMenuDePausa" type="TextureRect" parent="Jugador/Node2D/CanvasLayer/Controles" unique_id=1830754057]
-layout_mode = 0
-offset_left = 136.0
-offset_top = 394.0
-offset_right = 390.0
-offset_bottom = 533.0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.192
+anchor_top = 0.601
+anchor_right = 0.192
+anchor_bottom = 0.601
+offset_left = -127.231995
+offset_top = -69.371
+offset_right = 126.768005
+offset_bottom = 69.629
 texture = ExtResource("22_4x8yr")
 expand_mode = 1
 
 [node name="FotoMenuDePausa" type="TextureRect" parent="Jugador/Node2D/CanvasLayer/Controles" unique_id=1490755723]
-layout_mode = 0
-offset_left = 136.0
-offset_top = 551.0
-offset_right = 390.0
-offset_bottom = 690.0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.192
+anchor_top = 0.80500007
+anchor_right = 0.192
+anchor_bottom = 0.80500007
+offset_left = -127.231995
+offset_top = -69.65503
+offset_right = 126.768005
+offset_bottom = 69.34497
 texture = ExtResource("23_pv1w1")
 expand_mode = 1
 
 [node name="TeclaW" type="TextureRect" parent="Jugador/Node2D/CanvasLayer/Controles" unique_id=1796340271]
-layout_mode = 0
-offset_left = 139.0
-offset_top = 76.0
-offset_right = 209.0
-offset_bottom = 146.0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.127
+anchor_top = 0.14400001
+anchor_right = 0.127
+anchor_bottom = 0.14400001
+offset_left = -35.117004
+offset_top = -35.02401
+offset_right = 34.882996
+offset_bottom = 34.97599
 texture = ExtResource("24_sfbq3")
 expand_mode = 1
 
 [node name="TeclaF" type="TextureRect" parent="Jugador/Node2D/CanvasLayer/Controles" unique_id=1875991169]
-layout_mode = 0
-offset_left = 1033.0
-offset_top = 79.0
-offset_right = 1103.0
-offset_bottom = 149.0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.77900004
+anchor_top = 0.148
+anchor_right = 0.77900004
+anchor_bottom = 0.148
+offset_left = -35.009033
+offset_top = -35.108
+offset_right = 34.990967
+offset_bottom = 34.892
 texture = ExtResource("25_a4mot")
 expand_mode = 1
 
 [node name="Tecla2" type="TextureRect" parent="Jugador/Node2D/CanvasLayer/Controles" unique_id=2114268602]
-layout_mode = 0
-offset_left = 550.0
-offset_top = 426.0
-offset_right = 620.0
-offset_bottom = 496.0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.42700002
+anchor_top = 0.59800005
+anchor_right = 0.42700002
+anchor_bottom = 0.59800005
+offset_left = -35.416992
+offset_top = -35.058044
+offset_right = 34.583008
+offset_bottom = 34.941956
 texture = ExtResource("26_2cqb8")
 expand_mode = 1
 
 [node name="Tecla4" type="TextureRect" parent="Jugador/Node2D/CanvasLayer/Controles" unique_id=1128721671]
-layout_mode = 0
-offset_left = 702.0
-offset_top = 426.0
-offset_right = 772.0
-offset_bottom = 496.0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.53800005
+anchor_top = 0.59800005
+anchor_right = 0.53800005
+anchor_bottom = 0.59800005
+offset_left = -35.598083
+offset_top = -35.058044
+offset_right = 34.401917
+offset_bottom = 34.941956
 texture = ExtResource("27_hei26")
 expand_mode = 1
 
 [node name="Tecla3" type="TextureRect" parent="Jugador/Node2D/CanvasLayer/Controles" unique_id=1242883276]
-layout_mode = 0
-offset_left = 626.0
-offset_top = 426.0
-offset_right = 696.0
-offset_bottom = 496.0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.48200002
+anchor_top = 0.59800005
+anchor_right = 0.48200002
+anchor_bottom = 0.59800005
+offset_left = -34.82202
+offset_top = -35.058044
+offset_right = 35.17798
+offset_bottom = 34.941956
 texture = ExtResource("28_kh42h")
 expand_mode = 1
 
 [node name="Tecla1" type="TextureRect" parent="Jugador/Node2D/CanvasLayer/Controles" unique_id=835441020]
-layout_mode = 0
-offset_left = 476.0
-offset_top = 426.0
-offset_right = 546.0
-offset_bottom = 496.0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.37300003
+anchor_top = 0.59800005
+anchor_right = 0.37300003
+anchor_bottom = 0.59800005
+offset_left = -35.383026
+offset_top = -35.058044
+offset_right = 34.616974
+offset_bottom = 34.941956
 texture = ExtResource("29_yyvjb")
 expand_mode = 1
 
 [node name="TeclaEsc" type="TextureRect" parent="Jugador/Node2D/CanvasLayer/Controles" unique_id=111661927]
-layout_mode = 0
-offset_left = 225.0
-offset_top = 295.0
-offset_right = 295.0
-offset_bottom = 365.0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.19000001
+anchor_top = 0.42800003
+anchor_right = 0.19000001
+anchor_bottom = 0.42800003
+offset_left = -35.49002
+offset_top = -34.988037
+offset_right = 34.50998
+offset_bottom = 35.011963
 texture = ExtResource("30_0ieq6")
 expand_mode = 1
 
 [node name="TeclaG" type="TextureRect" parent="Jugador/Node2D/CanvasLayer/Controles" unique_id=1868130235]
-layout_mode = 0
-offset_left = 1040.0
-offset_top = 396.0
-offset_right = 1110.0
-offset_bottom = 466.0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.78400004
+anchor_top = 0.559
+anchor_right = 0.78400004
+anchor_bottom = 0.559
+offset_left = -34.864014
+offset_top = -34.989014
+offset_right = 35.135986
+offset_bottom = 35.010986
 texture = ExtResource("31_aps1j")
 expand_mode = 1
 
 [node name="TeclaShift" type="TextureRect" parent="Jugador/Node2D/CanvasLayer/Controles" unique_id=1027761483]
-layout_mode = 0
-offset_left = 576.0
-offset_top = 41.0
-offset_right = 741.0
-offset_bottom = 206.0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.48000002
+anchor_top = 0.16000001
+anchor_right = 0.48000002
+anchor_bottom = 0.16000001
+offset_left = -82.08002
+offset_top = -82.36001
+offset_right = 82.91998
+offset_bottom = 82.63999
 texture = ExtResource("32_yxmc4")
 expand_mode = 1
 
 [node name="TeclaEspacio" type="TextureRect" parent="Jugador/Node2D/CanvasLayer/Controles" unique_id=1612312157]
-layout_mode = 0
-offset_left = 308.0
-offset_top = 55.0
-offset_right = 488.0
-offset_bottom = 235.0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.29000002
+anchor_top = 0.18800001
+anchor_right = 0.29000002
+anchor_bottom = 0.18800001
+offset_left = -89.59003
+offset_top = -89.94801
+offset_right = 90.40997
+offset_bottom = 90.05199
 texture = ExtResource("33_2aflc")
 expand_mode = 1
 
 [node name="Texto" type="Label" parent="Jugador/Node2D/CanvasLayer/Controles" unique_id=391887336]
-layout_mode = 0
-offset_left = 45.0
-offset_top = 221.0
-offset_right = 310.0
-offset_bottom = 284.0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.12900001
+anchor_top = 0.32700002
+anchor_right = 0.12900001
+anchor_bottom = 0.32700002
+offset_left = -131.85901
+offset_top = -31.11702
+offset_right = 133.14099
+offset_bottom = 31.88298
 theme_override_constants/outline_size = 9
 theme_override_fonts/font = ExtResource("10_erchp")
 theme_override_font_sizes/font_size = 25
@@ -863,11 +1005,16 @@ en distintas direcciones"
 horizontal_alignment = 1
 
 [node name="Texto2" type="Label" parent="Jugador/Node2D/CanvasLayer/Controles" unique_id=1363000366]
-layout_mode = 0
-offset_left = 310.0
-offset_top = 192.0
-offset_right = 482.0
-offset_bottom = 234.0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.289
+anchor_top = 0.27600002
+anchor_right = 0.289
+anchor_bottom = 0.27600002
+offset_left = -86.218994
+offset_top = -20.79602
+offset_right = 85.781006
+offset_bottom = 21.20398
 theme_override_constants/outline_size = 9
 theme_override_fonts/font = ExtResource("10_erchp")
 theme_override_font_sizes/font_size = 36
@@ -875,11 +1022,16 @@ text = "Para saltar"
 horizontal_alignment = 1
 
 [node name="Texto3" type="Label" parent="Jugador/Node2D/CanvasLayer/Controles" unique_id=1195186760]
-layout_mode = 0
-offset_left = 504.0
-offset_top = 172.0
-offset_right = 819.0
-offset_bottom = 250.0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.48200002
+anchor_top = 0.27400002
+anchor_right = 0.48200002
+anchor_bottom = 0.27400002
+offset_left = -156.82202
+offset_top = -39.254013
+offset_right = 158.17798
+offset_bottom = 38.745987
 theme_override_constants/outline_size = 9
 theme_override_fonts/font = ExtResource("10_erchp")
 theme_override_font_sizes/font_size = 20
@@ -889,11 +1041,16 @@ subirá si dejas de correr"
 horizontal_alignment = 1
 
 [node name="Texto4" type="Label" parent="Jugador/Node2D/CanvasLayer/Controles" unique_id=1046040149]
-layout_mode = 0
-offset_left = 923.0
-offset_top = 154.0
-offset_right = 1206.0
-offset_bottom = 205.0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.776
+anchor_top = 0.23300001
+anchor_right = 0.776
+anchor_bottom = 0.23300001
+offset_left = -140.896
+offset_top = -25.643005
+offset_right = 142.104
+offset_bottom = 25.356995
 theme_override_constants/outline_size = 9
 theme_override_fonts/font = ExtResource("10_erchp")
 theme_override_font_sizes/font_size = 20
@@ -902,11 +1059,16 @@ mientras la tengas en la mano"
 horizontal_alignment = 1
 
 [node name="Texto5" type="Label" parent="Jugador/Node2D/CanvasLayer/Controles" unique_id=8297173]
-layout_mode = 0
-offset_left = 883.0
-offset_top = 481.0
-offset_right = 1276.0
-offset_bottom = 505.0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.78700006
+anchor_top = 0.63900006
+anchor_right = 0.78700006
+anchor_bottom = 0.63900006
+offset_left = -195.97705
+offset_top = -11.669037
+offset_right = 197.02295
+offset_bottom = 12.330963
 theme_override_constants/outline_size = 9
 theme_override_fonts/font = ExtResource("10_erchp")
 theme_override_font_sizes/font_size = 20
@@ -914,11 +1076,16 @@ text = "Para soltar el objeto que tengas en la mano"
 horizontal_alignment = 1
 
 [node name="Texto6" type="Label" parent="Jugador/Node2D/CanvasLayer/Controles" unique_id=144569872]
-layout_mode = 0
-offset_left = 52.0
-offset_top = 363.0
-offset_right = 496.0
-offset_bottom = 387.0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.2
+anchor_top = 0.48600003
+anchor_right = 0.2
+anchor_bottom = 0.48600003
+offset_left = -222.20001
+offset_top = -11.706024
+offset_right = 221.79999
+offset_bottom = 12.293976
 theme_override_constants/outline_size = 9
 theme_override_fonts/font = ExtResource("10_erchp")
 theme_override_font_sizes/font_size = 20
@@ -926,11 +1093,16 @@ text = "Para pausar el juego, se abrirá un menú de pausa"
 horizontal_alignment = 1
 
 [node name="Texto7" type="Label" parent="Jugador/Node2D/CanvasLayer/Controles" unique_id=781562491]
-layout_mode = 0
-offset_left = 448.0
-offset_top = 497.0
-offset_right = 806.0
-offset_bottom = 521.0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.45700002
+anchor_top = 0.66
+anchor_right = 0.45700002
+anchor_bottom = 0.66
+offset_left = -178.547
+offset_top = -11.860016
+offset_right = 179.453
+offset_bottom = 12.139984
 theme_override_constants/outline_size = 9
 theme_override_fonts/font = ExtResource("10_erchp")
 theme_override_font_sizes/font_size = 20

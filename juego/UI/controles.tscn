@@ -105,6 +105,7 @@ offset_right = 254.0
 offset_bottom = 167.0
 texture = ExtResource("4_lhewh")
 expand_mode = 1
+metadata/_edit_use_anchors_ = true
 
 [node name="TeclaS" type="TextureRect" parent="." unique_id=1527248093]
 layout_mode = 0
@@ -114,6 +115,7 @@ offset_right = 183.0
 offset_bottom = 167.0
 texture = ExtResource("5_53qit")
 expand_mode = 1
+metadata/_edit_use_anchors_ = true
 
 [node name="TeclaA" type="TextureRect" parent="." unique_id=1905084325]
 layout_mode = 0
@@ -123,6 +125,7 @@ offset_right = 115.0
 offset_bottom = 167.0
 texture = ExtResource("6_62qye")
 expand_mode = 1
+metadata/_edit_use_anchors_ = true
 
 [node name="FotoInventario" type="TextureRect" parent="." unique_id=1966495707]
 layout_mode = 0
@@ -132,6 +135,7 @@ offset_right = 812.0
 offset_bottom = 628.0
 texture = ExtResource("7_lhewh")
 expand_mode = 1
+metadata/_edit_use_anchors_ = true
 
 [node name="FotoObjetoEnMano" type="TextureRect" parent="." unique_id=156309871]
 layout_mode = 0
@@ -141,6 +145,7 @@ offset_right = 1110.0
 offset_bottom = 563.0
 texture = ExtResource("8_53qit")
 expand_mode = 1
+metadata/_edit_use_anchors_ = true
 
 [node name="FotoObjetoEnPiso" type="TextureRect" parent="." unique_id=1314755362]
 layout_mode = 0
@@ -150,6 +155,7 @@ offset_right = 1359.0
 offset_bottom = 598.0
 texture = ExtResource("9_62qye")
 expand_mode = 1
+metadata/_edit_use_anchors_ = true
 
 [node name="FotoStamina" type="TextureRect" parent="." unique_id=472758318]
 layout_mode = 0
@@ -159,6 +165,7 @@ offset_right = 806.0
 offset_bottom = 295.0
 texture = ExtResource("10_0pojv")
 expand_mode = 1
+metadata/_edit_use_anchors_ = true
 
 [node name="FotoLintPrendida" type="TextureRect" parent="." unique_id=574766315]
 layout_mode = 0
@@ -168,6 +175,7 @@ offset_right = 1358.0
 offset_bottom = 304.0
 texture = ExtResource("11_5k2q0")
 expand_mode = 1
+metadata/_edit_use_anchors_ = true
 
 [node name="FotoLintApagada" type="TextureRect" parent="." unique_id=1137619418]
 layout_mode = 0
@@ -177,6 +185,7 @@ offset_right = 1118.0
 offset_bottom = 304.0
 texture = ExtResource("12_xlwv1")
 expand_mode = 1
+metadata/_edit_use_anchors_ = true
 
 [node name="FotoSinMenuDePausa" type="TextureRect" parent="." unique_id=1076098154]
 layout_mode = 0
@@ -186,6 +195,7 @@ offset_right = 346.0
 offset_bottom = 538.0
 texture = ExtResource("13_62qye")
 expand_mode = 1
+metadata/_edit_use_anchors_ = true
 
 [node name="FotoMenuDePausa" type="TextureRect" parent="." unique_id=747819338]
 layout_mode = 0
@@ -195,6 +205,7 @@ offset_right = 346.0
 offset_bottom = 695.0
 texture = ExtResource("14_0pojv")
 expand_mode = 1
+metadata/_edit_use_anchors_ = true
 
 [node name="TeclaW" type="TextureRect" parent="." unique_id=229118891]
 layout_mode = 0
@@ -204,6 +215,7 @@ offset_right = 183.0
 offset_bottom = 94.0
 texture = ExtResource("13_0pojv")
 expand_mode = 1
+metadata/_edit_use_anchors_ = true
 
 [node name="TeclaF" type="TextureRect" parent="." unique_id=1783697005]
 layout_mode = 0
@@ -213,6 +225,7 @@ offset_right = 1144.0
 offset_bottom = 89.0
 texture = ExtResource("14_5k2q0")
 expand_mode = 1
+metadata/_edit_use_anchors_ = true
 
 [node name="Tecla2" type="TextureRect" parent="." unique_id=1926799118]
 layout_mode = 0
@@ -222,6 +235,7 @@ offset_right = 627.0
 offset_bottom = 493.0
 texture = ExtResource("15_xlwv1")
 expand_mode = 1
+metadata/_edit_use_anchors_ = true
 
 [node name="Tecla4" type="TextureRect" parent="." unique_id=1535069490]
 layout_mode = 0
@@ -231,6 +245,7 @@ offset_right = 779.0
 offset_bottom = 493.0
 texture = ExtResource("16_jtpgy")
 expand_mode = 1
+metadata/_edit_use_anchors_ = true
 
 [node name="Tecla3" type="TextureRect" parent="." unique_id=575018273]
 layout_mode = 0
@@ -240,6 +255,7 @@ offset_right = 703.0
 offset_bottom = 493.0
 texture = ExtResource("17_834wf")
 expand_mode = 1
+metadata/_edit_use_anchors_ = true
 
 [node name="Tecla1" type="TextureRect" parent="." unique_id=3177653]
 layout_mode = 0
@@ -249,6 +265,7 @@ offset_right = 553.0
 offset_bottom = 493.0
 texture = ExtResource("18_lhewh")
 expand_mode = 1
+metadata/_edit_use_anchors_ = true
 
 [node name="TeclaEsc" type="TextureRect" parent="." unique_id=1585571175]
 layout_mode = 0
@@ -258,6 +275,7 @@ offset_right = 254.0
 offset_bottom = 354.0
 texture = ExtResource("19_5cud2")
 expand_mode = 1
+metadata/_edit_use_anchors_ = true
 
 [node name="TeclaG" type="TextureRect" parent="." unique_id=1378981341]
 layout_mode = 0
@@ -267,6 +285,7 @@ offset_right = 1154.0
 offset_bottom = 401.0
 texture = ExtResource("22_62qye")
 expand_mode = 1
+metadata/_edit_use_anchors_ = true
 
 [node name="TeclaShift" type="TextureRect" parent="." unique_id=1637822522]
 layout_mode = 0
@@ -276,6 +295,7 @@ offset_right = 748.0
 offset_bottom = 144.0
 texture = ExtResource("21_8bmws")
 expand_mode = 1
+metadata/_edit_use_anchors_ = true
 
 [node name="TeclaEspacio" type="TextureRect" parent="." unique_id=1816889201]
 layout_mode = 0
@@ -285,6 +305,7 @@ offset_right = 456.0
 offset_bottom = 175.0
 texture = ExtResource("22_4mf6k")
 expand_mode = 1
+metadata/_edit_use_anchors_ = true
 
 [node name="Texto" type="Label" parent="." unique_id=640764201]
 layout_mode = 0
@@ -298,6 +319,7 @@ theme_override_font_sizes/font_size = 25
 text = "Para moverse 
 en distintas direcciones"
 horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
 
 [node name="Texto2" type="Label" parent="." unique_id=1757869376]
 layout_mode = 0
@@ -310,6 +332,7 @@ theme_override_fonts/font = ExtResource("17_bh2ep")
 theme_override_font_sizes/font_size = 36
 text = "Para saltar"
 horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
 
 [node name="Texto3" type="Label" parent="." unique_id=2069481423]
 layout_mode = 0
@@ -324,6 +347,7 @@ text = "Para correr, manteniendo apretado
 Tu stamina irá bajando si corrés y 
 subirá si dejas de correr"
 horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
 
 [node name="Texto4" type="Label" parent="." unique_id=520719740]
 layout_mode = 0
@@ -337,6 +361,7 @@ theme_override_font_sizes/font_size = 20
 text = "Para interactuar con la linterna
 mientras la tengas en la mano"
 horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
 
 [node name="Texto5" type="Label" parent="." unique_id=1986334917]
 layout_mode = 0
@@ -349,6 +374,7 @@ theme_override_fonts/font = ExtResource("17_bh2ep")
 theme_override_font_sizes/font_size = 20
 text = "Para soltar el objeto que tengas en la mano"
 horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
 
 [node name="Texto6" type="Label" parent="." unique_id=1535226322]
 layout_mode = 0
@@ -361,6 +387,7 @@ theme_override_fonts/font = ExtResource("17_bh2ep")
 theme_override_font_sizes/font_size = 20
 text = "Para pausar el juego, se abrirá un menú de pausa"
 horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
 
 [node name="Texto7" type="Label" parent="." unique_id=1667427799]
 layout_mode = 0
@@ -373,5 +400,6 @@ theme_override_fonts/font = ExtResource("17_bh2ep")
 theme_override_font_sizes/font_size = 20
 text = "Para cambiar de ranura en el inventario"
 horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
 
 [connection signal="pressed" from="volver" to="volver" method="_on_pressed"]

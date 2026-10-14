@@ -112,38 +112,44 @@ corner_radius_bottom_left = 10
 
 [node name="Ajustes" type="Control" unique_id=480375880]
 layout_mode = 3
+anchor_right = 0.84331346
+anchor_bottom = 0.83634734
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.1918753, 1.2003461)
+metadata/_edit_use_anchors_ = true
+
+[node name="Fondo" type="TextureRect" parent="." unique_id=1880763370]
+layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-scale = Vector2(1.1918753, 1.2003461)
-
-[node name="Fondo" type="TextureRect" parent="." unique_id=1880763370]
-layout_mode = 0
-offset_left = -9.229153
-offset_top = -5.8316517
-offset_right = 1151.9662
-offset_bottom = 648.1464
 texture = ExtResource("1_p3nki")
 expand_mode = 1
+stretch_mode = 6
 
 [node name="Panel" type="Panel" parent="." unique_id=924506643]
-layout_mode = 0
-offset_left = -4.0
-offset_right = 1148.0
-offset_bottom = 643.0
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 metadata/_edit_use_anchors_ = true
 
-[node name="Ajustes Título" type="Label" parent="Panel" unique_id=140143887]
+[node name="Ajustes Título" type="Label" parent="." unique_id=140143887]
 layout_mode = 1
-anchors_preset = 5
+anchors_preset = -1
 anchor_left = 0.5
+anchor_top = 0.13800001
 anchor_right = 0.5
+anchor_bottom = 0.13800001
 offset_left = -115.0
-offset_top = 30.0
+offset_top = -58.734
 offset_right = 120.0
-offset_bottom = 148.0
+offset_bottom = 59.26599
 grow_horizontal = 2
 theme_override_constants/outline_size = 10
 theme_override_constants/shadow_outline_size = 0
@@ -153,14 +159,18 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_f6o33")
 text = "Ajustes"
 horizontal_alignment = 1
 vertical_alignment = 1
-metadata/_edit_use_anchors_ = true
 
-[node name="volver" type="Button" parent="Panel" unique_id=1703907111]
-layout_mode = 0
-offset_left = 977.2561
-offset_top = 537.34503
-offset_right = 1134.2561
-offset_bottom = 623.34503
+[node name="volver" type="Button" parent="." unique_id=1703907111]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.91600007
+anchor_top = 0.90300006
+anchor_right = 0.91600007
+anchor_bottom = 0.90300006
+offset_left = -77.97583
+offset_top = -43.283936
+offset_right = 79.02417
+offset_bottom = 42.716064
 theme_override_fonts/font = ExtResource("2_mon12")
 theme_override_font_sizes/font_size = 50
 theme_override_styles/normal = SubResource("StyleBoxFlat_p1khp")
@@ -170,15 +180,20 @@ text = "Volver"
 script = ExtResource("3_p1khp")
 metadata/_edit_use_anchors_ = true
 
-[node name="Textos" type="VBoxContainer" parent="Panel" unique_id=519686304]
-layout_mode = 0
-offset_left = 316.952
-offset_top = 165.444
-offset_right = 599.95197
-offset_bottom = 535.444
+[node name="Textos" type="VBoxContainer" parent="." unique_id=519686304]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.39800003
+anchor_top = 0.5
+anchor_right = 0.39800003
+anchor_bottom = 0.5
+offset_left = -141.54407
+offset_top = -156.05597
+offset_right = 141.45593
+offset_bottom = 253.94403
 theme_override_constants/separation = 60
 
-[node name="Sonido" type="Label" parent="Panel/Textos" unique_id=324615397]
+[node name="Sonido" type="Label" parent="Textos" unique_id=324615397]
 layout_mode = 2
 theme_override_constants/outline_size = 7
 theme_override_fonts/font = ExtResource("5_oxxd6")
@@ -188,7 +203,7 @@ text = "Sonido General"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="SensMouse" type="Label" parent="Panel/Textos" unique_id=1354375354]
+[node name="SensMouse" type="Label" parent="Textos" unique_id=1354375354]
 layout_mode = 2
 theme_override_constants/outline_size = 7
 theme_override_fonts/font = ExtResource("5_oxxd6")
@@ -198,7 +213,7 @@ text = "Sensibilidad del Mouse"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="PantCompleta" type="Label" parent="Panel/Textos" unique_id=1067891136]
+[node name="PantCompleta" type="Label" parent="Textos" unique_id=1067891136]
 layout_mode = 2
 theme_override_constants/outline_size = 7
 theme_override_fonts/font = ExtResource("5_oxxd6")
@@ -208,7 +223,7 @@ text = "Pantalla Completa"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="ContadorDeFPS" type="Label" parent="Panel/Textos" unique_id=348352255]
+[node name="ContadorDeFPS" type="Label" parent="Textos" unique_id=348352255]
 layout_mode = 2
 theme_override_constants/outline_size = 7
 theme_override_fonts/font = ExtResource("5_oxxd6")
@@ -218,7 +233,7 @@ text = "Contador de FPS"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Contador" type="Label" parent="Panel/Textos" unique_id=1779193671]
+[node name="Contador" type="Label" parent="Textos" unique_id=1779193671]
 layout_mode = 2
 theme_override_constants/outline_size = 7
 theme_override_fonts/font = ExtResource("5_oxxd6")
@@ -228,30 +243,45 @@ text = "Timer"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="barra_sonidos" parent="Panel" unique_id=1664845339 instance=ExtResource("4_56yal")]
-layout_mode = 0
-offset_left = 608.09
-offset_top = 170.78409
-offset_right = 821.09
-offset_bottom = 186.78409
+[node name="barra_sonidos" parent="." unique_id=1664845339 instance=ExtResource("4_56yal")]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.62
+anchor_top = 0.27800003
+anchor_right = 0.62
+anchor_bottom = 0.27800003
+offset_left = -106.1499
+offset_top = -7.9699097
+offset_right = 106.8501
+offset_bottom = 8.03009
 
-[node name="sensibilidad" parent="Panel" unique_id=975027753 instance=ExtResource("4_56yal")]
-layout_mode = 0
-offset_left = 608.09
-offset_top = 266.7841
-offset_right = 821.09
-offset_bottom = 282.7841
+[node name="sensibilidad" parent="." unique_id=975027753 instance=ExtResource("4_56yal")]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.62
+anchor_top = 0.41500002
+anchor_right = 0.62
+anchor_bottom = 0.41500002
+offset_left = -106.1499
+offset_top = -0.060913086
+offset_right = 106.8501
+offset_bottom = 15.939087
 min_value = 0.0
 max_value = 10.0
 value = 5.0
 script = ExtResource("2_33ovl")
 
-[node name="CheckBox" type="CheckBox" parent="Panel" unique_id=234344850]
-layout_mode = 0
-offset_left = 702.09
-offset_top = 360.784
-offset_right = 726.09
-offset_bottom = 384.784
+[node name="CheckBox" type="CheckBox" parent="." unique_id=234344850]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.62
+anchor_top = 0.58000004
+anchor_right = 0.62
+anchor_bottom = 0.58000004
+offset_left = -12.150024
+offset_top = -12.155945
+offset_right = 11.849976
+offset_bottom = 11.844055
 size_flags_horizontal = 4
 size_flags_vertical = 4
 size_flags_stretch_ratio = 0.0
@@ -260,16 +290,21 @@ icon = SubResource("CanvasTexture_rfr4f")
 flat = true
 script = ExtResource("2_qgyvf")
 
-[node name="OcultarMostrar" type="HBoxContainer" parent="Panel" unique_id=1108191122]
-layout_mode = 0
-offset_left = 608.09
-offset_top = 450.784
-offset_right = 821.09
-offset_bottom = 476.784
+[node name="OcultarMostrar" type="HBoxContainer" parent="." unique_id=1108191122]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.62
+anchor_top = 0.721
+anchor_right = 0.62
+anchor_bottom = 0.721
+offset_left = -106.1499
+offset_top = -12.81897
+offset_right = 106.8501
+offset_bottom = 13.18103
 theme_override_constants/separation = 2
 alignment = 1
 
-[node name="Ocultar" type="Button" parent="Panel/OcultarMostrar" unique_id=216490050]
+[node name="Ocultar" type="Button" parent="OcultarMostrar" unique_id=216490050]
 layout_mode = 2
 theme_override_constants/outline_size = 2
 theme_override_fonts/font = ExtResource("5_oxxd6")
@@ -279,7 +314,7 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_ink1u")
 theme_override_styles/hover = SubResource("StyleBoxFlat_lgb8o")
 text = "Ocultar"
 
-[node name="Mostrar" type="Button" parent="Panel/OcultarMostrar" unique_id=962186902]
+[node name="Mostrar" type="Button" parent="OcultarMostrar" unique_id=962186902]
 layout_mode = 2
 theme_override_constants/outline_size = 2
 theme_override_fonts/font = ExtResource("5_oxxd6")
@@ -289,16 +324,21 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_ink1u")
 theme_override_styles/hover = SubResource("StyleBoxFlat_lgb8o")
 text = "Mostrar"
 
-[node name="OcultarMostrar2" type="HBoxContainer" parent="Panel" unique_id=1272293904]
-layout_mode = 0
-offset_left = 608.09
-offset_top = 544.784
-offset_right = 821.09
-offset_bottom = 570.784
+[node name="OcultarMostrar2" type="HBoxContainer" parent="." unique_id=1272293904]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.62
+anchor_top = 0.86700004
+anchor_right = 0.62
+anchor_bottom = 0.86700004
+offset_left = -106.1499
+offset_top = -12.69696
+offset_right = 106.8501
+offset_bottom = 13.30304
 theme_override_constants/separation = 2
 alignment = 1
 
-[node name="Ocultar" type="Button" parent="Panel/OcultarMostrar2" unique_id=992810686]
+[node name="Ocultar" type="Button" parent="OcultarMostrar2" unique_id=992810686]
 layout_mode = 2
 theme_override_constants/outline_size = 2
 theme_override_fonts/font = ExtResource("5_oxxd6")
@@ -308,7 +348,7 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_ink1u")
 theme_override_styles/hover = SubResource("StyleBoxFlat_lgb8o")
 text = "Ocultar"
 
-[node name="Mostrar" type="Button" parent="Panel/OcultarMostrar2" unique_id=1921663301]
+[node name="Mostrar" type="Button" parent="OcultarMostrar2" unique_id=1921663301]
 layout_mode = 2
 theme_override_constants/outline_size = 2
 theme_override_fonts/font = ExtResource("5_oxxd6")
@@ -318,12 +358,17 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_ink1u")
 theme_override_styles/hover = SubResource("StyleBoxFlat_lgb8o")
 text = "Mostrar"
 
-[node name="ValorSensMouse" type="Label" parent="Panel" unique_id=2118865458]
-layout_mode = 0
-offset_left = 840.4969
-offset_top = 252.42722
-offset_right = 940.9835
-offset_bottom = 299.9135
+[node name="ValorSensMouse" type="Label" parent="." unique_id=2118865458]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.77300006
+anchor_top = 0.43
+anchor_right = 0.77300006
+anchor_bottom = 0.43
+offset_left = -49.999268
+offset_top = -24.062744
+offset_right = 50.487427
+offset_bottom = 23.423553
 theme_override_constants/outline_size = 5
 theme_override_fonts/font = ExtResource("5_oxxd6")
 theme_override_font_sizes/font_size = 20
@@ -331,12 +376,17 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_33ovl")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="ValorVolumen" type="Label" parent="Panel" unique_id=446437471]
-layout_mode = 0
-offset_left = 840.497
-offset_top = 155.0
-offset_right = 940.98364
-offset_bottom = 202.4863
+[node name="ValorVolumen" type="Label" parent="." unique_id=446437471]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.77300006
+anchor_top = 0.27800003
+anchor_right = 0.77300006
+anchor_bottom = 0.27800003
+offset_left = -49.999023
+offset_top = -23.753967
+offset_right = 50.48755
+offset_bottom = 23.7323
 theme_override_constants/outline_size = 5
 theme_override_fonts/font = ExtResource("5_oxxd6")
 theme_override_font_sizes/font_size = 20
@@ -344,5 +394,5 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_33ovl")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[connection signal="pressed" from="Panel/volver" to="Panel/volver" method="_on_pressed"]
-[connection signal="toggled" from="Panel/CheckBox" to="Panel/CheckBox" method="_on_toggled"]
+[connection signal="pressed" from="volver" to="volver" method="_on_pressed"]
+[connection signal="toggled" from="CheckBox" to="CheckBox" method="_on_toggled"]

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://xxo06fucuf2l"
-path="res://.godot/imported/checker_baked.png-9e5f8207e42b5bb7320e356f2f8ec5be.ctex"
+uid="uid://d12a511lwsry3"
+path="res://.godot/imported/texturapiso2.jpeg-d2e2d79b6caf7cba2ab289a4e2f8c17b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://fotos/checker_baked.png"
-dest_files=["res://.godot/imported/checker_baked.png-9e5f8207e42b5bb7320e356f2f8ec5be.ctex"]
+source_file="res://fotos/texturapiso2.jpeg"
+dest_files=["res://.godot/imported/texturapiso2.jpeg-d2e2d79b6caf7cba2ab289a4e2f8c17b.ctex"]
 
 [params]
 
