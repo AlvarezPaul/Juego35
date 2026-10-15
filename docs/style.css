@@ -43,7 +43,16 @@ body::after{
   background-size:28px 28px,28px 28px,28px 28px;
   z-index:-1;
 }
-
+.img-placeholder {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+.img-placeholder:hover {
+  transform: scale(1.25);
+}
 .top-navbar{
   position:sticky;
   top:0;
