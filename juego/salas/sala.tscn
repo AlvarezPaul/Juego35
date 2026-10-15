@@ -7,6 +7,7 @@
 [ext_resource type="AudioStream" uid="uid://d4b1w0ui4oxb" path="res://UI/linterna.mp3" id="3_pudgd"]
 [ext_resource type="PackedScene" uid="uid://mbsgoh8bcs3w" path="res://jugador/jugador.tscn" id="3_qh0pk"]
 [ext_resource type="Script" uid="uid://31ipksk4tnso" path="res://scriptstamina/canvas_layer.gd" id="3_tgavs"]
+[ext_resource type="Script" uid="uid://dde7axw8aa7yy" path="res://UI/animacionfadein.gd" id="3_uph1g"]
 [ext_resource type="PackedScene" uid="uid://l3360f65cyou" path="res://salas/linterna_suelo.tscn" id="4_tgavs"]
 [ext_resource type="FontFile" uid="uid://blju0ku40nkwn" path="res://Interfaz/Fuentes/Bonechiller Free.otf" id="5_bl8tx"]
 [ext_resource type="Script" uid="uid://v4xmv2vcxdob" path="res://UI/ajustesmenuesc.gd" id="6_3q2x0"]
@@ -42,11 +43,49 @@
 [ext_resource type="Texture2D" uid="uid://2y0neoo3mnll" path="res://fotos/controlesimg/TeclaG.png" id="31_aps1j"]
 [ext_resource type="Texture2D" uid="uid://bstdhpebjtwrg" path="res://fotos/controlesimg/TeclaShift.png" id="32_yxmc4"]
 [ext_resource type="Texture2D" uid="uid://04gly3jkvoly" path="res://fotos/controlesimg/TeclaEspacio.png" id="33_2aflc"]
+[ext_resource type="Script" uid="uid://sylhqf8xuif" path="res://UI/label_textos.gd" id="43_iqlxx"]
 
 [sub_resource type="Environment" id="Environment_pvkkf"]
 background_mode = 1
 background_color = Color(0.15640268, 0.17418766, 0.2030974, 1)
 background_energy_multiplier = 0.2
+
+[sub_resource type="Animation" id="Animation_vwwu6"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Color:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_uph1g"]
+resource_name = "fade_in"
+length = 2.5000000000000004
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Color:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(-0.16666667, 0, 0.53, 1.04, 2.4333334),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 1), Color(0, 0, 0, 1), Color(0, 0, 0, 0.84313726), Color(0, 0, 0, 0.627451), Color(0, 0, 0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_iqlxx"]
+_data = {
+&"RESET": SubResource("Animation_vwwu6"),
+&"fade_in": SubResource("Animation_uph1g")
+}
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_xrivr"]
 shader = ExtResource("15_3yiwo")
@@ -280,6 +319,22 @@ environment = SubResource("Environment_pvkkf")
 
 [node name="escuela" parent="." unique_id=1293130221 instance=ExtResource("1_kwadh")]
 transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 60.306732, -0.049215555, -0.03195381)
+
+[node name="AnimacionFadeIn" type="CanvasLayer" parent="." unique_id=686631240]
+layer = 2
+script = ExtResource("3_uph1g")
+
+[node name="Color" type="ColorRect" parent="AnimacionFadeIn" unique_id=1025005029]
+modulate = Color(0, 0, 0, 0)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="AnimacionFadeIn" type="AnimationPlayer" parent="AnimacionFadeIn" unique_id=543385538]
+libraries/ = SubResource("AnimationLibrary_iqlxx")
 
 [node name="Jugador" parent="." unique_id=212553440 groups=["jugador"] instance=ExtResource("3_qh0pk")]
 transform = Transform3D(-6.556708e-08, 0, -1.5, 0, 1.5, 0, 1.5, 0, -6.556708e-08, 48.945915, 13.001343, -41.74019)
@@ -1072,6 +1127,27 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_f1ihl")
 theme_override_styles/read_only = SubResource("StyleBoxFlat_os015")
 theme_override_styles/focus = SubResource("StyleBoxFlat_6t4da")
 backspace_deletes_composite_character_enabled = true
+
+[node name="MensajesAlJugador" type="CanvasLayer" parent="." unique_id=1567250344]
+
+[node name="Label" type="Label" parent="MensajesAlJugador" unique_id=1624481220]
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.785
+anchor_right = 0.5
+anchor_bottom = 0.785
+offset_left = -215.5
+offset_top = -32.380005
+offset_right = 215.5
+offset_bottom = 32.619995
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/outline_size = 8
+theme_override_fonts/font = ExtResource("10_erchp")
+theme_override_font_sizes/font_size = 25
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("43_iqlxx")
 
 [node name="SonidoAmbiente" type="AudioStreamPlayer" parent="." unique_id=394394416]
 stream = ExtResource("11_erchp")

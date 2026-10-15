@@ -8,7 +8,6 @@ extends Area3D
 @export var escena_item: PackedScene
 @export var texto_interaccion: String = "Agarrar con la E"
 
-
 # Lo llama el RayCast del jugador cuando mirás el objeto y apretás E.
 func interact() -> void:
 	var jugador = get_tree().get_first_node_in_group("jugador")
@@ -18,9 +17,10 @@ func interact() -> void:
 
 
 func recoger(jugador) -> void:
-
+	if Mensajetexto.mensaje_ganzua == false:
+		Mensajetexto.mensaje_mostrar("Lo encontraste, ahora abrí la puerta.", 4.0)
+		Mensajetexto.mensaje_ganzua = true
 	var inventario = jugador.inventario_ui
-
 	if inventario == null:
 		return
 

@@ -84,6 +84,7 @@ func interact():
 
 	if abierto:
 		animation_player.play("abrir")
+		Mensajetexto.mensaje_mostrar("Explorá la escuela y buscá la salida.")
 	else:
 		animation_player.play("cerrar")
 

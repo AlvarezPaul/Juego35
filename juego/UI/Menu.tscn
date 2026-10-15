@@ -89,13 +89,6 @@ size_flags_vertical = 4
 script = ExtResource("1_gj576")
 metadata/_edit_use_anchors_ = true
 
-[node name="VideoLoop" type="VideoStreamPlayer" parent="." unique_id=1127442198]
-layout_mode = 0
-offset_right = 1365.0
-offset_bottom = 771.0
-autoplay = true
-loop = true
-
 [node name="Fondo" type="TextureRect" parent="." unique_id=1581526351]
 layout_mode = 1
 anchors_preset = 5
@@ -174,15 +167,15 @@ script = ExtResource("8_cmiqy")
 
 [node name="jugar" type="Button" parent="." unique_id=1698098690]
 layout_mode = 1
-anchors_preset = 8
+anchors_preset = -1
 anchor_left = 0.5
-anchor_top = 0.5
+anchor_top = 0.58400005
 anchor_right = 0.5
-anchor_bottom = 0.5
+anchor_bottom = 0.58400005
 offset_left = -135.0
-offset_top = -12.0
+offset_top = -76.512024
 offset_right = 135.0
-offset_bottom = 141.0
+offset_bottom = 76.487976
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/outline_size = 30

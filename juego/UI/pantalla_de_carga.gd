@@ -7,8 +7,7 @@ var progreso: Array = []
 var estado_de_carga: int
 var ultimo_consejo: String = ""
 var consejos: Array[String] = [
-	"Consejo: algo", "Consejo: algo2", "Consejo: algo3", "Consejo: algo4", "Consejo: algo5"]
-
+	"Consejo: Usa la linterna en todo momento.", "Consejo: Soltá los objetos que ya no uses.", "Consejo: Hay solo UNA salida."]
 
 func _ready() -> void:
 	imprimir_texto()
@@ -19,7 +18,6 @@ func _ready() -> void:
 	if error != OK:
 		push_error("No se pudo empezar a cargar: " + PantallaDeCarga.change_scene)
 		set_process(false)
-
 
 func _process(_delta: float) -> void:
 	estado_de_carga = ResourceLoader.load_threaded_get_status(PantallaDeCarga.change_scene, progreso)
