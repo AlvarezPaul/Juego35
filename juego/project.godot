@@ -22,17 +22,24 @@ config/features=PackedStringArray("4.7", "Forward Plus")
 
 PantallaDeCarga="*res://UI/autoloadpcarga.gd"
 Autoloadsonido="*uid://cdabp06y5x0jg"
+Sensmouseglobal="*uid://b23hhcfnjtxx8"
+Mensajetexto="*uid://byu0t7astos34"
 
 [display]
 
 window/size/viewport_width=1366
 window/size/viewport_height=768
 window/size/mode=3
+window/size/resizable=false
 window/stretch/mode="canvas_items"
 
 [filesystem]
 
 import/blender/enabled=false
+
+[global_group]
+
+areafinal=""
 
 [input]
 

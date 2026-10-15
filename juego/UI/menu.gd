@@ -13,6 +13,7 @@ func _on_credits_pressed() -> void:
 
 func _on_jugar_pressed() -> void:
 	Autoloadsonido.jugar_click()
+	Mensajetexto.reset_mensajes()
 	get_tree().change_scene_to_file(ESCENA_JUGAR)
 
 func _on_salir_pressed() -> void:
