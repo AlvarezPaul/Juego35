@@ -14,6 +14,9 @@
 [ext_resource type="PackedScene" uid="uid://byjaehmv1t72i" path="res://puerta/puerta.tscn" id="11_uapj5"]
 [ext_resource type="PackedScene" uid="uid://dowur2vef7tna" path="res://esceneria/puertaverde.tscn" id="12_srsxd"]
 [ext_resource type="PackedScene" uid="uid://dnt32otq40rk3" path="res://puerta/reja.tscn" id="14_flxb5"]
+[ext_resource type="Texture2D" uid="uid://b8jwmv01a306v" path="res://fotos/nuestracantinadeco.jpg" id="15_naew0"]
+[ext_resource type="Texture2D" uid="uid://dosji0fqm6rgy" path="res://fotos/chapabaliza.png" id="16_v0b7a"]
+[ext_resource type="Texture2D" uid="uid://b7xky8l1ckbqx" path="res://fotos/Adobe Express - file.jpg" id="17_0b5t1"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_e4v1y"]
 
@@ -278,7 +281,7 @@ data = PackedVector3Array(-0.522, 0.5, 2.5812, 0.522, 0.5, 2.5812, -0.522, -0.5,
 [sub_resource type="BoxMesh" id="BoxMesh_lxikg"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xmlsk"]
-albedo_color = Color(0.60784316, 0.3529412, 0.18431373, 1)
+albedo_color = Color(0.7372549, 0.91764706, 0.6784314, 1)
 uv1_scale = Vector3(10, 2, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_f87gj"]
@@ -6544,6 +6547,31 @@ transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -212
 
 [node name="bisagra" parent="Node3D13" index="1" unique_id=63260612]
 transform = Transform3D(11.915, 0, 0, 0, 12.745, 0, 0, 0, 11.645, 0, 0.500721, 18.449387)
+
+[node name="NuestraCantina" type="Sprite3D" parent="." unique_id=1654724833]
+transform = Transform3D(-0.48720062, 0, -0.0060718097, 0, 0.5092926, 0, 0.002957454, 0, -1.0002489, -107.15987, 15.389979, 132.02701)
+modulate = Color(0.23031491, 0.23031494, 0.23031494, 1)
+texture = ExtResource("15_naew0")
+
+[node name="NuestraCantina2" type="Sprite3D" parent="." unique_id=1102306772]
+transform = Transform3D(-0.4872094, 0, 0.00077435095, 0, 0.5092926, 0, -0.00037716958, 0, -1.000267, 18.562004, 7.221798, 171.8679)
+modulate = Color(0.23031491, 0.23031494, 0.23031494, 1)
+texture = ExtResource("15_naew0")
+
+[node name="ChapaBaliza" type="Sprite3D" parent="." unique_id=1618175455]
+transform = Transform3D(1.292976e-08, 0, -1.0002674, 0, 0.99178106, 0, 1.0842675, 0, 1.1928069e-08, 11.07981, 5.7546434, 128.20442)
+modulate = Color(0.23031491, 0.23031494, 0.23031494, 1)
+texture = ExtResource("16_v0b7a")
+
+[node name="ChapaBaliza2" type="Sprite3D" parent="." unique_id=350129540]
+transform = Transform3D(1.0842675, 0, 1.748923e-07, 0, 0.99178106, 0, -1.8957935e-07, 0, 1.0002674, 324.84222, 5.7546434, 21.831593)
+modulate = Color(0.23031491, 0.23031494, 0.23031494, 1)
+texture = ExtResource("16_v0b7a")
+
+[node name="ManuelBelgrano" type="Sprite3D" parent="." unique_id=1066973498]
+transform = Transform3D(2.8190787e-08, 0, -1.0002674, 0, 1.9833283, 0, 2.364031, 0, 1.1928069e-08, 80.11664, 18.755093, 154.35175)
+modulate = Color(0.23031491, 0.23031494, 0.23031494, 1)
+texture = ExtResource("17_0b5t1")
 
 [editable path="puerta"]
 [editable path="puerta2"]
