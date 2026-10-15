@@ -14,8 +14,8 @@
 [ext_resource type="PackedScene" uid="uid://byjaehmv1t72i" path="res://puerta/puerta.tscn" id="11_uapj5"]
 [ext_resource type="PackedScene" uid="uid://dowur2vef7tna" path="res://esceneria/puertaverde.tscn" id="12_srsxd"]
 [ext_resource type="PackedScene" uid="uid://dnt32otq40rk3" path="res://puerta/reja.tscn" id="14_flxb5"]
-[ext_resource type="PackedScene" uid="uid://bx127jv3bdyl3" path="res://esceneria/mesa.tscn" id="15_3k0xs"]
-[ext_resource type="PackedScene" uid="uid://crtq4ylve4qnr" path="res://esceneria/silla.tscn" id="16_v0b7a"]
+[ext_resource type="PackedScene" uid="uid://bx127jv3bdyl3" path="res://esceneria/muebles/mesa.tscn" id="15_3k0xs"]
+[ext_resource type="PackedScene" uid="uid://crtq4ylve4qnr" path="res://esceneria/muebles/silla.tscn" id="16_v0b7a"]
 [ext_resource type="PackedScene" uid="uid://bl20p5tue848k" path="res://puerta/puertabloqueada2.tscn" id="17_0b5t1"]
 [ext_resource type="PackedScene" uid="uid://sth73yxvt5tl" path="res://puerta/puerta_llave.tscn" id="18_rkkgu"]
 

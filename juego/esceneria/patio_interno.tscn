@@ -4,7 +4,7 @@
 [ext_resource type="AudioStream" uid="uid://btg8p4au4qsc7" path="res://UI/grillos.mp3" id="2_1muvh"]
 [ext_resource type="PackedScene" uid="uid://c3hgvbmrr2guo" path="res://glb_modelos/check.glb" id="2_7hvex"]
 [ext_resource type="PackedScene" uid="uid://sinu6yp0j0x7" path="res://esceneria/aula_chica.tscn" id="2_unogn"]
-[ext_resource type="PackedScene" uid="uid://beg6i8m42k74w" path="res://esceneria/banquito.tscn" id="4_dxm14"]
+[ext_resource type="PackedScene" uid="uid://beg6i8m42k74w" path="res://esceneria/muebles/banquito.tscn" id="4_dxm14"]
 [ext_resource type="PackedScene" uid="uid://qbhejj0ecp3f" path="res://esceneria/arbolito.tscn" id="5_yqd0h"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_f6o33"]
