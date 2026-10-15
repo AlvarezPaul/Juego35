@@ -353,7 +353,7 @@ body::after{
   cursor: pointer;
 }
 .img-placeholder:hover {
-  transform: scale(1.15);
+  transform: scale(1.50);
 }
 .biblio-list{
   list-style:none;
