@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://mdcuipuhs67y"]
+
+[ext_resource type="AudioStream" uid="uid://j0qwkywutltj" path="res://UI/musica_menu.mp3" id="1_lmo5f"]
+[ext_resource type="Script" uid="uid://oja5hru0yddd" path="res://UI/musicas.gd" id="2_ptw0a"]
+
+[node name="Musica" type="AudioStreamPlayer" unique_id=636832296]
+stream = ExtResource("1_lmo5f")
+volume_db = -6.0
+script = ExtResource("2_ptw0a")

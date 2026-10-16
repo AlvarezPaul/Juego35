@@ -1,0 +1,161 @@
+[gd_scene format=3 uid="uid://kuqym73bmrhi"]
+
+[ext_resource type="Texture2D" uid="uid://c367lotxyyhw3" path="res://Imágenes y Texturas/backgroundfotodeprueba.jpg" id="1_f1yoc"]
+[ext_resource type="Script" uid="uid://gila5m6stl8l" path="res://Salas/menu.gd" id="1_sh4uu"]
+[ext_resource type="FontFile" uid="uid://g00wcuajk3nk" path="res://Fuentes/Bonechiller Free.ttf" id="3_4rbhb"]
+[ext_resource type="FontFile" uid="uid://blju0ku40nkwn" path="res://Fuentes/Bonechiller Free.otf" id="4_luky8"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xrivr"]
+bg_color = Color(0.77525675, 0.7679488, 0.77882177, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_77tc4"]
+bg_color = Color(0.9372549, 0, 0.105882354, 0.8156863)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_13qdw"]
+bg_color = Color(0.28235295, 0.28235295, 0.28235295, 0.25490198)
+border_color = Color(0.06053038, 0.06053035, 0.060530283, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+shadow_size = 15
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wi6ju"]
+bg_color = Color(1, 0, 0.08235294, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_b1lj4"]
+bg_color = Color(0.14406255, 0.14406255, 0.14406249, 1)
+
+[sub_resource type="GDScript" id="GDScript_4awu4"]
+script/source = "extends Button
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
+"
+
+[node name="Menu" type="Control" unique_id=702630704]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 2.0
+offset_top = 2.0
+offset_right = 2.0
+offset_bottom = 2.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+script = ExtResource("1_sh4uu")
+metadata/_edit_use_anchors_ = true
+
+[node name="Panel" type="Panel" parent="." unique_id=2090017021]
+layout_mode = 0
+offset_right = 1153.0
+offset_bottom = 645.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_xrivr")
+
+[node name="Fondo(seraunvideodsp)" type="TextureRect" parent="." unique_id=1989236957]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -591.0
+offset_top = -1.0
+offset_right = 611.0
+offset_bottom = 658.0
+grow_horizontal = 2
+texture = ExtResource("1_f1yoc")
+expand_mode = 1
+
+[node name="Titutlo" type="Label" parent="." unique_id=1576076311]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -503.0
+offset_top = 28.0
+offset_right = 541.0
+offset_bottom = 165.0
+grow_horizontal = 2
+theme_override_constants/line_spacing = 3
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("3_4rbhb")
+theme_override_font_sizes/font_size = 100
+text = "ESCAPA DE LA ET"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Salir" type="Button" parent="." unique_id=1534172047]
+layout_mode = 0
+offset_left = 1113.0
+offset_top = 12.0
+offset_right = 1178.0
+offset_bottom = 82.0
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_77tc4")
+text = "×"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1817728521]
+layout_mode = 0
+offset_left = 116.0
+offset_top = 403.0
+offset_right = 1037.0
+offset_bottom = 538.0
+alignment = 1
+
+[node name="credits" type="Button" parent="HBoxContainer" unique_id=931309901]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("4_luky8")
+theme_override_font_sizes/font_size = 90
+theme_override_styles/normal = SubResource("StyleBoxFlat_13qdw")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_wi6ju")
+theme_override_styles/hover = SubResource("StyleBoxFlat_b1lj4")
+text = "CREDITOS"
+script = SubResource("GDScript_4awu4")
+
+[node name="jugar" type="Button" parent="HBoxContainer" unique_id=963901930]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("4_luky8")
+theme_override_font_sizes/font_size = 90
+theme_override_styles/normal = SubResource("StyleBoxFlat_13qdw")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_wi6ju")
+theme_override_styles/hover = SubResource("StyleBoxFlat_b1lj4")
+text = "JUGAR"
+script = SubResource("GDScript_4awu4")
+
+[node name="algomas" type="Button" parent="HBoxContainer" unique_id=118507403]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("4_luky8")
+theme_override_font_sizes/font_size = 90
+theme_override_styles/normal = SubResource("StyleBoxFlat_13qdw")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_wi6ju")
+theme_override_styles/hover = SubResource("StyleBoxFlat_b1lj4")
+text = "???"
+script = SubResource("GDScript_4awu4")
+
+[connection signal="pressed" from="Salir" to="." method="_on_salir_pressed"]
+[connection signal="pressed" from="HBoxContainer/credits" to="." method="_on_credits_pressed"]
+[connection signal="pressed" from="HBoxContainer/jugar" to="." method="_on_jugar_pressed"]
+[connection signal="pressed" from="HBoxContainer/algomas" to="." method="_on_algomas_pressed"]

@@ -1,0 +1,16 @@
+# Exclusivos de Godot 4+
+.godot/
+
+# Archivos temporales y de traducción automáticos
+*.tmp
+*.translation
+
+# Archivos de exportación (Por si compilan el juego a .exe)
+*.exe
+*.pck
+*.apk
+export_credentials.cfg
+
+# Archivos del sistema operativo que no sirven para el proyecto
+.DS_Store
+Thumbs.db

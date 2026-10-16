@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://cc585nt8cin0m"]
+
+[ext_resource type="PackedScene" uid="uid://c3hgvbmrr2guo" path="res://glb_modelos/check.glb" id="1_xvdwi"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_7mfih"]
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_xvdwi"]
+data = PackedVector3Array(1, 0, 1, -1, 0, 1, 1, 0, -1, -1, 0, 1, -1, 0, -1, 1, 0, -1)
+
+[node name="check" unique_id=808344737 instance=ExtResource("1_xvdwi")]
+mesh = SubResource("PlaneMesh_7mfih")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="1" unique_id=92841098]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0" unique_id=1247342191]
+shape = SubResource("ConcavePolygonShape3D_xvdwi")
