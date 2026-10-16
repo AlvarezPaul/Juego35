@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cmxpybolbx5ux"
-path.s3tc="res://.godot/imported/pinturasalonactos.jpg-754373669afb1b6b5d9b4893a70fd216.s3tc.ctex"
+uid="uid://b8uwsoxnmy4iq"
+path.s3tc="res://.godot/imported/Gemini_Generated_Image_jgfg92jgfg92jgfg.jpg-881a05eca02f561dd94084e8158cf0e7.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://fotos/pinturasalonactos.jpg"
-dest_files=["res://.godot/imported/pinturasalonactos.jpg-754373669afb1b6b5d9b4893a70fd216.s3tc.ctex"]
+source_file="res://fotos/Gemini_Generated_Image_jgfg92jgfg92jgfg.jpg"
+dest_files=["res://.godot/imported/Gemini_Generated_Image_jgfg92jgfg92jgfg.jpg-881a05eca02f561dd94084e8158cf0e7.s3tc.ctex"]
 
 [params]
 

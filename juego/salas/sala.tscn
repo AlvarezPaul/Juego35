@@ -19,7 +19,6 @@
 [ext_resource type="AudioStream" uid="uid://deksytmtdq141" path="res://UI/sonidoambiente.mp3" id="11_erchp"]
 [ext_resource type="Script" uid="uid://cdvfbej5sosp" path="res://UI/pantcompleta.gd" id="11_os015"]
 [ext_resource type="Script" uid="uid://dx2qogxgp1c1q" path="res://UI/controles.gd" id="12_os015"]
-[ext_resource type="Script" uid="uid://c5e57omrp5w13" path="res://UI/sensmouse.gd" id="13_egg21"]
 [ext_resource type="Texture2D" uid="uid://c225j5kxjr2c7" path="res://fotos/controlesimg/TeclaD.png" id="13_vwwu6"]
 [ext_resource type="Texture2D" uid="uid://dhjjwabq1w83i" path="res://fotos/controlesimg/TeclaS.png" id="14_uph1g"]
 [ext_resource type="Shader" uid="uid://dbit8djafjspy" path="res://MenuEsc/blur.gdshader" id="15_3yiwo"]
@@ -242,13 +241,6 @@ corner_radius_top_right = 5
 corner_radius_bottom_right = 5
 corner_radius_bottom_left = 5
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_avcb8"]
-bg_color = Color(0.08235294, 0.08235294, 0.08235294, 0.77254903)
-corner_radius_top_left = 10
-corner_radius_top_right = 10
-corner_radius_bottom_right = 10
-corner_radius_bottom_left = 10
-
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xrivr"]
 bg_color = Color(0.13682586, 0.13682568, 0.13682571, 1)
 border_width_left = 5
@@ -365,7 +357,7 @@ metadata/_edit_use_anchors_ = true
 [node name="llave" parent="Jugador/Cabeza/Camera3D" parent_id_path=PackedInt32Array(212553440, 704986019) index="2" unique_id=2048800679]
 transform = Transform3D(-6.556708e-08, -1.5, 0, -1.5, 6.556708e-08, 1.3113416e-07, -1.3113416e-07, 5.7320566e-15, -1.5, 0.09124756, -0.2613846, -22.900015)
 
-[node name="SpotLight3D" parent="Jugador/Cabeza/Camera3D" parent_id_path=PackedInt32Array(212553440, 704986019) index="4" unique_id=1591149388]
+[node name="SpotLight3D" parent="Jugador/Cabeza/Camera3D" parent_id_path=PackedInt32Array(212553440, 704986019) index="5" unique_id=1591149388]
 transform = Transform3D(1, 0, 0, 0, 1, 4.743386e-22, 0, -4.743386e-22, 1, 0.45625687, -0.24910295, -0.70774746)
 light_color = Color(1, 1, 0.7647059, 1)
 light_energy = 3.333
@@ -567,21 +559,24 @@ text = "Timer"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="barra_sonidos" parent="Jugador/Node2D/CanvasLayer/Ajustes" unique_id=1664845339 instance=ExtResource("10_mnxya")]
+[node name="Cont de Sliders y CheckBox" type="VBoxContainer" parent="Jugador/Node2D/CanvasLayer/Ajustes" unique_id=100336466]
 process_mode = 2
 layout_mode = 0
-offset_left = 410.0
-offset_top = 92.5
-offset_right = 688.0
-offset_bottom = 148.5
+offset_left = 437.00003
+offset_top = 110.500015
+offset_right = 650.0
+offset_bottom = 559.5
+theme_override_constants/separation = 65
 
-[node name="CheckBox" type="CheckBox" parent="Jugador/Node2D/CanvasLayer/Ajustes" unique_id=6980545]
-process_mode = 2
-layout_mode = 0
-offset_left = 499.0
-offset_top = 275.5
-offset_right = 527.0
-offset_bottom = 310.5
+[node name="barra_sonidos" parent="Jugador/Node2D/CanvasLayer/Ajustes/Cont de Sliders y CheckBox" unique_id=1664845339 instance=ExtResource("10_mnxya")]
+layout_mode = 2
+
+[node name="sensibilidad" parent="Jugador/Node2D/CanvasLayer/Ajustes/Cont de Sliders y CheckBox" unique_id=521819645 instance=ExtResource("10_mnxya")]
+layout_mode = 2
+script = null
+
+[node name="CheckBox" type="CheckBox" parent="Jugador/Node2D/CanvasLayer/Ajustes/Cont de Sliders y CheckBox" unique_id=6980545]
+layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 size_flags_stretch_ratio = 0.0
@@ -590,16 +585,12 @@ icon = SubResource("CanvasTexture_6t4da")
 flat = true
 script = ExtResource("11_os015")
 
-[node name="OcultarMostrar" type="HBoxContainer" parent="Jugador/Node2D/CanvasLayer/Ajustes" unique_id=605510768]
-layout_mode = 0
-offset_left = 407.0
-offset_top = 357.5
-offset_right = 587.0
-offset_bottom = 383.5
+[node name="OcultarMostrar" type="HBoxContainer" parent="Jugador/Node2D/CanvasLayer/Ajustes/Cont de Sliders y CheckBox" unique_id=605510768]
+layout_mode = 2
 theme_override_constants/separation = 2
 alignment = 1
 
-[node name="Ocultar" type="Button" parent="Jugador/Node2D/CanvasLayer/Ajustes/OcultarMostrar" unique_id=574999513]
+[node name="Ocultar" type="Button" parent="Jugador/Node2D/CanvasLayer/Ajustes/Cont de Sliders y CheckBox/OcultarMostrar" unique_id=574999513]
 process_mode = 2
 layout_mode = 2
 theme_override_constants/outline_size = 2
@@ -610,7 +601,7 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_x4rlt")
 theme_override_styles/hover = SubResource("StyleBoxFlat_i7ss6")
 text = "Ocultar"
 
-[node name="Mostrar" type="Button" parent="Jugador/Node2D/CanvasLayer/Ajustes/OcultarMostrar" unique_id=186172275]
+[node name="Mostrar" type="Button" parent="Jugador/Node2D/CanvasLayer/Ajustes/Cont de Sliders y CheckBox/OcultarMostrar" unique_id=186172275]
 process_mode = 2
 layout_mode = 2
 theme_override_constants/outline_size = 2
@@ -621,17 +612,12 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_x4rlt")
 theme_override_styles/hover = SubResource("StyleBoxFlat_i7ss6")
 text = "Mostrar"
 
-[node name="OcultarMostrar2" type="HBoxContainer" parent="Jugador/Node2D/CanvasLayer/Ajustes" unique_id=1027150750]
-layout_mode = 0
-offset_left = 416.0
-offset_top = 449.5
-offset_right = 583.0
-offset_bottom = 475.5
+[node name="OcultarMostrar2" type="HBoxContainer" parent="Jugador/Node2D/CanvasLayer/Ajustes/Cont de Sliders y CheckBox" unique_id=1027150750]
+layout_mode = 2
 theme_override_constants/separation = 2
 alignment = 1
 
-[node name="Ocultar2" type="Button" parent="Jugador/Node2D/CanvasLayer/Ajustes/OcultarMostrar2" unique_id=438586890]
-process_mode = 2
+[node name="Ocultar2" type="Button" parent="Jugador/Node2D/CanvasLayer/Ajustes/Cont de Sliders y CheckBox/OcultarMostrar2" unique_id=438586890]
 layout_mode = 2
 theme_override_constants/outline_size = 2
 theme_override_fonts/font = ExtResource("10_erchp")
@@ -641,8 +627,7 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_x4rlt")
 theme_override_styles/hover = SubResource("StyleBoxFlat_i7ss6")
 text = "Ocultar"
 
-[node name="Mostrar2" type="Button" parent="Jugador/Node2D/CanvasLayer/Ajustes/OcultarMostrar2" unique_id=206696712]
-process_mode = 2
+[node name="Mostrar2" type="Button" parent="Jugador/Node2D/CanvasLayer/Ajustes/Cont de Sliders y CheckBox/OcultarMostrar2" unique_id=206696712]
 layout_mode = 2
 theme_override_constants/outline_size = 2
 theme_override_fonts/font = ExtResource("10_erchp")
@@ -651,34 +636,6 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_g7ci4")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_x4rlt")
 theme_override_styles/hover = SubResource("StyleBoxFlat_i7ss6")
 text = "Mostrar"
-
-[node name="HBoxContainer" type="HBoxContainer" parent="Jugador/Node2D/CanvasLayer/Ajustes" unique_id=2145790058]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.544
-anchor_top = 0.347
-anchor_right = 0.544
-anchor_bottom = 0.347
-offset_left = 7.5599976
-offset_top = -32.702988
-offset_right = 228.55997
-offset_bottom = 7.2970276
-theme_override_constants/separation = 20
-alignment = 1
-
-[node name="sensibilidad" parent="Jugador/Node2D/CanvasLayer/Ajustes/HBoxContainer" unique_id=1923283927 instance=ExtResource("10_mnxya")]
-process_mode = 2
-layout_mode = 2
-script = ExtResource("13_egg21")
-
-[node name="Label" type="Label" parent="Jugador/Node2D/CanvasLayer/Ajustes/HBoxContainer" unique_id=741307665]
-process_mode = 2
-layout_mode = 2
-size_flags_vertical = 1
-theme_override_font_sizes/font_size = 25
-theme_override_styles/normal = SubResource("StyleBoxFlat_avcb8")
-horizontal_alignment = 1
-vertical_alignment = 1
 
 [node name="Controles" type="Control" parent="Jugador/Node2D/CanvasLayer" index="3" unique_id=1922147113]
 visible = false
@@ -1006,7 +963,7 @@ stream = ExtResource("3_pudgd")
 transform = Transform3D(-1.8957648, 2.8625254e-07, 0.6527642, -3.027466e-07, -2.005, 0, 0.6527642, -9.856466e-08, 1.8957648, 59.449783, 12.642885, -13.201355)
 
 [node name="llave" parent="." unique_id=2023737183 instance=ExtResource("6_tbg6u")]
-transform = Transform3D(0, -1, 0, 1, 0, 0, 0, 0, 1, 6.3766646, -0.9952249, 28.968405)
+transform = Transform3D(0, -1, 0, 1, 0, 0, 0, 0, 1, 6.3766646, -0.9952249, 32.438614)
 
 [node name="ganzua" parent="." unique_id=1006482489 instance=ExtResource("8_rvme7")]
 transform = Transform3D(1.9106855e-15, -4.371139e-08, 1, -1, -4.371139e-08, 0, 4.371139e-08, -1, -4.371139e-08, 61.588078, 12.612159, -41.44521)
@@ -1220,7 +1177,7 @@ script = ExtResource("43_iqlxx")
 
 [node name="SonidoAmbiente" type="AudioStreamPlayer" parent="." unique_id=394394416]
 stream = ExtResource("11_erchp")
-volume_db = -23.0
+volume_db = -15.0
 autoplay = true
 parameters/looping = false
 
