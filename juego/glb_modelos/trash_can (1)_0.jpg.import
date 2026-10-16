@@ -2,17 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bt2e5q4ullg8m"
-path.s3tc="res://.godot/imported/Gemini_Generated_Image_fgeok1fgeok1fgeo.jpg-eb53679fa39224549811290febf1b960.s3tc.ctex"
+uid="uid://b1fj8jommaksk"
+path.s3tc="res://.godot/imported/trash_can (1)_0.jpg-0d88f6212465afeb0b0999dce2657e65.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
+generator_parameters={
+"md5": "6304f46090b9503f5e954c3449d5405f"
+}
 
 [deps]
 
-source_file="res://fotos/Gemini_Generated_Image_fgeok1fgeok1fgeo.jpg"
-dest_files=["res://.godot/imported/Gemini_Generated_Image_fgeok1fgeok1fgeo.jpg-eb53679fa39224549811290febf1b960.s3tc.ctex"]
+source_file="res://glb_modelos/trash_can (1)_0.jpg"
+dest_files=["res://.godot/imported/trash_can (1)_0.jpg-0d88f6212465afeb0b0999dce2657e65.s3tc.ctex"]
 
 [params]
 

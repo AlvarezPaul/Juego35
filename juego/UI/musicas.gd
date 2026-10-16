@@ -12,7 +12,7 @@ extends AudioStreamPlayer
 ## AudioStreamPlayer local en esa escena, o llamen a las funciones
 ## públicas de este script (detener_musica / reanudar_musica).
 
-const RUTA_MUSICA_POR_DEFECTO := "res://salas/musica_menu.mp3"
+const RUTA_MUSICA_POR_DEFECTO := "res://UI/musica_menu.mp3"
 
 
 func _ready() -> void:

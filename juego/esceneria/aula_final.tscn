@@ -2,7 +2,6 @@
 
 [ext_resource type="Texture2D" uid="uid://feybsjugp3tr" path="res://fotos/texturapiso.jpg" id="2_n48c0"]
 [ext_resource type="PackedScene" uid="uid://byjaehmv1t72i" path="res://puerta/puerta.tscn" id="2_o6x0m"]
-[ext_resource type="PackedScene" uid="uid://dgfv10n6t31c1" path="res://esceneria/muebles/lampara_encendida.tscn" id="3_n48c0"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_o6x0m"]
 
@@ -33,6 +32,18 @@ albedo_color = Color(0.37357903, 0.24713194, 0.10672111, 1)
 
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_epe1x"]
 data = PackedVector3Array(-0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, -0.5)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_dmqsu"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_b3klk"]
+albedo_color = Color(0.47397572, 0.47397572, 0.47397572, 1)
+emission = Color(0.99999994, 0.2932579, 0.2908701, 1)
+emission_energy_multiplier = 2.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_epe1x"]
+emission_enabled = true
+emission = Color(0.9999997, 0.96870166, 0.44309777, 1)
+emission_energy_multiplier = 2.0
 
 [sub_resource type="BoxMesh" id="BoxMesh_xhfro"]
 
@@ -566,6 +577,16 @@ mesh = SubResource("BoxMesh_2hj3n")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D2/StaticBody3D" unique_id=960366275]
 shape = SubResource("ConcavePolygonShape3D_epe1x")
+
+[node name="MeshInstance3D5" type="MeshInstance3D" parent="." unique_id=13211100]
+transform = Transform3D(6, 0, 0, 0, 0.25, 0, 0, 0, 6, 41.73836, 29.714037, -5.8213816)
+mesh = SubResource("CylinderMesh_dmqsu")
+surface_material_override/0 = SubResource("StandardMaterial3D_b3klk")
+
+[node name="MeshInstance3D6" type="MeshInstance3D" parent="." unique_id=1040161292]
+transform = Transform3D(5, 0, 0, 0, 0.208053, 0, 0, 0, 5, 41.73836, 29.241405, -5.8213816)
+mesh = SubResource("CylinderMesh_dmqsu")
+surface_material_override/0 = SubResource("StandardMaterial3D_epe1x")
 
 [node name="MeshInstance3D7" type="MeshInstance3D" parent="." unique_id=850263132]
 transform = Transform3D(22.877863, 0, 0, 0, 1.0695236, 0, 0, 0, 7.294223, 28.647995, 2.1242008, -30.86722)
@@ -1562,6 +1583,12 @@ surface_material_override/0 = SubResource("StandardMaterial3D_tjslr")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Paredes/paredes/Cube_010/StaticBody3D" unique_id=1301311448]
 shape = SubResource("ConcavePolygonShape3D_w4aw1")
 
+[node name="SpotLight3D" type="SpotLight3D" parent="Paredes" unique_id=2134174793]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, -51.690094, 26.407269, 0.46839952)
+light_color = Color(0.9999997, 0.8686257, 0.9951834, 1)
+light_energy = 0.3
+spot_range = 40.0
+
 [node name="Ventanagrande" type="Node3D" parent="." unique_id=2114532491]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 131.782, -0.545, 113.941)
 
@@ -1779,21 +1806,5 @@ mesh = SubResource("BoxMesh_0hna2")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D28/StaticBody3D" unique_id=1140179706]
 transform = Transform3D(1.0000001, 0, 2.7755576e-17, 0, 1, 0, 0, 0, 1.0000002, 0, 0.023349106, 8.511475)
 shape = SubResource("ConcavePolygonShape3D_2hj3n")
-
-[node name="lampara_encendida" parent="." unique_id=1101667733 instance=ExtResource("3_n48c0")]
-transform = Transform3D(4, 0, 0, 0, 1.8, 0, 0, 0, 4, 40.772785, 29.223707, 10.33658)
-
-[node name="SpotLight3D2" type="SpotLight3D" parent="." unique_id=1816455372]
-transform = Transform3D(1, 0, 0, 0, -4.3711392e-08, 1, 0, -1, -4.3711392e-08, 40.806217, 29.160849, 10.162042)
-light_color = Color(1, 0.88990986, 0.9956606, 1)
-spot_range = 9.0
-
-[node name="lampara_encendida2" parent="." unique_id=1994630786 instance=ExtResource("3_n48c0")]
-transform = Transform3D(4, 0, 0, 0, 1.8, 0, 0, 0, 4, 40.772785, 29.223707, -27.051281)
-
-[node name="SpotLight3D" type="SpotLight3D" parent="." unique_id=1949449328]
-transform = Transform3D(1, 0, 0, 0, -4.3711392e-08, 1, 0, -1, -4.3711392e-08, 40.806217, 29.160849, -27.225822)
-light_color = Color(1, 0.88990986, 0.9956606, 1)
-spot_range = 9.0
 
 [editable path="puerta"]

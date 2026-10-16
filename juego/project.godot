@@ -14,16 +14,14 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 
 [application]
 
-config/name="Escapa de la 35"
+config/name="Juego 6 Final"
 run/main_scene="uid://kuqym73bmrhi"
 config/features=PackedStringArray("4.7", "Forward Plus")
-config/icon="uid://cgstjq687v5ae"
 
 [autoload]
 
 PantallaDeCarga="*res://UI/autoloadpcarga.gd"
 Autoloadsonido="*uid://cdabp06y5x0jg"
-Sensmouseglobal="*uid://b23hhcfnjtxx8"
 Mensajetexto="*uid://byu0t7astos34"
 
 [display]

@@ -2,17 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://che1nrxx3nrpv"
-path.s3tc="res://.godot/imported/patron-blanco-negro-malla-malla-metalica.png-2744239e3f1acfee551105f7b2ebfb01.s3tc.ctex"
+uid="uid://dp8ufohrr3gcy"
+path.s3tc="res://.godot/imported/trash_can (1)_3.jpg-3fdc41de8fa919ea8354c612b118acd5.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
+generator_parameters={
+"md5": "6f382c6b4e1789b2d394634cc8cac1c4"
+}
 
 [deps]
 
-source_file="res://fotos/patron-blanco-negro-malla-malla-metalica.png"
-dest_files=["res://.godot/imported/patron-blanco-negro-malla-malla-metalica.png-2744239e3f1acfee551105f7b2ebfb01.s3tc.ctex"]
+source_file="res://glb_modelos/trash_can (1)_3.jpg"
+dest_files=["res://.godot/imported/trash_can (1)_3.jpg-3fdc41de8fa919ea8354c612b118acd5.s3tc.ctex"]
 
 [params]
 
