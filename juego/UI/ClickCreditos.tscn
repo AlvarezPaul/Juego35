@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://bwk71kmap6lkq"]
 
-[ext_resource type="Texture2D" uid="uid://c80sue7xddtbx" path="res://fotos/fondoblur.jpg" id="1_qc2no"]
+[ext_resource type="Texture2D" uid="uid://74tv77tjx6cr" path="res://fotos/Fondoblur4.jpg" id="1_qc2no"]
 [ext_resource type="Script" uid="uid://dr6ldu5lrqu27" path="res://UI/volverdeaj.gd" id="2_qc2no"]
 [ext_resource type="FontFile" uid="uid://cdu7dgetstelv" path="res://Fuentes/trebuc.ttf" id="4_qc2no"]
-[ext_resource type="FontFile" uid="uid://blju0ku40nkwn" path="res://Fuentes/Bonechiller Free.otf" id="4_skinw"]
+[ext_resource type="FontFile" uid="uid://blju0ku40nkwn" path="res://Interfaz/Fuentes/Bonechiller Free.otf" id="4_skinw"]
 [ext_resource type="FontFile" uid="uid://ocuqailjsal3" path="res://Fuentes/StayDrips-Regular.otf" id="5_skipg"]
 [ext_resource type="Texture2D" uid="uid://cgstjq687v5ae" path="res://fotos/et35logo.png" id="6_l15ch"]
 [ext_resource type="AudioStream" uid="uid://pogmuy6woqyo" path="res://UI/click.mp3" id="8_l15ch"]
@@ -61,7 +61,7 @@ size_flags_horizontal = 4
 size_flags_vertical = 4
 metadata/_edit_use_anchors_ = true
 
-[node name="TextureRect" type="TextureRect" parent="." unique_id=1992669717]
+[node name="Fondo" type="TextureRect" parent="." unique_id=1992669717]
 layout_mode = 0
 offset_left = -19.0
 offset_top = -4.0
