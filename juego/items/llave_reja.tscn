@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://catkwmfvq0q07"]
+
+[ext_resource type="Script" uid="uid://bti2i5yeismck" path="res://inventario/caealsuelo.gd" id="1_8ca0h"]
+[ext_resource type="Texture2D" uid="uid://nn6vmtjii8aw" path="res://inventario/images.jpg" id="2_icono"]
+[ext_resource type="ArrayMesh" uid="uid://cd0ll4u3r32q6" path="res://salas/key.obj" id="3_mesh"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_plata"]
+albedo_color = Color(0.66, 0.68, 0.72, 1)
+metallic = 0.35
+roughness = 0.4
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_jc0s1"]
+size = Vector3(0.3, 0.9, 0.45)
+
+[node name="llave_reja" type="Node3D" unique_id=1090325413]
+
+[node name="Area3D" type="Area3D" parent="." unique_id=1200179582]
+script = ExtResource("1_8ca0h")
+nombre_item = "Llave Reja"
+icono = ExtResource("2_icono")
+
+[node name="Key" type="MeshInstance3D" parent="Area3D" unique_id=586723214]
+transform = Transform3D(0.0063693, 0, 0, 0, 0.0063693, 0, 0, 0, 0.0063693, 0, -0.015556, 0.003691)
+material_override = SubResource("StandardMaterial3D_plata")
+mesh = ExtResource("3_mesh")
+skeleton = NodePath("../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=452162146]
+shape = SubResource("BoxShape3D_jc0s1")

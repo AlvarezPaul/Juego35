@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://b3x7splwvmv2t" path="res://MenuEsc/MenuPausa.tscn" id="5_vu2ya"]
 [ext_resource type="PackedScene" uid="uid://fujo4jxvrmdd" path="res://inventario/escenainve.tscn" id="6_inv01"]
 [ext_resource type="PackedScene" uid="uid://bwcjyqarbdklt" path="res://inventario/llave.tscn" id="8_yl2o6"]
+[ext_resource type="PackedScene" uid="uid://catkwmfvq0q07" path="res://items/llave_reja.tscn" id="9_llavereja"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tkcrs"]
 bg_color = Color(1, 1, 1, 1)
@@ -58,6 +59,8 @@ transform = Transform3D(1.5, 0, -6.556708e-08, -6.556708e-08, 2.8660283e-15, -1.
 [node name="ganzua" parent="Cabeza/Camera3D" unique_id=1006482489 instance=ExtResource("5_uo3ig")]
 transform = Transform3D(-1, -8.742278e-08, 3.821371e-15, 0, -4.371139e-08, -1, 8.742278e-08, -1, 4.371139e-08, 0.594, -0.303, -0.55)
 visible = false
+
+[node name="llave_reja" parent="Cabeza/Camera3D" unique_id=1357924680 instance=ExtResource("9_llavereja")]
 
 [node name="SpotLight3D" type="SpotLight3D" parent="Cabeza/Camera3D" unique_id=1591149388]
 transform = Transform3D(1, 0, 0, 0, 1, 4.743386e-22, 0, -4.743386e-22, 1, 0.4393829, -0.25113702, -1.1017106)

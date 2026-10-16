@@ -9,6 +9,8 @@
 [ext_resource type="PackedScene" uid="uid://dncquk2gh7dba" path="res://puerta/puertabloqueada.tscn" id="6_c05sx"]
 [ext_resource type="PackedScene" uid="uid://crtq4ylve4qnr" path="res://esceneria/silla.tscn" id="6_k6gqu"]
 [ext_resource type="PackedScene" uid="uid://byjaehmv1t72i" path="res://puerta/puerta.tscn" id="7_k6gqu"]
+[ext_resource type="PackedScene" uid="uid://bo648njdxych4" path="res://esceneria/microondas.tscn" id="30_microondas"]
+[ext_resource type="PackedScene" uid="uid://ddgkq3uy2ls5c" path="res://esceneria/mesamicro.tscn" id="31_mesamicro"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_4uhvb"]
 size = Vector3(1, 0.97802734, 1)
@@ -1064,6 +1066,21 @@ transform = Transform3D(-4.371139e-08, 0, -1.0899953, 0, 1, 0, 1, 0, -4.7645205e
 
 [node name="bisagra" parent="muebles/puertas/puerta4" index="1" unique_id=574221250]
 transform = Transform3D(1.9999998, 0, 0, 0, 8.384443, 0, 0, 0, 8.465699, 1.7767334, 5.4530277, 5.8950157)
+
+[node name="microondas" parent="." unique_id=1815375819 instance=ExtResource("30_microondas")]
+transform = Transform3D(-7.86805e-08, 0, -1.8, 0, 1.8, 0, 1.8, 0, -7.86805e-08, 73.4657, 5.681015, 124.47514)
+
+[node name="microondas2" parent="." unique_id=432142662 instance=ExtResource("30_microondas")]
+transform = Transform3D(-7.86805e-08, 0, -1.8, 0, 1.8, 0, 1.8, 0, -7.86805e-08, 73.4657, 5.681015, 139.76837)
+
+[node name="microondas3" parent="." unique_id=1713785835 instance=ExtResource("30_microondas")]
+transform = Transform3D(-7.86805e-08, 0, -1.8, 0, 1.8, 0, 1.8, 0, -7.86805e-08, 73.4657, 5.681015, 107.12392)
+
+[node name="microondas4" parent="." unique_id=906555995 instance=ExtResource("30_microondas")]
+transform = Transform3D(-7.86805e-08, 0, -1.8, 0, 1.8, 0, 1.8, 0, -7.86805e-08, 73.4657, 5.681015, 156.89557)
+
+[node name="mesamicro" parent="." unique_id=641499522 instance=ExtResource("31_mesamicro")]
+transform = Transform3D(-2.6757704e-07, 0, -1.7590507, 0, 1.0335078, 0, -6.121449, 0, 7.689055e-08, 74.14114, 3.1867723, 96.197)
 
 [editable path="muebles/puertas/puerta"]
 [editable path="muebles/puertas/puerta2"]

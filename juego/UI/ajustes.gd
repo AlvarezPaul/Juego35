@@ -1,6 +1,6 @@
 extends Control
 
-const ESCENA_MENU := "res://UI/ajustes.tscn"
+const ESCENA_MENU := "res://UI/Menu.tscn"
 @onready var click: AudioStreamPlayer = _buscar_click()
 
 

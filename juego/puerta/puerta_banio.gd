@@ -68,7 +68,20 @@ func _consumir_item_en_mano() -> void:
 	inventario.marcar_slot_equipado(0)
 
 
+# Si no se asignó el AnimationPlayer en el editor, lo busca en la escena de la puerta.
+func _asegurar_animation_player() -> void:
+	if animation_player == null:
+		var raiz := owner if owner != null else get_parent().get_parent()
+		if raiz != null:
+			animation_player = raiz.find_child("AnimationPlayer", true, false) as AnimationPlayer
+	if animation_player == null:
+		push_error("Puerta sin AnimationPlayer: " + str(get_path()))
+
+
 func interact():
+	_asegurar_animation_player()
+	if animation_player == null:
+		return
 	if not interactuable:
 		return
 

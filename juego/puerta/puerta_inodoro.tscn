@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://b42hf1ayd4kt"]
 
-[ext_resource type="AudioStream" uid="uid://ctscdktps5mq" path="res://puertas/dragon-studio-opening-door-450444.mp3" id="1_au01w"]
-[ext_resource type="AudioStream" uid="uid://tirloem7686m" path="res://puertas/dragon-studio-close-door-382723.mp3" id="2_v3fbv"]
-[ext_resource type="Script" uid="uid://b276a1xpf5n8r" path="res://puertas/modelo.gd" id="3_jqqr1"]
+[ext_resource type="AudioStream" uid="uid://ctscdktps5mq" path="res://puerta/dragon-studio-opening-door-450444.mp3" id="1_au01w"]
+[ext_resource type="AudioStream" uid="uid://tirloem7686m" path="res://puerta/dragon-studio-close-door-382723.mp3" id="2_v3fbv"]
+[ext_resource type="Script" uid="uid://b276a1xpf5n8r" path="res://puerta/modelo.gd" id="3_jqqr1"]
 
 [sub_resource type="Animation" id="Animation_4k5d8"]
 length = 0.001

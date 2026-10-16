@@ -17,9 +17,6 @@ func interact() -> void:
 
 
 func recoger(jugador) -> void:
-	if Mensajetexto.mensaje_ganzua == false:
-		Mensajetexto.mensaje_mostrar("Lo encontraste, ahora abrí la puerta.", 4.0)
-		Mensajetexto.mensaje_ganzua = true
 	var inventario = jugador.inventario_ui
 	if inventario == null:
 		return
@@ -41,6 +38,10 @@ func recoger(jugador) -> void:
 	if slot == -1:
 		print("Inventario lleno.")
 		return
+
+	if Mensajetexto.mensaje_ganzua == false:
+		Mensajetexto.mensaje_mostrar("Lo encontraste, ahora abrí la puerta.", 4.0)
+		Mensajetexto.mensaje_ganzua = true
 
 	# Equiparlo automáticamente.
 	jugador.slot_actual = slot + 1

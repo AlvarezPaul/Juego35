@@ -139,9 +139,10 @@ libraries/ = SubResource("AnimationLibrary_re1i5")
 [node name="bisagra" type="Node3D" parent="." unique_id=1897963657]
 transform = Transform3D(1.9999999, 0, 0, 0, 2, 0, 0, 0, 1.9999999, 0, 0, 1.7398701)
 
-[node name="modelo" type="StaticBody3D" parent="bisagra" unique_id=1248843520]
+[node name="modelo" type="StaticBody3D" parent="bisagra" unique_id=1248843520 node_paths=PackedStringArray("animation_player")]
 transform = Transform3D(-2.1855683e-08, 0, 0.4999998, 0, 0.5, 0, -0.4999998, 0, -2.1855683e-08, -0.009692408, 0, -0.87432086)
 script = ExtResource("3_jotsx")
+animation_player = NodePath("../../AnimationPlayer")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="bisagra/modelo" unique_id=786244961]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.45218948, 0.11376953, -3.7252903e-09)

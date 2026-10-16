@@ -45,6 +45,9 @@
 [ext_resource type="Texture2D" uid="uid://bstdhpebjtwrg" path="res://fotos/controlesimg/TeclaShift.png" id="32_yxmc4"]
 [ext_resource type="Texture2D" uid="uid://04gly3jkvoly" path="res://fotos/controlesimg/TeclaEspacio.png" id="33_2aflc"]
 [ext_resource type="Script" uid="uid://sylhqf8xuif" path="res://UI/label_textos.gd" id="43_iqlxx"]
+[ext_resource type="PackedScene" uid="uid://hu1wjlyx3h6x" path="res://items/tacho.tscn" id="60_tacho"]
+[ext_resource type="PackedScene" uid="uid://catkwmfvq0q07" path="res://items/llave_reja.tscn" id="61_llavereja"]
+[ext_resource type="Script" uid="uid://bqo3hti17uyho" path="res://salas/label.gd" id="62_timerlabel"]
 
 [sub_resource type="Environment" id="Environment_pvkkf"]
 background_mode = 1
@@ -1038,6 +1041,18 @@ theme_override_font_sizes/font_size = 20
 text = "Resistencia"
 horizontal_alignment = 1
 
+[node name="Timer" type="Label" parent="CanvasLayer" unique_id=264088870]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -241.0
+offset_top = 23.0
+offset_right = -27.0
+offset_bottom = 90.0
+grow_horizontal = 0
+horizontal_alignment = 2
+script = ExtResource("62_timerlabel")
+
 [node name="ContadorFPS" type="CanvasLayer" parent="." unique_id=1743572793]
 script = ExtResource("9_a4few")
 
@@ -1097,13 +1112,24 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="TiempoDeEscapeText" type="Label" parent="PantallaFinal" unique_id=1916550164]
-offset_left = 412.0
+offset_left = 409.0
 offset_top = 242.0
-offset_right = 644.0
+offset_right = 641.0
 offset_bottom = 287.0
 theme_override_font_sizes/font_size = 25
 theme_override_styles/normal = SubResource("StyleBoxFlat_xrivr")
 text = "Tiempo de Escape:"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TiempoValor" type="Label" parent="PantallaFinal" unique_id=1916550999]
+offset_left = 667.0
+offset_top = 242.0
+offset_right = 997.0
+offset_bottom = 287.0
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxFlat_xrivr")
+text = "00:00"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -1198,13 +1224,21 @@ volume_db = -23.0
 autoplay = true
 parameters/looping = false
 
+[node name="tacho" parent="." unique_id=156823456 instance=ExtResource("60_tacho")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 61.528816, 10.685165, -31.253382)
+
+[node name="llave_reja" parent="." unique_id=1525817767 instance=ExtResource("61_llavereja")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 54.493965, 12.19416, -42.77104)
+
 [connection signal="pressed" from="Jugador/Node2D/CanvasLayer/Control/VBoxContainer/controles" to="Jugador/Node2D/CanvasLayer/Control" method="_on_controles_pressed"]
 [connection signal="pressed" from="Jugador/Node2D/CanvasLayer/ConfirmarSalir/Si" to="Jugador/Node2D/CanvasLayer/ConfirmarSalir" method="_on_si_pressed"]
 [connection signal="pressed" from="Jugador/Node2D/CanvasLayer/ConfirmarSalir/No" to="Jugador/Node2D/CanvasLayer/ConfirmarSalir" method="_on_no_pressed"]
 [connection signal="pressed" from="Jugador/Node2D/CanvasLayer/Ajustes/Cerrar" to="Jugador/Node2D/CanvasLayer/Ajustes" method="_on_cerrar_pressed"]
-[connection signal="toggled" from="Jugador/Node2D/CanvasLayer/Ajustes/CheckBox" to="Jugador/Node2D/CanvasLayer/Ajustes/CheckBox" method="_on_toggled"]
-[connection signal="pressed" from="Jugador/Node2D/CanvasLayer/Ajustes/OcultarMostrar/Ocultar" to="Jugador/Node2D/CanvasLayer/Ajustes" method="_on_ocultar_pressed"]
-[connection signal="pressed" from="Jugador/Node2D/CanvasLayer/Ajustes/OcultarMostrar/Mostrar" to="Jugador/Node2D/CanvasLayer/Ajustes" method="_on_mostrar_pressed"]
+[connection signal="toggled" from="Jugador/Node2D/CanvasLayer/Ajustes/Cont de Sliders y CheckBox/CheckBox" to="Jugador/Node2D/CanvasLayer/Ajustes/Cont de Sliders y CheckBox/CheckBox" method="_on_toggled"]
+[connection signal="pressed" from="Jugador/Node2D/CanvasLayer/Ajustes/Cont de Sliders y CheckBox/OcultarMostrar/Ocultar" to="Jugador/Node2D/CanvasLayer/Ajustes" method="_on_ocultar_pressed"]
+[connection signal="pressed" from="Jugador/Node2D/CanvasLayer/Ajustes/Cont de Sliders y CheckBox/OcultarMostrar/Mostrar" to="Jugador/Node2D/CanvasLayer/Ajustes" method="_on_mostrar_pressed"]
+[connection signal="pressed" from="Jugador/Node2D/CanvasLayer/Ajustes/Cont de Sliders y CheckBox/OcultarMostrar2/Ocultar2" to="Jugador/Node2D/CanvasLayer/Ajustes" method="_on_ocultar_2_pressed"]
+[connection signal="pressed" from="Jugador/Node2D/CanvasLayer/Ajustes/Cont de Sliders y CheckBox/OcultarMostrar2/Mostrar2" to="Jugador/Node2D/CanvasLayer/Ajustes" method="_on_mostrar_2_pressed"]
 [connection signal="pressed" from="Jugador/Node2D/CanvasLayer/Controles/Cerrar" to="Jugador/Node2D/CanvasLayer/Controles" method="_on_cerrar_pressed"]
 [connection signal="pressed" from="PantallaFinal/IntentarDeNuevo" to="PantallaFinal" method="_on_intentar_de_nuevo_pressed"]
 [connection signal="pressed" from="PantallaFinal/VolverAlMenu" to="PantallaFinal" method="_on_volver_al_menu_pressed"]

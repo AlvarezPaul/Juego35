@@ -29,6 +29,7 @@ extends CharacterBody3D
 @onready var luz_linterna: SpotLight3D = $Cabeza/Camera3D/SpotLight3D
 @onready var modelo_linterna: Node3D = $Cabeza/Camera3D/linterna
 @onready var modelo_llave: Node3D = $Cabeza/Camera3D/llave
+@onready var modelo_llave_reja: Node3D = $Cabeza/Camera3D/llave_reja
 @onready var sonido_linterna: AudioStreamPlayer3D = $linterna
 @onready var modelo_ganzua: Node3D = $Cabeza/Camera3D/ganzua
 
@@ -52,6 +53,8 @@ func _ready() -> void:
 	modelo_linterna.visible = false
 	luz_linterna.visible = false
 	_preparar_llave_en_mano()
+	_preparar_llave_reja_en_mano()
+	_preparar_ganzua_en_mano()
 
 	call_deferred("_agregar_item_inicial")
 
@@ -82,6 +85,32 @@ func _preparar_llave_en_mano() -> void:
 	modelo_llave.position = posicion_llave_mano
 
 	modelo_llave.visible = false
+
+func _preparar_llave_reja_en_mano() -> void:
+	# La llave de la reja de la mano no debe poder ser "mirada" ni agarrada por el RayCast.
+	var area := modelo_llave_reja.get_node_or_null("Area3D") as Area3D
+	if area != null:
+		area.collision_layer = 0
+		area.collision_mask = 0
+		area.monitoring = false
+		area.monitorable = false
+
+	# En la mano brilla un poquito (plateada) para que se vea aunque la linterna esté apagada.
+	var malla := modelo_llave_reja.get_node_or_null("Area3D/Key") as MeshInstance3D
+	if malla != null and malla.material_override is StandardMaterial3D:
+		var material := (malla.material_override as StandardMaterial3D).duplicate() as StandardMaterial3D
+		material.albedo_color = Color(0.78, 0.80, 0.84)
+		material.emission_enabled = true
+		material.emission = Color(0.70, 0.73, 0.78)
+		material.emission_energy_multiplier = 0.5
+		malla.material_override = material
+
+	# Misma pose que la llave común.
+	modelo_llave_reja.basis = Basis.from_euler(
+		rotacion_llave_mano * (PI / 180.0)
+	).scaled(Vector3.ONE * escala_llave_mano)
+	modelo_llave_reja.position = posicion_llave_mano
+	modelo_llave_reja.visible = false
 
 # Hace que un modelo se vea en la mano aunque la linterna esté apagada:
 # aclara los colores muy oscuros y le agrega un brillo propio suave,
@@ -195,6 +224,7 @@ func _actualizar_item_en_mano(_numero: int) -> void:
 	var es_linterna := nombre == "Linterna"
 	modelo_linterna.visible = es_linterna
 	modelo_llave.visible = nombre == "Llave"
+	modelo_llave_reja.visible = nombre == "Llave Reja"
 	modelo_ganzua.visible = nombre == "Ganzua"
 
 	if not es_linterna:
@@ -219,7 +249,7 @@ func _tirar_item_equipado() -> void:
 
 		var altura := altura_sobre_suelo
 
-		if item["nombre"] == "Llave":
+		if item["nombre"] == "Llave" or item["nombre"] == "Llave Reja":
 			# La llave cae acostada: la giramos 90° en Z para que la cara plana mire
 			# hacia arriba, y la orientamos a lo largo de hacia donde mira el jugador.
 			objeto.global_basis = (

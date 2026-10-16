@@ -5,8 +5,8 @@ var tiempo: float = 0.0
 func _ready() -> void:
 	hide()
 
-func mensaje (mensaje: String, segundos: float):
-	text = mensaje
+func mensaje(texto: String, segundos: float) -> void:
+	text = texto
 	tiempo = segundos
 	show()
 
