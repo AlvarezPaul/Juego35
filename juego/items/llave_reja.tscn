@@ -1,29 +1,61 @@
 [gd_scene format=3 uid="uid://catkwmfvq0q07"]
 
 [ext_resource type="Script" uid="uid://bti2i5yeismck" path="res://inventario/caealsuelo.gd" id="1_8ca0h"]
-[ext_resource type="Texture2D" uid="uid://nn6vmtjii8aw" path="res://inventario/images.jpg" id="2_icono"]
-[ext_resource type="ArrayMesh" uid="uid://cd0ll4u3r32q6" path="res://salas/key.obj" id="3_mesh"]
+[ext_resource type="Texture2D" uid="uid://dt8vdtcbmephj" path="res://fotos/Gemini_Generated_Image_giofbygiofbygiof.jpg" id="2_sjxpx"]
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_plata"]
-albedo_color = Color(0.66, 0.68, 0.72, 1)
-metallic = 0.35
-roughness = 0.4
+[sub_resource type="TubeTrailMesh" id="TubeTrailMesh_sjxpx"]
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_jc0s1"]
-size = Vector3(0.3, 0.9, 0.45)
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5ijdq"]
+albedo_color = Color(0.531461, 0.2642312, 0.12973261, 1)
+metallic = 0.3
+roughness = 0.45
+
+[sub_resource type="TubeTrailMesh" id="TubeTrailMesh_m5hrb"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dt6jg"]
+albedo_color = Color(0.53333336, 0.2627451, 0.12941177, 1)
+metallic = 0.3
+roughness = 0.45
+
+[sub_resource type="TubeTrailMesh" id="TubeTrailMesh_5sy4h"]
+
+[sub_resource type="TorusMesh" id="TorusMesh_8ruo1"]
+rings = 4
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_6lc8n"]
+size = Vector3(20.480347, 135.71439, 54.93811)
 
 [node name="llave_reja" type="Node3D" unique_id=1090325413]
 
 [node name="Area3D" type="Area3D" parent="." unique_id=1200179582]
 script = ExtResource("1_8ca0h")
 nombre_item = "Llave Reja"
-icono = ExtResource("2_icono")
+icono = ExtResource("2_sjxpx")
 
-[node name="Key" type="MeshInstance3D" parent="Area3D" unique_id=586723214]
-transform = Transform3D(0.0063693, 0, 0, 0, 0.0063693, 0, 0, 0, 0.0063693, 0, -0.015556, 0.003691)
-material_override = SubResource("StandardMaterial3D_plata")
-mesh = ExtResource("3_mesh")
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Area3D" unique_id=376441319]
+transform = Transform3D(17.899384, 0, 0, 0, 80.647095, 0, 0, 0, 12.4436455, -5.136282, -20.96366, -3.5731583)
+mesh = SubResource("TubeTrailMesh_sjxpx")
 skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5ijdq")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=452162146]
-shape = SubResource("BoxShape3D_jc0s1")
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Area3D" unique_id=1494628937]
+transform = Transform3D(17.899384, 0, 0, 0, -1.1357425e-06, -12.4436455, 0, 25.98276, -5.4392905e-07, -5.136282, -31.260723, -15.556016)
+mesh = SubResource("TubeTrailMesh_m5hrb")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_dt6jg")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Area3D" unique_id=1589907936]
+transform = Transform3D(17.899384, 0, 0, 0, -1.0036892e-06, -12.4436455, 0, 22.961733, -5.4392905e-07, -5.136282, -48.973907, -17.45411)
+mesh = SubResource("TubeTrailMesh_5sy4h")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_dt6jg")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="Area3D" unique_id=321304337]
+transform = Transform3D(1.3113415e-06, -42.275417, -2.622683e-06, -29.999998, -1.8479171e-06, 0, -1.1464113e-13, 3.6958343e-06, -29.999998, -4.803937, 38.52832, -3.697935)
+mesh = SubResource("TorusMesh_8ruo1")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5ijdq")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=1277021542]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.777405, 0.5978546, -3.2233276)
+shape = SubResource("BoxShape3D_6lc8n")

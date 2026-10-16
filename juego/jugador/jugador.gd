@@ -30,6 +30,7 @@ extends CharacterBody3D
 @onready var modelo_linterna: Node3D = $Cabeza/Camera3D/linterna
 @onready var modelo_llave: Node3D = $Cabeza/Camera3D/llave
 @onready var modelo_llave_reja: Node3D = $Cabeza/Camera3D/llave_reja
+@onready var modelo_llave_regencia: Node3D = $Cabeza/Camera3D/llave_regencia
 @onready var sonido_linterna: AudioStreamPlayer3D = $linterna
 @onready var modelo_ganzua: Node3D = $Cabeza/Camera3D/ganzua
 
@@ -54,6 +55,7 @@ func _ready() -> void:
 	luz_linterna.visible = false
 	_preparar_llave_en_mano()
 	_preparar_llave_reja_en_mano()
+	_preparar_llave_regencia_en_mano()
 	_preparar_ganzua_en_mano()
 
 	call_deferred("_agregar_item_inicial")
@@ -112,6 +114,16 @@ func _preparar_llave_reja_en_mano() -> void:
 	modelo_llave_reja.position = posicion_llave_mano
 	modelo_llave_reja.visible = false
 
+func _preparar_llave_regencia_en_mano() -> void:
+	# La ganzúa de la mano no debe poder ser "mirada" ni agarrada por el RayCast.
+	var area := modelo_llave_regencia.get_node_or_null("Area3D") as Area3D
+	if area != null:
+		area.collision_layer = 0
+		area.collision_mask = 0
+		area.monitoring = false
+		area.monitorable = false
+
+	modelo_llave_regencia.visible = false
 # Hace que un modelo se vea en la mano aunque la linterna esté apagada:
 # aclara los colores muy oscuros y le agrega un brillo propio suave,
 # igual que la llave. Solo afecta a la copia que está en la mano.
@@ -155,7 +167,7 @@ func _preparar_ganzua_en_mano() -> void:
 		area.monitorable = false
 
 	modelo_ganzua.visible = false
-
+	
 func _agregar_item_inicial() -> void:
 	inventario_ui = get_tree().get_first_node_in_group("inventario")
 
@@ -226,7 +238,8 @@ func _actualizar_item_en_mano(_numero: int) -> void:
 	modelo_llave.visible = nombre == "Llave"
 	modelo_llave_reja.visible = nombre == "Llave Reja"
 	modelo_ganzua.visible = nombre == "Ganzua"
-
+	modelo_llave_regencia.visible = nombre == "Llave Regencia"
+	
 	if not es_linterna:
 		luz_linterna.visible = false
 
@@ -249,7 +262,7 @@ func _tirar_item_equipado() -> void:
 
 		var altura := altura_sobre_suelo
 
-		if item["nombre"] == "Llave" or item["nombre"] == "Llave Reja":
+		if item["nombre"] in ["Llave", "Llave Reja", "Llave Regencia"]:
 			# La llave cae acostada: la giramos 90° en Z para que la cara plana mire
 			# hacia arriba, y la orientamos a lo largo de hacia donde mira el jugador.
 			objeto.global_basis = (

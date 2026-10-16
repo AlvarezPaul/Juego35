@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cjh7u2io5d7mc"]
 
 [ext_resource type="Script" uid="uid://b7f76hd0iv5lq" path="res://items/ganzua.gd" id="1_6kdj8"]
-[ext_resource type="Texture2D" uid="uid://bm1aj08ptop0d" path="res://inventario/ganzua.jpg" id="2_0j2i0"]
+[ext_resource type="Texture2D" uid="uid://cucj8x0itmugk" path="res://fotos/WhatsApp Image 2026-10-16 at 15.40.48 (1).jpeg" id="2_0j2i0"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_exekb"]
 size = Vector3(0.3, 0.9, 0.2878174)

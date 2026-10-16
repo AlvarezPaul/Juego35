@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://cjh7u2io5d7mc" path="res://items/ganzua.tscn" id="5_uo3ig"]
 [ext_resource type="PackedScene" uid="uid://b3x7splwvmv2t" path="res://MenuEsc/MenuPausa.tscn" id="5_vu2ya"]
 [ext_resource type="PackedScene" uid="uid://fujo4jxvrmdd" path="res://inventario/escenainve.tscn" id="6_inv01"]
+[ext_resource type="PackedScene" uid="uid://bcng3bymb8hu8" path="res://items/llave_regencia.tscn" id="8_frsvm"]
 [ext_resource type="PackedScene" uid="uid://bwcjyqarbdklt" path="res://inventario/llave.tscn" id="8_yl2o6"]
 [ext_resource type="PackedScene" uid="uid://catkwmfvq0q07" path="res://items/llave_reja.tscn" id="9_llavereja"]
 
@@ -61,6 +62,7 @@ transform = Transform3D(-1, -8.742278e-08, 3.821371e-15, 0, -4.371139e-08, -1, 8
 visible = false
 
 [node name="llave_reja" parent="Cabeza/Camera3D" unique_id=1357924680 instance=ExtResource("9_llavereja")]
+transform = Transform3D(0.01, 0, 0, 0, -4.3711387e-10, -0.01, 0, 0.01, -4.3711387e-10, 0.621676, -0.32956254, -0.76711994)
 
 [node name="SpotLight3D" type="SpotLight3D" parent="Cabeza/Camera3D" unique_id=1591149388]
 transform = Transform3D(1, 0, 0, 0, 1, 4.743386e-22, 0, -4.743386e-22, 1, 0.4393829, -0.25113702, -1.1017106)
@@ -71,6 +73,10 @@ spot_angle = 35.0
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.58808064, 0.22835386)
 target_position = Vector3(0, 0, -2.5)
 script = ExtResource("4_xreb1")
+
+[node name="llave_regencia" parent="Cabeza/Camera3D" unique_id=1209904720 instance=ExtResource("8_frsvm")]
+transform = Transform3D(0.01, 0, 0, 0, -4.3711387e-10, -0.01, 0, 0.01, -4.3711387e-10, 0.6302167, -0.3280201, -0.7529954)
+visible = false
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1414320584]
 shape = SubResource("CapsuleShape3D_f6o33")

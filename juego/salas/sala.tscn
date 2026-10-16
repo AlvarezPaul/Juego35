@@ -44,6 +44,7 @@
 [ext_resource type="Texture2D" uid="uid://bstdhpebjtwrg" path="res://fotos/controlesimg/TeclaShift.png" id="32_yxmc4"]
 [ext_resource type="Texture2D" uid="uid://04gly3jkvoly" path="res://fotos/controlesimg/TeclaEspacio.png" id="33_2aflc"]
 [ext_resource type="Script" uid="uid://sylhqf8xuif" path="res://UI/label_textos.gd" id="43_iqlxx"]
+[ext_resource type="PackedScene" uid="uid://bcng3bymb8hu8" path="res://items/llave_regencia.tscn" id="48_7bf7e"]
 [ext_resource type="PackedScene" uid="uid://hu1wjlyx3h6x" path="res://items/tacho.tscn" id="60_tacho"]
 [ext_resource type="PackedScene" uid="uid://catkwmfvq0q07" path="res://items/llave_reja.tscn" id="61_llavereja"]
 [ext_resource type="Script" uid="uid://bqo3hti17uyho" path="res://salas/label.gd" id="62_timerlabel"]
@@ -1185,7 +1186,10 @@ parameters/looping = false
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 61.528816, 10.685165, -31.253382)
 
 [node name="llave_reja" parent="." unique_id=1525817767 instance=ExtResource("61_llavereja")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 54.493965, 12.19416, -42.77104)
+transform = Transform3D(-4.3711387e-10, -0.01, 0, 0.01, -4.3711387e-10, 0, 0, 0, 0.01, 49.300026, 0.2745586, 48.500584)
+
+[node name="llave regencia" parent="." unique_id=1209904720 instance=ExtResource("48_7bf7e")]
+transform = Transform3D(-4.3711387e-10, -0.01, 0, 0.01, -4.3711387e-10, 0, 0, 0, 0.01, 169.83353, 0.11032486, 38.991436)
 
 [connection signal="pressed" from="Jugador/Node2D/CanvasLayer/Control/VBoxContainer/controles" to="Jugador/Node2D/CanvasLayer/Control" method="_on_controles_pressed"]
 [connection signal="pressed" from="Jugador/Node2D/CanvasLayer/ConfirmarSalir/Si" to="Jugador/Node2D/CanvasLayer/ConfirmarSalir" method="_on_si_pressed"]

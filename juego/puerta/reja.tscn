@@ -2,7 +2,7 @@
 
 [ext_resource type="AudioStream" uid="uid://ctscdktps5mq" path="res://puerta/dragon-studio-opening-door-450444.mp3" id="1_f3rut"]
 [ext_resource type="AudioStream" uid="uid://tirloem7686m" path="res://puerta/dragon-studio-close-door-382723.mp3" id="2_yvt05"]
-[ext_resource type="Script" path="res://puerta/modelo_reja.gd" id="3_oqoao"]
+[ext_resource type="Script" uid="uid://ciauaqiard6qq" path="res://puerta/modelo_reja.gd" id="3_oqoao"]
 
 [sub_resource type="Animation" id="Animation_4k5d8"]
 length = 0.001
@@ -106,6 +106,28 @@ data = PackedVector3Array(-0.5, 0.8296, 0.5, 0.5, 0.8296, 0.5, -0.5, -0.8296, 0.
 
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_71yd8"]
 data = PackedVector3Array(-0.5, 0.8296, 0.5, 0.5, 0.8296, 0.5, -0.5, -0.8296, 0.5, 0.5, 0.8296, 0.5, 0.5, -0.8296, 0.5, -0.5, -0.8296, 0.5, 0.5, 0.8296, -0.5, -0.5, 0.8296, -0.5, 0.5, -0.8296, -0.5, -0.5, 0.8296, -0.5, -0.5, -0.8296, -0.5, 0.5, -0.8296, -0.5, 0.5, 0.8296, 0.5, 0.5, 0.8296, -0.5, 0.5, -0.8296, 0.5, 0.5, 0.8296, -0.5, 0.5, -0.8296, -0.5, 0.5, -0.8296, 0.5, -0.5, 0.8296, -0.5, -0.5, 0.8296, 0.5, -0.5, -0.8296, -0.5, -0.5, 0.8296, 0.5, -0.5, -0.8296, 0.5, -0.5, -0.8296, -0.5, 0.5, 0.8296, 0.5, -0.5, 0.8296, 0.5, 0.5, 0.8296, -0.5, -0.5, 0.8296, 0.5, -0.5, 0.8296, -0.5, 0.5, 0.8296, -0.5, -0.5, -0.8296, 0.5, 0.5, -0.8296, 0.5, -0.5, -0.8296, -0.5, 0.5, -0.8296, 0.5, 0.5, -0.8296, -0.5, -0.5, -0.8296, -0.5)
+
+[sub_resource type="BoxMesh" id="BoxMesh_f3rut"]
+size = Vector3(0.9822998, 2.5654297, 1.3666992)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yvt05"]
+albedo_color = Color(0.53333336, 0.2627451, 0.12941177, 1)
+metallic = 0.3
+roughness = 0.45
+
+[sub_resource type="TorusMesh" id="TorusMesh_oqoao"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ylaqt"]
+albedo_color = Color(0.48962224, 0.48962224, 0.48962218, 1)
+metallic = 0.3
+roughness = 0.45
+
+[sub_resource type="BoxMesh" id="BoxMesh_hlnjm"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8lr2t"]
+albedo_color = Color(0.30692267, 0.3069227, 0.3069227, 1)
+metallic = 0.3
+roughness = 0.45
 
 [node name="reja" type="Node3D" unique_id=1796444700]
 
@@ -277,6 +299,26 @@ surface_material_override/0 = SubResource("StandardMaterial3D_2geqj")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="bisagra/modelo/MeshInstance3D2/StaticBody3D" unique_id=2094826670]
 shape = SubResource("ConcavePolygonShape3D_71yd8")
+
+[node name="candado" type="Node3D" parent="bisagra/modelo" unique_id=2025589474]
+transform = Transform3D(0.99999976, 3.5527166e-15, 0.0014429099, -1.9970464e-25, 0.99999994, 6.939032e-18, -0.0014429099, 7.7788084e-23, 0.99999976, 2.2764778, -0.2702643, 0.20306791)
+
+[node name="MeshInstance3D12" type="MeshInstance3D" parent="bisagra/modelo/candado" unique_id=2055175342]
+transform = Transform3D(0.33375287, 0, 0, 0, 0.12212301, 0, 1.1635137e-13, 0, 0.076321654, 0.0006722212, 0, 3.7252903e-09)
+mesh = SubResource("BoxMesh_f3rut")
+skeleton = NodePath("../../../../../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_yvt05")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="bisagra/modelo/candado" unique_id=1384723662]
+transform = Transform3D(0.15, 0, 0, 0, -6.5567085e-09, -0.15, 0, 0.15, -6.5567085e-09, 0, 0.15337789, 0)
+mesh = SubResource("TorusMesh_oqoao")
+surface_material_override/0 = SubResource("StandardMaterial3D_ylaqt")
+
+[node name="MeshInstance3D16" type="MeshInstance3D" parent="bisagra/modelo" unique_id=2142619335]
+transform = Transform3D(0.069682345, 1.1570316e-30, 0.0007026463, 2.220446e-16, 0.1266721, 3.4695144e-18, -0.00010054535, 1.736011e-23, 0.4869647, 2.2679033, -0.0030548591, 0.034645773)
+mesh = SubResource("BoxMesh_hlnjm")
+skeleton = NodePath("../../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_8lr2t")
 
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="." unique_id=44839784]
 volume_db = -7.0

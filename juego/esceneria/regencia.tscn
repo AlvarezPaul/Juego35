@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://dgfv10n6t31c1" path="res://esceneria/muebles/lampara_encendida.tscn" id="2_1vc3g"]
 [ext_resource type="PackedScene" uid="uid://bx127jv3bdyl3" path="res://esceneria/muebles/mesa.tscn" id="3_s1fxt"]
 [ext_resource type="PackedScene" uid="uid://crtq4ylve4qnr" path="res://esceneria/muebles/silla.tscn" id="4_18pp6"]
-[ext_resource type="PackedScene" uid="uid://byjaehmv1t72i" path="res://puerta/puerta.tscn" id="5_18pp6"]
+[ext_resource type="PackedScene" uid="uid://bybhjhexbeuoc" path="res://puerta/puerta_regencia.tscn" id="6_nw5i3"]
 [ext_resource type="PackedScene" uid="uid://dncquk2gh7dba" path="res://puerta/puertabloqueada.tscn" id="6_saxrb"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_1vc3g"]
@@ -234,7 +234,7 @@ transform = Transform3D(0.8, 0, 0, 0, -2.5104956e-08, -2.0869365, 0, 0.57433444,
 transform = Transform3D(-6.119594e-08, 0, 1.4, 0, 1.2792354, 0, -1.4, 0, -6.119594e-08, 9.969423, -1.2444233, -0.8083678)
 
 [node name="silla5" parent="." unique_id=1287079524 instance=ExtResource("4_18pp6")]
-transform = Transform3D(1.4, 0, 0, 0, 1.2792354, 0, 0, 0, 1.4, 6.9036827, -1.2444233, 9.203052)
+transform = Transform3D(1.4, 0, 0, 0, 1.2792354, 0, 0, 0, 1.4, 6.9036827, -1.2444233, 11.486132)
 
 [node name="silla6" parent="." unique_id=660282868 instance=ExtResource("4_18pp6")]
 transform = Transform3D(-1.4, 0, -1.2239187e-07, 0, 1.2792354, 0, 1.2239187e-07, 0, -1.4, 4.4914684, -1.2444233, -3.492384)
@@ -276,24 +276,6 @@ mesh = SubResource("BoxMesh_urfj1")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D27/StaticBody3D" unique_id=2133692711]
 shape = SubResource("ConcavePolygonShape3D_lrn3r")
-
-[node name="puerta" parent="." unique_id=510996679 instance=ExtResource("5_18pp6")]
-transform = Transform3D(1, 0, 0, 0, 0.9835268, 0, 0, 0, 0.983782, 14.462751, -0.2182579, -16.049461)
-
-[node name="bisagra" parent="puerta" index="1" unique_id=574221250]
-transform = Transform3D(1.9999993, 0, 0, 0, 5.135874, 0, 0, 0, 5.106969, -0.019058228, 3.489727, 5.8289366)
-
-[node name="MeshInstance3D8" parent="puerta/bisagra/modelo" parent_id_path=PackedInt32Array(510996679, 1443082467) index="9" unique_id=1924139572]
-transform = Transform3D(0.2, 5.3290705e-15, -1.5881868e-22, 0, -9.543019e-09, -0.19999994, 1.4210855e-13, 0.21831864, -8.742269e-09, 0.7313428, 0, 0.3047309)
-
-[node name="MeshInstance3D9" parent="puerta/bisagra/modelo" parent_id_path=PackedInt32Array(510996679, 1443082467) index="10" unique_id=641614481]
-transform = Transform3D(0.33375284, 0, 1.7763568e-15, 0, 0.12212302, 0, 1.4210855e-13, 0, 0.33324882, 0.57213235, 0, 0.63635015)
-
-[node name="MeshInstance3D10" parent="puerta/bisagra/modelo" parent_id_path=PackedInt32Array(510996679, 1443082467) index="11" unique_id=1910119930]
-transform = Transform3D(0.2, 0, -5.293956e-23, 0, -8.881637e-09, -0.19999999, 1.1368684e-13, 0.20318803, -8.742272e-09, 0.7313428, 0, -0.2903962)
-
-[node name="MeshInstance3D11" parent="puerta/bisagra/modelo" parent_id_path=PackedInt32Array(510996679, 1443082467) index="12" unique_id=438786630]
-transform = Transform3D(0.33375284, 0, 5.3290705e-15, 0, 0.12212302, 0, 1.1368684e-13, 0, 0.31015292, 0.5721321, 0, -0.6444087)
 
 [node name="MeshInstance3D19" type="MeshInstance3D" parent="." unique_id=637615831]
 transform = Transform3D(1.1574486, 0, 0, 0, 9.652675, 0, 0, 0, 0.35900196, 14.468073, 3.254568, -10.178209)
@@ -392,5 +374,11 @@ transform = Transform3D(1, 0, -1.7763568e-15, 0, 0.5215263, 0, 0, 0, 0.57036847,
 mesh = SubResource("BoxMesh_vrkjw")
 surface_material_override/0 = SubResource("StandardMaterial3D_wrvh4")
 
+[node name="puerta_regencia" parent="." unique_id=1147577665 instance=ExtResource("6_nw5i3")]
+transform = Transform3D(1.7040592, 0, 0, 0, 1, 0, -7.1054274e-15, 0, 1.0144864, 14.555453, 3.2117758, -12.0588045)
+
+[node name="bisagra" parent="puerta_regencia" index="1" unique_id=1665898836]
+transform = Transform3D(1.9999998, 0, 0, 0, 4.945094, 0, 0, 0, 4.8273582, -1.9073486e-06, 0, 1.7398701)
+
 [editable path="mesa4"]
-[editable path="puerta"]
+[editable path="puerta_regencia"]
