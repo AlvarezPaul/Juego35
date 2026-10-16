@@ -14,7 +14,7 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 
 [application]
 
-config/name="Juego 6 Final"
+config/name="Escapa de la 35"
 run/main_scene="uid://kuqym73bmrhi"
 config/features=PackedStringArray("4.7", "Forward Plus")
 
@@ -23,6 +23,7 @@ config/features=PackedStringArray("4.7", "Forward Plus")
 PantallaDeCarga="*res://UI/autoloadpcarga.gd"
 Autoloadsonido="*uid://cdabp06y5x0jg"
 Mensajetexto="*uid://byu0t7astos34"
+AjusteSensmouse="*uid://4wpgyoa8q2wv"
 
 [display]
 
