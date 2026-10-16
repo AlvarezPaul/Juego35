@@ -2,15 +2,15 @@
 
 [ext_resource type="Texture2D" uid="uid://feybsjugp3tr" path="res://fotos/texturapiso.jpg" id="1_jvpdc"]
 [ext_resource type="Texture2D" uid="uid://bn25jy617gcc8" path="res://fotos/bancos.jpg" id="2_4uhvb"]
-[ext_resource type="PackedScene" uid="uid://dp1nnsi8uor4g" path="res://esceneria/mesa_madera.tscn" id="3_gsmix"]
-[ext_resource type="PackedScene" uid="uid://bx127jv3bdyl3" path="res://esceneria/mesa.tscn" id="3_k6gqu"]
-[ext_resource type="PackedScene" uid="uid://bwikg4u34pq2g" path="res://esceneria/mesa_circular.tscn" id="4_v75ln"]
-[ext_resource type="PackedScene" uid="uid://kg0oarld1dor" path="res://esceneria/mesita.tscn" id="5_a5yc5"]
+[ext_resource type="PackedScene" uid="uid://dp1nnsi8uor4g" path="res://esceneria/muebles/mesa_madera.tscn" id="3_gsmix"]
+[ext_resource type="PackedScene" uid="uid://bx127jv3bdyl3" path="res://esceneria/muebles/mesa.tscn" id="3_k6gqu"]
+[ext_resource type="PackedScene" uid="uid://bwikg4u34pq2g" path="res://esceneria/muebles/mesa_circular.tscn" id="4_v75ln"]
+[ext_resource type="PackedScene" uid="uid://kg0oarld1dor" path="res://esceneria/muebles/mesita.tscn" id="5_a5yc5"]
 [ext_resource type="PackedScene" uid="uid://dncquk2gh7dba" path="res://puerta/puertabloqueada.tscn" id="6_c05sx"]
-[ext_resource type="PackedScene" uid="uid://crtq4ylve4qnr" path="res://esceneria/silla.tscn" id="6_k6gqu"]
+[ext_resource type="PackedScene" uid="uid://crtq4ylve4qnr" path="res://esceneria/muebles/silla.tscn" id="6_k6gqu"]
+[ext_resource type="PackedScene" uid="uid://bo648njdxych4" path="res://esceneria/muebles/microondas.tscn" id="30_microondas"]
+[ext_resource type="PackedScene" uid="uid://ddgkq3uy2ls5c" path="res://esceneria/muebles/mesamicro.tscn" id="31_mesamicro"]
 [ext_resource type="PackedScene" uid="uid://byjaehmv1t72i" path="res://puerta/puerta.tscn" id="7_k6gqu"]
-[ext_resource type="PackedScene" uid="uid://bo648njdxych4" path="res://esceneria/microondas.tscn" id="30_microondas"]
-[ext_resource type="PackedScene" uid="uid://ddgkq3uy2ls5c" path="res://esceneria/mesamicro.tscn" id="31_mesamicro"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_4uhvb"]
 size = Vector3(1, 0.97802734, 1)
@@ -888,16 +888,16 @@ surface_material_override/0 = SubResource("StandardMaterial3D_wy2tw")
 shape = SubResource("ConcavePolygonShape3D_vb7e2")
 
 [node name="mesa5" parent="muebles/mesas" unique_id=1545127772 instance=ExtResource("3_k6gqu")]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1.5801488, 0, -1, 0, -4.371139e-08, 29.568943, 0, 108.9164)
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1.5801488, 0, -1, 0, -4.371139e-08, 29.569, 1.325, 108.916)
 
 [node name="mesa6" parent="muebles/mesas" unique_id=1949545067 instance=ExtResource("3_k6gqu")]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1.5801488, 0, -1, 0, -4.371139e-08, 29.579147, 0, 156.45334)
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1.5801488, 0, -1, 0, -4.371139e-08, 29.579, 1.325, 156.453)
 
 [node name="mesa7" parent="muebles/mesas" unique_id=780969996 instance=ExtResource("3_k6gqu")]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1.5801488, 0, -1, 0, -4.371139e-08, -31.232473, 0, 156.57567)
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1.5801488, 0, -1, 0, -4.371139e-08, -31.232, 1.325, 156.576)
 
 [node name="mesa8" parent="muebles/mesas" unique_id=68385220 instance=ExtResource("3_k6gqu")]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1.5801488, 0, -1, 0, -4.371139e-08, -31.658455, 0, 109.06847)
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1.5801488, 0, -1, 0, -4.371139e-08, -31.658, 1.325, 109.068)
 
 [node name="sillas" type="Node3D" parent="muebles" unique_id=383935179]
 transform = Transform3D(0.83, 0, 0, 0, 0.83, 0, 0, 0, 0.83, 0, 0, 23.834564)

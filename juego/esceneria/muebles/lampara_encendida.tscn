@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://dgfv10n6t31c1"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_0eft3"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xhdhp"]
+emission_enabled = true
+emission = Color(1, 1, 1, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_oaqsx"]
+albedo_color = Color(0.95596343, 0.9559633, 0.95596343, 1)
+
+[node name="lampara_encendida" type="Node3D" unique_id=1101667733]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1660245678]
+transform = Transform3D(1, 0, 0, 0, 0.25210908, 0, 0, 0, 3.1682045, 0, 0, 0)
+mesh = SubResource("BoxMesh_0eft3")
+surface_material_override/0 = SubResource("StandardMaterial3D_xhdhp")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="." unique_id=887975483]
+transform = Transform3D(1.3, 0, 0, 0, 0.252, 0, 0, 0, 3.4, 0, 0.20651257, 0)
+mesh = SubResource("BoxMesh_0eft3")
+surface_material_override/0 = SubResource("StandardMaterial3D_oaqsx")
