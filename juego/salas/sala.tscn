@@ -957,7 +957,7 @@ transform = Transform3D(0.7490637, -1.1310547e-07, 1.1310547e-07, -1.1310547e-07
 stream = ExtResource("3_pudgd")
 
 [node name="LinternaSuelo" parent="." unique_id=1877330075 instance=ExtResource("4_tgavs")]
-transform = Transform3D(-0.94551855, 0.034031056, 0.32378462, 8.694387e-08, -0.9945219, 0.10452845, 0.32556814, 0.098833635, 0.9403388, 48.437687, 11.965571, -35.489388)
+transform = Transform3D(-1.8957648, 2.8625254e-07, 0.6527642, -3.027466e-07, -2.005, 0, 0.6527642, -9.856466e-08, 1.8957648, 59.449783, 12.642885, -13.201355)
 
 [node name="llave" parent="." unique_id=2023737183 instance=ExtResource("6_tbg6u")]
 transform = Transform3D(0, -1, 0, 1, 0, 0, 0, 0, 1, 6.3766646, -0.9952249, 28.968405)
