@@ -182,7 +182,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_4a6h3")
 shape = SubResource("ConcavePolygonShape3D_sgprd")
 
 [node name="Tierra" type="MeshInstance3D" parent="." unique_id=1260282177]
-transform = Transform3D(-9.577166e-07, 0, 21.345, 0, 3.43, 0, -21.91, 0, -9.330196e-07, 43.599472, 8.810385, -64.789795)
+transform = Transform3D(-9.577166e-07, 0, 21.345001, 0, 3.4300005, 0, -21.91, 0, -9.330196e-07, 43.599472, 8.810385, -64.789795)
 mesh = SubResource("BoxMesh_f6o33")
 surface_material_override/0 = SubResource("StandardMaterial3D_dxm14")
 
@@ -193,7 +193,7 @@ shape = SubResource("ConcavePolygonShape3D_sgprd")
 
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="Tierra" unique_id=543423470]
 stream = ExtResource("2_1muvh")
-volume_db = -18.0
+volume_db = 10.0
 autoplay = true
 max_distance = 40.0
 
@@ -360,7 +360,7 @@ shape = SubResource("ConcavePolygonShape3D_3pbdm")
 [node name="check" parent="." unique_id=1400073117 instance=ExtResource("2_7hvex")]
 transform = Transform3D(1.175, 0, 0, 0, 1.175, 0, 0, 0, 1.175, 0.6789236, 0, 0)
 
-[node name="Cube" parent="check" index="0" unique_id=282718359]
+[node name="Cube" parent="check" index="0" unique_id=1951966823]
 transform = Transform3D(79.8, 0, 0, 0, 1.33, 0, 0, 0, 79.8, -17.826, -0.134, -0.095)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="check/Cube" index="0" unique_id=1503869718]
