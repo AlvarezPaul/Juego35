@@ -1,0 +1,73 @@
+[gd_scene format=3 uid="uid://q2ye4fjvwduu"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_f6o33"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6xc37"]
+albedo_color = Color(0.92941177, 0.5803922, 0.26666668, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yhian"]
+albedo_color = Color(0.88235295, 0.8, 0.5803922, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_e24xi"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ewndm"]
+albedo_color = Color(0.47397572, 0.47397572, 0.47397572, 1)
+emission = Color(0.99999994, 0.2932579, 0.2908701, 1)
+emission_energy_multiplier = 2.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cdx3g"]
+emission_enabled = true
+emission = Color(0.9999997, 0.96870166, 0.44309777, 1)
+emission_energy_multiplier = 2.0
+
+[node name="baño_superior" type="Node3D" unique_id=2075413175]
+
+[node name="estructura" type="Node3D" parent="." unique_id=393495776]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="estructura" unique_id=2116533786]
+transform = Transform3D(20, 0, 0, 0, 0.5, 0, 0, 0, 30, 0, 0, 0)
+mesh = SubResource("BoxMesh_f6o33")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_6xc37")
+
+[node name="MeshInstance3D5" type="MeshInstance3D" parent="estructura" unique_id=1330766709]
+transform = Transform3D(20, 0, 0, 0, 0.5, 0, 0, 0, 30, 0, 15.38098, 0)
+mesh = SubResource("BoxMesh_f6o33")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_6xc37")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="estructura" unique_id=192334249]
+transform = Transform3D(2.928687e-14, 2.1855694e-08, 20.010464, 15.327938, -2.1855694e-08, 0, 6.700055e-07, 0.5, -8.746851e-07, 0.07616997, 7.709608, -15.00754)
+mesh = SubResource("BoxMesh_f6o33")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_yhian")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="estructura" unique_id=1365971086]
+transform = Transform3D(-6.7000553e-07, -0.5, 0, 15.327938, -2.1855694e-08, 0, 0, 0, 30, -10.01721, 7.709608, 0)
+mesh = SubResource("BoxMesh_f6o33")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_yhian")
+
+[node name="MeshInstance3D8" type="MeshInstance3D" parent="estructura" unique_id=1683390778]
+transform = Transform3D(-6.7000553e-07, -0.5, 0, 15.327938, -2.1855694e-08, 0, 0, 0, 30, 10.067656, 7.709608, 0)
+mesh = SubResource("BoxMesh_f6o33")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_yhian")
+
+[node name="MeshInstance3D6" type="MeshInstance3D" parent="estructura" unique_id=728524002]
+transform = Transform3D(3.6936588, 0, 0, 0, 0.25, 0, 0, 0, 3.7649431, 0.0991447, 14.962261, 0.61702824)
+mesh = SubResource("CylinderMesh_e24xi")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_ewndm")
+
+[node name="MeshInstance3D7" type="MeshInstance3D" parent="estructura" unique_id=2093574363]
+transform = Transform3D(3.0780492, 0, 0, 0, 0.208053, 0, 0, 0, 3.1374526, 0.0991447, 14.48963, 0.61702824)
+mesh = SubResource("CylinderMesh_e24xi")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_cdx3g")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="estructura" unique_id=2067758936]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0.137249, 14.784084, 0.46839952)
+light_color = Color(1, 0.5647059, 1, 1)
+light_energy = 9.041
+spot_range = 18.0

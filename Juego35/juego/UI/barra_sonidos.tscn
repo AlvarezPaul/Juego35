@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://dav4xsf5v0vn1"]
+
+[ext_resource type="Script" uid="uid://detmayjvcw6yl" path="res://UI/barra_sonido.gd" id="1_s2kfs"]
+
+[node name="barra_sonidos" type="HSlider" unique_id=1664845339]
+custom_minimum_size = Vector2(200, 0)
+offset_left = 20.0
+offset_top = 582.0
+offset_right = 298.0
+offset_bottom = 638.0
+min_value = -30.0
+max_value = 6.0
+script = ExtResource("1_s2kfs")

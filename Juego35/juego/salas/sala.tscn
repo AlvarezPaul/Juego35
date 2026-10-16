@@ -1,0 +1,1205 @@
+[gd_scene format=3 uid="uid://b6ncf806r6a0b"]
+
+[ext_resource type="Script" uid="uid://cto1h4oask7ao" path="res://salas/sala.gd" id="1_bl8tx"]
+[ext_resource type="PackedScene" uid="uid://slwd7f6wku1b" path="res://esceneria/escuela.tscn" id="1_kwadh"]
+[ext_resource type="Script" uid="uid://d2maeb5p5ya8m" path="res://UI/confirmar_salir.gd" id="3_3q2x0"]
+[ext_resource type="FontFile" uid="uid://ocuqailjsal3" path="res://Fuentes/StayDrips-Regular.otf" id="3_cekhq"]
+[ext_resource type="AudioStream" uid="uid://d4b1w0ui4oxb" path="res://UI/linterna.mp3" id="3_pudgd"]
+[ext_resource type="PackedScene" uid="uid://mbsgoh8bcs3w" path="res://jugador/jugador.tscn" id="3_qh0pk"]
+[ext_resource type="Script" uid="uid://31ipksk4tnso" path="res://scriptstamina/canvas_layer.gd" id="3_tgavs"]
+[ext_resource type="Script" uid="uid://dde7axw8aa7yy" path="res://UI/animacionfadein.gd" id="3_uph1g"]
+[ext_resource type="PackedScene" uid="uid://l3360f65cyou" path="res://salas/linterna_suelo.tscn" id="4_tgavs"]
+[ext_resource type="FontFile" uid="uid://blju0ku40nkwn" path="res://Interfaz/Fuentes/Bonechiller Free.otf" id="5_bl8tx"]
+[ext_resource type="Script" uid="uid://v4xmv2vcxdob" path="res://UI/ajustesmenuesc.gd" id="6_3q2x0"]
+[ext_resource type="PackedScene" uid="uid://bwcjyqarbdklt" path="res://inventario/llave.tscn" id="6_tbg6u"]
+[ext_resource type="PackedScene" uid="uid://cjh7u2io5d7mc" path="res://items/ganzua.tscn" id="8_rvme7"]
+[ext_resource type="Script" uid="uid://33wicx838os6" path="res://UI/contador_fps.gd" id="9_a4few"]
+[ext_resource type="FontFile" uid="uid://cdu7dgetstelv" path="res://Fuentes/trebuc.ttf" id="10_erchp"]
+[ext_resource type="PackedScene" uid="uid://dav4xsf5v0vn1" path="res://UI/barra_sonidos.tscn" id="10_mnxya"]
+[ext_resource type="AudioStream" uid="uid://deksytmtdq141" path="res://UI/sonidoambiente.mp3" id="11_erchp"]
+[ext_resource type="Script" uid="uid://cdvfbej5sosp" path="res://UI/pantcompleta.gd" id="11_os015"]
+[ext_resource type="Script" uid="uid://dx2qogxgp1c1q" path="res://UI/controles.gd" id="12_os015"]
+[ext_resource type="Texture2D" uid="uid://c225j5kxjr2c7" path="res://fotos/controlesimg/TeclaD.png" id="13_vwwu6"]
+[ext_resource type="Texture2D" uid="uid://dhjjwabq1w83i" path="res://fotos/controlesimg/TeclaS.png" id="14_uph1g"]
+[ext_resource type="Shader" uid="uid://dbit8djafjspy" path="res://MenuEsc/blur.gdshader" id="15_3yiwo"]
+[ext_resource type="Texture2D" uid="uid://bmxqrk7os8mmb" path="res://fotos/controlesimg/TeclaA.png" id="15_iqlxx"]
+[ext_resource type="Script" uid="uid://cbtmpdwgai7qm" path="res://UI/pantalla_final.gd" id="15_mhgjs"]
+[ext_resource type="Texture2D" uid="uid://cem6dnor703bi" path="res://fotos/controlesimg/inventariofoto.png" id="16_egg21"]
+[ext_resource type="Texture2D" uid="uid://mium0om5gwv6" path="res://fotos/controlesimg/objetoenmano.png" id="17_avcb8"]
+[ext_resource type="FontFile" uid="uid://g00wcuajk3nk" path="res://Interfaz/Fuentes/Bonechiller Free.ttf" id="17_f1ihl"]
+[ext_resource type="Texture2D" uid="uid://15kuu20okjr1" path="res://fotos/controlesimg/objetoenelpiso.png" id="18_eew5s"]
+[ext_resource type="Texture2D" uid="uid://fcvlnvg0gucu" path="res://fotos/controlesimg/stamina.png" id="19_7bf7e"]
+[ext_resource type="Texture2D" uid="uid://c07dqk5hffp74" path="res://fotos/controlesimg/linternaprendida.png" id="20_ud0b3"]
+[ext_resource type="Texture2D" uid="uid://dqhynussawu2o" path="res://fotos/controlesimg/linternaapagada.png" id="21_s8c8j"]
+[ext_resource type="Texture2D" uid="uid://dxwv074w4yt6" path="res://fotos/controlesimg/despausado.png" id="22_4x8yr"]
+[ext_resource type="Texture2D" uid="uid://bi6e5wol1d4w3" path="res://fotos/controlesimg/menudepausa.png" id="23_pv1w1"]
+[ext_resource type="Texture2D" uid="uid://c4pbg5b4ayeuj" path="res://fotos/controlesimg/TeclaW.png" id="24_sfbq3"]
+[ext_resource type="Texture2D" uid="uid://bpdgpd8i2s6jt" path="res://fotos/controlesimg/TeclaF.png" id="25_a4mot"]
+[ext_resource type="Texture2D" uid="uid://ox4vkvqon53q" path="res://fotos/controlesimg/Tecla2.png" id="26_2cqb8"]
+[ext_resource type="Texture2D" uid="uid://qddfhwvxns3w" path="res://fotos/controlesimg/Tecla4.png" id="27_hei26"]
+[ext_resource type="Texture2D" uid="uid://c0a2vc38cw330" path="res://fotos/controlesimg/Tecla3.png" id="28_kh42h"]
+[ext_resource type="Texture2D" uid="uid://dgi6ir8t4mlis" path="res://fotos/controlesimg/Tecla1.png" id="29_yyvjb"]
+[ext_resource type="Texture2D" uid="uid://bdpixcma77r66" path="res://fotos/controlesimg/TeclaEsc.png" id="30_0ieq6"]
+[ext_resource type="Texture2D" uid="uid://2y0neoo3mnll" path="res://fotos/controlesimg/TeclaG.png" id="31_aps1j"]
+[ext_resource type="Texture2D" uid="uid://bstdhpebjtwrg" path="res://fotos/controlesimg/TeclaShift.png" id="32_yxmc4"]
+[ext_resource type="Texture2D" uid="uid://04gly3jkvoly" path="res://fotos/controlesimg/TeclaEspacio.png" id="33_2aflc"]
+[ext_resource type="Script" uid="uid://sylhqf8xuif" path="res://UI/label_textos.gd" id="43_iqlxx"]
+[ext_resource type="PackedScene" uid="uid://hu1wjlyx3h6x" path="res://items/tacho.tscn" id="60_tacho"]
+[ext_resource type="PackedScene" uid="uid://catkwmfvq0q07" path="res://items/llave_reja.tscn" id="61_llavereja"]
+[ext_resource type="Script" uid="uid://bqo3hti17uyho" path="res://salas/label.gd" id="62_timerlabel"]
+
+[sub_resource type="Environment" id="Environment_pvkkf"]
+background_mode = 1
+background_color = Color(0.15640268, 0.17418766, 0.2030974, 1)
+background_energy_multiplier = 0.2
+
+[sub_resource type="Animation" id="Animation_vwwu6"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Color:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_uph1g"]
+resource_name = "fade_in"
+length = 2.5000000000000004
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Color:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(-0.16666667, 0, 0.53, 1.04, 2.4333334),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 1), Color(0, 0, 0, 1), Color(0, 0, 0, 0.84313726), Color(0, 0, 0, 0.627451), Color(0, 0, 0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_iqlxx"]
+_data = {
+&"RESET": SubResource("Animation_vwwu6"),
+&"fade_in": SubResource("Animation_uph1g")
+}
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_xrivr"]
+shader = ExtResource("15_3yiwo")
+shader_parameter/blur_amount = 3.0930001469175
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bl8tx"]
+bg_color = Color(0.16078432, 0.16078432, 0.16078432, 0.65882355)
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 35
+corner_radius_top_right = 35
+corner_radius_bottom_right = 35
+corner_radius_bottom_left = 35
+shadow_color = Color(0, 0, 0, 0.8509804)
+shadow_size = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cekhq"]
+bg_color = Color(0.078431375, 0.078431375, 0.078431375, 0.78431374)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+shadow_size = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_no552"]
+bg_color = Color(0.5411765, 0, 0, 0.78431374)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+shadow_color = Color(0.5411765, 0, 0, 0.6)
+shadow_size = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3q2x0"]
+bg_color = Color(0.15167356, 1.0979828e-07, 6.016344e-09, 0.78431374)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+shadow_color = Color(0.26208854, 2.6171097e-07, 9.62615e-08, 0.6)
+shadow_size = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mhgjs"]
+bg_color = Color(0.038397167, 0.038397167, 0.03839716, 0.78431374)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+shadow_color = Color(0.051970966, 0.05197096, 0.05197095, 0.6)
+shadow_size = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cjdqc"]
+bg_color = Color(0.10747974, 0.10747974, 0.10747967, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0eft3"]
+bg_color = Color(0.61960787, 0.09411765, 0.09411765, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 25
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+corner_radius_bottom_left = 25
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ud54u"]
+bg_color = Color(1, 0, 0, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 25
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+corner_radius_bottom_left = 25
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_oaqsx"]
+bg_color = Color(0.26666668, 0, 0, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 25
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+corner_radius_bottom_left = 25
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mnxya"]
+bg_color = Color(0.49747366, 0.49747372, 0.49747354, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[sub_resource type="ImageTexture" id="ImageTexture_p3nki"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_6t4da"]
+diffuse_texture = SubResource("ImageTexture_p3nki")
+specular_color = Color(0.16924527, 0.1692453, 0.16924527, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_g7ci4"]
+bg_color = Color(0.45452422, 0.45452428, 0.45452416, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_x4rlt"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_i7ss6"]
+bg_color = Color(0.3854925, 0.3854925, 0.38549235, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xrivr"]
+bg_color = Color(0.13682586, 0.13682568, 0.13682571, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_13qdw"]
+bg_color = Color(0, 0, 0, 0.61960787)
+corner_radius_top_left = 45
+corner_radius_top_right = 45
+corner_radius_bottom_right = 45
+corner_radius_bottom_left = 45
+shadow_size = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_b1lj4"]
+bg_color = Color(0.15912649, 1.2559117e-07, 3.008172e-08, 1)
+corner_radius_top_left = 45
+corner_radius_top_right = 45
+corner_radius_bottom_right = 45
+corner_radius_bottom_left = 45
+shadow_color = Color(0.20181593, 1.1431053e-07, 7.219613e-08, 0.6)
+shadow_size = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_njqwk"]
+bg_color = Color(0, 0, 0, 0.9019608)
+corner_radius_top_left = 45
+corner_radius_top_right = 45
+corner_radius_bottom_right = 45
+corner_radius_bottom_left = 45
+shadow_size = 15
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_f1ihl"]
+bg_color = Color(0.66656864, 0.6665687, 0.66656864, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.099985994, 0.09998601, 0.09998592, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_os015"]
+bg_color = Color(0.6666667, 0.6666667, 0.6666667, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.09803922, 0.09803922, 0.09803922, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6t4da"]
+bg_color = Color(0.14044744, 0.14044744, 0.14044744, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[node name="sala" type="Node3D" unique_id=1955352439]
+script = ExtResource("1_bl8tx")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=615291951]
+environment = SubResource("Environment_pvkkf")
+
+[node name="escuela" parent="." unique_id=1293130221 instance=ExtResource("1_kwadh")]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 60.306732, -0.049215555, -0.03195381)
+
+[node name="AnimacionFadeIn" type="CanvasLayer" parent="." unique_id=686631240]
+layer = 2
+script = ExtResource("3_uph1g")
+
+[node name="Color" type="ColorRect" parent="AnimacionFadeIn" unique_id=1025005029]
+modulate = Color(0, 0, 0, 0)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="AnimacionFadeIn" type="AnimationPlayer" parent="AnimacionFadeIn" unique_id=543385538]
+libraries/ = SubResource("AnimationLibrary_iqlxx")
+
+[node name="Jugador" parent="." unique_id=212553440 groups=["jugador"] instance=ExtResource("3_qh0pk")]
+transform = Transform3D(-6.556708e-08, 0, -1.5, 0, 1.5, 0, 1.5, 0, -6.556708e-08, 48.945915, 13.001343, -41.74019)
+
+[node name="Panel" parent="Jugador/Cabeza/Camera3D/CanvasLayer" parent_id_path=PackedInt32Array(212553440, 715858050) index="0" unique_id=1029156778]
+anchors_preset = 15
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
+metadata/_edit_use_anchors_ = true
+
+[node name="llave" parent="Jugador/Cabeza/Camera3D" parent_id_path=PackedInt32Array(212553440, 704986019) index="2" unique_id=2048800679]
+transform = Transform3D(-6.556708e-08, -1.5, 0, -1.5, 6.556708e-08, 1.3113416e-07, -1.3113416e-07, 5.7320566e-15, -1.5, 0.09124756, -0.2613846, -22.900015)
+
+[node name="SpotLight3D" parent="Jugador/Cabeza/Camera3D" parent_id_path=PackedInt32Array(212553440, 704986019) index="4" unique_id=1591149388]
+transform = Transform3D(1, 0, 0, 0, 1, 4.743386e-22, 0, -4.743386e-22, 1, 0.45625687, -0.24910295, -0.70774746)
+light_color = Color(1, 1, 0.7647059, 1)
+light_energy = 3.333
+spot_range = 80.0
+spot_attenuation = 0.6
+
+[node name="CanvasLayer" parent="Jugador/Node2D" parent_id_path=PackedInt32Array(212553440, 2102388130) index="0" unique_id=1482110964]
+layer = 10
+
+[node name="ColorRect" parent="Jugador/Node2D/CanvasLayer/Control" parent_id_path=PackedInt32Array(212553440, 2102388130, 968487047) index="0" unique_id=264834643]
+material = SubResource("ShaderMaterial_xrivr")
+
+[node name="VBoxContainer" parent="Jugador/Node2D/CanvasLayer/Control" parent_id_path=PackedInt32Array(212553440, 2102388130, 968487047) index="1" unique_id=1976221300]
+theme_override_constants/separation = 80
+
+[node name="ConfirmarSalir" type="Control" parent="Jugador/Node2D/CanvasLayer" index="1" unique_id=1499653716]
+visible = false
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -276.375
+offset_top = -133.25
+offset_right = 276.375
+offset_bottom = 133.25
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("3_3q2x0")
+metadata/_edit_use_anchors_ = true
+
+[node name="Panel" type="Panel" parent="Jugador/Node2D/CanvasLayer/ConfirmarSalir" unique_id=458669873]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -276.375
+offset_top = -133.4375
+offset_right = 276.375
+offset_bottom = 133.4375
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_bl8tx")
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="Jugador/Node2D/CanvasLayer/ConfirmarSalir" unique_id=1571617877]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -306.5
+offset_right = 306.5
+offset_bottom = 124.25
+grow_horizontal = 2
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("3_cekhq")
+theme_override_font_sizes/font_size = 25
+text = "¿Estás seguro de que querés salir al Menú?
+Perderás todo tu progreso"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Si" type="Button" parent="Jugador/Node2D/CanvasLayer/ConfirmarSalir" unique_id=1384034807]
+process_mode = 2
+layout_mode = 0
+offset_left = 28.375
+offset_top = 160.25
+offset_right = 173.375
+offset_bottom = 236.25
+theme_override_fonts/font = ExtResource("5_bl8tx")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_cekhq")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_no552")
+theme_override_styles/hover = SubResource("StyleBoxFlat_3q2x0")
+text = "Sí"
+
+[node name="No" type="Button" parent="Jugador/Node2D/CanvasLayer/ConfirmarSalir" unique_id=1271852727]
+process_mode = 2
+layout_mode = 0
+offset_left = 383.375
+offset_top = 159.25
+offset_right = 528.375
+offset_bottom = 235.25
+theme_override_fonts/font = ExtResource("5_bl8tx")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_cekhq")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_no552")
+theme_override_styles/hover = SubResource("StyleBoxFlat_mhgjs")
+text = "No"
+
+[node name="Ajustes" type="Control" parent="Jugador/Node2D/CanvasLayer" index="2" unique_id=1008471991]
+visible = false
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -380.0
+offset_top = -324.5
+offset_right = 380.0
+offset_bottom = 324.5
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("6_3q2x0")
+
+[node name="Panel" type="Panel" parent="Jugador/Node2D/CanvasLayer/Ajustes" unique_id=1816360628]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -380.0
+offset_top = -324.5
+offset_right = 380.0
+offset_bottom = 324.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_cjdqc")
+metadata/_edit_use_anchors_ = true
+
+[node name="Cerrar" type="Button" parent="Jugador/Node2D/CanvasLayer/Ajustes" unique_id=1119646534]
+process_mode = 2
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -74.5
+offset_top = 12.0
+offset_right = -17.0
+offset_bottom = 69.5
+grow_horizontal = 0
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxFlat_0eft3")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ud54u")
+theme_override_styles/hover = SubResource("StyleBoxFlat_oaqsx")
+text = "X"
+icon_alignment = 1
+
+[node name="Textos" type="VBoxContainer" parent="Jugador/Node2D/CanvasLayer/Ajustes" unique_id=1065503858]
+layout_mode = 0
+offset_left = 110.0
+offset_top = 104.5
+offset_right = 392.99997
+offset_bottom = 558.5
+theme_override_constants/separation = 50
+
+[node name="Sonido" type="Label" parent="Jugador/Node2D/CanvasLayer/Ajustes/Textos" unique_id=130994906]
+layout_mode = 2
+theme_override_constants/outline_size = 7
+theme_override_fonts/font = ExtResource("10_erchp")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxFlat_mnxya")
+text = "Sonido General"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SensMouse" type="Label" parent="Jugador/Node2D/CanvasLayer/Ajustes/Textos" unique_id=310652596]
+layout_mode = 2
+theme_override_constants/outline_size = 7
+theme_override_fonts/font = ExtResource("10_erchp")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxFlat_mnxya")
+text = "Sensibilidad del Mouse"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PantCompleta" type="Label" parent="Jugador/Node2D/CanvasLayer/Ajustes/Textos" unique_id=1256617474]
+layout_mode = 2
+theme_override_constants/outline_size = 7
+theme_override_fonts/font = ExtResource("10_erchp")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxFlat_mnxya")
+text = "Pantalla Completa"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ContadorDeFPS" type="Label" parent="Jugador/Node2D/CanvasLayer/Ajustes/Textos" unique_id=909235232]
+layout_mode = 2
+theme_override_constants/outline_size = 7
+theme_override_fonts/font = ExtResource("10_erchp")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxFlat_mnxya")
+text = "Contador de FPS"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Contador" type="Label" parent="Jugador/Node2D/CanvasLayer/Ajustes/Textos" unique_id=1790285984]
+layout_mode = 2
+theme_override_constants/outline_size = 7
+theme_override_fonts/font = ExtResource("10_erchp")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxFlat_mnxya")
+text = "Timer"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Cont de Sliders y CheckBox" type="VBoxContainer" parent="Jugador/Node2D/CanvasLayer/Ajustes" unique_id=100336466]
+process_mode = 2
+layout_mode = 0
+offset_left = 437.00003
+offset_top = 110.500015
+offset_right = 650.0
+offset_bottom = 559.5
+theme_override_constants/separation = 65
+
+[node name="barra_sonidos" parent="Jugador/Node2D/CanvasLayer/Ajustes/Cont de Sliders y CheckBox" unique_id=1664845339 instance=ExtResource("10_mnxya")]
+layout_mode = 2
+
+[node name="sensibilidad" parent="Jugador/Node2D/CanvasLayer/Ajustes/Cont de Sliders y CheckBox" unique_id=521819645 instance=ExtResource("10_mnxya")]
+layout_mode = 2
+script = null
+
+[node name="CheckBox" type="CheckBox" parent="Jugador/Node2D/CanvasLayer/Ajustes/Cont de Sliders y CheckBox" unique_id=6980545]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+size_flags_stretch_ratio = 0.0
+button_pressed = true
+icon = SubResource("CanvasTexture_6t4da")
+flat = true
+script = ExtResource("11_os015")
+
+[node name="OcultarMostrar" type="HBoxContainer" parent="Jugador/Node2D/CanvasLayer/Ajustes/Cont de Sliders y CheckBox" unique_id=605510768]
+layout_mode = 2
+theme_override_constants/separation = 2
+alignment = 1
+
+[node name="Ocultar" type="Button" parent="Jugador/Node2D/CanvasLayer/Ajustes/Cont de Sliders y CheckBox/OcultarMostrar" unique_id=574999513]
+process_mode = 2
+layout_mode = 2
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("10_erchp")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_g7ci4")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_x4rlt")
+theme_override_styles/hover = SubResource("StyleBoxFlat_i7ss6")
+text = "Ocultar"
+
+[node name="Mostrar" type="Button" parent="Jugador/Node2D/CanvasLayer/Ajustes/Cont de Sliders y CheckBox/OcultarMostrar" unique_id=186172275]
+process_mode = 2
+layout_mode = 2
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("10_erchp")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_g7ci4")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_x4rlt")
+theme_override_styles/hover = SubResource("StyleBoxFlat_i7ss6")
+text = "Mostrar"
+
+[node name="OcultarMostrar2" type="HBoxContainer" parent="Jugador/Node2D/CanvasLayer/Ajustes/Cont de Sliders y CheckBox" unique_id=1027150750]
+layout_mode = 2
+theme_override_constants/separation = 2
+alignment = 1
+
+[node name="Ocultar2" type="Button" parent="Jugador/Node2D/CanvasLayer/Ajustes/Cont de Sliders y CheckBox/OcultarMostrar2" unique_id=438586890]
+layout_mode = 2
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("10_erchp")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_g7ci4")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_x4rlt")
+theme_override_styles/hover = SubResource("StyleBoxFlat_i7ss6")
+text = "Ocultar"
+
+[node name="Mostrar2" type="Button" parent="Jugador/Node2D/CanvasLayer/Ajustes/Cont de Sliders y CheckBox/OcultarMostrar2" unique_id=206696712]
+layout_mode = 2
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("10_erchp")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_g7ci4")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_x4rlt")
+theme_override_styles/hover = SubResource("StyleBoxFlat_i7ss6")
+text = "Mostrar"
+
+[node name="Controles" type="Control" parent="Jugador/Node2D/CanvasLayer" index="3" unique_id=1922147113]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1371.0
+offset_bottom = 771.0
+script = ExtResource("12_os015")
+
+[node name="Panel" type="Panel" parent="Jugador/Node2D/CanvasLayer/Controles" unique_id=1229252228]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -651.5
+offset_top = -324.5
+offset_right = 651.5
+offset_bottom = 324.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_cjdqc")
+
+[node name="Cerrar" type="Button" parent="Jugador/Node2D/CanvasLayer/Controles" unique_id=1448530637]
+process_mode = 2
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -109.0
+offset_top = 78.0
+offset_right = -51.5
+offset_bottom = 135.5
+grow_horizontal = 0
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxFlat_0eft3")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ud54u")
+theme_override_styles/hover = SubResource("StyleBoxFlat_oaqsx")
+text = "X"
+icon_alignment = 1
+
+[node name="TeclaD" type="TextureRect" parent="Jugador/Node2D/CanvasLayer/Controles" unique_id=1132098498]
+layout_mode = 0
+offset_left = 210.0
+offset_top = 149.0
+offset_right = 280.0
+offset_bottom = 219.0
+texture = ExtResource("13_vwwu6")
+expand_mode = 1
+
+[node name="TeclaS" type="TextureRect" parent="Jugador/Node2D/CanvasLayer/Controles" unique_id=794805129]
+layout_mode = 0
+offset_left = 139.0
+offset_top = 149.0
+offset_right = 209.0
+offset_bottom = 219.0
+texture = ExtResource("14_uph1g")
+expand_mode = 1
+
+[node name="TeclaA" type="TextureRect" parent="Jugador/Node2D/CanvasLayer/Controles" unique_id=2066660564]
+layout_mode = 0
+offset_left = 71.0
+offset_top = 149.0
+offset_right = 141.0
+offset_bottom = 219.0
+texture = ExtResource("15_iqlxx")
+expand_mode = 1
+
+[node name="FotoInventario" type="TextureRect" parent="Jugador/Node2D/CanvasLayer/Controles" unique_id=1196004562]
+layout_mode = 0
+offset_left = 450.0
+offset_top = 534.0
+offset_right = 805.0
+offset_bottom = 631.0
+texture = ExtResource("16_egg21")
+expand_mode = 1
+
+[node name="FotoObjetoEnMano" type="TextureRect" parent="Jugador/Node2D/CanvasLayer/Controles" unique_id=2093523473]
+layout_mode = 0
+offset_left = 827.0
+offset_top = 529.0
+offset_right = 1066.0
+offset_bottom = 628.0
+texture = ExtResource("17_avcb8")
+expand_mode = 1
+
+[node name="FotoObjetoEnPiso" type="TextureRect" parent="Jugador/Node2D/CanvasLayer/Controles" unique_id=1126976470]
+layout_mode = 0
+offset_left = 1086.0
+offset_top = 519.0
+offset_right = 1315.0
+offset_bottom = 663.0
+texture = ExtResource("18_eew5s")
+expand_mode = 1
+
+[node name="FotoStamina" type="TextureRect" parent="Jugador/Node2D/CanvasLayer/Controles" unique_id=2112358558]
+layout_mode = 0
+offset_left = 514.0
+offset_top = 263.0
+offset_right = 799.0
+offset_bottom = 357.0
+texture = ExtResource("19_7bf7e")
+expand_mode = 1
+
+[node name="FotoLintPrendida" type="TextureRect" parent="Jugador/Node2D/CanvasLayer/Controles" unique_id=890624833]
+layout_mode = 0
+offset_left = 1073.0
+offset_top = 227.0
+offset_right = 1317.0
+offset_bottom = 364.0
+texture = ExtResource("20_ud0b3")
+expand_mode = 1
+
+[node name="FotoLintApagada" type="TextureRect" parent="Jugador/Node2D/CanvasLayer/Controles" unique_id=1413914049]
+layout_mode = 0
+offset_left = 823.0
+offset_top = 225.0
+offset_right = 1077.0
+offset_bottom = 364.0
+texture = ExtResource("21_s8c8j")
+expand_mode = 1
+
+[node name="FotoSinMenuDePausa" type="TextureRect" parent="Jugador/Node2D/CanvasLayer/Controles" unique_id=1830754057]
+layout_mode = 0
+offset_left = 136.0
+offset_top = 394.0
+offset_right = 390.0
+offset_bottom = 533.0
+texture = ExtResource("22_4x8yr")
+expand_mode = 1
+
+[node name="FotoMenuDePausa" type="TextureRect" parent="Jugador/Node2D/CanvasLayer/Controles" unique_id=1490755723]
+layout_mode = 0
+offset_left = 136.0
+offset_top = 551.0
+offset_right = 390.0
+offset_bottom = 690.0
+texture = ExtResource("23_pv1w1")
+expand_mode = 1
+
+[node name="TeclaW" type="TextureRect" parent="Jugador/Node2D/CanvasLayer/Controles" unique_id=1796340271]
+layout_mode = 0
+offset_left = 139.0
+offset_top = 76.0
+offset_right = 209.0
+offset_bottom = 146.0
+texture = ExtResource("24_sfbq3")
+expand_mode = 1
+
+[node name="TeclaF" type="TextureRect" parent="Jugador/Node2D/CanvasLayer/Controles" unique_id=1875991169]
+layout_mode = 0
+offset_left = 1033.0
+offset_top = 79.0
+offset_right = 1103.0
+offset_bottom = 149.0
+texture = ExtResource("25_a4mot")
+expand_mode = 1
+
+[node name="Tecla2" type="TextureRect" parent="Jugador/Node2D/CanvasLayer/Controles" unique_id=2114268602]
+layout_mode = 0
+offset_left = 550.0
+offset_top = 426.0
+offset_right = 620.0
+offset_bottom = 496.0
+texture = ExtResource("26_2cqb8")
+expand_mode = 1
+
+[node name="Tecla4" type="TextureRect" parent="Jugador/Node2D/CanvasLayer/Controles" unique_id=1128721671]
+layout_mode = 0
+offset_left = 702.0
+offset_top = 426.0
+offset_right = 772.0
+offset_bottom = 496.0
+texture = ExtResource("27_hei26")
+expand_mode = 1
+
+[node name="Tecla3" type="TextureRect" parent="Jugador/Node2D/CanvasLayer/Controles" unique_id=1242883276]
+layout_mode = 0
+offset_left = 626.0
+offset_top = 426.0
+offset_right = 696.0
+offset_bottom = 496.0
+texture = ExtResource("28_kh42h")
+expand_mode = 1
+
+[node name="Tecla1" type="TextureRect" parent="Jugador/Node2D/CanvasLayer/Controles" unique_id=835441020]
+layout_mode = 0
+offset_left = 476.0
+offset_top = 426.0
+offset_right = 546.0
+offset_bottom = 496.0
+texture = ExtResource("29_yyvjb")
+expand_mode = 1
+
+[node name="TeclaEsc" type="TextureRect" parent="Jugador/Node2D/CanvasLayer/Controles" unique_id=111661927]
+layout_mode = 0
+offset_left = 225.0
+offset_top = 295.0
+offset_right = 295.0
+offset_bottom = 365.0
+texture = ExtResource("30_0ieq6")
+expand_mode = 1
+
+[node name="TeclaG" type="TextureRect" parent="Jugador/Node2D/CanvasLayer/Controles" unique_id=1868130235]
+layout_mode = 0
+offset_left = 1040.0
+offset_top = 396.0
+offset_right = 1110.0
+offset_bottom = 466.0
+texture = ExtResource("31_aps1j")
+expand_mode = 1
+
+[node name="TeclaShift" type="TextureRect" parent="Jugador/Node2D/CanvasLayer/Controles" unique_id=1027761483]
+layout_mode = 0
+offset_left = 576.0
+offset_top = 41.0
+offset_right = 741.0
+offset_bottom = 206.0
+texture = ExtResource("32_yxmc4")
+expand_mode = 1
+
+[node name="TeclaEspacio" type="TextureRect" parent="Jugador/Node2D/CanvasLayer/Controles" unique_id=1612312157]
+layout_mode = 0
+offset_left = 308.0
+offset_top = 55.0
+offset_right = 488.0
+offset_bottom = 235.0
+texture = ExtResource("33_2aflc")
+expand_mode = 1
+
+[node name="Texto" type="Label" parent="Jugador/Node2D/CanvasLayer/Controles" unique_id=391887336]
+layout_mode = 0
+offset_left = 45.0
+offset_top = 221.0
+offset_right = 310.0
+offset_bottom = 284.0
+theme_override_constants/outline_size = 9
+theme_override_fonts/font = ExtResource("10_erchp")
+theme_override_font_sizes/font_size = 25
+text = "Para moverse 
+en distintas direcciones"
+horizontal_alignment = 1
+
+[node name="Texto2" type="Label" parent="Jugador/Node2D/CanvasLayer/Controles" unique_id=1363000366]
+layout_mode = 0
+offset_left = 310.0
+offset_top = 192.0
+offset_right = 482.0
+offset_bottom = 234.0
+theme_override_constants/outline_size = 9
+theme_override_fonts/font = ExtResource("10_erchp")
+theme_override_font_sizes/font_size = 36
+text = "Para saltar"
+horizontal_alignment = 1
+
+[node name="Texto3" type="Label" parent="Jugador/Node2D/CanvasLayer/Controles" unique_id=1195186760]
+layout_mode = 0
+offset_left = 504.0
+offset_top = 172.0
+offset_right = 819.0
+offset_bottom = 250.0
+theme_override_constants/outline_size = 9
+theme_override_fonts/font = ExtResource("10_erchp")
+theme_override_font_sizes/font_size = 20
+text = "Para correr, manteniendo apretado
+Tu stamina irá bajando si corrés y 
+subirá si dejas de correr"
+horizontal_alignment = 1
+
+[node name="Texto4" type="Label" parent="Jugador/Node2D/CanvasLayer/Controles" unique_id=1046040149]
+layout_mode = 0
+offset_left = 923.0
+offset_top = 154.0
+offset_right = 1206.0
+offset_bottom = 205.0
+theme_override_constants/outline_size = 9
+theme_override_fonts/font = ExtResource("10_erchp")
+theme_override_font_sizes/font_size = 20
+text = "Para interactuar con la linterna
+mientras la tengas en la mano"
+horizontal_alignment = 1
+
+[node name="Texto5" type="Label" parent="Jugador/Node2D/CanvasLayer/Controles" unique_id=8297173]
+layout_mode = 0
+offset_left = 883.0
+offset_top = 481.0
+offset_right = 1276.0
+offset_bottom = 505.0
+theme_override_constants/outline_size = 9
+theme_override_fonts/font = ExtResource("10_erchp")
+theme_override_font_sizes/font_size = 20
+text = "Para soltar el objeto que tengas en la mano"
+horizontal_alignment = 1
+
+[node name="Texto6" type="Label" parent="Jugador/Node2D/CanvasLayer/Controles" unique_id=144569872]
+layout_mode = 0
+offset_left = 52.0
+offset_top = 363.0
+offset_right = 496.0
+offset_bottom = 387.0
+theme_override_constants/outline_size = 9
+theme_override_fonts/font = ExtResource("10_erchp")
+theme_override_font_sizes/font_size = 20
+text = "Para pausar el juego, se abrirá un menú de pausa"
+horizontal_alignment = 1
+
+[node name="Texto7" type="Label" parent="Jugador/Node2D/CanvasLayer/Controles" unique_id=781562491]
+layout_mode = 0
+offset_left = 448.0
+offset_top = 497.0
+offset_right = 806.0
+offset_bottom = 521.0
+theme_override_constants/outline_size = 9
+theme_override_fonts/font = ExtResource("10_erchp")
+theme_override_font_sizes/font_size = 20
+text = "Para cambiar de ranura en el inventario"
+horizontal_alignment = 1
+
+[node name="linterna" type="AudioStreamPlayer3D" parent="Jugador" unique_id=2091540673]
+transform = Transform3D(0.7490637, -1.1310547e-07, 1.1310547e-07, -1.1310547e-07, -0.7490637, 3.722292e-21, 1.1310547e-07, -1.7078454e-14, -0.7490637, 0.3283348, 0.39369708, -0.554337)
+stream = ExtResource("3_pudgd")
+
+[node name="LinternaSuelo" parent="." unique_id=1877330075 instance=ExtResource("4_tgavs")]
+transform = Transform3D(-1.8957648, 2.8625254e-07, 0.6527642, -3.027466e-07, -2.005, 0, 0.6527642, -9.856466e-08, 1.8957648, 59.449783, 12.642885, -13.201355)
+
+[node name="llave" parent="." unique_id=2023737183 instance=ExtResource("6_tbg6u")]
+transform = Transform3D(0, -1, 0, 1, 0, 0, 0, 0, 1, 6.3766646, -0.9952249, 28.968405)
+
+[node name="ganzua" parent="." unique_id=1006482489 instance=ExtResource("8_rvme7")]
+transform = Transform3D(1.9106855e-15, -4.371139e-08, 1, -1, -4.371139e-08, 0, 4.371139e-08, -1, -4.371139e-08, 61.588078, 12.612159, -41.44521)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=792970203]
+follow_viewport_enabled = true
+script = ExtResource("3_tgavs")
+
+[node name="BarraStamina" type="ProgressBar" parent="CanvasLayer" unique_id=654527658]
+offset_left = 21.0
+offset_top = 650.0
+offset_right = 321.0
+offset_bottom = 677.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="CanvasLayer/BarraStamina" unique_id=904871291]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -50.0
+offset_top = -12.0
+offset_right = 50.0
+offset_bottom = 12.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/outline_size = 7
+theme_override_fonts/font = ExtResource("10_erchp")
+theme_override_font_sizes/font_size = 20
+text = "Resistencia"
+horizontal_alignment = 1
+
+[node name="Timer" type="Label" parent="CanvasLayer" unique_id=264088870]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -241.0
+offset_top = 23.0
+offset_right = -27.0
+offset_bottom = 90.0
+grow_horizontal = 0
+horizontal_alignment = 2
+script = ExtResource("62_timerlabel")
+
+[node name="ContadorFPS" type="CanvasLayer" parent="." unique_id=1743572793]
+script = ExtResource("9_a4few")
+
+[node name="TextoFPS" type="Label" parent="ContadorFPS" unique_id=1840034885]
+offset_left = 10.0
+offset_top = 9.0
+offset_right = 70.0
+offset_bottom = 42.0
+theme_override_constants/outline_size = 3
+theme_override_fonts/font = ExtResource("10_erchp")
+
+[node name="PantallaFinal" type="CanvasLayer" parent="." unique_id=787803605]
+process_mode = 2
+visible = false
+script = ExtResource("15_mhgjs")
+
+[node name="EfectoBlur" type="ColorRect" parent="PantallaFinal" unique_id=978504517]
+material = SubResource("ShaderMaterial_xrivr")
+offset_right = 1390.0
+offset_bottom = 776.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="¡Escapaste!" type="Label" parent="PantallaFinal" unique_id=20863535]
+z_index = 10
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -213.5
+offset_top = 25.0
+offset_right = 213.5
+offset_bottom = 95.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1.4439226e-07, 0.70104903, 1.540184e-06, 1)
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("3_cekhq")
+theme_override_font_sizes/font_size = 80
+text = "¡Escapaste!"
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="PantallaFinal" unique_id=1533866491]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -285.5
+offset_top = 100.0
+offset_right = 285.5
+offset_bottom = 190.0
+grow_horizontal = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("10_erchp")
+theme_override_font_sizes/font_size = 23
+text = "Ahora vas a tener que volver a casa caminando porque 
+no hay colectivos..."
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TiempoDeEscapeText" type="Label" parent="PantallaFinal" unique_id=1916550164]
+offset_left = 409.0
+offset_top = 242.0
+offset_right = 641.0
+offset_bottom = 287.0
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxFlat_xrivr")
+text = "Tiempo de Escape:"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TiempoValor" type="Label" parent="PantallaFinal" unique_id=1916550999]
+offset_left = 667.0
+offset_top = 242.0
+offset_right = 997.0
+offset_bottom = 287.0
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxFlat_xrivr")
+text = "00:00"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="GuardaTuUsuarioText" type="Label" parent="PantallaFinal" unique_id=519719412]
+offset_left = 409.0
+offset_top = 308.0
+offset_right = 641.0
+offset_bottom = 353.0
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxFlat_xrivr")
+text = "Nombre de Usuario:"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="IntentarDeNuevo" type="Button" parent="PantallaFinal" unique_id=1981781326]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -272.5
+offset_top = -168.0
+offset_right = -13.5
+offset_bottom = -75.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/outline_size = 25
+theme_override_fonts/font = ExtResource("17_f1ihl")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/normal = SubResource("StyleBoxFlat_13qdw")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_b1lj4")
+theme_override_styles/hover = SubResource("StyleBoxFlat_njqwk")
+text = "Intentar de Nuevo"
+
+[node name="VolverAlMenu" type="Button" parent="PantallaFinal" unique_id=2105853672]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 17.5
+offset_top = -168.0
+offset_right = 276.5
+offset_bottom = -75.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/outline_size = 25
+theme_override_fonts/font = ExtResource("17_f1ihl")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/normal = SubResource("StyleBoxFlat_13qdw")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_b1lj4")
+theme_override_styles/hover = SubResource("StyleBoxFlat_njqwk")
+text = "Volver al menú"
+
+[node name="Username" type="LineEdit" parent="PantallaFinal" unique_id=41915890]
+offset_left = 667.0
+offset_top = 308.0
+offset_right = 997.0
+offset_bottom = 353.0
+theme_override_constants/outline_size = 4
+theme_override_fonts/font = ExtResource("10_erchp")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_f1ihl")
+theme_override_styles/read_only = SubResource("StyleBoxFlat_os015")
+theme_override_styles/focus = SubResource("StyleBoxFlat_6t4da")
+backspace_deletes_composite_character_enabled = true
+
+[node name="MensajesAlJugador" type="CanvasLayer" parent="." unique_id=1567250344]
+
+[node name="Label" type="Label" parent="MensajesAlJugador" unique_id=1624481220]
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.785
+anchor_right = 0.5
+anchor_bottom = 0.785
+offset_left = -215.5
+offset_top = -32.380005
+offset_right = 215.5
+offset_bottom = 32.619995
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/outline_size = 8
+theme_override_fonts/font = ExtResource("10_erchp")
+theme_override_font_sizes/font_size = 25
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("43_iqlxx")
+
+[node name="SonidoAmbiente" type="AudioStreamPlayer" parent="." unique_id=394394416]
+stream = ExtResource("11_erchp")
+volume_db = -15.0
+autoplay = true
+parameters/looping = false
+
+[node name="tacho" parent="." unique_id=156823456 instance=ExtResource("60_tacho")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 61.528816, 10.685165, -31.253382)
+
+[node name="llave_reja" parent="." unique_id=1525817767 instance=ExtResource("61_llavereja")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 54.493965, 12.19416, -42.77104)
+
+[connection signal="pressed" from="Jugador/Node2D/CanvasLayer/Control/VBoxContainer/controles" to="Jugador/Node2D/CanvasLayer/Control" method="_on_controles_pressed"]
+[connection signal="pressed" from="Jugador/Node2D/CanvasLayer/ConfirmarSalir/Si" to="Jugador/Node2D/CanvasLayer/ConfirmarSalir" method="_on_si_pressed"]
+[connection signal="pressed" from="Jugador/Node2D/CanvasLayer/ConfirmarSalir/No" to="Jugador/Node2D/CanvasLayer/ConfirmarSalir" method="_on_no_pressed"]
+[connection signal="pressed" from="Jugador/Node2D/CanvasLayer/Ajustes/Cerrar" to="Jugador/Node2D/CanvasLayer/Ajustes" method="_on_cerrar_pressed"]
+[connection signal="toggled" from="Jugador/Node2D/CanvasLayer/Ajustes/Cont de Sliders y CheckBox/CheckBox" to="Jugador/Node2D/CanvasLayer/Ajustes/Cont de Sliders y CheckBox/CheckBox" method="_on_toggled"]
+[connection signal="pressed" from="Jugador/Node2D/CanvasLayer/Ajustes/Cont de Sliders y CheckBox/OcultarMostrar/Ocultar" to="Jugador/Node2D/CanvasLayer/Ajustes" method="_on_ocultar_pressed"]
+[connection signal="pressed" from="Jugador/Node2D/CanvasLayer/Ajustes/Cont de Sliders y CheckBox/OcultarMostrar/Mostrar" to="Jugador/Node2D/CanvasLayer/Ajustes" method="_on_mostrar_pressed"]
+[connection signal="pressed" from="Jugador/Node2D/CanvasLayer/Ajustes/Cont de Sliders y CheckBox/OcultarMostrar2/Ocultar2" to="Jugador/Node2D/CanvasLayer/Ajustes" method="_on_ocultar_2_pressed"]
+[connection signal="pressed" from="Jugador/Node2D/CanvasLayer/Ajustes/Cont de Sliders y CheckBox/OcultarMostrar2/Mostrar2" to="Jugador/Node2D/CanvasLayer/Ajustes" method="_on_mostrar_2_pressed"]
+[connection signal="pressed" from="Jugador/Node2D/CanvasLayer/Controles/Cerrar" to="Jugador/Node2D/CanvasLayer/Controles" method="_on_cerrar_pressed"]
+[connection signal="pressed" from="PantallaFinal/IntentarDeNuevo" to="PantallaFinal" method="_on_intentar_de_nuevo_pressed"]
+[connection signal="pressed" from="PantallaFinal/VolverAlMenu" to="PantallaFinal" method="_on_volver_al_menu_pressed"]
+
+[editable path="Jugador"]
+[editable path="Jugador/Cabeza/Camera3D/linterna"]
+[editable path="Jugador/Node2D"]

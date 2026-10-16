@@ -1,0 +1,51 @@
+[gd_scene format=3 uid="uid://mbsgoh8bcs3w"]
+
+[ext_resource type="Script" uid="uid://tnhladubrrmd" path="res://jugador/jugador.gd" id="1_y3xgi"]
+[ext_resource type="Script" uid="uid://v0h7coyjhls" path="res://jugador/j_cam.gd" id="2_5vouv"]
+[ext_resource type="PackedScene" uid="uid://bavenhmlmlucf" path="res://glb_modelos/linterna.glb" id="3_a407c"]
+[ext_resource type="AudioStream" uid="uid://c3dk14l03w00u" path="res://jugador/Walk On Concrete - Sound Effect for editing.mp3" id="3_im34r"]
+[ext_resource type="Script" uid="uid://cmtodncvxsra2" path="res://jugador/ray_cast_3d.gd" id="4_xreb1"]
+[ext_resource type="PackedScene" uid="uid://b3x7splwvmv2t" path="res://MenuEsc/MenuPausa.tscn" id="5_vu2ya"]
+[ext_resource type="PackedScene" uid="uid://fujo4jxvrmdd" path="res://inventario/escenainve.tscn" id="6_inv01"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_f6o33"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_f6o33"]
+
+[node name="Jugador" type="CharacterBody3D" unique_id=1744127182]
+script = ExtResource("1_y3xgi")
+
+[node name="Cabeza" type="Node3D" parent="." unique_id=1096425595]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.58808064, 0)
+script = ExtResource("2_5vouv")
+
+[node name="Camera3D" type="Camera3D" parent="Cabeza" unique_id=704986019]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.22835386)
+
+[node name="linterna" parent="Cabeza/Camera3D" unique_id=1066557052 instance=ExtResource("3_a407c")]
+transform = Transform3D(1.5, -2.2649371e-07, 2.2649371e-07, -2.2649371e-07, -1.5, 4.0657583e-21, 2.2649371e-07, -3.4199606e-14, -1.5, 0.43832842, -0.259502, -0.43518722)
+
+[node name="SpotLight3D" type="SpotLight3D" parent="Cabeza/Camera3D" unique_id=1591149388]
+transform = Transform3D(1, 0, 0, 0, 1, 4.743386e-22, 0, -4.743386e-22, 1, 0.4393829, -0.25113702, -1.1017106)
+spot_range = 70.766
+spot_angle = 35.0
+
+[node name="RayCast3D" type="RayCast3D" parent="Cabeza/Camera3D" unique_id=1053585050]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.58808064, 0.22835386)
+target_position = Vector3(0, 0, -2.5)
+script = ExtResource("4_xreb1")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1414320584]
+shape = SubResource("CapsuleShape3D_f6o33")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=194179937]
+transform = Transform3D(1.17, 0, 0, 0, 1.17, 0, 0, 0, 1.17, 0, 0, 0)
+mesh = SubResource("CapsuleMesh_f6o33")
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="." unique_id=614892593]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.58808064, 0)
+stream = ExtResource("3_im34r")
+
+[node name="Node2D" parent="." unique_id=2102388130 instance=ExtResource("5_vu2ya")]
+
+[node name="Inventario" parent="." unique_id=574045649 instance=ExtResource("6_inv01")]

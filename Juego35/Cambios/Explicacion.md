@@ -1,0 +1,1 @@
+Esta carpeta que cree llamada "Cambios" la cree porque creo que es un buen lugar para subir los cambios. Por favor cuando suban cambios, subanlos en esta carpeta. Podríamos crear una carpeta para cada uno, pero no sé. Lo que si, digan qué agregan y la fecha.

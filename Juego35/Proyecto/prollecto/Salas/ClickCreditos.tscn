@@ -1,0 +1,160 @@
+[gd_scene format=3 uid="uid://bwk71kmap6lkq"]
+
+[ext_resource type="Script" uid="uid://yxyv1prp7873" path="res://Salas/click_creditos.gd" id="1_wjyqy"]
+[ext_resource type="Texture2D" uid="uid://c367lotxyyhw3" path="res://Imágenes y Texturas/backgroundfotodeprueba.jpg" id="2_pr58j"]
+[ext_resource type="Texture2D" uid="uid://g50ah34jvf5m" path="res://Imágenes y Texturas/et35logo.jpg" id="4_pr58j"]
+[ext_resource type="FontFile" uid="uid://blju0ku40nkwn" path="res://Fuentes/Bonechiller Free.otf" id="4_skinw"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xrivr"]
+bg_color = Color(0.77525675, 0.7679488, 0.77882177, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_77tc4"]
+bg_color = Color(0.9372549, 0, 0.105882354, 0.8156863)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_13qdw"]
+bg_color = Color(0.28235295, 0.28235295, 0.28235295, 0.25490198)
+border_color = Color(0.06053038, 0.06053035, 0.060530283, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+shadow_size = 15
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wi6ju"]
+bg_color = Color(1, 0, 0.08235294, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_b1lj4"]
+bg_color = Color(0.14406255, 0.14406255, 0.14406249, 1)
+
+[sub_resource type="GDScript" id="GDScript_4awu4"]
+script/source = "extends Button
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
+"
+
+[node name="Creditos" type="Control" unique_id=702630704]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 2.0
+offset_top = 2.0
+offset_right = 2.0
+offset_bottom = 2.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+script = ExtResource("1_wjyqy")
+metadata/_edit_use_anchors_ = true
+
+[node name="Panel" type="Panel" parent="." unique_id=2090017021]
+layout_mode = 0
+offset_right = 1153.0
+offset_bottom = 645.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_xrivr")
+
+[node name="Fondo(seraunvideodsp)" type="TextureRect" parent="." unique_id=1989236957]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -591.0
+offset_top = -1.0
+offset_right = 611.0
+offset_bottom = 658.0
+grow_horizontal = 2
+texture = ExtResource("2_pr58j")
+expand_mode = 1
+
+[node name="Salir" type="Button" parent="." unique_id=1534172047]
+layout_mode = 0
+offset_left = 1113.0
+offset_top = 12.0
+offset_right = 1178.0
+offset_bottom = 82.0
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_77tc4")
+text = "×"
+
+[node name="volver" type="Button" parent="." unique_id=118507403]
+layout_mode = 0
+offset_left = 1016.0
+offset_top = 556.0
+offset_right = 1173.0
+offset_bottom = 642.0
+theme_override_fonts/font = ExtResource("4_skinw")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_13qdw")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_wi6ju")
+theme_override_styles/hover = SubResource("StyleBoxFlat_b1lj4")
+text = "VOLVER"
+script = SubResource("GDScript_4awu4")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=71634040]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 24.0
+offset_right = 992.0
+offset_bottom = 629.0
+color = Color(0.27387273, 0.27387273, 0.27387273, 0.28627452)
+
+[node name="Label" type="Label" parent="." unique_id=2016479838]
+layout_mode = 0
+offset_left = 63.0
+offset_top = 34.0
+offset_right = 1028.0
+offset_bottom = 143.0
+theme_override_fonts/font = ExtResource("4_skinw")
+theme_override_font_sizes/font_size = 40
+text = "Hecho por alumnos de la Escuela Técnica N°35"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="." unique_id=368821874]
+layout_mode = 0
+offset_left = 29.0
+offset_top = 171.0
+offset_right = 978.0
+offset_bottom = 599.0
+theme_override_font_sizes/font_size = 60
+text = "Ignacio Saavedra
+Manuel Proserpio
+Paúl Álvarez
+Benjamín Arregui
+Ian Findlaycito"
+vertical_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=765982884]
+layout_mode = 0
+offset_left = 35.0
+offset_top = 44.0
+offset_right = 127.0
+offset_bottom = 148.0
+texture = ExtResource("4_pr58j")
+expand_mode = 1
+
+[connection signal="pressed" from="Salir" to="." method="_on_salir_pressed"]
+[connection signal="pressed" from="volver" to="." method="_on_volver_pressed"]
