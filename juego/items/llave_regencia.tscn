@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bcng3bymb8hu8"]
 
-[ext_resource type="Script" uid="uid://bti2i5yeismck" path="res://inventario/caealsuelo.gd" id="1_u5my0"]
+[ext_resource type="Script" uid="uid://bvbgh7kg3lykk" path="res://items/llave_regencia.gd" id="1_u5my0"]
 [ext_resource type="Texture2D" uid="uid://cibdygrxxnaq5" path="res://fotos/llave_regencia.jpg" id="2_u5my0"]
 
 [sub_resource type="TubeTrailMesh" id="TubeTrailMesh_svc72"]

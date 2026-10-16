@@ -23,7 +23,7 @@ corner_radius_bottom_left = 3
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_f6o33"]
 
-[node name="Jugador" type="CharacterBody3D" unique_id=1744127182]
+[node name="Jugador" type="CharacterBody3D" unique_id=1744127182 groups=["jugador"]]
 script = ExtResource("1_y3xgi")
 
 [node name="Cabeza" type="Node3D" parent="." unique_id=1096425595]
@@ -62,7 +62,7 @@ transform = Transform3D(-1, -8.742278e-08, 3.821371e-15, 0, -4.371139e-08, -1, 8
 visible = false
 
 [node name="llave_reja" parent="Cabeza/Camera3D" unique_id=1357924680 instance=ExtResource("9_llavereja")]
-transform = Transform3D(0.01, 0, 0, 0, -4.3711387e-10, -0.01, 0, 0.01, -4.3711387e-10, 0.621676, -0.32956254, -0.76711994)
+transform = Transform3D(0.005, 0, 0, 0, -2.1855694e-10, -0.005, 0, 0.005, -2.1855694e-10, 0.621676, -0.095467925, -1.017675)
 
 [node name="SpotLight3D" type="SpotLight3D" parent="Cabeza/Camera3D" unique_id=1591149388]
 transform = Transform3D(1, 0, 0, 0, 1, 4.743386e-22, 0, -4.743386e-22, 1, 0.4393829, -0.25113702, -1.1017106)

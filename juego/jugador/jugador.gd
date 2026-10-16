@@ -1,7 +1,7 @@
 extends CharacterBody3D
 
 @export var velocidad_correr: float = 10.0
-@export var velocidad: float = 6.0
+@export var velocidad: float = 15.0
 @export var fuerza_salto: float = 4.5
 @export var intensidad_bob: float = 0.05
 @export var velocidad_bob: float = 9.0
@@ -89,7 +89,6 @@ func _preparar_llave_en_mano() -> void:
 	modelo_llave.visible = false
 
 func _preparar_llave_reja_en_mano() -> void:
-	# La llave de la reja de la mano no debe poder ser "mirada" ni agarrada por el RayCast.
 	var area := modelo_llave_reja.get_node_or_null("Area3D") as Area3D
 	if area != null:
 		area.collision_layer = 0
@@ -97,21 +96,24 @@ func _preparar_llave_reja_en_mano() -> void:
 		area.monitoring = false
 		area.monitorable = false
 
-	# En la mano brilla un poquito (plateada) para que se vea aunque la linterna esté apagada.
-	var malla := modelo_llave_reja.get_node_or_null("Area3D/Key") as MeshInstance3D
-	if malla != null and malla.material_override is StandardMaterial3D:
-		var material := (malla.material_override as StandardMaterial3D).duplicate() as StandardMaterial3D
+	var malla_reja := modelo_llave_reja.get_node_or_null("Area3D/Key") as MeshInstance3D
+	if malla_reja != null and malla_reja.material_override is StandardMaterial3D:
+		var material := (malla_reja.material_override as StandardMaterial3D).duplicate() as StandardMaterial3D
 		material.albedo_color = Color(0.78, 0.80, 0.84)
 		material.emission_enabled = true
 		material.emission = Color(0.70, 0.73, 0.78)
 		material.emission_energy_multiplier = 0.5
-		malla.material_override = material
+		malla_reja.material_override = material
 
-	# Misma pose que la llave común.
+	# --- TAMAÑO Y POSICIÓN EN LA MANO ---
+	var escala_reja_mano := 0.015  # Bajalo a 0.01 si sigue viéndose grande
+	var posicion_reja_mano := Vector3(0.35, -0.25, -0.75) # Z más negativo = más lejos de la cara
+
 	modelo_llave_reja.basis = Basis.from_euler(
 		rotacion_llave_mano * (PI / 180.0)
-	).scaled(Vector3.ONE * escala_llave_mano)
-	modelo_llave_reja.position = posicion_llave_mano
+	).scaled(Vector3.ONE * escala_reja_mano)
+
+	modelo_llave_reja.position = posicion_reja_mano
 	modelo_llave_reja.visible = false
 
 func _preparar_llave_regencia_en_mano() -> void:
@@ -263,12 +265,12 @@ func _tirar_item_equipado() -> void:
 		var altura := altura_sobre_suelo
 
 		if item["nombre"] in ["Llave", "Llave Reja", "Llave Regencia"]:
-			# La llave cae acostada: la giramos 90° en Z para que la cara plana mire
-			# hacia arriba, y la orientamos a lo largo de hacia donde mira el jugador.
+			# Escalamos la llave al tirarla al suelo para que no vuelva a ser gigante
+			var escala_suelo := 0.015 # Usá el mismo tamaño que te guste
 			objeto.global_basis = (
 				Basis(Vector3.UP, global_rotation.y + PI / 2.0)
 				* Basis(Vector3.BACK, PI / 2.0)
-			)
+			).scaled(Vector3.ONE * escala_suelo)
 			altura = altura_llave_suelo
 
 		objeto.global_position = _punto_en_el_suelo(altura)
