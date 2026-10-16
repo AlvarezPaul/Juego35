@@ -886,16 +886,16 @@ surface_material_override/0 = SubResource("StandardMaterial3D_wy2tw")
 shape = SubResource("ConcavePolygonShape3D_vb7e2")
 
 [node name="mesa5" parent="muebles/mesas" unique_id=1545127772 instance=ExtResource("3_k6gqu")]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1.5801488, 0, -1, 0, -4.371139e-08, 29.568943, 0, 108.9164)
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1.5801488, 0, -1, 0, -4.371139e-08, 29.569, 1.325, 108.916)
 
 [node name="mesa6" parent="muebles/mesas" unique_id=1949545067 instance=ExtResource("3_k6gqu")]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1.5801488, 0, -1, 0, -4.371139e-08, 29.579147, 0, 156.45334)
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1.5801488, 0, -1, 0, -4.371139e-08, 29.579, 1.325, 156.453)
 
 [node name="mesa7" parent="muebles/mesas" unique_id=780969996 instance=ExtResource("3_k6gqu")]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1.5801488, 0, -1, 0, -4.371139e-08, -31.232473, 0, 156.57567)
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1.5801488, 0, -1, 0, -4.371139e-08, -31.232, 1.325, 156.576)
 
 [node name="mesa8" parent="muebles/mesas" unique_id=68385220 instance=ExtResource("3_k6gqu")]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1.5801488, 0, -1, 0, -4.371139e-08, -31.658455, 0, 109.06847)
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1.5801488, 0, -1, 0, -4.371139e-08, -31.658, 1.325, 109.068)
 
 [node name="sillas" type="Node3D" parent="muebles" unique_id=383935179]
 transform = Transform3D(0.83, 0, 0, 0, 0.83, 0, 0, 0, 0.83, 0, 0, 23.834564)
