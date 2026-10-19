@@ -335,12 +335,13 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 color = Color(0, 0, 0, 1)
 
 [node name="AnimacionFadeIn" type="AnimationPlayer" parent="AnimacionFadeIn" unique_id=543385538]
 libraries/ = SubResource("AnimationLibrary_iqlxx")
 
-[node name="Jugador" parent="." unique_id=212553440 groups=["jugador"] instance=ExtResource("3_qh0pk")]
+[node name="Jugador" parent="." unique_id=212553440 instance=ExtResource("3_qh0pk")]
 transform = Transform3D(-6.556708e-08, 0, -1.5, 0, 1.5, 0, 1.5, 0, -6.556708e-08, 48.945915, 13.001343, -41.74019)
 
 [node name="Panel" parent="Jugador/Cabeza/Camera3D/CanvasLayer" parent_id_path=PackedInt32Array(212553440, 715858050) index="0" unique_id=1029156778]
@@ -356,7 +357,13 @@ offset_bottom = 0.0
 metadata/_edit_use_anchors_ = true
 
 [node name="llave" parent="Jugador/Cabeza/Camera3D" parent_id_path=PackedInt32Array(212553440, 704986019) index="2" unique_id=2048800679]
-transform = Transform3D(-6.556708e-08, -1.5, 0, -1.5, 6.556708e-08, 1.3113416e-07, -1.3113416e-07, 5.7320566e-15, -1.5, 0.09124756, -0.2613846, -22.900015)
+transform = Transform3D(-6.556708e-08, -1.5, 0, -1.5, 6.556708e-08, 1.3113416e-07, -1.3113416e-07, 7.1054274e-15, -1.5, -37.438366, -0.26138496, -22.900017)
+
+[node name="ganzua" parent="Jugador/Cabeza/Camera3D" parent_id_path=PackedInt32Array(212553440, 704986019) index="3" unique_id=1006482489]
+transform = Transform3D(-1, -8.742278e-08, 3.821371e-15, 0, -4.371139e-08, -1, 8.742278e-08, -1, 4.371139e-08, 0.59400177, -0.30300045, -0.4787445)
+
+[node name="llave_reja" parent="Jugador/Cabeza/Camera3D" parent_id_path=PackedInt32Array(212553440, 704986019) index="4" unique_id=1357924680]
+transform = Transform3D(-0.004996083, 4.4559145e-10, 0.00019786242, 0.00019786242, 2.0973692e-10, 0.004996083, 4.369426e-10, 0.0049999994, -2.2720574e-10, 0.514328, -0.27518559, -0.6056938)
 
 [node name="SpotLight3D" parent="Jugador/Cabeza/Camera3D" parent_id_path=PackedInt32Array(212553440, 704986019) index="5" unique_id=1591149388]
 transform = Transform3D(1, 0, 0, 0, 1, 4.743386e-22, 0, -4.743386e-22, 1, 0.45625687, -0.24910295, -0.70774746)
@@ -364,6 +371,9 @@ light_color = Color(1, 1, 0.7647059, 1)
 light_energy = 3.333
 spot_range = 80.0
 spot_attenuation = 0.6
+
+[node name="llave_regencia" parent="Jugador/Cabeza/Camera3D" parent_id_path=PackedInt32Array(212553440, 704986019) index="7" unique_id=1209904720]
+transform = Transform3D(0.01, 0, 0, 0, -4.3711387e-10, -0.01, 0, 0.01, -4.3711387e-10, 0.43318558, -0.32395554, -0.7141762)
 
 [node name="CanvasLayer" parent="Jugador/Node2D" parent_id_path=PackedInt32Array(212553440, 2102388130) index="0" unique_id=1482110964]
 layer = 10
@@ -960,13 +970,16 @@ horizontal_alignment = 1
 transform = Transform3D(0.7490637, -1.1310547e-07, 1.1310547e-07, -1.1310547e-07, -0.7490637, 3.722292e-21, 1.1310547e-07, -1.7078454e-14, -0.7490637, 0.3283348, 0.39369708, -0.554337)
 stream = ExtResource("3_pudgd")
 
+[node name="SpotLight3D2" type="SpotLight3D" parent="." unique_id=1057964573]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 60.597713, 16.19852, -13.822469)
+
 [node name="LinternaSuelo" parent="." unique_id=1877330075 instance=ExtResource("4_tgavs")]
 transform = Transform3D(-1.8957648, 2.8625254e-07, 0.6527642, -3.027466e-07, -2.005, 0, 0.6527642, -9.856466e-08, 1.8957648, 59.449783, 12.642885, -13.201355)
 
 [node name="llave" parent="." unique_id=2023737183 instance=ExtResource("6_tbg6u")]
 transform = Transform3D(0, -1, 0, 1, 0, 0, 0, 0, 1, 6.3766646, -0.9952249, 32.438614)
 
-[node name="ganzua" parent="." unique_id=1006482489 instance=ExtResource("8_rvme7")]
+[node name="ganzua" parent="." unique_id=1581257672 instance=ExtResource("8_rvme7")]
 transform = Transform3D(1.9106855e-15, -4.371139e-08, 1, -1, -4.371139e-08, 0, 4.371139e-08, -1, -4.371139e-08, 61.588078, 12.612159, -41.44521)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=792970203]
@@ -1024,6 +1037,7 @@ theme_override_fonts/font = ExtResource("10_erchp")
 
 [node name="PantallaFinal" type="CanvasLayer" parent="." unique_id=787803605]
 process_mode = 2
+layer = 20
 visible = false
 script = ExtResource("15_mhgjs")
 
@@ -1188,8 +1202,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 61.528816, 10.685165, -31.253
 [node name="llave_reja" parent="." unique_id=1525817767 instance=ExtResource("61_llavereja")]
 transform = Transform3D(-4.3711387e-10, -0.01, 0, 0.01, -4.3711387e-10, 0, 0, 0, 0.01, 49.300026, 0.2745586, 48.500584)
 
-[node name="llave regencia" parent="." unique_id=1209904720 instance=ExtResource("48_7bf7e")]
-transform = Transform3D(-4.3711387e-10, -0.01, 0, 0.01, -4.3711387e-10, 0, 0, 0, 0.01, 169.83353, 0.11032486, 38.991436)
+[node name="llave regencia" parent="." unique_id=855459215 instance=ExtResource("48_7bf7e")]
+transform = Transform3D(-7.8680495e-10, -0.018, 0, 0.018, -7.8680495e-10, 0, 0, 0, 0.018, 167.00703, 1.36544, 38.991436)
 
 [connection signal="pressed" from="Jugador/Node2D/CanvasLayer/Control/VBoxContainer/controles" to="Jugador/Node2D/CanvasLayer/Control" method="_on_controles_pressed"]
 [connection signal="pressed" from="Jugador/Node2D/CanvasLayer/ConfirmarSalir/Si" to="Jugador/Node2D/CanvasLayer/ConfirmarSalir" method="_on_si_pressed"]

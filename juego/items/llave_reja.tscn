@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://catkwmfvq0q07"]
 
 [ext_resource type="Script" uid="uid://ca5o18bows5e5" path="res://items/llave_reja.gd" id="1_4yf1a"]
+[ext_resource type="Texture2D" uid="uid://dt8vdtcbmephj" path="res://fotos/Gemini_Generated_Image_giofbygiofbygiof.jpg" id="2_sjxpx"]
 
 [sub_resource type="TubeTrailMesh" id="TubeTrailMesh_sjxpx"]
 
@@ -28,7 +29,9 @@ size = Vector3(20.480347, 135.71439, 54.93811)
 transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 0, 0, 0)
 
 [node name="Area3D" type="Area3D" parent="." unique_id=1200179582]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
 script = ExtResource("1_4yf1a")
+icono = ExtResource("2_sjxpx")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Area3D" unique_id=376441319]
 transform = Transform3D(17.899384, 0, 0, 0, 80.647095, 0, 0, 0, 12.4436455, -5.136282, -20.96366, -3.5731583)
