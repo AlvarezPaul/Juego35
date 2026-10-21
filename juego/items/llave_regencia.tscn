@@ -27,6 +27,7 @@ size = Vector3(20.480347, 122.57501, 54.93811)
 [node name="llave_regencia" type="Node3D" unique_id=1209904720]
 
 [node name="Area3D" type="Area3D" parent="." unique_id=925959355]
+transform = Transform3D(0.456, 0, 0, 0, 0.456, 0, 0, 0, 0.456, 0, 0, 0)
 script = ExtResource("1_u5my0")
 icono = ExtResource("2_u5my0")
 

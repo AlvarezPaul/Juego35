@@ -1,8 +1,5 @@
 extends CanvasLayer
 
-func _ready() -> void:
-	pass
-
 func _on_intentar_de_nuevo_pressed() -> void:
 	Mensajetexto.reset_mensajes()
 	get_tree().paused = false
