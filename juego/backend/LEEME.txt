@@ -1,0 +1,20 @@
+CONFIGURAR EL GUARDADO DE PUNTAJES
+
+1. Abrí XAMPP e iniciá Apache y MySQL.
+2. En phpMyAdmin, importá backend/crear_base.sql.
+3. Copiá backend/guardar_puntaje.php a:
+   C:\xampp\htdocs\juego35\guardar_puntaje.php
+4. La URL que usa el juego es:
+   http://localhost/juego35/guardar_puntaje.php
+5. Si MySQL tiene otra contraseña o usuario, editá las variables $user y $password
+   al principio de guardar_puntaje.php.
+6. Ejecutá el juego, terminá la partida, escribí un nombre y pulsá "Guardar puntaje".
+
+La tabla guarda nombre, tiempo en segundos y fecha. La conexión a la base de datos se
+realiza desde PHP; Godot no se conecta directamente a MySQL.
+
+Si el juego no puede conectar, comprobá que Apache y MySQL estén iniciados y que el PHP
+esté exactamente en la ruta indicada.
+
+no soy yo chicos quien puso esto :VVVVVVVVV
+ ya esta echo ATT: IAn

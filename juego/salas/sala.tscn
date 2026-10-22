@@ -49,10 +49,7 @@
 [ext_resource type="PackedScene" uid="uid://catkwmfvq0q07" path="res://items/llave_reja.tscn" id="61_llavereja"]
 [ext_resource type="Script" uid="uid://bqo3hti17uyho" path="res://salas/label.gd" id="62_timerlabel"]
 
-[sub_resource type="Environment" id="Environment_pvkkf"]
-background_mode = 1
-background_color = Color(0.15640268, 0.17418766, 0.2030974, 1)
-background_energy_multiplier = 0.2
+[sub_resource type="Environment" id="Environment_7bf7e"]
 
 [sub_resource type="Animation" id="Animation_vwwu6"]
 length = 0.001
@@ -94,6 +91,31 @@ _data = {
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_xrivr"]
 shader = ExtResource("15_3yiwo")
 shader_parameter/blur_amount = 3.0930001469175
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cjdqc"]
+bg_color = Color(0.03137255, 0.03137255, 0.03137255, 0.37254903)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+shadow_size = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jf1qn"]
+bg_color = Color(0.101960786, 0, 0, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+shadow_color = Color(0.11764706, 0, 0, 0.6)
+shadow_size = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5lcxy"]
+bg_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+shadow_size = 5
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bl8tx"]
 bg_color = Color(0.16078432, 0.16078432, 0.16078432, 0.65882355)
@@ -140,7 +162,7 @@ corner_radius_bottom_left = 15
 shadow_color = Color(0.051970966, 0.05197096, 0.05197095, 0.6)
 shadow_size = 10
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cjdqc"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7bf7e"]
 bg_color = Color(0.10747974, 0.10747974, 0.10747967, 1)
 border_width_left = 10
 border_width_top = 10
@@ -318,8 +340,12 @@ corner_radius_bottom_left = 10
 [node name="sala" type="Node3D" unique_id=1955352439]
 script = ExtResource("1_bl8tx")
 
+[node name="HTTPRequest" type="HTTPRequest" parent="."]
+process_mode = 3
+
+
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=615291951]
-environment = SubResource("Environment_pvkkf")
+environment = SubResource("Environment_7bf7e")
 
 [node name="escuela" parent="." unique_id=1293130221 instance=ExtResource("1_kwadh")]
 transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 60.306732, -0.049215555, -0.03195381)
@@ -363,7 +389,7 @@ transform = Transform3D(-6.556708e-08, -1.5, 0, -1.5, 6.556708e-08, 1.3113416e-0
 transform = Transform3D(-1, -8.742278e-08, 3.821371e-15, 0, -4.371139e-08, -1, 8.742278e-08, -1, 4.371139e-08, 0.59400177, -0.30300045, -0.4787445)
 
 [node name="llave_reja" parent="Jugador/Cabeza/Camera3D" parent_id_path=PackedInt32Array(212553440, 704986019) index="4" unique_id=1357924680]
-transform = Transform3D(-0.004996083, 4.4559145e-10, 0.00019786242, 0.00019786242, 2.0973692e-10, 0.004996083, 4.369426e-10, 0.0049999994, -2.2720574e-10, 0.514328, -0.27518559, -0.6056938)
+transform = Transform3D(0.02, 0, 0, 0, -8.7422775e-10, -0.02, 0, 0.02, -8.7422775e-10, 0.48568344, -0.24088669, -0.54618835)
 
 [node name="SpotLight3D" parent="Jugador/Cabeza/Camera3D" parent_id_path=PackedInt32Array(212553440, 704986019) index="5" unique_id=1591149388]
 transform = Transform3D(1, 0, 0, 0, 1, 4.743386e-22, 0, -4.743386e-22, 1, 0.45625687, -0.24910295, -0.70774746)
@@ -373,7 +399,7 @@ spot_range = 80.0
 spot_attenuation = 0.6
 
 [node name="llave_regencia" parent="Jugador/Cabeza/Camera3D" parent_id_path=PackedInt32Array(212553440, 704986019) index="7" unique_id=1209904720]
-transform = Transform3D(0.01, 0, 0, 0, -4.3711387e-10, -0.01, 0, 0.01, -4.3711387e-10, 0.43318558, -0.32395554, -0.7141762)
+transform = Transform3D(0.01, 8.7422775e-10, -3.821371e-17, 0, 4.3711387e-10, 0.01, -8.7422775e-10, 0.01, -4.3711387e-10, 0.47491455, -0.2418518, -0.69159317)
 
 [node name="CanvasLayer" parent="Jugador/Node2D" parent_id_path=PackedInt32Array(212553440, 2102388130) index="0" unique_id=1482110964]
 layer = 10
@@ -383,6 +409,16 @@ material = SubResource("ShaderMaterial_xrivr")
 
 [node name="VBoxContainer" parent="Jugador/Node2D/CanvasLayer/Control" parent_id_path=PackedInt32Array(212553440, 2102388130, 968487047) index="1" unique_id=1976221300]
 theme_override_constants/separation = 80
+
+[node name="reiniciar" type="Button" parent="Jugador/Node2D/CanvasLayer/Control/VBoxContainer" index="4" unique_id=994609533]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("3_cekhq")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_cjdqc")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_jf1qn")
+theme_override_styles/hover = SubResource("StyleBoxFlat_5lcxy")
+text = "Reinciar"
 
 [node name="ConfirmarSalir" type="Control" parent="Jugador/Node2D/CanvasLayer" index="1" unique_id=1499653716]
 visible = false
@@ -491,7 +527,7 @@ offset_right = 380.0
 offset_bottom = 324.5
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_styles/panel = SubResource("StyleBoxFlat_cjdqc")
+theme_override_styles/panel = SubResource("StyleBoxFlat_7bf7e")
 metadata/_edit_use_anchors_ = true
 
 [node name="Cerrar" type="Button" parent="Jugador/Node2D/CanvasLayer/Ajustes" unique_id=1119646534]
@@ -669,7 +705,7 @@ offset_right = 651.5
 offset_bottom = 324.5
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_styles/panel = SubResource("StyleBoxFlat_cjdqc")
+theme_override_styles/panel = SubResource("StyleBoxFlat_7bf7e")
 
 [node name="Cerrar" type="Button" parent="Jugador/Node2D/CanvasLayer/Controles" unique_id=1448530637]
 process_mode = 2
@@ -971,10 +1007,14 @@ transform = Transform3D(0.7490637, -1.1310547e-07, 1.1310547e-07, -1.1310547e-07
 stream = ExtResource("3_pudgd")
 
 [node name="SpotLight3D2" type="SpotLight3D" parent="." unique_id=1057964573]
-transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 60.597713, 16.19852, -13.822469)
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 59.506413, 16.479439, -10.846611)
+spot_range = 7.16499
+
+[node name="SpotLight3D" type="SpotLight3D" parent="." unique_id=1384055372]
+transform = Transform3D(0, -1, 0, 0.077014126, 0, 0.99703, -0.99703, 0, 0.077014126, 6.3766646, 1.4884958, 31.826435)
 
 [node name="LinternaSuelo" parent="." unique_id=1877330075 instance=ExtResource("4_tgavs")]
-transform = Transform3D(-1.8957648, 2.8625254e-07, 0.6527642, -3.027466e-07, -2.005, 0, 0.6527642, -9.856466e-08, 1.8957648, 59.449783, 12.642885, -13.201355)
+transform = Transform3D(-1.8957648, 2.8625254e-07, 0.6527642, -3.027466e-07, -2.005, 0, 0.6527642, -9.856466e-08, 1.8957648, 59.449783, 12.894677, -11.336074)
 
 [node name="llave" parent="." unique_id=2023737183 instance=ExtResource("6_tbg6u")]
 transform = Transform3D(0, -1, 0, 1, 0, 0, 0, 0, 1, 6.3766646, -0.9952249, 32.438614)
@@ -1169,6 +1209,14 @@ theme_override_styles/read_only = SubResource("StyleBoxFlat_os015")
 theme_override_styles/focus = SubResource("StyleBoxFlat_6t4da")
 backspace_deletes_composite_character_enabled = true
 
+[node name="BotonGuardar" type="Button" parent="PantallaFinal"]
+offset_left = 667.0
+offset_top = 365.0
+offset_right = 997.0
+offset_bottom = 415.0
+theme_override_font_sizes/font_size = 22
+text = "Guardar puntaje"
+
 [node name="MensajesAlJugador" type="CanvasLayer" parent="." unique_id=1567250344]
 
 [node name="Label" type="Label" parent="MensajesAlJugador" unique_id=1624481220]
@@ -1200,12 +1248,14 @@ parameters/looping = false
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 61.528816, 10.685165, -31.253382)
 
 [node name="llave_reja" parent="." unique_id=1525817767 instance=ExtResource("61_llavereja")]
-transform = Transform3D(-4.3711387e-10, -0.01, 0, 0.01, -4.3711387e-10, 0, 0, 0, 0.01, 49.300026, 0.2745586, 48.500584)
+transform = Transform3D(-4.3711387e-10, -0.02104896, 0, 0.01, -9.200793e-10, 0, 0, 0, 0.01904794, 49.181324, 0.2745586, 48.500584)
 
 [node name="llave regencia" parent="." unique_id=855459215 instance=ExtResource("48_7bf7e")]
-transform = Transform3D(-7.8680495e-10, -0.018, 0, 0.018, -7.8680495e-10, 0, 0, 0, 0.018, 167.00703, 1.36544, 38.991436)
+transform = Transform3D(-7.8680495e-10, -0.018, 0, 0.018, -7.8680495e-10, 0, 0, 0, 0.018, 167.43687, 1.3789016, 39.11654)
 
 [connection signal="pressed" from="Jugador/Node2D/CanvasLayer/Control/VBoxContainer/controles" to="Jugador/Node2D/CanvasLayer/Control" method="_on_controles_pressed"]
+[connection signal="pressed" from="Jugador/Node2D/CanvasLayer/Control/VBoxContainer/reiniciar" to="Jugador/Node2D/CanvasLayer/Control" method="_on_salir_2_pressed"]
+[connection signal="pressed" from="Jugador/Node2D/CanvasLayer/Control/VBoxContainer/reiniciar" to="Jugador/Node2D/CanvasLayer/Control" method="_on_reiniciar_pressed"]
 [connection signal="pressed" from="Jugador/Node2D/CanvasLayer/ConfirmarSalir/Si" to="Jugador/Node2D/CanvasLayer/ConfirmarSalir" method="_on_si_pressed"]
 [connection signal="pressed" from="Jugador/Node2D/CanvasLayer/ConfirmarSalir/No" to="Jugador/Node2D/CanvasLayer/ConfirmarSalir" method="_on_no_pressed"]
 [connection signal="pressed" from="Jugador/Node2D/CanvasLayer/Ajustes/Cerrar" to="Jugador/Node2D/CanvasLayer/Ajustes" method="_on_cerrar_pressed"]
@@ -1215,6 +1265,7 @@ transform = Transform3D(-7.8680495e-10, -0.018, 0, 0.018, -7.8680495e-10, 0, 0, 
 [connection signal="pressed" from="Jugador/Node2D/CanvasLayer/Ajustes/Cont de Sliders y CheckBox/OcultarMostrar2/Ocultar2" to="Jugador/Node2D/CanvasLayer/Ajustes" method="_on_ocultar_2_pressed"]
 [connection signal="pressed" from="Jugador/Node2D/CanvasLayer/Ajustes/Cont de Sliders y CheckBox/OcultarMostrar2/Mostrar2" to="Jugador/Node2D/CanvasLayer/Ajustes" method="_on_mostrar_2_pressed"]
 [connection signal="pressed" from="Jugador/Node2D/CanvasLayer/Controles/Cerrar" to="Jugador/Node2D/CanvasLayer/Controles" method="_on_cerrar_pressed"]
+[connection signal="pressed" from="PantallaFinal/BotonGuardar" to="PantallaFinal" method="_on_boton_guardar_pressed"]
 [connection signal="pressed" from="PantallaFinal/IntentarDeNuevo" to="PantallaFinal" method="_on_intentar_de_nuevo_pressed"]
 [connection signal="pressed" from="PantallaFinal/VolverAlMenu" to="PantallaFinal" method="_on_volver_al_menu_pressed"]
 

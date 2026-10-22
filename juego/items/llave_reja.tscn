@@ -29,7 +29,7 @@ size = Vector3(20.480347, 135.71439, 54.93811)
 transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 0, 0, 0)
 
 [node name="Area3D" type="Area3D" parent="." unique_id=1200179582]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+transform = Transform3D(0.29999995, 0, 0, 0, 0.29999998, 0, 0, 0, 0.29999995, 0, 0, 0)
 script = ExtResource("1_4yf1a")
 icono = ExtResource("2_sjxpx")
 
@@ -58,5 +58,5 @@ skeleton = NodePath("../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_5ijdq")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=1277021542]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.777405, 0.5978546, -3.2233276)
+transform = Transform3D(0.85, 0, 0, 0, 0.85, 0, 0, 0, 0.85, -5.777405, 0.5978546, -3.2233276)
 shape = SubResource("BoxShape3D_6lc8n")
