@@ -14,7 +14,7 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 
 [application]
 
-config/name="Escapa De La 35 (1)"
+config/name="Escapa De La 35"
 run/main_scene="uid://kuqym73bmrhi"
 config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="uid://isuogapjgjfh"

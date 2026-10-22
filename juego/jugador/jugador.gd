@@ -21,6 +21,10 @@ extends CharacterBody3D
 @export var rotacion_llave_mano: Vector3 = Vector3(-90, 0, 180)
 @export var altura_llave_suelo: float = 0.064
 
+# Herramientas en mano (llaves y ganzúa): se ponen en el mismo lugar y con el mismo
+# tamaño que la linterna. Si las querés más chicas/grandes todas juntas, tocá esto.
+@export var ajuste_tamano_mano: float = 1.0
+
 @export var distancia_tirar: float = 1.5
 @export var altura_sobre_suelo: float = 0.1
 
@@ -57,8 +61,61 @@ func _ready() -> void:
 	_preparar_llave_reja_en_mano()
 	_preparar_llave_regencia_en_mano()
 	_preparar_ganzua_en_mano()
+	_igualar_herramientas_en_mano()
 
 	call_deferred("_agregar_item_inicial")
+
+
+# Caja que ocupa un modelo, medida en el espacio de la cámara (lo que ve el jugador).
+func _caja_en_espacio_camara(modelo: Node3D) -> AABB:
+	var a_camara := camara.global_transform.affine_inverse()
+	var caja := AABB()
+	var primera := true
+
+	for nodo in modelo.find_children("*", "MeshInstance3D", true, false):
+		var malla := nodo as MeshInstance3D
+		if malla == null or malla.mesh == null or not malla.visible:
+			continue
+
+		var caja_malla: AABB = (a_camara * malla.global_transform) * malla.mesh.get_aabb()
+		if primera:
+			caja = caja_malla
+			primera = false
+		else:
+			caja = caja.merge(caja_malla)
+
+	return caja
+
+
+# Deja todas las llaves y la ganzúa centradas donde está la linterna y con su mismo
+# tamaño (el lado más largo mide lo mismo). La rotación de cada una no se toca.
+func _igualar_herramientas_en_mano() -> void:
+	var caja_linterna := _caja_en_espacio_camara(modelo_linterna)
+	if caja_linterna.size == Vector3.ZERO:
+		return
+
+	var ancla := caja_linterna.get_center()
+	var tamano := caja_linterna.get_longest_axis_size() * ajuste_tamano_mano
+
+	for modelo in [modelo_llave, modelo_llave_reja, modelo_llave_regencia, modelo_ganzua]:
+		_acomodar_en_mano(modelo as Node3D, ancla, tamano)
+
+
+func _acomodar_en_mano(modelo: Node3D, ancla: Vector3, tamano: float) -> void:
+	# 1) Escala 1 y centrado provisorio en el ancla, para medir el modelo.
+	var rotacion := modelo.basis.orthonormalized()
+	modelo.basis = rotacion
+	modelo.position = ancla
+
+	var caja := _caja_en_espacio_camara(modelo)
+	var largo := caja.get_longest_axis_size()
+	if largo <= 0.0001:
+		return
+
+	# 2) Escala para que mida lo mismo que la linterna y posición para que su centro caiga en el ancla.
+	var factor := tamano / largo
+	modelo.basis = rotacion.scaled(Vector3.ONE * factor)
+	modelo.position = ancla - (caja.get_center() - ancla) * factor
 
 
 func _preparar_llave_en_mano() -> void:

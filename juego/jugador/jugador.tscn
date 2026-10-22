@@ -55,14 +55,14 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_tkcrs")
 transform = Transform3D(1.5, -2.2649371e-07, 2.2649371e-07, -2.2649371e-07, -1.5, 4.0657583e-21, 2.2649371e-07, -3.4199606e-14, -1.5, 0.43832842, -0.259502, -0.43518722)
 
 [node name="llave" parent="Cabeza/Camera3D" unique_id=2048800679 instance=ExtResource("8_yl2o6")]
-transform = Transform3D(1.5, 0, -6.556708e-08, -6.556708e-08, 2.8660283e-15, -1.5, 0, 1.5, 2.8660283e-15, 0.5750686, -0.2613846, -0.7567798)
+transform = Transform3D(1.5, 0, -6.556708e-08, -6.556708e-08, 2.8660283e-15, -1.5, 0, 1.5, 2.8660283e-15, 0.5750686, -0.2613846, -0.6217143)
 
 [node name="ganzua" parent="Cabeza/Camera3D" unique_id=1006482489 instance=ExtResource("5_uo3ig")]
 transform = Transform3D(-1, -8.742278e-08, 3.821371e-15, 0, -4.371139e-08, -1, 8.742278e-08, -1, 4.371139e-08, 0.594, -0.303, -0.55)
 visible = false
 
 [node name="llave_reja" parent="Cabeza/Camera3D" unique_id=1357924680 instance=ExtResource("9_llavereja")]
-transform = Transform3D(-0.005, 7.5497897e-10, 3.300118e-17, 0, -2.1855694e-10, 0.005, 7.5497897e-10, 0.005, 2.1855694e-10, 0.5184728, -0.095467925, -0.5741052)
+transform = Transform3D(-0.01, 1.5099579e-09, 6.600236e-17, 0, -4.3711387e-10, 0.01, 1.5099579e-09, 0.01, 4.3711387e-10, 0.42666197, -0.19906473, -0.40653378)
 
 [node name="SpotLight3D" type="SpotLight3D" parent="Cabeza/Camera3D" unique_id=1591149388]
 transform = Transform3D(1, 0, 0, 0, 1, 4.743386e-22, 0, -4.743386e-22, 1, 0.4393829, -0.25113702, -1.1017106)
@@ -75,7 +75,7 @@ target_position = Vector3(0, 0, -2.5)
 script = ExtResource("4_xreb1")
 
 [node name="llave_regencia" parent="Cabeza/Camera3D" unique_id=1209904720 instance=ExtResource("8_frsvm")]
-transform = Transform3D(0.01, 0, 0, 0, -4.3711387e-10, -0.01, 0, 0.01, -4.3711387e-10, 0.6302167, -0.17506355, -0.7529954)
+transform = Transform3D(0.01, 0, 0, 0, -4.3711387e-10, -0.01, 0, 0.01, -4.3711387e-10, 0.6302167, -0.17506355, -0.37922698)
 visible = false
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1414320584]
