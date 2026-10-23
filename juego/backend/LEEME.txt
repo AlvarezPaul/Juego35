@@ -18,3 +18,14 @@ esté exactamente en la ruta indicada.
 
 no soy yo chicos quien puso esto :VVVVVVVVV
  ya esta echo ATT: IAn
+
+
+SI XAMPP ESTA APAGADO
+El puntaje no se pierde: el juego lo guarda en la PC y lo manda a la base solo, la proxima
+vez que el servidor este prendido (al abrir una partida o al guardar otro puntaje).
+Los archivos quedan en la carpeta de datos del juego (user://):
+  - puntajes_pendientes.json  (cola que todavia no llego a la base)
+  - puntajes_locales.csv      (copia para abrir con Excel)
+En Godot: menu Proyecto > Abrir carpeta de datos de usuario.
+Despues de actualizar el juego, volve a copiar guardar_puntaje.php a htdocs/juego35/
+(para que respete la fecha original de los puntajes guardados sin conexion).

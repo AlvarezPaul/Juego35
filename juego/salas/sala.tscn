@@ -1213,8 +1213,13 @@ backspace_deletes_composite_character_enabled = true
 offset_left = 667.0
 offset_top = 365.0
 offset_right = 997.0
-offset_bottom = 415.0
-theme_override_font_sizes/font_size = 22
+offset_bottom = 425.0
+theme_override_constants/outline_size = 25
+theme_override_fonts/font = ExtResource("17_f1ihl")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/normal = SubResource("StyleBoxFlat_13qdw")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_b1lj4")
+theme_override_styles/hover = SubResource("StyleBoxFlat_njqwk")
 text = "Guardar puntaje"
 
 [node name="MensajesAlJugador" type="CanvasLayer" parent="." unique_id=1567250344]

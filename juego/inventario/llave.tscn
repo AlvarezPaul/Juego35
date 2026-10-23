@@ -2,7 +2,7 @@
 
 [ext_resource type="ArrayMesh" uid="uid://cd0ll4u3r32q6" path="res://salas/key.obj" id="1_7bknt"]
 [ext_resource type="Script" uid="uid://bti2i5yeismck" path="res://inventario/caealsuelo.gd" id="1_cr5s1"]
-[ext_resource type="Texture2D" uid="uid://biavhjorb8j16" path="res://inventario/images.jpg" id="3_icono"]
+[ext_resource type="Texture2D" path="res://inventario/iconos/icono_llave.png" id="3_icono"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tbg6u"]
 albedo_color = Color(0.78, 0.62, 0.22, 1)

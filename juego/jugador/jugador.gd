@@ -16,14 +16,14 @@ extends CharacterBody3D
 @export var icono_linterna: Texture2D
 
 
-@export var posicion_llave_mano: Vector3 = Vector3(0.35, -0.20, -0.55)
-@export var escala_llave_mano: float = 0.45
-@export var rotacion_llave_mano: Vector3 = Vector3(-90, 0, 180)
 @export var altura_llave_suelo: float = 0.064
 
-# Herramientas en mano (llaves y ganzúa): se ponen en el mismo lugar y con el mismo
-# tamaño que la linterna. Si las querés más chicas/grandes todas juntas, tocá esto.
+# Herramientas en mano (llaves y ganzúa): se ponen en el mismo lugar, con el mismo
+# tamaño y orientación (acostadas, dientes hacia abajo), tomando como referencia la linterna.
+# Si las querés más chicas/grandes todas juntas, tocá ajuste_tamano_mano.
 @export var ajuste_tamano_mano: float = 1.0
+# Giro extra (grados, en X/Y/Z de la cámara) para todas por igual. 0 = como la linterna.
+@export var inclinacion_herramientas: Vector3 = Vector3.ZERO
 
 @export var distancia_tirar: float = 1.5
 @export var altura_sobre_suelo: float = 0.1
@@ -66,9 +66,9 @@ func _ready() -> void:
 	call_deferred("_agregar_item_inicial")
 
 
-# Caja que ocupa un modelo, medida en el espacio de la cámara (lo que ve el jugador).
-func _caja_en_espacio_camara(modelo: Node3D) -> AABB:
-	var a_camara := camara.global_transform.affine_inverse()
+# Caja que ocupa un modelo, medida en el espacio que define "desde"
+# (es la INVERSA de la transformación del espacio en el que querés medir).
+func _caja_del_modelo(modelo: Node3D, desde: Transform3D) -> AABB:
 	var caja := AABB()
 	var primera := true
 
@@ -77,7 +77,7 @@ func _caja_en_espacio_camara(modelo: Node3D) -> AABB:
 		if malla == null or malla.mesh == null or not malla.visible:
 			continue
 
-		var caja_malla: AABB = (a_camara * malla.global_transform) * malla.mesh.get_aabb()
+		var caja_malla: AABB = (desde * malla.global_transform) * malla.mesh.get_aabb()
 		if primera:
 			caja = caja_malla
 			primera = false
@@ -87,8 +87,17 @@ func _caja_en_espacio_camara(modelo: Node3D) -> AABB:
 	return caja
 
 
-# Deja todas las llaves y la ganzúa centradas donde está la linterna y con su mismo
-# tamaño (el lado más largo mide lo mismo). La rotación de cada una no se toca.
+# Caja del modelo en el espacio de la cámara (lo que ve el jugador).
+func _caja_en_espacio_camara(modelo: Node3D) -> AABB:
+	return _caja_del_modelo(modelo, camara.global_transform.affine_inverse())
+
+
+# Deja todas las llaves y la ganzúa IGUALES en la mano:
+#  - mismo tamaño que la linterna (el lado más largo mide lo mismo),
+#  - mismo lugar (centradas donde está la linterna, misma altura y distancia),
+#  - misma orientación que la linterna: acostadas, apuntando hacia adelante,
+#    con los dientes (la parte que entra en la cerradura) mirando hacia abajo.
+# La escala y rotación que tenga cada escena (.tscn) se ignora a propósito.
 func _igualar_herramientas_en_mano() -> void:
 	var caja_linterna := _caja_en_espacio_camara(modelo_linterna)
 	if caja_linterna.size == Vector3.ZERO:
@@ -97,13 +106,46 @@ func _igualar_herramientas_en_mano() -> void:
 	var ancla := caja_linterna.get_center()
 	var tamano := caja_linterna.get_longest_axis_size() * ajuste_tamano_mano
 
-	for modelo in [modelo_llave, modelo_llave_reja, modelo_llave_regencia, modelo_ganzua]:
-		_acomodar_en_mano(modelo as Node3D, ancla, tamano)
+	# [modelo, hacia dónde apunta la PUNTA, hacia dónde miran los DIENTES]
+	# (las dos direcciones en el espacio propio de cada modelo)
+	var herramientas := [
+		[modelo_llave, Vector3.DOWN, Vector3.FORWARD],
+		[modelo_llave_reja, Vector3.DOWN, Vector3.FORWARD],
+		[modelo_llave_regencia, Vector3.DOWN, Vector3.FORWARD],
+		[modelo_ganzua, Vector3.UP, Vector3.BACK],
+	]
+
+	for h in herramientas:
+		_acomodar_en_mano(h[0] as Node3D, h[1], h[2], ancla, tamano)
 
 
-func _acomodar_en_mano(modelo: Node3D, ancla: Vector3, tamano: float) -> void:
-	# 1) Escala 1 y centrado provisorio en el ancla, para medir el modelo.
-	var rotacion := modelo.basis.orthonormalized()
+# Rotación que deja el modelo acostado: la punta hacia adelante (como la linterna)
+# y los dientes hacia abajo.
+func _orientacion_en_mano(punta_local: Vector3, dientes_local: Vector3) -> Basis:
+	var punta := punta_local.normalized()
+	# Los dientes tienen que ser perpendiculares a la punta.
+	var dientes := (dientes_local - punta * dientes_local.dot(punta)).normalized()
+
+	var atras := -punta                  # la cabeza de la llave queda hacia el jugador
+	var arriba := -dientes               # lo contrario de los dientes mira hacia arriba
+	var lado := arriba.cross(atras)      # completa la base
+	var local := Basis(lado, arriba, atras)
+	var rotacion := local.transposed()   # local -> espacio cámara
+
+	# Retoque opcional (en grados) por si querés girarlas un poco, todas por igual.
+	var retoque := Basis.from_euler(inclinacion_herramientas * (PI / 180.0))
+	return retoque * rotacion
+
+
+func _acomodar_en_mano(
+	modelo: Node3D,
+	punta_local: Vector3,
+	dientes_local: Vector3,
+	ancla: Vector3,
+	tamano: float
+) -> void:
+	# 1) Orientación pareja, escala 1 y centrado provisorio en el ancla, para medir el modelo.
+	var rotacion := _orientacion_en_mano(punta_local, dientes_local)
 	modelo.basis = rotacion
 	modelo.position = ancla
 
@@ -136,13 +178,7 @@ func _preparar_llave_en_mano() -> void:
 		material.emission_energy_multiplier = 0.7
 		malla.material_override = material
 
-	modelo_llave.basis = Basis.from_euler(
-		rotacion_llave_mano * (PI / 180.0)
-	).scaled(Vector3.ONE * escala_llave_mano)
-
-	# El origen de la llave es su centro, así que va directo a la posición de la mano.
-	modelo_llave.position = posicion_llave_mano
-
+	# Tamaño, posición y rotación: los pone _igualar_herramientas_en_mano().
 	modelo_llave.visible = false
 
 func _preparar_llave_reja_en_mano() -> void:
@@ -162,15 +198,7 @@ func _preparar_llave_reja_en_mano() -> void:
 		material.emission_energy_multiplier = 0.5
 		malla_reja.material_override = material
 
-	# --- TAMAÑO Y POSICIÓN EN LA MANO ---
-	var escala_reja_mano := 0.015  # Bajalo a 0.01 si sigue viéndose grande
-	var posicion_reja_mano := Vector3(0.35, -0.25, -0.75) # Z más negativo = más lejos de la cara
-
-	modelo_llave_reja.basis = Basis.from_euler(
-		rotacion_llave_mano * (PI / 180.0)
-	).scaled(Vector3.ONE * escala_reja_mano)
-
-	modelo_llave_reja.position = posicion_reja_mano
+	# Tamaño, posición y rotación: los pone _igualar_herramientas_en_mano().
 	modelo_llave_reja.visible = false
 
 func _preparar_llave_regencia_en_mano() -> void:

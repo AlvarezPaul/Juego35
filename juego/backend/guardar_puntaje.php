@@ -39,11 +39,24 @@ try {
         [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]
     );
 
-    $stmt = $pdo->prepare('INSERT INTO puntajes (nombre, tiempo) VALUES (:nombre, :tiempo)');
-    $stmt->execute([
-        ':nombre' => $nombre,
-        ':tiempo' => round((float)$tiempo, 2)
-    ]);
+    // Si el puntaje se guardó antes sin conexión, el juego manda la fecha original.
+    $fecha = $data['fecha'] ?? null;
+    $fechaValida = is_string($fecha) && preg_match('/^\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}$/', $fecha);
+
+    if ($fechaValida) {
+        $stmt = $pdo->prepare('INSERT INTO puntajes (nombre, tiempo, fecha) VALUES (:nombre, :tiempo, :fecha)');
+        $stmt->execute([
+            ':nombre' => $nombre,
+            ':tiempo' => round((float)$tiempo, 2),
+            ':fecha' => $fecha
+        ]);
+    } else {
+        $stmt = $pdo->prepare('INSERT INTO puntajes (nombre, tiempo) VALUES (:nombre, :tiempo)');
+        $stmt->execute([
+            ':nombre' => $nombre,
+            ':tiempo' => round((float)$tiempo, 2)
+        ]);
+    }
 
     echo json_encode([
         'status' => 'success',
