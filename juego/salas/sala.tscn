@@ -50,6 +50,10 @@
 [ext_resource type="Script" uid="uid://bqo3hti17uyho" path="res://salas/label.gd" id="62_timerlabel"]
 
 [sub_resource type="Environment" id="Environment_7bf7e"]
+background_mode = 1
+background_color = Color(0.043039158, 0.04303915, 0.04303915, 1)
+ambient_light_color = Color(0.036860984, 0.036860976, 0.036860976, 1)
+ambient_light_sky_contribution = 0.0
 
 [sub_resource type="Animation" id="Animation_vwwu6"]
 length = 0.001
@@ -340,9 +344,8 @@ corner_radius_bottom_left = 10
 [node name="sala" type="Node3D" unique_id=1955352439]
 script = ExtResource("1_bl8tx")
 
-[node name="HTTPRequest" type="HTTPRequest" parent="."]
+[node name="HTTPRequest" type="HTTPRequest" parent="." unique_id=485033201]
 process_mode = 3
-
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=615291951]
 environment = SubResource("Environment_7bf7e")
@@ -1209,7 +1212,7 @@ theme_override_styles/read_only = SubResource("StyleBoxFlat_os015")
 theme_override_styles/focus = SubResource("StyleBoxFlat_6t4da")
 backspace_deletes_composite_character_enabled = true
 
-[node name="BotonGuardar" type="Button" parent="PantallaFinal"]
+[node name="BotonGuardar" type="Button" parent="PantallaFinal" unique_id=628634356]
 offset_left = 667.0
 offset_top = 365.0
 offset_right = 997.0
@@ -1270,9 +1273,9 @@ transform = Transform3D(-7.8680495e-10, -0.018, 0, 0.018, -7.8680495e-10, 0, 0, 
 [connection signal="pressed" from="Jugador/Node2D/CanvasLayer/Ajustes/Cont de Sliders y CheckBox/OcultarMostrar2/Ocultar2" to="Jugador/Node2D/CanvasLayer/Ajustes" method="_on_ocultar_2_pressed"]
 [connection signal="pressed" from="Jugador/Node2D/CanvasLayer/Ajustes/Cont de Sliders y CheckBox/OcultarMostrar2/Mostrar2" to="Jugador/Node2D/CanvasLayer/Ajustes" method="_on_mostrar_2_pressed"]
 [connection signal="pressed" from="Jugador/Node2D/CanvasLayer/Controles/Cerrar" to="Jugador/Node2D/CanvasLayer/Controles" method="_on_cerrar_pressed"]
-[connection signal="pressed" from="PantallaFinal/BotonGuardar" to="PantallaFinal" method="_on_boton_guardar_pressed"]
 [connection signal="pressed" from="PantallaFinal/IntentarDeNuevo" to="PantallaFinal" method="_on_intentar_de_nuevo_pressed"]
 [connection signal="pressed" from="PantallaFinal/VolverAlMenu" to="PantallaFinal" method="_on_volver_al_menu_pressed"]
+[connection signal="pressed" from="PantallaFinal/BotonGuardar" to="PantallaFinal" method="_on_boton_guardar_pressed"]
 
 [editable path="Jugador"]
 [editable path="Jugador/Cabeza/Camera3D/linterna"]

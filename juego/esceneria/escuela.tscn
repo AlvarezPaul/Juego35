@@ -11,7 +11,6 @@
 [ext_resource type="PackedScene" uid="uid://bchj0aeaepgjy" path="res://esceneria/aularara.tscn" id="8_ddsui"]
 [ext_resource type="PackedScene" uid="uid://b3f2q23pee0wq" path="res://esceneria/buffet.tscn" id="9_73635"]
 [ext_resource type="PackedScene" uid="uid://bfrkn2qe3068d" path="res://esceneria/red.tscn" id="10_bfrkn"]
-[ext_resource type="PackedScene" uid="uid://byjaehmv1t72i" path="res://puerta/puerta.tscn" id="11_uapj5"]
 [ext_resource type="PackedScene" uid="uid://dowur2vef7tna" path="res://esceneria/puertaverde.tscn" id="12_srsxd"]
 [ext_resource type="PackedScene" uid="uid://dnt32otq40rk3" path="res://puerta/reja.tscn" id="14_flxb5"]
 [ext_resource type="PackedScene" uid="uid://bx127jv3bdyl3" path="res://esceneria/muebles/mesa.tscn" id="15_3k0xs"]
@@ -7220,11 +7219,11 @@ surface_material_override/0 = SubResource("StandardMaterial3D_rc72u")
 [node name="Puertabloqueada9" parent="." unique_id=2134288162 instance=ExtResource("5_yujmg")]
 transform = Transform3D(-2.279549e-07, 0, 5.215, 0, 5.215, 0, -5.215, 0, -2.279549e-07, -4.8955574, 46.22161, 193.60751)
 
-[node name="puerta" parent="." unique_id=510996679 instance=ExtResource("11_uapj5")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.225576, 48.30235, 164.40027)
+[node name="Puertabloqueada27" parent="." unique_id=1869136798 instance=ExtResource("5_yujmg")]
+transform = Transform3D(5.215, 0, 0, 0, 5.565, 0, 0, 0, 5.27, -28.644762, 47.25371, 163.22688)
 
-[node name="bisagra" parent="puerta" index="1" unique_id=574221250]
-transform = Transform3D(11, 0, 0, 0, 11, 0, 0, 0, 11, -0.5499878, -1.1963501, 7.8986206)
+[node name="Puertabloqueada28" parent="." unique_id=2041928666 instance=ExtResource("5_yujmg")]
+transform = Transform3D(5.215, 0, 0, 0, 5.565, 0, 0, 0, 5.27, -28.644762, 47.25371, 182.38763)
 
 [node name="MeshInstance3D88" type="MeshInstance3D" parent="." unique_id=64622085]
 transform = Transform3D(2.33, 0, 0, 0, -7.3448246e-07, -1.955, 0, 16.803, -8.545577e-08, -29.133965, 58.475452, 184.13182)
@@ -7248,12 +7247,6 @@ transform = Transform3D(2.27, 0, 0, 0, 24.895702, 0, 0, 0, 1.6776526, -29.042847
 mesh = SubResource("BoxMesh_ii0hb")
 skeleton = NodePath("../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_rc72u")
-
-[node name="puerta2" parent="." unique_id=1137840300 instance=ExtResource("11_uapj5")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.225576, 48.30235, 183.57239)
-
-[node name="bisagra" parent="puerta2" index="1" unique_id=574221250]
-transform = Transform3D(11, 0, 0, 0, 11, 0, 0, 0, 11, -0.5499878, -1.1963501, 7.8986206)
 
 [node name="Puertabloqueada10" parent="." unique_id=729149517 instance=ExtResource("5_yujmg")]
 transform = Transform3D(-2.0850556, 0, 0.06492977, 0, 4.828808, 0, -0.0299024, 0, -4.5274677, -167.0789, 45.896545, 181.76425)
@@ -7951,6 +7944,4 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.6799164, 23.50821, -101.11
 mesh = SubResource("BoxMesh_b1lj4")
 surface_material_override/0 = SubResource("StandardMaterial3D_njqwk")
 
-[editable path="puerta"]
-[editable path="puerta2"]
 [editable path="Node3D13"]
