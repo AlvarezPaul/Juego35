@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://bti2i5yeismck" path="res://inventario/caealsuelo.gd" id="1_gbwtw"]
 [ext_resource type="PackedScene" uid="uid://bavenhmlmlucf" path="res://glb_modelos/linterna.glb" id="2_fhu82"]
-[ext_resource type="Texture2D" uid="uid://b5o2l4ofmi2yr" path="res://inventario/descarga.jpg" id="2_qax00"]
+[ext_resource type="Texture2D" path="res://inventario/iconos/icono_linterna.png" id="2_qax00"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_1efro"]
 radius = 0.3

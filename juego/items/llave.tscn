@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dritbipkbhcpd"]
 
 [ext_resource type="Script" uid="uid://bti2i5yeismck" path="res://inventario/caealsuelo.gd" id="1_q5oiw"]
-[ext_resource type="Texture2D" uid="uid://cjerlabfhc6ex" path="res://fotos/WhatsApp Image 2026-10-16 at 15.40.48.jpeg" id="2_q5oiw"]
+[ext_resource type="Texture2D" path="res://inventario/iconos/icono_llave.png" id="2_q5oiw"]
 [ext_resource type="ArrayMesh" uid="uid://cd0ll4u3r32q6" path="res://salas/key.obj" id="3_eu11u"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tbg6u"]

@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://catkwmfvq0q07"]
 
 [ext_resource type="Script" uid="uid://ca5o18bows5e5" path="res://items/llave_reja.gd" id="1_4yf1a"]
-[ext_resource type="Texture2D" uid="uid://dt8vdtcbmephj" path="res://fotos/Gemini_Generated_Image_giofbygiofbygiof.jpg" id="2_sjxpx"]
+[ext_resource type="Texture2D" path="res://inventario/iconos/icono_llave_reja.png" id="2_sjxpx"]
 
 [sub_resource type="TubeTrailMesh" id="TubeTrailMesh_sjxpx"]
 
