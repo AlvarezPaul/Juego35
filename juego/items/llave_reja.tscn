@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://catkwmfvq0q07"]
 
 [ext_resource type="Script" uid="uid://ca5o18bows5e5" path="res://items/llave_reja.gd" id="1_4yf1a"]
-[ext_resource type="Texture2D" path="res://inventario/iconos/icono_llave_reja.png" id="2_sjxpx"]
+[ext_resource type="Texture2D" uid="uid://botrpbppa072f" path="res://inventario/iconos/icono_llave_reja.png" id="2_sjxpx"]
 
 [sub_resource type="TubeTrailMesh" id="TubeTrailMesh_sjxpx"]
 
@@ -23,7 +23,7 @@ roughness = 0.45
 rings = 4
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_6lc8n"]
-size = Vector3(20.480347, 135.71439, 54.93811)
+size = Vector3(20.480347, 254.78427, 100.50492)
 
 [node name="llave_reja" type="Node3D" unique_id=1090325413]
 transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 0, 0, 0)
@@ -34,29 +34,29 @@ script = ExtResource("1_4yf1a")
 icono = ExtResource("2_sjxpx")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Area3D" unique_id=376441319]
-transform = Transform3D(17.899384, 0, 0, 0, 80.647095, 0, 0, 0, 12.4436455, -5.136282, -20.96366, -3.5731583)
+transform = Transform3D(24.09056, 0, 0, 0, 134.70427, 0, 0, 0, 20.5666, -5.1650195, -24.513634, 0.6680477)
 mesh = SubResource("TubeTrailMesh_sjxpx")
 skeleton = NodePath("../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_5ijdq")
 
 [node name="MeshInstance3D2" type="MeshInstance3D" parent="Area3D" unique_id=1494628937]
-transform = Transform3D(17.899384, 0, 0, 0, -1.1357425e-06, -12.4436455, 0, 25.98276, -5.4392905e-07, -5.136282, -31.260723, -15.556016)
+transform = Transform3D(24.09056, 0, 0, 0, -1.8771317e-06, -20.78454, 0, 42.943775, -9.085209e-07, -5.1650195, -41.712772, -19.136978)
 mesh = SubResource("TubeTrailMesh_m5hrb")
 skeleton = NodePath("../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_dt6jg")
 
 [node name="MeshInstance3D3" type="MeshInstance3D" parent="Area3D" unique_id=1589907936]
-transform = Transform3D(17.899384, 0, 0, 0, -1.0036892e-06, -12.4436455, 0, 22.961733, -5.4392905e-07, -5.136282, -48.973907, -17.45411)
+transform = Transform3D(24.09056, 0, 0, 0, -1.6588774e-06, -20.78454, 0, 37.950684, -9.085209e-07, -5.1650195, -71.29896, -22.274107)
 mesh = SubResource("TubeTrailMesh_5sy4h")
 skeleton = NodePath("../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_dt6jg")
 
 [node name="MeshInstance3D4" type="MeshInstance3D" parent="Area3D" unique_id=321304337]
-transform = Transform3D(1.3113415e-06, -42.275417, -2.622683e-06, -29.999998, -1.8479171e-06, 0, -1.1464113e-13, 3.6958343e-06, -29.999998, -4.803937, 38.52832, -3.697935)
+transform = Transform3D(2.1903247e-06, -56.897964, -7.4868826e-06, -50.108795, -2.4870885e-06, 2.2399334e-20, -3.3073e-13, 8.5913525e-06, -49.583393, -4.7177215, 74.85542, 0.46182057)
 mesh = SubResource("TorusMesh_8ruo1")
 skeleton = NodePath("../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_5ijdq")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=1277021542]
-transform = Transform3D(0.85, 0, 0, 0, 0.85, 0, 0, 0, 0.85, -5.777405, 0.5978546, -3.2233276)
+transform = Transform3D(0.84999996, 0, 0, 0, 0.8499999, 0, 0, 0, 0.84999996, -5.7774043, 13.015577, -0.936829)
 shape = SubResource("BoxShape3D_6lc8n")

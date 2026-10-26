@@ -1,7 +1,6 @@
 [gd_scene format=3 uid="uid://dritbipkbhcpd"]
 
 [ext_resource type="Script" uid="uid://bti2i5yeismck" path="res://inventario/caealsuelo.gd" id="1_q5oiw"]
-[ext_resource type="Texture2D" path="res://inventario/iconos/icono_llave.png" id="2_q5oiw"]
 [ext_resource type="ArrayMesh" uid="uid://cd0ll4u3r32q6" path="res://salas/key.obj" id="3_eu11u"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tbg6u"]
@@ -16,8 +15,6 @@ size = Vector3(0.3, 0.9, 0.45)
 
 [node name="Area3D" type="Area3D" parent="." unique_id=1755348829]
 script = ExtResource("1_q5oiw")
-nombre_item = "Llave"
-icono = ExtResource("2_q5oiw")
 
 [node name="Key" type="MeshInstance3D" parent="Area3D" unique_id=1287634691]
 transform = Transform3D(0.0063693, 0, 0, 0, 0.0063693, 0, 0, 0, 0.0063693, 0, -0.015556, 0.003691)

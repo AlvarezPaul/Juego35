@@ -39,7 +39,7 @@ blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_n48c0")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_n6pdx"]
-albedo_color = Color(0.41960785, 0.44705883, 0.5019608, 1)
+albedo_color = Color(0.3012769, 0.4842893, 0.48168683, 1)
 
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_l76rw"]
 data = PackedVector3Array(1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, 1, 1, 1, -1, 1, 1, 1, -1, 1, -1, 1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, 1, -1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1, -1, -1, 1, 1, -1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, 1, 1, 1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, -1)
@@ -48,7 +48,7 @@ data = PackedVector3Array(1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, 1, 1, 1, -1, 
 size = Vector3(0.28320313, 4.905182, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_13qdw"]
-albedo_color = Color(0.41960785, 0.44705883, 0.5019608, 1)
+albedo_color = Color(0.31853217, 0.47983068, 0.4849583, 1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_0b68t"]
 size = Vector3(0.28121948, 4.99292, 1)

@@ -6,7 +6,7 @@ var interactuable = true
 @export var animation_player: AnimationPlayer
 @export var texto_abrir: String = "Abrir con la E"
 @export var texto_cerrar: String = "Cerrar con la E"
-@export var texto_bloqueada: String = "Necesitas tener la llave en la mano"
+@export var texto_bloqueada: String = "Necesitas tener la llave de la salida en la mano."
 
 @export var requiere_llave: bool = true
 @export var nombre_llave: String = "Llave"
@@ -75,7 +75,7 @@ func interact():
 
 	# Para abrir, la llave tiene que estar en la mano
 	if not abierto and requiere_llave and not jugador_tiene_llave_en_mano():
-		print("Necesitas tener la llave en la mano.")
+		print("Necesitas tener la llave de la salida en la mano.")
 		actualizar_texto()
 		return
 

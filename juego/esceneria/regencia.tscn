@@ -375,10 +375,10 @@ mesh = SubResource("BoxMesh_vrkjw")
 surface_material_override/0 = SubResource("StandardMaterial3D_wrvh4")
 
 [node name="puerta_regencia" parent="." unique_id=1147577665 instance=ExtResource("6_nw5i3")]
-transform = Transform3D(1.7040592, 0, 0, 0, 1, 0, -7.1054274e-15, 0, 1.0144864, 14.555453, 3.2117758, -12.0588045)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.470602, 3.3051143, -12.139655)
 
 [node name="bisagra" parent="puerta_regencia" index="1" unique_id=1665898836]
-transform = Transform3D(1.9999998, 0, 0, 0, 4.945094, 0, 0, 0, 4.8273582, -1.9073486e-06, 0, 1.7398701)
+transform = Transform3D(4.9463687, 0, 0, 0, 4.7886667, 0, 0, 0, 4.8270392, -5.722046e-06, 0, 1.7398701)
 
 [editable path="mesa4"]
 [editable path="puerta_regencia"]

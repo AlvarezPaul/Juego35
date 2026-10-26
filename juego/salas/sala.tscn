@@ -1010,14 +1010,14 @@ transform = Transform3D(0.7490637, -1.1310547e-07, 1.1310547e-07, -1.1310547e-07
 stream = ExtResource("3_pudgd")
 
 [node name="SpotLight3D2" type="SpotLight3D" parent="." unique_id=1057964573]
-transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 59.506413, 16.479439, -10.846611)
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 59.506413, 16.479439, -12.284104)
 spot_range = 7.16499
 
 [node name="SpotLight3D" type="SpotLight3D" parent="." unique_id=1384055372]
 transform = Transform3D(0, -1, 0, 0.077014126, 0, 0.99703, -0.99703, 0, 0.077014126, 6.3766646, 1.4884958, 31.826435)
 
 [node name="LinternaSuelo" parent="." unique_id=1877330075 instance=ExtResource("4_tgavs")]
-transform = Transform3D(-1.8957648, 2.8625254e-07, 0.6527642, -3.027466e-07, -2.005, 0, 0.6527642, -9.856466e-08, 1.8957648, 59.449783, 12.894677, -11.336074)
+transform = Transform3D(-1.8957648, 2.8625252e-07, 0.6527642, 0.050237402, -1.9990534, 0.14590088, 0.6508281, 0.15430771, 1.8901421, 59.449783, 12.721793, -12.387813)
 
 [node name="llave" parent="." unique_id=2023737183 instance=ExtResource("6_tbg6u")]
 transform = Transform3D(0, -1, 0, 1, 0, 0, 0, 0, 1, 6.3766646, -0.9952249, 32.438614)

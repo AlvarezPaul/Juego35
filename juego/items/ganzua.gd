@@ -6,7 +6,7 @@ extends Area3D
 @export var nombre_item: String = "Ganzua"
 @export var icono: Texture2D
 @export var escena_item: PackedScene
-@export var texto_interaccion: String = "Agarrar con la E"
+@export var texto_interaccion: String = "Agarrar ganzua (E)"
 
 # Lo llama el RayCast del jugador cuando mirás el objeto y apretás E.
 func interact() -> void:
