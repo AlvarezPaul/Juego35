@@ -4,7 +4,7 @@ extends CanvasLayer
 @onready var boton_guardar: Button = $BotonGuardar
 @onready var http_request: HTTPRequest = get_node_or_null("../HTTPRequest")
 
-const URL_PHP := "http://localhost/juego35/guardar_puntaje.php"
+const URL_PHP := "https://TU-DIRECCION.ngrok-free.app/juego35/guardar_puntaje.php"
 
 # Si no hay servidor (XAMPP apagado, sin internet, etc.) el puntaje NO se pierde:
 # se guarda en la PC y se manda a la base de datos solo cuando el servidor responda.
@@ -61,7 +61,7 @@ func _on_boton_guardar_pressed() -> void:
 
 
 func _enviar_puntaje(datos: Dictionary) -> void:
-	var headers := PackedStringArray(["Content-Type: application/json"])
+	var headers := PackedStringArray(["Content-Type: application/json", "ngrok-skip-browser-warning: true"])
 	var error := http_request.request(
 		URL_PHP,
 		headers,
@@ -179,7 +179,7 @@ func _sincronizar_pendientes() -> void:
 	req.process_mode = Node.PROCESS_MODE_ALWAYS
 	add_child(req)
 
-	var headers := PackedStringArray(["Content-Type: application/json"])
+	var headers := PackedStringArray(["Content-Type: application/json", "ngrok-skip-browser-warning: true"])
 	while not pendientes.is_empty():
 		var error := req.request(URL_PHP, headers, HTTPClient.METHOD_POST, JSON.stringify(pendientes[0]))
 		if error != OK:

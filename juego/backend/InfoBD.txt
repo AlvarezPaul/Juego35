@@ -1,0 +1,7 @@
+Instalá XAMPP en C:\xampp.
+Abrí el Panel de Control de XAMPP y apretá Start en Apache y en MySQL.
+Entrá a http://localhost/phpmyadmin, andá a Importar, elegí crear_base.sql y apretá Importar.
+Creá la carpeta C:\xampp\htdocs\juego35 y copiá ahí guardar_puntaje.php. Revisá que el nombre no termine en .php.php.
+Abrí http://localhost/juego35/guardar_puntaje.php. Tiene que aparecer un mensaje de error en JSON (“El cuerpo de la petición no es un JSON válido”). Eso significa que funciona.
+Abrí el juego, terminá una partida, escribí un nombre y apretá Guardar puntaje.
+En phpMyAdmin, entrá a juego35 > puntajes > Examinar y comprobá que aparezca el puntaje
