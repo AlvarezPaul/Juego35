@@ -24,6 +24,7 @@ config/icon="uid://isuogapjgjfh"
 PantallaDeCarga="*res://UI/autoloadpcarga.gd"
 Autoloadsonido="*uid://cdabp06y5x0jg"
 Mensajetexto="*uid://byu0t7astos34"
+Sincronizador="*res://UI/sincronizador.gd"
 
 [display]
 

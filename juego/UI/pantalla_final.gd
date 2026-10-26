@@ -4,7 +4,7 @@ extends CanvasLayer
 @onready var boton_guardar: Button = $BotonGuardar
 @onready var http_request: HTTPRequest = get_node_or_null("../HTTPRequest")
 
-const URL_PHP := "https://TU-DIRECCION.ngrok-free.app/juego35/guardar_puntaje.php"
+const URL_PHP := "https://joyfully-showbiz-spotting.ngrok-free.dev/juego35/guardar_puntaje.php"
 
 # Si no hay servidor (XAMPP apagado, sin internet, etc.) el puntaje NO se pierde:
 # se guarda en la PC y se manda a la base de datos solo cuando el servidor responda.
@@ -79,7 +79,7 @@ func _on_http_request_completed(result: int, response_code: int, _headers: Packe
 	print("Respuesta del servidor (HTTP ", response_code, "): ", respuesta)
 
 	# Servidor apagado / sin conexión / MySQL caído (error 5xx): lo guardamos en la PC.
-	if result != HTTPRequest.RESULT_SUCCESS or response_code >= 500:
+	if result != HTTPRequest.RESULT_SUCCESS or response_code >= 500 or response_code == 404:
 		print("No se pudo guardar en el servidor (¿XAMPP apagado?). Se guarda en esta PC.")
 		_guardar_sin_conexion(_ultimo_envio)
 		return
@@ -167,41 +167,7 @@ func _agregar_al_csv(datos: Dictionary) -> void:
 # Manda a la base los puntajes que quedaron guardados en la PC. Si el servidor
 # sigue apagado, no hace nada y los deja para la próxima vez.
 func _sincronizar_pendientes() -> void:
-	if _sincronizando:
-		return
-	var pendientes := _leer_pendientes()
-	if pendientes.is_empty():
-		return
-
-	_sincronizando = true
-	var req := HTTPRequest.new()
-	req.timeout = TIMEOUT_SEG
-	req.process_mode = Node.PROCESS_MODE_ALWAYS
-	add_child(req)
-
-	var headers := PackedStringArray(["Content-Type: application/json", "ngrok-skip-browser-warning: true"])
-	while not pendientes.is_empty():
-		var error := req.request(URL_PHP, headers, HTTPClient.METHOD_POST, JSON.stringify(pendientes[0]))
-		if error != OK:
-			break
-
-		var r = await req.request_completed  # [result, codigo, headers, body]
-		var resultado: int = r[0]
-		var codigo: int = r[1]
-		if resultado != HTTPRequest.RESULT_SUCCESS or codigo >= 500:
-			break  # el servidor sigue sin responder: probamos otro día
-
-		if codigo == 200:
-			var json = JSON.parse_string((r[3] as PackedByteArray).get_string_from_utf8())
-			if not (json is Dictionary and json.get("status", "") == "success"):
-				break
-
-		# Se envió bien (o el servidor lo rechazó por inválido: se descarta para no trabar la cola).
-		pendientes.remove_at(0)
-		_escribir_pendientes(pendientes)
-
-	req.queue_free()
-	_sincronizando = false
+	Sincronizador.sincronizar()
 
 
 func _on_intentar_de_nuevo_pressed() -> void:
