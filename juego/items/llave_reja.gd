@@ -5,7 +5,7 @@ extends Area3D
 @export var nombre_item: String = "Llave Reja"
 @export var icono: Texture2D
 @export var escena_item: PackedScene
-@export var texto_interaccion: String = "Agarrar llave de la reja (E)"
+@export var texto_interaccion: String = "Agarrar llave de la Reja (E)"
 
 
 # Lo llama el RayCast del jugador cuando mirás la llave y presionás E.
