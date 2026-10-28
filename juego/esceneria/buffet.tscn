@@ -33,7 +33,7 @@ uv1_scale = Vector3(-57.73, -43.705, 1)
 data = PackedVector3Array(-0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, -0.5)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jvpdc"]
-albedo_color = Color(0.7607843, 0.45882353, 0.2627451, 1)
+albedo_color = Color(0.98234254, 0.9823423, 0.9823424, 1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_ii0hb"]
 
@@ -124,9 +124,6 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_v75ln")
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0fqj5"]
-albedo_color = Color(0.4699691, 0.25273323, 0.09522072, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_p4u5u"]
 albedo_color = Color(0.8618224, 0.5958043, 0.45732772, 1)
@@ -634,17 +631,6 @@ surface_material_override/0 = SubResource("StandardMaterial3D_v75ln")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="estructura/detalles/puesto/Cube_021/StaticBody3D" unique_id=217967924]
 shape = SubResource("ConcavePolygonShape3D_1nmou")
 
-[node name="Cube_025" type="MeshInstance3D" parent="estructura/detalles/puesto" unique_id=701580648]
-transform = Transform3D(-0.993, 6.296525e-08, 0, -1.4993883e-07, -0.417, 0, 0, 0, 5.686, -0.18399811, 4.255987, -4.7898026)
-mesh = SubResource("ArrayMesh_jvpdc")
-skeleton = NodePath("../../../..")
-surface_material_override/0 = SubResource("StandardMaterial3D_0fqj5")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="estructura/detalles/puesto/Cube_025" unique_id=1674127984]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="estructura/detalles/puesto/Cube_025/StaticBody3D" unique_id=560455800]
-shape = SubResource("ConcavePolygonShape3D_1nmou")
-
 [node name="Cube_022" type="MeshInstance3D" parent="estructura/detalles/puesto" unique_id=185151490]
 transform = Transform3D(1.8438051e-07, 1.5949925e-15, 13.739666, 3.6876102e-07, -0.41738752, 0, 4.2181344, 3.6489176e-08, -6.005799e-07, 12.907837, 5.294194, 73.98006)
 mesh = SubResource("ArrayMesh_jvpdc")
@@ -1004,6 +990,9 @@ transform = Transform3D(-1.3113416e-07, 0, 3.0000005, 0, 3.0000005, 0, -3.000000
 [node name="silla31" parent="muebles/sillas" unique_id=701283434 instance=ExtResource("6_k6gqu")]
 transform = Transform3D(-1.3113416e-07, 0, -3.0000005, 0, 3.0000005, 0, 3.0000005, 0, -1.3113416e-07, -37.040047, 1.3863668, 174.10524)
 
+[node name="silla37" parent="muebles/sillas" unique_id=920139302 instance=ExtResource("6_k6gqu")]
+transform = Transform3D(3.0000005, 0, 0, 0, 3.0000005, 0, 0, 0, 3.0000005, -84.95558, 1.3863668, 210.67754)
+
 [node name="silla32" parent="muebles/sillas" unique_id=831494103 instance=ExtResource("6_k6gqu")]
 transform = Transform3D(-1.3113416e-07, 0, -3.0000005, 0, 3.0000005, 0, 3.0000005, 0, -1.3113416e-07, -37.040047, 1.3863668, 165.13849)
 
@@ -1027,9 +1016,6 @@ transform = Transform3D(-1.3113416e-07, 0, -3.0000005, 0, 3.0000005, 0, 3.000000
 
 [node name="silla36" parent="muebles/sillas" unique_id=292720351 instance=ExtResource("6_k6gqu")]
 transform = Transform3D(-1.3113416e-07, 0, -3.0000005, 0, 3.0000005, 0, 3.0000005, 0, -1.3113416e-07, -37.040047, 1.3863668, 109.29385)
-
-[node name="silla37" parent="muebles/sillas" unique_id=1611211218 instance=ExtResource("6_k6gqu")]
-transform = Transform3D(0.0511058, 2.3710475, -1.8372601, 0.06901648, 1.8361117, 2.3714836, 2.9987707, -0.08266597, -0.023268554, -89.90486, 9.035815, 138.57141)
 
 [node name="tele" type="Node3D" parent="muebles" unique_id=1232560770]
 transform = Transform3D(-5.215964e-08, 0, 1, 0, 1.055643, 0, -1.1932735, 0, -4.371139e-08, -30.032042, 18.146978, 63.186985)
@@ -1105,7 +1091,12 @@ transform = Transform3D(-7.86805e-08, 0, -1.8, 0, 1.8, 0, 1.8, 0, -7.86805e-08, 
 transform = Transform3D(-2.6757704e-07, 0, -1.7590507, 0, 1.0335078, 0, -6.121449, 0, 7.689055e-08, 74.14114, 1.50945, 108.95461)
 
 [node name="ChapaBaliza2" type="Sprite3D" parent="." unique_id=237529260]
-transform = Transform3D(-4.739484e-08, 0, 1.0002674, 0, 0.99178106, 0, -1.0842675, 0, -4.3723077e-08, -77.79013, 10.4242935, 193.45892)
+transform = Transform3D(-4.739484e-08, 0, 1.0002674, 0, 0.99178106, 0, -1.0842675, 0, -4.3723077e-08, -77.79013, 10.4242935, 186.51567)
+modulate = Color(0.23031491, 0.23031494, 0.23031494, 1)
+texture = ExtResource("12_0fqj5")
+
+[node name="ChapaBaliza3" type="Sprite3D" parent="." unique_id=860138913]
+transform = Transform3D(-1.0842675, 0, -8.744615e-08, 0, 0.99178106, 0, 9.478968e-08, 0, -1.0002674, 37.894936, 13.5359955, 198.33589)
 modulate = Color(0.23031491, 0.23031494, 0.23031494, 1)
 texture = ExtResource("12_0fqj5")
 
