@@ -9,7 +9,7 @@ var interactuable = true
 @export var texto_bloqueada: String = "Necesitas tener la llave en la mano"
 
 @export var requiere_llave: bool = true
-@export var nombre_llave: String = "Llave"
+@export var nombre_llave: String = "Llave Salida"
 
 var texto_interaccion: String = ""
 
@@ -41,8 +41,8 @@ func jugador_tiene_llave_en_mano() -> bool:
 	if item == null:
 		return false
 
-	if item["nombre"] == nombre_llave:
-		return true
+	if item["nombre"] == nombre_llave or item["nombre"] == "Llave Salida":
+			return true
 
 	return false
 

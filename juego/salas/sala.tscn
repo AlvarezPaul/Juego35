@@ -9,7 +9,7 @@
 [ext_resource type="Script" uid="uid://31ipksk4tnso" path="res://scriptstamina/canvas_layer.gd" id="3_tgavs"]
 [ext_resource type="Script" uid="uid://dde7axw8aa7yy" path="res://UI/animacionfadein.gd" id="3_uph1g"]
 [ext_resource type="PackedScene" uid="uid://l3360f65cyou" path="res://salas/linterna_suelo.tscn" id="4_tgavs"]
-[ext_resource type="FontFile" uid="uid://blju0ku40nkwn" path="res://Interfaz/Fuentes/Bonechiller Free.otf" id="5_bl8tx"]
+[ext_resource type="FontFile" uid="uid://blju0ku40nkwn" path="res://Fuentes/Bonechiller Free.otf" id="5_bl8tx"]
 [ext_resource type="Script" uid="uid://v4xmv2vcxdob" path="res://UI/ajustesmenuesc.gd" id="6_3q2x0"]
 [ext_resource type="PackedScene" uid="uid://bwcjyqarbdklt" path="res://inventario/llave.tscn" id="6_tbg6u"]
 [ext_resource type="PackedScene" uid="uid://cjh7u2io5d7mc" path="res://items/ganzua.tscn" id="8_rvme7"]
@@ -26,7 +26,7 @@
 [ext_resource type="Script" uid="uid://cbtmpdwgai7qm" path="res://UI/pantalla_final.gd" id="15_mhgjs"]
 [ext_resource type="Texture2D" uid="uid://cem6dnor703bi" path="res://fotos/controlesimg/inventariofoto.png" id="16_egg21"]
 [ext_resource type="Texture2D" uid="uid://mium0om5gwv6" path="res://fotos/controlesimg/objetoenmano.png" id="17_avcb8"]
-[ext_resource type="FontFile" uid="uid://g00wcuajk3nk" path="res://Interfaz/Fuentes/Bonechiller Free.ttf" id="17_f1ihl"]
+[ext_resource type="FontFile" uid="uid://g00wcuajk3nk" path="res://Fuentes/Bonechiller Free.ttf" id="17_f1ihl"]
 [ext_resource type="Texture2D" uid="uid://15kuu20okjr1" path="res://fotos/controlesimg/objetoenelpiso.png" id="18_eew5s"]
 [ext_resource type="Texture2D" uid="uid://fcvlnvg0gucu" path="res://fotos/controlesimg/stamina.png" id="19_7bf7e"]
 [ext_resource type="Texture2D" uid="uid://c07dqk5hffp74" path="res://fotos/controlesimg/linternaprendida.png" id="20_ud0b3"]
@@ -49,11 +49,7 @@
 [ext_resource type="PackedScene" uid="uid://catkwmfvq0q07" path="res://items/llave_reja.tscn" id="61_llavereja"]
 [ext_resource type="Script" uid="uid://bqo3hti17uyho" path="res://salas/label.gd" id="62_timerlabel"]
 
-[sub_resource type="Environment" id="Environment_7bf7e"]
-background_mode = 1
-background_color = Color(0.043039158, 0.04303915, 0.04303915, 1)
-ambient_light_color = Color(0.036860984, 0.036860976, 0.036860976, 1)
-ambient_light_sky_contribution = 0.0
+[sub_resource type="Environment" id="Environment_0j2i0"]
 
 [sub_resource type="Animation" id="Animation_vwwu6"]
 length = 0.001
@@ -348,7 +344,7 @@ script = ExtResource("1_bl8tx")
 process_mode = 3
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=615291951]
-environment = SubResource("Environment_7bf7e")
+environment = SubResource("Environment_0j2i0")
 
 [node name="escuela" parent="." unique_id=1293130221 instance=ExtResource("1_kwadh")]
 transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 60.306732, -0.049215555, -0.03195381)
@@ -386,7 +382,7 @@ offset_bottom = 0.0
 metadata/_edit_use_anchors_ = true
 
 [node name="llave" parent="Jugador/Cabeza/Camera3D" parent_id_path=PackedInt32Array(212553440, 704986019) index="2" unique_id=2048800679]
-transform = Transform3D(-6.556708e-08, -1.5, 0, -1.5, 6.556708e-08, 1.3113416e-07, -1.3113416e-07, 7.1054274e-15, -1.5, -37.438366, -0.26138496, -22.900017)
+transform = Transform3D(-6.556708e-08, -1.5, 0, -1.5, 6.556708e-08, 1.3113416e-07, -1.3113416e-07, 7.1054274e-15, -1.5, -1038.5181, -0.26138496, -22.899971)
 
 [node name="ganzua" parent="Jugador/Cabeza/Camera3D" parent_id_path=PackedInt32Array(212553440, 704986019) index="3" unique_id=1006482489]
 transform = Transform3D(-1, -8.742278e-08, 3.821371e-15, 0, -4.371139e-08, -1, 8.742278e-08, -1, 4.371139e-08, 0.59400177, -0.30300045, -0.4787445)
@@ -1014,16 +1010,16 @@ transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 59.5
 spot_range = 7.16499
 
 [node name="SpotLight3D" type="SpotLight3D" parent="." unique_id=1384055372]
-transform = Transform3D(0, -1, 0, 0.077014126, 0, 0.99703, -0.99703, 0, 0.077014126, 6.3766646, 1.4884958, 31.826435)
+transform = Transform3D(0, -1, 0, 0.077014126, 0, 0.99703, -0.99703, 0, 0.077014126, 7.1492844, 2.3154783, 31.826435)
 
 [node name="LinternaSuelo" parent="." unique_id=1877330075 instance=ExtResource("4_tgavs")]
 transform = Transform3D(-1.8957648, 2.8625254e-07, 0.6527642, -3.027466e-07, -2.005, 0, 0.6527642, -9.856466e-08, 1.8957648, 59.449783, 12.710385, -11.336074)
 
 [node name="llave" parent="." unique_id=2023737183 instance=ExtResource("6_tbg6u")]
-transform = Transform3D(0, -1, 0, 1, 0, 0, 0, 0, 1, 6.3766646, -0.9952249, 32.438614)
+transform = Transform3D(0, -1, 0, 1, 0, 0, 0, 0, 1, 7.2928514, -0.9952249, 32.438614)
 
 [node name="ganzua" parent="." unique_id=1581257672 instance=ExtResource("8_rvme7")]
-transform = Transform3D(1.9106855e-15, -4.371139e-08, 1, -1, -4.371139e-08, 0, 4.371139e-08, -1, -4.371139e-08, 61.588078, 12.612159, -41.44521)
+transform = Transform3D(1.9106855e-15, -4.371139e-08, 1, -1, -4.371139e-08, 0, 4.371139e-08, -1, -4.371139e-08, 61.678, 12.559238, -41.44521)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=792970203]
 follow_viewport_enabled = true
@@ -1258,10 +1254,10 @@ parameters/looping = false
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 61.528816, 10.685165, -31.253382)
 
 [node name="llave_reja" parent="." unique_id=1525817767 instance=ExtResource("61_llavereja")]
-transform = Transform3D(-4.3711387e-10, -0.02104896, 0, 0.01, -9.200793e-10, 0, 0, 0, 0.01904794, 49.181324, 0.2745586, 48.500584)
+transform = Transform3D(-4.3711387e-10, -0.02104896, 0, 0.01, -9.200793e-10, 0, 0, 0, 0.01904794, 49.379223, 0.25283647, 58.27367)
 
 [node name="llave regencia" parent="." unique_id=855459215 instance=ExtResource("48_7bf7e")]
-transform = Transform3D(-7.8680495e-10, -0.018, 0, 0.018, -7.8680495e-10, 0, 0, 0, 0.018, 167.43687, 1.3789016, 39.11654)
+transform = Transform3D(-7.8680495e-10, -0.018, 0, 0.018, -7.8680495e-10, 0, 0, 0, 0.018, 163.3976, 1.3733827, 39.11654)
 
 [connection signal="pressed" from="Jugador/Node2D/CanvasLayer/Control/VBoxContainer/controles" to="Jugador/Node2D/CanvasLayer/Control" method="_on_controles_pressed"]
 [connection signal="pressed" from="Jugador/Node2D/CanvasLayer/Control/VBoxContainer/reiniciar" to="Jugador/Node2D/CanvasLayer/Control" method="_on_reiniciar_pressed"]

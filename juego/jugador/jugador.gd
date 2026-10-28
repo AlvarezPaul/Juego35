@@ -159,7 +159,6 @@ func _acomodar_en_mano(
 	modelo.basis = rotacion.scaled(Vector3.ONE * factor)
 	modelo.position = ancla - (caja.get_center() - ancla) * factor
 
-
 func _preparar_llave_en_mano() -> void:
 	var area := modelo_llave.get_node_or_null("Area3D") as Area3D
 	if area != null:
@@ -168,7 +167,6 @@ func _preparar_llave_en_mano() -> void:
 		area.monitoring = false
 		area.monitorable = false
 
-	# En la mano la llave brilla un poquito para que se vea aunque la linterna esté apagada.
 	var malla := modelo_llave.get_node_or_null("Area3D/Key") as MeshInstance3D
 	if malla != null and malla.material_override is StandardMaterial3D:
 		var material := (malla.material_override as StandardMaterial3D).duplicate() as StandardMaterial3D
@@ -178,8 +176,8 @@ func _preparar_llave_en_mano() -> void:
 		material.emission_energy_multiplier = 0.7
 		malla.material_override = material
 
-	# Tamaño, posición y rotación: los pone _igualar_herramientas_en_mano().
 	modelo_llave.visible = false
+
 
 func _preparar_llave_reja_en_mano() -> void:
 	var area := modelo_llave_reja.get_node_or_null("Area3D") as Area3D
@@ -198,11 +196,10 @@ func _preparar_llave_reja_en_mano() -> void:
 		material.emission_energy_multiplier = 0.5
 		malla_reja.material_override = material
 
-	# Tamaño, posición y rotación: los pone _igualar_herramientas_en_mano().
 	modelo_llave_reja.visible = false
 
+
 func _preparar_llave_regencia_en_mano() -> void:
-	# La ganzúa de la mano no debe poder ser "mirada" ni agarrada por el RayCast.
 	var area := modelo_llave_regencia.get_node_or_null("Area3D") as Area3D
 	if area != null:
 		area.collision_layer = 0
@@ -211,9 +208,8 @@ func _preparar_llave_regencia_en_mano() -> void:
 		area.monitorable = false
 
 	modelo_llave_regencia.visible = false
-# Hace que un modelo se vea en la mano aunque la linterna esté apagada:
-# aclara los colores muy oscuros y le agrega un brillo propio suave,
-# igual que la llave. Solo afecta a la copia que está en la mano.
+
+
 func _hacer_visible_en_mano(modelo: Node, brillo: float = 0.8) -> void:
 	for nodo in modelo.find_children("*", "MeshInstance3D", true, false):
 		var malla := nodo as MeshInstance3D
@@ -232,7 +228,6 @@ func _hacer_visible_en_mano(modelo: Node, brillo: float = 0.8) -> void:
 			material.albedo_color = color
 			material.metallic = min(material.metallic, 0.1)
 
-			# El brillo usa un color claro aparte, así lo oscuro también se ve.
 			var color_brillo := color
 			color_brillo.v = max(color_brillo.v, 0.7)
 			material.emission_enabled = true
@@ -244,8 +239,8 @@ func _hacer_visible_en_mano(modelo: Node, brillo: float = 0.8) -> void:
 			else:
 				malla.set_surface_override_material(i, material)
 
+
 func _preparar_ganzua_en_mano() -> void:
-	# La ganzúa de la mano no debe poder ser "mirada" ni agarrada por el RayCast.
 	var area := modelo_ganzua.get_node_or_null("Area3D") as Area3D
 	if area != null:
 		area.collision_layer = 0
@@ -255,6 +250,7 @@ func _preparar_ganzua_en_mano() -> void:
 
 	modelo_ganzua.visible = false
 	
+
 func _agregar_item_inicial() -> void:
 	inventario_ui = get_tree().get_first_node_in_group("inventario")
 
@@ -270,13 +266,10 @@ func _unhandled_input(event: InputEvent) -> void:
 		match event.keycode:
 			KEY_1:
 				_alternar_slot(1)
-
 			KEY_2:
 				_alternar_slot(2)
-
 			KEY_3:
 				_alternar_slot(3)
-
 			KEY_4:
 				_alternar_slot(4)
 
@@ -322,7 +315,8 @@ func _actualizar_item_en_mano(_numero: int) -> void:
 
 	var es_linterna := nombre == "Linterna"
 	modelo_linterna.visible = es_linterna
-	modelo_llave.visible = nombre == "Llave"
+	
+	modelo_llave.visible = (nombre == "Llave" or nombre == "Llave Salida")
 	modelo_llave_reja.visible = nombre == "Llave Reja"
 	modelo_ganzua.visible = nombre == "Ganzua"
 	modelo_llave_regencia.visible = nombre == "Llave Regencia"
@@ -349,13 +343,11 @@ func _tirar_item_equipado() -> void:
 
 		var altura := altura_sobre_suelo
 
-		if item["nombre"] in ["Llave", "Llave Reja", "Llave Regencia"]:
-			# Escalamos la llave al tirarla al suelo para que no vuelva a ser gigante
-			var escala_suelo := 0.015 # Usá el mismo tamaño que te guste
-			objeto.global_basis = (
-				Basis(Vector3.UP, global_rotation.y + PI / 2.0)
-				* Basis(Vector3.BACK, PI / 2.0)
-			).scaled(Vector3.ONE * escala_suelo)
+		if item["nombre"] in ["Llave", "Llave Salida", "Llave Reja", "Llave Regencia"]:
+			var escala_suelo := 0.015
+			# CORREGIDO: Se usa multiplicación de Basis en lugar de resta (-)
+			var base_rotacion = Basis(Vector3.UP, global_rotation.y + PI / 2.0) * Basis(Vector3.BACK, -PI / 2.0)
+			objeto.global_basis = base_rotacion.scaled(Vector3.ONE * escala_suelo)
 			altura = altura_llave_suelo
 
 		objeto.global_position = _punto_en_el_suelo(altura)
@@ -391,7 +383,6 @@ func _punto_en_el_suelo(altura: float) -> Vector3:
 		return global_position
 
 	return golpe_piso.position + Vector3.UP * altura
-
 
 func _physics_process(delta: float) -> void:
 	_aplicar_gravedad(delta)
