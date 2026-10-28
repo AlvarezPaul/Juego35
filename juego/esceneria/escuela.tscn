@@ -3394,7 +3394,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_186ow")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D35/StaticBody3D" unique_id=1601668244]
 shape = SubResource("ConcavePolygonShape3D_gbsay")
 
-[node name="Node3D5" parent="." unique_id=1042757657 instance=ExtResource("7_dv1iy")]
+[node name="Lab" parent="." unique_id=1042757657 instance=ExtResource("7_dv1iy")]
 transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, -5.325, 7.305, 33.215)
 
 [node name="MeshInstance3D40" type="MeshInstance3D" parent="." unique_id=333267925]
