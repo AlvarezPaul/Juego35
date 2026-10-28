@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cnyfdwi0o36n8"]
 
-[ext_resource type="Texture2D" uid="uid://c80sue7xddtbx" path="res://fotos/fondoblur.jpg" id="1_oyqm7"]
+[ext_resource type="Texture2D" uid="uid://dubd1w8amrcnl" path="res://fotos/Fondo2.jpg" id="1_62qye"]
 [ext_resource type="FontFile" uid="uid://blju0ku40nkwn" path="res://Interfaz/Fuentes/Bonechiller Free.otf" id="2_3sf2p"]
 [ext_resource type="Script" uid="uid://dr6ldu5lrqu27" path="res://UI/volverdeaj.gd" id="3_1nh0t"]
 [ext_resource type="Texture2D" uid="uid://c225j5kxjr2c7" path="res://fotos/controlesimg/TeclaD.png" id="4_lhewh"]
@@ -68,7 +68,9 @@ layout_mode = 0
 offset_left = -9.0
 offset_right = 1374.0
 offset_bottom = 775.0
-texture = ExtResource("1_oyqm7")
+texture = ExtResource("1_62qye")
+expand_mode = 1
+stretch_mode = 6
 
 [node name="Panel" type="Panel" parent="." unique_id=167440635]
 layout_mode = 0

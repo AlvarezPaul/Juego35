@@ -8,9 +8,10 @@
 [ext_resource type="PackedScene" uid="uid://kg0oarld1dor" path="res://esceneria/muebles/mesita.tscn" id="5_a5yc5"]
 [ext_resource type="PackedScene" uid="uid://dncquk2gh7dba" path="res://puerta/puertabloqueada.tscn" id="6_c05sx"]
 [ext_resource type="PackedScene" uid="uid://crtq4ylve4qnr" path="res://esceneria/muebles/silla.tscn" id="6_k6gqu"]
+[ext_resource type="PackedScene" uid="uid://byjaehmv1t72i" path="res://puerta/puerta.tscn" id="7_k6gqu"]
+[ext_resource type="Texture2D" uid="uid://dosji0fqm6rgy" path="res://fotos/chapabaliza.png" id="12_0fqj5"]
 [ext_resource type="PackedScene" uid="uid://bo648njdxych4" path="res://esceneria/muebles/microondas.tscn" id="30_microondas"]
 [ext_resource type="PackedScene" uid="uid://ddgkq3uy2ls5c" path="res://esceneria/muebles/mesamicro.tscn" id="31_mesamicro"]
-[ext_resource type="PackedScene" uid="uid://byjaehmv1t72i" path="res://puerta/puerta.tscn" id="7_k6gqu"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_4uhvb"]
 size = Vector3(1, 0.97802734, 1)
@@ -48,10 +49,10 @@ data = PackedVector3Array(-0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0
 albedo_color = Color(0.31741187, 0.76121086, 0.5992706, 1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_xrivr"]
-size = Vector3(6.0306396, 9.149788, 69.942764)
+size = Vector3(6.0306396, 9.149788, 93.578156)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_13qdw"]
-albedo_color = Color(0.78431374, 0.6862745, 0.43137255, 1)
+albedo_color = Color(0.3779188, 0.37791887, 0.37791884, 1)
 
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_gsmix"]
 data = PackedVector3Array(-3.0153, 4.5748997, 34.971397, 3.0153, 4.5748997, 34.971397, -3.0153, -4.5748997, 34.971397, 3.0153, 4.5748997, 34.971397, 3.0153, -4.5748997, 34.971397, -3.0153, -4.5748997, 34.971397, 3.0153, 4.5748997, -34.971397, -3.0153, 4.5748997, -34.971397, 3.0153, -4.5748997, -34.971397, -3.0153, 4.5748997, -34.971397, -3.0153, -4.5748997, -34.971397, 3.0153, -4.5748997, -34.971397, 3.0153, 4.5748997, 34.971397, 3.0153, 4.5748997, -34.971397, 3.0153, -4.5748997, 34.971397, 3.0153, 4.5748997, -34.971397, 3.0153, -4.5748997, -34.971397, 3.0153, -4.5748997, 34.971397, -3.0153, 4.5748997, -34.971397, -3.0153, 4.5748997, 34.971397, -3.0153, -4.5748997, -34.971397, -3.0153, 4.5748997, 34.971397, -3.0153, -4.5748997, 34.971397, -3.0153, -4.5748997, -34.971397, 3.0153, 4.5748997, 34.971397, -3.0153, 4.5748997, 34.971397, 3.0153, 4.5748997, -34.971397, -3.0153, 4.5748997, 34.971397, -3.0153, 4.5748997, -34.971397, 3.0153, 4.5748997, -34.971397, -3.0153, -4.5748997, 34.971397, 3.0153, -4.5748997, 34.971397, -3.0153, -4.5748997, -34.971397, 3.0153, -4.5748997, 34.971397, 3.0153, -4.5748997, -34.971397, -3.0153, -4.5748997, -34.971397)
@@ -82,7 +83,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_jvpdc"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_m3esr"]
 resource_name = "Aula(prototipo)_Cube_024"
 _surfaces = [{
 "aabb": AABB(-1, -1, -1, 2, 2, 2),
@@ -105,6 +106,24 @@ albedo_color = Color(0.4509804, 0.2627451, 0.16078432, 1)
 
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_1nmou"]
 data = PackedVector3Array(1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, 1, 1, 1, -1, 1, 1, 1, -1, 1, -1, 1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, 1, -1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1, -1, -1, 1, 1, -1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, 1, 1, 1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, -1)
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_jvpdc"]
+resource_name = "Aula(prototipo)_Cube_024"
+_surfaces = [{
+"aabb": AABB(-1, -1, -1, 2, 2, 2),
+"attribute_data": PackedByteArray("/5//f//f/z//3/9//5//P/9f/z//nwAA/5//P/9fAAD/X////5//v/+f////X/+//x//f/9f/z//X/9//x//P/9f/3//n/8//5//f/9f/z//X/+//5//f/+f/7//X/9/"),
+"format": 34896613399,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
+"material": SubResource("StandardMaterial3D_rhepq"),
+"name": "Material.024",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("/////wAA//8AAP///////wAA//8AAP///////////////wAA////vwAA//////+//////////78AAAAA////vwAAAAD//1TVAAD//wAAVNUAAP////9U1QAAAAAAAFTVAAAAAAAA/7///wAA////v///AAAAAP+/AAAAAP///7///wAAAABU1f///////1TV/////wAAVNX//wAA//9U1QAAAAAAAP///////wAA//8AAP//AAD/////AAAAAP///3//v/9//7//f/+//3//v/////////////////////9U1VTVVNVU1VTVVNVU1VTVAAD/fwAA/38AAP9/AAD/f6oqqiqqKqoqqiqqKqoqqir/v/+//7//v/+//7//v/+/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_v75ln")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0fqj5"]
 albedo_color = Color(0.4699691, 0.25273323, 0.09522072, 1)
@@ -585,7 +604,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_4uhvb")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 48.39234, 5.377569, -111.74962)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="estructura/detalles/puesto" unique_id=1094203949]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.802346, 0, 0.521, 28.482)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.802346, 0, 0.5209999, 37.963882)
 mesh = SubResource("BoxMesh_xrivr")
 surface_material_override/0 = SubResource("StandardMaterial3D_13qdw")
 
@@ -595,7 +614,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_13qdw")
 shape = SubResource("ConcavePolygonShape3D_gsmix")
 
 [node name="MeshInstance3D2" type="MeshInstance3D" parent="estructura/detalles/puesto" unique_id=1401279]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 11.702881, 0.52101517, 57.869766)
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 11.702881, 0.52101517, 73.7022)
 mesh = SubResource("BoxMesh_c05sx")
 surface_material_override/0 = SubResource("StandardMaterial3D_13qdw")
 
@@ -605,8 +624,8 @@ surface_material_override/0 = SubResource("StandardMaterial3D_13qdw")
 shape = SubResource("ConcavePolygonShape3D_k6gqu")
 
 [node name="Cube_021" type="MeshInstance3D" parent="estructura/detalles/puesto" unique_id=767312722]
-transform = Transform3D(-4.218, 6.296525e-08, 0, -6.3690027e-07, -0.417, 0, 0, 0, 28.781, -0.184, 5.294, 33.513)
-mesh = SubResource("ArrayMesh_jvpdc")
+transform = Transform3D(-4.218, 6.296525e-08, 0, -6.3690027e-07, -0.417, 0, 0, 0, 38.08461, -0.18399811, 5.2940006, 39.90555)
+mesh = SubResource("ArrayMesh_m3esr")
 skeleton = NodePath("../../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_v75ln")
 
@@ -627,7 +646,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_0fqj5")
 shape = SubResource("ConcavePolygonShape3D_1nmou")
 
 [node name="Cube_022" type="MeshInstance3D" parent="estructura/detalles/puesto" unique_id=185151490]
-transform = Transform3D(1.8438051e-07, 1.5949925e-15, 13.739666, 3.6876102e-07, -0.41738752, 0, 4.2181344, 3.6489176e-08, -6.005799e-07, 12.907837, 5.294194, 58.14762)
+transform = Transform3D(1.8438051e-07, 1.5949925e-15, 13.739666, 3.6876102e-07, -0.41738752, 0, 4.2181344, 3.6489176e-08, -6.005799e-07, 12.907837, 5.294194, 73.98006)
 mesh = SubResource("ArrayMesh_jvpdc")
 skeleton = NodePath("../../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_v75ln")
@@ -1009,6 +1028,9 @@ transform = Transform3D(-1.3113416e-07, 0, -3.0000005, 0, 3.0000005, 0, 3.000000
 [node name="silla36" parent="muebles/sillas" unique_id=292720351 instance=ExtResource("6_k6gqu")]
 transform = Transform3D(-1.3113416e-07, 0, -3.0000005, 0, 3.0000005, 0, 3.0000005, 0, -1.3113416e-07, -37.040047, 1.3863668, 109.29385)
 
+[node name="silla37" parent="muebles/sillas" unique_id=1611211218 instance=ExtResource("6_k6gqu")]
+transform = Transform3D(0.0511058, 2.3710475, -1.8372601, 0.06901648, 1.8361117, 2.3714836, 2.9987707, -0.08266597, -0.023268554, -89.90486, 9.035815, 138.57141)
+
 [node name="tele" type="Node3D" parent="muebles" unique_id=1232560770]
 transform = Transform3D(-5.215964e-08, 0, 1, 0, 1.055643, 0, -1.1932735, 0, -4.371139e-08, -30.032042, 18.146978, 63.186985)
 
@@ -1068,19 +1090,24 @@ transform = Transform3D(-4.371139e-08, 0, -1.0899953, 0, 1, 0, 1, 0, -4.7645205e
 transform = Transform3D(1.9999998, 0, 0, 0, 8.384443, 0, 0, 0, 8.465699, 1.7767334, 5.4530277, 5.8950157)
 
 [node name="microondas" parent="." unique_id=1815375819 instance=ExtResource("30_microondas")]
-transform = Transform3D(-7.86805e-08, 0, -1.8, 0, 1.8, 0, 1.8, 0, -7.86805e-08, 73.4657, 5.681015, 124.47514)
+transform = Transform3D(-7.86805e-08, 0, -1.8, 0, 1.8, 0, 1.8, 0, -7.86805e-08, 73.11894, 3.9498234, 145.59953)
 
 [node name="microondas2" parent="." unique_id=432142662 instance=ExtResource("30_microondas")]
-transform = Transform3D(-7.86805e-08, 0, -1.8, 0, 1.8, 0, 1.8, 0, -7.86805e-08, 73.4657, 5.681015, 139.76837)
+transform = Transform3D(-7.86805e-08, 0, -1.8, 0, 1.8, 0, 1.8, 0, -7.86805e-08, 73.11894, 3.9498234, 160.89276)
 
 [node name="microondas3" parent="." unique_id=1713785835 instance=ExtResource("30_microondas")]
-transform = Transform3D(-7.86805e-08, 0, -1.8, 0, 1.8, 0, 1.8, 0, -7.86805e-08, 73.4657, 5.681015, 107.12392)
+transform = Transform3D(-7.86805e-08, 0, -1.8, 0, 1.8, 0, 1.8, 0, -7.86805e-08, 73.11894, 3.9498234, 128.2483)
 
 [node name="microondas4" parent="." unique_id=906555995 instance=ExtResource("30_microondas")]
-transform = Transform3D(-7.86805e-08, 0, -1.8, 0, 1.8, 0, 1.8, 0, -7.86805e-08, 73.4657, 5.681015, 156.89557)
+transform = Transform3D(-7.86805e-08, 0, -1.8, 0, 1.8, 0, 1.8, 0, -7.86805e-08, 73.11894, 3.9498234, 178.01996)
 
 [node name="mesamicro" parent="." unique_id=641499522 instance=ExtResource("31_mesamicro")]
-transform = Transform3D(-2.6757704e-07, 0, -1.7590507, 0, 1.0335078, 0, -6.121449, 0, 7.689055e-08, 74.14114, 3.1867723, 96.197)
+transform = Transform3D(-2.6757704e-07, 0, -1.7590507, 0, 1.0335078, 0, -6.121449, 0, 7.689055e-08, 74.14114, 1.50945, 108.95461)
+
+[node name="ChapaBaliza2" type="Sprite3D" parent="." unique_id=237529260]
+transform = Transform3D(-4.739484e-08, 0, 1.0002674, 0, 0.99178106, 0, -1.0842675, 0, -4.3723077e-08, -77.79013, 10.4242935, 193.45892)
+modulate = Color(0.23031491, 0.23031494, 0.23031494, 1)
+texture = ExtResource("12_0fqj5")
 
 [editable path="muebles/puertas/puerta"]
 [editable path="muebles/puertas/puerta2"]
