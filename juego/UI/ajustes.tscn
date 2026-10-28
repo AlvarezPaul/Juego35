@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://1y82ytyl00pp"]
 
+[ext_resource type="Texture2D" uid="uid://31gnewuio1e5" path="res://fotos/Fondo4.jpg" id="1_p3nki"]
 [ext_resource type="FontFile" uid="uid://ocuqailjsal3" path="res://Fuentes/StayDrips-Regular.otf" id="1_u4kum"]
 [ext_resource type="FontFile" uid="uid://blju0ku40nkwn" path="res://Interfaz/Fuentes/Bonechiller Free.otf" id="2_mon12"]
 [ext_resource type="Script" uid="uid://cdvfbej5sosp" path="res://UI/pantcompleta.gd" id="2_qgyvf"]
@@ -111,29 +112,32 @@ grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(1.1918753, 1.2003461)
 
-[node name="Panel" type="Panel" parent="." unique_id=924506643]
+[node name="Fondo" type="TextureRect" parent="." unique_id=1209342008]
 layout_mode = 0
-offset_left = -4.0
-offset_right = 1148.0
-offset_bottom = 643.0
-metadata/_edit_use_anchors_ = true
+offset_left = -16.78028
+offset_top = -14.162582
+offset_right = 1167.0684
+offset_bottom = 660.6428
+texture = ExtResource("1_p3nki")
+expand_mode = 1
+stretch_mode = 6
 
-[node name="Cont de Sliders y CheckBox" type="VBoxContainer" parent="Panel" unique_id=1674673960]
+[node name="Cont de Sliders y CheckBox" type="VBoxContainer" parent="." unique_id=1674673960]
 layout_mode = 0
-offset_left = 601.3779
-offset_top = 162.45314
-offset_right = 814.3779
+offset_left = 597.3779
+offset_top = 162.45316
+offset_right = 810.3779
 offset_bottom = 530.4531
 theme_override_constants/separation = 65
 
-[node name="barra_sonidos" parent="Panel/Cont de Sliders y CheckBox" unique_id=1664845339 instance=ExtResource("4_56yal")]
+[node name="barra_sonidos" parent="Cont de Sliders y CheckBox" unique_id=1664845339 instance=ExtResource("4_56yal")]
 layout_mode = 2
 
-[node name="sensibilidad" parent="Panel/Cont de Sliders y CheckBox" unique_id=975027753 instance=ExtResource("4_56yal")]
+[node name="sensibilidad" parent="Cont de Sliders y CheckBox" unique_id=975027753 instance=ExtResource("4_56yal")]
 layout_mode = 2
 script = null
 
-[node name="CheckBox" type="CheckBox" parent="Panel/Cont de Sliders y CheckBox" unique_id=234344850]
+[node name="CheckBox" type="CheckBox" parent="Cont de Sliders y CheckBox" unique_id=234344850]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
@@ -143,12 +147,12 @@ icon = SubResource("CanvasTexture_rfr4f")
 flat = true
 script = ExtResource("2_qgyvf")
 
-[node name="OcultarMostrar" type="HBoxContainer" parent="Panel/Cont de Sliders y CheckBox" unique_id=1108191122]
+[node name="OcultarMostrar" type="HBoxContainer" parent="Cont de Sliders y CheckBox" unique_id=1108191122]
 layout_mode = 2
 theme_override_constants/separation = 2
 alignment = 1
 
-[node name="Ocultar" type="Button" parent="Panel/Cont de Sliders y CheckBox/OcultarMostrar" unique_id=216490050]
+[node name="Ocultar" type="Button" parent="Cont de Sliders y CheckBox/OcultarMostrar" unique_id=216490050]
 layout_mode = 2
 theme_override_constants/outline_size = 2
 theme_override_fonts/font = ExtResource("5_oxxd6")
@@ -158,7 +162,7 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_ink1u")
 theme_override_styles/hover = SubResource("StyleBoxFlat_lgb8o")
 text = "Ocultar"
 
-[node name="Mostrar" type="Button" parent="Panel/Cont de Sliders y CheckBox/OcultarMostrar" unique_id=962186902]
+[node name="Mostrar" type="Button" parent="Cont de Sliders y CheckBox/OcultarMostrar" unique_id=962186902]
 layout_mode = 2
 theme_override_constants/outline_size = 2
 theme_override_fonts/font = ExtResource("5_oxxd6")
@@ -168,13 +172,13 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_ink1u")
 theme_override_styles/hover = SubResource("StyleBoxFlat_lgb8o")
 text = "Mostrar"
 
-[node name="OcultarMostrar2" type="HBoxContainer" parent="Panel/Cont de Sliders y CheckBox" unique_id=1272293904]
+[node name="OcultarMostrar2" type="HBoxContainer" parent="Cont de Sliders y CheckBox" unique_id=1272293904]
 layout_mode = 2
+theme_override_constants/separation = 2
+alignment = 1
 script = ExtResource("90_timerbtn")
-theme_override_constants/separation = 2
-alignment = 1
 
-[node name="Ocultar" type="Button" parent="Panel/Cont de Sliders y CheckBox/OcultarMostrar2" unique_id=992810686]
+[node name="Ocultar" type="Button" parent="Cont de Sliders y CheckBox/OcultarMostrar2" unique_id=992810686]
 layout_mode = 2
 theme_override_constants/outline_size = 2
 theme_override_fonts/font = ExtResource("5_oxxd6")
@@ -184,7 +188,7 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_ink1u")
 theme_override_styles/hover = SubResource("StyleBoxFlat_lgb8o")
 text = "Ocultar"
 
-[node name="Mostrar" type="Button" parent="Panel/Cont de Sliders y CheckBox/OcultarMostrar2" unique_id=1921663301]
+[node name="Mostrar" type="Button" parent="Cont de Sliders y CheckBox/OcultarMostrar2" unique_id=1921663301]
 layout_mode = 2
 theme_override_constants/outline_size = 2
 theme_override_fonts/font = ExtResource("5_oxxd6")
@@ -194,14 +198,14 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_ink1u")
 theme_override_styles/hover = SubResource("StyleBoxFlat_lgb8o")
 text = "Mostrar"
 
-[node name="Ajustes Título" type="Label" parent="Panel" unique_id=140143887]
+[node name="Ajustes Título" type="Label" parent="." unique_id=140143887]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -115.0
-offset_top = 41.0
-offset_right = 120.0
+offset_left = -226.0
+offset_top = 41.000004
+offset_right = 9.0
 offset_bottom = 159.0
 grow_horizontal = 2
 theme_override_constants/outline_size = 10
@@ -214,11 +218,11 @@ horizontal_alignment = 1
 vertical_alignment = 1
 metadata/_edit_use_anchors_ = true
 
-[node name="volver" type="Button" parent="Panel" unique_id=1703907111]
+[node name="volver" type="Button" parent="." unique_id=1703907111]
 layout_mode = 0
-offset_left = 977.2561
+offset_left = 973.25616
 offset_top = 537.34503
-offset_right = 1134.2561
+offset_right = 1130.2561
 offset_bottom = 623.34503
 theme_override_fonts/font = ExtResource("2_mon12")
 theme_override_font_sizes/font_size = 50
@@ -229,15 +233,15 @@ text = "Volver"
 script = ExtResource("3_p1khp")
 metadata/_edit_use_anchors_ = true
 
-[node name="Textos" type="VBoxContainer" parent="Panel" unique_id=519686304]
+[node name="Textos" type="VBoxContainer" parent="." unique_id=519686304]
 layout_mode = 0
-offset_left = 316.952
+offset_left = 312.95203
 offset_top = 165.444
-offset_right = 599.95197
+offset_right = 595.952
 offset_bottom = 619.444
 theme_override_constants/separation = 50
 
-[node name="Sonido" type="Label" parent="Panel/Textos" unique_id=324615397]
+[node name="Sonido" type="Label" parent="Textos" unique_id=324615397]
 layout_mode = 2
 theme_override_constants/outline_size = 7
 theme_override_fonts/font = ExtResource("5_oxxd6")
@@ -247,7 +251,7 @@ text = "Sonido General"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="SensMouse" type="Label" parent="Panel/Textos" unique_id=1354375354]
+[node name="SensMouse" type="Label" parent="Textos" unique_id=1354375354]
 layout_mode = 2
 theme_override_constants/outline_size = 7
 theme_override_fonts/font = ExtResource("5_oxxd6")
@@ -257,7 +261,7 @@ text = "Sensibilidad del Mouse"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="PantCompleta" type="Label" parent="Panel/Textos" unique_id=1067891136]
+[node name="PantCompleta" type="Label" parent="Textos" unique_id=1067891136]
 layout_mode = 2
 theme_override_constants/outline_size = 7
 theme_override_fonts/font = ExtResource("5_oxxd6")
@@ -267,7 +271,7 @@ text = "Pantalla Completa"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="ContadorDeFPS" type="Label" parent="Panel/Textos" unique_id=348352255]
+[node name="ContadorDeFPS" type="Label" parent="Textos" unique_id=348352255]
 layout_mode = 2
 theme_override_constants/outline_size = 7
 theme_override_fonts/font = ExtResource("5_oxxd6")
@@ -277,7 +281,7 @@ text = "Contador de FPS"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Contador" type="Label" parent="Panel/Textos" unique_id=1779193671]
+[node name="Contador" type="Label" parent="Textos" unique_id=1779193671]
 layout_mode = 2
 theme_override_constants/outline_size = 7
 theme_override_fonts/font = ExtResource("5_oxxd6")
@@ -287,5 +291,5 @@ text = "Timer"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[connection signal="toggled" from="Panel/Cont de Sliders y CheckBox/CheckBox" to="Panel/Cont de Sliders y CheckBox/CheckBox" method="_on_toggled"]
-[connection signal="pressed" from="Panel/volver" to="Panel/volver" method="_on_pressed"]
+[connection signal="toggled" from="Cont de Sliders y CheckBox/CheckBox" to="Cont de Sliders y CheckBox/CheckBox" method="_on_toggled"]
+[connection signal="pressed" from="volver" to="volver" method="_on_pressed"]
