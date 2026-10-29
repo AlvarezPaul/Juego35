@@ -1,8 +1,8 @@
 extends Node
 
-const URL_PHP := "https://joyfully-showbiz-spotting.ngrok-free.dev/juego35/guardar_puntaje.php"
+const URL_PHP := "https://script.google.com/macros/s/AKfycbwnq2ODIsn6Ad-OFHA6aNU4WH0uwRETFRouhSIH6Ji7XpexedWl9MVomTkgU3zpA0nWVw/exec"
 const ARCHIVO_PENDIENTES := "user://puntajes_pendientes.json"
-const TIMEOUT_SEG := 5.0
+const TIMEOUT_SEG := 20.0
 const INTERVALO_SEG := 60.0
 
 var _sincronizando := false
@@ -26,14 +26,13 @@ func sincronizar() -> void:
 	var req := HTTPRequest.new()
 	req.timeout = TIMEOUT_SEG
 	add_child(req)
-	var headers := PackedStringArray(["Content-Type: application/json", "ngrok-skip-browser-warning: true"])
 
 	while true:
 		var pendientes := _leer()
 		if pendientes.is_empty():
 			break
 		var actual = pendientes[0]
-		if req.request(URL_PHP, headers, HTTPClient.METHOD_POST, JSON.stringify(actual)) != OK:
+		if req.request(_construir_url(actual), PackedStringArray(), HTTPClient.METHOD_GET) != OK:
 			break
 
 		var r = await req.request_completed
@@ -45,7 +44,7 @@ func sincronizar() -> void:
 		if resultado == HTTPRequest.RESULT_SUCCESS:
 			if codigo == 200:
 				var json = JSON.parse_string(cuerpo)
-				enviado = json is Dictionary and json.get("status", "") == "success"
+				enviado = json is Dictionary and (json.get("status", "") == "success" or json.get("descartar", false))
 			elif codigo == 400:
 				enviado = true  # el servidor lo rechazó por inválido: se descarta para no trabar la cola
 		if not enviado:
@@ -77,3 +76,13 @@ func _escribir(pendientes: Array) -> void:
 	if archivo == null:
 		return
 	archivo.store_string(JSON.stringify(pendientes))
+
+
+# Apps Script recibe el puntaje por GET (Godot no sigue bien la redirección de un POST)
+func _construir_url(datos: Dictionary) -> String:
+	return "%s?accion=guardar&nombre=%s&tiempo=%s&fecha=%s" % [
+		URL_PHP,
+		str(datos.get("nombre", "")).uri_encode(),
+		str(datos.get("tiempo", 0.0)).uri_encode(),
+		str(datos.get("fecha", "")).uri_encode()
+	]
