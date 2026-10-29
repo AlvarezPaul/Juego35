@@ -35,14 +35,15 @@ function actualizarRanking() {
             if (data.top.length === 0) {
                 var vacia = tbody.insertRow();
                 var celda = vacia.insertCell();
-                celda.colSpan = 4;
+                celda.colSpan = 5;
                 celda.textContent = "Todavía no hay puntajes.";
             }
             data.top.forEach(function (p, i) {
                 var fila = tbody.insertRow();
                 fila.insertCell().textContent = i + 1;
                 fila.insertCell().textContent = p.nombre;
-                fila.insertCell().textContent = p.fecha ? p.fecha + (p.hora ? " " + p.hora : "") : "";
+                fila.insertCell().textContent = p.fecha || "";
+                fila.insertCell().textContent = p.hora || "";
                 var t = fila.insertCell();
                 t.textContent = formatearTiempo(p.tiempo);
                 t.className = "ranking-time";
