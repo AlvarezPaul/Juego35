@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://bj68i5fcrwd30"]
+
+[ext_resource type="Texture2D" uid="uid://dm1hctkqyrcm7" path="res://fotos/1000081050-removebg-preview.png" id="1_rithx"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_xrivr"]
+size = Vector3(2.6168213, 0.15875244, 2.1736298)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xrivr"]
+albedo_color = Color(0.7529412, 0.6431373, 0, 1)
+
+[node name="Libretacom" type="Node3D" unique_id=1749341433]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=796163479]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.80841064, -0.12124634, -0.3298874)
+mesh = SubResource("BoxMesh_xrivr")
+surface_material_override/0 = SubResource("StandardMaterial3D_xrivr")
+
+[node name="Sprite3D" type="Sprite3D" parent="." unique_id=1897230027]
+transform = Transform3D(-2.5487152e-08, -0.5, 5.9624403e-09, 0, 5.9624403e-09, 0.5, -0.5830781, 2.1855694e-08, -2.6062653e-16, 0.8195063, -0.037896395, -0.36996293)
+shaded = true
+texture = ExtResource("1_rithx")

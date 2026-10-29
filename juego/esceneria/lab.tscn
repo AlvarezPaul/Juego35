@@ -12,6 +12,7 @@
 [ext_resource type="PackedScene" uid="uid://wrgtf0gs7051" path="res://esceneria/mesa_compus_doble.tscn" id="10_px58i"]
 [ext_resource type="PackedScene" uid="uid://c1x0rlqrw0v4j" path="res://esceneria/monitor.tscn" id="11_a33jo"]
 [ext_resource type="PackedScene" uid="uid://bok80m5e2rwta" path="res://esceneria/monitordepared.tscn" id="12_x4h0m"]
+[ext_resource type="PackedScene" uid="uid://cdls81h7beqcc" path="res://esceneria/muebles/racklab.tscn" id="13_dd40b"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_bgooa"]
 size = Vector3(1, 2.0767822, 1)
@@ -127,6 +128,9 @@ size = Vector3(1, 0.97802734, 1)
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_f5dpk"]
 albedo_color = Color(0.5598013, 0.5436244, 0.5274476, 1)
 metallic = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_jxb36"]
+size = Vector3(0.9354248, 0.9968262, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rjt2h"]
 albedo_color = Color(0.41568628, 0.7176471, 0.57254905, 1)
@@ -694,8 +698,8 @@ surface_material_override/0 = SubResource("StandardMaterial3D_xhdhp")
 shape = SubResource("ConcavePolygonShape3D_mfo1i")
 
 [node name="MeshInstance3D157" type="MeshInstance3D" parent="." unique_id=2051631298]
-transform = Transform3D(2.6333067e-14, 6.307553e-07, 1, 13.782, -6.307553e-07, 5.64642e-23, 6.0243036e-07, 14.43, -4.371139e-08, -30.838, 64.46871, 354.9055)
-mesh = SubResource("BoxMesh_oaqsx")
+transform = Transform3D(2.6333067e-14, 6.307553e-07, 1, 13.782, -6.307553e-07, 5.64642e-23, 6.0243036e-07, 14.43, -4.371139e-08, -30.838, 64.02373, 354.76987)
+mesh = SubResource("BoxMesh_jxb36")
 skeleton = NodePath("../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_xhdhp")
 
@@ -2890,5 +2894,20 @@ transform = Transform3D(-10.195, 0, -1.5394022e-06, 0, 10.195, 0, 1.5394022e-06,
 
 [node name="Node3D138" parent="." unique_id=371574236 instance=ExtResource("12_x4h0m")]
 transform = Transform3D(-10.195, 0, -1.5394022e-06, 0, 10.195, 0, 1.5394022e-06, 0, -10.195, -31.255535, 45.166462, 333.36258)
+
+[node name="Racklab" parent="." unique_id=232824830 instance=ExtResource("13_dd40b")]
+transform = Transform3D(-2.3, 0, -3.4729032e-07, 0, 2.3, 0, 3.4729032e-07, 0, -2.3, -78.37631, 61.067604, 373.58817)
+
+[node name="Racklab4" parent="." unique_id=2067517867 instance=ExtResource("13_dd40b")]
+transform = Transform3D(-1.0053619e-07, 0, 2.3, 0, 2.3, 0, -2.3, 0, -1.0053619e-07, -39.558037, 61.067604, 342.77606)
+
+[node name="Racklab5" parent="." unique_id=1820688192 instance=ExtResource("13_dd40b")]
+transform = Transform3D(-1.0053619e-07, 0, 2.3, 0, 2.3, 0, -2.3, 0, -1.0053619e-07, -39.558037, 61.067604, 269.34323)
+
+[node name="Racklab2" parent="." unique_id=921959262 instance=ExtResource("13_dd40b")]
+transform = Transform3D(-2.3, 0, -3.4729032e-07, 0, 2.3, 0, 3.4729032e-07, 0, -2.3, -141.99136, 61.067604, 373.58817)
+
+[node name="Racklab3" parent="." unique_id=1611372370 instance=ExtResource("13_dd40b")]
+transform = Transform3D(-2.3, 0, -3.4729032e-07, 0, 2.3, 0, 3.4729032e-07, 0, -2.3, -243.51288, 61.067604, 373.58817)
 
 [editable path="puerta2"]
