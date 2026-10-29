@@ -9,7 +9,7 @@
 [ext_resource type="Script" uid="uid://31ipksk4tnso" path="res://scriptstamina/canvas_layer.gd" id="3_tgavs"]
 [ext_resource type="Script" uid="uid://dde7axw8aa7yy" path="res://UI/animacionfadein.gd" id="3_uph1g"]
 [ext_resource type="PackedScene" uid="uid://l3360f65cyou" path="res://salas/linterna_suelo.tscn" id="4_tgavs"]
-[ext_resource type="FontFile" uid="uid://blju0ku40nkwn" path="res://Fuentes/Bonechiller Free.otf" id="5_bl8tx"]
+[ext_resource type="FontFile" uid="uid://blju0ku40nkwn" path="res://Interfaz/Fuentes/Bonechiller Free.otf" id="5_bl8tx"]
 [ext_resource type="Script" uid="uid://v4xmv2vcxdob" path="res://UI/ajustesmenuesc.gd" id="6_3q2x0"]
 [ext_resource type="PackedScene" uid="uid://bwcjyqarbdklt" path="res://inventario/llave.tscn" id="6_tbg6u"]
 [ext_resource type="PackedScene" uid="uid://cjh7u2io5d7mc" path="res://items/ganzua.tscn" id="8_rvme7"]
@@ -26,7 +26,7 @@
 [ext_resource type="Script" uid="uid://cbtmpdwgai7qm" path="res://UI/pantalla_final.gd" id="15_mhgjs"]
 [ext_resource type="Texture2D" uid="uid://cem6dnor703bi" path="res://fotos/controlesimg/inventariofoto.png" id="16_egg21"]
 [ext_resource type="Texture2D" uid="uid://mium0om5gwv6" path="res://fotos/controlesimg/objetoenmano.png" id="17_avcb8"]
-[ext_resource type="FontFile" uid="uid://g00wcuajk3nk" path="res://Fuentes/Bonechiller Free.ttf" id="17_f1ihl"]
+[ext_resource type="FontFile" uid="uid://g00wcuajk3nk" path="res://Interfaz/Fuentes/Bonechiller Free.ttf" id="17_f1ihl"]
 [ext_resource type="Texture2D" uid="uid://15kuu20okjr1" path="res://fotos/controlesimg/objetoenelpiso.png" id="18_eew5s"]
 [ext_resource type="Texture2D" uid="uid://fcvlnvg0gucu" path="res://fotos/controlesimg/stamina.png" id="19_7bf7e"]
 [ext_resource type="Texture2D" uid="uid://c07dqk5hffp74" path="res://fotos/controlesimg/linternaprendida.png" id="20_ud0b3"]
@@ -1260,8 +1260,8 @@ transform = Transform3D(-4.3711387e-10, -0.02104896, 0, 0.01, -9.200793e-10, 0, 
 transform = Transform3D(-7.8680495e-10, -0.018, 0, 0.018, -7.8680495e-10, 0, 0, 0, 0.018, 163.3976, 1.3733827, 39.11654)
 
 [connection signal="pressed" from="Jugador/Node2D/CanvasLayer/Control/VBoxContainer/controles" to="Jugador/Node2D/CanvasLayer/Control" method="_on_controles_pressed"]
-[connection signal="pressed" from="Jugador/Node2D/CanvasLayer/Control/VBoxContainer/reiniciar" to="Jugador/Node2D/CanvasLayer/Control" method="_on_reiniciar_pressed"]
 [connection signal="pressed" from="Jugador/Node2D/CanvasLayer/Control/VBoxContainer/reiniciar" to="Jugador/Node2D/CanvasLayer/Control" method="_on_salir_2_pressed"]
+[connection signal="pressed" from="Jugador/Node2D/CanvasLayer/Control/VBoxContainer/reiniciar" to="Jugador/Node2D/CanvasLayer/Control" method="_on_reiniciar_pressed"]
 [connection signal="pressed" from="Jugador/Node2D/CanvasLayer/ConfirmarSalir/Si" to="Jugador/Node2D/CanvasLayer/ConfirmarSalir" method="_on_si_pressed"]
 [connection signal="pressed" from="Jugador/Node2D/CanvasLayer/ConfirmarSalir/No" to="Jugador/Node2D/CanvasLayer/ConfirmarSalir" method="_on_no_pressed"]
 [connection signal="pressed" from="Jugador/Node2D/CanvasLayer/Ajustes/Cerrar" to="Jugador/Node2D/CanvasLayer/Ajustes" method="_on_cerrar_pressed"]
