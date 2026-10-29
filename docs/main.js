@@ -42,7 +42,7 @@ function actualizarRanking() {
                 var fila = tbody.insertRow();
                 fila.insertCell().textContent = i + 1;
                 fila.insertCell().textContent = p.nombre;
-                fila.insertCell().textContent = p.fecha || "";
+                fila.insertCell().textContent = p.fecha ? p.fecha + (p.hora ? " " + p.hora : "") : "";
                 var t = fila.insertCell();
                 t.textContent = formatearTiempo(p.tiempo);
                 t.className = "ranking-time";
