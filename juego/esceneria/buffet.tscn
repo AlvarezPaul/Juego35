@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://dncquk2gh7dba" path="res://puerta/puertabloqueada.tscn" id="6_c05sx"]
 [ext_resource type="PackedScene" uid="uid://crtq4ylve4qnr" path="res://esceneria/muebles/silla.tscn" id="6_k6gqu"]
 [ext_resource type="PackedScene" uid="uid://byjaehmv1t72i" path="res://puerta/puerta.tscn" id="7_k6gqu"]
+[ext_resource type="PackedScene" uid="uid://bluxtfedk4275" path="res://esceneria/muebles/heladerapepsi.tscn" id="10_m3esr"]
 [ext_resource type="Texture2D" uid="uid://dosji0fqm6rgy" path="res://fotos/chapabaliza.png" id="12_0fqj5"]
 [ext_resource type="PackedScene" uid="uid://bo648njdxych4" path="res://esceneria/muebles/microondas.tscn" id="30_microondas"]
 [ext_resource type="PackedScene" uid="uid://ddgkq3uy2ls5c" path="res://esceneria/muebles/mesamicro.tscn" id="31_mesamicro"]
@@ -217,7 +218,7 @@ data = PackedVector3Array(1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, 1, 1, 1, -1, 
 [sub_resource type="BoxMesh" id="BoxMesh_a5yc5"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_m3esr"]
-albedo_color = Color(0.2520276, 0.25202766, 0.25202763, 1)
+albedo_color = Color(0.48962194, 0.48962235, 0.489622, 1)
 
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_ime8u"]
 data = PackedVector3Array(-0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, -0.5)
@@ -1018,7 +1019,7 @@ transform = Transform3D(-1.3113416e-07, 0, -3.0000005, 0, 3.0000005, 0, 3.000000
 transform = Transform3D(-1.3113416e-07, 0, -3.0000005, 0, 3.0000005, 0, 3.0000005, 0, -1.3113416e-07, -37.040047, 1.3863668, 109.29385)
 
 [node name="tele" type="Node3D" parent="muebles" unique_id=1232560770]
-transform = Transform3D(-5.215964e-08, 0, 1, 0, 1.055643, 0, -1.1932735, 0, -4.371139e-08, -30.032042, 18.146978, 63.186985)
+transform = Transform3D(-4.371139e-08, 0, 0.838, 0, 0.885, 0, -1, 0, -3.6630144e-08, -30.032042, 18.474771, 61.828)
 
 [node name="MeshInstance3D3" type="MeshInstance3D" parent="muebles/tele" unique_id=1438674727]
 transform = Transform3D(22.197433, 0, 0, 0, 13.159013, 0, 0, 0, 0.580498, 11.474255, 6.5598946, 0.42730236)
@@ -1074,6 +1075,12 @@ transform = Transform3D(-4.371139e-08, 0, -1.0899953, 0, 1, 0, 1, 0, -4.7645205e
 
 [node name="bisagra" parent="muebles/puertas/puerta4" index="1" unique_id=574221250]
 transform = Transform3D(1.9999998, 0, 0, 0, 8.384443, 0, 0, 0, 8.465699, 1.7767334, 5.4530277, 5.8950157)
+
+[node name="Heladerapepsi" parent="muebles" unique_id=785254444 instance=ExtResource("10_m3esr")]
+transform = Transform3D(-0.11850345, 0, 3.998244, 0, 4, 0, -3.998244, 0, -0.11850345, 71.79969, 3.7592936, 52.65436)
+
+[node name="Heladerapepsi2" parent="muebles" unique_id=656189691 instance=ExtResource("10_m3esr")]
+transform = Transform3D(0.59918106, 0, 3.954868, 0, 4, 0, -3.954868, 0, 0.59918106, 70.710075, 3.7592936, 94.42326)
 
 [node name="microondas" parent="." unique_id=1815375819 instance=ExtResource("30_microondas")]
 transform = Transform3D(-7.86805e-08, 0, -1.8, 0, 1.8, 0, 1.8, 0, -7.86805e-08, 73.11894, 3.9498234, 145.59953)
