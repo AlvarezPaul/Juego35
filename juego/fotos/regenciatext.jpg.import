@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dc0fsadik7muk"
-path.s3tc="res://.godot/imported/manuel-belgrano.jpg-aa9cdba0e12b5d6052fdaa45d5d975d5.s3tc.ctex"
+uid="uid://b0hxdr6d1g0uc"
+path.s3tc="res://.godot/imported/regenciatext.jpg-0690ee602c4d2be70640d7eea3aa37bc.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://fotos/manuel-belgrano.jpg"
-dest_files=["res://.godot/imported/manuel-belgrano.jpg-aa9cdba0e12b5d6052fdaa45d5d975d5.s3tc.ctex"]
+source_file="res://fotos/regenciatext.jpg"
+dest_files=["res://.godot/imported/regenciatext.jpg-0690ee602c4d2be70640d7eea3aa37bc.s3tc.ctex"]
 
 [params]
 

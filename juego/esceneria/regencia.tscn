@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://crtq4ylve4qnr" path="res://esceneria/muebles/silla.tscn" id="4_18pp6"]
 [ext_resource type="PackedScene" uid="uid://bybhjhexbeuoc" path="res://puerta/puerta_regencia.tscn" id="6_nw5i3"]
 [ext_resource type="PackedScene" uid="uid://dncquk2gh7dba" path="res://puerta/puertabloqueada.tscn" id="6_saxrb"]
+[ext_resource type="Texture2D" uid="uid://b0hxdr6d1g0uc" path="res://fotos/regenciatext.jpg" id="7_nw5i3"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_1vc3g"]
 
@@ -35,6 +36,29 @@ data = PackedVector3Array(-0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0
 
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_wrvh4"]
 data = PackedVector3Array(-0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, -0.5)
+
+[sub_resource type="BoxMesh" id="BoxMesh_xrivr"]
+size = Vector3(20.37378, 15.127197, 1.9145508)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_13qdw"]
+albedo_color = Color(0.63671815, 0.48470032, 0.38543606, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_13qdw"]
+size = Vector3(19.69104, 0.19226074, 0.18115234)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_b1lj4"]
+albedo_color = Color(0.87783927, 0.716517, 0.619903, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_wrvh4"]
+size = Vector3(0.20645905, 16.553047, 0.18115234)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_xrivr"]
+top_radius = 0.20166016
+bottom_radius = 0.20166016
+height = 0.5916748
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_njqwk"]
+albedo_color = Color(0.5132329, 0.5132329, 0.5132329, 1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_saxrb"]
 size = Vector3(1, 0.9984741, 1)
@@ -199,24 +223,237 @@ surface_material_override/0 = SubResource("StandardMaterial3D_nw5i3")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="estructura/MeshInstance3D13/StaticBody3D" unique_id=958000815]
 shape = SubResource("ConcavePolygonShape3D_wrvh4")
 
+[node name="Mueble" type="Node3D" parent="estructura" unique_id=1327724296]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.7683716e-07, 1.7339776, 13.878046)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="estructura/Mueble" unique_id=904959159]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.22473192, 5.9554443, -0.4572754)
+mesh = SubResource("BoxMesh_xrivr")
+surface_material_override/0 = SubResource("StandardMaterial3D_13qdw")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="estructura/Mueble" unique_id=206566738]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.054323196, 7.5910606, -1.4453487)
+mesh = SubResource("BoxMesh_13qdw")
+surface_material_override/0 = SubResource("StandardMaterial3D_b1lj4")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="estructura/Mueble" unique_id=645090101]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.1667943, 5.695443, -1.4453468)
+mesh = SubResource("BoxMesh_wrvh4")
+surface_material_override/0 = SubResource("StandardMaterial3D_b1lj4")
+
+[node name="MeshInstance3D5" type="MeshInstance3D" parent="estructura/Mueble" unique_id=2089012614]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.31844234, 5.695443, -1.4453468)
+mesh = SubResource("BoxMesh_wrvh4")
+surface_material_override/0 = SubResource("StandardMaterial3D_b1lj4")
+
+[node name="MeshInstance3D6" type="MeshInstance3D" parent="estructura/Mueble" unique_id=649725320]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.582833, 5.695443, -1.4453468)
+mesh = SubResource("BoxMesh_wrvh4")
+surface_material_override/0 = SubResource("StandardMaterial3D_b1lj4")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="estructura/Mueble" unique_id=1759155659]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.054323196, 1.4736435, -1.4453487)
+mesh = SubResource("BoxMesh_13qdw")
+surface_material_override/0 = SubResource("StandardMaterial3D_b1lj4")
+
+[node name="Manijita" type="Node3D" parent="estructura/Mueble" unique_id=1049050923]
+transform = Transform3D(1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, 7.9242644, 10.644481, -1.3046665)
+
+[node name="MeshInstance3D7" type="MeshInstance3D" parent="estructura/Mueble/Manijita" unique_id=1125944447]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0)
+mesh = SubResource("CylinderMesh_xrivr")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_njqwk")
+
+[node name="MeshInstance3D8" type="MeshInstance3D" parent="estructura/Mueble/Manijita" unique_id=1732214711]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -0.71024036, 0, 0)
+mesh = SubResource("CylinderMesh_xrivr")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_njqwk")
+
+[node name="Manijita2" type="Node3D" parent="estructura/Mueble" unique_id=1304663370]
+transform = Transform3D(1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, 3.1811705, 10.644481, -1.3046665)
+
+[node name="MeshInstance3D7" type="MeshInstance3D" parent="estructura/Mueble/Manijita2" unique_id=1488578416]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0)
+mesh = SubResource("CylinderMesh_xrivr")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_njqwk")
+
+[node name="MeshInstance3D8" type="MeshInstance3D" parent="estructura/Mueble/Manijita2" unique_id=1495098097]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -0.71024036, 0, 0)
+mesh = SubResource("CylinderMesh_xrivr")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_njqwk")
+
+[node name="Manijita3" type="Node3D" parent="estructura/Mueble" unique_id=1562746783]
+transform = Transform3D(1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, -1.784935, 10.644481, -1.3046665)
+
+[node name="MeshInstance3D7" type="MeshInstance3D" parent="estructura/Mueble/Manijita3" unique_id=281390663]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0)
+mesh = SubResource("CylinderMesh_xrivr")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_njqwk")
+
+[node name="MeshInstance3D8" type="MeshInstance3D" parent="estructura/Mueble/Manijita3" unique_id=1958101204]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -0.71024036, 0, 0)
+mesh = SubResource("CylinderMesh_xrivr")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_njqwk")
+
+[node name="Manijita4" type="Node3D" parent="estructura/Mueble" unique_id=1389483693]
+transform = Transform3D(1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, -6.671795, 10.644481, -1.3046665)
+
+[node name="MeshInstance3D7" type="MeshInstance3D" parent="estructura/Mueble/Manijita4" unique_id=847087155]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0)
+mesh = SubResource("CylinderMesh_xrivr")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_njqwk")
+
+[node name="MeshInstance3D8" type="MeshInstance3D" parent="estructura/Mueble/Manijita4" unique_id=551669007]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -0.71024036, 0, 0)
+mesh = SubResource("CylinderMesh_xrivr")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_njqwk")
+
+[node name="Manijita5" type="Node3D" parent="estructura/Mueble" unique_id=1204441383]
+transform = Transform3D(1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, -6.7517977, 4.6416063, -1.3046665)
+
+[node name="MeshInstance3D7" type="MeshInstance3D" parent="estructura/Mueble/Manijita5" unique_id=1946589424]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0)
+mesh = SubResource("CylinderMesh_xrivr")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_njqwk")
+
+[node name="MeshInstance3D8" type="MeshInstance3D" parent="estructura/Mueble/Manijita5" unique_id=744861807]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -0.71024036, 0, 0)
+mesh = SubResource("CylinderMesh_xrivr")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_njqwk")
+
+[node name="Manijita6" type="Node3D" parent="estructura/Mueble" unique_id=683099334]
+transform = Transform3D(1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, -1.7080278, 4.6416063, -1.3046665)
+
+[node name="MeshInstance3D7" type="MeshInstance3D" parent="estructura/Mueble/Manijita6" unique_id=1290489032]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0)
+mesh = SubResource("CylinderMesh_xrivr")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_njqwk")
+
+[node name="MeshInstance3D8" type="MeshInstance3D" parent="estructura/Mueble/Manijita6" unique_id=2034582438]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -0.71024036, 0, 0)
+mesh = SubResource("CylinderMesh_xrivr")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_njqwk")
+
+[node name="Manijita7" type="Node3D" parent="estructura/Mueble" unique_id=1747931102]
+transform = Transform3D(1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, 3.2349663, 4.6416063, -1.3046665)
+
+[node name="MeshInstance3D7" type="MeshInstance3D" parent="estructura/Mueble/Manijita7" unique_id=1229724139]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0)
+mesh = SubResource("CylinderMesh_xrivr")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_njqwk")
+
+[node name="MeshInstance3D8" type="MeshInstance3D" parent="estructura/Mueble/Manijita7" unique_id=2053078645]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -0.71024036, 0, 0)
+mesh = SubResource("CylinderMesh_xrivr")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_njqwk")
+
+[node name="Manijita8" type="Node3D" parent="estructura/Mueble" unique_id=2097518014]
+transform = Transform3D(1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, 8.042824, 4.6416063, -1.3046637)
+
+[node name="MeshInstance3D7" type="MeshInstance3D" parent="estructura/Mueble/Manijita8" unique_id=2055114094]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0)
+mesh = SubResource("CylinderMesh_xrivr")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_njqwk")
+
+[node name="MeshInstance3D8" type="MeshInstance3D" parent="estructura/Mueble/Manijita8" unique_id=528993309]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -0.71024036, 0, 0)
+mesh = SubResource("CylinderMesh_xrivr")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_njqwk")
+
+[node name="Manijita9" type="Node3D" parent="estructura/Mueble" unique_id=1608199539]
+transform = Transform3D(1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, 8.073608, -0.056551695, -1.3046618)
+
+[node name="MeshInstance3D7" type="MeshInstance3D" parent="estructura/Mueble/Manijita9" unique_id=364892188]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0)
+mesh = SubResource("CylinderMesh_xrivr")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_njqwk")
+
+[node name="MeshInstance3D8" type="MeshInstance3D" parent="estructura/Mueble/Manijita9" unique_id=1355573675]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -0.71024036, 0, 0)
+mesh = SubResource("CylinderMesh_xrivr")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_njqwk")
+
+[node name="Manijita10" type="Node3D" parent="estructura/Mueble" unique_id=125587764]
+transform = Transform3D(1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, 3.1673536, -0.056551695, -1.3046618)
+
+[node name="MeshInstance3D7" type="MeshInstance3D" parent="estructura/Mueble/Manijita10" unique_id=720499899]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0)
+mesh = SubResource("CylinderMesh_xrivr")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_njqwk")
+
+[node name="MeshInstance3D8" type="MeshInstance3D" parent="estructura/Mueble/Manijita10" unique_id=394650973]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -0.71024036, 0, 0)
+mesh = SubResource("CylinderMesh_xrivr")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_njqwk")
+
+[node name="Manijita11" type="Node3D" parent="estructura/Mueble" unique_id=419682741]
+transform = Transform3D(1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, -1.7320461, -0.056551695, -1.3046618)
+
+[node name="MeshInstance3D7" type="MeshInstance3D" parent="estructura/Mueble/Manijita11" unique_id=940475477]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0)
+mesh = SubResource("CylinderMesh_xrivr")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_njqwk")
+
+[node name="MeshInstance3D8" type="MeshInstance3D" parent="estructura/Mueble/Manijita11" unique_id=1920964222]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -0.71024036, 0, 0)
+mesh = SubResource("CylinderMesh_xrivr")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_njqwk")
+
+[node name="Manijita12" type="Node3D" parent="estructura/Mueble" unique_id=1541812734]
+transform = Transform3D(1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, -6.781439, -0.056551695, -1.3046618)
+
+[node name="MeshInstance3D7" type="MeshInstance3D" parent="estructura/Mueble/Manijita12" unique_id=535779421]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0)
+mesh = SubResource("CylinderMesh_xrivr")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_njqwk")
+
+[node name="MeshInstance3D8" type="MeshInstance3D" parent="estructura/Mueble/Manijita12" unique_id=759751607]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -0.71024036, 0, 0)
+mesh = SubResource("CylinderMesh_xrivr")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_njqwk")
+
 [node name="lampara_encendida" parent="." unique_id=1101667733 instance=ExtResource("2_1vc3g")]
-transform = Transform3D(2, 0, 0, 0, 1, 0, 0, 0, 2, 4.5132203, 13.1627035, 5.232271)
+transform = Transform3D(2, 0, 0, 0, 1, 0, 0, 0, 2, 4.51322, 13.158682, 6.5252504)
+
+[node name="lampara_encendida2" parent="." unique_id=861105752 instance=ExtResource("2_1vc3g")]
+transform = Transform3D(2, 0, 0, 0, 1, 0, 0, 0, 2, 4.513221, 13.158682, -11.921247)
 
 [node name="SpotLight3D2" type="SpotLight3D" parent="." unique_id=1828147169]
-transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 4.546651, 13.099846, 5.0577326)
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 4.5972013, 13.119883, 6.7802124)
 light_color = Color(1, 0.88990986, 0.9956606, 1)
 spot_range = 9.0
 
-[node name="lampara_encendida2" parent="." unique_id=1595880798 instance=ExtResource("2_1vc3g")]
-transform = Transform3D(2, 0, 0, 0, 1, 0, 0, 0, 2, 4.513221, 13.1627035, -9.932209)
-
 [node name="SpotLight3D" type="SpotLight3D" parent="." unique_id=36092331]
-transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 4.5466514, 13.099846, -10.106748)
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 4.5466514, 13.099846, -12.036797)
 light_color = Color(1, 0.88990986, 0.9956606, 1)
 spot_range = 9.0
 
 [node name="mesa4" parent="." unique_id=1545127772 instance=ExtResource("3_s1fxt")]
-transform = Transform3D(-1.7484556e-08, 0, 0.5, 0, 0.7309916, 0, -0.4, 0, -2.1855694e-08, 4.2905498, -1.421487, 0.31666034)
+transform = Transform3D(-1.7484556e-08, 0, 0.5, 0, 0.7309916, 0, -0.4, 0, -2.1855694e-08, 2.7742906, -1.421487, -1.8283664)
 
 [node name="Cube_018" parent="mesa4" index="1" unique_id=1440132085]
 transform = Transform3D(0.8, 0, 0, 0, -2.5104956e-08, -2.0869365, 0, 0.57433444, -9.122289e-08, -18.592224, 2.0982494, -2.0850601)
@@ -231,22 +468,22 @@ transform = Transform3D(0.8, 0, 0, 0, -2.5104956e-08, -2.0869365, 0, 0.57433444,
 transform = Transform3D(0.8, 0, 0, 0, -2.5104956e-08, -2.0869365, 0, 0.57433444, -9.122289e-08, 6.232254, 2.0982494, 7.7429004)
 
 [node name="silla" parent="." unique_id=456721708 instance=ExtResource("4_18pp6")]
-transform = Transform3D(-6.119594e-08, 0, 1.4, 0, 1.2792354, 0, -1.4, 0, -6.119594e-08, 9.969423, -1.2444233, -0.8083678)
+transform = Transform3D(-6.119594e-08, 0, 1.4, 0, 1.2792354, 0, -1.4, 0, -6.119594e-08, 8.453164, -1.2444233, -2.9533944)
 
 [node name="silla5" parent="." unique_id=1287079524 instance=ExtResource("4_18pp6")]
-transform = Transform3D(1.4, 0, 0, 0, 1.2792354, 0, 0, 0, 1.4, 6.9036827, -1.2444233, 11.486132)
+transform = Transform3D(1.4, 0, 0, 0, 1.2792354, 0, 0, 0, 1.4, 5.3874235, -1.2444233, 9.341105)
 
 [node name="silla6" parent="." unique_id=660282868 instance=ExtResource("4_18pp6")]
-transform = Transform3D(-1.4, 0, -1.2239187e-07, 0, 1.2792354, 0, 1.2239187e-07, 0, -1.4, 4.4914684, -1.2444233, -3.492384)
+transform = Transform3D(-1.4, 0, -1.2239187e-07, 0, 1.2792354, 0, 1.2239187e-07, 0, -1.4, 2.9752095, -1.2444233, -5.637411)
 
 [node name="silla2" parent="." unique_id=247638929 instance=ExtResource("4_18pp6")]
-transform = Transform3D(-6.119594e-08, 0, 1.4, 0, 1.2792354, 0, -1.4, 0, -6.119594e-08, 9.969423, -1.2444233, 3.8709865)
+transform = Transform3D(-6.119594e-08, 0, 1.4, 0, 1.2792354, 0, -1.4, 0, -6.119594e-08, 8.453164, -1.2444233, 1.7259597)
 
 [node name="silla3" parent="." unique_id=815658941 instance=ExtResource("4_18pp6")]
-transform = Transform3D(-6.119594e-08, 0, -1.4, 0, 1.2792354, 0, 1.4, 0, -6.119594e-08, 1.3947886, -1.2444233, 1.8935438)
+transform = Transform3D(-6.119594e-08, 0, -1.4, 0, 1.2792354, 0, 1.4, 0, -6.119594e-08, -0.121470444, -1.2444233, -0.25148296)
 
 [node name="silla4" parent="." unique_id=1270907331 instance=ExtResource("4_18pp6")]
-transform = Transform3D(-6.119594e-08, 0, -1.4, 0, 1.2792354, 0, 1.4, 0, -6.119594e-08, 1.3947885, -1.2444233, 6.572898)
+transform = Transform3D(-6.119594e-08, 0, -1.4, 0, 1.2792354, 0, 1.4, 0, -6.119594e-08, -0.121470645, -1.2444233, 4.427871)
 
 [node name="MeshInstance3D23" type="MeshInstance3D" parent="." unique_id=1000932584]
 transform = Transform3D(0.8638824, 5.684342e-14, 0, 0, -8.5137657e-07, -0.5092534, 0, 19.477224, -2.226017e-08, 14.744023, 2.4174254, 1.9528552)
@@ -334,10 +571,10 @@ mesh = SubResource("BoxMesh_vrkjw")
 surface_material_override/0 = SubResource("StandardMaterial3D_wrvh4")
 
 [node name="Puertabloqueada3" parent="." unique_id=544523420 instance=ExtResource("6_saxrb")]
-transform = Transform3D(2.0862255, 0, 0, 0, 2.4313533, 0, 0, 0, 2.3898416, -4.7699285, 3.3490043, 7.662649)
+transform = Transform3D(2.0862255, 0, 0, 0, 2.4313533, 0, 0, 0, 2.3898416, -4.769928, 3.3490043, 3.2739513)
 
 [node name="MeshInstance3D131" type="MeshInstance3D" parent="." unique_id=776219305]
-transform = Transform3D(2.329999, -0.006468373, 2.2906272e-11, 0, -3.2611143e-07, -0.6044163, 0.002020131, 7.4605565, -2.6419867e-08, -5.438039, 8.244629, 8.637846)
+transform = Transform3D(2.329999, -0.006468373, 2.2906272e-11, 0, -3.2611143e-07, -0.6044163, 0.002020131, 7.4605565, -2.6419867e-08, -5.4380383, 8.244629, 4.2491484)
 mesh = SubResource("BoxMesh_nw5i3")
 skeleton = NodePath("../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_urfj1")
@@ -348,7 +585,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_urfj1")
 shape = SubResource("ConcavePolygonShape3D_60w54")
 
 [node name="MeshInstance3D160" type="MeshInstance3D" parent="." unique_id=504220787]
-transform = Transform3D(2.269999, 0, -0.0005714848, 0, 9.889305, 0, 0.0019681104, 0, 0.6591448, -5.441507, 3.604885, 12.073573)
+transform = Transform3D(2.269999, 0, -0.0005714848, 0, 9.889305, 0, 0.0019681104, 0, 0.6591448, -5.441507, 3.604885, 7.6848755)
 mesh = SubResource("BoxMesh_nw5i3")
 skeleton = NodePath("../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_urfj1")
@@ -359,7 +596,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_urfj1")
 shape = SubResource("ConcavePolygonShape3D_60w54")
 
 [node name="MeshInstance3D161" type="MeshInstance3D" parent="." unique_id=1628938055]
-transform = Transform3D(2.269999, 0, -0.0005714848, 0, 9.889305, 0, 0.0019681104, 0, 0.6591448, -5.4355683, 3.604885, 5.2261906)
+transform = Transform3D(2.269999, 0, -0.0005714848, 0, 9.889305, 0, 0.0019681104, 0, 0.6591448, -5.4355683, 3.604885, 0.8374927)
 mesh = SubResource("BoxMesh_nw5i3")
 skeleton = NodePath("../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_urfj1")
@@ -370,7 +607,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_urfj1")
 shape = SubResource("ConcavePolygonShape3D_60w54")
 
 [node name="MeshInstance3D157" type="MeshInstance3D" parent="." unique_id=2140443481]
-transform = Transform3D(1, 0, -1.7763568e-15, 0, 0.5215263, 0, 0, 0, 0.57036847, -5.3550067, 3.907855, 8.62564)
+transform = Transform3D(1, 0, -1.7763568e-15, 0, 0.5215263, 0, 0, 0, 0.57036847, -5.355006, 3.907855, 4.1589365)
 mesh = SubResource("BoxMesh_vrkjw")
 surface_material_override/0 = SubResource("StandardMaterial3D_wrvh4")
 
@@ -379,6 +616,11 @@ transform = Transform3D(1.7040592, 0, 0, 0, 1, 0, -7.1054274e-15, 0, 1.0144864, 
 
 [node name="bisagra" parent="puerta_regencia" index="1" unique_id=1665898836]
 transform = Transform3D(1.9999998, 0, 0, 0, 4.945094, 0, 0, 0, 4.8273582, -1.9073486e-06, 0, 1.7398701)
+
+[node name="RegenciaText" type="Sprite3D" parent="." unique_id=762094830]
+transform = Transform3D(-3.059797e-08, 0, 0.7, 0, 0.7, 0, -0.7, 0, -3.059797e-08, 14.891529, 9.549721, -13.561558)
+shaded = true
+texture = ExtResource("7_nw5i3")
 
 [editable path="mesa4"]
 [editable path="puerta_regencia"]

@@ -193,7 +193,9 @@ shape = SubResource("ConcavePolygonShape3D_sgprd")
 
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="Tierra" unique_id=543423470]
 stream = ExtResource("2_1muvh")
-volume_db = 10.0
+volume_db = -2.0
+unit_size = 12.0
+pitch_scale = 1.05
 autoplay = true
 max_distance = 40.0
 
@@ -360,7 +362,7 @@ shape = SubResource("ConcavePolygonShape3D_3pbdm")
 [node name="check" parent="." unique_id=1400073117 instance=ExtResource("2_7hvex")]
 transform = Transform3D(1.175, 0, 0, 0, 1.175, 0, 0, 0, 1.175, 0.6789236, 0, 0)
 
-[node name="Cube" parent="check" index="0" unique_id=1951966823]
+[node name="Cube" parent="check" index="0" unique_id=202233509]
 transform = Transform3D(79.8, 0, 0, 0, 1.33, 0, 0, 0, 79.8, -17.826, -0.134, -0.095)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="check/Cube" index="0" unique_id=1503869718]

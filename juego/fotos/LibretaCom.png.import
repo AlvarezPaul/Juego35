@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://drxv0lq4ws8rn"
-path="res://.godot/imported/et35logo.jpg-2158c96abcead03a79c17b7bf3083040.ctex"
+uid="uid://bn6jqtvdypxyh"
+path="res://.godot/imported/LibretaCom.png-2e88f8ca97777147b02e9c35a1d9a1c9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://fotos/et35logo.jpg"
-dest_files=["res://.godot/imported/et35logo.jpg-2158c96abcead03a79c17b7bf3083040.ctex"]
+source_file="res://fotos/LibretaCom.png"
+dest_files=["res://.godot/imported/LibretaCom.png-2e88f8ca97777147b02e9c35a1d9a1c9.ctex"]
 
 [params]
 
