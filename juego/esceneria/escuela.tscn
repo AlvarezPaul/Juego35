@@ -850,7 +850,7 @@ size = Vector3(0.89795506, 13.900023, 0.6839905)
 size = Vector3(6.549568, 0.9221177, 0.6839905)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_o68k7"]
-albedo_color = Color(0.39308554, 0.3930855, 0.39308548, 1)
+albedo_color = Color(0.23392546, 0.23392546, 0.2339254, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pvb0m_deco"]
 albedo_color = Color(0, 0.44705883, 0, 1)
@@ -910,6 +910,17 @@ albedo_color = Color(0.28485027, 0.28485027, 0.28485027, 1)
 albedo_color = Color(0.49354547, 0.49354553, 0.49354535, 1)
 
 [sub_resource type="CylinderMesh" id="CylinderMesh_3plco"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_61sci"]
+size = Vector3(1, 5.0213623, 4.8829346)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nb43w"]
+albedo_color = Color(0.12591085, 0.12591085, 0.12591082, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3plco"]
+albedo_color = Color(0.7079665, 0.7079665, 0.7079664, 1)
+emission_enabled = true
+emission = Color(1, 1, 1, 1)
 
 [node name="escuela" type="Node3D" unique_id=905997500]
 
@@ -7468,6 +7479,12 @@ modulate = Color(0.57254905, 0.57254905, 0.57254905, 1)
 shaded = true
 texture = ExtResource("19_naew0")
 
+[node name="NuestraCantina3" type="Sprite3D" parent="." unique_id=1696866610]
+transform = Transform3D(5.8099157e-09, 0, -1.0002674, 0, 0.5092926, 0, 0.48720956, 0, 1.1928069e-08, 168.64615, 16.31658, 137.03279)
+modulate = Color(0.57254905, 0.57254905, 0.57254905, 1)
+shaded = true
+texture = ExtResource("19_naew0")
+
 [node name="ChapaBaliza" type="Sprite3D" parent="." unique_id=1618175455]
 transform = Transform3D(1.292976e-08, 0, -1.0002674, 0, 0.99178106, 0, 1.0842675, 0, 1.1928069e-08, 11.07981, 5.7546434, 128.20442)
 modulate = Color(0.57254905, 0.57254905, 0.57254905, 1)
@@ -8502,5 +8519,25 @@ surface_material_override/0 = SubResource("StandardMaterial3D_k3q6e")
 transform = Transform3D(0.15, 0, 0, 0, 0.15, 0, 0, 4.440892e-16, 0.15, 0, 1.3888512, 0)
 mesh = SubResource("CylinderMesh_3plco")
 surface_material_override/0 = SubResource("StandardMaterial3D_k3q6e")
+
+[node name="Lucecitarecreo" type="Node3D" parent="." unique_id=1328696796]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 81.62783, 32.164238, 36.84329)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Lucecitarecreo" unique_id=1901636243]
+transform = Transform3D(0.8934312, 0.108538814, 0, -0.108538814, 0.8934312, 0, 0, 0, 0.9, 0, 0, 0)
+mesh = SubResource("BoxMesh_61sci")
+surface_material_override/0 = SubResource("StandardMaterial3D_nb43w")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Lucecitarecreo" unique_id=507937577]
+transform = Transform3D(0.64525586, 0.078389145, 0, -0.078389145, 0.64525586, 0, 0, 0, 0.65, 0.23568359, -0.028632108, 0)
+mesh = SubResource("BoxMesh_61sci")
+surface_material_override/0 = SubResource("StandardMaterial3D_3plco")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="Lucecitarecreo" unique_id=1565118796]
+transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, 0.61935425, 0, -2.6096592e-09)
+light_color = Color(0.8819366, 0.8819366, 0.88193655, 1)
+light_energy = 2.901
+light_size = 9.0
+spot_range = 16.636574
 
 [editable path="Node3D13"]

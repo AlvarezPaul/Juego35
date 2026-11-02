@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bj68i5fcrwd30"]
 
-[ext_resource type="Texture2D" uid="uid://dm1hctkqyrcm7" path="res://fotos/1000081050-removebg-preview.png" id="1_rithx"]
+[ext_resource type="Texture2D" uid="uid://bn6jqtvdypxyh" path="res://fotos/LibretaCom.png" id="1_rithx"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_xrivr"]
 size = Vector3(2.6168213, 0.15875244, 2.1736298)
