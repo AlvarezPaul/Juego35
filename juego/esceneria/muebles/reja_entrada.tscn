@@ -188,6 +188,9 @@ transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -0.8
 [node name="bisagra" parent="puerta_reja" index="1" unique_id=1119874742]
 transform = Transform3D(4.3364167, 0, 0, 0, 4.528368, 0, 0, 0, 4.30608, -2.0502426e-09, -0.3434782, 1.7867742)
 
+[node name="MeshInstance3D8" parent="puerta_reja/bisagra/modelo" parent_id_path=PackedInt32Array(1648363380, 1003477289) index="6" unique_id=1511475885]
+transform = Transform3D(0.3, 0, 4.135903e-25, 0, -3.278354e-09, -0.22987221, 0, 0.075, -1.0048033e-08, 0.62274474, 0, 0.1459429)
+
 [node name="MeshInstance3D7" parent="puerta_reja/bisagra/modelo" parent_id_path=PackedInt32Array(1648363380, 1003477289) index="12" unique_id=947214838]
 mesh = SubResource("BoxMesh_y54h4")
 
