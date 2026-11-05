@@ -1,0 +1,59 @@
+[gd_scene format=3 uid="uid://cwauiheedoyvp"]
+
+[ext_resource type="Texture2D" uid="uid://djc8epjcp3bav" path="res://fotos/Caloventor.png" id="1_gj288"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_xrivr"]
+size = Vector3(1.93396, 3.6324463, 3.3291016)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_13qdw"]
+albedo_color = Color(0.37036446, 0.3703645, 0.37036446, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_gj288"]
+top_radius = 0.18066406
+bottom_radius = 0.18066406
+height = 1.001709
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_b1lj4"]
+albedo_color = Color(0.24840015, 0.24840018, 0.24840015, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_xrivr"]
+top_radius = 0.18066406
+bottom_radius = 0.18066406
+height = 1.8022461
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_co3sh"]
+top_radius = 0.18066406
+bottom_radius = 0.18066406
+height = 2.7663574
+
+[node name="Caloventor" type="Node3D" unique_id=53101695]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=247667784]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.46697998, 1.5100708, 1.1352539)
+mesh = SubResource("BoxMesh_xrivr")
+surface_material_override/0 = SubResource("StandardMaterial3D_13qdw")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="." unique_id=777021432]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.47164577, -0.7056347, 1.0564334)
+mesh = SubResource("CylinderMesh_gj288")
+surface_material_override/0 = SubResource("StandardMaterial3D_b1lj4")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="." unique_id=1562207462]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.47026134, 3.7357383, 1.050621)
+mesh = SubResource("CylinderMesh_xrivr")
+surface_material_override/0 = SubResource("StandardMaterial3D_b1lj4")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="." unique_id=1419414580]
+transform = Transform3D(-4.371139e-08, 1, -4.371139e-08, 0, -4.371139e-08, -1, -1, -4.371139e-08, 1.9106855e-15, 1.8559027, 4.4594436, 1.050621)
+mesh = SubResource("CylinderMesh_co3sh")
+surface_material_override/0 = SubResource("StandardMaterial3D_b1lj4")
+
+[node name="MeshInstance3D5" type="MeshInstance3D" parent="." unique_id=2135565139]
+transform = Transform3D(-4.371139e-08, 1, -4.371139e-08, 0, -4.371139e-08, -1, -1, -4.371139e-08, 1.9106855e-15, 1.8559027, -1.0438187, 1.050621)
+mesh = SubResource("CylinderMesh_co3sh")
+surface_material_override/0 = SubResource("StandardMaterial3D_b1lj4")
+
+[node name="Caloventor" type="Sprite3D" parent="." unique_id=1948521637]
+transform = Transform3D(9.539905e-09, 0, -0.8, 0, 0.8, 0, 0.8, 0, 9.539905e-09, -0.5097098, 1.5136806, 1.1168585)
+shaded = true
+texture = ExtResource("1_gj288")
