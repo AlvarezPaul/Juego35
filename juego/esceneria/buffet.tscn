@@ -1468,7 +1468,6 @@ transform = Transform3D(-4.371139e-08, 0, -1.0899953, 0, 1, 0, 1, 0, -4.7645205e
 [node name="bisagra" parent="muebles/puertas/puerta4" index="1" unique_id=574221250]
 transform = Transform3D(1.9999998, 0, 0, 0, 8.384443, 0, 0, 0, 8.465699, 1.7767334, 5.4530277, 5.8950157)
 
-<<<<<<< HEAD
 [node name="puerta_vidrio" type="Node3D" parent="muebles/puertas" unique_id=1282117324]
 transform = Transform3D(-3.934025e-07, 0, 8.91, 0, 10.703, 0, -9, 0, -3.8946845e-07, 70.72787, 11.547392, 17.923458)
 
@@ -1545,7 +1544,7 @@ skeleton = NodePath("../..")
 transform = Transform3D(-7.294396e-09, 0, 0.038160812, 0, 0.06106151, 0, -0.16687636, 0, -1.6680619e-09, -0.12876844, 0, -1.160387)
 mesh = SubResource("BoxMesh_3lg7g")
 skeleton = NodePath("../..")
-=======
+
 [node name="Heladerapepsi" parent="muebles" unique_id=785254444 instance=ExtResource("10_m3esr")]
 transform = Transform3D(-1.7484554e-07, 0, 3.9999998, 0, 4, 0, -3.9999998, 0, -1.7484554e-07, 71.79969, 3.7592936, 42.86658)
 
@@ -1579,7 +1578,6 @@ surface_material_override/0 = SubResource("StandardMaterial3D_jmarr")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.8506927, -0.55304337, 26.126247)
 mesh = SubResource("BoxMesh_bgda7")
 surface_material_override/0 = SubResource("StandardMaterial3D_jmarr")
->>>>>>> origin/main
 
 [node name="microondas" parent="." unique_id=1815375819 instance=ExtResource("30_microondas")]
 transform = Transform3D(-5.2453668e-08, 0, -1.2, 0, 1.2, 0, 1.2, 0, -5.2453668e-08, 71.08445, 5.037359, 141.81403)
