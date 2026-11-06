@@ -1153,7 +1153,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_xhdhp")
 shape = SubResource("ConcavePolygonShape3D_ofun0")
 
 [node name="MeshInstance3D10" type="MeshInstance3D" parent="estructura/detalles/puesto" unique_id=1289380912]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.1624565, 4.830615, 74.052536)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.1229095, 4.830615, 74.052536)
 mesh = SubResource("BoxMesh_7rqhy")
 surface_material_override/0 = SubResource("StandardMaterial3D_xhdhp")
 
