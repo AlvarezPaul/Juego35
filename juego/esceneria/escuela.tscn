@@ -1530,8 +1530,6 @@ transform = Transform3D(55.485, 0, 0, 0, -1.47768e-06, 4.68, 0, -33.805378, -2.0
 mesh = SubResource("BoxMesh_oaqsx")
 surface_material_override/0 = SubResource("StandardMaterial3D_xhdhp")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="pasillo (salon)/MeshInstance3D114" unique_id=1314032532]
-
 [node name="CollisionShape3D" type="CollisionShape3D" parent="pasillo (salon)/MeshInstance3D114/StaticBody3D" unique_id=1802728056]
 shape = SubResource("ConcavePolygonShape3D_vtg84")
 
@@ -1855,8 +1853,6 @@ transform = Transform3D(-1.5636479e-06, -7.14465, 0, 35.77209, -3.123026e-07, 0,
 mesh = SubResource("BoxMesh_oaqsx")
 surface_material_override/0 = SubResource("StandardMaterial3D_xhdhp")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="pasillo (salon)/MeshInstance3D113" unique_id=674073816]
-
 [node name="CollisionShape3D" type="CollisionShape3D" parent="pasillo (salon)/MeshInstance3D113/StaticBody3D" unique_id=336912535]
 shape = SubResource("ConcavePolygonShape3D_vtg84")
 
@@ -1865,8 +1861,6 @@ transform = Transform3D(6.834922e-14, 1.5519187e-06, 1, 35.772095, -1.5519187e-0
 mesh = SubResource("BoxMesh_oaqsx")
 surface_material_override/0 = SubResource("StandardMaterial3D_xhdhp")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="pasillo (salon)/MeshInstance3D111" unique_id=1438773386]
-
 [node name="CollisionShape3D" type="CollisionShape3D" parent="pasillo (salon)/MeshInstance3D111/StaticBody3D" unique_id=999017623]
 shape = SubResource("ConcavePolygonShape3D_vtg84")
 
@@ -1874,8 +1868,6 @@ shape = SubResource("ConcavePolygonShape3D_vtg84")
 transform = Transform3D(6.834922e-14, 1.5519187e-06, 1, 35.772095, -1.5519187e-06, 0, 1.563648e-06, 35.50376, -4.371139e-08, -157.2326, 13.265792, 239.75426)
 mesh = SubResource("BoxMesh_oaqsx")
 surface_material_override/0 = SubResource("StandardMaterial3D_xhdhp")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="pasillo (salon)/MeshInstance3D112" unique_id=437689161]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="pasillo (salon)/MeshInstance3D112/StaticBody3D" unique_id=1106711139]
 shape = SubResource("ConcavePolygonShape3D_vtg84")
@@ -1964,8 +1956,6 @@ shape = SubResource("ConcavePolygonShape3D_ic0mm")
 transform = Transform3D(-1.5050233e-06, 0, -47.301296, 0, 3.2821617, 0, 34.430923, 0, -2.0676052e-06, -176.50105, -5.791336, 239.98532)
 mesh = SubResource("BoxMesh_e4v1y")
 surface_material_override/0 = SubResource("StandardMaterial3D_47t1s")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="pasillo (salon)/MeshInstance3D110" unique_id=1279035682]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="pasillo (salon)/MeshInstance3D110/StaticBody3D" unique_id=146960219]
 shape = SubResource("ConcavePolygonShape3D_ic0mm")
@@ -8373,7 +8363,6 @@ surface_material_override/0 = SubResource("StandardMaterial3D_jxp4i")
 
 [editable path="Node3D13"]
 [editable path="Matafuego4"]
-[editable path="Node3D13"]
 [editable path="mesa14"]
 [editable path="mesa15"]
 [editable path="Node3D14"]
