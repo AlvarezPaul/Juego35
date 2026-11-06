@@ -1,0 +1,56 @@
+[gd_scene format=3 uid="uid://dnxxgqpkpxd3n"]
+
+[ext_resource type="Texture2D" uid="uid://o11qxs5wgoo6" path="res://fotos/CasilleroPrec.png" id="1_dj8ym"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_xrivr"]
+size = Vector3(1.0522461, 3.25943, 2.9255905)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xrivr"]
+albedo_color = Color(0.4390491, 0.43904912, 0.43904912, 1)
+
+[node name="Casilleroprecep" type="Node3D" unique_id=548281129]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1997023255]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.026123047, 0.94618225, -1.3656731)
+mesh = SubResource("BoxMesh_xrivr")
+surface_material_override/0 = SubResource("StandardMaterial3D_xrivr")
+
+[node name="Sprite3D" type="Sprite3D" parent="." unique_id=307014973]
+transform = Transform3D(-2.1855694e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.1855694e-08, 0.5315161, 1.7351143, -0.33446765)
+shaded = true
+texture = ExtResource("1_dj8ym")
+
+[node name="Sprite3D2" type="Sprite3D" parent="." unique_id=1161526577]
+transform = Transform3D(-2.1855694e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.1855694e-08, 0.5315161, 1.7351143, -1.0344033)
+shaded = true
+texture = ExtResource("1_dj8ym")
+
+[node name="Sprite3D3" type="Sprite3D" parent="." unique_id=165798991]
+transform = Transform3D(-2.1855694e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.1855694e-08, 0.5315161, 1.7351143, -1.7401866)
+shaded = true
+texture = ExtResource("1_dj8ym")
+
+[node name="Sprite3D4" type="Sprite3D" parent="." unique_id=30257357]
+transform = Transform3D(-2.1855694e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.1855694e-08, 0.5315161, 1.7351143, -2.4475892)
+shaded = true
+texture = ExtResource("1_dj8ym")
+
+[node name="Sprite3D5" type="Sprite3D" parent="." unique_id=2147292916]
+transform = Transform3D(-2.1855694e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.1855694e-08, 0.5315161, 0.14553571, -0.33446765)
+shaded = true
+texture = ExtResource("1_dj8ym")
+
+[node name="Sprite3D6" type="Sprite3D" parent="." unique_id=2123302731]
+transform = Transform3D(-2.1855694e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.1855694e-08, 0.5315161, 0.14553571, -1.0344033)
+shaded = true
+texture = ExtResource("1_dj8ym")
+
+[node name="Sprite3D7" type="Sprite3D" parent="." unique_id=1562997237]
+transform = Transform3D(-2.1855694e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.1855694e-08, 0.5315161, 0.14553571, -1.7401866)
+shaded = true
+texture = ExtResource("1_dj8ym")
+
+[node name="Sprite3D8" type="Sprite3D" parent="." unique_id=859283858]
+transform = Transform3D(-2.1855694e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.1855694e-08, 0.5315161, 0.14553571, -2.4475892)
+shaded = true
+texture = ExtResource("1_dj8ym")

@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://bwcjyqarbdklt"]
 
+[ext_resource type="Script" uid="uid://c5si6foqhma3m" path="res://inventario/llave_salida.gd" id="1_5wlty"]
 [ext_resource type="ArrayMesh" uid="uid://cd0ll4u3r32q6" path="res://salas/key.obj" id="1_7bknt"]
-[ext_resource type="Script" uid="uid://bti2i5yeismck" path="res://inventario/caealsuelo.gd" id="1_cr5s1"]
-[ext_resource type="Texture2D" path="res://inventario/iconos/icono_llave.png" id="3_icono"]
+[ext_resource type="Texture2D" uid="uid://cchni0dqyikx3" path="res://inventario/iconos/icono_llave.png" id="3_icono"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tbg6u"]
 albedo_color = Color(0.78, 0.62, 0.22, 1)
@@ -15,8 +15,7 @@ size = Vector3(0.3, 0.9, 0.45)
 [node name="Llave" type="Node3D" unique_id=2048800679]
 
 [node name="Area3D" type="Area3D" parent="." unique_id=1755348829]
-script = ExtResource("1_cr5s1")
-nombre_item = "Llave"
+script = ExtResource("1_5wlty")
 icono = ExtResource("3_icono")
 
 [node name="Key" type="MeshInstance3D" parent="Area3D" unique_id=1287634691]

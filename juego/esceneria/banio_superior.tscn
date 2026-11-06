@@ -34,7 +34,7 @@ uv1_scale = Vector3(20, 20, 20)
 data = PackedVector3Array(-0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, -0.5)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gaxx6"]
-albedo_color = Color(0.7607843, 0.45882353, 0.2627451, 1)
+albedo_color = Color(0.74978, 0.74978, 0.74977994, 1)
 uv1_scale = Vector3(10, 10, 10)
 
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_gaxx6"]
@@ -197,7 +197,7 @@ data = PackedVector3Array(-1.7041999, 2.2687, 0.1672, 1.7041999, 2.2687, 0.1672,
 [node name="inodoro" parent="." unique_id=1190789017 instance=ExtResource("1_46w4g")]
 transform = Transform3D(1, 0, 0, 0, 0.99999976, 0, -2.1316282e-14, 0, 1, -8.171913, 2.1110282, -8.991373)
 
-[node name="Bathroom_Toilet" parent="inodoro" index="0" unique_id=686955487]
+[node name="Bathroom_Toilet" parent="inodoro" index="0" unique_id=1333938397]
 transform = Transform3D(-8.742278e-08, 0, 2, 0, 2, 0, -2, 0, -8.742278e-08, -10.436644, -1.888061, 0)
 surface_material_override/0 = SubResource("StandardMaterial3D_nfqsi")
 
@@ -209,7 +209,7 @@ shape = SubResource("ConcavePolygonShape3D_46w4g")
 [node name="inodoro2" parent="." unique_id=1103507666 instance=ExtResource("1_46w4g")]
 transform = Transform3D(1, 0, 0, 0, 0.99999976, 0, -2.1316282e-14, 0, 1, -8.171913, 2.1110282, -16.107376)
 
-[node name="Bathroom_Toilet" parent="inodoro2" index="0" unique_id=686955487]
+[node name="Bathroom_Toilet" parent="inodoro2" index="0" unique_id=1333938397]
 transform = Transform3D(-8.742278e-08, 0, 2, 0, 2, 0, -2, 0, -8.742278e-08, -10.436644, -1.888061, 0)
 surface_material_override/0 = SubResource("StandardMaterial3D_nfqsi")
 
@@ -221,7 +221,7 @@ shape = SubResource("ConcavePolygonShape3D_nfqsi")
 [node name="inodoro3" parent="." unique_id=1280587275 instance=ExtResource("1_46w4g")]
 transform = Transform3D(1, 0, 0, 0, 0.99999976, 0, -2.1316282e-14, 0, 1, -8.171913, 2.1110282, -2.058404)
 
-[node name="Bathroom_Toilet" parent="inodoro3" index="0" unique_id=686955487]
+[node name="Bathroom_Toilet" parent="inodoro3" index="0" unique_id=1333938397]
 transform = Transform3D(-8.742278e-08, 0, 2, 0, 2, 0, -2, 0, -8.742278e-08, -10.436644, -1.888061, 0)
 surface_material_override/0 = SubResource("StandardMaterial3D_nfqsi")
 
@@ -233,7 +233,7 @@ shape = SubResource("ConcavePolygonShape3D_wqt78")
 [node name="inodoro4" parent="." unique_id=804220084 instance=ExtResource("1_46w4g")]
 transform = Transform3D(1, 0, 0, 0, 0.99999976, 0, -2.1316282e-14, 0, 1, -8.171913, 2.1110282, 5.2093453)
 
-[node name="Bathroom_Toilet" parent="inodoro4" index="0" unique_id=686955487]
+[node name="Bathroom_Toilet" parent="inodoro4" index="0" unique_id=1333938397]
 transform = Transform3D(-8.742278e-08, 0, 2, 0, 2, 0, -2, 0, -8.742278e-08, -10.436644, -1.888061, 0)
 surface_material_override/0 = SubResource("StandardMaterial3D_nfqsi")
 
@@ -420,6 +420,13 @@ surface_material_override/0 = SubResource("StandardMaterial3D_yhian")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="estructura/MeshInstance3D13/StaticBody3D" unique_id=1459735725]
 shape = SubResource("ConcavePolygonShape3D_6fdt8")
 
+[node name="SpotLight3D" type="SpotLight3D" parent="estructura" unique_id=2067758936]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, -1.8673687, 14.784084, -9.974337)
+light_color = Color(1, 0.88990986, 0.9956606, 1)
+light_energy = 2.0
+spot_range = 30.725
+spot_angle = 75.1
+
 [node name="puerta_baño" parent="." unique_id=570755997 instance=ExtResource("1_j81xu")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 2.1728144, 3.7039285, 14.786396)
 
@@ -510,9 +517,12 @@ surface_material_override/0 = SubResource("StandardMaterial3D_wqt78")
 
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="lavamanos/MeshInstance3D10" unique_id=2140554736]
 stream = ExtResource("6_igtkx")
+attenuation_model = 2
+volume_db = 6.0
+unit_size = 20.0
 pitch_scale = 0.9
 autoplay = true
-max_distance = 15.0
+max_distance = 25.0
 
 [node name="MeshInstance3D11" type="MeshInstance3D" parent="lavamanos" unique_id=552766821]
 transform = Transform3D(0.28165492, 0, 0, 0, 0.324556, 0, 0, 0, 0.2878293, 8.891152, 4.5891037, -18.946205)
@@ -876,20 +886,7 @@ modulate = Color(0.5251013, 0.5251013, 0.5251013, 1)
 texture = ExtResource("7_igide")
 
 [node name="lampara_encendida" parent="." unique_id=1101667733 instance=ExtResource("8_gaxx6")]
-transform = Transform3D(2, 0, 0, 0, 0.9, 0, 0, 0, 2, -5.6509795, 14.794659, 1.5310726)
-
-[node name="SpotLight3D2" type="SpotLight3D" parent="." unique_id=1575472436]
-transform = Transform3D(1, 0, 0, 0, -4.3711392e-08, 1, 0, -1, -4.3711392e-08, -5.6175475, 14.031284, 1.356534)
-light_color = Color(1, 0.88990986, 0.9956606, 1)
-spot_range = 9.0
-
-[node name="lampara_encendida2" parent="." unique_id=1253989385 instance=ExtResource("8_gaxx6")]
-transform = Transform3D(2, 0, 0, 0, 0.9, 0, 0, 0, 2, -5.6509795, 14.794659, -11.361275)
-
-[node name="SpotLight3D" type="SpotLight3D" parent="." unique_id=1796656380]
-transform = Transform3D(1, 0, 0, 0, -4.3711392e-08, 1, 0, -1, -4.3711392e-08, -5.6175475, 14.105175, -11.535816)
-light_color = Color(1, 0.88990986, 0.9956606, 1)
-spot_range = 9.0
+transform = Transform3D(2.5, 0, 0, 0, 2.5, 0, 0, 0, 2.5, -1.90061, 14.351329, -10.082736)
 
 [editable path="inodoro"]
 [editable path="inodoro2"]

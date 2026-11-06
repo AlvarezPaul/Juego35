@@ -1,0 +1,1683 @@
+[gd_scene format=3 uid="uid://bluxtfedk4275"]
+
+[ext_resource type="Texture2D" uid="uid://cytbp4f12idg3" path="res://fotos/Pepsi.png" id="1_bdqpj"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_xrivr"]
+size = Vector3(2.0994263, 0.90652466, 2.3486328)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_13qdw"]
+albedo_color = Color(0.04755766, 0.047557645, 0.047557645, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_f4kog"]
+size = Vector3(2.0994263, 4.4964066, 0.049316406)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_o37ek"]
+transparency = 1
+albedo_color = Color(0.47058824, 0.8352941, 0.8352941, 0.36078432)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ghmw4"]
+size = Vector3(2.2100525, 4.6611404, 0.15039063)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ekmph"]
+size = Vector3(2.2100525, 0.81811714, 2.144043)
+
+[sub_resource type="BoxMesh" id="BoxMesh_dqsrw"]
+size = Vector3(2.2100525, 0.07959032, 0.07397461)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mnjkh"]
+albedo_color = Color(0.6542321, 0.6542321, 0.654232, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ek3ro"]
+size = Vector3(0.16164398, 0.07959032, 2.0644531)
+
+[sub_resource type="BoxMesh" id="BoxMesh_xsvs6"]
+size = Vector3(0.028087616, 0.07959032, 2.0644531)
+
+[sub_resource type="BoxMesh" id="BoxMesh_4lm2t"]
+size = Vector3(0.06010437, 2.9467776, 2.0637817)
+
+[sub_resource type="BoxMesh" id="BoxMesh_psru7"]
+size = Vector3(2.0143766, 2.9467776, 0.031360626)
+
+[sub_resource type="BoxMesh" id="BoxMesh_7rp73"]
+size = Vector3(2.0863152, 0.064819396, 2.0792637)
+
+[sub_resource type="BoxMesh" id="BoxMesh_c6w8o"]
+size = Vector3(0.06010437, 2.9467776, 2.0929565)
+
+[sub_resource type="BoxMesh" id="BoxMesh_n1853"]
+size = Vector3(0.14419556, 4.662754, 2.3486328)
+
+[sub_resource type="BoxMesh" id="BoxMesh_fydx3"]
+size = Vector3(0.14419556, 4.662754, 2.3486328)
+
+[sub_resource type="BoxMesh" id="BoxMesh_0mf2s"]
+size = Vector3(2.355873, 0.16194344, 2.3486328)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_xrivr"]
+top_radius = 0.11767578
+bottom_radius = 0.11767578
+height = 0.47579956
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_njqwk"]
+transparency = 1
+albedo_color = Color(1, 1, 1, 0.28235295)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_4uab4"]
+top_radius = 0.110839844
+bottom_radius = 0.110839844
+height = 0.44853973
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xsllo"]
+transparency = 1
+albedo_color = Color(0, 0.5529412, 0.7411765, 0.6392157)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_wwqiq"]
+top_radius = 0.044921875
+bottom_radius = 0.044921875
+height = 0.060287476
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_b1lj4"]
+albedo_color = Color(0.115084134, 0.3517727, 1, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_psmit"]
+top_radius = 0.123535156
+bottom_radius = 0.123535156
+height = 0.15026093
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_a1gjw"]
+albedo_color = Color(0.8627451, 0.2784314, 0, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6gfc7"]
+transparency = 1
+albedo_color = Color(0.9411765, 0.44705883, 0, 0.8509804)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_340jw"]
+albedo_color = Color(1, 0.3882353, 0, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mms7u"]
+albedo_color = Color(1, 0, 0, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3jlb5"]
+transparency = 1
+albedo_color = Color(0.46666667, 0.20784314, 0, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_o1c73"]
+albedo_color = Color(0, 0, 0.54901963, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_13qdw"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sgrid"]
+albedo_color = Color(1, 0.30980393, 0, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lpkjo"]
+albedo_color = Color(0.1148968, 0.11489681, 0.1148968, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_y0nc2"]
+albedo_color = Color(0.87734634, 3.8745256e-06, 1.2513996e-06, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wi6ju"]
+albedo_color = Color(1.5883148e-06, 0, 0.61778224, 1)
+
+[node name="Heladerapepsi" type="Node3D" unique_id=785254444]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1126175400]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.54971313, -0.04673767, -0.6743164)
+mesh = SubResource("BoxMesh_xrivr")
+surface_material_override/0 = SubResource("StandardMaterial3D_13qdw")
+
+[node name="MeshInstance3D8" type="MeshInstance3D" parent="." unique_id=1440001672]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.54971313, 1.7482033, -1.7343192)
+mesh = SubResource("BoxMesh_f4kog")
+surface_material_override/0 = SubResource("StandardMaterial3D_o37ek")
+
+[node name="MeshInstance3D5" type="MeshInstance3D" parent="." unique_id=1192912185]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.60205907, 1.8328183, 0.4242394)
+mesh = SubResource("BoxMesh_ghmw4")
+surface_material_override/0 = SubResource("StandardMaterial3D_13qdw")
+
+[node name="MeshInstance3D6" type="MeshInstance3D" parent="." unique_id=443340567]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.60502625, 3.7520819, -0.5720215)
+mesh = SubResource("BoxMesh_ekmph")
+surface_material_override/0 = SubResource("StandardMaterial3D_13qdw")
+
+[node name="MeshInstance3D7" type="MeshInstance3D" parent="." unique_id=179778401]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.60502625, 2.5136, -1.6070557)
+mesh = SubResource("BoxMesh_dqsrw")
+surface_material_override/0 = SubResource("StandardMaterial3D_mnjkh")
+
+[node name="MeshInstance3D13" type="MeshInstance3D" parent="." unique_id=341062246]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5359972, 2.5136, -0.6118164)
+mesh = SubResource("BoxMesh_ek3ro")
+surface_material_override/0 = SubResource("StandardMaterial3D_mnjkh")
+
+[node name="MeshInstance3D14" type="MeshInstance3D" parent="." unique_id=1671314512]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.42588514, 2.5136, -0.6118164)
+mesh = SubResource("BoxMesh_ek3ro")
+surface_material_override/0 = SubResource("StandardMaterial3D_mnjkh")
+
+[node name="MeshInstance3D15" type="MeshInstance3D" parent="." unique_id=7237687]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.21575639, 2.5136, -0.6118164)
+mesh = SubResource("BoxMesh_xsvs6")
+surface_material_override/0 = SubResource("StandardMaterial3D_mnjkh")
+
+[node name="MeshInstance3D16" type="MeshInstance3D" parent="." unique_id=87276121]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.060302585, 2.5136, -0.6118164)
+mesh = SubResource("BoxMesh_xsvs6")
+surface_material_override/0 = SubResource("StandardMaterial3D_mnjkh")
+
+[node name="MeshInstance3D17" type="MeshInstance3D" parent="." unique_id=1994150437]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.095736176, 2.5136, -0.6118164)
+mesh = SubResource("BoxMesh_xsvs6")
+surface_material_override/0 = SubResource("StandardMaterial3D_mnjkh")
+
+[node name="MeshInstance3D18" type="MeshInstance3D" parent="." unique_id=1776999189]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.25381812, 2.5136, -0.6118164)
+mesh = SubResource("BoxMesh_xsvs6")
+surface_material_override/0 = SubResource("StandardMaterial3D_mnjkh")
+
+[node name="MeshInstance3D19" type="MeshInstance3D" parent="." unique_id=1866961947]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.42419115, 2.5136, -0.6118164)
+mesh = SubResource("BoxMesh_xsvs6")
+surface_material_override/0 = SubResource("StandardMaterial3D_mnjkh")
+
+[node name="MeshInstance3D20" type="MeshInstance3D" parent="." unique_id=218371792]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5860199, 2.5136, -0.6118164)
+mesh = SubResource("BoxMesh_xsvs6")
+surface_material_override/0 = SubResource("StandardMaterial3D_mnjkh")
+
+[node name="MeshInstance3D21" type="MeshInstance3D" parent="." unique_id=1810358345]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.7414737, 2.5136, -0.6118164)
+mesh = SubResource("BoxMesh_xsvs6")
+surface_material_override/0 = SubResource("StandardMaterial3D_mnjkh")
+
+[node name="MeshInstance3D22" type="MeshInstance3D" parent="." unique_id=548003199]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.89751244, 2.5136, -0.6118164)
+mesh = SubResource("BoxMesh_xsvs6")
+surface_material_override/0 = SubResource("StandardMaterial3D_mnjkh")
+
+[node name="MeshInstance3D23" type="MeshInstance3D" parent="." unique_id=69035200]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.0555943, 2.5136, -0.6118164)
+mesh = SubResource("BoxMesh_xsvs6")
+surface_material_override/0 = SubResource("StandardMaterial3D_mnjkh")
+
+[node name="MeshInstance3D24" type="MeshInstance3D" parent="." unique_id=283580515]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2259674, 2.5136, -0.6118164)
+mesh = SubResource("BoxMesh_xsvs6")
+surface_material_override/0 = SubResource("StandardMaterial3D_mnjkh")
+
+[node name="MeshInstance3D25" type="MeshInstance3D" parent="." unique_id=832178183]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.3836724, 2.5136, -0.6118164)
+mesh = SubResource("BoxMesh_xsvs6")
+surface_material_override/0 = SubResource("StandardMaterial3D_mnjkh")
+
+[node name="MeshInstance3D26" type="MeshInstance3D" parent="." unique_id=676054075]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.60502625, 1.534028, -1.6070557)
+mesh = SubResource("BoxMesh_dqsrw")
+surface_material_override/0 = SubResource("StandardMaterial3D_mnjkh")
+
+[node name="MeshInstance3D27" type="MeshInstance3D" parent="." unique_id=589180376]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5359972, 1.534028, -0.6118164)
+mesh = SubResource("BoxMesh_ek3ro")
+surface_material_override/0 = SubResource("StandardMaterial3D_mnjkh")
+
+[node name="MeshInstance3D28" type="MeshInstance3D" parent="." unique_id=1543274579]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.42588514, 1.534028, -0.6118164)
+mesh = SubResource("BoxMesh_ek3ro")
+surface_material_override/0 = SubResource("StandardMaterial3D_mnjkh")
+
+[node name="MeshInstance3D29" type="MeshInstance3D" parent="." unique_id=276735977]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.21575639, 1.534028, -0.6118164)
+mesh = SubResource("BoxMesh_xsvs6")
+surface_material_override/0 = SubResource("StandardMaterial3D_mnjkh")
+
+[node name="MeshInstance3D30" type="MeshInstance3D" parent="." unique_id=1609658137]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.060302585, 1.534028, -0.6118164)
+mesh = SubResource("BoxMesh_xsvs6")
+surface_material_override/0 = SubResource("StandardMaterial3D_mnjkh")
+
+[node name="MeshInstance3D31" type="MeshInstance3D" parent="." unique_id=66986803]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.095736176, 1.534028, -0.6118164)
+mesh = SubResource("BoxMesh_xsvs6")
+surface_material_override/0 = SubResource("StandardMaterial3D_mnjkh")
+
+[node name="MeshInstance3D32" type="MeshInstance3D" parent="." unique_id=876743846]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.25381812, 1.534028, -0.6118164)
+mesh = SubResource("BoxMesh_xsvs6")
+surface_material_override/0 = SubResource("StandardMaterial3D_mnjkh")
+
+[node name="MeshInstance3D33" type="MeshInstance3D" parent="." unique_id=1055570990]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.42419115, 1.534028, -0.6118164)
+mesh = SubResource("BoxMesh_xsvs6")
+surface_material_override/0 = SubResource("StandardMaterial3D_mnjkh")
+
+[node name="MeshInstance3D34" type="MeshInstance3D" parent="." unique_id=226457165]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5860199, 1.534028, -0.6118164)
+mesh = SubResource("BoxMesh_xsvs6")
+surface_material_override/0 = SubResource("StandardMaterial3D_mnjkh")
+
+[node name="MeshInstance3D35" type="MeshInstance3D" parent="." unique_id=578104003]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.7414737, 1.534028, -0.6118164)
+mesh = SubResource("BoxMesh_xsvs6")
+surface_material_override/0 = SubResource("StandardMaterial3D_mnjkh")
+
+[node name="MeshInstance3D36" type="MeshInstance3D" parent="." unique_id=1947199419]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.89751244, 1.534028, -0.6118164)
+mesh = SubResource("BoxMesh_xsvs6")
+surface_material_override/0 = SubResource("StandardMaterial3D_mnjkh")
+
+[node name="MeshInstance3D37" type="MeshInstance3D" parent="." unique_id=807188581]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.0555943, 1.534028, -0.6118164)
+mesh = SubResource("BoxMesh_xsvs6")
+surface_material_override/0 = SubResource("StandardMaterial3D_mnjkh")
+
+[node name="MeshInstance3D38" type="MeshInstance3D" parent="." unique_id=198636057]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2259674, 1.534028, -0.6118164)
+mesh = SubResource("BoxMesh_xsvs6")
+surface_material_override/0 = SubResource("StandardMaterial3D_mnjkh")
+
+[node name="MeshInstance3D39" type="MeshInstance3D" parent="." unique_id=105915349]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.3836724, 1.534028, -0.6118164)
+mesh = SubResource("BoxMesh_xsvs6")
+surface_material_override/0 = SubResource("StandardMaterial3D_mnjkh")
+
+[node name="MeshInstance3D40" type="MeshInstance3D" parent="." unique_id=2110294407]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.60502625, 0.9946085, -1.6070557)
+mesh = SubResource("BoxMesh_dqsrw")
+surface_material_override/0 = SubResource("StandardMaterial3D_mnjkh")
+
+[node name="MeshInstance3D41" type="MeshInstance3D" parent="." unique_id=545846596]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5359972, 0.9946085, -0.6118164)
+mesh = SubResource("BoxMesh_ek3ro")
+surface_material_override/0 = SubResource("StandardMaterial3D_mnjkh")
+
+[node name="MeshInstance3D42" type="MeshInstance3D" parent="." unique_id=2020683515]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.42588514, 0.9946085, -0.6118164)
+mesh = SubResource("BoxMesh_ek3ro")
+surface_material_override/0 = SubResource("StandardMaterial3D_mnjkh")
+
+[node name="MeshInstance3D43" type="MeshInstance3D" parent="." unique_id=268794060]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.21575639, 0.9946085, -0.6118164)
+mesh = SubResource("BoxMesh_xsvs6")
+surface_material_override/0 = SubResource("StandardMaterial3D_mnjkh")
+
+[node name="MeshInstance3D44" type="MeshInstance3D" parent="." unique_id=744173719]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.060302585, 0.9946085, -0.6118164)
+mesh = SubResource("BoxMesh_xsvs6")
+surface_material_override/0 = SubResource("StandardMaterial3D_mnjkh")
+
+[node name="MeshInstance3D45" type="MeshInstance3D" parent="." unique_id=693999295]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.095736176, 0.9946085, -0.6118164)
+mesh = SubResource("BoxMesh_xsvs6")
+surface_material_override/0 = SubResource("StandardMaterial3D_mnjkh")
+
+[node name="MeshInstance3D46" type="MeshInstance3D" parent="." unique_id=893551192]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.25381812, 0.9946085, -0.6118164)
+mesh = SubResource("BoxMesh_xsvs6")
+surface_material_override/0 = SubResource("StandardMaterial3D_mnjkh")
+
+[node name="MeshInstance3D47" type="MeshInstance3D" parent="." unique_id=1660046812]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.42419115, 0.9946085, -0.6118164)
+mesh = SubResource("BoxMesh_xsvs6")
+surface_material_override/0 = SubResource("StandardMaterial3D_mnjkh")
+
+[node name="MeshInstance3D48" type="MeshInstance3D" parent="." unique_id=239677654]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5860199, 0.9946085, -0.6118164)
+mesh = SubResource("BoxMesh_xsvs6")
+surface_material_override/0 = SubResource("StandardMaterial3D_mnjkh")
+
+[node name="MeshInstance3D49" type="MeshInstance3D" parent="." unique_id=1497917069]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.7414737, 0.9946085, -0.6118164)
+mesh = SubResource("BoxMesh_xsvs6")
+surface_material_override/0 = SubResource("StandardMaterial3D_mnjkh")
+
+[node name="MeshInstance3D50" type="MeshInstance3D" parent="." unique_id=126664831]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.89751244, 0.9946085, -0.6118164)
+mesh = SubResource("BoxMesh_xsvs6")
+surface_material_override/0 = SubResource("StandardMaterial3D_mnjkh")
+
+[node name="MeshInstance3D51" type="MeshInstance3D" parent="." unique_id=1700164226]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.0555943, 0.9946085, -0.6118164)
+mesh = SubResource("BoxMesh_xsvs6")
+surface_material_override/0 = SubResource("StandardMaterial3D_mnjkh")
+
+[node name="MeshInstance3D52" type="MeshInstance3D" parent="." unique_id=536044766]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2259674, 0.9946085, -0.6118164)
+mesh = SubResource("BoxMesh_xsvs6")
+surface_material_override/0 = SubResource("StandardMaterial3D_mnjkh")
+
+[node name="MeshInstance3D53" type="MeshInstance3D" parent="." unique_id=997414075]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.3836724, 0.9946085, -0.6118164)
+mesh = SubResource("BoxMesh_xsvs6")
+surface_material_override/0 = SubResource("StandardMaterial3D_mnjkh")
+
+[node name="MeshInstance3D9" type="MeshInstance3D" parent="." unique_id=901884885]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.46994781, 1.8553966, -0.60543823)
+mesh = SubResource("BoxMesh_4lm2t")
+surface_material_override/0 = SubResource("StandardMaterial3D_mnjkh")
+
+[node name="MeshInstance3D11" type="MeshInstance3D" parent="." unique_id=1169321815]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5625529, 1.8553966, 0.312891)
+mesh = SubResource("BoxMesh_psru7")
+surface_material_override/0 = SubResource("StandardMaterial3D_mnjkh")
+
+[node name="MeshInstance3D12" type="MeshInstance3D" parent="." unique_id=1398940808]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5431576, 0.4144176, -0.6042471)
+mesh = SubResource("BoxMesh_7rp73")
+surface_material_override/0 = SubResource("StandardMaterial3D_mnjkh")
+
+[node name="MeshInstance3D10" type="MeshInstance3D" parent="." unique_id=1120786056]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5806632, 1.8553966, -0.59085083)
+mesh = SubResource("BoxMesh_c6w8o")
+surface_material_override/0 = SubResource("StandardMaterial3D_mnjkh")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="." unique_id=1777100683]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5664883, 1.831377, -0.6743164)
+mesh = SubResource("BoxMesh_n1853")
+surface_material_override/0 = SubResource("StandardMaterial3D_13qdw")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="." unique_id=1533398137]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.6645579, 1.831377, -0.6743164)
+mesh = SubResource("BoxMesh_fydx3")
+surface_material_override/0 = SubResource("StandardMaterial3D_13qdw")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="." unique_id=121208928]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.55636907, 4.0817823, -0.6743164)
+mesh = SubResource("BoxMesh_0mf2s")
+surface_material_override/0 = SubResource("StandardMaterial3D_13qdw")
+
+[node name="PepsiLogo" type="Sprite3D" parent="." unique_id=1786531683]
+transform = Transform3D(-0.08, 0, -1.20796635e-08, 0, 0.08, 0, 1.20796635e-08, 0, -0.08, 0.55507565, 3.636208, -1.6448525)
+shaded = true
+texture = ExtResource("1_bdqpj")
+
+[node name="PepsiLogo2" type="Sprite3D" parent="." unique_id=523279341]
+transform = Transform3D(3.821371e-16, 8.742278e-09, -0.2, 0.2, -8.742278e-09, 8.271806e-24, -8.742278e-09, -0.2, -8.742278e-09, -0.641482, 1.8650286, -0.6877264)
+shaded = true
+texture = ExtResource("1_bdqpj")
+
+[node name="Botella" type="Node3D" parent="." unique_id=1530578147]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.058155507, 1.998678, -1.4609251)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Botella" unique_id=1819936919]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.1794486, 0.023491621)
+mesh = SubResource("CylinderMesh_xrivr")
+surface_material_override/0 = SubResource("StandardMaterial3D_njqwk")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Botella" unique_id=220276022]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.19307852, 0.023491621)
+mesh = SubResource("CylinderMesh_4uab4")
+surface_material_override/0 = SubResource("StandardMaterial3D_xsllo")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Botella" unique_id=1448165664]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, 0.084305525, 0.023491621)
+mesh = SubResource("CylinderMesh_wwqiq")
+surface_material_override/0 = SubResource("StandardMaterial3D_b1lj4")
+
+[node name="Botella2" type="Node3D" parent="." unique_id=514660354]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.26417878, 1.998678, -1.4609251)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Botella2" unique_id=1970099932]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.1794486, 0.023491621)
+mesh = SubResource("CylinderMesh_xrivr")
+surface_material_override/0 = SubResource("StandardMaterial3D_njqwk")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Botella2" unique_id=565732793]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.19307852, 0.023491621)
+mesh = SubResource("CylinderMesh_4uab4")
+surface_material_override/0 = SubResource("StandardMaterial3D_xsllo")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Botella2" unique_id=445066336]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, 0.084305525, 0.023491621)
+mesh = SubResource("CylinderMesh_wwqiq")
+surface_material_override/0 = SubResource("StandardMaterial3D_b1lj4")
+
+[node name="Botella3" type="Node3D" parent="." unique_id=246521154]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5469556, 1.998678, -1.4609251)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Botella3" unique_id=867265994]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.1794486, 0.023491621)
+mesh = SubResource("CylinderMesh_xrivr")
+surface_material_override/0 = SubResource("StandardMaterial3D_njqwk")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Botella3" unique_id=381067198]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.19307852, 0.023491621)
+mesh = SubResource("CylinderMesh_4uab4")
+surface_material_override/0 = SubResource("StandardMaterial3D_xsllo")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Botella3" unique_id=1745053328]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, 0.084305525, 0.023491621)
+mesh = SubResource("CylinderMesh_wwqiq")
+surface_material_override/0 = SubResource("StandardMaterial3D_b1lj4")
+
+[node name="Botella13" type="Node3D" parent="." unique_id=287021445]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4713255, 1.998678, -1.4609251)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Botella13" unique_id=1251463323]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.1794486, 0.023491621)
+mesh = SubResource("CylinderMesh_xrivr")
+surface_material_override/0 = SubResource("StandardMaterial3D_njqwk")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="Botella13" unique_id=1725381617]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.14966452, 0.023491621)
+mesh = SubResource("CylinderMesh_psmit")
+surface_material_override/0 = SubResource("StandardMaterial3D_a1gjw")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Botella13" unique_id=754144261]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.19307852, 0.023491621)
+mesh = SubResource("CylinderMesh_4uab4")
+surface_material_override/0 = SubResource("StandardMaterial3D_6gfc7")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Botella13" unique_id=1823441859]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, 0.084305525, 0.023491621)
+mesh = SubResource("CylinderMesh_wwqiq")
+surface_material_override/0 = SubResource("StandardMaterial3D_340jw")
+
+[node name="Botella14" type="Node3D" parent="." unique_id=1005887740]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1821232, 1.998678, -1.4609251)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Botella14" unique_id=1317138693]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.1794486, 0.023491621)
+mesh = SubResource("CylinderMesh_xrivr")
+surface_material_override/0 = SubResource("StandardMaterial3D_njqwk")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="Botella14" unique_id=1832399259]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.14966452, 0.023491621)
+mesh = SubResource("CylinderMesh_psmit")
+surface_material_override/0 = SubResource("StandardMaterial3D_a1gjw")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Botella14" unique_id=1889173448]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.19307852, 0.023491621)
+mesh = SubResource("CylinderMesh_4uab4")
+surface_material_override/0 = SubResource("StandardMaterial3D_6gfc7")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Botella14" unique_id=992268973]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, 0.084305525, 0.023491621)
+mesh = SubResource("CylinderMesh_wwqiq")
+surface_material_override/0 = SubResource("StandardMaterial3D_340jw")
+
+[node name="Botella15" type="Node3D" parent="." unique_id=144897463]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.89979804, 1.998678, -1.4609251)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Botella15" unique_id=981818065]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.1794486, 0.023491621)
+mesh = SubResource("CylinderMesh_xrivr")
+surface_material_override/0 = SubResource("StandardMaterial3D_njqwk")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="Botella15" unique_id=426704794]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.14966452, 0.023491621)
+mesh = SubResource("CylinderMesh_psmit")
+surface_material_override/0 = SubResource("StandardMaterial3D_a1gjw")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Botella15" unique_id=1181746161]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.19307852, 0.023491621)
+mesh = SubResource("CylinderMesh_4uab4")
+surface_material_override/0 = SubResource("StandardMaterial3D_6gfc7")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Botella15" unique_id=1877536974]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, 0.084305525, 0.023491621)
+mesh = SubResource("CylinderMesh_wwqiq")
+surface_material_override/0 = SubResource("StandardMaterial3D_340jw")
+
+[node name="Botella25" type="Node3D" parent="." unique_id=31212699]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5211827, 2.9737096, -1.4609251)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Botella25" unique_id=368697783]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.1794486, 0.023491621)
+mesh = SubResource("CylinderMesh_xrivr")
+surface_material_override/0 = SubResource("StandardMaterial3D_njqwk")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="Botella25" unique_id=381718751]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.14966452, 0.023491621)
+mesh = SubResource("CylinderMesh_psmit")
+surface_material_override/0 = SubResource("StandardMaterial3D_mms7u")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Botella25" unique_id=1065111655]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.19307852, 0.023491621)
+mesh = SubResource("CylinderMesh_4uab4")
+surface_material_override/0 = SubResource("StandardMaterial3D_3jlb5")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Botella25" unique_id=1207375321]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, 0.084305525, 0.023491621)
+mesh = SubResource("CylinderMesh_wwqiq")
+surface_material_override/0 = SubResource("StandardMaterial3D_mms7u")
+
+[node name="Botella26" type="Node3D" parent="." unique_id=1155169669]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2085358, 2.9737096, -1.4609251)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Botella26" unique_id=2098130612]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.1794486, 0.023491621)
+mesh = SubResource("CylinderMesh_xrivr")
+surface_material_override/0 = SubResource("StandardMaterial3D_njqwk")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="Botella26" unique_id=1456353588]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.14966452, 0.023491621)
+mesh = SubResource("CylinderMesh_psmit")
+surface_material_override/0 = SubResource("StandardMaterial3D_mms7u")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Botella26" unique_id=934925859]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.19307852, 0.023491621)
+mesh = SubResource("CylinderMesh_4uab4")
+surface_material_override/0 = SubResource("StandardMaterial3D_3jlb5")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Botella26" unique_id=1548324308]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, 0.084305525, 0.023491621)
+mesh = SubResource("CylinderMesh_wwqiq")
+surface_material_override/0 = SubResource("StandardMaterial3D_mms7u")
+
+[node name="Botella27" type="Node3D" parent="." unique_id=1980800801]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.91618466, 2.9737096, -1.4609251)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Botella27" unique_id=243970571]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.1794486, 0.023491621)
+mesh = SubResource("CylinderMesh_xrivr")
+surface_material_override/0 = SubResource("StandardMaterial3D_njqwk")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="Botella27" unique_id=1667738783]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.14966452, 0.023491621)
+mesh = SubResource("CylinderMesh_psmit")
+surface_material_override/0 = SubResource("StandardMaterial3D_mms7u")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Botella27" unique_id=1416027624]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.19307852, 0.023491621)
+mesh = SubResource("CylinderMesh_4uab4")
+surface_material_override/0 = SubResource("StandardMaterial3D_3jlb5")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Botella27" unique_id=718522620]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, 0.084305525, 0.023491621)
+mesh = SubResource("CylinderMesh_wwqiq")
+surface_material_override/0 = SubResource("StandardMaterial3D_mms7u")
+
+[node name="Botella28" type="Node3D" parent="." unique_id=182332077]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6295699, 2.9737096, -1.4609251)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Botella28" unique_id=858839131]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.1794486, 0.023491621)
+mesh = SubResource("CylinderMesh_xrivr")
+surface_material_override/0 = SubResource("StandardMaterial3D_njqwk")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="Botella28" unique_id=858376273]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.14966452, 0.023491621)
+mesh = SubResource("CylinderMesh_psmit")
+surface_material_override/0 = SubResource("StandardMaterial3D_mms7u")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Botella28" unique_id=1962651402]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.19307852, 0.023491621)
+mesh = SubResource("CylinderMesh_4uab4")
+surface_material_override/0 = SubResource("StandardMaterial3D_3jlb5")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Botella28" unique_id=1464628999]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, 0.084305525, 0.023491621)
+mesh = SubResource("CylinderMesh_wwqiq")
+surface_material_override/0 = SubResource("StandardMaterial3D_mms7u")
+
+[node name="Botella41" type="Node3D" parent="." unique_id=1053472291]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.27517563, 2.9737096, -1.4609251)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Botella41" unique_id=165790967]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.1794486, 0.023491621)
+mesh = SubResource("CylinderMesh_xrivr")
+surface_material_override/0 = SubResource("StandardMaterial3D_njqwk")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="Botella41" unique_id=1361101750]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.14966452, 0.023491621)
+mesh = SubResource("CylinderMesh_psmit")
+surface_material_override/0 = SubResource("StandardMaterial3D_o1c73")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Botella41" unique_id=320643189]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.19307852, 0.023491621)
+mesh = SubResource("CylinderMesh_4uab4")
+surface_material_override/0 = SubResource("StandardMaterial3D_3jlb5")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Botella41" unique_id=1936021824]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, 0.084305525, 0.023491621)
+mesh = SubResource("CylinderMesh_wwqiq")
+surface_material_override/0 = SubResource("StandardMaterial3D_o1c73")
+
+[node name="Botella42" type="Node3D" parent="." unique_id=399385077]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.04792297, 2.9737096, -1.4609251)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Botella42" unique_id=510885007]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.1794486, 0.023491621)
+mesh = SubResource("CylinderMesh_xrivr")
+surface_material_override/0 = SubResource("StandardMaterial3D_njqwk")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="Botella42" unique_id=443342676]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.14966452, 0.023491621)
+mesh = SubResource("CylinderMesh_psmit")
+surface_material_override/0 = SubResource("StandardMaterial3D_o1c73")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Botella42" unique_id=1213399197]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.19307852, 0.023491621)
+mesh = SubResource("CylinderMesh_4uab4")
+surface_material_override/0 = SubResource("StandardMaterial3D_3jlb5")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Botella42" unique_id=858003068]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, 0.084305525, 0.023491621)
+mesh = SubResource("CylinderMesh_wwqiq")
+surface_material_override/0 = SubResource("StandardMaterial3D_o1c73")
+
+[node name="Botella43" type="Node3D" parent="." unique_id=1356702669]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.27517563, 2.9737096, -1.0605069)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Botella43" unique_id=406895029]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.1794486, 0.023491621)
+mesh = SubResource("CylinderMesh_xrivr")
+surface_material_override/0 = SubResource("StandardMaterial3D_njqwk")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="Botella43" unique_id=819431384]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.14966452, 0.023491621)
+mesh = SubResource("CylinderMesh_psmit")
+surface_material_override/0 = SubResource("StandardMaterial3D_o1c73")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Botella43" unique_id=54042049]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.19307852, 0.023491621)
+mesh = SubResource("CylinderMesh_4uab4")
+surface_material_override/0 = SubResource("StandardMaterial3D_3jlb5")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Botella43" unique_id=143681412]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, 0.084305525, 0.023491621)
+mesh = SubResource("CylinderMesh_wwqiq")
+surface_material_override/0 = SubResource("StandardMaterial3D_o1c73")
+
+[node name="Botella44" type="Node3D" parent="." unique_id=1407023242]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.04792297, 2.9737096, -1.0605069)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Botella44" unique_id=1974013918]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.1794486, 0.023491621)
+mesh = SubResource("CylinderMesh_xrivr")
+surface_material_override/0 = SubResource("StandardMaterial3D_njqwk")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="Botella44" unique_id=323000319]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.14966452, 0.023491621)
+mesh = SubResource("CylinderMesh_psmit")
+surface_material_override/0 = SubResource("StandardMaterial3D_o1c73")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Botella44" unique_id=1030959310]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.19307852, 0.023491621)
+mesh = SubResource("CylinderMesh_4uab4")
+surface_material_override/0 = SubResource("StandardMaterial3D_3jlb5")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Botella44" unique_id=2114625938]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, 0.084305525, 0.023491621)
+mesh = SubResource("CylinderMesh_wwqiq")
+surface_material_override/0 = SubResource("StandardMaterial3D_o1c73")
+
+[node name="Botella45" type="Node3D" parent="." unique_id=1265050968]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.27517563, 2.9737096, -0.5205178)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Botella45" unique_id=1870616900]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.1794486, 0.023491621)
+mesh = SubResource("CylinderMesh_xrivr")
+surface_material_override/0 = SubResource("StandardMaterial3D_njqwk")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="Botella45" unique_id=149224137]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.14966452, 0.023491621)
+mesh = SubResource("CylinderMesh_psmit")
+surface_material_override/0 = SubResource("StandardMaterial3D_o1c73")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Botella45" unique_id=553384035]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.19307852, 0.023491621)
+mesh = SubResource("CylinderMesh_4uab4")
+surface_material_override/0 = SubResource("StandardMaterial3D_3jlb5")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Botella45" unique_id=2054940954]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, 0.084305525, 0.023491621)
+mesh = SubResource("CylinderMesh_wwqiq")
+surface_material_override/0 = SubResource("StandardMaterial3D_o1c73")
+
+[node name="Botella46" type="Node3D" parent="." unique_id=2013272521]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.04792297, 2.9737096, -0.5205178)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Botella46" unique_id=473910797]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.1794486, 0.023491621)
+mesh = SubResource("CylinderMesh_xrivr")
+surface_material_override/0 = SubResource("StandardMaterial3D_njqwk")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="Botella46" unique_id=1973552551]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.14966452, 0.023491621)
+mesh = SubResource("CylinderMesh_psmit")
+surface_material_override/0 = SubResource("StandardMaterial3D_o1c73")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Botella46" unique_id=1224151751]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.19307852, 0.023491621)
+mesh = SubResource("CylinderMesh_4uab4")
+surface_material_override/0 = SubResource("StandardMaterial3D_3jlb5")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Botella46" unique_id=350959182]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, 0.084305525, 0.023491621)
+mesh = SubResource("CylinderMesh_wwqiq")
+surface_material_override/0 = SubResource("StandardMaterial3D_o1c73")
+
+[node name="Botella47" type="Node3D" parent="." unique_id=2104808564]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.27517563, 2.9737096, -0.008924782)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Botella47" unique_id=1126863982]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.1794486, 0.023491621)
+mesh = SubResource("CylinderMesh_xrivr")
+surface_material_override/0 = SubResource("StandardMaterial3D_njqwk")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="Botella47" unique_id=1239557106]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.14966452, 0.023491621)
+mesh = SubResource("CylinderMesh_psmit")
+surface_material_override/0 = SubResource("StandardMaterial3D_o1c73")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Botella47" unique_id=881356401]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.19307852, 0.023491621)
+mesh = SubResource("CylinderMesh_4uab4")
+surface_material_override/0 = SubResource("StandardMaterial3D_3jlb5")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Botella47" unique_id=156251850]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, 0.084305525, 0.023491621)
+mesh = SubResource("CylinderMesh_wwqiq")
+surface_material_override/0 = SubResource("StandardMaterial3D_o1c73")
+
+[node name="Botella48" type="Node3D" parent="." unique_id=1107123580]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.04792297, 2.9737096, -0.008924782)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Botella48" unique_id=939522879]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.1794486, 0.023491621)
+mesh = SubResource("CylinderMesh_xrivr")
+surface_material_override/0 = SubResource("StandardMaterial3D_njqwk")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="Botella48" unique_id=159024552]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.14966452, 0.023491621)
+mesh = SubResource("CylinderMesh_psmit")
+surface_material_override/0 = SubResource("StandardMaterial3D_o1c73")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Botella48" unique_id=758663313]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.19307852, 0.023491621)
+mesh = SubResource("CylinderMesh_4uab4")
+surface_material_override/0 = SubResource("StandardMaterial3D_3jlb5")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Botella48" unique_id=1826591932]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, 0.084305525, 0.023491621)
+mesh = SubResource("CylinderMesh_wwqiq")
+surface_material_override/0 = SubResource("StandardMaterial3D_o1c73")
+
+[node name="Botella29" type="Node3D" parent="." unique_id=1877333923]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5211827, 2.9737096, -1.0578904)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Botella29" unique_id=1398100443]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.1794486, 0.023491621)
+mesh = SubResource("CylinderMesh_xrivr")
+surface_material_override/0 = SubResource("StandardMaterial3D_njqwk")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="Botella29" unique_id=992125134]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.14966452, 0.023491621)
+mesh = SubResource("CylinderMesh_psmit")
+surface_material_override/0 = SubResource("StandardMaterial3D_mms7u")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Botella29" unique_id=1698206524]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.19307852, 0.023491621)
+mesh = SubResource("CylinderMesh_4uab4")
+surface_material_override/0 = SubResource("StandardMaterial3D_3jlb5")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Botella29" unique_id=1298214404]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, 0.084305525, 0.023491621)
+mesh = SubResource("CylinderMesh_wwqiq")
+surface_material_override/0 = SubResource("StandardMaterial3D_mms7u")
+
+[node name="Botella30" type="Node3D" parent="." unique_id=1587375410]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2085358, 2.9737096, -1.0578904)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Botella30" unique_id=305641113]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.1794486, 0.023491621)
+mesh = SubResource("CylinderMesh_xrivr")
+surface_material_override/0 = SubResource("StandardMaterial3D_njqwk")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="Botella30" unique_id=1538930022]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.14966452, 0.023491621)
+mesh = SubResource("CylinderMesh_psmit")
+surface_material_override/0 = SubResource("StandardMaterial3D_mms7u")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Botella30" unique_id=853679018]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.19307852, 0.023491621)
+mesh = SubResource("CylinderMesh_4uab4")
+surface_material_override/0 = SubResource("StandardMaterial3D_3jlb5")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Botella30" unique_id=389393712]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, 0.084305525, 0.023491621)
+mesh = SubResource("CylinderMesh_wwqiq")
+surface_material_override/0 = SubResource("StandardMaterial3D_mms7u")
+
+[node name="Botella31" type="Node3D" parent="." unique_id=187003404]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.91618466, 2.9737096, -1.0578904)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Botella31" unique_id=237995176]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.1794486, 0.023491621)
+mesh = SubResource("CylinderMesh_xrivr")
+surface_material_override/0 = SubResource("StandardMaterial3D_njqwk")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="Botella31" unique_id=1603306661]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.14966452, 0.023491621)
+mesh = SubResource("CylinderMesh_psmit")
+surface_material_override/0 = SubResource("StandardMaterial3D_mms7u")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Botella31" unique_id=1742567634]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.19307852, 0.023491621)
+mesh = SubResource("CylinderMesh_4uab4")
+surface_material_override/0 = SubResource("StandardMaterial3D_3jlb5")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Botella31" unique_id=1942889431]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, 0.084305525, 0.023491621)
+mesh = SubResource("CylinderMesh_wwqiq")
+surface_material_override/0 = SubResource("StandardMaterial3D_mms7u")
+
+[node name="Botella32" type="Node3D" parent="." unique_id=197568156]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6295699, 2.9737096, -1.0578904)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Botella32" unique_id=861205912]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.1794486, 0.023491621)
+mesh = SubResource("CylinderMesh_xrivr")
+surface_material_override/0 = SubResource("StandardMaterial3D_njqwk")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="Botella32" unique_id=1303082014]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.14966452, 0.023491621)
+mesh = SubResource("CylinderMesh_psmit")
+surface_material_override/0 = SubResource("StandardMaterial3D_mms7u")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Botella32" unique_id=300105288]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.19307852, 0.023491621)
+mesh = SubResource("CylinderMesh_4uab4")
+surface_material_override/0 = SubResource("StandardMaterial3D_3jlb5")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Botella32" unique_id=772320516]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, 0.084305525, 0.023491621)
+mesh = SubResource("CylinderMesh_wwqiq")
+surface_material_override/0 = SubResource("StandardMaterial3D_mms7u")
+
+[node name="Botella33" type="Node3D" parent="." unique_id=605473138]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5211827, 2.9737096, -0.5839639)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Botella33" unique_id=802255507]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.1794486, 0.023491621)
+mesh = SubResource("CylinderMesh_xrivr")
+surface_material_override/0 = SubResource("StandardMaterial3D_njqwk")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="Botella33" unique_id=1116103366]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.14966452, 0.023491621)
+mesh = SubResource("CylinderMesh_psmit")
+surface_material_override/0 = SubResource("StandardMaterial3D_mms7u")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Botella33" unique_id=521835795]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.19307852, 0.023491621)
+mesh = SubResource("CylinderMesh_4uab4")
+surface_material_override/0 = SubResource("StandardMaterial3D_3jlb5")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Botella33" unique_id=1261080489]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, 0.084305525, 0.023491621)
+mesh = SubResource("CylinderMesh_wwqiq")
+surface_material_override/0 = SubResource("StandardMaterial3D_mms7u")
+
+[node name="Botella34" type="Node3D" parent="." unique_id=157096105]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2085358, 2.9737096, -0.5839639)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Botella34" unique_id=402315142]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.1794486, 0.023491621)
+mesh = SubResource("CylinderMesh_xrivr")
+surface_material_override/0 = SubResource("StandardMaterial3D_njqwk")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="Botella34" unique_id=1775485664]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.14966452, 0.023491621)
+mesh = SubResource("CylinderMesh_psmit")
+surface_material_override/0 = SubResource("StandardMaterial3D_mms7u")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Botella34" unique_id=478471444]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.19307852, 0.023491621)
+mesh = SubResource("CylinderMesh_4uab4")
+surface_material_override/0 = SubResource("StandardMaterial3D_3jlb5")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Botella34" unique_id=893900687]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, 0.084305525, 0.023491621)
+mesh = SubResource("CylinderMesh_wwqiq")
+surface_material_override/0 = SubResource("StandardMaterial3D_mms7u")
+
+[node name="Botella35" type="Node3D" parent="." unique_id=645455113]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.91618466, 2.9737096, -0.5839639)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Botella35" unique_id=2023239530]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.1794486, 0.023491621)
+mesh = SubResource("CylinderMesh_xrivr")
+surface_material_override/0 = SubResource("StandardMaterial3D_njqwk")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="Botella35" unique_id=850971257]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.14966452, 0.023491621)
+mesh = SubResource("CylinderMesh_psmit")
+surface_material_override/0 = SubResource("StandardMaterial3D_mms7u")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Botella35" unique_id=1011764342]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.19307852, 0.023491621)
+mesh = SubResource("CylinderMesh_4uab4")
+surface_material_override/0 = SubResource("StandardMaterial3D_3jlb5")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Botella35" unique_id=887057697]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, 0.084305525, 0.023491621)
+mesh = SubResource("CylinderMesh_wwqiq")
+surface_material_override/0 = SubResource("StandardMaterial3D_mms7u")
+
+[node name="Botella36" type="Node3D" parent="." unique_id=13928802]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6295699, 2.9737096, -0.5839639)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Botella36" unique_id=1529514119]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.1794486, 0.023491621)
+mesh = SubResource("CylinderMesh_xrivr")
+surface_material_override/0 = SubResource("StandardMaterial3D_njqwk")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="Botella36" unique_id=14074031]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.14966452, 0.023491621)
+mesh = SubResource("CylinderMesh_psmit")
+surface_material_override/0 = SubResource("StandardMaterial3D_mms7u")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Botella36" unique_id=959610783]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.19307852, 0.023491621)
+mesh = SubResource("CylinderMesh_4uab4")
+surface_material_override/0 = SubResource("StandardMaterial3D_3jlb5")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Botella36" unique_id=1035135081]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, 0.084305525, 0.023491621)
+mesh = SubResource("CylinderMesh_wwqiq")
+surface_material_override/0 = SubResource("StandardMaterial3D_mms7u")
+
+[node name="Botella37" type="Node3D" parent="." unique_id=462098793]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5211827, 2.9737096, -0.09811166)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Botella37" unique_id=1817029535]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.1794486, 0.023491621)
+mesh = SubResource("CylinderMesh_xrivr")
+surface_material_override/0 = SubResource("StandardMaterial3D_njqwk")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="Botella37" unique_id=648810629]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.14966452, 0.023491621)
+mesh = SubResource("CylinderMesh_psmit")
+surface_material_override/0 = SubResource("StandardMaterial3D_mms7u")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Botella37" unique_id=77679129]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.19307852, 0.023491621)
+mesh = SubResource("CylinderMesh_4uab4")
+surface_material_override/0 = SubResource("StandardMaterial3D_3jlb5")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Botella37" unique_id=353890638]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, 0.084305525, 0.023491621)
+mesh = SubResource("CylinderMesh_wwqiq")
+surface_material_override/0 = SubResource("StandardMaterial3D_mms7u")
+
+[node name="Botella38" type="Node3D" parent="." unique_id=41265148]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2085358, 2.9737096, -0.09811166)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Botella38" unique_id=1270489616]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.1794486, 0.023491621)
+mesh = SubResource("CylinderMesh_xrivr")
+surface_material_override/0 = SubResource("StandardMaterial3D_njqwk")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="Botella38" unique_id=276952064]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.14966452, 0.023491621)
+mesh = SubResource("CylinderMesh_psmit")
+surface_material_override/0 = SubResource("StandardMaterial3D_mms7u")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Botella38" unique_id=1478175076]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.19307852, 0.023491621)
+mesh = SubResource("CylinderMesh_4uab4")
+surface_material_override/0 = SubResource("StandardMaterial3D_3jlb5")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Botella38" unique_id=2105509480]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, 0.084305525, 0.023491621)
+mesh = SubResource("CylinderMesh_wwqiq")
+surface_material_override/0 = SubResource("StandardMaterial3D_mms7u")
+
+[node name="Botella39" type="Node3D" parent="." unique_id=1666378660]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.91618466, 2.9737096, -0.09811166)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Botella39" unique_id=773861357]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.1794486, 0.023491621)
+mesh = SubResource("CylinderMesh_xrivr")
+surface_material_override/0 = SubResource("StandardMaterial3D_njqwk")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="Botella39" unique_id=1628424741]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.14966452, 0.023491621)
+mesh = SubResource("CylinderMesh_psmit")
+surface_material_override/0 = SubResource("StandardMaterial3D_mms7u")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Botella39" unique_id=1234765871]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.19307852, 0.023491621)
+mesh = SubResource("CylinderMesh_4uab4")
+surface_material_override/0 = SubResource("StandardMaterial3D_3jlb5")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Botella39" unique_id=827323522]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, 0.084305525, 0.023491621)
+mesh = SubResource("CylinderMesh_wwqiq")
+surface_material_override/0 = SubResource("StandardMaterial3D_mms7u")
+
+[node name="Botella40" type="Node3D" parent="." unique_id=1171998646]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6295699, 2.9737096, -0.09811166)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Botella40" unique_id=1585776770]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.1794486, 0.023491621)
+mesh = SubResource("CylinderMesh_xrivr")
+surface_material_override/0 = SubResource("StandardMaterial3D_njqwk")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="Botella40" unique_id=746388941]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.14966452, 0.023491621)
+mesh = SubResource("CylinderMesh_psmit")
+surface_material_override/0 = SubResource("StandardMaterial3D_mms7u")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Botella40" unique_id=658099829]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.19307852, 0.023491621)
+mesh = SubResource("CylinderMesh_4uab4")
+surface_material_override/0 = SubResource("StandardMaterial3D_3jlb5")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Botella40" unique_id=1597387573]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, 0.084305525, 0.023491621)
+mesh = SubResource("CylinderMesh_wwqiq")
+surface_material_override/0 = SubResource("StandardMaterial3D_mms7u")
+
+[node name="Botella16" type="Node3D" parent="." unique_id=328191182]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4713255, 1.998678, -0.978852)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Botella16" unique_id=700892172]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.1794486, 0.023491621)
+mesh = SubResource("CylinderMesh_xrivr")
+surface_material_override/0 = SubResource("StandardMaterial3D_njqwk")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="Botella16" unique_id=1899424907]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.14966452, 0.023491621)
+mesh = SubResource("CylinderMesh_psmit")
+surface_material_override/0 = SubResource("StandardMaterial3D_a1gjw")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Botella16" unique_id=946217606]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.19307852, 0.023491621)
+mesh = SubResource("CylinderMesh_4uab4")
+surface_material_override/0 = SubResource("StandardMaterial3D_6gfc7")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Botella16" unique_id=104974299]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, 0.084305525, 0.023491621)
+mesh = SubResource("CylinderMesh_wwqiq")
+surface_material_override/0 = SubResource("StandardMaterial3D_340jw")
+
+[node name="Botella17" type="Node3D" parent="." unique_id=1998319584]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1821232, 1.998678, -0.978852)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Botella17" unique_id=1409618166]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.1794486, 0.023491621)
+mesh = SubResource("CylinderMesh_xrivr")
+surface_material_override/0 = SubResource("StandardMaterial3D_njqwk")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="Botella17" unique_id=1592961942]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.14966452, 0.023491621)
+mesh = SubResource("CylinderMesh_psmit")
+surface_material_override/0 = SubResource("StandardMaterial3D_a1gjw")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Botella17" unique_id=88242082]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.19307852, 0.023491621)
+mesh = SubResource("CylinderMesh_4uab4")
+surface_material_override/0 = SubResource("StandardMaterial3D_6gfc7")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Botella17" unique_id=1756853668]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, 0.084305525, 0.023491621)
+mesh = SubResource("CylinderMesh_wwqiq")
+surface_material_override/0 = SubResource("StandardMaterial3D_340jw")
+
+[node name="Botella18" type="Node3D" parent="." unique_id=1731775463]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.89979804, 1.998678, -0.978852)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Botella18" unique_id=2052363104]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.1794486, 0.023491621)
+mesh = SubResource("CylinderMesh_xrivr")
+surface_material_override/0 = SubResource("StandardMaterial3D_njqwk")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="Botella18" unique_id=120728591]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.14966452, 0.023491621)
+mesh = SubResource("CylinderMesh_psmit")
+surface_material_override/0 = SubResource("StandardMaterial3D_a1gjw")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Botella18" unique_id=1335698195]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.19307852, 0.023491621)
+mesh = SubResource("CylinderMesh_4uab4")
+surface_material_override/0 = SubResource("StandardMaterial3D_6gfc7")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Botella18" unique_id=1447440497]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, 0.084305525, 0.023491621)
+mesh = SubResource("CylinderMesh_wwqiq")
+surface_material_override/0 = SubResource("StandardMaterial3D_340jw")
+
+[node name="Botella19" type="Node3D" parent="." unique_id=1042990823]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4713255, 1.998678, -0.5769421)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Botella19" unique_id=1308541484]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.1794486, 0.023491621)
+mesh = SubResource("CylinderMesh_xrivr")
+surface_material_override/0 = SubResource("StandardMaterial3D_njqwk")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="Botella19" unique_id=2010909135]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.14966452, 0.023491621)
+mesh = SubResource("CylinderMesh_psmit")
+surface_material_override/0 = SubResource("StandardMaterial3D_a1gjw")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Botella19" unique_id=1763568397]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.19307852, 0.023491621)
+mesh = SubResource("CylinderMesh_4uab4")
+surface_material_override/0 = SubResource("StandardMaterial3D_6gfc7")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Botella19" unique_id=1632462103]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, 0.084305525, 0.023491621)
+mesh = SubResource("CylinderMesh_wwqiq")
+surface_material_override/0 = SubResource("StandardMaterial3D_340jw")
+
+[node name="Botella20" type="Node3D" parent="." unique_id=1515067415]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1821232, 1.998678, -0.5769421)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Botella20" unique_id=538958437]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.1794486, 0.023491621)
+mesh = SubResource("CylinderMesh_xrivr")
+surface_material_override/0 = SubResource("StandardMaterial3D_njqwk")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="Botella20" unique_id=1760655507]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.14966452, 0.023491621)
+mesh = SubResource("CylinderMesh_psmit")
+surface_material_override/0 = SubResource("StandardMaterial3D_a1gjw")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Botella20" unique_id=480394820]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.19307852, 0.023491621)
+mesh = SubResource("CylinderMesh_4uab4")
+surface_material_override/0 = SubResource("StandardMaterial3D_6gfc7")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Botella20" unique_id=568338505]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, 0.084305525, 0.023491621)
+mesh = SubResource("CylinderMesh_wwqiq")
+surface_material_override/0 = SubResource("StandardMaterial3D_340jw")
+
+[node name="Botella21" type="Node3D" parent="." unique_id=425808936]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.89979804, 1.998678, -0.5769421)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Botella21" unique_id=1560971443]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.1794486, 0.023491621)
+mesh = SubResource("CylinderMesh_xrivr")
+surface_material_override/0 = SubResource("StandardMaterial3D_njqwk")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="Botella21" unique_id=1525472580]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.14966452, 0.023491621)
+mesh = SubResource("CylinderMesh_psmit")
+surface_material_override/0 = SubResource("StandardMaterial3D_a1gjw")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Botella21" unique_id=32240937]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.19307852, 0.023491621)
+mesh = SubResource("CylinderMesh_4uab4")
+surface_material_override/0 = SubResource("StandardMaterial3D_6gfc7")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Botella21" unique_id=1028107071]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, 0.084305525, 0.023491621)
+mesh = SubResource("CylinderMesh_wwqiq")
+surface_material_override/0 = SubResource("StandardMaterial3D_340jw")
+
+[node name="Botella22" type="Node3D" parent="." unique_id=1883708574]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4713255, 1.998678, -0.09303796)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Botella22" unique_id=1801809996]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.1794486, 0.023491621)
+mesh = SubResource("CylinderMesh_xrivr")
+surface_material_override/0 = SubResource("StandardMaterial3D_njqwk")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="Botella22" unique_id=1449135981]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.14966452, 0.023491621)
+mesh = SubResource("CylinderMesh_psmit")
+surface_material_override/0 = SubResource("StandardMaterial3D_a1gjw")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Botella22" unique_id=76103427]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.19307852, 0.023491621)
+mesh = SubResource("CylinderMesh_4uab4")
+surface_material_override/0 = SubResource("StandardMaterial3D_6gfc7")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Botella22" unique_id=1841839214]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, 0.084305525, 0.023491621)
+mesh = SubResource("CylinderMesh_wwqiq")
+surface_material_override/0 = SubResource("StandardMaterial3D_340jw")
+
+[node name="Botella23" type="Node3D" parent="." unique_id=23433540]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1821232, 1.998678, -0.09303796)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Botella23" unique_id=1550598816]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.1794486, 0.023491621)
+mesh = SubResource("CylinderMesh_xrivr")
+surface_material_override/0 = SubResource("StandardMaterial3D_njqwk")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="Botella23" unique_id=132837253]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.14966452, 0.023491621)
+mesh = SubResource("CylinderMesh_psmit")
+surface_material_override/0 = SubResource("StandardMaterial3D_a1gjw")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Botella23" unique_id=1516988139]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.19307852, 0.023491621)
+mesh = SubResource("CylinderMesh_4uab4")
+surface_material_override/0 = SubResource("StandardMaterial3D_6gfc7")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Botella23" unique_id=440995052]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, 0.084305525, 0.023491621)
+mesh = SubResource("CylinderMesh_wwqiq")
+surface_material_override/0 = SubResource("StandardMaterial3D_340jw")
+
+[node name="Botella24" type="Node3D" parent="." unique_id=1125037049]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.89979804, 1.998678, -0.09303796)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Botella24" unique_id=1447979966]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.1794486, 0.023491621)
+mesh = SubResource("CylinderMesh_xrivr")
+surface_material_override/0 = SubResource("StandardMaterial3D_njqwk")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="Botella24" unique_id=881873855]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.14966452, 0.023491621)
+mesh = SubResource("CylinderMesh_psmit")
+surface_material_override/0 = SubResource("StandardMaterial3D_a1gjw")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Botella24" unique_id=1911288409]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.19307852, 0.023491621)
+mesh = SubResource("CylinderMesh_4uab4")
+surface_material_override/0 = SubResource("StandardMaterial3D_6gfc7")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Botella24" unique_id=882166675]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, 0.084305525, 0.023491621)
+mesh = SubResource("CylinderMesh_wwqiq")
+surface_material_override/0 = SubResource("StandardMaterial3D_340jw")
+
+[node name="Botella4" type="Node3D" parent="." unique_id=1167935124]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.058155507, 1.998678, -1.0448027)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Botella4" unique_id=87881894]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.1794486, 0.023491621)
+mesh = SubResource("CylinderMesh_xrivr")
+surface_material_override/0 = SubResource("StandardMaterial3D_njqwk")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Botella4" unique_id=865851368]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.19307852, 0.023491621)
+mesh = SubResource("CylinderMesh_4uab4")
+surface_material_override/0 = SubResource("StandardMaterial3D_xsllo")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Botella4" unique_id=2047320442]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, 0.084305525, 0.023491621)
+mesh = SubResource("CylinderMesh_wwqiq")
+surface_material_override/0 = SubResource("StandardMaterial3D_b1lj4")
+
+[node name="Botella5" type="Node3D" parent="." unique_id=765785321]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.26417878, 1.998678, -1.0448027)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Botella5" unique_id=1178678204]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.1794486, 0.023491621)
+mesh = SubResource("CylinderMesh_xrivr")
+surface_material_override/0 = SubResource("StandardMaterial3D_njqwk")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Botella5" unique_id=979300584]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.19307852, 0.023491621)
+mesh = SubResource("CylinderMesh_4uab4")
+surface_material_override/0 = SubResource("StandardMaterial3D_xsllo")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Botella5" unique_id=486769773]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, 0.084305525, 0.023491621)
+mesh = SubResource("CylinderMesh_wwqiq")
+surface_material_override/0 = SubResource("StandardMaterial3D_b1lj4")
+
+[node name="Botella6" type="Node3D" parent="." unique_id=682959122]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5469556, 1.998678, -1.0448027)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Botella6" unique_id=41758286]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.1794486, 0.023491621)
+mesh = SubResource("CylinderMesh_xrivr")
+surface_material_override/0 = SubResource("StandardMaterial3D_njqwk")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Botella6" unique_id=36754791]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.19307852, 0.023491621)
+mesh = SubResource("CylinderMesh_4uab4")
+surface_material_override/0 = SubResource("StandardMaterial3D_xsllo")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Botella6" unique_id=1074340901]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, 0.084305525, 0.023491621)
+mesh = SubResource("CylinderMesh_wwqiq")
+surface_material_override/0 = SubResource("StandardMaterial3D_b1lj4")
+
+[node name="Botella7" type="Node3D" parent="." unique_id=1359011388]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.058155507, 1.998678, -0.6283541)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Botella7" unique_id=1468162126]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.1794486, 0.023491621)
+mesh = SubResource("CylinderMesh_xrivr")
+surface_material_override/0 = SubResource("StandardMaterial3D_njqwk")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Botella7" unique_id=1001601051]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.19307852, 0.023491621)
+mesh = SubResource("CylinderMesh_4uab4")
+surface_material_override/0 = SubResource("StandardMaterial3D_xsllo")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Botella7" unique_id=1571549495]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, 0.084305525, 0.023491621)
+mesh = SubResource("CylinderMesh_wwqiq")
+surface_material_override/0 = SubResource("StandardMaterial3D_b1lj4")
+
+[node name="Botella8" type="Node3D" parent="." unique_id=1063276638]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.26417878, 1.998678, -0.6283541)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Botella8" unique_id=1713484768]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.1794486, 0.023491621)
+mesh = SubResource("CylinderMesh_xrivr")
+surface_material_override/0 = SubResource("StandardMaterial3D_njqwk")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Botella8" unique_id=680458320]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.19307852, 0.023491621)
+mesh = SubResource("CylinderMesh_4uab4")
+surface_material_override/0 = SubResource("StandardMaterial3D_xsllo")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Botella8" unique_id=264958868]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, 0.084305525, 0.023491621)
+mesh = SubResource("CylinderMesh_wwqiq")
+surface_material_override/0 = SubResource("StandardMaterial3D_b1lj4")
+
+[node name="Botella9" type="Node3D" parent="." unique_id=693582564]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5469556, 1.998678, -0.6283541)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Botella9" unique_id=1948599565]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.1794486, 0.023491621)
+mesh = SubResource("CylinderMesh_xrivr")
+surface_material_override/0 = SubResource("StandardMaterial3D_njqwk")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Botella9" unique_id=1602043350]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.19307852, 0.023491621)
+mesh = SubResource("CylinderMesh_4uab4")
+surface_material_override/0 = SubResource("StandardMaterial3D_xsllo")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Botella9" unique_id=824705603]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, 0.084305525, 0.023491621)
+mesh = SubResource("CylinderMesh_wwqiq")
+surface_material_override/0 = SubResource("StandardMaterial3D_b1lj4")
+
+[node name="Botella10" type="Node3D" parent="." unique_id=558256567]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.058155507, 1.998678, -0.12875137)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Botella10" unique_id=196369451]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.1794486, 0.023491621)
+mesh = SubResource("CylinderMesh_xrivr")
+surface_material_override/0 = SubResource("StandardMaterial3D_njqwk")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Botella10" unique_id=203636431]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.19307852, 0.023491621)
+mesh = SubResource("CylinderMesh_4uab4")
+surface_material_override/0 = SubResource("StandardMaterial3D_xsllo")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Botella10" unique_id=492165940]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, 0.084305525, 0.023491621)
+mesh = SubResource("CylinderMesh_wwqiq")
+surface_material_override/0 = SubResource("StandardMaterial3D_b1lj4")
+
+[node name="Botella11" type="Node3D" parent="." unique_id=2072131664]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.26417878, 1.998678, -0.12875137)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Botella11" unique_id=1550334335]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.1794486, 0.023491621)
+mesh = SubResource("CylinderMesh_xrivr")
+surface_material_override/0 = SubResource("StandardMaterial3D_njqwk")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Botella11" unique_id=542516445]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.19307852, 0.023491621)
+mesh = SubResource("CylinderMesh_4uab4")
+surface_material_override/0 = SubResource("StandardMaterial3D_xsllo")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Botella11" unique_id=2059408125]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, 0.084305525, 0.023491621)
+mesh = SubResource("CylinderMesh_wwqiq")
+surface_material_override/0 = SubResource("StandardMaterial3D_b1lj4")
+
+[node name="Botella12" type="Node3D" parent="." unique_id=1678754421]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5469556, 1.998678, -0.12875137)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Botella12" unique_id=331315731]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.1794486, 0.023491621)
+mesh = SubResource("CylinderMesh_xrivr")
+surface_material_override/0 = SubResource("StandardMaterial3D_njqwk")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Botella12" unique_id=1051210797]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.19307852, 0.023491621)
+mesh = SubResource("CylinderMesh_4uab4")
+surface_material_override/0 = SubResource("StandardMaterial3D_xsllo")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Botella12" unique_id=470012000]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, 0.084305525, 0.023491621)
+mesh = SubResource("CylinderMesh_wwqiq")
+surface_material_override/0 = SubResource("StandardMaterial3D_b1lj4")
+
+[node name="Latas" type="Node3D" parent="." unique_id=1462900118]
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Latas" unique_id=1634359534]
+transform = Transform3D(0.18760683, 0, 0, 0, 0.1549633, 0, 0, 0, 0.19325186, 0.83740467, 1.1859702, -1.4625725)
+mesh = SubResource("CylinderMesh_13qdw")
+skeleton = NodePath("../Lata2")
+surface_material_override/0 = SubResource("StandardMaterial3D_sgrid")
+
+[node name="MeshInstance3D8" type="MeshInstance3D" parent="Latas" unique_id=69820403]
+transform = Transform3D(0.18760683, 0, 0, 0, 0.1549633, 0, 0, 0, 0.19325186, 0.54588634, 1.1859702, -1.4625725)
+mesh = SubResource("CylinderMesh_13qdw")
+skeleton = NodePath("../Lata2")
+surface_material_override/0 = SubResource("StandardMaterial3D_lpkjo")
+
+[node name="MeshInstance3D9" type="MeshInstance3D" parent="Latas" unique_id=1048674799]
+transform = Transform3D(0.18760683, 0, 0, 0, 0.1549633, 0, 0, 0, 0.19325186, 0.27749276, 1.1859702, -1.4599286)
+mesh = SubResource("CylinderMesh_13qdw")
+skeleton = NodePath("../Lata2")
+surface_material_override/0 = SubResource("StandardMaterial3D_lpkjo")
+
+[node name="MeshInstance3D18" type="MeshInstance3D" parent="Latas" unique_id=931084875]
+transform = Transform3D(0.18760683, 0, 0, 0, 0.1549633, 0, 0, 0, 0.19325186, 0.01338172, 1.1859702, -1.4599286)
+mesh = SubResource("CylinderMesh_13qdw")
+skeleton = NodePath("../Lata2")
+surface_material_override/0 = SubResource("StandardMaterial3D_y0nc2")
+
+[node name="MeshInstance3D19" type="MeshInstance3D" parent="Latas" unique_id=1881609910]
+transform = Transform3D(0.18760683, 0, 0, 0, 0.1549633, 0, 0, 0, 0.19325186, -0.27457762, 1.1859702, -1.4599286)
+mesh = SubResource("CylinderMesh_13qdw")
+skeleton = NodePath("../Lata2")
+surface_material_override/0 = SubResource("StandardMaterial3D_y0nc2")
+
+[node name="MeshInstance3D20" type="MeshInstance3D" parent="Latas" unique_id=433827998]
+transform = Transform3D(0.18760683, 0, 0, 0, 0.1549633, 0, 0, 0, 0.19325186, 0.01338172, 1.1859702, -1.0963289)
+mesh = SubResource("CylinderMesh_13qdw")
+skeleton = NodePath("../Lata2")
+surface_material_override/0 = SubResource("StandardMaterial3D_y0nc2")
+
+[node name="MeshInstance3D21" type="MeshInstance3D" parent="Latas" unique_id=2057104835]
+transform = Transform3D(0.18760683, 0, 0, 0, 0.1549633, 0, 0, 0, 0.19325186, -0.27457762, 1.1859702, -1.0963289)
+mesh = SubResource("CylinderMesh_13qdw")
+skeleton = NodePath("../Lata2")
+surface_material_override/0 = SubResource("StandardMaterial3D_y0nc2")
+
+[node name="MeshInstance3D22" type="MeshInstance3D" parent="Latas" unique_id=807191060]
+transform = Transform3D(0.18760683, 0, 0, 0, 0.1549633, 0, 0, 0, 0.19325186, 0.01338172, 1.1859702, -0.7301517)
+mesh = SubResource("CylinderMesh_13qdw")
+skeleton = NodePath("../Lata2")
+surface_material_override/0 = SubResource("StandardMaterial3D_y0nc2")
+
+[node name="MeshInstance3D23" type="MeshInstance3D" parent="Latas" unique_id=1676793878]
+transform = Transform3D(0.18760683, 0, 0, 0, 0.1549633, 0, 0, 0, 0.19325186, -0.27457762, 1.1859702, -0.7301517)
+mesh = SubResource("CylinderMesh_13qdw")
+skeleton = NodePath("../Lata2")
+surface_material_override/0 = SubResource("StandardMaterial3D_y0nc2")
+
+[node name="MeshInstance3D24" type="MeshInstance3D" parent="Latas" unique_id=1993312130]
+transform = Transform3D(0.18760683, 0, 0, 0, 0.1549633, 0, 0, 0, 0.19325186, 0.01338172, 1.1859702, -0.30934787)
+mesh = SubResource("CylinderMesh_13qdw")
+skeleton = NodePath("../Lata2")
+surface_material_override/0 = SubResource("StandardMaterial3D_y0nc2")
+
+[node name="MeshInstance3D25" type="MeshInstance3D" parent="Latas" unique_id=1365317879]
+transform = Transform3D(0.18760683, 0, 0, 0, 0.1549633, 0, 0, 0, 0.19325186, -0.27457762, 1.1859702, -0.30934787)
+mesh = SubResource("CylinderMesh_13qdw")
+skeleton = NodePath("../Lata2")
+surface_material_override/0 = SubResource("StandardMaterial3D_y0nc2")
+
+[node name="MeshInstance3D26" type="MeshInstance3D" parent="Latas" unique_id=359686387]
+transform = Transform3D(0.18760683, 0, 0, 0, 0.1549633, 0, 0, 0, 0.19325186, 0.01338172, 1.1859702, 0.015871286)
+mesh = SubResource("CylinderMesh_13qdw")
+skeleton = NodePath("../Lata2")
+surface_material_override/0 = SubResource("StandardMaterial3D_y0nc2")
+
+[node name="MeshInstance3D27" type="MeshInstance3D" parent="Latas" unique_id=1580951004]
+transform = Transform3D(0.18760683, 0, 0, 0, 0.1549633, 0, 0, 0, 0.19325186, -0.27457762, 1.1859702, 0.015871286)
+mesh = SubResource("CylinderMesh_13qdw")
+skeleton = NodePath("../Lata2")
+surface_material_override/0 = SubResource("StandardMaterial3D_y0nc2")
+
+[node name="MeshInstance3D10" type="MeshInstance3D" parent="Latas" unique_id=628702624]
+transform = Transform3D(0.18760683, 0, 0, 0, 0.1549633, 0, 0, 0, 0.19325186, 0.54588634, 1.1859702, -1.167002)
+mesh = SubResource("CylinderMesh_13qdw")
+skeleton = NodePath("../Lata2")
+surface_material_override/0 = SubResource("StandardMaterial3D_lpkjo")
+
+[node name="MeshInstance3D11" type="MeshInstance3D" parent="Latas" unique_id=1878457940]
+transform = Transform3D(0.18760683, 0, 0, 0, 0.1549633, 0, 0, 0, 0.19325186, 0.27749276, 1.1859702, -1.1643581)
+mesh = SubResource("CylinderMesh_13qdw")
+skeleton = NodePath("../Lata2")
+surface_material_override/0 = SubResource("StandardMaterial3D_lpkjo")
+
+[node name="MeshInstance3D12" type="MeshInstance3D" parent="Latas" unique_id=913139849]
+transform = Transform3D(0.18760683, 0, 0, 0, 0.1549633, 0, 0, 0, 0.19325186, 0.54588634, 1.1859702, -0.8000054)
+mesh = SubResource("CylinderMesh_13qdw")
+skeleton = NodePath("../Lata2")
+surface_material_override/0 = SubResource("StandardMaterial3D_lpkjo")
+
+[node name="MeshInstance3D13" type="MeshInstance3D" parent="Latas" unique_id=542532531]
+transform = Transform3D(0.18760683, 0, 0, 0, 0.1549633, 0, 0, 0, 0.19325186, 0.27749276, 1.1859702, -0.7973616)
+mesh = SubResource("CylinderMesh_13qdw")
+skeleton = NodePath("../Lata2")
+surface_material_override/0 = SubResource("StandardMaterial3D_lpkjo")
+
+[node name="MeshInstance3D14" type="MeshInstance3D" parent="Latas" unique_id=1503625539]
+transform = Transform3D(0.18760683, 0, 0, 0, 0.1549633, 0, 0, 0, 0.19325186, 0.54588634, 1.1859702, -0.38923597)
+mesh = SubResource("CylinderMesh_13qdw")
+skeleton = NodePath("../Lata2")
+surface_material_override/0 = SubResource("StandardMaterial3D_lpkjo")
+
+[node name="MeshInstance3D15" type="MeshInstance3D" parent="Latas" unique_id=1244318018]
+transform = Transform3D(0.18760683, 0, 0, 0, 0.1549633, 0, 0, 0, 0.19325186, 0.27749276, 1.1859702, -0.38659215)
+mesh = SubResource("CylinderMesh_13qdw")
+skeleton = NodePath("../Lata2")
+surface_material_override/0 = SubResource("StandardMaterial3D_lpkjo")
+
+[node name="MeshInstance3D16" type="MeshInstance3D" parent="Latas" unique_id=66063411]
+transform = Transform3D(0.18760683, 0, 0, 0, 0.1549633, 0, 0, 0, 0.19325186, 0.54588634, 1.1859702, -0.03412831)
+mesh = SubResource("CylinderMesh_13qdw")
+skeleton = NodePath("../Lata2")
+surface_material_override/0 = SubResource("StandardMaterial3D_lpkjo")
+
+[node name="MeshInstance3D17" type="MeshInstance3D" parent="Latas" unique_id=445038504]
+transform = Transform3D(0.18760683, 0, 0, 0, 0.1549633, 0, 0, 0, 0.19325186, 0.27749276, 1.1859702, -0.031484365)
+mesh = SubResource("CylinderMesh_13qdw")
+skeleton = NodePath("../Lata2")
+surface_material_override/0 = SubResource("StandardMaterial3D_lpkjo")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Latas" unique_id=2029648395]
+transform = Transform3D(0.18760683, 0, 0, 0, 0.1549633, 0, 0, 0, 0.19325186, 0.83740467, 1.1859702, -1.1644533)
+mesh = SubResource("CylinderMesh_13qdw")
+skeleton = NodePath("../Lata2")
+surface_material_override/0 = SubResource("StandardMaterial3D_sgrid")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="Latas" unique_id=1918279797]
+transform = Transform3D(0.18760683, 0, 0, 0, 0.1549633, 0, 0, 0, 0.19325186, 0.83740467, 1.1859702, -0.9151403)
+mesh = SubResource("CylinderMesh_13qdw")
+skeleton = NodePath("../Lata2")
+surface_material_override/0 = SubResource("StandardMaterial3D_sgrid")
+
+[node name="MeshInstance3D5" type="MeshInstance3D" parent="Latas" unique_id=1136642669]
+transform = Transform3D(0.18760683, 0, 0, 0, 0.1549633, 0, 0, 0, 0.19325186, 0.83740467, 1.1859702, -0.57617795)
+mesh = SubResource("CylinderMesh_13qdw")
+skeleton = NodePath("../Lata2")
+surface_material_override/0 = SubResource("StandardMaterial3D_sgrid")
+
+[node name="MeshInstance3D6" type="MeshInstance3D" parent="Latas" unique_id=1336447660]
+transform = Transform3D(0.18760683, 0, 0, 0, 0.1549633, 0, 0, 0, 0.19325186, 0.83740467, 1.1859702, -0.2704277)
+mesh = SubResource("CylinderMesh_13qdw")
+skeleton = NodePath("../Lata2")
+surface_material_override/0 = SubResource("StandardMaterial3D_sgrid")
+
+[node name="MeshInstance3D7" type="MeshInstance3D" parent="Latas" unique_id=701960886]
+transform = Transform3D(0.18760683, 0, 0, 0, 0.1549633, 0, 0, 0, 0.19325186, 0.83740467, 1.1859702, 0.13249958)
+mesh = SubResource("CylinderMesh_13qdw")
+skeleton = NodePath("../Lata2")
+surface_material_override/0 = SubResource("StandardMaterial3D_sgrid")
+
+[node name="Lata" type="Node3D" parent="Latas" unique_id=261539943]
+transform = Transform3D(0.18760683, 0, 0, 0, 0.1549633, 0, 0, 0, 0.19325186, 1.3573211, 1.1859702, -1.4625725)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Latas/Lata" unique_id=1643658969]
+mesh = SubResource("CylinderMesh_13qdw")
+surface_material_override/0 = SubResource("StandardMaterial3D_wi6ju")
+
+[node name="Lata2" type="Node3D" parent="Latas" unique_id=1626959056]
+transform = Transform3D(0.18760683, 0, 0, 0, 0.1549633, 0, 0, 0, 0.19325186, 1.100028, 1.1859702, -1.4625725)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Latas/Lata2" unique_id=1634905676]
+mesh = SubResource("CylinderMesh_13qdw")
+surface_material_override/0 = SubResource("StandardMaterial3D_wi6ju")
+
+[node name="Lata3" type="Node3D" parent="Latas" unique_id=1179885873]
+transform = Transform3D(0.18760683, 0, 0, 0, 0.1549633, 0, 0, 0, 0.19325186, 1.3573211, 1.1859702, -1.1866441)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Latas/Lata3" unique_id=1424738403]
+mesh = SubResource("CylinderMesh_13qdw")
+surface_material_override/0 = SubResource("StandardMaterial3D_wi6ju")
+
+[node name="Lata4" type="Node3D" parent="Latas" unique_id=202465166]
+transform = Transform3D(0.18760683, 0, 0, 0, 0.1549633, 0, 0, 0, 0.19325186, 1.100028, 1.1859702, -1.1866441)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Latas/Lata4" unique_id=2022791151]
+mesh = SubResource("CylinderMesh_13qdw")
+surface_material_override/0 = SubResource("StandardMaterial3D_wi6ju")
+
+[node name="Lata5" type="Node3D" parent="Latas" unique_id=466954152]
+transform = Transform3D(0.18760683, 0, 0, 0, 0.1549633, 0, 0, 0, 0.19325186, 1.3573211, 1.1859702, -0.9093599)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Latas/Lata5" unique_id=616532250]
+mesh = SubResource("CylinderMesh_13qdw")
+surface_material_override/0 = SubResource("StandardMaterial3D_wi6ju")
+
+[node name="Lata6" type="Node3D" parent="Latas" unique_id=687321401]
+transform = Transform3D(0.18760683, 0, 0, 0, 0.1549633, 0, 0, 0, 0.19325186, 1.100028, 1.1859702, -0.9093599)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Latas/Lata6" unique_id=1650732765]
+mesh = SubResource("CylinderMesh_13qdw")
+surface_material_override/0 = SubResource("StandardMaterial3D_wi6ju")
+
+[node name="Lata7" type="Node3D" parent="Latas" unique_id=527029568]
+transform = Transform3D(0.18760683, 0, 0, 0, 0.1549633, 0, 0, 0, 0.19325186, 1.3573211, 1.1859702, -0.63361543)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Latas/Lata7" unique_id=944004094]
+mesh = SubResource("CylinderMesh_13qdw")
+surface_material_override/0 = SubResource("StandardMaterial3D_wi6ju")
+
+[node name="Lata8" type="Node3D" parent="Latas" unique_id=153462283]
+transform = Transform3D(0.18760683, 0, 0, 0, 0.1549633, 0, 0, 0, 0.19325186, 1.100028, 1.1859702, -0.63361543)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Latas/Lata8" unique_id=1537369580]
+mesh = SubResource("CylinderMesh_13qdw")
+surface_material_override/0 = SubResource("StandardMaterial3D_wi6ju")
+
+[node name="Lata9" type="Node3D" parent="Latas" unique_id=1292403305]
+transform = Transform3D(0.18760683, 0, 0, 0, 0.1549633, 0, 0, 0, 0.19325186, 1.3573211, 1.1859702, -0.35500026)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Latas/Lata9" unique_id=333184384]
+mesh = SubResource("CylinderMesh_13qdw")
+surface_material_override/0 = SubResource("StandardMaterial3D_wi6ju")
+
+[node name="Lata10" type="Node3D" parent="Latas" unique_id=1008758639]
+transform = Transform3D(0.18760683, 0, 0, 0, 0.1549633, 0, 0, 0, 0.19325186, 1.100028, 1.1859702, -0.35500026)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Latas/Lata10" unique_id=833294837]
+mesh = SubResource("CylinderMesh_13qdw")
+surface_material_override/0 = SubResource("StandardMaterial3D_wi6ju")
+
+[node name="Lata11" type="Node3D" parent="Latas" unique_id=84580138]
+transform = Transform3D(0.18760683, 0, 0, 0, 0.1549633, 0, 0, 0, 0.19325186, 1.3573211, 1.1859702, -0.044906378)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Latas/Lata11" unique_id=1800979660]
+mesh = SubResource("CylinderMesh_13qdw")
+surface_material_override/0 = SubResource("StandardMaterial3D_wi6ju")
+
+[node name="Lata12" type="Node3D" parent="Latas" unique_id=1940160806]
+transform = Transform3D(0.18760683, 0, 0, 0, 0.1549633, 0, 0, 0, 0.19325186, 1.100028, 1.1859702, -0.044906378)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Latas/Lata12" unique_id=1134079323]
+mesh = SubResource("CylinderMesh_13qdw")
+surface_material_override/0 = SubResource("StandardMaterial3D_wi6ju")

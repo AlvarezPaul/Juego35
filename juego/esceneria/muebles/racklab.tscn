@@ -1,0 +1,753 @@
+[gd_scene format=3 uid="uid://cdls81h7beqcc"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_xrivr"]
+top_radius = 0.044921875
+bottom_radius = 0.044921875
+height = 0.1991272
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wi6ju"]
+albedo_color = Color(0.65222704, 2.0455568e-06, 1.4439226e-07, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_a7ifk"]
+top_radius = 0.044921875
+bottom_radius = 0.044921875
+height = 0.5772648
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wqksm"]
+albedo_color = Color(0.22670749, 0.22670749, 0.22670746, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_vomed"]
+top_radius = 0.044921875
+bottom_radius = 0.044921875
+height = 0.27290344
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_i151h"]
+albedo_color = Color(0, 0.29063123, 0, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2x1yp"]
+albedo_color = Color(0.18000486, 0.18000486, 0.18000486, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_xrivr"]
+size = Vector3(0.5102539, 2.9609375, 2.845459)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_13qdw"]
+albedo_color = Color(0.0885599, 0.0885599, 0.0885599, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_6gniu"]
+size = Vector3(3.9769287, 2.9609375, 0.3894043)
+
+[sub_resource type="BoxMesh" id="BoxMesh_kkj53"]
+size = Vector3(3.9769287, 0.34716797, 2.8538818)
+
+[sub_resource type="BoxMesh" id="BoxMesh_bn310"]
+size = Vector3(3.9769287, 0.36376953, 2.057541)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dmfg3"]
+albedo_color = Color(0.5132329, 0.51323295, 0.51323277, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_a7ifk"]
+size = Vector3(3.9769287, 0.22235107, 2.057541)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vomed"]
+albedo_color = Color(0.0142752165, 0.014275218, 0.014275218, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_tlt3j"]
+size = Vector3(3.9769287, 2.270691, 0.09116745)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_37e0l"]
+transparency = 1
+albedo_color = Color(0.06879827, 0.06879828, 0.06879828, 0.32941177)
+
+[node name="Racklab" type="Node3D" unique_id=232824830]
+
+[node name="Cables" type="Node3D" parent="." unique_id=1540924622]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.4739349, 0)
+
+[node name="MeshInstance3D9" type="MeshInstance3D" parent="Cables" unique_id=2029605087]
+transform = Transform3D(-0.7352507, -0.67759883, 0.016316533, -1.032689e-10, 0.02407295, 0.9997102, -0.6777953, 0.7350376, -0.017699655, 0.7644126, 1.3594981, 1.5036983)
+mesh = SubResource("CylinderMesh_xrivr")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_wi6ju")
+
+[node name="MeshInstance3D34" type="MeshInstance3D" parent="Cables" unique_id=905228859]
+transform = Transform3D(-0.06991432, -0.11557598, -0.9649738, 0.10176696, -1.3079348, 0.07812597, -1.004524, -0.12446098, 0.07507647, 0.8364368, 1.0895644, 1.3534623)
+mesh = SubResource("CylinderMesh_a7ifk")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_wi6ju")
+
+[node name="MeshInstance3D35" type="MeshInstance3D" parent="Cables" unique_id=196276399]
+transform = Transform3D(-0.08562822, 0.10005958, -0.96474755, 0.14395414, -1.300408, -0.08486916, -0.99812704, -0.1961343, 0.070524424, 3.7805932, 1.0089409, 1.3870883)
+mesh = SubResource("CylinderMesh_a7ifk")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_wi6ju")
+
+[node name="MeshInstance3D36" type="MeshInstance3D" parent="Cables" unique_id=2081692774]
+transform = Transform3D(-0.08562822, 0.10005958, -0.96474755, 0.14395414, -1.300408, -0.08486916, -0.99812704, -0.1961343, 0.070524424, 1.519798, 1.0089409, 1.3870883)
+mesh = SubResource("CylinderMesh_a7ifk")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_wqksm")
+
+[node name="MeshInstance3D10" type="MeshInstance3D" parent="Cables" unique_id=98668268]
+transform = Transform3D(-0.7352507, -0.67759883, 0.016316533, -1.032689e-10, 0.02407295, 0.9997102, -0.6777953, 0.7350376, -0.017699655, 1.0254757, 1.3594981, 1.5036983)
+mesh = SubResource("CylinderMesh_xrivr")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_wi6ju")
+
+[node name="MeshInstance3D16" type="MeshInstance3D" parent="Cables" unique_id=1310155288]
+transform = Transform3D(-0.7352507, -0.67759883, 0.016316533, -1.032689e-10, 0.02407295, 0.9997102, -0.6777953, 0.7350376, -0.017699655, 2.0740244, 1.3594981, 1.5036983)
+mesh = SubResource("CylinderMesh_xrivr")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_wi6ju")
+
+[node name="MeshInstance3D17" type="MeshInstance3D" parent="Cables" unique_id=785700864]
+transform = Transform3D(-0.7352507, -0.67759883, 0.016316533, -1.032689e-10, 0.02407295, 0.9997102, -0.6777953, 0.7350376, -0.017699655, 2.3236775, 1.3594981, 1.5036983)
+mesh = SubResource("CylinderMesh_xrivr")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_wi6ju")
+
+[node name="MeshInstance3D18" type="MeshInstance3D" parent="Cables" unique_id=945689184]
+transform = Transform3D(-0.7352507, -0.67759883, 0.016316533, -1.032689e-10, 0.02407295, 0.9997102, -0.6777953, 0.7350376, -0.017699655, 2.568752, 1.3594981, 1.5036983)
+mesh = SubResource("CylinderMesh_xrivr")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_wi6ju")
+
+[node name="MeshInstance3D19" type="MeshInstance3D" parent="Cables" unique_id=896181076]
+transform = Transform3D(-0.7352507, -0.67759883, 0.016316533, -1.032689e-10, 0.02407295, 0.9997102, -0.6777953, 0.7350376, -0.017699655, 2.8629248, 1.3594981, 1.5036983)
+mesh = SubResource("CylinderMesh_xrivr")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_wi6ju")
+
+[node name="MeshInstance3D20" type="MeshInstance3D" parent="Cables" unique_id=2124244352]
+transform = Transform3D(-0.7352507, -0.67759883, 0.016316533, -1.032689e-10, 0.02407295, 0.9997102, -0.6777953, 0.7350376, -0.017699655, 3.1099517, 1.3594981, 1.5036983)
+mesh = SubResource("CylinderMesh_xrivr")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_wi6ju")
+
+[node name="MeshInstance3D21" type="MeshInstance3D" parent="Cables" unique_id=1156791004]
+transform = Transform3D(-0.7352507, -0.67759883, 0.016316533, -1.032689e-10, 0.02407295, 0.9997102, -0.6777953, 0.7350376, -0.017699655, 3.3497052, 1.3594981, 1.5036983)
+mesh = SubResource("CylinderMesh_xrivr")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_wi6ju")
+
+[node name="MeshInstance3D22" type="MeshInstance3D" parent="Cables" unique_id=1656926933]
+transform = Transform3D(-0.7352507, -0.67759883, 0.016316533, -1.032689e-10, 0.02407295, 0.9997102, -0.6777953, 0.7350376, -0.017699655, 3.5874038, 1.3594981, 1.5036983)
+mesh = SubResource("CylinderMesh_xrivr")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_wi6ju")
+
+[node name="MeshInstance3D23" type="MeshInstance3D" parent="Cables" unique_id=1808919037]
+transform = Transform3D(-0.7352507, -0.67759883, 0.016316533, -1.032689e-10, 0.02407295, 0.9997102, -0.6777953, 0.7350376, -0.017699655, 3.8386953, 1.3594981, 1.5036983)
+mesh = SubResource("CylinderMesh_xrivr")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_wi6ju")
+
+[node name="MeshInstance3D11" type="MeshInstance3D" parent="Cables" unique_id=1745544768]
+transform = Transform3D(-0.7352507, -0.67759883, 0.016316533, -1.032689e-10, 0.02407295, 0.9997102, -0.6777953, 0.7350376, -0.017699655, 1.3145471, 1.3594981, 1.5036983)
+mesh = SubResource("CylinderMesh_xrivr")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_wi6ju")
+
+[node name="MeshInstance3D12" type="MeshInstance3D" parent="Cables" unique_id=1597105374]
+transform = Transform3D(-0.7352507, -0.67759883, 0.016316533, -1.032689e-10, 0.02407295, 0.9997102, -0.6777953, 0.7350376, -0.017699655, 1.5956624, 1.3594981, 1.5036983)
+mesh = SubResource("CylinderMesh_xrivr")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_wi6ju")
+
+[node name="MeshInstance3D13" type="MeshInstance3D" parent="Cables" unique_id=902426991]
+transform = Transform3D(-0.7352507, -0.67759883, 0.016316533, -1.032689e-10, 0.02407295, 0.9997102, -0.6777953, 0.7350376, -0.017699655, 1.8647711, 1.3599309, 1.5169106)
+mesh = SubResource("CylinderMesh_xrivr")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_wi6ju")
+
+[node name="MeshInstance3D14" type="MeshInstance3D" parent="Cables" unique_id=1346051718]
+transform = Transform3D(0.112699434, -0.99334127, 0.023919586, 7.476089e-10, 0.024072956, 0.9997103, -0.99362934, -0.11266671, 0.0027130086, 1.7728, 1.3599993, 1.4280775)
+mesh = SubResource("CylinderMesh_vomed")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_wi6ju")
+
+[node name="MeshInstance3D15" type="MeshInstance3D" parent="Cables" unique_id=1966388208]
+transform = Transform3D(-0.015964992, -0.9995828, 0.024069881, 7.4760886e-10, 0.024072954, 0.99971026, -0.9998727, 0.01596044, -0.000384324, 1.5034579, 1.3599993, 1.4280775)
+mesh = SubResource("CylinderMesh_vomed")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_wi6ju")
+
+[node name="MeshInstance3D24" type="MeshInstance3D" parent="Cables" unique_id=1205375337]
+transform = Transform3D(0.112699434, -0.99334127, 0.023919586, 7.476089e-10, 0.024072956, 0.9997103, -0.99362934, -0.11266671, 0.0027130086, 2.3273861, 1.3599993, 1.4280775)
+mesh = SubResource("CylinderMesh_vomed")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_wi6ju")
+
+[node name="MeshInstance3D25" type="MeshInstance3D" parent="Cables" unique_id=495149229]
+transform = Transform3D(-0.015964992, -0.9995828, 0.024069881, 7.4760886e-10, 0.024072954, 0.99971026, -0.9998727, 0.01596044, -0.000384324, 2.058044, 1.3599993, 1.4280775)
+mesh = SubResource("CylinderMesh_vomed")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_wi6ju")
+
+[node name="MeshInstance3D26" type="MeshInstance3D" parent="Cables" unique_id=1950269779]
+transform = Transform3D(0.112699434, -0.99334127, 0.023919586, 7.476089e-10, 0.024072956, 0.9997103, -0.99362934, -0.11266671, 0.0027130086, 2.8917787, 1.3599993, 1.4280775)
+mesh = SubResource("CylinderMesh_vomed")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_wi6ju")
+
+[node name="MeshInstance3D27" type="MeshInstance3D" parent="Cables" unique_id=1104540715]
+transform = Transform3D(-0.015964992, -0.9995828, 0.024069881, 7.4760886e-10, 0.024072954, 0.99971026, -0.9998727, 0.01596044, -0.000384324, 2.6224365, 1.3599993, 1.4280775)
+mesh = SubResource("CylinderMesh_vomed")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_wi6ju")
+
+[node name="MeshInstance3D28" type="MeshInstance3D" parent="Cables" unique_id=1891886699]
+transform = Transform3D(0.112699434, -0.99334127, 0.023919586, 7.476089e-10, 0.024072956, 0.9997103, -0.99362934, -0.11266671, 0.0027130086, 3.4526465, 1.3599993, 1.4280775)
+mesh = SubResource("CylinderMesh_vomed")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_wi6ju")
+
+[node name="MeshInstance3D29" type="MeshInstance3D" parent="Cables" unique_id=518056098]
+transform = Transform3D(-0.015964992, -0.9995828, 0.024069881, 7.4760886e-10, 0.024072954, 0.99971026, -0.9998727, 0.01596044, -0.000384324, 3.1833043, 1.3599993, 1.4280775)
+mesh = SubResource("CylinderMesh_vomed")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_wi6ju")
+
+[node name="MeshInstance3D30" type="MeshInstance3D" parent="Cables" unique_id=1829468853]
+transform = Transform3D(0.112699434, -0.99334127, 0.023919586, 7.476089e-10, 0.024072956, 0.9997103, -0.99362934, -0.11266671, 0.0027130086, 3.767865, 1.3599993, 1.4280775)
+mesh = SubResource("CylinderMesh_vomed")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_wi6ju")
+
+[node name="MeshInstance3D31" type="MeshInstance3D" parent="Cables" unique_id=1256012496]
+transform = Transform3D(-0.015964992, -0.9995828, 0.024069881, 7.4760886e-10, 0.024072954, 0.99971026, -0.9998727, 0.01596044, -0.000384324, 3.4985228, 1.3599993, 1.4280775)
+mesh = SubResource("CylinderMesh_vomed")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_wi6ju")
+
+[node name="MeshInstance3D32" type="MeshInstance3D" parent="Cables" unique_id=1571161352]
+transform = Transform3D(0.112699434, -0.99334127, 0.023919586, 7.476089e-10, 0.024072956, 0.9997103, -0.99362934, -0.11266671, 0.0027130086, 1.2426254, 1.3599993, 1.4280775)
+mesh = SubResource("CylinderMesh_vomed")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_wi6ju")
+
+[node name="MeshInstance3D33" type="MeshInstance3D" parent="Cables" unique_id=709664726]
+transform = Transform3D(-0.015964992, -0.9995828, 0.024069881, 7.4760886e-10, 0.024072954, 0.99971026, -0.9998727, 0.01596044, -0.000384324, 0.9732832, 1.3599993, 1.4280775)
+mesh = SubResource("CylinderMesh_vomed")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_wi6ju")
+
+[node name="Cables4" type="Node3D" parent="." unique_id=1093941296]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.30111277, -0.110631466)
+
+[node name="MeshInstance3D9" type="MeshInstance3D" parent="Cables4" unique_id=1009330571]
+transform = Transform3D(-0.7352507, -0.67759883, 0.016316533, -1.032689e-10, 0.02407295, 0.9997102, -0.6777953, 0.7350376, -0.017699655, 0.7644126, 1.3594981, 1.5036983)
+mesh = SubResource("CylinderMesh_xrivr")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_i151h")
+
+[node name="MeshInstance3D10" type="MeshInstance3D" parent="Cables4" unique_id=1681992776]
+transform = Transform3D(-0.7352507, -0.67759883, 0.016316533, -1.032689e-10, 0.02407295, 0.9997102, -0.6777953, 0.7350376, -0.017699655, 1.0254757, 1.3594981, 1.5036983)
+mesh = SubResource("CylinderMesh_xrivr")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_i151h")
+
+[node name="MeshInstance3D16" type="MeshInstance3D" parent="Cables4" unique_id=1014540544]
+transform = Transform3D(-0.7352507, -0.67759883, 0.016316533, -1.032689e-10, 0.02407295, 0.9997102, -0.6777953, 0.7350376, -0.017699655, 2.0740244, 1.3594981, 1.5036983)
+mesh = SubResource("CylinderMesh_xrivr")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_i151h")
+
+[node name="MeshInstance3D17" type="MeshInstance3D" parent="Cables4" unique_id=1116619424]
+transform = Transform3D(-0.7352507, -0.67759883, 0.016316533, -1.032689e-10, 0.02407295, 0.9997102, -0.6777953, 0.7350376, -0.017699655, 2.3236775, 1.3594981, 1.5036983)
+mesh = SubResource("CylinderMesh_xrivr")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_i151h")
+
+[node name="MeshInstance3D18" type="MeshInstance3D" parent="Cables4" unique_id=1912599972]
+transform = Transform3D(-0.7352507, -0.67759883, 0.016316533, -1.032689e-10, 0.02407295, 0.9997102, -0.6777953, 0.7350376, -0.017699655, 2.568752, 1.3594981, 1.5036983)
+mesh = SubResource("CylinderMesh_xrivr")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_i151h")
+
+[node name="MeshInstance3D19" type="MeshInstance3D" parent="Cables4" unique_id=2094556174]
+transform = Transform3D(-0.7352507, -0.67759883, 0.016316533, -1.032689e-10, 0.02407295, 0.9997102, -0.6777953, 0.7350376, -0.017699655, 2.8629248, 1.3594981, 1.5036983)
+mesh = SubResource("CylinderMesh_xrivr")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_i151h")
+
+[node name="MeshInstance3D20" type="MeshInstance3D" parent="Cables4" unique_id=2131440187]
+transform = Transform3D(-0.7352507, -0.67759883, 0.016316533, -1.032689e-10, 0.02407295, 0.9997102, -0.6777953, 0.7350376, -0.017699655, 3.1099517, 1.3594981, 1.5036983)
+mesh = SubResource("CylinderMesh_xrivr")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_i151h")
+
+[node name="MeshInstance3D21" type="MeshInstance3D" parent="Cables4" unique_id=1527396498]
+transform = Transform3D(-0.7352507, -0.67759883, 0.016316533, -1.032689e-10, 0.02407295, 0.9997102, -0.6777953, 0.7350376, -0.017699655, 3.3497052, 1.3594981, 1.5036983)
+mesh = SubResource("CylinderMesh_xrivr")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_i151h")
+
+[node name="MeshInstance3D22" type="MeshInstance3D" parent="Cables4" unique_id=245129269]
+transform = Transform3D(-0.7352507, -0.67759883, 0.016316533, -1.032689e-10, 0.02407295, 0.9997102, -0.6777953, 0.7350376, -0.017699655, 3.5874038, 1.3594981, 1.5036983)
+mesh = SubResource("CylinderMesh_xrivr")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_i151h")
+
+[node name="MeshInstance3D23" type="MeshInstance3D" parent="Cables4" unique_id=1856696057]
+transform = Transform3D(-0.7352507, -0.67759883, 0.016316533, -1.032689e-10, 0.02407295, 0.9997102, -0.6777953, 0.7350376, -0.017699655, 3.8386953, 1.3594981, 1.5036983)
+mesh = SubResource("CylinderMesh_xrivr")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_i151h")
+
+[node name="MeshInstance3D11" type="MeshInstance3D" parent="Cables4" unique_id=1955467550]
+transform = Transform3D(-0.7352507, -0.67759883, 0.016316533, -1.032689e-10, 0.02407295, 0.9997102, -0.6777953, 0.7350376, -0.017699655, 1.3145471, 1.3594981, 1.5036983)
+mesh = SubResource("CylinderMesh_xrivr")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_i151h")
+
+[node name="MeshInstance3D12" type="MeshInstance3D" parent="Cables4" unique_id=1979189442]
+transform = Transform3D(-0.7352507, -0.67759883, 0.016316533, -1.032689e-10, 0.02407295, 0.9997102, -0.6777953, 0.7350376, -0.017699655, 1.5956624, 1.3594981, 1.5036983)
+mesh = SubResource("CylinderMesh_xrivr")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_i151h")
+
+[node name="MeshInstance3D13" type="MeshInstance3D" parent="Cables4" unique_id=1747285105]
+transform = Transform3D(-0.7352507, -0.67759883, 0.016316533, -1.032689e-10, 0.02407295, 0.9997102, -0.6777953, 0.7350376, -0.017699655, 1.8647711, 1.3599309, 1.5169106)
+mesh = SubResource("CylinderMesh_xrivr")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_i151h")
+
+[node name="MeshInstance3D14" type="MeshInstance3D" parent="Cables4" unique_id=937884521]
+transform = Transform3D(0.112699434, -0.99334127, 0.023919586, 7.476089e-10, 0.024072956, 0.9997103, -0.99362934, -0.11266671, 0.0027130086, 1.7728, 1.3599993, 1.4280775)
+mesh = SubResource("CylinderMesh_vomed")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_i151h")
+
+[node name="MeshInstance3D15" type="MeshInstance3D" parent="Cables4" unique_id=937771516]
+transform = Transform3D(-0.015964992, -0.9995828, 0.024069881, 7.4760886e-10, 0.024072954, 0.99971026, -0.9998727, 0.01596044, -0.000384324, 1.5034579, 1.3599993, 1.4280775)
+mesh = SubResource("CylinderMesh_vomed")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_i151h")
+
+[node name="MeshInstance3D24" type="MeshInstance3D" parent="Cables4" unique_id=981117649]
+transform = Transform3D(0.112699434, -0.99334127, 0.023919586, 7.476089e-10, 0.024072956, 0.9997103, -0.99362934, -0.11266671, 0.0027130086, 2.3273861, 1.3599993, 1.4280775)
+mesh = SubResource("CylinderMesh_vomed")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_i151h")
+
+[node name="MeshInstance3D25" type="MeshInstance3D" parent="Cables4" unique_id=21306403]
+transform = Transform3D(-0.015964992, -0.9995828, 0.024069881, 7.4760886e-10, 0.024072954, 0.99971026, -0.9998727, 0.01596044, -0.000384324, 2.058044, 1.3599993, 1.4280775)
+mesh = SubResource("CylinderMesh_vomed")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_i151h")
+
+[node name="MeshInstance3D26" type="MeshInstance3D" parent="Cables4" unique_id=154550459]
+transform = Transform3D(0.112699434, -0.99334127, 0.023919586, 7.476089e-10, 0.024072956, 0.9997103, -0.99362934, -0.11266671, 0.0027130086, 2.8917787, 1.3599993, 1.4280775)
+mesh = SubResource("CylinderMesh_vomed")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_i151h")
+
+[node name="MeshInstance3D27" type="MeshInstance3D" parent="Cables4" unique_id=1873613743]
+transform = Transform3D(-0.015964992, -0.9995828, 0.024069881, 7.4760886e-10, 0.024072954, 0.99971026, -0.9998727, 0.01596044, -0.000384324, 2.6224365, 1.3599993, 1.4280775)
+mesh = SubResource("CylinderMesh_vomed")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_i151h")
+
+[node name="MeshInstance3D28" type="MeshInstance3D" parent="Cables4" unique_id=1408924840]
+transform = Transform3D(0.112699434, -0.99334127, 0.023919586, 7.476089e-10, 0.024072956, 0.9997103, -0.99362934, -0.11266671, 0.0027130086, 3.4526465, 1.3599993, 1.4280775)
+mesh = SubResource("CylinderMesh_vomed")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_i151h")
+
+[node name="MeshInstance3D29" type="MeshInstance3D" parent="Cables4" unique_id=701031018]
+transform = Transform3D(-0.015964992, -0.9995828, 0.024069881, 7.4760886e-10, 0.024072954, 0.99971026, -0.9998727, 0.01596044, -0.000384324, 3.1833043, 1.3599993, 1.4280775)
+mesh = SubResource("CylinderMesh_vomed")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_i151h")
+
+[node name="MeshInstance3D30" type="MeshInstance3D" parent="Cables4" unique_id=1591742316]
+transform = Transform3D(0.112699434, -0.99334127, 0.023919586, 7.476089e-10, 0.024072956, 0.9997103, -0.99362934, -0.11266671, 0.0027130086, 3.767865, 1.3599993, 1.4280775)
+mesh = SubResource("CylinderMesh_vomed")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_i151h")
+
+[node name="MeshInstance3D31" type="MeshInstance3D" parent="Cables4" unique_id=1774559456]
+transform = Transform3D(-0.015964992, -0.9995828, 0.024069881, 7.4760886e-10, 0.024072954, 0.99971026, -0.9998727, 0.01596044, -0.000384324, 3.4985228, 1.3599993, 1.4280775)
+mesh = SubResource("CylinderMesh_vomed")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_i151h")
+
+[node name="MeshInstance3D32" type="MeshInstance3D" parent="Cables4" unique_id=1014568899]
+transform = Transform3D(0.112699434, -0.99334127, 0.023919586, 7.476089e-10, 0.024072956, 0.9997103, -0.99362934, -0.11266671, 0.0027130086, 1.2426254, 1.3599993, 1.4280775)
+mesh = SubResource("CylinderMesh_vomed")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_i151h")
+
+[node name="MeshInstance3D33" type="MeshInstance3D" parent="Cables4" unique_id=1776585563]
+transform = Transform3D(-0.015964992, -0.9995828, 0.024069881, 7.4760886e-10, 0.024072954, 0.99971026, -0.9998727, 0.01596044, -0.000384324, 0.9732832, 1.3599993, 1.4280775)
+mesh = SubResource("CylinderMesh_vomed")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_i151h")
+
+[node name="Cables2" type="Node3D" parent="." unique_id=1765430833]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.07197559, -1.4659163, -0.14033675)
+
+[node name="MeshInstance3D9" type="MeshInstance3D" parent="Cables2" unique_id=1565366161]
+transform = Transform3D(-0.7352507, -0.67759883, 0.016316533, -1.032689e-10, 0.02407295, 0.9997102, -0.6777953, 0.7350376, -0.017699655, 0.7644126, 1.3594981, 1.5036983)
+mesh = SubResource("CylinderMesh_xrivr")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_2x1yp")
+
+[node name="MeshInstance3D10" type="MeshInstance3D" parent="Cables2" unique_id=1799669248]
+transform = Transform3D(-0.7352507, -0.67759883, 0.016316533, -1.032689e-10, 0.02407295, 0.9997102, -0.6777953, 0.7350376, -0.017699655, 1.0254757, 1.3594981, 1.5036983)
+mesh = SubResource("CylinderMesh_xrivr")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_2x1yp")
+
+[node name="MeshInstance3D16" type="MeshInstance3D" parent="Cables2" unique_id=714446031]
+transform = Transform3D(-0.7352507, -0.67759883, 0.016316533, -1.032689e-10, 0.02407295, 0.9997102, -0.6777953, 0.7350376, -0.017699655, 2.0740244, 1.3594981, 1.5036983)
+mesh = SubResource("CylinderMesh_xrivr")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_2x1yp")
+
+[node name="MeshInstance3D17" type="MeshInstance3D" parent="Cables2" unique_id=2121798516]
+transform = Transform3D(-0.7352507, -0.67759883, 0.016316533, -1.032689e-10, 0.02407295, 0.9997102, -0.6777953, 0.7350376, -0.017699655, 2.3236775, 1.3594981, 1.5036983)
+mesh = SubResource("CylinderMesh_xrivr")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_2x1yp")
+
+[node name="MeshInstance3D18" type="MeshInstance3D" parent="Cables2" unique_id=1594077755]
+transform = Transform3D(-0.7352507, -0.67759883, 0.016316533, -1.032689e-10, 0.02407295, 0.9997102, -0.6777953, 0.7350376, -0.017699655, 2.568752, 1.3594981, 1.5036983)
+mesh = SubResource("CylinderMesh_xrivr")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_2x1yp")
+
+[node name="MeshInstance3D19" type="MeshInstance3D" parent="Cables2" unique_id=967088896]
+transform = Transform3D(-0.7352507, -0.67759883, 0.016316533, -1.032689e-10, 0.02407295, 0.9997102, -0.6777953, 0.7350376, -0.017699655, 2.8629248, 1.3594981, 1.5036983)
+mesh = SubResource("CylinderMesh_xrivr")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_2x1yp")
+
+[node name="MeshInstance3D20" type="MeshInstance3D" parent="Cables2" unique_id=1217110229]
+transform = Transform3D(-0.7352507, -0.67759883, 0.016316533, -1.032689e-10, 0.02407295, 0.9997102, -0.6777953, 0.7350376, -0.017699655, 3.1099517, 1.3594981, 1.5036983)
+mesh = SubResource("CylinderMesh_xrivr")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_2x1yp")
+
+[node name="MeshInstance3D21" type="MeshInstance3D" parent="Cables2" unique_id=1359930584]
+transform = Transform3D(-0.7352507, -0.67759883, 0.016316533, -1.032689e-10, 0.02407295, 0.9997102, -0.6777953, 0.7350376, -0.017699655, 3.3497052, 1.3594981, 1.5036983)
+mesh = SubResource("CylinderMesh_xrivr")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_2x1yp")
+
+[node name="MeshInstance3D22" type="MeshInstance3D" parent="Cables2" unique_id=1269417652]
+transform = Transform3D(-0.7352507, -0.67759883, 0.016316533, -1.032689e-10, 0.02407295, 0.9997102, -0.6777953, 0.7350376, -0.017699655, 3.5874038, 1.3594981, 1.5036983)
+mesh = SubResource("CylinderMesh_xrivr")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_2x1yp")
+
+[node name="MeshInstance3D23" type="MeshInstance3D" parent="Cables2" unique_id=1920686316]
+transform = Transform3D(-0.7352507, -0.67759883, 0.016316533, -1.032689e-10, 0.02407295, 0.9997102, -0.6777953, 0.7350376, -0.017699655, 3.8386953, 1.3594981, 1.5036983)
+mesh = SubResource("CylinderMesh_xrivr")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_2x1yp")
+
+[node name="MeshInstance3D11" type="MeshInstance3D" parent="Cables2" unique_id=1096855513]
+transform = Transform3D(-0.7352507, -0.67759883, 0.016316533, -1.032689e-10, 0.02407295, 0.9997102, -0.6777953, 0.7350376, -0.017699655, 1.3145471, 1.3594981, 1.5036983)
+mesh = SubResource("CylinderMesh_xrivr")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_2x1yp")
+
+[node name="MeshInstance3D12" type="MeshInstance3D" parent="Cables2" unique_id=124184133]
+transform = Transform3D(-0.7352507, -0.67759883, 0.016316533, -1.032689e-10, 0.02407295, 0.9997102, -0.6777953, 0.7350376, -0.017699655, 1.5956624, 1.3594981, 1.5036983)
+mesh = SubResource("CylinderMesh_xrivr")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_2x1yp")
+
+[node name="MeshInstance3D13" type="MeshInstance3D" parent="Cables2" unique_id=918137824]
+transform = Transform3D(-0.7352507, -0.67759883, 0.016316533, -1.032689e-10, 0.02407295, 0.9997102, -0.6777953, 0.7350376, -0.017699655, 1.8647711, 1.3599309, 1.5169106)
+mesh = SubResource("CylinderMesh_xrivr")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_2x1yp")
+
+[node name="MeshInstance3D14" type="MeshInstance3D" parent="Cables2" unique_id=1570406826]
+transform = Transform3D(0.112699434, -0.99334127, 0.023919586, 7.476089e-10, 0.024072956, 0.9997103, -0.99362934, -0.11266671, 0.0027130086, 1.7728, 1.3599993, 1.4280775)
+mesh = SubResource("CylinderMesh_vomed")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_2x1yp")
+
+[node name="MeshInstance3D15" type="MeshInstance3D" parent="Cables2" unique_id=1258477974]
+transform = Transform3D(-0.015964992, -0.9995828, 0.024069881, 7.4760886e-10, 0.024072954, 0.99971026, -0.9998727, 0.01596044, -0.000384324, 1.5034579, 1.3599993, 1.4280775)
+mesh = SubResource("CylinderMesh_vomed")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_2x1yp")
+
+[node name="MeshInstance3D24" type="MeshInstance3D" parent="Cables2" unique_id=2132087363]
+transform = Transform3D(0.112699434, -0.99334127, 0.023919586, 7.476089e-10, 0.024072956, 0.9997103, -0.99362934, -0.11266671, 0.0027130086, 2.3273861, 1.3599993, 1.4280775)
+mesh = SubResource("CylinderMesh_vomed")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_2x1yp")
+
+[node name="MeshInstance3D25" type="MeshInstance3D" parent="Cables2" unique_id=776528080]
+transform = Transform3D(-0.015964992, -0.9995828, 0.024069881, 7.4760886e-10, 0.024072954, 0.99971026, -0.9998727, 0.01596044, -0.000384324, 2.058044, 1.3599993, 1.4280775)
+mesh = SubResource("CylinderMesh_vomed")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_2x1yp")
+
+[node name="MeshInstance3D26" type="MeshInstance3D" parent="Cables2" unique_id=1420524942]
+transform = Transform3D(0.112699434, -0.99334127, 0.023919586, 7.476089e-10, 0.024072956, 0.9997103, -0.99362934, -0.11266671, 0.0027130086, 2.8917787, 1.3599993, 1.4280775)
+mesh = SubResource("CylinderMesh_vomed")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_2x1yp")
+
+[node name="MeshInstance3D27" type="MeshInstance3D" parent="Cables2" unique_id=982596040]
+transform = Transform3D(-0.015964992, -0.9995828, 0.024069881, 7.4760886e-10, 0.024072954, 0.99971026, -0.9998727, 0.01596044, -0.000384324, 2.6224365, 1.3599993, 1.4280775)
+mesh = SubResource("CylinderMesh_vomed")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_2x1yp")
+
+[node name="MeshInstance3D28" type="MeshInstance3D" parent="Cables2" unique_id=773086386]
+transform = Transform3D(0.112699434, -0.99334127, 0.023919586, 7.476089e-10, 0.024072956, 0.9997103, -0.99362934, -0.11266671, 0.0027130086, 3.4526465, 1.3599993, 1.4280775)
+mesh = SubResource("CylinderMesh_vomed")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_2x1yp")
+
+[node name="MeshInstance3D29" type="MeshInstance3D" parent="Cables2" unique_id=2060334509]
+transform = Transform3D(-0.015964992, -0.9995828, 0.024069881, 7.4760886e-10, 0.024072954, 0.99971026, -0.9998727, 0.01596044, -0.000384324, 3.1833043, 1.3599993, 1.4280775)
+mesh = SubResource("CylinderMesh_vomed")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_2x1yp")
+
+[node name="MeshInstance3D30" type="MeshInstance3D" parent="Cables2" unique_id=1024378591]
+transform = Transform3D(0.112699434, -0.99334127, 0.023919586, 7.476089e-10, 0.024072956, 0.9997103, -0.99362934, -0.11266671, 0.0027130086, 3.767865, 1.3599993, 1.4280775)
+mesh = SubResource("CylinderMesh_vomed")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_2x1yp")
+
+[node name="MeshInstance3D31" type="MeshInstance3D" parent="Cables2" unique_id=1995821550]
+transform = Transform3D(-0.015964992, -0.9995828, 0.024069881, 7.4760886e-10, 0.024072954, 0.99971026, -0.9998727, 0.01596044, -0.000384324, 3.4985228, 1.3599993, 1.4280775)
+mesh = SubResource("CylinderMesh_vomed")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_2x1yp")
+
+[node name="MeshInstance3D32" type="MeshInstance3D" parent="Cables2" unique_id=894671476]
+transform = Transform3D(0.112699434, -0.99334127, 0.023919586, 7.476089e-10, 0.024072956, 0.9997103, -0.99362934, -0.11266671, 0.0027130086, 1.2426254, 1.3599993, 1.4280775)
+mesh = SubResource("CylinderMesh_vomed")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_2x1yp")
+
+[node name="MeshInstance3D33" type="MeshInstance3D" parent="Cables2" unique_id=1066021747]
+transform = Transform3D(-0.015964992, -0.9995828, 0.024069881, 7.4760886e-10, 0.024072954, 0.99971026, -0.9998727, 0.01596044, -0.000384324, 0.9732832, 1.3599993, 1.4280775)
+mesh = SubResource("CylinderMesh_vomed")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_2x1yp")
+
+[node name="Cables3" type="Node3D" parent="." unique_id=1240116681]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.07197559, -1.3055449, -0.14033675)
+
+[node name="MeshInstance3D9" type="MeshInstance3D" parent="Cables3" unique_id=1145506235]
+transform = Transform3D(-0.7352507, -0.67759883, 0.016316533, -1.032689e-10, 0.02407295, 0.9997102, -0.6777953, 0.7350376, -0.017699655, 0.7644126, 1.3594981, 1.5036983)
+mesh = SubResource("CylinderMesh_xrivr")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_wi6ju")
+
+[node name="MeshInstance3D10" type="MeshInstance3D" parent="Cables3" unique_id=2021031368]
+transform = Transform3D(-0.7352507, -0.67759883, 0.016316533, -1.032689e-10, 0.02407295, 0.9997102, -0.6777953, 0.7350376, -0.017699655, 1.0254757, 1.3594981, 1.5036983)
+mesh = SubResource("CylinderMesh_xrivr")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_wi6ju")
+
+[node name="MeshInstance3D16" type="MeshInstance3D" parent="Cables3" unique_id=968753574]
+transform = Transform3D(-0.7352507, -0.67759883, 0.016316533, -1.032689e-10, 0.02407295, 0.9997102, -0.6777953, 0.7350376, -0.017699655, 2.0740244, 1.3594981, 1.5036983)
+mesh = SubResource("CylinderMesh_xrivr")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_wi6ju")
+
+[node name="MeshInstance3D17" type="MeshInstance3D" parent="Cables3" unique_id=2118081126]
+transform = Transform3D(-0.7352507, -0.67759883, 0.016316533, -1.032689e-10, 0.02407295, 0.9997102, -0.6777953, 0.7350376, -0.017699655, 2.3236775, 1.3594981, 1.5036983)
+mesh = SubResource("CylinderMesh_xrivr")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_wi6ju")
+
+[node name="MeshInstance3D18" type="MeshInstance3D" parent="Cables3" unique_id=842348484]
+transform = Transform3D(-0.7352507, -0.67759883, 0.016316533, -1.032689e-10, 0.02407295, 0.9997102, -0.6777953, 0.7350376, -0.017699655, 2.568752, 1.3594981, 1.5036983)
+mesh = SubResource("CylinderMesh_xrivr")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_wi6ju")
+
+[node name="MeshInstance3D19" type="MeshInstance3D" parent="Cables3" unique_id=1727667190]
+transform = Transform3D(-0.7352507, -0.67759883, 0.016316533, -1.032689e-10, 0.02407295, 0.9997102, -0.6777953, 0.7350376, -0.017699655, 2.8629248, 1.3594981, 1.5036983)
+mesh = SubResource("CylinderMesh_xrivr")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_wi6ju")
+
+[node name="MeshInstance3D20" type="MeshInstance3D" parent="Cables3" unique_id=235241251]
+transform = Transform3D(-0.7352507, -0.67759883, 0.016316533, -1.032689e-10, 0.02407295, 0.9997102, -0.6777953, 0.7350376, -0.017699655, 3.1099517, 1.3594981, 1.5036983)
+mesh = SubResource("CylinderMesh_xrivr")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_wi6ju")
+
+[node name="MeshInstance3D21" type="MeshInstance3D" parent="Cables3" unique_id=800532507]
+transform = Transform3D(-0.7352507, -0.67759883, 0.016316533, -1.032689e-10, 0.02407295, 0.9997102, -0.6777953, 0.7350376, -0.017699655, 3.3497052, 1.3594981, 1.5036983)
+mesh = SubResource("CylinderMesh_xrivr")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_wi6ju")
+
+[node name="MeshInstance3D22" type="MeshInstance3D" parent="Cables3" unique_id=706508778]
+transform = Transform3D(-0.7352507, -0.67759883, 0.016316533, -1.032689e-10, 0.02407295, 0.9997102, -0.6777953, 0.7350376, -0.017699655, 3.5874038, 1.3594981, 1.5036983)
+mesh = SubResource("CylinderMesh_xrivr")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_wi6ju")
+
+[node name="MeshInstance3D23" type="MeshInstance3D" parent="Cables3" unique_id=1275364023]
+transform = Transform3D(-0.7352507, -0.67759883, 0.016316533, -1.032689e-10, 0.02407295, 0.9997102, -0.6777953, 0.7350376, -0.017699655, 3.8386953, 1.3594981, 1.5036983)
+mesh = SubResource("CylinderMesh_xrivr")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_wi6ju")
+
+[node name="MeshInstance3D11" type="MeshInstance3D" parent="Cables3" unique_id=984508881]
+transform = Transform3D(-0.7352507, -0.67759883, 0.016316533, -1.032689e-10, 0.02407295, 0.9997102, -0.6777953, 0.7350376, -0.017699655, 1.3145471, 1.3594981, 1.5036983)
+mesh = SubResource("CylinderMesh_xrivr")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_wi6ju")
+
+[node name="MeshInstance3D12" type="MeshInstance3D" parent="Cables3" unique_id=198132373]
+transform = Transform3D(-0.7352507, -0.67759883, 0.016316533, -1.032689e-10, 0.02407295, 0.9997102, -0.6777953, 0.7350376, -0.017699655, 1.5956624, 1.3594981, 1.5036983)
+mesh = SubResource("CylinderMesh_xrivr")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_wi6ju")
+
+[node name="MeshInstance3D13" type="MeshInstance3D" parent="Cables3" unique_id=2011634978]
+transform = Transform3D(-0.7352507, -0.67759883, 0.016316533, -1.032689e-10, 0.02407295, 0.9997102, -0.6777953, 0.7350376, -0.017699655, 1.8647711, 1.3599309, 1.5169106)
+mesh = SubResource("CylinderMesh_xrivr")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_wi6ju")
+
+[node name="MeshInstance3D14" type="MeshInstance3D" parent="Cables3" unique_id=1548303417]
+transform = Transform3D(0.112699434, -0.99334127, 0.023919586, 7.476089e-10, 0.024072956, 0.9997103, -0.99362934, -0.11266671, 0.0027130086, 1.7728, 1.3599993, 1.4280775)
+mesh = SubResource("CylinderMesh_vomed")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_wi6ju")
+
+[node name="MeshInstance3D15" type="MeshInstance3D" parent="Cables3" unique_id=2047739345]
+transform = Transform3D(-0.015964992, -0.9995828, 0.024069881, 7.4760886e-10, 0.024072954, 0.99971026, -0.9998727, 0.01596044, -0.000384324, 1.5034579, 1.3599993, 1.4280775)
+mesh = SubResource("CylinderMesh_vomed")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_wi6ju")
+
+[node name="MeshInstance3D24" type="MeshInstance3D" parent="Cables3" unique_id=1530879796]
+transform = Transform3D(0.112699434, -0.99334127, 0.023919586, 7.476089e-10, 0.024072956, 0.9997103, -0.99362934, -0.11266671, 0.0027130086, 2.3273861, 1.3599993, 1.4280775)
+mesh = SubResource("CylinderMesh_vomed")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_wi6ju")
+
+[node name="MeshInstance3D25" type="MeshInstance3D" parent="Cables3" unique_id=302880157]
+transform = Transform3D(-0.015964992, -0.9995828, 0.024069881, 7.4760886e-10, 0.024072954, 0.99971026, -0.9998727, 0.01596044, -0.000384324, 2.058044, 1.3599993, 1.4280775)
+mesh = SubResource("CylinderMesh_vomed")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_wi6ju")
+
+[node name="MeshInstance3D26" type="MeshInstance3D" parent="Cables3" unique_id=625199515]
+transform = Transform3D(0.112699434, -0.99334127, 0.023919586, 7.476089e-10, 0.024072956, 0.9997103, -0.99362934, -0.11266671, 0.0027130086, 2.8917787, 1.3599993, 1.4280775)
+mesh = SubResource("CylinderMesh_vomed")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_wi6ju")
+
+[node name="MeshInstance3D27" type="MeshInstance3D" parent="Cables3" unique_id=557939056]
+transform = Transform3D(-0.015964992, -0.9995828, 0.024069881, 7.4760886e-10, 0.024072954, 0.99971026, -0.9998727, 0.01596044, -0.000384324, 2.6224365, 1.3599993, 1.4280775)
+mesh = SubResource("CylinderMesh_vomed")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_wi6ju")
+
+[node name="MeshInstance3D28" type="MeshInstance3D" parent="Cables3" unique_id=1117933448]
+transform = Transform3D(0.112699434, -0.99334127, 0.023919586, 7.476089e-10, 0.024072956, 0.9997103, -0.99362934, -0.11266671, 0.0027130086, 3.4526465, 1.3599993, 1.4280775)
+mesh = SubResource("CylinderMesh_vomed")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_wi6ju")
+
+[node name="MeshInstance3D29" type="MeshInstance3D" parent="Cables3" unique_id=1485970321]
+transform = Transform3D(-0.015964992, -0.9995828, 0.024069881, 7.4760886e-10, 0.024072954, 0.99971026, -0.9998727, 0.01596044, -0.000384324, 3.1833043, 1.3599993, 1.4280775)
+mesh = SubResource("CylinderMesh_vomed")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_wi6ju")
+
+[node name="MeshInstance3D30" type="MeshInstance3D" parent="Cables3" unique_id=375217604]
+transform = Transform3D(0.112699434, -0.99334127, 0.023919586, 7.476089e-10, 0.024072956, 0.9997103, -0.99362934, -0.11266671, 0.0027130086, 3.767865, 1.3599993, 1.4280775)
+mesh = SubResource("CylinderMesh_vomed")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_wi6ju")
+
+[node name="MeshInstance3D31" type="MeshInstance3D" parent="Cables3" unique_id=168672265]
+transform = Transform3D(-0.015964992, -0.9995828, 0.024069881, 7.4760886e-10, 0.024072954, 0.99971026, -0.9998727, 0.01596044, -0.000384324, 3.4985228, 1.3599993, 1.4280775)
+mesh = SubResource("CylinderMesh_vomed")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_wi6ju")
+
+[node name="MeshInstance3D32" type="MeshInstance3D" parent="Cables3" unique_id=998897196]
+transform = Transform3D(0.112699434, -0.99334127, 0.023919586, 7.476089e-10, 0.024072956, 0.9997103, -0.99362934, -0.11266671, 0.0027130086, 1.2426254, 1.3599993, 1.4280775)
+mesh = SubResource("CylinderMesh_vomed")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_wi6ju")
+
+[node name="MeshInstance3D33" type="MeshInstance3D" parent="Cables3" unique_id=267783607]
+transform = Transform3D(-0.015964992, -0.9995828, 0.024069881, 7.4760886e-10, 0.024072954, 0.99971026, -0.9998727, 0.01596044, -0.000384324, 0.9732832, 1.3599993, 1.4280775)
+mesh = SubResource("CylinderMesh_vomed")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_wi6ju")
+
+[node name="Estructura" type="Node3D" parent="." unique_id=1939741287]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Estructura" unique_id=1188634733]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.24487305, 0.98046875, 2.1431885)
+mesh = SubResource("BoxMesh_xrivr")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_13qdw")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Estructura" unique_id=1385119398]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.2396884, 0.98046875, 2.1431885)
+mesh = SubResource("BoxMesh_xrivr")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_13qdw")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Estructura" unique_id=1420806972]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.477561, 0.98046875, 3.3712158)
+mesh = SubResource("BoxMesh_6gniu")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_13qdw")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="Estructura" unique_id=1413756494]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.477561, 2.2873535, 2.138977)
+mesh = SubResource("BoxMesh_kkj53")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_13qdw")
+
+[node name="MeshInstance3D6" type="MeshInstance3D" parent="Estructura" unique_id=945886788]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.477561, 1.8259377, 2.5371475)
+mesh = SubResource("BoxMesh_bn310")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_dmfg3")
+
+[node name="MeshInstance3D9" type="MeshInstance3D" parent="Estructura" unique_id=1072203473]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.477561, -0.059012294, 2.5371475)
+mesh = SubResource("BoxMesh_bn310")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_dmfg3")
+
+[node name="MeshInstance3D7" type="MeshInstance3D" parent="Estructura" unique_id=651268960]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.477561, 0.9730859, 2.4239044)
+mesh = SubResource("BoxMesh_bn310")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_dmfg3")
+
+[node name="MeshInstance3D10" type="MeshInstance3D" parent="Estructura" unique_id=429020349]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.477561, 0.43986845, 2.4239044)
+mesh = SubResource("BoxMesh_a7ifk")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_vomed")
+
+[node name="MeshInstance3D8" type="MeshInstance3D" parent="Estructura" unique_id=739559977]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.1436284, 1.0304849, 0.8382261)
+mesh = SubResource("BoxMesh_tlt3j")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_37e0l")
+
+[node name="MeshInstance3D5" type="MeshInstance3D" parent="Estructura" unique_id=1086786457]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.477561, -0.3089683, 2.138977)
+mesh = SubResource("BoxMesh_kkj53")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_13qdw")

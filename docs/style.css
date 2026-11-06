@@ -423,3 +423,53 @@ footer{
   align-items:center;
   cursor:pointer;
 }
+
+.ranking-wrap{
+  overflow-x:auto;
+}
+.ranking-table{
+  width:100%;
+  border-collapse:collapse;
+  background:var(--bg-subcard);
+  border:1px solid var(--border-panel);
+}
+.ranking-table th,
+.ranking-table td{
+  padding:12px 16px;
+  text-align:left;
+  border-bottom:1px solid var(--border-panel);
+}
+.ranking-table th{
+  font-family:'Share Tech Mono',monospace;
+  font-size:0.8rem;
+  color:var(--text-dim);
+  text-transform:uppercase;
+  letter-spacing:1px;
+  font-weight:normal;
+}
+.ranking-table td:first-child{
+  width:56px;
+  font-family:'Orbitron',sans-serif;
+  font-weight:800;
+  color:var(--circuit-cyan);
+}
+.ranking-table td.ranking-time,
+.ranking-table th.ranking-time{
+  text-align:right;
+  font-family:'Share Tech Mono',monospace;
+  font-variant-numeric:tabular-nums;
+}
+.ranking-table tr:first-child td{
+  color:var(--circuit-bright);
+  font-weight:700;
+}
+.ranking-table tr:last-child td{
+  border-bottom:0;
+}
+.ranking-estado{
+  margin-top:12px;
+  font-family:'Share Tech Mono',monospace;
+  font-size:0.8rem;
+  color:var(--text-dim);
+  text-align:center;
+}
