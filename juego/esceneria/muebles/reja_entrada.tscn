@@ -2,7 +2,6 @@
 
 [ext_resource type="Texture2D" uid="uid://che1nrxx3nrpv" path="res://fotos/patron-blanco-negro-malla-malla-metalica.png" id="1_svtnm"]
 [ext_resource type="Texture2D" uid="uid://b3sf7r2pyltx" path="res://fotos/cinta_peligro.jpg" id="2_awmqu"]
-[ext_resource type="PackedScene" uid="uid://bc3pxi552ikfl" path="res://puerta/puerta_reja.tscn" id="3_ur81h"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_cjdqc"]
 size = Vector3(12.767624, 6.1036377, 1)
@@ -46,18 +45,6 @@ uv1_scale = Vector3(10, 0.5, 0.5)
 
 [sub_resource type="BoxMesh" id="BoxMesh_2yqe7"]
 material = SubResource("StandardMaterial3D_y54h4")
-size = Vector3(12.253784, 8.6484375, 0.3583374)
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ur81h"]
-transparency = 1
-albedo_texture = ExtResource("1_svtnm")
-emission_enabled = true
-emission = Color(0.34117648, 0.57254905, 0.2901961, 1)
-emission_energy_multiplier = 0.7
-uv1_scale = Vector3(8, 1, 1)
-
-[sub_resource type="BoxMesh" id="BoxMesh_y54h4"]
-material = SubResource("StandardMaterial3D_ur81h")
 size = Vector3(12.253784, 8.6484375, 0.3583374)
 
 [node name="reja_entrada" type="Node3D" unique_id=564550739]
@@ -181,20 +168,3 @@ surface_material_override/0 = SubResource("StandardMaterial3D_4r8ft")
 [node name="MeshInstance3D9" type="MeshInstance3D" parent="." unique_id=343572175]
 transform = Transform3D(0.9975106, 0, 0, 0, 0.07755504, 0, 0, 0, 1.0675168, 9.66725, 7.244565, 0.0038146973)
 mesh = SubResource("BoxMesh_2yqe7")
-
-[node name="puerta_reja" parent="." unique_id=1648363380 instance=ExtResource("3_ur81h")]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -0.8775607, 3.785213, 0)
-
-[node name="bisagra" parent="puerta_reja" index="1" unique_id=1119874742]
-transform = Transform3D(4.3364167, 0, 0, 0, 4.528368, 0, 0, 0, 4.30608, -2.0502426e-09, -0.3434782, 1.7867742)
-
-[node name="MeshInstance3D8" parent="puerta_reja/bisagra/modelo" parent_id_path=PackedInt32Array(1648363380, 1003477289) index="6" unique_id=1511475885]
-transform = Transform3D(0.3, 0, 4.135903e-25, 0, -3.278354e-09, -0.22987221, 0, 0.075, -1.0048033e-08, 0.62274474, 0, 0.1459429)
-
-[node name="MeshInstance3D7" parent="puerta_reja/bisagra/modelo" parent_id_path=PackedInt32Array(1648363380, 1003477289) index="12" unique_id=947214838]
-mesh = SubResource("BoxMesh_y54h4")
-
-[node name="MeshInstance3D9" parent="puerta_reja/bisagra/modelo" parent_id_path=PackedInt32Array(1648363380, 1003477289) index="13" unique_id=1086604665]
-mesh = SubResource("BoxMesh_y54h4")
-
-[editable path="puerta_reja"]

@@ -581,6 +581,9 @@ shadow_mesh = SubResource("ArrayMesh_dmqsu")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_euc1u"]
 albedo_color = Color(0.8972595, 0.20778745, 0.18985614, 1)
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_w8iqv"]
+albedo_color = Color(0.7372549, 0.49803922, 0.99215686, 1)
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_43jjg"]
 albedo_color = Color(0.3421155, 0.5697601, 0.9273852, 1)
 
@@ -595,6 +598,9 @@ albedo_color = Color(0.4, 0.5647059, 0.26666668, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_x8vmc"]
 albedo_color = Color(0.4, 0.5647059, 0.26666668, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mp7in"]
+albedo_color = Color(0.8117647, 0.60784316, 0.24313726, 1)
 
 [node name="Aularara" type="Node3D" unique_id=970872937]
 
@@ -1402,7 +1408,7 @@ transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 47.02242, 0, -44.33785)
 [node name="Cube_021" type="MeshInstance3D" parent="muebles/silla5" unique_id=1029300539]
 transform = Transform3D(1.6292071e-07, -1.6292068e-08, -1, 1.509958e-07, -0.1, 1.6292071e-07, -1, -1.5099584e-08, -1.6292068e-07, -14.414238, -0.7841755, 27.205973)
 mesh = SubResource("ArrayMesh_ro31p")
-surface_material_override/0 = SubResource("StandardMaterial3D_euc1u")
+surface_material_override/0 = SubResource("StandardMaterial3D_w8iqv")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="muebles/silla5/Cube_021" unique_id=1289993760]
 
@@ -1412,7 +1418,7 @@ shape = SubResource("ConcavePolygonShape3D_wpb02")
 [node name="Cube_022" type="MeshInstance3D" parent="muebles/silla5" unique_id=1733602794]
 transform = Transform3D(-1, 8.742278e-09, 4.371139e-08, -4.371139e-08, 1.9106854e-16, -1, -8.742278e-08, -0.1, 1.9106855e-15, -14.414238, 0.3176062, 28.103014)
 mesh = SubResource("ArrayMesh_ro31p")
-surface_material_override/0 = SubResource("StandardMaterial3D_euc1u")
+surface_material_override/0 = SubResource("StandardMaterial3D_w8iqv")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="muebles/silla5/Cube_022" unique_id=1266609458]
 
@@ -1422,22 +1428,22 @@ shape = SubResource("ConcavePolygonShape3D_wpb02")
 [node name="Cube_020" type="MeshInstance3D" parent="muebles/silla5" unique_id=662830938]
 transform = Transform3D(0.16390209, 0, 0, 0, 0, -0.90261096, 0, 0.1778854, 0, -13.724815, -1.7328101, 27.868433)
 mesh = SubResource("ArrayMesh_mv7dk")
-surface_material_override/0 = SubResource("StandardMaterial3D_euc1u")
+surface_material_override/0 = SubResource("StandardMaterial3D_w8iqv")
 
 [node name="Cube_019" type="MeshInstance3D" parent="muebles/silla5" unique_id=1309356370]
 transform = Transform3D(0.16390209, 0, 0, 0, 0, -0.90261096, 0, 0.1778854, 0, -13.705513, -1.7328101, 26.528397)
 mesh = SubResource("ArrayMesh_q7hhb")
-surface_material_override/0 = SubResource("StandardMaterial3D_euc1u")
+surface_material_override/0 = SubResource("StandardMaterial3D_w8iqv")
 
 [node name="Cube_018" type="MeshInstance3D" parent="muebles/silla5" unique_id=130720477]
 transform = Transform3D(0.16390209, 0, 0, 0, 0, -0.90261096, 0, 0.1778854, 0, -15.156944, -1.7328101, 26.528397)
 mesh = SubResource("ArrayMesh_kjv7l")
-surface_material_override/0 = SubResource("StandardMaterial3D_euc1u")
+surface_material_override/0 = SubResource("StandardMaterial3D_w8iqv")
 
 [node name="Cube_010" type="MeshInstance3D" parent="muebles/silla5" unique_id=717884241]
 transform = Transform3D(0.16390209, 0, 0, 0, 0, -0.90261096, 0, 0.1778854, 0, -15.156944, -1.7328101, 27.868433)
 mesh = SubResource("ArrayMesh_ce2yn")
-surface_material_override/0 = SubResource("StandardMaterial3D_euc1u")
+surface_material_override/0 = SubResource("StandardMaterial3D_w8iqv")
 
 [node name="silla14" type="Node3D" parent="muebles" unique_id=368632677]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 66.96305, 0, 26.688103)
@@ -1616,6 +1622,24 @@ transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 25.638252, -1.7288668, 7.9642
 
 [node name="silla18" parent="muebles" unique_id=1765052011 instance=ExtResource("4_0ghlw")]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 41.22345, -1.7288668, 25.446281)
+
+[node name="Cube_021" parent="muebles/silla18" index="0" unique_id=664121703]
+surface_material_override/0 = SubResource("StandardMaterial3D_mp7in")
+
+[node name="Cube_022" parent="muebles/silla18" index="1" unique_id=2041936243]
+surface_material_override/0 = SubResource("StandardMaterial3D_mp7in")
+
+[node name="Cube_020" parent="muebles/silla18" index="2" unique_id=1409095172]
+surface_material_override/0 = SubResource("StandardMaterial3D_mp7in")
+
+[node name="Cube_019" parent="muebles/silla18" index="3" unique_id=1423586326]
+surface_material_override/0 = SubResource("StandardMaterial3D_mp7in")
+
+[node name="Cube_018" parent="muebles/silla18" index="4" unique_id=1407817387]
+surface_material_override/0 = SubResource("StandardMaterial3D_mp7in")
+
+[node name="Cube_010" parent="muebles/silla18" index="5" unique_id=840825317]
+surface_material_override/0 = SubResource("StandardMaterial3D_mp7in")
 
 [node name="silla21" parent="muebles" unique_id=1362611960 instance=ExtResource("4_0ghlw")]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 62.766792, -1.7288668, 23.295176)
@@ -1915,3 +1939,4 @@ mesh = SubResource("ArrayMesh_ce2yn")
 surface_material_override/0 = SubResource("StandardMaterial3D_q1ot8")
 
 [editable path="puerta"]
+[editable path="muebles/silla18"]
