@@ -87,6 +87,9 @@ data = PackedVector3Array(-0.5, 0.5, 0.46859998, 0.5, 0.5, 0.46859998, -0.5, -0.
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_ni73e"]
 data = PackedVector3Array(-0.5, 0.5, 0.32439998, 0.5, 0.5, 0.32439998, -0.5, -0.5, 0.32439998, 0.5, 0.5, 0.32439998, 0.5, -0.5, 0.32439998, -0.5, -0.5, 0.32439998, 0.5, 0.5, -0.32439998, -0.5, 0.5, -0.32439998, 0.5, -0.5, -0.32439998, -0.5, 0.5, -0.32439998, -0.5, -0.5, -0.32439998, 0.5, -0.5, -0.32439998, 0.5, 0.5, 0.32439998, 0.5, 0.5, -0.32439998, 0.5, -0.5, 0.32439998, 0.5, 0.5, -0.32439998, 0.5, -0.5, -0.32439998, 0.5, -0.5, 0.32439998, -0.5, 0.5, -0.32439998, -0.5, 0.5, 0.32439998, -0.5, -0.5, -0.32439998, -0.5, 0.5, 0.32439998, -0.5, -0.5, 0.32439998, -0.5, -0.5, -0.32439998, 0.5, 0.5, 0.32439998, -0.5, 0.5, 0.32439998, 0.5, 0.5, -0.32439998, -0.5, 0.5, 0.32439998, -0.5, 0.5, -0.32439998, 0.5, 0.5, -0.32439998, -0.5, -0.5, 0.32439998, 0.5, -0.5, 0.32439998, -0.5, -0.5, -0.32439998, 0.5, -0.5, 0.32439998, 0.5, -0.5, -0.32439998, -0.5, -0.5, -0.32439998)
 
+[sub_resource type="BoxMesh" id="BoxMesh_ls3pl"]
+size = Vector3(1, 1, 0.9448242)
+
 [sub_resource type="BoxMesh" id="BoxMesh_um1yl"]
 
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_rpd8f"]
@@ -1177,8 +1180,8 @@ shape = SubResource("ConcavePolygonShape3D_wt04s")
 shape = SubResource("ConcavePolygonShape3D_ni73e")
 
 [node name="MeshInstance3D107" type="MeshInstance3D" parent="pasillo (salon)" unique_id=1872253182]
-transform = Transform3D(7.288119e-14, 4.777655e-08, 6.457, 38.144, -4.777655e-08, 0, 1.6673272e-06, 1.093, -2.8224443e-07, -23.199682, 11.531, -177.80688)
-mesh = SubResource("BoxMesh_e4v1y")
+transform = Transform3D(7.288119e-14, 4.777655e-08, 6.457, 38.144, -4.777655e-08, 0, 1.6673272e-06, 1.093, -2.8224443e-07, -23.021547, 11.531, -177.80688)
+mesh = SubResource("BoxMesh_ls3pl")
 surface_material_override/0 = SubResource("StandardMaterial3D_fdlrj")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="pasillo (salon)/MeshInstance3D107" unique_id=1435583288]
