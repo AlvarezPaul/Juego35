@@ -620,13 +620,13 @@ mesh = SubResource("BoxMesh_vrkjw")
 surface_material_override/0 = SubResource("StandardMaterial3D_wrvh4")
 
 [node name="puerta_regencia" parent="." unique_id=1147577665 instance=ExtResource("6_nw5i3")]
-transform = Transform3D(1.7040592, 0, 0, 0, 1, 0, -7.1054274e-15, 0, 1.0144864, 14.555453, 3.2117758, -12.0588045)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.517461, 3.2939105, -12.084155)
 
 [node name="bisagra" parent="puerta_regencia" index="1" unique_id=1665898836]
-transform = Transform3D(1.9999998, 0, 0, 0, 4.945094, 0, 0, 0, 4.8273582, -1.9073486e-06, 0, 1.7398701)
+transform = Transform3D(3.9427347, 0, 0, 0, 4.93108, 0, 0, 0, 4.898429, -7.6293945e-06, 0, 1.7398701)
 
-[node name="RegenciaText" type="Sprite3D" parent="." unique_id=762094830]
-transform = Transform3D(-3.059797e-08, 0, 0.7, 0, 0.7, 0, -0.7, 0, -3.059797e-08, 14.891529, 9.549721, -13.561558)
+[node name="RegenciaText" type="Sprite3D" parent="puerta_regencia/bisagra/modelo" parent_id_path=PackedInt32Array(1147577665, 701599027) index="14" unique_id=762094830]
+transform = Transform3D(0.2, 0, 5.481585e-09, 0, 0.198, 0, -3.819922e-09, 0, 0.28700012, -0.41409636, 1.0122148, 0.11569977)
 shaded = true
 texture = ExtResource("7_nw5i3")
 
