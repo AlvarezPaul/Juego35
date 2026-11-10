@@ -119,6 +119,9 @@ albedo_color = Color(0.87734634, 3.8745256e-06, 1.2513996e-06, 1)
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wi6ju"]
 albedo_color = Color(1.5883148e-06, 0, 0.61778224, 1)
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_spqb3"]
+size = Vector3(2.3735352, 4.647461, 2.350525)
+
 [node name="Heladerapepsi" type="Node3D" unique_id=785254444]
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1126175400]
@@ -1681,3 +1684,9 @@ transform = Transform3D(0.18760683, 0, 0, 0, 0.1549633, 0, 0, 0, 0.19325186, 1.1
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Latas/Lata12" unique_id=1134079323]
 mesh = SubResource("CylinderMesh_13qdw")
 surface_material_override/0 = SubResource("StandardMaterial3D_wi6ju")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=767424839]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=1698212959]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5476074, 1.8237305, -0.6753845)
+shape = SubResource("BoxShape3D_spqb3")
