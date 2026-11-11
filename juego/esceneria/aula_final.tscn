@@ -113,7 +113,6 @@ uv1_scale = Vector3(25, 25, 25)
 data = PackedVector3Array(1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, 1, 1, 1, -1, 1, 1, 1, -1, 1, -1, 1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, 1, -1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1, -1, -1, 1, 1, -1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, 1, 1, 1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, -1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5sh3g"]
-albedo_color = Color(0.88235295, 0.8, 0.5803922, 1)
 uv1_scale = Vector3(25, 25, 25)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rhepq"]
@@ -1676,19 +1675,51 @@ mesh = SubResource("BoxMesh_0hna2")
 transform = Transform3D(1.0000001, 0, 2.7755576e-17, 0, 1, 0, 0, 0, 1.0000002, 0, 0.023349106, 8.511475)
 shape = SubResource("ConcavePolygonShape3D_2hj3n")
 
-[node name="lampara_encendida" parent="." unique_id=1101667733 instance=ExtResource("3_n48c0")]
-transform = Transform3D(4, 0, 0, 0, 1.8, 0, 0, 0, 4, 40.772785, 29.223707, 10.33658)
+[node name="lampara_encendida2" parent="." unique_id=1994630786 instance=ExtResource("3_n48c0")]
+transform = Transform3D(-1.7484555e-07, 0, 4, 0, 1.8, 0, -4, 0, -1.7484555e-07, 56.159832, 29.223707, -31.532883)
 
-[node name="SpotLight3D2" type="SpotLight3D" parent="." unique_id=1816455372]
-transform = Transform3D(1, 0, 0, 0, -4.3711392e-08, 1, 0, -1, -4.3711392e-08, 40.806217, 29.160849, 10.162042)
+[node name="SpotLight3D" type="SpotLight3D" parent="." unique_id=1949449328]
+transform = Transform3D(1, 0, 0, 0, -4.3711392e-08, 1, 0, -1, -4.3711392e-08, 55.74567, 29.160849, -31.707424)
 light_color = Color(1, 0.88990986, 0.9956606, 1)
 spot_range = 9.0
 
-[node name="lampara_encendida2" parent="." unique_id=1994630786 instance=ExtResource("3_n48c0")]
-transform = Transform3D(4, 0, 0, 0, 1.8, 0, 0, 0, 4, 40.772785, 29.223707, -27.051281)
+[node name="lampara_encendida3" parent="." unique_id=1101667733 instance=ExtResource("3_n48c0")]
+transform = Transform3D(-1.7484555e-07, 0, 4, 0, 1.8, 0, -4, 0, -1.7484555e-07, 26.670826, 29.223707, -31.532883)
 
-[node name="SpotLight3D" type="SpotLight3D" parent="." unique_id=1949449328]
-transform = Transform3D(1, 0, 0, 0, -4.3711392e-08, 1, 0, -1, -4.3711392e-08, 40.806217, 29.160849, -27.225822)
+[node name="SpotLight3D2" type="SpotLight3D" parent="." unique_id=456317668]
+transform = Transform3D(1, 0, 0, 0, -4.3711392e-08, 1, 0, -1, -4.3711392e-08, 26.256664, 29.160849, -31.707424)
+light_color = Color(1, 0.88990986, 0.9956606, 1)
+spot_range = 9.0
+
+[node name="lampara_encendida4" parent="." unique_id=1582263060 instance=ExtResource("3_n48c0")]
+transform = Transform3D(-1.7484555e-07, 0, 4, 0, 1.8, 0, -4, 0, -1.7484555e-07, 56.159832, 29.223707, -3.7187805)
+
+[node name="SpotLight3D3" type="SpotLight3D" parent="." unique_id=346903645]
+transform = Transform3D(1, 0, 0, 0, -4.3711392e-08, 1, 0, -1, -4.3711392e-08, 55.74567, 29.160849, -3.893322)
+light_color = Color(1, 0.88990986, 0.9956606, 1)
+spot_range = 9.0
+
+[node name="lampara_encendida5" parent="." unique_id=1187234451 instance=ExtResource("3_n48c0")]
+transform = Transform3D(-1.7484555e-07, 0, 4, 0, 1.8, 0, -4, 0, -1.7484555e-07, 26.670826, 29.223707, -3.7187805)
+
+[node name="SpotLight3D4" type="SpotLight3D" parent="." unique_id=253023567]
+transform = Transform3D(1, 0, 0, 0, -4.3711392e-08, 1, 0, -1, -4.3711392e-08, 26.256664, 29.160849, -3.893322)
+light_color = Color(1, 0.88990986, 0.9956606, 1)
+spot_range = 9.0
+
+[node name="lampara_encendida6" parent="." unique_id=2138982147 instance=ExtResource("3_n48c0")]
+transform = Transform3D(-1.7484555e-07, 0, 4, 0, 1.8, 0, -4, 0, -1.7484555e-07, 56.159832, 29.223707, 22.213663)
+
+[node name="SpotLight3D5" type="SpotLight3D" parent="." unique_id=343707970]
+transform = Transform3D(1, 0, 0, 0, -4.3711392e-08, 1, 0, -1, -4.3711392e-08, 55.74567, 29.160849, 22.039122)
+light_color = Color(1, 0.88990986, 0.9956606, 1)
+spot_range = 9.0
+
+[node name="lampara_encendida7" parent="." unique_id=1369144792 instance=ExtResource("3_n48c0")]
+transform = Transform3D(-1.7484555e-07, 0, 4, 0, 1.8, 0, -4, 0, -1.7484555e-07, 26.670826, 29.223707, 22.213663)
+
+[node name="SpotLight3D6" type="SpotLight3D" parent="." unique_id=2057047373]
+transform = Transform3D(1, 0, 0, 0, -4.3711392e-08, 1, 0, -1, -4.3711392e-08, 26.256664, 29.160849, 22.039122)
 light_color = Color(1, 0.88990986, 0.9956606, 1)
 spot_range = 9.0
 

@@ -15,6 +15,8 @@
 [ext_resource type="PackedScene" uid="uid://cdls81h7beqcc" path="res://esceneria/muebles/racklab.tscn" id="13_dd40b"]
 [ext_resource type="PackedScene" uid="uid://mrcyn6bs5xj0" path="res://esceneria/muebles/Matafuego.tscn" id="14_n4mc7"]
 [ext_resource type="Texture2D" uid="uid://b08yvb3x525cn" path="res://fotos/PizarronFoto2.jpg" id="15_mbboy"]
+[ext_resource type="PackedScene" uid="uid://r2o0eilqhk5k" path="res://esceneria/muebles/CompuSarmientoBA.tscn" id="16_h43o2"]
+[ext_resource type="Texture2D" uid="uid://b1pr06nbjusqr" path="res://fotos/ErrorCreepy.jpg" id="17_f5dpk"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_bgooa"]
 size = Vector3(1, 2.0767822, 1)
@@ -3160,6 +3162,13 @@ surface_material_override/0 = SubResource("StandardMaterial3D_m4sfy")
 transform = Transform3D(1.2890135, 0, 0, 0, 1.0000001, 0, 0, 0, 1.0000001, 0, -0.3400693, 0.01919365)
 mesh = SubResource("BoxMesh_fnh22")
 surface_material_override/0 = SubResource("StandardMaterial3D_m4sfy")
+
+[node name="CompuSarmientoBa" parent="." unique_id=755703815 instance=ExtResource("16_h43o2")]
+transform = Transform3D(-0.4459095, 0, 2.9666758, 0, 3, 0, -2.9666758, 0, -0.4459095, -40.00981, 47.476105, 422.9895)
+
+[node name="Error" type="Sprite3D" parent="CompuSarmientoBa" unique_id=1710434597]
+transform = Transform3D(0.1361976, 0.000787813, 0, -0.0009272245, 0.11003968, 0.030698745, 0.0002106633, -0.025000408, 0.13512105, 1.5196991, 0.29214096, -0.69159317)
+texture = ExtResource("17_f5dpk")
 
 [editable path="puerta2"]
 [editable path="Matafuego"]
