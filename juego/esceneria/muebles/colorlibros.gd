@@ -14,9 +14,6 @@ func _ready():
 	colores_arcoiris.shuffle()
 	var color_elegido = colores_arcoiris[0]
 	
-	# Imprimimos en la consola de Godot cuál color salió elegido
-	print("Color base seleccionado al azar (RGB): ", color_elegido)
-	
 	# 3. Recorremos todos los objetos hijos para aplicarles tonos distintos del color elegido
 	for child in get_children():
 		if child is MeshInstance3D:
