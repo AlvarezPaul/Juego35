@@ -29,3 +29,12 @@ Los archivos quedan en la carpeta de datos del juego (user://):
 En Godot: menu Proyecto > Abrir carpeta de datos de usuario.
 Despues de actualizar el juego, volve a copiar guardar_puntaje.php a htdocs/juego35/
 (para que respete la fecha original de los puntajes guardados sin conexion).
+
+
+--- ACTUALIZACION: ahora los puntajes van a Google Sheets (Apps Script) ---
+Ya no se usa XAMPP/PHP/ngrok. Los puntajes se guardan en una planilla de Google y
+la pagina web muestra el top 5. Pasos:
+1. Pegar backend/Code.gs en Extensiones > Apps Script de una planilla nueva.
+2. Implementar > Aplicacion web (Ejecutar como: yo / Acceso: cualquier persona).
+3. Copiar la URL que termina en /exec y pegarla en URL_PHP de
+   UI/sincronizador.gd y UI/pantalla_final.gd (y en RANKING_URL de main.js de la web).

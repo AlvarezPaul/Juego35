@@ -4,14 +4,20 @@ extends CanvasLayer
 @onready var boton_guardar: Button = $BotonGuardar
 @onready var http_request: HTTPRequest = get_node_or_null("../HTTPRequest")
 
-const URL_PHP := "https://joyfully-showbiz-spotting.ngrok-free.dev/juego35/guardar_puntaje.php"
+const URL_PHP := "https://script.google.com/macros/s/AKfycbwnq2ODIsn6Ad-OFHA6aNU4WH0uwRETFRouhSIH6Ji7XpexedWl9MVomTkgU3zpA0nWVw/exec"
 
 # Si no hay servidor (XAMPP apagado, sin internet, etc.) el puntaje NO se pierde:
 # se guarda en la PC y se manda a la base de datos solo cuando el servidor responda.
 # Estos archivos quedan en la carpeta de datos del juego (user://).
 const ARCHIVO_PENDIENTES := "user://puntajes_pendientes.json"  # cola para mandar a la base
 const ARCHIVO_CSV := "user://puntajes_locales.csv"             # copia legible (Excel)
-const TIMEOUT_SEG := 5.0
+const TIMEOUT_SEG := 20.0
+
+# Copia opcional a la base de XAMPP (MySQL) por ngrok.
+# Si USAR_NGROK es true, cada puntaje que se guarda se manda TAMBIÉN a esta dirección.
+# Si XAMPP/ngrok están apagados no pasa nada: se ignora y el puntaje igual va a Google Sheets.
+const USAR_NGROK := true
+const URL_NGROK := "https://joyfully-showbiz-spotting.ngrok-free.dev/juego35/guardar_puntaje.php"
 
 var _ultimo_envio: Dictionary = {}
 var _sincronizando := false
@@ -58,16 +64,31 @@ func _on_boton_guardar_pressed() -> void:
 		"fecha": Time.get_datetime_string_from_system(false, true)
 	}
 	_enviar_puntaje(_ultimo_envio)
+	_enviar_copia_ngrok(_ultimo_envio)
+
+
+func _enviar_copia_ngrok(datos: Dictionary) -> void:
+	if not USAR_NGROK:
+		return
+	var req := HTTPRequest.new()
+	req.timeout = 8.0
+	add_child(req)
+	# El resultado no importa: se libera el nodo y listo.
+	req.request_completed.connect(func(_r, _c, _h, _b): req.queue_free())
+	var headers := PackedStringArray(["Content-Type: application/json", "ngrok-skip-browser-warning: true"])
+	if req.request(URL_NGROK, headers, HTTPClient.METHOD_POST, JSON.stringify(datos)) != OK:
+		req.queue_free()
 
 
 func _enviar_puntaje(datos: Dictionary) -> void:
-	var headers := PackedStringArray(["Content-Type: application/json", "ngrok-skip-browser-warning: true"])
-	var error := http_request.request(
+	# Apps Script recibe el puntaje por GET (Godot no sigue bien la redirección de un POST)
+	var url := "%s?accion=guardar&nombre=%s&tiempo=%s&fecha=%s" % [
 		URL_PHP,
-		headers,
-		HTTPClient.METHOD_POST,
-		JSON.stringify(datos)
-	)
+		str(datos.get("nombre", "")).uri_encode(),
+		str(datos.get("tiempo", 0.0)).uri_encode(),
+		str(datos.get("fecha", "")).uri_encode()
+	]
+	var error := http_request.request(url, PackedStringArray(), HTTPClient.METHOD_GET)
 
 	if error != OK:
 		print("No se pudo iniciar la petición HTTP. Código: ", error)

@@ -43,6 +43,9 @@ size = Vector3(20.37378, 15.127197, 1.9145508)
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_13qdw"]
 albedo_color = Color(0.63671815, 0.48470032, 0.38543606, 1)
 
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_nw5i3"]
+data = PackedVector3Array(-10.1869, 7.5635996, 0.95729995, 10.1869, 7.5635996, 0.95729995, -10.1869, -7.5635996, 0.95729995, 10.1869, 7.5635996, 0.95729995, 10.1869, -7.5635996, 0.95729995, -10.1869, -7.5635996, 0.95729995, 10.1869, 7.5635996, -0.95729995, -10.1869, 7.5635996, -0.95729995, 10.1869, -7.5635996, -0.95729995, -10.1869, 7.5635996, -0.95729995, -10.1869, -7.5635996, -0.95729995, 10.1869, -7.5635996, -0.95729995, 10.1869, 7.5635996, 0.95729995, 10.1869, 7.5635996, -0.95729995, 10.1869, -7.5635996, 0.95729995, 10.1869, 7.5635996, -0.95729995, 10.1869, -7.5635996, -0.95729995, 10.1869, -7.5635996, 0.95729995, -10.1869, 7.5635996, -0.95729995, -10.1869, 7.5635996, 0.95729995, -10.1869, -7.5635996, -0.95729995, -10.1869, 7.5635996, 0.95729995, -10.1869, -7.5635996, 0.95729995, -10.1869, -7.5635996, -0.95729995, 10.1869, 7.5635996, 0.95729995, -10.1869, 7.5635996, 0.95729995, 10.1869, 7.5635996, -0.95729995, -10.1869, 7.5635996, 0.95729995, -10.1869, 7.5635996, -0.95729995, 10.1869, 7.5635996, -0.95729995, -10.1869, -7.5635996, 0.95729995, 10.1869, -7.5635996, 0.95729995, -10.1869, -7.5635996, -0.95729995, 10.1869, -7.5635996, 0.95729995, 10.1869, -7.5635996, -0.95729995, -10.1869, -7.5635996, -0.95729995)
+
 [sub_resource type="BoxMesh" id="BoxMesh_13qdw"]
 size = Vector3(19.69104, 0.19226074, 0.18115234)
 
@@ -230,6 +233,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.7683716e-07, 1.7339776, 13
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.22473192, 5.9554443, -0.4572754)
 mesh = SubResource("BoxMesh_xrivr")
 surface_material_override/0 = SubResource("StandardMaterial3D_13qdw")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="estructura/Mueble/MeshInstance3D" unique_id=1349344613]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="estructura/Mueble/MeshInstance3D/StaticBody3D" unique_id=370334504]
+shape = SubResource("ConcavePolygonShape3D_nw5i3")
 
 [node name="MeshInstance3D2" type="MeshInstance3D" parent="estructura/Mueble" unique_id=206566738]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.054323196, 7.5910606, -1.4453487)
@@ -612,10 +620,10 @@ mesh = SubResource("BoxMesh_vrkjw")
 surface_material_override/0 = SubResource("StandardMaterial3D_wrvh4")
 
 [node name="puerta_regencia" parent="." unique_id=1147577665 instance=ExtResource("6_nw5i3")]
-transform = Transform3D(1.7040592, 0, 0, 0, 1, 0, -7.1054274e-15, 0, 1.0144864, 14.555453, 3.2117758, -12.0588045)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.517461, 3.2939105, -12.084155)
 
 [node name="bisagra" parent="puerta_regencia" index="1" unique_id=1665898836]
-transform = Transform3D(1.9999998, 0, 0, 0, 4.945094, 0, 0, 0, 4.8273582, -1.9073486e-06, 0, 1.7398701)
+transform = Transform3D(3.9427347, 0, 0, 0, 4.93108, 0, 0, 0, 4.898429, -7.6293945e-06, 0, 1.7398701)
 
 [node name="RegenciaText" type="Sprite3D" parent="puerta_regencia/bisagra/modelo" parent_id_path=PackedInt32Array(1147577665, 701599027) index="14" unique_id=762094830]
 transform = Transform3D(0.2, 0, 5.481585e-09, 0, 0.198, 0, -3.819922e-09, 0, 0.28700012, -0.41409636, 1.0122148, 0.11569977)
