@@ -40,6 +40,7 @@
 [ext_resource type="PackedScene" uid="uid://dtgxr623tolhg" path="res://esceneria/muebles/lamparaapagada2.tscn" id="37_lampara"]
 [ext_resource type="PackedScene" uid="uid://2xed5f4ckt45" path="res://esceneria/muebles/sillas_entrada(4).tscn" id="39_iywk2"]
 [ext_resource type="PackedScene" uid="uid://dpqpeftrq58sg" path="res://esceneria/muebles/sillas_entrada(3).tscn" id="40_s7a7t"]
+[ext_resource type="PackedScene" uid="uid://cw4nldms6imfu" path="res://esceneria/muebles/banco_patio.tscn" id="41_hpoai"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_e4v1y"]
 
@@ -7275,7 +7276,7 @@ transform = Transform3D(-3.945, 0, -3.4488284e-07, 0, 3.945, 0, 3.4488284e-07, 0
 transform = Transform3D(2.03, 0, 0, 0, 1.936, 0, 0, 0, 1.866, -10.181, 43.338, -136.539)
 
 [node name="Aularara" parent="." unique_id=970872937 instance=ExtResource("8_ddsui")]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 353.567, 0, -57.179)
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 353.0706, 0, -57.179)
 
 [node name="Aula" parent="." unique_id=855198347 instance=ExtResource("2_ic0mm")]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 109.398, 48.353, 167.459)
@@ -10303,6 +10304,18 @@ transform = Transform3D(-3.059797e-07, 0, -7, 0, 7, 0, 7, 0, -3.059797e-07, -209
 
 [node name="sillas_entrada(3)2" parent="." unique_id=1188436547 instance=ExtResource("40_s7a7t")]
 transform = Transform3D(-7, 0, -6.119594e-07, 0, 7, 0, 6.119594e-07, 0, -7, 6.7363634, 0, 195.73605)
+
+[node name="banco_patio" parent="." unique_id=194768838 instance=ExtResource("41_hpoai")]
+transform = Transform3D(-6, 0, -9.0597484e-07, 0, 6, 0, 9.0597484e-07, 0, -6, 314.82422, -0.27970886, -29.222113)
+
+[node name="banco_patio2" parent="." unique_id=975534165 instance=ExtResource("41_hpoai")]
+transform = Transform3D(-6, 0, -9.0597484e-07, 0, 6, 0, 9.0597484e-07, 0, -6, 314.82422, -0.27970886, -1.7217045)
+
+[node name="banco_patio3" parent="." unique_id=1059784440 instance=ExtResource("41_hpoai")]
+transform = Transform3D(-6, 0, -9.0597484e-07, 0, 6, 0, 9.0597484e-07, 0, -6, 314.23145, -0.27970886, 84.91835)
+
+[node name="banco_patio4" parent="." unique_id=1361867867 instance=ExtResource("41_hpoai")]
+transform = Transform3D(-6, 0, -9.0597484e-07, 0, 6, 0, 9.0597484e-07, 0, -6, 314.23145, -0.27970886, 112.41876)
 
 [editable path="Node3D13"]
 [editable path="Node3D14"]
