@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://djftin8udc2vt"]
+
+[ext_resource type="PackedScene" uid="uid://b42hf1ayd4kt" path="res://puerta/puerta_inodoro.tscn" id="1_ol75m"]
+[ext_resource type="PackedScene" uid="uid://cq3yxkgy04gd4" path="res://glb_modelos/quaternius_cc0-toilet-676.glb" id="2_smvt6"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_f6o33"]
+size = Vector3(0.9423828, 1, 0.7684326)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_smvt6"]
+albedo_color = Color(0.5982958, 0.5604064, 0.49748713, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_a8akp"]
+albedo_color = Color(0.6, 0.56078434, 0.49803922, 1)
+
+[node name="Node3D" type="Node3D" unique_id=529197057]
+
+[node name="MeshInstance3D14" type="MeshInstance3D" parent="." unique_id=1146734609]
+transform = Transform3D(2.3442428e-14, 2.1855694e-08, 10.285166, 12.269118, -2.1855694e-08, 0, 5.363002e-07, 0.5, -4.495789e-07, -14.41193, 6.444, 8.573)
+mesh = SubResource("BoxMesh_f6o33")
+skeleton = NodePath("../../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_smvt6")
+
+[node name="MeshInstance3D15" type="MeshInstance3D" parent="." unique_id=1143187313]
+transform = Transform3D(2.3442428e-14, 2.1855694e-08, 10.285166, 12.269118, -2.1855694e-08, 0, 5.363002e-07, 0.5, -4.495789e-07, -14.412, 6.444, 1.473)
+mesh = SubResource("BoxMesh_f6o33")
+skeleton = NodePath("../../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_a8akp")
+
+[node name="puerta_inodoro" parent="." unique_id=1370362943 instance=ExtResource("1_ol75m")]
+transform = Transform3D(2.55, 0, 0, 0, 2.55, 0, 0, 0, 2.585, -10.977612, 5.7133117, 3.9532018)
+
+[node name="quaternius_cc0-toilet-676" parent="." unique_id=2078758912 instance=ExtResource("2_smvt6")]
+transform = Transform3D(-9.90063e-08, 0, 2.265, 0, 2.265, 0, -2.265, 0, -9.90063e-08, -15.896425, 0.30355453, 5.034363)
