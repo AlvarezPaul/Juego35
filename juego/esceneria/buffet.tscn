@@ -1763,49 +1763,49 @@ transform = Transform3D(-6.556708e-08, 0, 1.5, 0, 1.5, 0, -1.5, 0, -6.556708e-08
 transform = Transform3D(-1.3, 0, -1.9629454e-07, 0, 1.3, 0, 1.9629454e-07, 0, -1.3, 37.126312, 14.20516, 198.33243)
 
 [node name="Lamparaapagada2" parent="." unique_id=1724601966 instance=ExtResource("17_k2vi5")]
-transform = Transform3D(-1.3113416e-07, 0, 3, 0, 3, 0, -3, 0, -1.3113416e-07, 52.402374, 32.50315, 181.19696)
+transform = Transform3D(-1.3113416e-07, 0, 3, 0, 3, 0, -3, 0, -1.3113416e-07, 52.402374, 44.350243, 181.19696)
 
 [node name="Lamparaapagada3" parent="." unique_id=1915108930 instance=ExtResource("17_k2vi5")]
-transform = Transform3D(-1.3113416e-07, 0, 3, 0, 3, 0, -3, 0, -1.3113416e-07, 52.402374, 32.50315, 136.19319)
+transform = Transform3D(-1.3113416e-07, 0, 3, 0, 3, 0, -3, 0, -1.3113416e-07, 52.402374, 44.350243, 136.19319)
 
 [node name="Lamparaapagada4" parent="." unique_id=1568599479 instance=ExtResource("17_k2vi5")]
-transform = Transform3D(-1.3113416e-07, 0, 3, 0, 3, 0, -3, 0, -1.3113416e-07, 52.402374, 32.50315, 93.06908)
+transform = Transform3D(-1.3113416e-07, 0, 3, 0, 3, 0, -3, 0, -1.3113416e-07, 52.402374, 44.350243, 93.06908)
 
 [node name="Lamparaapagada5" parent="." unique_id=2108237655 instance=ExtResource("17_k2vi5")]
-transform = Transform3D(-1.3113416e-07, 0, 3, 0, 3, 0, -3, 0, -1.3113416e-07, 52.402374, 32.50315, 48.267677)
+transform = Transform3D(-1.3113416e-07, 0, 3, 0, 3, 0, -3, 0, -1.3113416e-07, 52.402374, 44.350243, 48.267677)
 
 [node name="Lamparaapagada6" parent="." unique_id=1941541342 instance=ExtResource("17_k2vi5")]
-transform = Transform3D(-1.3113416e-07, 0, 3, 0, 3, 0, -3, 0, -1.3113416e-07, 12.879162, 32.50315, 45.83284)
+transform = Transform3D(-1.3113416e-07, 0, 3, 0, 3, 0, -3, 0, -1.3113416e-07, 12.879162, 44.350243, 45.83284)
 
 [node name="Lamparaapagada7" parent="." unique_id=1053282848 instance=ExtResource("17_k2vi5")]
-transform = Transform3D(-1.3113416e-07, 0, 3, 0, 3, 0, -3, 0, -1.3113416e-07, 12.879162, 32.50315, 89.978485)
+transform = Transform3D(-1.3113416e-07, 0, 3, 0, 3, 0, -3, 0, -1.3113416e-07, 12.879162, 44.350243, 89.978485)
 
 [node name="Lamparaapagada8" parent="." unique_id=1123882726 instance=ExtResource("17_k2vi5")]
-transform = Transform3D(-1.3113416e-07, 0, 3, 0, 3, 0, -3, 0, -1.3113416e-07, 12.879162, 32.50315, 125.14562)
+transform = Transform3D(-1.3113416e-07, 0, 3, 0, 3, 0, -3, 0, -1.3113416e-07, 12.879162, 44.350243, 125.14562)
 
 [node name="Lamparaapagada9" parent="." unique_id=470652986 instance=ExtResource("17_k2vi5")]
-transform = Transform3D(-1.3113416e-07, 0, 3, 0, 3, 0, -3, 0, -1.3113416e-07, 12.879162, 32.50315, 176.37347)
+transform = Transform3D(-1.3113416e-07, 0, 3, 0, 3, 0, -3, 0, -1.3113416e-07, 12.879162, 44.350243, 176.37347)
 
 [node name="Lamparaapagada10" parent="." unique_id=383044127 instance=ExtResource("17_k2vi5")]
-transform = Transform3D(-1.3113416e-07, 0, 3, 0, 3, 0, -3, 0, -1.3113416e-07, -18.909906, 32.50315, 45.83284)
+transform = Transform3D(-1.3113416e-07, 0, 3, 0, 3, 0, -3, 0, -1.3113416e-07, -18.909906, 44.350243, 45.83284)
 
 [node name="Lamparaapagada11" parent="." unique_id=1056627209 instance=ExtResource("17_k2vi5")]
-transform = Transform3D(-1.3113416e-07, 0, 3, 0, 3, 0, -3, 0, -1.3113416e-07, -18.909906, 32.50315, 89.978485)
+transform = Transform3D(-1.3113416e-07, 0, 3, 0, 3, 0, -3, 0, -1.3113416e-07, -18.909906, 44.350243, 89.978485)
 
 [node name="Lamparaapagada12" parent="." unique_id=1069038858 instance=ExtResource("17_k2vi5")]
-transform = Transform3D(-1.3113416e-07, 0, 3, 0, 3, 0, -3, 0, -1.3113416e-07, -18.909906, 32.50315, 125.14562)
+transform = Transform3D(-1.3113416e-07, 0, 3, 0, 3, 0, -3, 0, -1.3113416e-07, -18.909906, 44.350243, 125.14562)
 
 [node name="Lamparaapagada13" parent="." unique_id=697431900 instance=ExtResource("17_k2vi5")]
-transform = Transform3D(-1.3113416e-07, 0, 3, 0, 3, 0, -3, 0, -1.3113416e-07, -18.909906, 32.50315, 176.37347)
+transform = Transform3D(-1.3113416e-07, 0, 3, 0, 3, 0, -3, 0, -1.3113416e-07, -18.909906, 44.350243, 176.37347)
 
 [node name="Lamparaapagada15" parent="." unique_id=1730414003 instance=ExtResource("17_k2vi5")]
-transform = Transform3D(-1.3113416e-07, 0, 3, 0, 3, 0, -3, 0, -1.3113416e-07, -53.577164, 32.50315, 96.434616)
+transform = Transform3D(-1.3113416e-07, 0, 3, 0, 3, 0, -3, 0, -1.3113416e-07, -53.577164, 44.350243, 96.434616)
 
 [node name="Lamparaapagada16" parent="." unique_id=1215865791 instance=ExtResource("17_k2vi5")]
-transform = Transform3D(-1.3113416e-07, 0, 3, 0, 3, 0, -3, 0, -1.3113416e-07, -53.577164, 32.50315, 140.3977)
+transform = Transform3D(-1.3113416e-07, 0, 3, 0, 3, 0, -3, 0, -1.3113416e-07, -53.577164, 44.350243, 140.3977)
 
 [node name="Lamparaapagada17" parent="." unique_id=1024669900 instance=ExtResource("17_k2vi5")]
-transform = Transform3D(-1.3113416e-07, 0, 3, 0, 3, 0, -3, 0, -1.3113416e-07, -53.577164, 32.50315, 179.62956)
+transform = Transform3D(-1.3113416e-07, 0, 3, 0, 3, 0, -3, 0, -1.3113416e-07, -53.577164, 44.350243, 179.62956)
 
 [node name="BotellaPiso" type="Node3D" parent="." unique_id=173296675]
 transform = Transform3D(-0.5699983, 7.6226044, 2.3603017, -7.768684, 0.010447918, -1.9098308, -1.8228178, -2.4281297, 7.401455, -64.61688, 1.0245833, 82.45179)

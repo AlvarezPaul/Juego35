@@ -1,0 +1,158 @@
+[gd_scene format=3 uid="uid://dpqpeftrq58sg"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kcw23"]
+albedo_color = Color(0.3515629, 0.3515629, 0.35156286, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4nttp"]
+albedo_color = Color(0.13682577, 0.13682574, 0.13682571, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ink1u"]
+albedo_color = Color(0.20511743, 0.20511743, 0.20511743, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_uo67v"]
+albedo_color = Color(0.20392157, 0.20392157, 0.20392157, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ieda3"]
+albedo_color = Color(0.20152658, 0.20152658, 0.20152658, 1)
+
+[node name="sillas_entrada(3)" type="Node3D" unique_id=2001512107]
+
+[node name="silla" type="Node3D" parent="." unique_id=482987390]
+
+[node name="CSGSphere3D" type="CSGSphere3D" parent="silla" unique_id=300465185]
+transform = Transform3D(0.70710677, 0, 0.70710677, 0, 0.32783872, 0, -0.70710677, 0, 0.70710677, 0, 0, 0)
+radial_segments = 4
+material = SubResource("StandardMaterial3D_kcw23")
+
+[node name="CSGSphere3D2" type="CSGSphere3D" parent="silla" unique_id=2094081472]
+transform = Transform3D(0.70710677, 0, 0.70710677, 0, 0.23035154, 0, -0.70710677, 0, 0.70710677, 0, -0.066785604, 0)
+radius = 0.51689094
+radial_segments = 4
+rings = 5
+material = SubResource("StandardMaterial3D_4nttp")
+
+[node name="CSGSphere3D3" type="CSGSphere3D" parent="silla" unique_id=486685918]
+transform = Transform3D(-4.3711385e-08, -0.32783872, 0, 0.7071067, -1.0133042e-08, -0.7071067, 0.7071067, -1.0133042e-08, 0.7071067, -0.39666376, 0.496579, 0)
+radial_segments = 4
+material = SubResource("StandardMaterial3D_kcw23")
+
+[node name="CSGSphere3D4" type="CSGSphere3D" parent="silla" unique_id=367919487]
+transform = Transform3D(-4.3711385e-08, -0.23035154, 0, 0.7071067, -7.1198483e-09, -0.7071067, 0.7071067, -7.1198483e-09, 0.7071067, -0.48855224, 0.49977785, 0)
+radius = 0.51689094
+radial_segments = 4
+rings = 5
+material = SubResource("StandardMaterial3D_4nttp")
+
+[node name="CSGPolygon3D" type="CSGPolygon3D" parent="silla" unique_id=1548948637]
+transform = Transform3D(0.5718982, 0, 0, 0, 0.61868477, 0, 0, 0, 1, -0.51374274, -0.106162965, 0.38089883)
+polygon = PackedVector2Array(0.19227475, 0.030239582, 0.05105239, 0.120777026, -0.010163128, 0.2355947, -0.039017558, 0.96521014, -0.01687485, 1.0131396, 0.054113507, 1.0135164, 0.100236595, 0.9712222, 0.12553817, 0.28558427, 0.19520038, 0.2150141, 0.30442733, 0.16095006, 0.94230425, 0.14232123, 0.9937268, 0.108765, 0.9940306, 0.038790777, 0.94195974, -0.0005272329)
+depth = 0.03
+material = SubResource("StandardMaterial3D_ink1u")
+
+[node name="CSGPolygon3D2" type="CSGPolygon3D" parent="silla" unique_id=1519104725]
+transform = Transform3D(0.5718982, 0, 0, 0, 0.61868477, 0, 0, 0, 1, -0.51374274, -0.106162965, -0.3520509)
+polygon = PackedVector2Array(0.19227475, 0.030239582, 0.05105239, 0.120777026, -0.010163128, 0.2355947, -0.039017558, 0.96521014, -0.01687485, 1.0131396, 0.054113507, 1.0135164, 0.100236595, 0.9712222, 0.12553817, 0.28558427, 0.19520038, 0.2150141, 0.30442733, 0.16095006, 0.94230425, 0.14232123, 0.9937268, 0.108765, 0.9940306, 0.038790777, 0.94195974, -0.0005272329)
+depth = 0.03
+material = SubResource("StandardMaterial3D_ink1u")
+
+[node name="silla2" type="Node3D" parent="." unique_id=1144179340]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+
+[node name="CSGSphere3D" type="CSGSphere3D" parent="silla2" unique_id=2057984055]
+transform = Transform3D(0.70710677, 0, 0.70710677, 0, 0.32783872, 0, -0.70710677, 0, 0.70710677, 0, 0, 0)
+radial_segments = 4
+material = SubResource("StandardMaterial3D_kcw23")
+
+[node name="CSGSphere3D2" type="CSGSphere3D" parent="silla2" unique_id=1495769533]
+transform = Transform3D(0.70710677, 0, 0.70710677, 0, 0.23035154, 0, -0.70710677, 0, 0.70710677, 0, -0.066785604, 0)
+radius = 0.51689094
+radial_segments = 4
+rings = 5
+material = SubResource("StandardMaterial3D_4nttp")
+
+[node name="CSGSphere3D3" type="CSGSphere3D" parent="silla2" unique_id=743306824]
+transform = Transform3D(-4.3711385e-08, -0.32783872, 0, 0.7071067, -1.0133042e-08, -0.7071067, 0.7071067, -1.0133042e-08, 0.7071067, -0.39666376, 0.496579, 0)
+radial_segments = 4
+material = SubResource("StandardMaterial3D_kcw23")
+
+[node name="CSGSphere3D4" type="CSGSphere3D" parent="silla2" unique_id=1686587467]
+transform = Transform3D(-4.3711385e-08, -0.23035154, 0, 0.7071067, -7.1198483e-09, -0.7071067, 0.7071067, -7.1198483e-09, 0.7071067, -0.48855224, 0.49977785, 0)
+radius = 0.51689094
+radial_segments = 4
+rings = 5
+material = SubResource("StandardMaterial3D_4nttp")
+
+[node name="CSGPolygon3D" type="CSGPolygon3D" parent="silla2" unique_id=751672447]
+transform = Transform3D(0.5718982, 0, 0, 0, 0.61868477, 0, 0, 0, 1, -0.51374274, -0.106162965, 0.38089883)
+polygon = PackedVector2Array(0.19227475, 0.030239582, 0.05105239, 0.120777026, -0.010163128, 0.2355947, -0.039017558, 0.96521014, -0.01687485, 1.0131396, 0.054113507, 1.0135164, 0.100236595, 0.9712222, 0.12553817, 0.28558427, 0.19520038, 0.2150141, 0.30442733, 0.16095006, 0.94230425, 0.14232123, 0.9937268, 0.108765, 0.9940306, 0.038790777, 0.94195974, -0.0005272329)
+depth = 0.03
+material = SubResource("StandardMaterial3D_ink1u")
+
+[node name="CSGPolygon3D2" type="CSGPolygon3D" parent="silla2" unique_id=126003622]
+transform = Transform3D(0.5718982, 0, 0, 0, 0.61868477, 0, 0, 0, 1, -0.51374274, -0.106162965, -0.3520509)
+polygon = PackedVector2Array(0.19227475, 0.030239582, 0.05105239, 0.120777026, -0.010163128, 0.2355947, -0.039017558, 0.96521014, -0.01687485, 1.0131396, 0.054113507, 1.0135164, 0.100236595, 0.9712222, 0.12553817, 0.28558427, 0.19520038, 0.2150141, 0.30442733, 0.16095006, 0.94230425, 0.14232123, 0.9937268, 0.108765, 0.9940306, 0.038790777, 0.94195974, -0.0005272329)
+depth = 0.03
+material = SubResource("StandardMaterial3D_ink1u")
+
+[node name="silla3" type="Node3D" parent="." unique_id=1861605883]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2)
+
+[node name="CSGSphere3D" type="CSGSphere3D" parent="silla3" unique_id=1928161570]
+transform = Transform3D(0.70710677, 0, 0.70710677, 0, 0.32783872, 0, -0.70710677, 0, 0.70710677, 0, 0, 0)
+radial_segments = 4
+material = SubResource("StandardMaterial3D_kcw23")
+
+[node name="CSGSphere3D2" type="CSGSphere3D" parent="silla3" unique_id=144985523]
+transform = Transform3D(0.70710677, 0, 0.70710677, 0, 0.23035154, 0, -0.70710677, 0, 0.70710677, 0, -0.066785604, 0)
+radius = 0.51689094
+radial_segments = 4
+rings = 5
+material = SubResource("StandardMaterial3D_4nttp")
+
+[node name="CSGSphere3D3" type="CSGSphere3D" parent="silla3" unique_id=329355603]
+transform = Transform3D(-4.3711385e-08, -0.32783872, 0, 0.7071067, -1.0133042e-08, -0.7071067, 0.7071067, -1.0133042e-08, 0.7071067, -0.39666376, 0.496579, 0)
+radial_segments = 4
+material = SubResource("StandardMaterial3D_kcw23")
+
+[node name="CSGSphere3D4" type="CSGSphere3D" parent="silla3" unique_id=1606786637]
+transform = Transform3D(-4.3711385e-08, -0.23035154, 0, 0.7071067, -7.1198483e-09, -0.7071067, 0.7071067, -7.1198483e-09, 0.7071067, -0.48855224, 0.49977785, 0)
+radius = 0.51689094
+radial_segments = 4
+rings = 5
+material = SubResource("StandardMaterial3D_4nttp")
+
+[node name="CSGPolygon3D" type="CSGPolygon3D" parent="silla3" unique_id=1805909304]
+transform = Transform3D(0.5718982, 0, 0, 0, 0.61868477, 0, 0, 0, 1, -0.51374274, -0.106162965, 0.38089883)
+polygon = PackedVector2Array(0.19227475, 0.030239582, 0.05105239, 0.120777026, -0.010163128, 0.2355947, -0.039017558, 0.96521014, -0.01687485, 1.0131396, 0.054113507, 1.0135164, 0.100236595, 0.9712222, 0.12553817, 0.28558427, 0.19520038, 0.2150141, 0.30442733, 0.16095006, 0.94230425, 0.14232123, 0.9937268, 0.108765, 0.9940306, 0.038790777, 0.94195974, -0.0005272329)
+depth = 0.03
+material = SubResource("StandardMaterial3D_ink1u")
+
+[node name="CSGPolygon3D2" type="CSGPolygon3D" parent="silla3" unique_id=2116019419]
+transform = Transform3D(0.5718982, 0, 0, 0, 0.61868477, 0, 0, 0, 1, -0.51374274, -0.106162965, -0.3520509)
+polygon = PackedVector2Array(0.19227475, 0.030239582, 0.05105239, 0.120777026, -0.010163128, 0.2355947, -0.039017558, 0.96521014, -0.01687485, 1.0131396, 0.054113507, 1.0135164, 0.100236595, 0.9712222, 0.12553817, 0.28558427, 0.19520038, 0.2150141, 0.30442733, 0.16095006, 0.94230425, 0.14232123, 0.9937268, 0.108765, 0.9940306, 0.038790777, 0.94195974, -0.0005272329)
+depth = 0.03
+material = SubResource("StandardMaterial3D_ink1u")
+
+[node name="CSGPolygon3D" type="CSGPolygon3D" parent="." unique_id=499150584]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5388415, -0.6196839, 2.3716643)
+polygon = PackedVector2Array(0.3018064, -0.020028278, 0.3011384, 0.1416763, 0.44881222, 0.14199853, 0.45187536, 0.62390196, 0.61069447, 0.62088627, 0.62541294, 0.142609, 0.7688036, 0.1417126, 0.7712431, -0.01880908)
+depth = 0.15
+material = SubResource("StandardMaterial3D_uo67v")
+
+[node name="CSGPolygon3D2" type="CSGPolygon3D" parent="." unique_id=1036590513]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5388415, -0.6196839, -0.21837467)
+polygon = PackedVector2Array(0.3018064, -0.020028278, 0.3011384, 0.1416763, 0.44881222, 0.14199853, 0.45187536, 0.62390196, 0.61069447, 0.62088627, 0.62541294, 0.142609, 0.7688036, 0.1417126, 0.7712431, -0.01880908)
+depth = 0.15
+material = SubResource("StandardMaterial3D_uo67v")
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="." unique_id=610315956]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -0.18846688, -0.056383967, 0.9962174)
+radius = 0.03
+height = 1.3859863
+material = SubResource("StandardMaterial3D_ieda3")
+
+[node name="CSGCylinder3D2" type="CSGCylinder3D" parent="." unique_id=165615767]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0.20414263, -0.056383967, 0.9962174)
+radius = 0.03
+height = 1.3859863
+material = SubResource("StandardMaterial3D_ieda3")
