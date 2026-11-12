@@ -6,6 +6,8 @@
 [ext_resource type="PackedScene" uid="uid://dody7j0l0eivw" path="res://esceneria/muebles/mesa_biblioteca.tscn" id="4_g2yyw"]
 [ext_resource type="PackedScene" uid="uid://wp17yxi1w5un" path="res://esceneria/muebles/libros2.tscn" id="5_1lnsv"]
 [ext_resource type="PackedScene" uid="uid://c1reigh8kbpyi" path="res://esceneria/muebles/VentiladorBuffet.tscn" id="6_htqvi"]
+[ext_resource type="PackedScene" uid="uid://dgfv10n6t31c1" path="res://esceneria/muebles/lampara_encendida.tscn" id="7_qnk4k"]
+[ext_resource type="PackedScene" uid="uid://bqeavcxg3idhj" path="res://esceneria/muebles/puertabiblioteca.tscn" id="8_yyxt8"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_spqb3"]
 size = Vector3(16.50158, 0.045898438, 12.003708)
@@ -112,6 +114,15 @@ height = 13.4027195
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yyxt8"]
 albedo_color = Color(0.021434637, 0.021434635, 0.021434633, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_t18kp"]
+albedo_color = Color(0.99215686, 0.87058824, 0.7607843, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_82cee"]
+size = Vector3(41.44465, 0.27456018, 2.007205)
+
+[sub_resource type="BoxMesh" id="BoxMesh_usv3w"]
+size = Vector3(34.587074, 0.27456018, 2.007205)
 
 [node name="Biblioteca" type="Node3D" unique_id=563691032]
 
@@ -881,3 +892,54 @@ transform = Transform3D(-0.70106125, 0, -0.0003024908, 0, 1, 0, 0.00021208603, 0
 
 [node name="Libros54" parent="." unique_id=869219816 instance=ExtResource("5_1lnsv")]
 transform = Transform3D(-0.7656574, 0, -0.0003024986, 0, 1, 0, 0.00023162778, 0, -0.9999246, 4.9836235, 1.9554743, -0.87078524)
+
+[node name="lampara_encendida3" parent="." unique_id=1101667733 instance=ExtResource("7_qnk4k")]
+transform = Transform3D(0.708005, 0, 0, 0, 0.23974776, 0, 0, 0, 0.7604645, 10.894717, 4.9027696, -2.7570057)
+
+[node name="lampara_encendida4" parent="." unique_id=735404203 instance=ExtResource("7_qnk4k")]
+transform = Transform3D(0.708005, 0, 0, 0, 0.23974776, 0, 0, 0, 0.7604645, 10.894717, 4.9027696, -6.3269854)
+
+[node name="lampara_encendida5" parent="." unique_id=808373206 instance=ExtResource("7_qnk4k")]
+transform = Transform3D(0.708005, 0, 0, 0, 0.23974776, 0, 0, 0, 0.7604645, 10.894717, 4.9027696, -10.021019)
+
+[node name="lampara_encendida6" parent="." unique_id=788330335 instance=ExtResource("7_qnk4k")]
+transform = Transform3D(0.708005, 0, 0, 0, 0.23974776, 0, 0, 0, 0.7604645, 15.467819, 4.9027696, -2.7570057)
+
+[node name="lampara_encendida7" parent="." unique_id=301032152 instance=ExtResource("7_qnk4k")]
+transform = Transform3D(0.708005, 0, 0, 0, 0.23974776, 0, 0, 0, 0.7604645, 15.467819, 4.9027696, -6.3269854)
+
+[node name="lampara_encendida8" parent="." unique_id=1694577849 instance=ExtResource("7_qnk4k")]
+transform = Transform3D(0.708005, 0, 0, 0, 0.23974776, 0, 0, 0, 0.7604645, 15.467819, 4.9027696, -10.021019)
+
+[node name="lampara_encendida9" parent="." unique_id=1219271543 instance=ExtResource("7_qnk4k")]
+transform = Transform3D(0.708005, 0, 0, 0, 0.23974776, 0, 0, 0, 0.7604645, 6.24825, 4.9027696, -2.7570057)
+
+[node name="lampara_encendida10" parent="." unique_id=1399827527 instance=ExtResource("7_qnk4k")]
+transform = Transform3D(0.708005, 0, 0, 0, 0.23974776, 0, 0, 0, 0.7604645, 6.24825, 4.9027696, -6.3269854)
+
+[node name="lampara_encendida11" parent="." unique_id=1945169095 instance=ExtResource("7_qnk4k")]
+transform = Transform3D(0.708005, 0, 0, 0, 0.23974776, 0, 0, 0, 0.7604645, 6.24825, 4.9027696, -10.021019)
+
+[node name="Puertabiblioteca" parent="." unique_id=530576390 instance=ExtResource("8_yyxt8")]
+transform = Transform3D(0.99724966, 0, 0, 0, 0.59831303, 0, 0, 0, 0.5222111, 17.989702, 1.0866355, -2.190774)
+
+[node name="MeshInstance3D174" type="MeshInstance3D" parent="." unique_id=1067396037]
+transform = Transform3D(-2.9876512e-09, 0, 0.06980344, 0, 0.7509311, 0, -0.07011701, 0, -1.9565107e-09, 18.074326, 2.2813847, -2.6149504)
+material_override = SubResource("StandardMaterial3D_t18kp")
+mesh = SubResource("BoxMesh_82cee")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_kk05g")
+
+[node name="MeshInstance3D175" type="MeshInstance3D" parent="." unique_id=1304198573]
+transform = Transform3D(-2.9876512e-09, 0, 0.06980344, 0.070117004, 0.00023289291, 1.9565105e-09, -2.1746011e-05, 0.7509311, -6.0679006e-13, 18.074326, 1.1653581, -4.055514)
+material_override = SubResource("StandardMaterial3D_t18kp")
+mesh = SubResource("BoxMesh_usv3w")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_kk05g")
+
+[node name="MeshInstance3D176" type="MeshInstance3D" parent="." unique_id=267179000]
+transform = Transform3D(-2.9876512e-09, 0, 0.06980344, 0.070117004, 0.00023289291, 1.9565105e-09, -2.1746011e-05, 0.7509311, -6.0679006e-13, 18.074326, 1.1653581, -1.2625246)
+material_override = SubResource("StandardMaterial3D_t18kp")
+mesh = SubResource("BoxMesh_usv3w")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_kk05g")

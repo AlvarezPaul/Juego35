@@ -50,6 +50,9 @@ size = Vector3(1, 1, 1.0097656)
 [sub_resource type="BoxMesh" id="BoxMesh_ime8u"]
 size = Vector3(1, 1, 0.65966797)
 
+[sub_resource type="BoxMesh" id="BoxMesh_p4u5u"]
+size = Vector3(1, 0.97802734, 1)
+
 [sub_resource type="BoxMesh" id="BoxMesh_ii0hb"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rc72u"]
@@ -463,7 +466,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_jvpdc")
 shape = SubResource("ConcavePolygonShape3D_a5yc5")
 
 [node name="MeshInstance3D21" type="MeshInstance3D" parent="estructura/paredes" unique_id=1793046630]
-transform = Transform3D(6.372744, 0, 0, 0, 6.764998, 0, 0, 0, 177.98557, 28.059402, 42.477, 10.174553)
+transform = Transform3D(6.372744, 0, 0, 0, 6.764998, 0, 0, 0, 177.98557, 33.476677, 42.477, 10.174553)
 mesh = SubResource("BoxMesh_m3esr")
 skeleton = NodePath("../../detalles/ventana")
 surface_material_override/0 = SubResource("StandardMaterial3D_jvpdc")
@@ -474,7 +477,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_jvpdc")
 shape = SubResource("ConcavePolygonShape3D_a5yc5")
 
 [node name="MeshInstance3D22" type="MeshInstance3D" parent="estructura/paredes" unique_id=1369694794]
-transform = Transform3D(6.372744, 0, 0, 0, 6.764998, 0, 0, 0, 177.98557, -3.8454971, 42.477, 10.174553)
+transform = Transform3D(6.372744, 0, 0, 0, 6.764998, 0, 0, 0, 177.98557, -0.3469429, 42.477, 10.174553)
 mesh = SubResource("BoxMesh_m3esr")
 skeleton = NodePath("../../detalles/ventana")
 surface_material_override/0 = SubResource("StandardMaterial3D_jvpdc")
@@ -613,7 +616,7 @@ shape = SubResource("ConcavePolygonShape3D_v75ln")
 
 [node name="MeshInstance3D49" type="MeshInstance3D" parent="estructura/paredes" unique_id=2143003657]
 transform = Transform3D(62.5, 0, 0, 0, 46.997448, 0, 0, 0, 1.75, -61.449806, 24.082685, -17.800201)
-mesh = SubResource("BoxMesh_4uhvb")
+mesh = SubResource("BoxMesh_p4u5u")
 skeleton = NodePath("")
 surface_material_override/0 = SubResource("StandardMaterial3D_gsmix")
 
@@ -1656,7 +1659,7 @@ transform = Transform3D(-2.1767434e-07, 0, -1.7590507, 0, 1.0335078, 0, -4.97980
 transform = Transform3D(-1.9670125e-07, 0, 4.5, 0, 4.5, 0, -4.5, 0, -1.9670125e-07, 72.24866, 3.5899258, 93.97742)
 
 [node name="CableVentiladores" type="MeshInstance3D" parent="." unique_id=711396926]
-transform = Transform3D(0.9, 0, 0, 0, -3.934025e-08, -0.9, 0, 0.9, -3.934025e-08, -5.512478, 39.022278, 108.11355)
+transform = Transform3D(0.9, 0, 0, 0, -3.934025e-08, -0.9, 0, 0.9, -3.934025e-08, -2.0139236, 39.022278, 108.11355)
 mesh = SubResource("CylinderMesh_k2vi5")
 surface_material_override/0 = SubResource("StandardMaterial3D_b1lj4")
 
@@ -1666,42 +1669,39 @@ mesh = SubResource("CylinderMesh_p4u5u")
 surface_material_override/0 = SubResource("StandardMaterial3D_b1lj4")
 
 [node name="CableVentiladores2" type="MeshInstance3D" parent="." unique_id=248995499]
-transform = Transform3D(0.9, 0, 0, 0, -3.934025e-08, -0.9, 0, 0.9, -3.934025e-08, 26.246134, 38.746788, 108.11355)
+transform = Transform3D(0.9, 0, 0, 0, -3.934025e-08, -0.9, 0, 0.9, -3.934025e-08, 31.663408, 38.746788, 108.11355)
 mesh = SubResource("CylinderMesh_xrivr")
 surface_material_override/0 = SubResource("StandardMaterial3D_b1lj4")
 
 [node name="VentiladorBuffet" parent="." unique_id=33307123 instance=ExtResource("15_ofun0")]
-transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 28.1035, 34.671764, 169.39061)
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 33.520775, 34.671764, 169.39061)
 
 [node name="VentiladorBuffet2" parent="." unique_id=1038217472 instance=ExtResource("15_ofun0")]
-transform = Transform3D(1.4488888, 0, 0.38822857, 0, 1.5, 0, -0.38822857, 0, 1.4488888, 28.1035, 34.671764, 131.75992)
+transform = Transform3D(1.4488888, 0, 0.38822857, 0, 1.5, 0, -0.38822857, 0, 1.4488888, 33.520775, 34.671764, 131.75992)
 
 [node name="VentiladorBuffet5" parent="." unique_id=1007503765 instance=ExtResource("15_ofun0")]
-transform = Transform3D(-1.0790095, 0, 1.0419877, 0, 1.5, 0, -1.0419877, 0, -1.0790095, -3.7170734, 34.671764, 169.39061)
+transform = Transform3D(-1.0790095, 0, 1.0419877, 0, 1.5, 0, -1.0419877, 0, -1.0790095, -0.21851921, 34.671764, 169.39061)
 
 [node name="VentiladorBuffet6" parent="." unique_id=763397604 instance=ExtResource("15_ofun0")]
-transform = Transform3D(0.1307337, 0, 1.494292, 0, 1.5, 0, -1.494292, 0, 0.1307337, -3.7170734, 34.671764, 131.75992)
+transform = Transform3D(0.1307337, 0, 1.494292, 0, 1.5, 0, -1.494292, 0, 0.1307337, -0.21851921, 34.671764, 131.75992)
 
 [node name="VentiladorBuffet9" parent="." unique_id=664719189 instance=ExtResource("15_ofun0")]
-transform = Transform3D(-1.0790095, 0, 1.0419877, 0, 1.5, 0, -1.0419877, 0, -1.0790095, -33.84034, 34.671764, 169.39061)
-
-[node name="VentiladorBuffet10" parent="." unique_id=2031835535 instance=ExtResource("15_ofun0")]
-transform = Transform3D(0.1307337, 0, 1.494292, 0, 1.5, 0, -1.494292, 0, 0.1307337, -33.84034, 34.671764, 133.39043)
+transform = Transform3D(-1.0790095, 0, 1.0419877, 0, 1.5, 0, -1.0419877, 0, -1.0790095, -33.84034, 34.671764, 157.63412)
 
 [node name="VentiladorBuffet11" parent="." unique_id=339637718 instance=ExtResource("15_ofun0")]
-transform = Transform3D(1.4672215, 0, 0.31186754, 0, 1.5, 0, -0.31186754, 0, 1.4672215, -33.84034, 34.671764, 99.410995)
+transform = Transform3D(1.4672215, 0, 0.31186754, 0, 1.5, 0, -0.31186754, 0, 1.4672215, -33.84034, 34.671764, 112.44699)
 
 [node name="VentiladorBuffet3" parent="." unique_id=1734878720 instance=ExtResource("15_ofun0")]
-transform = Transform3D(1.4854021, 0, -0.20875967, 0, 1.5, 0, 0.20875967, 0, 1.4854021, 28.1035, 34.671764, 91.053215)
+transform = Transform3D(1.4854021, 0, -0.20875967, 0, 1.5, 0, 0.20875967, 0, 1.4854021, 33.520775, 34.671764, 91.053215)
 
 [node name="VentiladorBuffet4" parent="." unique_id=928605883 instance=ExtResource("15_ofun0")]
-transform = Transform3D(0.9641814, 0, 1.1490667, 0, 1.5, 0, -1.1490667, 0, 0.9641814, 28.1035, 34.671764, 51.53887)
+transform = Transform3D(0.9641814, 0, 1.1490667, 0, 1.5, 0, -1.1490667, 0, 0.9641814, 33.520775, 34.671764, 51.53887)
 
 [node name="VentiladorBuffet7" parent="." unique_id=1179522270 instance=ExtResource("15_ofun0")]
-transform = Transform3D(1.4182779, 0, -0.4883522, 0, 1.5, 0, 0.4883522, 0, 1.4182779, -2.437089, 34.671764, 91.053215)
+transform = Transform3D(1.4182779, 0, -0.4883522, 0, 1.5, 0, 0.4883522, 0, 1.4182779, 1.0614653, 34.671764, 91.053215)
 
 [node name="VentiladorBuffet8" parent="." unique_id=953201490 instance=ExtResource("15_ofun0")]
-transform = Transform3D(1.3807573, 0, 0.5860967, 0, 1.5, 0, -0.5860967, 0, 1.3807573, -2.437089, 34.671764, 51.53887)
+transform = Transform3D(1.3807573, 0, 0.5860967, 0, 1.5, 0, -0.5860967, 0, 1.3807573, 1.0614653, 34.671764, 51.53887)
 
 [node name="Caloventor" parent="." unique_id=53101695 instance=ExtResource("16_ofun0")]
 transform = Transform3D(-0.88124144, 0.13765849, 2.3354795, 0.29082185, 2.482757, -0.036604196, -2.3213868, 0.25878054, -0.891177, -74.01842, 21.611565, 88.01695)

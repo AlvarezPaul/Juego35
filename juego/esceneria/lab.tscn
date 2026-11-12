@@ -13,6 +13,8 @@
 [ext_resource type="PackedScene" uid="uid://c1x0rlqrw0v4j" path="res://esceneria/monitor.tscn" id="11_a33jo"]
 [ext_resource type="PackedScene" uid="uid://bok80m5e2rwta" path="res://esceneria/monitordepared.tscn" id="12_x4h0m"]
 [ext_resource type="PackedScene" uid="uid://cdls81h7beqcc" path="res://esceneria/muebles/racklab.tscn" id="13_dd40b"]
+[ext_resource type="PackedScene" uid="uid://dgfv10n6t31c1" path="res://esceneria/muebles/lampara_encendida.tscn" id="14_mbboy"]
+[ext_resource type="PackedScene" uid="uid://c1reigh8kbpyi" path="res://esceneria/muebles/VentiladorBuffet.tscn" id="15_jxb36"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_bgooa"]
 size = Vector3(1, 2.0767822, 1)
@@ -135,6 +137,9 @@ size = Vector3(0.9354248, 0.9968262, 1)
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rjt2h"]
 albedo_color = Color(0.41568628, 0.7176471, 0.57254905, 1)
 
+[sub_resource type="BoxMesh" id="BoxMesh_h43o2"]
+size = Vector3(1, 0.97802734, 1)
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hrenc"]
 albedo_color = Color(0.41568628, 0.7176471, 0.57254905, 1)
 
@@ -231,6 +236,9 @@ material = SubResource("StandardMaterial3D_3muer")
 
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_epe1x"]
 data = PackedVector3Array(-0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, -0.5)
+
+[sub_resource type="BoxMesh" id="BoxMesh_f5dpk"]
+size = Vector3(0.3890381, 0.001, 73.223145)
 
 [node name="Node3D5" type="Node3D" unique_id=1042757657]
 
@@ -878,7 +886,7 @@ shape = SubResource("ConcavePolygonShape3D_mfo1i")
 
 [node name="MeshInstance3D145" type="MeshInstance3D" parent="." unique_id=819052785]
 transform = Transform3D(-4.0463632e-07, -348.5, 0, 9.257, -1.5233419e-05, 0, 0, 0, 1, -192.471, 72.292, 437.966)
-mesh = SubResource("BoxMesh_oaqsx")
+mesh = SubResource("BoxMesh_h43o2")
 skeleton = NodePath("../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_hrenc")
 
@@ -2909,5 +2917,41 @@ transform = Transform3D(-2.3, 0, -3.4729032e-07, 0, 2.3, 0, 3.4729032e-07, 0, -2
 
 [node name="Racklab3" parent="." unique_id=1611372370 instance=ExtResource("13_dd40b")]
 transform = Transform3D(-2.3, 0, -3.4729032e-07, 0, 2.3, 0, 3.4729032e-07, 0, -2.3, -243.51288, 61.067604, 373.58817)
+
+[node name="MeshInstance3D165" type="MeshInstance3D" parent="." unique_id=974690086]
+transform = Transform3D(-4.0463632e-07, -348.5, 0, 9.257, -1.5233419e-05, 0, 0, 0, 1, -199.95103, 68.86074, 401.85443)
+mesh = SubResource("BoxMesh_f5dpk")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_hrenc")
+
+[node name="lampara_encendida2" parent="." unique_id=1101667733 instance=ExtResource("14_mbboy")]
+transform = Transform3D(-1.9498341e-07, 0, 6.452033, 0, 1.9478782, 0, -4.4607005, 0, -2.8202732e-07, -49.07798, 68.98325, 382.62805)
+
+[node name="lampara_encendida3" parent="." unique_id=342280543 instance=ExtResource("14_mbboy")]
+transform = Transform3D(-1.9498341e-07, 0, 6.452033, 0, 1.9478782, 0, -4.4607005, 0, -2.8202732e-07, -49.07798, 68.98325, 421.99866)
+
+[node name="lampara_encendida4" parent="." unique_id=2110866210 instance=ExtResource("14_mbboy")]
+transform = Transform3D(-1.9498341e-07, 0, 5.930131, 0, 1.9478782, 0, -4.4607005, 0, -2.5921426e-07, -98.254684, 68.98325, 382.62805)
+
+[node name="lampara_encendida5" parent="." unique_id=396287870 instance=ExtResource("14_mbboy")]
+transform = Transform3D(-1.9498341e-07, 0, 5.930131, 0, 1.9478782, 0, -4.4607005, 0, -2.5921426e-07, -98.254684, 68.98325, 421.99866)
+
+[node name="lampara_encendida6" parent="." unique_id=1204821386 instance=ExtResource("14_mbboy")]
+transform = Transform3D(-1.9498341e-07, 0, 5.9397845, 0, 1.9478782, 0, -4.4607005, 0, -2.5963624e-07, -144.56331, 68.98325, 382.62805)
+
+[node name="lampara_encendida7" parent="." unique_id=1707450431 instance=ExtResource("14_mbboy")]
+transform = Transform3D(-1.9498341e-07, 0, 5.9397845, 0, 1.9478782, 0, -4.4607005, 0, -2.5963624e-07, -144.56331, 68.98325, 421.99866)
+
+[node name="VentiladorBuffet7" parent="." unique_id=33307123 instance=ExtResource("15_jxb36")]
+transform = Transform3D(1.2800725, 0, -0.46958384, 0, 1.5, 0, 0.44076428, 0, 1.3637705, -83.88376, 65.3628, 399.98334)
+
+[node name="VentiladorBuffet8" parent="." unique_id=573158444 instance=ExtResource("15_jxb36")]
+transform = Transform3D(1.2800725, 0, -0.46958384, 0, 1.5, 0, 0.44076428, 0, 1.3637705, -144.19778, 65.3628, 399.98334)
+
+[node name="VentiladorBuffet9" parent="." unique_id=841095907 instance=ExtResource("15_jxb36")]
+transform = Transform3D(1.2800725, 0, -0.46958384, 0, 1.5, 0, 0.44076428, 0, 1.3637705, -251.95053, 65.3628, 399.98334)
+
+[node name="VentiladorBuffet10" parent="." unique_id=484907260 instance=ExtResource("15_jxb36")]
+transform = Transform3D(1.2800725, 0, -0.46958384, 0, 1.5, 0, 0.44076428, 0, 1.3637705, -312.26456, 65.3628, 399.98334)
 
 [editable path="puerta2"]
