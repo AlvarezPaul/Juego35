@@ -1,6 +1,5 @@
 [gd_scene format=3 uid="uid://fpecqvdlnkiw"]
 
-[ext_resource type="FontFile" uid="uid://cuxgyu81j521g" path="res://Fuentes/Trebuchet-MS-Italic.ttf" id="1_w0gwb"]
 [ext_resource type="Script" uid="uid://v6qw18ctfg36" path="res://UI/pantalla_de_carga.gd" id="1_w7kbh"]
 [ext_resource type="Texture2D" uid="uid://c80sue7xddtbx" path="res://fotos/fondoblur.jpg" id="2_w7kbh"]
 [ext_resource type="FontFile" uid="uid://cdu7dgetstelv" path="res://Fuentes/trebuc.ttf" id="4_jwtye"]
@@ -50,16 +49,16 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -292.25
-offset_top = 6.25
-offset_right = 292.25
-offset_bottom = 81.75
+offset_left = -292.0
+offset_top = 4.0
+offset_right = 292.5
+offset_bottom = 79.5
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_constants/outline_size = 10
-theme_override_fonts/font = ExtResource("1_w0gwb")
-theme_override_font_sizes/font_size = 45
+theme_override_constants/outline_size = 25
+theme_override_fonts/font = ExtResource("4_jwtye")
+theme_override_font_sizes/font_size = 62
 theme_override_styles/background = SubResource("StyleBoxFlat_xrivr")
 theme_override_styles/fill = SubResource("StyleBoxFlat_13qdw")
 
@@ -70,28 +69,28 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -158.5
-offset_top = -73.5
-offset_right = 158.5
-offset_bottom = -2.5
+offset_left = -171.0
+offset_top = -90.0
+offset_right = 172.0
+offset_bottom = -13.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_shadow_color = Color(0.019607844, 0.019607844, 0.019607844, 1)
-theme_override_constants/outline_size = 7
+theme_override_constants/outline_size = 23
 theme_override_constants/shadow_outline_size = 10
 theme_override_fonts/font = ExtResource("4_jwtye")
-theme_override_font_sizes/font_size = 55
+theme_override_font_sizes/font_size = 65
 text = "Cargando..."
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Consejos" type="Label" parent="." unique_id=439392338]
 layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
+anchors_preset = -1
+anchor_left = 0.50036603
+anchor_top = 0.50716144
+anchor_right = 0.50036603
+anchor_bottom = 0.50716144
 offset_left = -196.5
 offset_top = 81.5
 offset_right = 196.5
@@ -101,7 +100,7 @@ grow_vertical = 2
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 10
 theme_override_fonts/font = ExtResource("4_jwtye")
-theme_override_font_sizes/font_size = 20
+theme_override_font_sizes/font_size = 25
 horizontal_alignment = 1
 vertical_alignment = 1
 metadata/_edit_use_anchors_ = true

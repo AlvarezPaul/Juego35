@@ -7,7 +7,7 @@ var progreso: Array = []
 var estado_de_carga: int
 var ultimo_consejo: String = ""
 var consejos: Array[String] = [
-	"Consejo: Usa la linterna en todo momento.", "Consejo: Soltá los objetos que ya no uses.", "Consejo: Hay solo UNA salida."]
+	"Consejo: Usa la linterna en todo momento.", "Consejo: Soltá los objetos que ya no uses.", "Consejo: Hay solo UNA salida.", "Consejo: Encuentra la salida."]
 
 func _ready() -> void:
 	imprimir_texto()

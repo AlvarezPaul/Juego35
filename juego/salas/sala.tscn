@@ -45,6 +45,8 @@
 [ext_resource type="Texture2D" uid="uid://04gly3jkvoly" path="res://fotos/controlesimg/TeclaEspacio.png" id="33_2aflc"]
 [ext_resource type="Script" uid="uid://sylhqf8xuif" path="res://UI/label_textos.gd" id="43_iqlxx"]
 [ext_resource type="PackedScene" uid="uid://bcng3bymb8hu8" path="res://items/llave_regencia.tscn" id="48_7bf7e"]
+[ext_resource type="Texture2D" uid="uid://ccw8bs7w2kx5v" path="res://fotos/images.jpg" id="49_s8c8j"]
+[ext_resource type="Texture2D" uid="uid://cgf11k474aga5" path="res://fotos/images (1).jpg" id="50_4x8yr"]
 [ext_resource type="PackedScene" uid="uid://hu1wjlyx3h6x" path="res://items/tacho.tscn" id="60_tacho"]
 [ext_resource type="PackedScene" uid="uid://catkwmfvq0q07" path="res://items/llave_reja.tscn" id="61_llavereja"]
 [ext_resource type="Script" uid="uid://bqo3hti17uyho" path="res://salas/label.gd" id="62_timerlabel"]
@@ -1257,11 +1259,19 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 61.528816, 10.685165, -31.253
 transform = Transform3D(-1.4126026e-09, -0.014724832, 0, 0.03231658, -6.43643e-10, 0, 0, 0, 0.016092267, 48.601517, 0.25283647, 57.38774)
 
 [node name="llave regencia" parent="." unique_id=855459215 instance=ExtResource("48_7bf7e")]
-transform = Transform3D(-7.8680495e-10, -0.018, 0, 0.018, -7.8680495e-10, 0, 0, 0, 0.018, 171.16458, 0.81700504, 41.767357)
+transform = Transform3D(5.2453664e-10, 0.012, 0, -0.012, 5.2453664e-10, 0, 0, 0, -0.012, 171.16458, 0.70297974, 41.569084)
+
+[node name="Sprite3D" type="Sprite3D" parent="." unique_id=424720944]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 51.182686, 15.085914, -29.75024)
+texture = ExtResource("49_s8c8j")
+
+[node name="Sprite3D2" type="Sprite3D" parent="." unique_id=2033432724]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 51.182686, 13.8012, -27.448143)
+texture = ExtResource("50_4x8yr")
 
 [connection signal="pressed" from="Jugador/Node2D/CanvasLayer/Control/VBoxContainer/controles" to="Jugador/Node2D/CanvasLayer/Control" method="_on_controles_pressed"]
-[connection signal="pressed" from="Jugador/Node2D/CanvasLayer/Control/VBoxContainer/reiniciar" to="Jugador/Node2D/CanvasLayer/Control" method="_on_reiniciar_pressed"]
 [connection signal="pressed" from="Jugador/Node2D/CanvasLayer/Control/VBoxContainer/reiniciar" to="Jugador/Node2D/CanvasLayer/Control" method="_on_salir_2_pressed"]
+[connection signal="pressed" from="Jugador/Node2D/CanvasLayer/Control/VBoxContainer/reiniciar" to="Jugador/Node2D/CanvasLayer/Control" method="_on_reiniciar_pressed"]
 [connection signal="pressed" from="Jugador/Node2D/CanvasLayer/ConfirmarSalir/Si" to="Jugador/Node2D/CanvasLayer/ConfirmarSalir" method="_on_si_pressed"]
 [connection signal="pressed" from="Jugador/Node2D/CanvasLayer/ConfirmarSalir/No" to="Jugador/Node2D/CanvasLayer/ConfirmarSalir" method="_on_no_pressed"]
 [connection signal="pressed" from="Jugador/Node2D/CanvasLayer/Ajustes/Cerrar" to="Jugador/Node2D/CanvasLayer/Ajustes" method="_on_cerrar_pressed"]

@@ -77,6 +77,10 @@ func interact() -> void:
 	abierto = not abierto
 	animation_player.play("abrir" if abierto else "cerrar")
 
+	# Avanza el cartel de objetivos cuando se abre
+	if abierto:
+		Objetivos.completar("abrir_reja")
+
 	await get_tree().create_timer(1.0, false).timeout
 
 	interactuable = true

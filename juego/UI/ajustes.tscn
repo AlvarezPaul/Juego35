@@ -62,7 +62,6 @@ corner_radius_top_left = 40
 corner_radius_top_right = 40
 corner_radius_bottom_right = 40
 corner_radius_bottom_left = 40
-shadow_color = Color(0.20152658, 0.20152658, 0.20152658, 0.6)
 shadow_size = 20
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_p1khp"]
@@ -124,10 +123,10 @@ stretch_mode = 6
 
 [node name="Cont de Sliders y CheckBox" type="VBoxContainer" parent="." unique_id=1674673960]
 layout_mode = 0
-offset_left = 597.3779
-offset_top = 162.45316
-offset_right = 810.3779
-offset_bottom = 530.4531
+offset_left = 624.22644
+offset_top = 168.2849
+offset_right = 837.22644
+offset_bottom = 536.2849
 theme_override_constants/separation = 65
 
 [node name="barra_sonidos" parent="Cont de Sliders y CheckBox" unique_id=1664845339 instance=ExtResource("4_56yal")]
@@ -200,18 +199,20 @@ text = "Mostrar"
 
 [node name="Ajustes Título" type="Label" parent="." unique_id=140143887]
 layout_mode = 1
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
+anchors_preset = -1
+anchor_left = 0.5001922
+anchor_top = -0.027351266
+anchor_right = 0.5001922
+anchor_bottom = -0.02735126
 offset_left = -226.0
 offset_top = 41.000004
 offset_right = 9.0
 offset_bottom = 159.0
 grow_horizontal = 2
-theme_override_constants/outline_size = 10
+theme_override_constants/outline_size = 18
 theme_override_constants/shadow_outline_size = 0
 theme_override_fonts/font = ExtResource("1_u4kum")
-theme_override_font_sizes/font_size = 60
+theme_override_font_sizes/font_size = 50
 theme_override_styles/normal = SubResource("StyleBoxFlat_f6o33")
 text = "Ajustes"
 horizontal_alignment = 1
