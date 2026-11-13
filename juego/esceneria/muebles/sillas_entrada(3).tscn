@@ -15,6 +15,12 @@ albedo_color = Color(0.20392157, 0.20392157, 0.20392157, 1)
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ieda3"]
 albedo_color = Color(0.20152658, 0.20152658, 0.20152658, 1)
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_uo67v"]
+size = Vector3(0.7314453, 0.103027344, 2.6502686)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ieda3"]
+size = Vector3(0.7314453, 0.23071289, 2.631073)
+
 [node name="sillas_entrada(3)" type="Node3D" unique_id=2001512107]
 
 [node name="silla" type="Node3D" parent="." unique_id=482987390]
@@ -156,3 +162,17 @@ transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0.20
 radius = 0.03
 height = 1.3859863
 material = SubResource("StandardMaterial3D_ieda3")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=162982798]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.51454127, 0, 0.20399845)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=1795740359]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5042018, 0.052978516, 0.80945086)
+shape = SubResource("BoxShape3D_uo67v")
+
+[node name="StaticBody3D2" type="StaticBody3D" parent="." unique_id=1664448212]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, -0.51454127, 0.27705848, 0.20399845)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D2" unique_id=739821807]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.28049812, -0.09411636, 0.8070221)
+shape = SubResource("BoxShape3D_ieda3")

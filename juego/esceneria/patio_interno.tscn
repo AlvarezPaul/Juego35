@@ -362,7 +362,7 @@ shape = SubResource("ConcavePolygonShape3D_3pbdm")
 [node name="check" parent="." unique_id=1400073117 instance=ExtResource("2_7hvex")]
 transform = Transform3D(1.175, 0, 0, 0, 1.175, 0, 0, 0, 1.175, 0.6789236, 0, 0)
 
-[node name="Cube" parent="check" index="0" unique_id=202233509]
+[node name="Cube" parent="check" index="0" unique_id=867948216]
 transform = Transform3D(79.8, 0, 0, 0, 1.33, 0, 0, 0, 79.8, -17.826, -0.134, -0.095)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="check/Cube" index="0" unique_id=1503869718]
@@ -463,6 +463,15 @@ transform = Transform3D(-4.2268914e-07, 0, 9.67, 0, 9.67, 0, -9.67, 0, -4.226891
 
 [node name="banquito8" parent="." unique_id=477862181 instance=ExtResource("4_dxm14")]
 transform = Transform3D(-4.2268914e-07, 0, 9.67, 0, 9.67, 0, -9.67, 0, -4.2268914e-07, -109.41442, 1.6928002, -52.357475)
+
+[node name="banquito9" parent="." unique_id=2109175278 instance=ExtResource("4_dxm14")]
+transform = Transform3D(-4.2268914e-07, 0, 9.67, 0, 9.67, 0, -9.67, 0, -4.2268914e-07, 110.64754, 1.6928002, -52.73913)
+
+[node name="banquito10" parent="." unique_id=1304190725 instance=ExtResource("4_dxm14")]
+transform = Transform3D(-4.2268914e-07, 0, 9.67, 0, 9.67, 0, -9.67, 0, -4.2268914e-07, 110.64754, 1.6928002, 16.558578)
+
+[node name="banquito11" parent="." unique_id=891872262 instance=ExtResource("4_dxm14")]
+transform = Transform3D(-4.2268914e-07, 0, 9.67, 0, 9.67, 0, -9.67, 0, -4.2268914e-07, 110.64754, 1.6928002, 86.10698)
 
 [node name="quaternius_cc0-common-tree-836" parent="." unique_id=1768786938 instance=ExtResource("5_yqd0h")]
 transform = Transform3D(5.059797, 0, -20.293736, 0, 20.915, 0, 20.293736, 0, 5.059797, 44.495594, 10.579429, -64.934296)

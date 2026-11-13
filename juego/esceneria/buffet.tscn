@@ -1550,13 +1550,13 @@ surface_material_override/0 = SubResource("StandardMaterial3D_njqwk")
 transform = Transform3D(4.371139e-08, 0, 1.152, 0, 1, 0, 1, 0, -5.0355517e-08, 55.73031, 3.6352816, 197.54735)
 
 [node name="bisagra" parent="muebles/puertas/puerta" index="1" unique_id=574221250]
-transform = Transform3D(1.9999998, 0, 0, 0, 8.384443, 0, 0, 0, 8.465699, 1.7767334, 5.4530277, 11.271633)
+transform = Transform3D(7.945118, 0, 0, 0, 8.384443, 0, 0, 0, 8.465698, 1.8629608, 5.4530277, 11.271629)
 
 [node name="puerta2" parent="muebles/puertas" unique_id=303750155 instance=ExtResource("7_k6gqu")]
 transform = Transform3D(-4.371139e-08, 0, -1.0899953, 0, 1, 0, 1, 0, -4.7645205e-08, 50.247658, 3.6352816, 197.50447)
 
 [node name="bisagra" parent="muebles/puertas/puerta2" index="1" unique_id=574221250]
-transform = Transform3D(1.9999998, 0, 0, 0, 8.384443, 0, 0, 0, 8.465699, 1.7767334, 5.4530277, 5.8950157)
+transform = Transform3D(7.945118, 0, 0, 0, 8.384443, 0, 0, 0, 8.465697, 1.7354889, 5.4530277, 5.8950157)
 
 [node name="MeshInstance3D8" parent="muebles/puertas/puerta2/bisagra/modelo" parent_id_path=PackedInt32Array(303750155, 1443082467) index="9" unique_id=1924139572]
 transform = Transform3D(0.20000006, 0, -2.646978e-23, 0, -4.049481e-09, -0.19999999, 0, 0.092641324, -8.742277e-09, 0.73134327, 0, 0.11357117)
@@ -1568,13 +1568,13 @@ transform = Transform3D(0.33375293, 0, 0, 0, 0.12212302, 0, 7.1054274e-15, 0, 0.
 transform = Transform3D(4.371139e-08, 0, 1.152, 0, 1, 0, 1, 0, -5.0355517e-08, -53.758442, 3.6352816, 197.51709)
 
 [node name="bisagra" parent="muebles/puertas/puerta3" index="1" unique_id=574221250]
-transform = Transform3D(1.9999998, 0, 0, 0, 8.384443, 0, 0, 0, 8.465699, 1.7767334, 5.4530277, 11.271633)
+transform = Transform3D(7.945118, 0, 0, 0, 8.384443, 0, 0, 0, 8.465698, 1.7730103, 5.4530277, 11.271629)
 
 [node name="puerta4" parent="muebles/puertas" unique_id=1181744021 instance=ExtResource("7_k6gqu")]
 transform = Transform3D(-4.371139e-08, 0, -1.0899953, 0, 1, 0, 1, 0, -4.7645205e-08, -59.241093, 3.6352816, 197.50447)
 
 [node name="bisagra" parent="muebles/puertas/puerta4" index="1" unique_id=574221250]
-transform = Transform3D(1.9999998, 0, 0, 0, 8.384443, 0, 0, 0, 8.465699, 1.7767334, 5.4530277, 5.8950157)
+transform = Transform3D(7.945118, 0, 0, 0, 8.384443, 0, 0, 0, 8.465697, 1.7354889, 5.4530277, 5.8950195)
 
 [node name="puerta_vidrio" type="Node3D" parent="muebles/puertas" unique_id=1282117324]
 transform = Transform3D(-3.934025e-07, 0, 8.91, 0, 10.703, 0, -9, 0, -3.8946845e-07, 70.72787, 11.547392, 17.923458)
