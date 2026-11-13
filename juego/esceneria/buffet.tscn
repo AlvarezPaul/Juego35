@@ -14,6 +14,7 @@
 [ext_resource type="PackedScene" uid="uid://c1reigh8kbpyi" path="res://esceneria/muebles/VentiladorBuffet.tscn" id="15_ofun0"]
 [ext_resource type="PackedScene" uid="uid://mrcyn6bs5xj0" path="res://esceneria/muebles/Matafuego.tscn" id="16_k2vi5"]
 [ext_resource type="PackedScene" uid="uid://cwauiheedoyvp" path="res://esceneria/muebles/Caloventor.tscn" id="16_ofun0"]
+[ext_resource type="PackedScene" uid="uid://dtgxr623tolhg" path="res://esceneria/muebles/lamparaapagada2.tscn" id="17_k2vi5"]
 [ext_resource type="PackedScene" uid="uid://bo648njdxych4" path="res://esceneria/muebles/microondas.tscn" id="30_microondas"]
 [ext_resource type="PackedScene" uid="uid://ddgkq3uy2ls5c" path="res://esceneria/muebles/mesamicro.tscn" id="31_mesamicro"]
 
@@ -292,6 +293,55 @@ height = 134.05923
 
 [sub_resource type="CylinderMesh" id="CylinderMesh_xrivr"]
 height = 201.84991
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_08l3y"]
+top_radius = 0.11767578
+bottom_radius = 0.11767578
+height = 0.47579956
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7o5yi"]
+transparency = 1
+albedo_color = Color(1, 1, 1, 0.28235295)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_2bepa"]
+top_radius = 0.123535156
+bottom_radius = 0.123535156
+height = 0.15026093
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mbxjk"]
+albedo_color = Color(1, 0, 0, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_svwvh"]
+top_radius = 0.110839844
+bottom_radius = 0.110839844
+height = 0.44853973
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cmyrn"]
+transparency = 1
+albedo_color = Color(0, 0, 0, 0.3137255)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_sw3c1"]
+top_radius = 0.044921875
+bottom_radius = 0.044921875
+height = 0.060287476
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_k2vi5"]
+albedo_color = Color(0, 0.4627451, 0, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bgda7"]
+albedo_color = Color(0, 0.30588236, 0, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_prrya"]
+albedo_color = Color(1, 0.4, 0, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rbkha"]
+albedo_color = Color(1, 0.27058825, 0, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vb7e2"]
+albedo_color = Color(0.22670749, 0.22670749, 0.22670746, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_60e1w"]
+albedo_color = Color(0, 0, 0.47058824, 1)
 
 [node name="buffet" type="Node3D" unique_id=2066006271]
 
@@ -1710,7 +1760,144 @@ transform = Transform3D(-0.88124144, 0.13765849, 2.3354795, 0.29082185, 2.482757
 transform = Transform3D(-6.556708e-08, 0, 1.5, 0, 1.5, 0, -1.5, 0, -6.556708e-08, -77.774574, 11.717392, 188.85558)
 
 [node name="Matafuego2" parent="." unique_id=1861792627 instance=ExtResource("16_k2vi5")]
-transform = Transform3D(-1.3, 0, -1.9629454e-07, 0, 1.3, 0, 1.9629454e-07, 0, -1.3, 38.13991, 14.20516, 198.33243)
+transform = Transform3D(-1.3, 0, -1.9629454e-07, 0, 1.3, 0, 1.9629454e-07, 0, -1.3, 37.126312, 14.20516, 198.33243)
+
+[node name="Lamparaapagada2" parent="." unique_id=1724601966 instance=ExtResource("17_k2vi5")]
+transform = Transform3D(-1.3113416e-07, 0, 3, 0, 3, 0, -3, 0, -1.3113416e-07, 55.374454, 44.485283, 181.19696)
+
+[node name="Lamparaapagada3" parent="." unique_id=1915108930 instance=ExtResource("17_k2vi5")]
+transform = Transform3D(-1.3113416e-07, 0, 3, 0, 3, 0, -3, 0, -1.3113416e-07, 55.374454, 44.485283, 136.19319)
+
+[node name="Lamparaapagada4" parent="." unique_id=1568599479 instance=ExtResource("17_k2vi5")]
+transform = Transform3D(-1.3113416e-07, 0, 3, 0, 3, 0, -3, 0, -1.3113416e-07, 55.374454, 44.485283, 93.06908)
+
+[node name="Lamparaapagada5" parent="." unique_id=2108237655 instance=ExtResource("17_k2vi5")]
+transform = Transform3D(-1.3113416e-07, 0, 3, 0, 3, 0, -3, 0, -1.3113416e-07, 55.374454, 44.485283, 48.267677)
+
+[node name="Lamparaapagada6" parent="." unique_id=1941541342 instance=ExtResource("17_k2vi5")]
+transform = Transform3D(-1.3113416e-07, 0, 3, 0, 3, 0, -3, 0, -1.3113416e-07, 15.851242, 44.485283, 45.83284)
+
+[node name="Lamparaapagada7" parent="." unique_id=1053282848 instance=ExtResource("17_k2vi5")]
+transform = Transform3D(-1.3113416e-07, 0, 3, 0, 3, 0, -3, 0, -1.3113416e-07, 15.851242, 44.485283, 89.978485)
+
+[node name="Lamparaapagada8" parent="." unique_id=1123882726 instance=ExtResource("17_k2vi5")]
+transform = Transform3D(-1.3113416e-07, 0, 3, 0, 3, 0, -3, 0, -1.3113416e-07, 15.851242, 44.485283, 125.14562)
+
+[node name="Lamparaapagada9" parent="." unique_id=470652986 instance=ExtResource("17_k2vi5")]
+transform = Transform3D(-1.3113416e-07, 0, 3, 0, 3, 0, -3, 0, -1.3113416e-07, 15.851242, 44.485283, 176.37347)
+
+[node name="Lamparaapagada10" parent="." unique_id=383044127 instance=ExtResource("17_k2vi5")]
+transform = Transform3D(-1.3113416e-07, 0, 3, 0, 3, 0, -3, 0, -1.3113416e-07, -15.937826, 44.485283, 45.83284)
+
+[node name="Lamparaapagada11" parent="." unique_id=1056627209 instance=ExtResource("17_k2vi5")]
+transform = Transform3D(-1.3113416e-07, 0, 3, 0, 3, 0, -3, 0, -1.3113416e-07, -15.937826, 44.485283, 89.978485)
+
+[node name="Lamparaapagada12" parent="." unique_id=1069038858 instance=ExtResource("17_k2vi5")]
+transform = Transform3D(-1.3113416e-07, 0, 3, 0, 3, 0, -3, 0, -1.3113416e-07, -15.937826, 44.485283, 125.14562)
+
+[node name="Lamparaapagada13" parent="." unique_id=697431900 instance=ExtResource("17_k2vi5")]
+transform = Transform3D(-1.3113416e-07, 0, 3, 0, 3, 0, -3, 0, -1.3113416e-07, -15.937826, 44.485283, 176.37347)
+
+[node name="Lamparaapagada15" parent="." unique_id=1730414003 instance=ExtResource("17_k2vi5")]
+transform = Transform3D(-1.3113416e-07, 0, 3, 0, 3, 0, -3, 0, -1.3113416e-07, -50.605083, 44.485283, 96.434616)
+
+[node name="Lamparaapagada16" parent="." unique_id=1215865791 instance=ExtResource("17_k2vi5")]
+transform = Transform3D(-1.3113416e-07, 0, 3, 0, 3, 0, -3, 0, -1.3113416e-07, -50.605083, 44.485283, 140.3977)
+
+[node name="Lamparaapagada17" parent="." unique_id=1024669900 instance=ExtResource("17_k2vi5")]
+transform = Transform3D(-1.3113416e-07, 0, 3, 0, 3, 0, -3, 0, -1.3113416e-07, -50.605083, 44.485283, 179.62956)
+
+[node name="BotellaPiso" type="Node3D" parent="." unique_id=173296675]
+transform = Transform3D(-0.5699983, 7.6226044, 2.3603017, -7.768684, 0.010447918, -1.9098308, -1.8228178, -2.4281297, 7.401455, -64.61688, 1.0245833, 82.45179)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="BotellaPiso" unique_id=1172226698]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.1794486, 0.023491621)
+mesh = SubResource("CylinderMesh_08l3y")
+surface_material_override/0 = SubResource("StandardMaterial3D_7o5yi")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="BotellaPiso" unique_id=1549840539]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.14966452, 0.023491621)
+mesh = SubResource("CylinderMesh_2bepa")
+surface_material_override/0 = SubResource("StandardMaterial3D_mbxjk")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="BotellaPiso" unique_id=1144297847]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.19307852, 0.023491621)
+mesh = SubResource("CylinderMesh_svwvh")
+surface_material_override/0 = SubResource("StandardMaterial3D_cmyrn")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="BotellaPiso" unique_id=1333340597]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, 0.084305525, 0.023491621)
+mesh = SubResource("CylinderMesh_sw3c1")
+surface_material_override/0 = SubResource("StandardMaterial3D_mbxjk")
+
+[node name="BotellaPiso3" type="Node3D" parent="." unique_id=1829180201]
+transform = Transform3D(-1.7479709, -3.2622056, 7.092435, -7.768684, 0.010447918, -1.9098308, 0.7695198, -7.3046513, -3.1701627, -9.98695, 1.0245833, 90.9338)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="BotellaPiso3" unique_id=824805439]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.1794486, 0.023491621)
+mesh = SubResource("CylinderMesh_08l3y")
+surface_material_override/0 = SubResource("StandardMaterial3D_7o5yi")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="BotellaPiso3" unique_id=508188531]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.14966452, 0.023491621)
+mesh = SubResource("CylinderMesh_2bepa")
+surface_material_override/0 = SubResource("StandardMaterial3D_k2vi5")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="BotellaPiso3" unique_id=1740671198]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.19307852, 0.023491621)
+mesh = SubResource("CylinderMesh_svwvh")
+surface_material_override/0 = SubResource("StandardMaterial3D_cmyrn")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="BotellaPiso3" unique_id=244095901]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, 0.084305525, 0.023491621)
+mesh = SubResource("CylinderMesh_sw3c1")
+surface_material_override/0 = SubResource("StandardMaterial3D_bgda7")
+
+[node name="BotellaPiso4" type="Node3D" parent="." unique_id=543266066]
+transform = Transform3D(1.6933452, -7.0112133, -6.926432, -9.710854, 0.013059897, -2.3872886, 1.6828249, 7.130408, -6.8062754, -9.98695, 1.0245833, 191.4561)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="BotellaPiso4" unique_id=1461017168]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.1794486, 0.023491621)
+mesh = SubResource("CylinderMesh_08l3y")
+surface_material_override/0 = SubResource("StandardMaterial3D_7o5yi")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="BotellaPiso4" unique_id=282356213]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.14966452, 0.023491621)
+mesh = SubResource("CylinderMesh_2bepa")
+surface_material_override/0 = SubResource("StandardMaterial3D_prrya")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="BotellaPiso4" unique_id=1047616358]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.19307852, 0.023491621)
+mesh = SubResource("CylinderMesh_svwvh")
+surface_material_override/0 = SubResource("StandardMaterial3D_cmyrn")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="BotellaPiso4" unique_id=68110754]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, 0.084305525, 0.023491621)
+mesh = SubResource("CylinderMesh_sw3c1")
+surface_material_override/0 = SubResource("StandardMaterial3D_rbkha")
+
+[node name="BotellaPiso2" type="Node3D" parent="." unique_id=1113634696]
+transform = Transform3D(0.62891316, 7.567691, -2.5168521, -7.768684, 0.010447918, -1.9098308, -1.8033389, 2.5942183, 7.3496947, -73.80264, 1.0245833, 91.79071)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="BotellaPiso2" unique_id=922412045]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.1794486, 0.023491621)
+mesh = SubResource("CylinderMesh_08l3y")
+surface_material_override/0 = SubResource("StandardMaterial3D_7o5yi")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="BotellaPiso2" unique_id=1686367914]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.14966452, 0.023491621)
+mesh = SubResource("CylinderMesh_2bepa")
+surface_material_override/0 = SubResource("StandardMaterial3D_vb7e2")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="BotellaPiso2" unique_id=1210665881]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, -0.19307852, 0.023491621)
+mesh = SubResource("CylinderMesh_svwvh")
+surface_material_override/0 = SubResource("StandardMaterial3D_cmyrn")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="BotellaPiso2" unique_id=11003501]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1487931, 0.084305525, 0.023491621)
+mesh = SubResource("CylinderMesh_sw3c1")
+surface_material_override/0 = SubResource("StandardMaterial3D_60e1w")
 
 [editable path="muebles/puertas/puerta"]
 [editable path="muebles/puertas/puerta2"]

@@ -203,10 +203,9 @@ libraries/ = SubResource("AnimationLibrary_ji847")
 [node name="bisagra" type="Node3D" parent="puertab" unique_id=1130562944]
 transform = Transform3D(1.9999999, 0, 0, 0, 2, 0, 0, 0, 1.9999999, 0, 0, 1.7398701)
 
-[node name="modelo" type="StaticBody3D" parent="puertab/bisagra" unique_id=953826261 node_paths=PackedStringArray("animation_player")]
+[node name="modelo" type="StaticBody3D" parent="puertab/bisagra" unique_id=953826261]
 transform = Transform3D(-2.1855683e-08, 0, 0.4999998, 0, 0.5, 0, -0.4999998, 0, -2.1855683e-08, -0.009692408, 0, -0.87432086)
 script = ExtResource("3_2lrjh")
-animation_player = NodePath("")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="puertab/bisagra/modelo" unique_id=312839440]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.45218948, 0.11376953, 0.027923591)
@@ -291,7 +290,7 @@ mesh = SubResource("BoxMesh_8525h")
 skeleton = NodePath("../../../..")
 
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="puertab/bisagra/modelo" unique_id=2113242402]
-transform = Transform3D(1.0000005, 0, -1.7484561e-07, 0, 1, 0, 1.7484561e-07, 0, 1.0000005, -0.07052338, 0, 1.857495)
+transform = Transform3D(1.0000005, 0, -1.7484562e-07, 0, 1, 0, 1.7484562e-07, 0, 1.0000005, 2.216635, 0, -0.013132349)
 volume_db = -7.0
 max_db = -4.0
 

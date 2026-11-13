@@ -39,9 +39,8 @@ func recoger(jugador) -> void:
 		print("Inventario lleno.")
 		return
 
-	if Mensajetexto.mensaje_ganzua == false:
-		Mensajetexto.mensaje_mostrar("Lo encontraste, ahora abrí la puerta.", 4.0)
-		Mensajetexto.mensaje_ganzua = true
+	# Avanza el cartel de objetivos
+	Objetivos.completar("encontrar_ganzua")
 
 	# Equiparlo automáticamente.
 	jugador.slot_actual = slot + 1

@@ -50,6 +50,9 @@ func recoger(jugador) -> void:
 	if inventario.has_method("marcar_slot_equipado"):
 		inventario.marcar_slot_equipado(slot_a_usar)
 
+	# Avanza el cartel de objetivos
+	Objetivos.completar("buscar_llave_cantina")
+
 	# CORRECCIÓN DE BORRADO: 
 	# Nos aseguramos de borrar el nodo contenedor (raíz) o este nodo de forma segura.
 	if raiz != null and raiz != get_tree().current_scene:

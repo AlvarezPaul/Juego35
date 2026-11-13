@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://c30ws13v1rwi0"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0bynw"]
+albedo_color = Color(0.19452819, 0.078106485, 0.007964749, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_spqb3"]
+
+[node name="Casillerolab" type="Node3D" unique_id=1236116213]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=23480629]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.0692954, 0, 0)
+material_override = SubResource("StandardMaterial3D_0bynw")
+mesh = SubResource("BoxMesh_spqb3")

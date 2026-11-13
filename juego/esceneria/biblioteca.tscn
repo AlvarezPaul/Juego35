@@ -921,7 +921,7 @@ transform = Transform3D(0.708005, 0, 0, 0, 0.23974776, 0, 0, 0, 0.7604645, 6.248
 transform = Transform3D(0.708005, 0, 0, 0, 0.23974776, 0, 0, 0, 0.7604645, 6.24825, 4.9027696, -10.021019)
 
 [node name="Puertabiblioteca" parent="." unique_id=530576390 instance=ExtResource("8_yyxt8")]
-transform = Transform3D(0.99724966, 0, 0, 0, 0.59831303, 0, 0, 0, 0.5222111, 17.989702, 1.0866355, -2.190774)
+transform = Transform3D(0.99724966, 0, 0, 0, 0.59831303, 0, 0, 0, 0.5222111, 18.017637, 1.1087397, -2.2211537)
 
 [node name="MeshInstance3D174" type="MeshInstance3D" parent="." unique_id=1067396037]
 transform = Transform3D(-2.9876512e-09, 0, 0.06980344, 0, 0.7509311, 0, -0.07011701, 0, -1.9565107e-09, 18.074326, 2.2813847, -2.6149504)
