@@ -97,7 +97,9 @@ func interact():
 
 	if abierto:
 		animation_player.play("abrir")
-		Mensajetexto.mensaje_mostrar("Explorá la escuela y buscá la salida.")
+		# Solo avanza si la abriste usando la ganzúa
+		if abre_con_item:
+			Objetivos.completar("abrir_banio")
 	else:
 		animation_player.play("cerrar")
 

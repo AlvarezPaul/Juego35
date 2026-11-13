@@ -22,13 +22,16 @@ func _ready() -> void:
 
 	$AnimacionFadeIn/AnimacionFadeIn.play("fade_in")
 	Mensajetexto.label = label
-	Mensajetexto.mensaje_mostrar("Te quedaste atrapado en el baño, debes buscar algo para salir de aquí.", 7.0)
+
+	# Cartel de objetivos fijo (arriba a la izquierda). Ver UI/objetivos.gd
+	Objetivos.iniciar(self)
 
 func _on_salida_final_body_entered(body: Node3D) -> void:
 	if body.name != "Jugador" or partida_terminada:
 		return
 
 	partida_terminada = true
+	Objetivos.ocultar()
 	Cronometro.detener()
 	$PantallaFinal/TiempoValor.text = Cronometro.formato()
 	$Jugador/Node2D/CanvasLayer/Control.partida_terminada = true

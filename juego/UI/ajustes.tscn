@@ -123,10 +123,10 @@ stretch_mode = 6
 
 [node name="Cont de Sliders y CheckBox" type="VBoxContainer" parent="." unique_id=1674673960]
 layout_mode = 0
-offset_left = 597.3779
-offset_top = 162.45316
-offset_right = 810.3779
-offset_bottom = 530.4531
+offset_left = 624.22644
+offset_top = 168.2849
+offset_right = 837.22644
+offset_bottom = 536.2849
 theme_override_constants/separation = 65
 
 [node name="barra_sonidos" parent="Cont de Sliders y CheckBox" unique_id=1664845339 instance=ExtResource("4_56yal")]

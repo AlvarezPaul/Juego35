@@ -42,6 +42,9 @@ func recoger(jugador) -> void:
 	jugador._actualizar_item_en_mano(slot + 1)
 	inventario.marcar_slot_equipado(slot + 1)
 
+	# Avanza el cartel de objetivos
+	Objetivos.completar("buscar_llave_reja")
+
 	# Borrar el objeto del suelo (nodo raíz completo si tiene padre)
 	if raiz != null and raiz.scene_file_path != "":
 		raiz.queue_free()
