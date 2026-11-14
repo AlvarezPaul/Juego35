@@ -1,13 +1,103 @@
 [gd_scene format=3 uid="uid://dowur2vef7tna"]
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_vttyp"]
-size = Vector3(2.4010925, 3.4892578, 1)
+[ext_resource type="AudioStream" uid="uid://ctscdktps5mq" path="res://puerta/dragon-studio-opening-door-450444.mp3" id="1_4v36x"]
+[ext_resource type="Script" uid="uid://dus26dbbxparo" path="res://esceneria/modelo.gd" id="1_sldxf"]
+[ext_resource type="AudioStream" uid="uid://tirloem7686m" path="res://puerta/dragon-studio-close-door-382723.mp3" id="2_0gf0i"]
+
+[sub_resource type="Animation" id="Animation_rplcq"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("bisagra:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_vttyp"]
+resource_name = "abrir"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("bisagra:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0, 1.5707964, 0)]
+}
+tracks/1/type = "audio"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("bisagra/modelo/AudioStreamPlayer3D")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("1_4v36x")
+}],
+"times": PackedFloat32Array(0)
+}
+tracks/1/use_blend = true
+
+[sub_resource type="Animation" id="Animation_m1o6o"]
+resource_name = "cerrar"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("bisagra:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 1.5707964, 0), Vector3(0, 0, 0)]
+}
+tracks/1/type = "audio"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("bisagra/modelo/AudioStreamPlayer3D")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("2_0gf0i")
+}],
+"times": PackedFloat32Array(1.0333333)
+}
+tracks/1/use_blend = true
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_sldxf"]
+_data = {
+&"RESET": SubResource("Animation_rplcq"),
+&"abrir": SubResource("Animation_vttyp"),
+&"cerrar": SubResource("Animation_m1o6o")
+}
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_spqb3"]
+size = Vector3(2.4907837, 3.676361, 0.31072998)
 
 [sub_resource type="BoxMesh" id="BoxMesh_sldxf"]
 size = Vector3(1, 1.6591797, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3bbyd"]
 albedo_color = Color(0.5421505, 0.89267945, 0.76498085, 1)
+metallic = 0.8
+roughness = 0.58
 
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_4v36x"]
 data = PackedVector3Array(-0.5, 0.8296, 0.5, 0.5, 0.8296, 0.5, -0.5, -0.8296, 0.5, 0.5, 0.8296, 0.5, 0.5, -0.8296, 0.5, -0.5, -0.8296, 0.5, 0.5, 0.8296, -0.5, -0.5, 0.8296, -0.5, 0.5, -0.8296, -0.5, -0.5, 0.8296, -0.5, -0.5, -0.8296, -0.5, 0.5, -0.8296, -0.5, 0.5, 0.8296, 0.5, 0.5, 0.8296, -0.5, 0.5, -0.8296, 0.5, 0.5, 0.8296, -0.5, 0.5, -0.8296, -0.5, 0.5, -0.8296, 0.5, -0.5, 0.8296, -0.5, -0.5, 0.8296, 0.5, -0.5, -0.8296, -0.5, -0.5, 0.8296, 0.5, -0.5, -0.8296, 0.5, -0.5, -0.8296, -0.5, 0.5, 0.8296, 0.5, -0.5, 0.8296, 0.5, 0.5, 0.8296, -0.5, -0.5, 0.8296, 0.5, -0.5, 0.8296, -0.5, 0.5, 0.8296, -0.5, -0.5, -0.8296, 0.5, 0.5, -0.8296, 0.5, -0.5, -0.8296, -0.5, 0.5, -0.8296, 0.5, 0.5, -0.8296, -0.5, -0.5, -0.8296, -0.5)
@@ -18,15 +108,19 @@ data = PackedVector3Array(-0.5, 0.8296, 0.5, 0.5, 0.8296, 0.5, -0.5, -0.8296, 0.
 
 [node name="Node3D" type="Node3D" unique_id=1697853832]
 
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=787772320]
+libraries/ = SubResource("AnimationLibrary_sldxf")
+
 [node name="bisagra" type="Node3D" parent="." unique_id=41643374]
 transform = Transform3D(1.9999999, 0, 0, 0, 2, 0, 0, 0, 1.9999999, 0, 0, 1.7398701)
 
 [node name="modelo" type="StaticBody3D" parent="bisagra" unique_id=1521189288]
 transform = Transform3D(-2.1855683e-08, 0, 0.4999998, 0, 0.5, 0, -0.4999998, 0, -2.1855683e-08, -0.009692408, 0, -0.87432086)
+script = ExtResource("1_sldxf")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="bisagra/modelo" unique_id=1761806803]
-transform = Transform3D(1.09, 0, 0, 0, 1.13, 0, 0, 0, 0.365, -0.45218948, 0.0011115074, -1.8626451e-09)
-shape = SubResource("BoxShape3D_vttyp")
+[node name="CollisionShape3D" type="CollisionShape3D" parent="bisagra/modelo" unique_id=790226484]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.42398074, 0.028213501, 0.02835084)
+shape = SubResource("BoxShape3D_spqb3")
 
 [node name="MeshInstance3D4" type="MeshInstance3D" parent="bisagra/modelo" unique_id=2031397875]
 transform = Transform3D(2.566, 0, 0, 0, 2.283, 0, 0, 0, 0.2, -0.4271884, 0.005919218, -8.195639e-08)
@@ -40,21 +134,26 @@ surface_material_override/0 = SubResource("StandardMaterial3D_3bbyd")
 shape = SubResource("ConcavePolygonShape3D_4v36x")
 
 [node name="MeshInstance3D8" type="MeshInstance3D" parent="bisagra/modelo" unique_id=1801352600]
-transform = Transform3D(0.2, 0, 0, 0, -2.1855695e-09, -0.2, 0, 0.05, -8.742278e-09, 0.7313428, 0, 0.14594291)
+transform = Transform3D(0.2, 0, -5.293956e-23, 0, -2.1855695e-09, -0.2, 0, 0.05, -8.742278e-09, 0.6044494, 0, 0.14594305)
 mesh = SubResource("CylinderMesh_0gf0i")
 skeleton = NodePath("../../..")
 
 [node name="MeshInstance3D9" type="MeshInstance3D" parent="bisagra/modelo" unique_id=930870113]
-transform = Transform3D(0.33375284, 0, 0, 0, 0.12212301, 0, 0, 0, 0.076321654, 0.57213235, 0, 0.22189146)
+transform = Transform3D(0.33375284, 0, 0, 0, 0.12212301, 0, 0, 0, 0.076321654, 0.4452387, 0, 0.22189152)
 mesh = SubResource("BoxMesh_rplcq")
 skeleton = NodePath("../../..")
 
 [node name="MeshInstance3D10" type="MeshInstance3D" parent="bisagra/modelo" unique_id=230123964]
-transform = Transform3D(0.2, 0, -2.646978e-23, 0, -2.1855695e-09, -0.2, 0, 0.05, -8.742278e-09, 0.7313428, 0, -0.15103665)
+transform = Transform3D(0.2, 0, -5.293956e-23, 0, -2.1855695e-09, -0.2, 0, 0.05, -8.742278e-09, 0.6044494, 0, -0.15103662)
 mesh = SubResource("CylinderMesh_0gf0i")
 skeleton = NodePath("../../..")
 
 [node name="MeshInstance3D11" type="MeshInstance3D" parent="bisagra/modelo" unique_id=269351706]
-transform = Transform3D(0.33375284, 0, 0, 0, 0.12212301, 0, 2.6645353e-15, 0, 0.076321654, 0.57213235, 0, -0.23815197)
+transform = Transform3D(0.33375284, 0, 0, 0, 0.12212301, 0, 1.7763568e-15, 0, 0.076321654, 0.4452387, 0, -0.23815191)
 mesh = SubResource("BoxMesh_rplcq")
 skeleton = NodePath("../../..")
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="bisagra/modelo" unique_id=2135249765]
+transform = Transform3D(-2.1855705e-07, 0, -1.0000005, 0, 1, 0, 1.0000005, 0, -2.1855705e-07, 0.00436081, 0, 0.085023634)
+volume_db = -7.0
+max_db = -4.0

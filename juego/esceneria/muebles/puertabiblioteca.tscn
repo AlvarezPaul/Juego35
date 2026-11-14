@@ -32,7 +32,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 1.5),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector3(0, 0, 0), Vector3(0, 0, 0)]
+"values": [Vector3(0, 0, 0), Vector3(0, 1.5707964, 0)]
 }
 tracks/1/type = "audio"
 tracks/1/imported = false
@@ -77,7 +77,7 @@ tracks/1/keys = {
 "start_offset": 0.0,
 "stream": ExtResource("2_t18kp")
 }],
-"times": PackedFloat32Array(0.9324)
+"times": PackedFloat32Array(1.0666667)
 }
 tracks/1/use_blend = true
 
@@ -153,7 +153,33 @@ tracks/0/keys = {
 [sub_resource type="Animation" id="Animation_t18kp"]
 resource_name = "abrir"
 length = 1.5
-loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("bisagra2:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0, -1.5707964, 0)]
+}
+tracks/1/type = "audio"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("bisagra2/modelo/AudioStreamPlayer3D")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("1_kaxel")
+}],
+"times": PackedFloat32Array(0)
+}
+tracks/1/use_blend = true
 
 [sub_resource type="Animation" id="Animation_tyfl8"]
 resource_name = "cerrar"
@@ -182,7 +208,7 @@ tracks/1/keys = {
 "start_offset": 0.0,
 "stream": ExtResource("2_t18kp")
 }],
-"times": PackedFloat32Array(0.9324)
+"times": PackedFloat32Array(1.0666667)
 }
 tracks/1/use_blend = true
 
@@ -203,9 +229,10 @@ libraries/ = SubResource("AnimationLibrary_ji847")
 [node name="bisagra" type="Node3D" parent="puertab" unique_id=1130562944]
 transform = Transform3D(1.9999999, 0, 0, 0, 2, 0, 0, 0, 1.9999999, 0, 0, 1.7398701)
 
-[node name="modelo" type="StaticBody3D" parent="puertab/bisagra" unique_id=953826261]
+[node name="modelo" type="StaticBody3D" parent="puertab/bisagra" unique_id=953826261 node_paths=PackedStringArray("animation_player")]
 transform = Transform3D(-2.1855683e-08, 0, 0.4999998, 0, 0.5, 0, -0.4999998, 0, -2.1855683e-08, -0.009692408, 0, -0.87432086)
 script = ExtResource("3_2lrjh")
+animation_player = NodePath("../../AnimationPlayer")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="puertab/bisagra/modelo" unique_id=312839440]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.45218948, 0.11376953, 0.027923591)
@@ -303,9 +330,10 @@ libraries/ = SubResource("AnimationLibrary_2lrjh")
 [node name="bisagra2" type="Node3D" parent="puertab2" unique_id=1863611158]
 transform = Transform3D(1.9999994, 0, 0, 0, 2, 0, 0, 0, 1.9999994, -0.042366385, 0, -0.8793869)
 
-[node name="modelo" type="StaticBody3D" parent="puertab2/bisagra2" unique_id=2130451558]
+[node name="modelo" type="StaticBody3D" parent="puertab2/bisagra2" unique_id=2130451558 node_paths=PackedStringArray("animation_player")]
 transform = Transform3D(-2.1855683e-08, 0, 0.4999998, 0, 0.5, 0, -0.4999998, 0, -2.1855683e-08, -0.009692408, 0, -0.87432086)
 script = ExtResource("3_2lrjh")
+animation_player = NodePath("../../AnimationPlayer")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="puertab2/bisagra2/modelo" unique_id=810112506]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.45218948, 0.11376953, 0.027923591)
@@ -390,6 +418,6 @@ mesh = SubResource("BoxMesh_8525h")
 skeleton = NodePath("../../../..")
 
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="puertab2/bisagra2/modelo" unique_id=2099839798]
-transform = Transform3D(1.3113426e-07, 0, 1.0000007, 0, 1, 0, -1.0000007, 0, 1.3113426e-07, 1.8381091, 0, 0.061751712)
+transform = Transform3D(1.3113424e-07, 0, 1.0000007, 0, 1, 0, -1.0000007, 0, 1.3113424e-07, -0.5546601, 0, 0.061751395)
 volume_db = -7.0
 max_db = -4.0

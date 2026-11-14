@@ -1,13 +1,67 @@
 [gd_scene format=3 uid="uid://c30ws13v1rwi0"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0bynw"]
-albedo_color = Color(0.19452819, 0.078106485, 0.007964749, 1)
+albedo_color = Color(0.24304157, 0.09648698, 0, 1)
+metallic = 0.79
+roughness = 0.6
 
 [sub_resource type="BoxMesh" id="BoxMesh_spqb3"]
+size = Vector3(0.9063721, 3.050415, 1.9885254)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_0bynw"]
+data = PackedVector3Array(-0.45319998, 1.5252, 0.99429995, 0.45319998, 1.5252, 0.99429995, -0.45319998, -1.5252, 0.99429995, 0.45319998, 1.5252, 0.99429995, 0.45319998, -1.5252, 0.99429995, -0.45319998, -1.5252, 0.99429995, 0.45319998, 1.5252, -0.99429995, -0.45319998, 1.5252, -0.99429995, 0.45319998, -1.5252, -0.99429995, -0.45319998, 1.5252, -0.99429995, -0.45319998, -1.5252, -0.99429995, 0.45319998, -1.5252, -0.99429995, 0.45319998, 1.5252, 0.99429995, 0.45319998, 1.5252, -0.99429995, 0.45319998, -1.5252, 0.99429995, 0.45319998, 1.5252, -0.99429995, 0.45319998, -1.5252, -0.99429995, 0.45319998, -1.5252, 0.99429995, -0.45319998, 1.5252, -0.99429995, -0.45319998, 1.5252, 0.99429995, -0.45319998, -1.5252, -0.99429995, -0.45319998, 1.5252, 0.99429995, -0.45319998, -1.5252, 0.99429995, -0.45319998, -1.5252, -0.99429995, 0.45319998, 1.5252, 0.99429995, -0.45319998, 1.5252, 0.99429995, 0.45319998, 1.5252, -0.99429995, -0.45319998, 1.5252, 0.99429995, -0.45319998, 1.5252, -0.99429995, 0.45319998, 1.5252, -0.99429995, -0.45319998, -1.5252, 0.99429995, 0.45319998, -1.5252, 0.99429995, -0.45319998, -1.5252, -0.99429995, 0.45319998, -1.5252, 0.99429995, 0.45319998, -1.5252, -0.99429995, -0.45319998, -1.5252, -0.99429995)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_0bynw"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_50yrh"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jjbvp"]
+albedo_color = Color(0.7019608, 0.6039216, 0.5529412, 1)
+metallic = 0.8
+metallic_specular = 0.55
+roughness = 0.6
+
+[sub_resource type="BoxMesh" id="BoxMesh_55b8n"]
+size = Vector3(0.010253906, 2.9319763, 0.9430542)
 
 [node name="Casillerolab" type="Node3D" unique_id=1236116213]
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=23480629]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.0692954, 0, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.4614523, 1.526022, 1.0273829)
 material_override = SubResource("StandardMaterial3D_0bynw")
 mesh = SubResource("BoxMesh_spqb3")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D" unique_id=213406512]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D/StaticBody3D" unique_id=1261698875]
+shape = SubResource("ConcavePolygonShape3D_0bynw")
+
+[node name="MeshInstance3D8" type="MeshInstance3D" parent="." unique_id=2055961312]
+transform = Transform3D(-6.9252395e-09, -0.05, 5.572041e-09, 0, -2.1855695e-09, -0.12747344, 0.15843101, -2.1855695e-09, 2.4356165e-16, -0.9382571, 1.6012974, 0.81789994)
+mesh = SubResource("CylinderMesh_0bynw")
+skeleton = NodePath("../../..")
+
+[node name="MeshInstance3D9" type="MeshInstance3D" parent="." unique_id=1458129860]
+transform = Transform3D(-1.155659e-08, 0, -0.076321654, 0, 0.0778372, 0, 0.264384, 0, -3.3361254e-09, -1.0267874, 1.6012974, 0.6970382)
+mesh = SubResource("BoxMesh_50yrh")
+skeleton = NodePath("../../..")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="." unique_id=1940652835]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.9115827, 1.5346432, 0.54389286)
+material_override = SubResource("StandardMaterial3D_jjbvp")
+mesh = SubResource("BoxMesh_55b8n")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="." unique_id=404514853]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.9115827, 1.5346432, 1.5109507)
+material_override = SubResource("StandardMaterial3D_jjbvp")
+mesh = SubResource("BoxMesh_55b8n")
+
+[node name="MeshInstance3D10" type="MeshInstance3D" parent="." unique_id=1050804538]
+transform = Transform3D(-6.9252395e-09, -0.05, 5.572041e-09, 0, -2.1855695e-09, -0.12747344, 0.15843101, -2.1855695e-09, 2.4356165e-16, -0.924484, 1.6012974, 1.2474893)
+mesh = SubResource("CylinderMesh_0bynw")
+skeleton = NodePath("../../..")
+
+[node name="MeshInstance3D11" type="MeshInstance3D" parent="." unique_id=1692652568]
+transform = Transform3D(-1.1556592e-08, 0, -0.076321654, 0, 0.0778372, 0, 0.264384, 0, -3.3361254e-09, -1.0405605, 1.6012974, 1.3604084)
+mesh = SubResource("BoxMesh_50yrh")
+skeleton = NodePath("../../..")
