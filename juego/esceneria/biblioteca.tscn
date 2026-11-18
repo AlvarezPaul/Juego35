@@ -5,9 +5,15 @@
 [ext_resource type="PackedScene" uid="uid://cobvhlm7nqiqs" path="res://esceneria/muebles/libros.tscn" id="4_1lnsv"]
 [ext_resource type="PackedScene" uid="uid://dody7j0l0eivw" path="res://esceneria/muebles/mesa_biblioteca.tscn" id="4_g2yyw"]
 [ext_resource type="PackedScene" uid="uid://wp17yxi1w5un" path="res://esceneria/muebles/libros2.tscn" id="5_1lnsv"]
+[ext_resource type="PackedScene" uid="uid://c1reigh8kbpyi" path="res://esceneria/muebles/VentiladorBuffet.tscn" id="6_htqvi"]
+[ext_resource type="PackedScene" uid="uid://dgfv10n6t31c1" path="res://esceneria/muebles/lampara_encendida.tscn" id="7_qnk4k"]
+[ext_resource type="PackedScene" uid="uid://bqeavcxg3idhj" path="res://esceneria/muebles/puertabiblioteca.tscn" id="8_yyxt8"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ao8tt"]
+albedo_color = Color(0.19459581, 0.062046513, 0.0014748645, 1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_spqb3"]
-size = Vector3(16.50158, 0.045898438, 12.003708)
+size = Vector3(16.50158, 0.045898438, 12.560448)
 
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_yyxt8"]
 data = PackedVector3Array(-8.2508, 0.0229, 6.0018997, 8.2508, 0.0229, 6.0018997, -8.2508, -0.0229, 6.0018997, 8.2508, 0.0229, 6.0018997, 8.2508, -0.0229, 6.0018997, -8.2508, -0.0229, 6.0018997, 8.2508, 0.0229, -6.0018997, -8.2508, 0.0229, -6.0018997, 8.2508, -0.0229, -6.0018997, -8.2508, 0.0229, -6.0018997, -8.2508, -0.0229, -6.0018997, 8.2508, -0.0229, -6.0018997, 8.2508, 0.0229, 6.0018997, 8.2508, 0.0229, -6.0018997, 8.2508, -0.0229, 6.0018997, 8.2508, 0.0229, -6.0018997, 8.2508, -0.0229, -6.0018997, 8.2508, -0.0229, 6.0018997, -8.2508, 0.0229, -6.0018997, -8.2508, 0.0229, 6.0018997, -8.2508, -0.0229, -6.0018997, -8.2508, 0.0229, 6.0018997, -8.2508, -0.0229, 6.0018997, -8.2508, -0.0229, -6.0018997, 8.2508, 0.0229, 6.0018997, -8.2508, 0.0229, 6.0018997, 8.2508, 0.0229, -6.0018997, -8.2508, 0.0229, 6.0018997, -8.2508, 0.0229, -6.0018997, 8.2508, 0.0229, -6.0018997, -8.2508, -0.0229, 6.0018997, 8.2508, -0.0229, 6.0018997, -8.2508, -0.0229, -6.0018997, 8.2508, -0.0229, 6.0018997, 8.2508, -0.0229, -6.0018997, -8.2508, -0.0229, -6.0018997)
@@ -31,7 +37,7 @@ size = Vector3(3.5766122, 5.118866, 0.15211868)
 data = PackedVector3Array(-1.7882999, 2.5593998, 0.0761, 1.7882999, 2.5593998, 0.0761, -1.7882999, -2.5593998, 0.0761, 1.7882999, 2.5593998, 0.0761, 1.7882999, -2.5593998, 0.0761, -1.7882999, -2.5593998, 0.0761, 1.7882999, 2.5593998, -0.0761, -1.7882999, 2.5593998, -0.0761, 1.7882999, -2.5593998, -0.0761, -1.7882999, 2.5593998, -0.0761, -1.7882999, -2.5593998, -0.0761, 1.7882999, -2.5593998, -0.0761, 1.7882999, 2.5593998, 0.0761, 1.7882999, 2.5593998, -0.0761, 1.7882999, -2.5593998, 0.0761, 1.7882999, 2.5593998, -0.0761, 1.7882999, -2.5593998, -0.0761, 1.7882999, -2.5593998, 0.0761, -1.7882999, 2.5593998, -0.0761, -1.7882999, 2.5593998, 0.0761, -1.7882999, -2.5593998, -0.0761, -1.7882999, 2.5593998, 0.0761, -1.7882999, -2.5593998, 0.0761, -1.7882999, -2.5593998, -0.0761, 1.7882999, 2.5593998, 0.0761, -1.7882999, 2.5593998, 0.0761, 1.7882999, 2.5593998, -0.0761, -1.7882999, 2.5593998, 0.0761, -1.7882999, 2.5593998, -0.0761, 1.7882999, 2.5593998, -0.0761, -1.7882999, -2.5593998, 0.0761, 1.7882999, -2.5593998, 0.0761, -1.7882999, -2.5593998, -0.0761, 1.7882999, -2.5593998, 0.0761, 1.7882999, -2.5593998, -0.0761, -1.7882999, -2.5593998, -0.0761)
 
 [sub_resource type="BoxMesh" id="BoxMesh_ywdlq"]
-size = Vector3(0.09786987, 5.0706406, 12.118576)
+size = Vector3(0.09786987, 5.0706406, 12.597862)
 
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_vth2o"]
 data = PackedVector3Array(-0.048899997, 2.0915, 5.0271997, 0.048899997, 2.0915, 5.0271997, -0.048899997, -2.0915, 5.0271997, 0.048899997, 2.0915, 5.0271997, 0.048899997, -2.0915, 5.0271997, -0.048899997, -2.0915, 5.0271997, 0.048899997, 2.0915, -5.0271997, -0.048899997, 2.0915, -5.0271997, 0.048899997, -2.0915, -5.0271997, -0.048899997, 2.0915, -5.0271997, -0.048899997, -2.0915, -5.0271997, 0.048899997, -2.0915, -5.0271997, 0.048899997, 2.0915, 5.0271997, 0.048899997, 2.0915, -5.0271997, 0.048899997, -2.0915, 5.0271997, 0.048899997, 2.0915, -5.0271997, 0.048899997, -2.0915, -5.0271997, 0.048899997, -2.0915, 5.0271997, -0.048899997, 2.0915, -5.0271997, -0.048899997, 2.0915, 5.0271997, -0.048899997, -2.0915, -5.0271997, -0.048899997, 2.0915, 5.0271997, -0.048899997, -2.0915, 5.0271997, -0.048899997, -2.0915, -5.0271997, 0.048899997, 2.0915, 5.0271997, -0.048899997, 2.0915, 5.0271997, 0.048899997, 2.0915, -5.0271997, -0.048899997, 2.0915, 5.0271997, -0.048899997, 2.0915, -5.0271997, 0.048899997, 2.0915, -5.0271997, -0.048899997, -2.0915, 5.0271997, 0.048899997, -2.0915, 5.0271997, -0.048899997, -2.0915, -5.0271997, 0.048899997, -2.0915, 5.0271997, 0.048899997, -2.0915, -5.0271997, -0.048899997, -2.0915, -5.0271997)
@@ -55,7 +61,7 @@ data = PackedVector3Array(-0.45299998, 0.64519995, 4.4660997, 0.45299998, 0.6451
 size = Vector3(0.09786987, 2.846014, 7.9949636)
 
 [sub_resource type="BoxMesh" id="BoxMesh_qnk4k"]
-size = Vector3(16.359756, 0.045898438, 12.003708)
+size = Vector3(16.359756, 0.045898438, 12.46096)
 
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_g2yyw"]
 data = PackedVector3Array(-9.266, 0.0229, 6.0018997, 9.266, 0.0229, 6.0018997, -9.266, -0.0229, 6.0018997, 9.266, 0.0229, 6.0018997, 9.266, -0.0229, 6.0018997, -9.266, -0.0229, 6.0018997, 9.266, 0.0229, -6.0018997, -9.266, 0.0229, -6.0018997, 9.266, -0.0229, -6.0018997, -9.266, 0.0229, -6.0018997, -9.266, -0.0229, -6.0018997, 9.266, -0.0229, -6.0018997, 9.266, 0.0229, 6.0018997, 9.266, 0.0229, -6.0018997, 9.266, -0.0229, 6.0018997, 9.266, 0.0229, -6.0018997, 9.266, -0.0229, -6.0018997, 9.266, -0.0229, 6.0018997, -9.266, 0.0229, -6.0018997, -9.266, 0.0229, 6.0018997, -9.266, -0.0229, -6.0018997, -9.266, 0.0229, 6.0018997, -9.266, -0.0229, 6.0018997, -9.266, -0.0229, -6.0018997, 9.266, 0.0229, 6.0018997, -9.266, 0.0229, 6.0018997, 9.266, 0.0229, -6.0018997, -9.266, 0.0229, 6.0018997, -9.266, 0.0229, -6.0018997, 9.266, 0.0229, -6.0018997, -9.266, -0.0229, 6.0018997, 9.266, -0.0229, 6.0018997, -9.266, -0.0229, -6.0018997, 9.266, -0.0229, 6.0018997, 9.266, -0.0229, -6.0018997, -9.266, -0.0229, -6.0018997)
@@ -92,46 +98,34 @@ size = Vector3(0.9097737, 5.118866, 0.15553665)
 [sub_resource type="BoxMesh" id="BoxMesh_ph0u7"]
 size = Vector3(0.8986649, 5.118866, 0.15553665)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_usv3w"]
-albedo_color = Color(0.275893, 0.12475567, 0.050744563, 1)
-
-[sub_resource type="BoxMesh" id="BoxMesh_skjrh"]
-size = Vector3(0.91015625, 1.2904968, 3.0685134)
-
-[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_s3cim"]
-data = PackedVector3Array(-0.4551, 0.64519995, 1.5343, 0.4551, 0.64519995, 1.5343, -0.4551, -0.64519995, 1.5343, 0.4551, 0.64519995, 1.5343, 0.4551, -0.64519995, 1.5343, -0.4551, -0.64519995, 1.5343, 0.4551, 0.64519995, -1.5343, -0.4551, 0.64519995, -1.5343, 0.4551, -0.64519995, -1.5343, -0.4551, 0.64519995, -1.5343, -0.4551, -0.64519995, -1.5343, 0.4551, -0.64519995, -1.5343, 0.4551, 0.64519995, 1.5343, 0.4551, 0.64519995, -1.5343, 0.4551, -0.64519995, 1.5343, 0.4551, 0.64519995, -1.5343, 0.4551, -0.64519995, -1.5343, 0.4551, -0.64519995, 1.5343, -0.4551, 0.64519995, -1.5343, -0.4551, 0.64519995, 1.5343, -0.4551, -0.64519995, -1.5343, -0.4551, 0.64519995, 1.5343, -0.4551, -0.64519995, 1.5343, -0.4551, -0.64519995, -1.5343, 0.4551, 0.64519995, 1.5343, -0.4551, 0.64519995, 1.5343, 0.4551, 0.64519995, -1.5343, -0.4551, 0.64519995, 1.5343, -0.4551, 0.64519995, -1.5343, 0.4551, 0.64519995, -1.5343, -0.4551, -0.64519995, 1.5343, 0.4551, -0.64519995, 1.5343, -0.4551, -0.64519995, -1.5343, 0.4551, -0.64519995, 1.5343, 0.4551, -0.64519995, -1.5343, -0.4551, -0.64519995, -1.5343)
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_aqb43"]
-albedo_color = Color(0.31764707, 0.15686275, 0.03529412, 1)
-
-[sub_resource type="BoxMesh" id="BoxMesh_o3jbk"]
-size = Vector3(1.2226291, 2.9970703, 0.06655502)
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tus2n"]
-albedo_color = Color(0.3187068, 0.15541351, 0.03569268, 1)
-
-[sub_resource type="BoxMesh" id="BoxMesh_8gr5v"]
-size = Vector3(0.89697266, 0.076660156, 3.0409584)
-
-[sub_resource type="BoxMesh" id="BoxMesh_mcmi6"]
-size = Vector3(0.89697266, 0.076660156, 3.0433998)
-
-[sub_resource type="BoxMesh" id="BoxMesh_rir7r"]
-size = Vector3(0.89697266, 0.076660156, 3.038517)
-
-[sub_resource type="BoxMesh" id="BoxMesh_qbos5"]
-size = Vector3(0.89697266, 0.076660156, 3.0360756)
-
-[sub_resource type="BoxMesh" id="BoxMesh_c0p2e"]
-size = Vector3(0.97557235, 2.9970703, 0.06655502)
-
 [sub_resource type="BoxMesh" id="BoxMesh_htqvi"]
-size = Vector3(0.09786987, 5.106003, 1.2341518)
+size = Vector3(0.09786987, 5.106003, 1.7216902)
+
+[sub_resource type="BoxMesh" id="BoxMesh_kk05g"]
+size = Vector3(0.93580925, 0.51953125, 12.003708)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_qnk4k"]
+top_radius = 0.053222656
+bottom_radius = 0.053222656
+height = 13.4027195
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yyxt8"]
+albedo_color = Color(0.021434637, 0.021434635, 0.021434633, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_t18kp"]
+albedo_color = Color(0.99215686, 0.87058824, 0.7607843, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_82cee"]
+size = Vector3(41.44465, 0.27456018, 2.007205)
+
+[sub_resource type="BoxMesh" id="BoxMesh_usv3w"]
+size = Vector3(34.587074, 0.27456018, 2.007205)
 
 [node name="Biblioteca" type="Node3D" unique_id=563691032]
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=446157858]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.831277, -0.052962065, -6.007303)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.831277, -0.052962065, -5.7289333)
+material_override = SubResource("StandardMaterial3D_ao8tt")
 mesh = SubResource("BoxMesh_spqb3")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D" unique_id=659451075]
@@ -140,7 +134,7 @@ mesh = SubResource("BoxMesh_spqb3")
 shape = SubResource("ConcavePolygonShape3D_yyxt8")
 
 [node name="MeshInstance3D2" type="MeshInstance3D" parent="." unique_id=991385431]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.249393, 2.4994965, 0.027679443)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.248921, 2.5328488, 0.4954412)
 material_override = SubResource("StandardMaterial3D_kyylg")
 mesh = SubResource("BoxMesh_kyylg")
 
@@ -161,7 +155,7 @@ skeleton = NodePath("../MeshInstance3D2")
 shape = SubResource("ConcavePolygonShape3D_1lnsv")
 
 [node name="MeshInstance3D4" type="MeshInstance3D" parent="." unique_id=202915584]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.4946735, 2.4854126, -5.995327)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.4946735, 2.4854126, -5.755684)
 material_override = SubResource("StandardMaterial3D_spqb3")
 mesh = SubResource("BoxMesh_ywdlq")
 skeleton = NodePath("../MeshInstance3D3")
@@ -190,7 +184,7 @@ transform = Transform3D(0.7933063, 0, 0, 0, 1, 0, 0, 0, 1, 11.7312765, 0.9864287
 transform = Transform3D(-4.5945363e-08, 0, 1, 0, 1, 0, -1.0511074, 0, -4.371139e-08, 18.025185, 0, -5.656762)
 
 [node name="Estanteria2" parent="." unique_id=647919646 instance=ExtResource("2_ilxoh")]
-transform = Transform3D(1.0462584, 0, 0, 0, 1, 0, 0, 0, 1, 12.381258, 0, 0)
+transform = Transform3D(0.8010757, 0, 0, 0, 1, 0, 0, 0, 1, 13.763426, 0, 0.4399172)
 
 [node name="MeshInstance3D19" type="MeshInstance3D" parent="." unique_id=134319814]
 transform = Transform3D(-4.371139e-08, 0, 1.5069705, 0, 1, 0, -1, 0, -6.5871774e-08, 11.271676, 0.60273767, -11.505588)
@@ -353,94 +347,88 @@ transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 18.1
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 18.171642, 1.9387296, -4.4414916)
 
 [node name="libros9" parent="." unique_id=1263290587 instance=ExtResource("4_1lnsv")]
-transform = Transform3D(-0.9999998, 0, -0.00030252134, 0, 1, 0, 0.00030252134, 0, -0.9999998, 13.22646, 3.3786173, -0.93651795)
+transform = Transform3D(-0.76565737, 0, -0.00030249855, 0, 1, 0, 0.00023162772, 0, -0.9999245, 14.410562, 3.3786173, -0.46231836)
 
 [node name="libros10" parent="." unique_id=1805028290 instance=ExtResource("4_1lnsv")]
-transform = Transform3D(-0.9999998, 0, -0.00030252134, 0, 1, 0, 0.00030252134, 0, -0.9999998, 14.824255, 3.3786173, -0.9370012)
+transform = Transform3D(-0.76565737, 0, -0.00030249855, 0, 1, 0, 0.00023162772, 0, -0.9999245, 15.633925, 3.3786173, -0.49708402)
 
 [node name="libros11" parent="." unique_id=163793884 instance=ExtResource("4_1lnsv")]
-transform = Transform3D(-0.9999998, 0, -0.00030252134, 0, 1, 0, 0.00030252134, 0, -0.9999998, 16.362122, 3.3786173, -0.9374664)
+transform = Transform3D(-0.76565737, 0, -0.00030249855, 0, 1, 0, 0.00023162772, 0, -0.9999245, 16.811403, 3.3786173, -0.49754918)
 
 [node name="libros12" parent="." unique_id=1914972771 instance=ExtResource("4_1lnsv")]
-transform = Transform3D(-0.9999998, 0, -0.00030252134, 0, 1, 0, 0.00030252134, 0, -0.9999998, 17.936535, 3.3786173, -0.93794274)
+transform = Transform3D(-0.76565737, 0, -0.00030249855, 0, 1, 0, 0.00023162772, 0, -0.9999245, 18.016865, 3.3786173, -0.49802554)
 
 [node name="libros13" parent="." unique_id=1021147876 instance=ExtResource("4_1lnsv")]
-transform = Transform3D(-0.9999998, 0, -0.00030252134, 0, 1, 0, 0.00030252134, 0, -0.9999998, 17.936535, 2.661434, -0.93794274)
+transform = Transform3D(-0.76565737, 0, -0.00030249855, 0, 1, 0, 0.00023162772, 0, -0.9999245, 18.016865, 2.661434, -0.49802554)
 
 [node name="libros14" parent="." unique_id=435657731 instance=ExtResource("4_1lnsv")]
-transform = Transform3D(-0.9999998, 0, -0.00030252134, 0, 1, 0, 0.00030252134, 0, -0.9999998, 16.439972, 2.661434, -0.93749)
+transform = Transform3D(-0.76565737, 0, -0.00030249855, 0, 1, 0, 0.00023162772, 0, -0.9999245, 16.871012, 2.661434, -0.49757278)
 
 [node name="libros15" parent="." unique_id=723587716 instance=ExtResource("4_1lnsv")]
-transform = Transform3D(-0.9999998, 0, -0.00030252134, 0, 1, 0, 0.00030252134, 0, -0.9999998, 14.859287, 2.661434, -0.93701196)
+transform = Transform3D(-0.76565737, 0, -0.00030249855, 0, 1, 0, 0.00023162772, 0, -0.9999245, 15.660748, 2.661434, -0.49709475)
 
 [node name="libros16" parent="." unique_id=609082248 instance=ExtResource("4_1lnsv")]
-transform = Transform3D(-0.9999998, 0, -0.00030252134, 0, 1, 0, 0.00030252134, 0, -0.9999998, 13.260133, 2.661434, -0.9365282)
+transform = Transform3D(-0.76565737, 0, -0.00030249855, 0, 1, 0, 0.00023162772, 0, -0.9999245, 14.436343, 2.661434, -0.496611)
 
 [node name="Libros11" parent="." unique_id=623779817 instance=ExtResource("5_1lnsv")]
-transform = Transform3D(-0.99999994, 0, -0.0003025214, 0, 1, 0, 0.0003025214, 0, -0.99999994, 14.73308, 1.2152549, -0.8698127)
+transform = Transform3D(-0.7656574, 0, -0.0003024986, 0, 1, 0, 0.00023162778, 0, -0.9999246, 15.5641165, 1.2152549, -0.42989552)
 
 [node name="Libros12" parent="." unique_id=969794089 instance=ExtResource("5_1lnsv")]
-transform = Transform3D(-0.99999994, 0, -0.0003025214, 0, 1, 0, 0.0003025214, 0, -0.99999994, 16.36827, 1.2152549, -0.8703072)
+transform = Transform3D(-0.7656574, 0, -0.0003024986, 0, 1, 0, 0.00023162778, 0, -0.9999246, 16.816114, 1.2152549, -0.43039)
 
 [node name="Libros13" parent="." unique_id=542186232 instance=ExtResource("5_1lnsv")]
-transform = Transform3D(-0.99999994, 0, -0.0003025214, 0, 1, 0, 0.0003025214, 0, -0.99999994, 17.913607, 1.2152549, -0.87077475)
-
-[node name="Libros14" parent="." unique_id=436055910 instance=ExtResource("5_1lnsv")]
-transform = Transform3D(-0.99999994, 0, -0.0003025214, 0, 1, 0, 0.0003025214, 0, -0.99999994, 8.044538, 1.9554743, -0.8693404)
+transform = Transform3D(-0.7656574, 0, -0.0003024986, 0, 1, 0, 0.00023162778, 0, -0.9999246, 17.99931, 1.2152549, -0.43085754)
 
 [node name="Libros15" parent="." unique_id=1739979402 instance=ExtResource("5_1lnsv")]
-transform = Transform3D(-0.99999994, 0, -0.0003025214, 0, 1, 0, 0.0003025214, 0, -0.99999994, 14.785082, 1.9554743, -0.8698282)
+transform = Transform3D(-0.7656574, 0, -0.0003024986, 0, 1, 0, 0.00023162778, 0, -0.9999246, 15.603932, 1.9554743, -0.42991102)
 
 [node name="Libros16" parent="." unique_id=1529006293 instance=ExtResource("5_1lnsv")]
-transform = Transform3D(-0.99999994, 0, -0.0003025214, 0, 1, 0, 0.0003025214, 0, -0.99999994, 16.392673, 1.9554743, -0.8703146)
+transform = Transform3D(-0.7656574, 0, -0.0003024986, 0, 1, 0, 0.00023162778, 0, -0.9999246, 16.834797, 1.9554743, -0.4303974)
 
 [node name="Libros17" parent="." unique_id=1063218683 instance=ExtResource("5_1lnsv")]
-transform = Transform3D(-0.99999994, 0, -0.0003025214, 0, 1, 0, 0.0003025214, 0, -0.99999994, 17.948305, 1.9554743, -0.87078524)
+transform = Transform3D(-0.7656574, 0, -0.0003024986, 0, 1, 0, 0.00023162778, 0, -0.9999246, 18.025877, 1.9554743, -0.43086803)
 
 [node name="Estanteria3" parent="." unique_id=1377568021 instance=ExtResource("2_ilxoh")]
-transform = Transform3D(1.0462584, 0, 0, 0, 1, 0, 0, 0, 1, 12.381258, 0, 0)
+transform = Transform3D(0.8010757, 0, 0, 0, 1, 0, 0, 0, 1, 13.763426, 0, 0.4399172)
 
 [node name="libros18" parent="." unique_id=814706913 instance=ExtResource("4_1lnsv")]
-transform = Transform3D(-0.9999998, 0, -0.00030252134, 0, 1, 0, 0.00030252134, 0, -0.9999998, 14.824255, 3.3786173, -0.9370012)
+transform = Transform3D(-0.76565737, 0, -0.00030249855, 0, 1, 0, 0.00023162772, 0, -0.9999245, 15.633925, 3.3786173, -0.49708402)
 
 [node name="libros19" parent="." unique_id=1673527374 instance=ExtResource("4_1lnsv")]
-transform = Transform3D(-0.9999998, 0, -0.00030252134, 0, 1, 0, 0.00030252134, 0, -0.9999998, 16.362122, 3.3786173, -0.9374664)
+transform = Transform3D(-0.76565737, 0, -0.00030249855, 0, 1, 0, 0.00023162772, 0, -0.9999245, 16.811403, 3.3786173, -0.49754918)
 
 [node name="libros20" parent="." unique_id=1558117807 instance=ExtResource("4_1lnsv")]
-transform = Transform3D(-0.9999998, 0, -0.00030252134, 0, 1, 0, 0.00030252134, 0, -0.9999998, 17.936535, 3.3786173, -0.93794274)
-
-[node name="Libros18" parent="." unique_id=1419670744 instance=ExtResource("5_1lnsv")]
-transform = Transform3D(-0.99999994, 0, -0.0003025214, 0, 1, 0, 0.0003025214, 0, -0.99999994, 8.041313, 1.2152549, -0.8693404)
+transform = Transform3D(-0.76565737, 0, -0.00030249855, 0, 1, 0, 0.00023162772, 0, -0.9999245, 18.016865, 3.3786173, -0.49802554)
 
 [node name="libros21" parent="." unique_id=1630647742 instance=ExtResource("4_1lnsv")]
-transform = Transform3D(-0.9999998, 0, -0.00030252134, 0, 1, 0, 0.00030252134, 0, -0.9999998, 17.936535, 2.661434, -0.93794274)
+transform = Transform3D(-0.76565737, 0, -0.00030249855, 0, 1, 0, 0.00023162772, 0, -0.9999245, 18.016865, 2.661434, -0.49802554)
 
 [node name="libros22" parent="." unique_id=1601362232 instance=ExtResource("4_1lnsv")]
-transform = Transform3D(-0.9999998, 0, -0.00030252134, 0, 1, 0, 0.00030252134, 0, -0.9999998, 16.439972, 2.661434, -0.93749)
+transform = Transform3D(-0.76565737, 0, -0.00030249855, 0, 1, 0, 0.00023162772, 0, -0.9999245, 16.871012, 2.661434, -0.49757278)
 
 [node name="libros23" parent="." unique_id=1441796041 instance=ExtResource("4_1lnsv")]
-transform = Transform3D(-0.9999998, 0, -0.00030252134, 0, 1, 0, 0.00030252134, 0, -0.9999998, 14.859287, 2.661434, -0.93701196)
+transform = Transform3D(-0.76565737, 0, -0.00030249855, 0, 1, 0, 0.00023162772, 0, -0.9999245, 15.660748, 2.661434, -0.49709475)
 
 [node name="libros24" parent="." unique_id=474000200 instance=ExtResource("4_1lnsv")]
-transform = Transform3D(-0.9999998, 0, -0.00030252134, 0, 1, 0, 0.00030252134, 0, -0.9999998, 13.260133, 2.661434, -0.9365282)
+transform = Transform3D(-0.76565737, 0, -0.00030249855, 0, 1, 0, 0.00023162772, 0, -0.9999245, 14.436343, 2.661434, -0.496611)
 
 [node name="Libros19" parent="." unique_id=28723106 instance=ExtResource("5_1lnsv")]
-transform = Transform3D(-0.99999994, 0, -0.0003025214, 0, 1, 0, 0.0003025214, 0, -0.99999994, 14.73308, 1.2152549, -0.8698127)
+transform = Transform3D(-0.7656574, 0, -0.0003024986, 0, 1, 0, 0.00023162778, 0, -0.9999246, 15.5641165, 1.2152549, -0.42989552)
 
 [node name="Libros20" parent="." unique_id=579515521 instance=ExtResource("5_1lnsv")]
-transform = Transform3D(-0.99999994, 0, -0.0003025214, 0, 1, 0, 0.0003025214, 0, -0.99999994, 16.36827, 1.2152549, -0.8703072)
+transform = Transform3D(-0.7656574, 0, -0.0003024986, 0, 1, 0, 0.00023162778, 0, -0.9999246, 16.816114, 1.2152549, -0.43039)
 
 [node name="Libros21" parent="." unique_id=1925323849 instance=ExtResource("5_1lnsv")]
-transform = Transform3D(-0.99999994, 0, -0.0003025214, 0, 1, 0, 0.0003025214, 0, -0.99999994, 17.913607, 1.2152549, -0.87077475)
+transform = Transform3D(-0.7656574, 0, -0.0003024986, 0, 1, 0, 0.00023162778, 0, -0.9999246, 17.99931, 1.2152549, -0.43085754)
 
 [node name="Libros23" parent="." unique_id=582451697 instance=ExtResource("5_1lnsv")]
-transform = Transform3D(-0.99999994, 0, -0.0003025214, 0, 1, 0, 0.0003025214, 0, -0.99999994, 14.785082, 1.9554743, -0.8698282)
+transform = Transform3D(-0.7656574, 0, -0.0003024986, 0, 1, 0, 0.00023162778, 0, -0.9999246, 15.603932, 1.9554743, -0.42991102)
 
 [node name="Libros24" parent="." unique_id=356910797 instance=ExtResource("5_1lnsv")]
-transform = Transform3D(-0.99999994, 0, -0.0003025214, 0, 1, 0, 0.0003025214, 0, -0.99999994, 16.392673, 1.9554743, -0.8703146)
+transform = Transform3D(-0.7656574, 0, -0.0003024986, 0, 1, 0, 0.00023162778, 0, -0.9999246, 16.834797, 1.9554743, -0.4303974)
 
 [node name="Libros25" parent="." unique_id=659241591 instance=ExtResource("5_1lnsv")]
-transform = Transform3D(-0.99999994, 0, -0.0003025214, 0, 1, 0, 0.0003025214, 0, -0.99999994, 17.948305, 1.9554743, -0.87078524)
+transform = Transform3D(-0.7656574, 0, -0.0003024986, 0, 1, 0, 0.00023162778, 0, -0.9999246, 18.025877, 1.9554743, -0.43086803)
 
 [node name="Estanteria5" parent="." unique_id=1252785788 instance=ExtResource("2_ilxoh")]
 transform = Transform3D(0.001682419, 0, -0.99988484, 0, 1, 0, 0.9756997, 0, 0.0017241217, 2.5054486, 0, -5.2521973)
@@ -458,7 +446,7 @@ transform = Transform3D(0.0016006154, 0, -0.9998847, 0, 1, 0, 0.9282587, 0, 0.00
 transform = Transform3D(0.0016006154, 0, -0.9998847, 0, 1, 0, 0.9282587, 0, 0.0017241215, 2.4433625, 3.3618727, -6.369237)
 
 [node name="Libros34" parent="." unique_id=20354887 instance=ExtResource("5_1lnsv")]
-transform = Transform3D(0.0016006157, 0, -0.99988484, 0, 1, 0, 0.92825884, 0, 0.0017241217, 2.3651311, 1.1985103, -1.9465718)
+transform = Transform3D(0.0016006157, 0, -0.99988484, 0, 1, 0, 0.92825884, 0, 0.0017241217, 2.3651311, 1.1985103, -2.0144746)
 
 [node name="libros37" parent="." unique_id=1614145751 instance=ExtResource("4_1lnsv")]
 transform = Transform3D(0.0016006154, 0, -0.9998847, 0, 1, 0, 0.9282587, 0, 0.0017241215, 2.4433625, 2.6446893, -6.369237)
@@ -544,41 +532,14 @@ transform = Transform3D(0.0015992149, 0, -0.9998832, 0, 1, 0, 0.9274465, 0, 0.00
 [node name="Libros49" parent="." unique_id=1605998867 instance=ExtResource("5_1lnsv")]
 transform = Transform3D(0.0015992149, 0, -0.9998832, 0, 1, 0, 0.9274465, 0, 0.001724119, 2.3568957, 1.9387296, -12.211937)
 
-[node name="libros26" parent="." unique_id=1324762020 instance=ExtResource("4_1lnsv")]
-transform = Transform3D(-0.9999998, 0, -0.00030252134, 0, 1, 0, 0.00030252134, 0, -0.9999998, 4.9662895, 3.3786173, -0.9370012)
-
-[node name="libros28" parent="." unique_id=477976213 instance=ExtResource("4_1lnsv")]
-transform = Transform3D(-0.9211194, 0, -0.00030251412, 0, 1, 0, 0.00027865832, 0, -0.999976, 13.043425, 3.3786173, -0.93794274)
-
 [node name="libros29" parent="." unique_id=610738943 instance=ExtResource("4_1lnsv")]
-transform = Transform3D(-0.9045763, 0, -0.00030251237, 0, 1, 0, 0.00027365366, 0, -0.9999702, 13.043425, 2.661434, -0.93794274)
-
-[node name="libros31" parent="." unique_id=1018955027 instance=ExtResource("4_1lnsv")]
-transform = Transform3D(-0.9999998, 0, -0.00030252134, 0, 1, 0, 0.00030252134, 0, -0.9999998, 5.001322, 2.661434, -0.93701196)
-
-[node name="Libros27" parent="." unique_id=168327009 instance=ExtResource("5_1lnsv")]
-transform = Transform3D(-0.99999994, 0, -0.0003025214, 0, 1, 0, 0.0003025214, 0, -0.99999994, 4.8751144, 1.2152549, -0.8698127)
+transform = Transform3D(-0.6925956, 0, -0.00030248959, 0, 1, 0, 0.00020952498, 0, -0.99989486, 14.270418, 2.661434, -0.49802554)
 
 [node name="Libros29" parent="." unique_id=1107647687 instance=ExtResource("5_1lnsv")]
-transform = Transform3D(-0.91563296, 0, -0.0003025136, 0, 1, 0, 0.00027699856, 0, -0.9999742, 13.173453, 1.2152549, -0.87077475)
-
-[node name="Libros31" parent="." unique_id=1848288977 instance=ExtResource("5_1lnsv")]
-transform = Transform3D(-0.99999994, 0, -0.0003025214, 0, 1, 0, 0.0003025214, 0, -0.99999994, 4.9271164, 1.9554743, -0.8698282)
-
-[node name="Libros32" parent="." unique_id=1497762013 instance=ExtResource("5_1lnsv")]
-transform = Transform3D(-0.99999994, 0, -0.0003025214, 0, 1, 0, 0.0003025214, 0, -0.99999994, 6.534708, 1.9554743, -0.8703146)
+transform = Transform3D(-0.70106125, 0, -0.0003024908, 0, 1, 0, 0.00021208603, 0, -0.99989885, 14.369976, 1.2152549, -0.43085754)
 
 [node name="Libros33" parent="." unique_id=1605843874 instance=ExtResource("5_1lnsv")]
-transform = Transform3D(-0.99999994, 0, -0.0003025214, 0, 1, 0, 0.0003025214, 0, -0.99999994, 13.208154, 1.9554743, -0.87078524)
-
-[node name="libros51" parent="." unique_id=1999317278 instance=ExtResource("4_1lnsv")]
-transform = Transform3D(-0.9999998, 0, -0.00030252134, 0, 1, 0, 0.00030252134, 0, -0.9999998, 6.504156, 3.3786173, -0.9374664)
-
-[node name="libros54" parent="." unique_id=991516037 instance=ExtResource("4_1lnsv")]
-transform = Transform3D(-0.9999998, 0, -0.00030252134, 0, 1, 0, 0.00030252134, 0, -0.9999998, 6.5820065, 2.661434, -0.93749)
-
-[node name="Libros52" parent="." unique_id=1679850908 instance=ExtResource("5_1lnsv")]
-transform = Transform3D(-0.99999994, 0, -0.0003025214, 0, 1, 0, 0.0003025214, 0, -0.99999994, 6.5103054, 1.2152549, -0.8703072)
+transform = Transform3D(-0.7656574, 0, -0.0003024986, 0, 1, 0, 0.00023162778, 0, -0.9999246, 14.396544, 1.9554743, -0.43086803)
 
 [node name="MeshInstance3D6" type="MeshInstance3D" parent="." unique_id=1603104739]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.05352, 3.6135154, -4.021446)
@@ -587,7 +548,7 @@ mesh = SubResource("BoxMesh_1lnsv")
 skeleton = NodePath("../MeshInstance3D4")
 
 [node name="MeshInstance3D7" type="MeshInstance3D" parent="." unique_id=1383954691]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.864369, 5.011053, -6.007303)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.864369, 5.011053, -5.727499)
 mesh = SubResource("BoxMesh_qnk4k")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D7" unique_id=2127405231]
@@ -769,12 +730,6 @@ transform = Transform3D(0.7933063, 0, 0, 0, 1, 0, 0, 0, 1, 14.888889, 0.98642874
 [node name="mesa_biblioteca4" parent="." unique_id=479584286 instance=ExtResource("4_g2yyw")]
 transform = Transform3D(0.7933063, 0, 0, 0, 1, 0, 0, 0, 1, 8.302243, 0.98642874, -4.1384277)
 
-[node name="libros52" parent="." unique_id=1740849659 instance=ExtResource("4_1lnsv")]
-transform = Transform3D(-0.9999998, 0, -0.00030252134, 0, 1, 0, 0.00030252134, 0, -0.9999998, 7.941835, 3.3786173, -0.9374664)
-
-[node name="libros55" parent="." unique_id=821382717 instance=ExtResource("4_1lnsv")]
-transform = Transform3D(-0.9999998, 0, -0.00030252134, 0, 1, 0, 0.00030252134, 0, -0.9999998, 8.019686, 2.661434, -0.93749)
-
 [node name="MeshInstance3D10" type="MeshInstance3D" parent="." unique_id=742649786]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.378113, 2.5031123, -12.020313)
 material_override = SubResource("StandardMaterial3D_spqb3")
@@ -793,63 +748,185 @@ material_override = SubResource("StandardMaterial3D_spqb3")
 mesh = SubResource("BoxMesh_ph0u7")
 skeleton = NodePath("../MeshInstance3D2")
 
-[node name="MeshInstance3D20" type="MeshInstance3D" parent="." unique_id=879795708]
-transform = Transform3D(-4.371139e-08, 0, 1.5069705, 0, 1, 0, -1, 0, -6.5871774e-08, 5.541907, 0.60273767, -0.47077566)
-material_override = SubResource("StandardMaterial3D_usv3w")
-mesh = SubResource("BoxMesh_skjrh")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D20" unique_id=1609107281]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D20/StaticBody3D" unique_id=750861886]
-shape = SubResource("ConcavePolygonShape3D_s3cim")
-
-[node name="MeshInstance3D40" type="MeshInstance3D" parent="." unique_id=1354069279]
-transform = Transform3D(-4.371139e-08, 0, 1.5069705, 0, 1, 0, -1, 0, -6.5871774e-08, 3.3736424, 2.6469536, -0.37197745)
-material_override = SubResource("StandardMaterial3D_aqb43")
-mesh = SubResource("BoxMesh_o3jbk")
-
-[node name="MeshInstance3D25" type="MeshInstance3D" parent="." unique_id=1981146368]
-transform = Transform3D(-4.371139e-08, 0, 1.5069705, 0, 1, 0, -1, 0, -6.5871774e-08, 5.5390844, 3.3801982, -0.47286585)
-material_override = SubResource("StandardMaterial3D_tus2n")
-mesh = SubResource("BoxMesh_8gr5v")
-
-[node name="MeshInstance3D26" type="MeshInstance3D" parent="." unique_id=1939018948]
-transform = Transform3D(-4.371139e-08, 0, 1.5069705, 0, 1, 0, -1, 0, -6.5871774e-08, 5.537245, 2.6344202, -0.47286585)
-material_override = SubResource("StandardMaterial3D_tus2n")
-mesh = SubResource("BoxMesh_mcmi6")
-
-[node name="MeshInstance3D27" type="MeshInstance3D" parent="." unique_id=938433463]
-transform = Transform3D(-4.371139e-08, 0, 1.5069705, 0, 1, 0, -1, 0, -6.5871774e-08, 5.540924, 4.121533, -0.47286585)
-material_override = SubResource("StandardMaterial3D_tus2n")
-mesh = SubResource("BoxMesh_rir7r")
-
-[node name="MeshInstance3D35" type="MeshInstance3D" parent="." unique_id=484368724]
-transform = Transform3D(-4.371139e-08, 0, 1.5069705, 0, 1, 0, -1, 0, -6.5871774e-08, 7.8104405, 2.6469536, -0.47055387)
-material_override = SubResource("StandardMaterial3D_aqb43")
-mesh = SubResource("BoxMesh_o3jbk")
-
-[node name="MeshInstance3D36" type="MeshInstance3D" parent="." unique_id=135325079]
-transform = Transform3D(-4.371139e-08, 0, 1.5069705, 0, 1, 0, -1, 0, -6.5871774e-08, 6.3220983, 2.6469536, -0.47055387)
-material_override = SubResource("StandardMaterial3D_aqb43")
-mesh = SubResource("BoxMesh_o3jbk")
-
-[node name="MeshInstance3D37" type="MeshInstance3D" parent="." unique_id=2130281485]
-transform = Transform3D(-4.371139e-08, 0, 1.5069705, 0, 1, 0, -1, 0, -6.5871774e-08, 4.786926, 2.6469536, -0.47055387)
-material_override = SubResource("StandardMaterial3D_aqb43")
-mesh = SubResource("BoxMesh_o3jbk")
-
-[node name="MeshInstance3D39" type="MeshInstance3D" parent="." unique_id=335567449]
-transform = Transform3D(-4.371139e-08, 0, 1.5069705, 0, 1, 0, -1, 0, -6.5871774e-08, 5.542763, 1.945792, -0.47286585)
-material_override = SubResource("StandardMaterial3D_tus2n")
-mesh = SubResource("BoxMesh_qbos5")
-
-[node name="MeshInstance3D41" type="MeshInstance3D" parent="." unique_id=2130912808]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1.5069705, 2.941926, 2.6469536, -0.8577245)
-material_override = SubResource("StandardMaterial3D_aqb43")
-mesh = SubResource("BoxMesh_c0p2e")
-
 [node name="MeshInstance3D13" type="MeshInstance3D" parent="." unique_id=2110313130]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.05352, 2.483521, -0.5486393)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.05352, 2.483521, -0.30487013)
 material_override = SubResource("StandardMaterial3D_spqb3")
 mesh = SubResource("BoxMesh_htqvi")
 skeleton = NodePath("../MeshInstance3D4")
+
+[node name="MeshInstance3D14" type="MeshInstance3D" parent="." unique_id=88026392]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.846869, 4.7742367, -6.007303)
+mesh = SubResource("BoxMesh_kk05g")
+
+[node name="MeshInstance3D15" type="MeshInstance3D" parent="." unique_id=569227513]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.966785, 4.7742367, -6.007303)
+mesh = SubResource("BoxMesh_kk05g")
+
+[node name="CableVentiladores2" type="MeshInstance3D" parent="." unique_id=477243252]
+transform = Transform3D(0.9, 0, 0, 0, -3.934025e-08, -0.9, 0, 0.9, -3.934025e-08, 13.175954, 4.479064, -5.9315367)
+mesh = SubResource("CylinderMesh_qnk4k")
+surface_material_override/0 = SubResource("StandardMaterial3D_yyxt8")
+
+[node name="CableVentiladores3" type="MeshInstance3D" parent="." unique_id=608983476]
+transform = Transform3D(0.9, 0, 0, 0, -3.934025e-08, -0.9, 0, 0.9, -3.934025e-08, 8.734549, 4.479064, -5.9315367)
+mesh = SubResource("CylinderMesh_qnk4k")
+surface_material_override/0 = SubResource("StandardMaterial3D_yyxt8")
+
+[node name="VentiladorBuffet2" parent="." unique_id=33307123 instance=ExtResource("6_htqvi")]
+transform = Transform3D(0.18526962, 0, 0, 0, 0.13106212, 0, 0, 0, 0.1853773, 13.170893, 4.080148, -3.874568)
+
+[node name="VentiladorBuffet3" parent="." unique_id=1870357486 instance=ExtResource("6_htqvi")]
+transform = Transform3D(0.18526962, 0, 0, 0, 0.13106212, 0, 0, 0, 0.1853773, 8.726446, 4.080148, -3.874568)
+
+[node name="VentiladorBuffet5" parent="." unique_id=1954211088 instance=ExtResource("6_htqvi")]
+transform = Transform3D(0.18526962, 0, 0, 0, 0.13106212, 0, 0, 0, 0.1853773, 13.170893, 4.080148, -8.25139)
+
+[node name="VentiladorBuffet6" parent="." unique_id=525711451 instance=ExtResource("6_htqvi")]
+transform = Transform3D(0.18526962, 0, 0, 0, 0.13106212, 0, 0, 0, 0.1853773, 8.740025, 4.080148, -8.328448)
+
+[node name="lampara_encendida3" parent="." unique_id=1101667733 instance=ExtResource("7_qnk4k")]
+transform = Transform3D(0.708005, 0, 0, 0, 0.23974776, 0, 0, 0, 0.7604645, 10.894717, 4.9027696, -2.7570057)
+
+[node name="lampara_encendida4" parent="." unique_id=735404203 instance=ExtResource("7_qnk4k")]
+transform = Transform3D(0.708005, 0, 0, 0, 0.23974776, 0, 0, 0, 0.7604645, 10.894717, 4.9027696, -6.3269854)
+
+[node name="lampara_encendida5" parent="." unique_id=808373206 instance=ExtResource("7_qnk4k")]
+transform = Transform3D(0.708005, 0, 0, 0, 0.23974776, 0, 0, 0, 0.7604645, 10.894717, 4.9027696, -10.021019)
+
+[node name="lampara_encendida6" parent="." unique_id=788330335 instance=ExtResource("7_qnk4k")]
+transform = Transform3D(0.708005, 0, 0, 0, 0.23974776, 0, 0, 0, 0.7604645, 15.467819, 4.9027696, -2.7570057)
+
+[node name="lampara_encendida7" parent="." unique_id=301032152 instance=ExtResource("7_qnk4k")]
+transform = Transform3D(0.708005, 0, 0, 0, 0.23974776, 0, 0, 0, 0.7604645, 15.467819, 4.9027696, -6.3269854)
+
+[node name="lampara_encendida8" parent="." unique_id=1694577849 instance=ExtResource("7_qnk4k")]
+transform = Transform3D(0.708005, 0, 0, 0, 0.23974776, 0, 0, 0, 0.7604645, 15.467819, 4.9027696, -10.021019)
+
+[node name="lampara_encendida9" parent="." unique_id=1219271543 instance=ExtResource("7_qnk4k")]
+transform = Transform3D(0.708005, 0, 0, 0, 0.23974776, 0, 0, 0, 0.7604645, 6.24825, 4.9027696, -2.7570057)
+
+[node name="lampara_encendida10" parent="." unique_id=1399827527 instance=ExtResource("7_qnk4k")]
+transform = Transform3D(0.708005, 0, 0, 0, 0.23974776, 0, 0, 0, 0.7604645, 6.24825, 4.9027696, -6.3269854)
+
+[node name="lampara_encendida11" parent="." unique_id=1945169095 instance=ExtResource("7_qnk4k")]
+transform = Transform3D(0.708005, 0, 0, 0, 0.23974776, 0, 0, 0, 0.7604645, 6.24825, 4.9027696, -10.021019)
+
+[node name="Puertabiblioteca" parent="." unique_id=530576390 instance=ExtResource("8_yyxt8")]
+transform = Transform3D(0.99724966, 0, 0, 0, 0.59831303, 0, 0, 0, 0.5222111, 18.017637, 1.1087397, -2.2211537)
+
+[node name="MeshInstance3D174" type="MeshInstance3D" parent="." unique_id=1067396037]
+transform = Transform3D(-2.9876512e-09, 0, 0.06980344, 0, 0.7509311, 0, -0.07011701, 0, -1.9565107e-09, 18.074326, 2.2813847, -2.6149504)
+material_override = SubResource("StandardMaterial3D_t18kp")
+mesh = SubResource("BoxMesh_82cee")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_kk05g")
+
+[node name="MeshInstance3D175" type="MeshInstance3D" parent="." unique_id=1304198573]
+transform = Transform3D(-2.9876512e-09, 0, 0.06980344, 0.070117004, 0.00023289291, 1.9565105e-09, -2.1746011e-05, 0.7509311, -6.0679006e-13, 18.074326, 1.1653581, -4.055514)
+material_override = SubResource("StandardMaterial3D_t18kp")
+mesh = SubResource("BoxMesh_usv3w")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_kk05g")
+
+[node name="MeshInstance3D176" type="MeshInstance3D" parent="." unique_id=267179000]
+transform = Transform3D(-2.9876512e-09, 0, 0.06980344, 0.070117004, 0.00023289291, 1.9565105e-09, -2.1746011e-05, 0.7509311, -6.0679006e-13, 18.074326, 1.1653581, -1.2452594)
+material_override = SubResource("StandardMaterial3D_t18kp")
+mesh = SubResource("BoxMesh_usv3w")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_kk05g")
+
+[node name="Estanteria4" parent="." unique_id=1729619894 instance=ExtResource("2_ilxoh")]
+transform = Transform3D(0.8010757, 0, 0, 0, 1, 0, 0, 0, 1, 4.322692, 0, 0.4399172)
+
+[node name="libros17" parent="." unique_id=980477607 instance=ExtResource("4_1lnsv")]
+transform = Transform3D(-0.76565737, 0, -0.00030249855, 0, 1, 0, 0.00023162772, 0, -0.9999245, 4.9698277, 3.3786173, -0.56544596)
+
+[node name="libros25" parent="." unique_id=1156217980 instance=ExtResource("4_1lnsv")]
+transform = Transform3D(-0.76565737, 0, -0.00030249855, 0, 1, 0, 0.00023162772, 0, -0.9999245, 6.1931915, 3.3786173, -0.49708402)
+
+[node name="libros26" parent="." unique_id=849416951 instance=ExtResource("4_1lnsv")]
+transform = Transform3D(-0.76565737, 0, -0.00030249855, 0, 1, 0, 0.00023162772, 0, -0.9999245, 7.3706694, 3.3786173, -0.49754918)
+
+[node name="libros27" parent="." unique_id=853247240 instance=ExtResource("4_1lnsv")]
+transform = Transform3D(-0.76565737, 0, -0.00030249855, 0, 1, 0, 0.00023162772, 0, -0.9999245, 8.576131, 3.3786173, -0.49802554)
+
+[node name="libros30" parent="." unique_id=1956463595 instance=ExtResource("4_1lnsv")]
+transform = Transform3D(-0.76565737, 0, -0.00030249855, 0, 1, 0, 0.00023162772, 0, -0.9999245, 8.576131, 2.661434, -0.49802554)
+
+[node name="libros31" parent="." unique_id=235388455 instance=ExtResource("4_1lnsv")]
+transform = Transform3D(-0.76565737, 0, -0.00030249855, 0, 1, 0, 0.00023162772, 0, -0.9999245, 7.430278, 2.661434, -0.49757278)
+
+[node name="libros32" parent="." unique_id=876654480 instance=ExtResource("4_1lnsv")]
+transform = Transform3D(-0.76565737, 0, -0.00030249855, 0, 1, 0, 0.00023162772, 0, -0.9999245, 6.2200136, 2.661434, -0.49709475)
+
+[node name="libros49" parent="." unique_id=2138959637 instance=ExtResource("4_1lnsv")]
+transform = Transform3D(-0.76565737, 0, -0.00030249855, 0, 1, 0, 0.00023162772, 0, -0.9999245, 4.9956093, 2.661434, -0.496611)
+
+[node name="Libros14" parent="." unique_id=1369105219 instance=ExtResource("5_1lnsv")]
+transform = Transform3D(-0.7656574, 0, -0.0003024986, 0, 1, 0, 0.00023162778, 0, -0.9999246, 6.1233826, 1.2152549, -0.42989552)
+
+[node name="Libros18" parent="." unique_id=1909347210 instance=ExtResource("5_1lnsv")]
+transform = Transform3D(-0.7656574, 0, -0.0003024986, 0, 1, 0, 0.00023162778, 0, -0.9999246, 7.3753805, 1.2152549, -0.43039)
+
+[node name="Libros22" parent="." unique_id=1680318725 instance=ExtResource("5_1lnsv")]
+transform = Transform3D(-0.7656574, 0, -0.0003024986, 0, 1, 0, 0.00023162778, 0, -0.9999246, 8.558576, 1.2152549, -0.43085754)
+
+[node name="Libros26" parent="." unique_id=1416287172 instance=ExtResource("5_1lnsv")]
+transform = Transform3D(-0.7656574, 0, -0.0003024986, 0, 1, 0, 0.00023162778, 0, -0.9999246, 6.1631985, 1.9554743, -0.42991102)
+
+[node name="Libros27" parent="." unique_id=406672942 instance=ExtResource("5_1lnsv")]
+transform = Transform3D(-0.7656574, 0, -0.0003024986, 0, 1, 0, 0.00023162778, 0, -0.9999246, 7.394063, 1.9554743, -0.4303974)
+
+[node name="Libros28" parent="." unique_id=2000171240 instance=ExtResource("5_1lnsv")]
+transform = Transform3D(-0.7656574, 0, -0.0003024986, 0, 1, 0, 0.00023162778, 0, -0.9999246, 8.585143, 1.9554743, -0.43086803)
+
+[node name="Estanteria7" parent="." unique_id=1807229770 instance=ExtResource("2_ilxoh")]
+transform = Transform3D(0.8010757, 0, 0, 0, 1, 0, 0, 0, 1, 4.322692, 0, 0.4399172)
+
+[node name="libros50" parent="." unique_id=1026632209 instance=ExtResource("4_1lnsv")]
+transform = Transform3D(-0.76565737, 0, -0.00030249855, 0, 1, 0, 0.00023162772, 0, -0.9999245, 6.1931915, 3.3786173, -0.49708402)
+
+[node name="libros51" parent="." unique_id=2058838055 instance=ExtResource("4_1lnsv")]
+transform = Transform3D(-0.76565737, 0, -0.00030249855, 0, 1, 0, 0.00023162772, 0, -0.9999245, 7.3706694, 3.3786173, -0.49754918)
+
+[node name="libros52" parent="." unique_id=1948835164 instance=ExtResource("4_1lnsv")]
+transform = Transform3D(-0.76565737, 0, -0.00030249855, 0, 1, 0, 0.00023162772, 0, -0.9999245, 8.576131, 3.3786173, -0.49802554)
+
+[node name="libros53" parent="." unique_id=1805503846 instance=ExtResource("4_1lnsv")]
+transform = Transform3D(-0.76565737, 0, -0.00030249855, 0, 1, 0, 0.00023162772, 0, -0.9999245, 8.576131, 2.661434, -0.49802554)
+
+[node name="libros54" parent="." unique_id=2048669254 instance=ExtResource("4_1lnsv")]
+transform = Transform3D(-0.76565737, 0, -0.00030249855, 0, 1, 0, 0.00023162772, 0, -0.9999245, 7.430278, 2.661434, -0.49757278)
+
+[node name="libros55" parent="." unique_id=715496265 instance=ExtResource("4_1lnsv")]
+transform = Transform3D(-0.76565737, 0, -0.00030249855, 0, 1, 0, 0.00023162772, 0, -0.9999245, 6.2200136, 2.661434, -0.49709475)
+
+[node name="libros56" parent="." unique_id=1054705013 instance=ExtResource("4_1lnsv")]
+transform = Transform3D(-0.76565737, 0, -0.00030249855, 0, 1, 0, 0.00023162772, 0, -0.9999245, 4.9956093, 2.661434, -0.496611)
+
+[node name="Libros30" parent="." unique_id=14474288 instance=ExtResource("5_1lnsv")]
+transform = Transform3D(-0.7656574, 0, -0.0003024986, 0, 1, 0, 0.00023162778, 0, -0.9999246, 6.1233826, 1.2152549, -0.42989552)
+
+[node name="Libros31" parent="." unique_id=865908744 instance=ExtResource("5_1lnsv")]
+transform = Transform3D(-0.7656574, 0, -0.0003024986, 0, 1, 0, 0.00023162778, 0, -0.9999246, 7.3753805, 1.2152549, -0.43039)
+
+[node name="Libros32" parent="." unique_id=1330768694 instance=ExtResource("5_1lnsv")]
+transform = Transform3D(-0.7656574, 0, -0.0003024986, 0, 1, 0, 0.00023162778, 0, -0.9999246, 8.558576, 1.2152549, -0.43085754)
+
+[node name="Libros50" parent="." unique_id=685198745 instance=ExtResource("5_1lnsv")]
+transform = Transform3D(-0.7656574, 0, -0.0003024986, 0, 1, 0, 0.00023162778, 0, -0.9999246, 6.1631985, 1.9554743, -0.42991102)
+
+[node name="Libros51" parent="." unique_id=423995186 instance=ExtResource("5_1lnsv")]
+transform = Transform3D(-0.7656574, 0, -0.0003024986, 0, 1, 0, 0.00023162778, 0, -0.9999246, 7.394063, 1.9554743, -0.4303974)
+
+[node name="Libros52" parent="." unique_id=912025502 instance=ExtResource("5_1lnsv")]
+transform = Transform3D(-0.7656574, 0, -0.0003024986, 0, 1, 0, 0.00023162778, 0, -0.9999246, 8.585143, 1.9554743, -0.43086803)
+
+[node name="libros58" parent="." unique_id=694351630 instance=ExtResource("4_1lnsv")]
+transform = Transform3D(-0.6925956, 0, -0.00030248959, 0, 1, 0, 0.00020952498, 0, -0.99989486, 4.8296843, 2.661434, -0.49802554)
+
+[node name="Libros53" parent="." unique_id=688219223 instance=ExtResource("5_1lnsv")]
+transform = Transform3D(-0.70106125, 0, -0.0003024908, 0, 1, 0, 0.00021208603, 0, -0.99989885, 4.929242, 1.2152549, -0.43085754)
+
+[node name="Libros54" parent="." unique_id=1716334090 instance=ExtResource("5_1lnsv")]
+transform = Transform3D(-0.7656574, 0, -0.0003024986, 0, 1, 0, 0.00023162778, 0, -0.9999246, 4.9558105, 1.9554743, -0.43086803)
