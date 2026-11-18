@@ -83,7 +83,7 @@ data = PackedVector3Array(-0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0
 albedo_color = Color(0.88235295, 0.8, 0.5803922, 1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_uv8om"]
-size = Vector3(0.8006592, 8.191254, 0.12054443)
+size = Vector3(0.8006592, 8.191254, 0.13174057)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_j075s"]
 albedo_color = Color(0, 0.55505, 0.9968602, 1)
@@ -1484,7 +1484,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_fdlrj")
 shape = SubResource("ConcavePolygonShape3D_yujmg")
 
 [node name="MeshInstance3D103" type="MeshInstance3D" parent="pasillo (salon)" unique_id=859187543]
-transform = Transform3D(-1.6673272e-06, -1.093, 0, 38.144, -4.777655e-08, 0, 0, 0, 31.432, -21.992435, 10.472188, -101.16379)
+transform = Transform3D(-1.6673272e-06, -1.093, 0, 38.144, -4.777655e-08, 0, 0, 0, 31.432, -21.992435, 10.472188, -101.114204)
 material_override = SubResource("StandardMaterial3D_a2nm8")
 mesh = SubResource("BoxMesh_uv8om")
 surface_material_override/0 = SubResource("StandardMaterial3D_j075s")
