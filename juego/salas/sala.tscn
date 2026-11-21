@@ -369,6 +369,9 @@ libraries/ = SubResource("AnimationLibrary_iqlxx")
 [node name="Jugador" parent="." unique_id=212553440 instance=ExtResource("3_qh0pk")]
 transform = Transform3D(-6.556708e-08, 0, -1.5, 0, 1.5, 0, 1.5, 0, -6.556708e-08, 48.945915, 13.001343, -41.74019)
 
+[node name="Camera3D" parent="Jugador/Cabeza" parent_id_path=PackedInt32Array(212553440, 1096425595) index="0" unique_id=704986019]
+fov = 85.0
+
 [node name="Panel" parent="Jugador/Cabeza/Camera3D/CanvasLayer" parent_id_path=PackedInt32Array(212553440, 715858050) index="0" unique_id=1029156778]
 anchors_preset = 15
 anchor_left = 0.0
@@ -381,23 +384,23 @@ offset_right = 0.0
 offset_bottom = 0.0
 metadata/_edit_use_anchors_ = true
 
-[node name="llave" parent="Jugador/Cabeza/Camera3D" parent_id_path=PackedInt32Array(212553440, 704986019) index="2" unique_id=2048800679]
+[node name="llave" parent="Jugador/Cabeza/Camera3D" index="2" unique_id=2048800679]
 transform = Transform3D(-6.556708e-08, -1.5, 0, -1.5, 6.556708e-08, 1.3113416e-07, -1.3113416e-07, 7.1054274e-15, -1.5, -1038.5181, -0.26138496, -22.899971)
 
-[node name="ganzua" parent="Jugador/Cabeza/Camera3D" parent_id_path=PackedInt32Array(212553440, 704986019) index="3" unique_id=1006482489]
+[node name="ganzua" parent="Jugador/Cabeza/Camera3D" index="3" unique_id=1006482489]
 transform = Transform3D(-1, -8.742278e-08, 3.821371e-15, 0, -4.371139e-08, -1, 8.742278e-08, -1, 4.371139e-08, 0.59400177, -0.30300045, -0.4787445)
 
-[node name="llave_reja" parent="Jugador/Cabeza/Camera3D" parent_id_path=PackedInt32Array(212553440, 704986019) index="4" unique_id=1357924680]
+[node name="llave_reja" parent="Jugador/Cabeza/Camera3D" index="4" unique_id=1357924680]
 transform = Transform3D(0.02, 0, 0, 0, -8.7422775e-10, -0.02, 0, 0.02, -8.7422775e-10, 0.48568344, -0.24088669, -0.54618835)
 
-[node name="SpotLight3D" parent="Jugador/Cabeza/Camera3D" parent_id_path=PackedInt32Array(212553440, 704986019) index="5" unique_id=1591149388]
+[node name="SpotLight3D" parent="Jugador/Cabeza/Camera3D" index="5" unique_id=1591149388]
 transform = Transform3D(1, 0, 0, 0, 1, 4.743386e-22, 0, -4.743386e-22, 1, 0.45625687, -0.24910295, -0.70774746)
 light_color = Color(1, 1, 0.7647059, 1)
 light_energy = 3.333
 spot_range = 80.0
 spot_attenuation = 0.6
 
-[node name="llave_regencia" parent="Jugador/Cabeza/Camera3D" parent_id_path=PackedInt32Array(212553440, 704986019) index="7" unique_id=1209904720]
+[node name="llave_regencia" parent="Jugador/Cabeza/Camera3D" index="7" unique_id=1209904720]
 transform = Transform3D(0.01, 8.7422775e-10, -3.821371e-17, 0, 4.3711387e-10, 0.01, -8.7422775e-10, 0.01, -4.3711387e-10, 0.47491455, -0.2418518, -0.69159317)
 
 [node name="CanvasLayer" parent="Jugador/Node2D" parent_id_path=PackedInt32Array(212553440, 2102388130) index="0" unique_id=1482110964]
@@ -1260,8 +1263,8 @@ transform = Transform3D(-1.4126026e-09, -0.014724832, 0, 0.03231658, -6.43643e-1
 transform = Transform3D(-7.8680495e-10, -0.018, 0, 0.018, -7.8680495e-10, 0, 0, 0, 0.018, 171.16458, 0.81700504, 41.767357)
 
 [connection signal="pressed" from="Jugador/Node2D/CanvasLayer/Control/VBoxContainer/controles" to="Jugador/Node2D/CanvasLayer/Control" method="_on_controles_pressed"]
-[connection signal="pressed" from="Jugador/Node2D/CanvasLayer/Control/VBoxContainer/reiniciar" to="Jugador/Node2D/CanvasLayer/Control" method="_on_reiniciar_pressed"]
 [connection signal="pressed" from="Jugador/Node2D/CanvasLayer/Control/VBoxContainer/reiniciar" to="Jugador/Node2D/CanvasLayer/Control" method="_on_salir_2_pressed"]
+[connection signal="pressed" from="Jugador/Node2D/CanvasLayer/Control/VBoxContainer/reiniciar" to="Jugador/Node2D/CanvasLayer/Control" method="_on_reiniciar_pressed"]
 [connection signal="pressed" from="Jugador/Node2D/CanvasLayer/ConfirmarSalir/Si" to="Jugador/Node2D/CanvasLayer/ConfirmarSalir" method="_on_si_pressed"]
 [connection signal="pressed" from="Jugador/Node2D/CanvasLayer/ConfirmarSalir/No" to="Jugador/Node2D/CanvasLayer/ConfirmarSalir" method="_on_no_pressed"]
 [connection signal="pressed" from="Jugador/Node2D/CanvasLayer/Ajustes/Cerrar" to="Jugador/Node2D/CanvasLayer/Ajustes" method="_on_cerrar_pressed"]

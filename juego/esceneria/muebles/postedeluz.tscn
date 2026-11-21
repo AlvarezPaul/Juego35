@@ -1,0 +1,103 @@
+[gd_scene format=3 uid="uid://dawayohwrixyf"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_xrivr"]
+height = 20.497192
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_b1lj4"]
+albedo_color = Color(0.38170314, 0.38170326, 0.38170323, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_s65jl"]
+top_radius = 0.41748047
+bottom_radius = 0.41748047
+height = 1.1444092
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_r2o6k"]
+top_radius = 0.3779297
+bottom_radius = 0.3779297
+height = 1.1444092
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_kd2bg"]
+top_radius = 0.3564453
+bottom_radius = 0.3564453
+height = 2.092514
+
+[sub_resource type="BoxMesh" id="BoxMesh_13qdw"]
+size = Vector3(0.77246094, 0.45617676, 8.129883)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_njqwk"]
+albedo_color = Color(0.38039216, 0.38039216, 0.38039216, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_0etny"]
+size = Vector3(0.77246094, 0.43566895, 3.2304688)
+
+[sub_resource type="BoxMesh" id="BoxMesh_pkpmm"]
+size = Vector3(0.77246094, 0.43566895, 3.2304688)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mepvf"]
+albedo_color = Color(0.38039216, 0.38039216, 0.38039216, 1)
+emission_enabled = true
+emission = Color(1, 1, 1, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_86teu"]
+size = Vector3(0.77246094, 0.43566895, 3.2304688)
+
+[node name="Postedeluz" type="Node3D" unique_id=541920705]
+
+[node name="PaloDeLuz" type="MeshInstance3D" parent="." unique_id=1434908230]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.8375854, 0)
+mesh = SubResource("CylinderMesh_xrivr")
+surface_material_override/0 = SubResource("StandardMaterial3D_b1lj4")
+
+[node name="PaloDeLuz2" type="MeshInstance3D" parent="." unique_id=1766671581]
+transform = Transform3D(1, 0, 0, 0, 0.8730003, -0.4877196, 0, 0.4877196, 0.8730003, 0, 16.394075, 0.17705417)
+mesh = SubResource("CylinderMesh_s65jl")
+surface_material_override/0 = SubResource("StandardMaterial3D_b1lj4")
+
+[node name="PaloDeLuz3" type="MeshInstance3D" parent="." unique_id=749593459]
+transform = Transform3D(1, 0, 0, 0, 0.6600006, -0.7512652, 0, 0.7512652, 0.6600006, 0, 17.093515, 0.67330116)
+mesh = SubResource("CylinderMesh_s65jl")
+surface_material_override/0 = SubResource("StandardMaterial3D_b1lj4")
+
+[node name="PaloDeLuz4" type="MeshInstance3D" parent="." unique_id=1473506781]
+transform = Transform3D(1, 0, 0, 0, 0.17387384, -0.9847681, 0, 0.9847681, 0.17387384, 0, 17.525604, 1.4372323)
+mesh = SubResource("CylinderMesh_r2o6k")
+surface_material_override/0 = SubResource("StandardMaterial3D_b1lj4")
+
+[node name="PaloDeLuz5" type="MeshInstance3D" parent="." unique_id=116301179]
+transform = Transform3D(1, 0, 0, 0, -4.3711392e-08, -1.0000001, 0, 1.0000001, -4.3711392e-08, 0, 17.64927, 2.7639816)
+mesh = SubResource("CylinderMesh_kd2bg")
+surface_material_override/0 = SubResource("StandardMaterial3D_b1lj4")
+
+[node name="LucesPdL" type="MeshInstance3D" parent="." unique_id=139360694]
+transform = Transform3D(6.6281924, 0, 0, 0, 1, 0, 0, 0, 0.11124158, -0.006169677, 17.753902, 4.035491)
+mesh = SubResource("BoxMesh_13qdw")
+surface_material_override/0 = SubResource("StandardMaterial3D_njqwk")
+
+[node name="LucesPdL2" type="MeshInstance3D" parent="." unique_id=1446663721]
+transform = Transform3D(1.7510837, 0, 0, 0, 1, 0, 0, 0, 1.4936193, 1.8665706, 17.764156, 6.220188)
+mesh = SubResource("BoxMesh_0etny")
+surface_material_override/0 = SubResource("StandardMaterial3D_njqwk")
+
+[node name="LucesPdL3" type="MeshInstance3D" parent="." unique_id=1652207644]
+transform = Transform3D(1.4376522, 0, 0, 0, 1, 0, 0, 0, 1.0437839, 1.8367687, 17.474289, 6.593546)
+mesh = SubResource("BoxMesh_pkpmm")
+surface_material_override/0 = SubResource("StandardMaterial3D_mepvf")
+
+[node name="LucesPdL4" type="MeshInstance3D" parent="." unique_id=1382022716]
+transform = Transform3D(1.4376522, 0, 0, 0, 1, 0, 0, 0, 1.0437839, -1.8709005, 17.474289, 6.593546)
+mesh = SubResource("BoxMesh_pkpmm")
+surface_material_override/0 = SubResource("StandardMaterial3D_mepvf")
+
+[node name="LucesPdL5" type="MeshInstance3D" parent="." unique_id=2028491443]
+transform = Transform3D(1.7510837, 0, 0, 0, 1, 0, 0, 0, 1.4936193, -1.877153, 17.764156, 6.220188)
+mesh = SubResource("BoxMesh_86teu")
+surface_material_override/0 = SubResource("StandardMaterial3D_njqwk")
+
+[node name="LuzPdL" type="SpotLight3D" parent="." unique_id=1835467117]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, -0.17229152, 17.265606, 6.1997757)
+light_color = Color(0.93333334, 0.9647059, 1, 1)
+light_energy = 8.0
+spot_range = 20.0
+spot_attenuation = 1.2
+spot_angle = 55.0
+spot_angle_attenuation = 1.5
