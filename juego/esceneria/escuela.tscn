@@ -47,6 +47,8 @@
 [ext_resource type="PackedScene" uid="uid://ehbus3n3i0q4" path="res://glb_modelos/trash_dumpster_buenos_aires.glb" id="45_le8s7"]
 [ext_resource type="PackedScene" uid="uid://c6p3owl5urn0c" path="res://glb_modelos/toyota_hilux_low_poly.glb" id="46_a1klo"]
 [ext_resource type="PackedScene" uid="uid://dawayohwrixyf" path="res://esceneria/muebles/postedeluz.tscn" id="47_le8s7"]
+[ext_resource type="Texture2D" uid="uid://che1nrxx3nrpv" path="res://fotos/patron-blanco-negro-malla-malla-metalica.png" id="48_cd6d8"]
+[ext_resource type="PackedScene" uid="uid://h1ev0vtpe816" path="res://esceneria/muebles/toldoventana.tscn" id="49_mrbpr"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_e4v1y"]
 
@@ -934,10 +936,13 @@ uv1_scale = Vector3(-90.915, -57.835, -87.825)
 albedo_color = Color(0.21472687, 0.5578806, 0.4348641, 1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_7gd2c"]
-size = Vector3(1.0629272, 0.97802734, 1)
+size = Vector3(0.8741913, 0.97802734, 1.3867188)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sjhdr"]
 albedo_color = Color(0.88235295, 0.8, 0.5803922, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_36y0w"]
+size = Vector3(5.043144, 0.97802734, 1.5888672)
 
 [sub_resource type="BoxMesh" id="BoxMesh_qi0i5"]
 size = Vector3(17.103302, 0.97802734, 2.3948364)
@@ -1213,7 +1218,7 @@ size = Vector3(2.2890272, 48.83123, 7.217898)
 albedo_color = Color(0.61619085, 0.89019376, 0.21115962, 1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_d8wai"]
-size = Vector3(2.1937814, 85.31845, 8.678594)
+size = Vector3(2.1937814, 86.92107, 8.678594)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3cqq5"]
 albedo_color = Color(0.9821418, 0.8298582, 0.5423215, 1)
@@ -1226,6 +1231,9 @@ albedo_color = Color(0.42303562, 0.21278909, 0.08004848, 1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_hxcoc"]
 size = Vector3(2.1937814, 11.291515, 7.4339013)
+
+[sub_resource type="BoxMesh" id="BoxMesh_sldbp"]
+size = Vector3(2.1937814, 1.3034725, 4.948197)
 
 [sub_resource type="BoxMesh" id="BoxMesh_23tvk"]
 size = Vector3(2.1937814, 11.291515, 7.4339013)
@@ -1626,10 +1634,10 @@ data = PackedVector3Array(-0.5, 0.43649998, 0.5196, 0.5, 0.43649998, 0.5196, -0.
 data = PackedVector3Array(-0.22829999, 0.38279998, 0.44829997, 0.22829999, 0.38279998, 0.44829997, -0.22829999, -0.38279998, 0.44829997, 0.22829999, 0.38279998, 0.44829997, 0.22829999, -0.38279998, 0.44829997, -0.22829999, -0.38279998, 0.44829997, 0.22829999, 0.38279998, -0.44829997, -0.22829999, 0.38279998, -0.44829997, 0.22829999, -0.38279998, -0.44829997, -0.22829999, 0.38279998, -0.44829997, -0.22829999, -0.38279998, -0.44829997, 0.22829999, -0.38279998, -0.44829997, 0.22829999, 0.38279998, 0.44829997, 0.22829999, 0.38279998, -0.44829997, 0.22829999, -0.38279998, 0.44829997, 0.22829999, 0.38279998, -0.44829997, 0.22829999, -0.38279998, -0.44829997, 0.22829999, -0.38279998, 0.44829997, -0.22829999, 0.38279998, -0.44829997, -0.22829999, 0.38279998, 0.44829997, -0.22829999, -0.38279998, -0.44829997, -0.22829999, 0.38279998, 0.44829997, -0.22829999, -0.38279998, 0.44829997, -0.22829999, -0.38279998, -0.44829997, 0.22829999, 0.38279998, 0.44829997, -0.22829999, 0.38279998, 0.44829997, 0.22829999, 0.38279998, -0.44829997, -0.22829999, 0.38279998, 0.44829997, -0.22829999, 0.38279998, -0.44829997, 0.22829999, 0.38279998, -0.44829997, -0.22829999, -0.38279998, 0.44829997, 0.22829999, -0.38279998, 0.44829997, -0.22829999, -0.38279998, -0.44829997, 0.22829999, -0.38279998, 0.44829997, 0.22829999, -0.38279998, -0.44829997, -0.22829999, -0.38279998, -0.44829997)
 
 [sub_resource type="BoxMesh" id="BoxMesh_o68k7"]
-size = Vector3(1.0532227, 0.8730469, 1.6172333)
+size = Vector3(1.0997009, 0.8730469, 1.6172333)
 
 [sub_resource type="BoxMesh" id="BoxMesh_375eu"]
-size = Vector3(1.0532227, 0.8730469, 1.6172333)
+size = Vector3(1.1107178, 0.8730469, 1.6172333)
 
 [sub_resource type="BoxMesh" id="BoxMesh_q21r1"]
 size = Vector3(0.45654297, 0.85791016, 1.2625351)
@@ -1881,6 +1889,9 @@ albedo_color = Color(0, 0.3882353, 0, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mneik"]
 albedo_color = Color(0, 0.3867997, 4.813075e-08, 1)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_s8ibu"]
+load_path = "res://.godot/imported/patron-blanco-negro-malla-malla-metalica.png-2744239e3f1acfee551105f7b2ebfb01.s3tc.ctex"
 
 [node name="escuela" type="Node3D" unique_id=905997500]
 
@@ -8477,8 +8488,13 @@ mesh = SubResource("BoxMesh_pkj3c")
 surface_material_override/0 = SubResource("StandardMaterial3D_jiho0")
 
 [node name="MeshInstance3D221" type="MeshInstance3D" parent="." unique_id=166867475]
-transform = Transform3D(45.152035, 0, 0, 0, 2.635147, 0, 0, 0, 16.638681, -7.921568, 31.2319, -185.66663)
+transform = Transform3D(45.152035, 0, 0, 0, 2.635147, 0, 0, 0, 16.638681, -5.5608273, 31.2319, -188.88387)
 mesh = SubResource("BoxMesh_7gd2c")
+surface_material_override/0 = SubResource("StandardMaterial3D_sjhdr")
+
+[node name="MeshInstance3D223" type="MeshInstance3D" parent="." unique_id=1342905354]
+transform = Transform3D(45.152035, 0, 0, 0, 2.635147, 0, 0, 0, 16.638681, -138.90323, 37.663853, -188.43703)
+mesh = SubResource("BoxMesh_36y0w")
 surface_material_override/0 = SubResource("StandardMaterial3D_sjhdr")
 
 [node name="MeshInstance3D226" type="MeshInstance3D" parent="." unique_id=218186114]
@@ -8782,7 +8798,7 @@ mesh = SubResource("BoxMesh_2ul1n")
 surface_material_override/0 = SubResource("StandardMaterial3D_2kif2")
 
 [node name="MeshInstance3D263" type="MeshInstance3D" parent="." unique_id=1794804492]
-transform = Transform3D(45.152035, 0, 0, 0, 2.635147, 0, 0, 0, 16.638681, 235.00203, 103.328285, -482.11765)
+transform = Transform3D(45.152035, 0, 0, 0, 2.635147, 0, 0, 0, 16.638681, 235.00203, 105.43985, -482.11765)
 mesh = SubResource("BoxMesh_d8wai")
 surface_material_override/0 = SubResource("StandardMaterial3D_3cqq5")
 
@@ -8819,6 +8835,11 @@ surface_material_override/0 = SubResource("StandardMaterial3D_yw57v")
 [node name="MeshInstance3D321" type="MeshInstance3D" parent="." unique_id=895650247]
 transform = Transform3D(45.152035, 0, 0, 0, 2.635147, 0, 0, 0, 13.078616, 235.00203, 230.61638, -483.3174)
 mesh = SubResource("BoxMesh_hxcoc")
+surface_material_override/0 = SubResource("StandardMaterial3D_3cqq5")
+
+[node name="MeshInstance3D375" type="MeshInstance3D" parent="." unique_id=844487880]
+transform = Transform3D(45.152035, 0, 0, 0, 2.635147, 0, 0, 0, 13.078616, 235.00203, 220.7276, -423.2442)
+mesh = SubResource("BoxMesh_sldbp")
 surface_material_override/0 = SubResource("StandardMaterial3D_3cqq5")
 
 [node name="MeshInstance3D322" type="MeshInstance3D" parent="." unique_id=6745686]
@@ -10909,7 +10930,7 @@ transform = Transform3D(5.555, 0, 0, 0, 5.555, 0, 0, 0, 5.555, -29.043104, 47.09
 transform = Transform3D(-5, 0, -7.54979e-07, 0, 5, 0, 7.54979e-07, 0, -5, 6.34756, 47.06635, 81.83455)
 
 [node name="Casilleroprecep5" parent="." unique_id=1688228177 instance=ExtResource("31_um1yl")]
-transform = Transform3D(5.9624405e-08, 0, -5, 0, 5, 0, 5, 0, 5.9624405e-08, 206.66945, 47.06635, 140.71185)
+transform = Transform3D(5.9624405e-08, 0, -5, 0, 5, 0, 5, 0, 5.9624405e-08, 206.66945, 47.06635, 138.01248)
 
 [node name="Casilleroprecep3" parent="." unique_id=1288100281 instance=ExtResource("31_um1yl")]
 transform = Transform3D(-5, 0, -7.54979e-07, 0, 5, 0, 7.54979e-07, 0, -5, 6.5429716, -1.0399914, 39.209732)
@@ -11158,12 +11179,12 @@ surface_material_override/0 = SubResource("StandardMaterial3D_rc72u")
 shape = SubResource("ConcavePolygonShape3D_eyq2j")
 
 [node name="MeshInstance3D188" type="MeshInstance3D" parent="." unique_id=96202957]
-transform = Transform3D(-1.6673272e-06, -1.093, 0, 38.144, -4.777655e-08, 0, 0, 0, 38.99936, -25.78913, 10.515938, -169.26443)
+transform = Transform3D(-1.6673272e-06, -1.093, 0, 38.144, -4.777655e-08, 0, 0, 0, 38.99936, -25.78913, 11.402372, -169.26443)
 mesh = SubResource("BoxMesh_o68k7")
 surface_material_override/0 = SubResource("StandardMaterial3D_2bepa")
 
 [node name="MeshInstance3D199" type="MeshInstance3D" parent="." unique_id=647872530]
-transform = Transform3D(-1.6673272e-06, -1.093, 0, 38.144, -4.777655e-08, 0, 0, 0, 38.99936, 13.847197, 10.515938, -169.26443)
+transform = Transform3D(-1.6673272e-06, -1.093, 0, 38.144, -4.777655e-08, 0, 0, 0, 38.99936, 13.847197, 11.612485, -169.26443)
 mesh = SubResource("BoxMesh_375eu")
 surface_material_override/0 = SubResource("StandardMaterial3D_2bepa")
 
@@ -14654,7 +14675,7 @@ shaded = true
 texture = ExtResource("43_uv8om")
 
 [node name="versa2015" parent="." unique_id=1103366490 instance=ExtResource("44_uv8om")]
-transform = Transform3D(1.5502344e-07, 0, -13, 0, 13, 0, 13, 0, 1.5502344e-07, -221.71686, 2.3131447, -256.76398)
+transform = Transform3D(1.5502344e-07, 0, -13, 0, 13, 0, 13, 0, 1.5502344e-07, -215.19685, 2.3131447, -256.76398)
 
 [node name="versa2016" parent="." unique_id=903247550 instance=ExtResource("44_uv8om")]
 transform = Transform3D(-5.68248e-07, 0, 13, 0, 13, 0, -13, 0, -5.68248e-07, 151.13254, 2.3131447, -359.90506)
@@ -14694,6 +14715,141 @@ transform = Transform3D(-3, 0, -2.6226832e-07, 0, 3, 0, 2.6226832e-07, 0, -3, 15
 
 [node name="Postedeluz6" parent="." unique_id=402692893 instance=ExtResource("47_le8s7")]
 transform = Transform3D(-3, 0, -2.6226832e-07, 0, 3, 0, 2.6226832e-07, 0, -3, -169.96786, 0, -240.526)
+
+[node name="DecoracionLdV" type="Sprite3D" parent="." unique_id=1904673224]
+transform = Transform3D(-4.6630344, 0, 8.7422805e-08, 0, 12.376693, 0, -4.0765548e-07, 0, -1.0000004, 235.1142, 137.04393, -394.28052)
+modulate = Color(0.6052743, 0.6052743, 0.6052743, 1)
+shaded = true
+texture = ExtResource("48_cd6d8")
+
+[node name="DecoracionLdV2" type="Sprite3D" parent="." unique_id=755735582]
+transform = Transform3D(-2.9141183, 0, 8.7422805e-08, 0, 0.9922362, 0, -2.5476032e-07, 0, -1.0000004, 149.18742, 48.67946, -395.11887)
+modulate = Color(0.6052743, 0.6052743, 0.6052743, 1)
+shaded = true
+texture = ExtResource("48_cd6d8")
+
+[node name="DecoracionLdV3" type="Sprite3D" parent="." unique_id=692583006]
+transform = Transform3D(-4.9887695, 0, 8.74228e-08, 0, 0.9922362, 0, -4.3613207e-07, 0, -1.0000002, 37.213158, 43.77521, -398.60333)
+modulate = Color(0.6052743, 0.6052743, 0.6052743, 1)
+shaded = true
+texture = ExtResource("48_cd6d8")
+
+[node name="DecoracionLdV4" type="Sprite3D" parent="." unique_id=990204225]
+transform = Transform3D(-4.569698e-08, 0, 1.0000001, 0, 0.9922362, 0, -1.045425, 0, -4.3711395e-08, -11.878849, 43.77521, -408.65686)
+modulate = Color(0.6052743, 0.6052743, 0.6052743, 1)
+shaded = true
+texture = SubResource("CompressedTexture2D_s8ibu")
+
+[node name="DecoracionLdV10" type="Sprite3D" parent="." unique_id=2113955179]
+transform = Transform3D(-2.8398247, 0, 8.74228e-08, 0, 0.6734715, 0, -2.4826534e-07, 0, -1.0000002, -199.30807, 40.21116, -398.60333)
+modulate = Color(0.6052743, 0.6052743, 0.6052743, 1)
+shaded = true
+texture = ExtResource("48_cd6d8")
+
+[node name="DecoracionLdV11" type="Sprite3D" parent="." unique_id=1748427985]
+transform = Transform3D(-4.569698e-08, 0, 1.0000001, 0, 0.6734715, 0, -1.045425, 0, -4.3711395e-08, -227.42268, 40.21116, -408.65686)
+modulate = Color(0.6052743, 0.6052743, 0.6052743, 1)
+shaded = true
+texture = SubResource("CompressedTexture2D_s8ibu")
+
+[node name="DecoracionLdV12" type="Sprite3D" parent="." unique_id=754253481]
+transform = Transform3D(-4.569698e-08, 0, 1.0000001, 0, 0.6734715, 0, -1.045425, 0, -4.3711395e-08, -170.36409, 40.21116, -408.65686)
+modulate = Color(0.6052743, 0.6052743, 0.6052743, 1)
+shaded = true
+texture = SubResource("CompressedTexture2D_s8ibu")
+
+[node name="DecoracionLdV5" type="Sprite3D" parent="." unique_id=625731424]
+transform = Transform3D(-4.569698e-08, 0, 1.0000001, 0, 0.9922362, 0, -1.045425, 0, -4.3711395e-08, 86.54811, 43.77521, -408.65686)
+modulate = Color(0.6052743, 0.6052743, 0.6052743, 1)
+shaded = true
+texture = SubResource("CompressedTexture2D_s8ibu")
+
+[node name="DecoracionLdV6" type="Sprite3D" parent="." unique_id=184778420]
+transform = Transform3D(-4.569698e-08, 0, 1.0000001, 0, 0.9922362, 0, -1.045425, 0, -4.3711395e-08, 119.24024, 48.540077, -405.61783)
+modulate = Color(0.6052743, 0.6052743, 0.6052743, 1)
+shaded = true
+texture = SubResource("CompressedTexture2D_s8ibu")
+
+[node name="DecoracionLdV7" type="Sprite3D" parent="." unique_id=1220428363]
+transform = Transform3D(-4.569698e-08, 0, 1.0000001, 0, 0.9922362, 0, -1.045425, 0, -4.3711395e-08, 177.83513, 48.540077, -405.61783)
+modulate = Color(0.6052743, 0.6052743, 0.6052743, 1)
+shaded = true
+texture = SubResource("CompressedTexture2D_s8ibu")
+
+[node name="DecoracionLdV8" type="Sprite3D" parent="." unique_id=299951887]
+transform = Transform3D(-4.569698e-08, 0, 1.0000001, 0, 12.555652, 0, -1.045425, 0, -4.3711395e-08, 189.1136, 140.39714, -402.70605)
+modulate = Color(0.6052743, 0.6052743, 0.6052743, 1)
+shaded = true
+texture = SubResource("CompressedTexture2D_s8ibu")
+
+[node name="DecoracionLdV9" type="Sprite3D" parent="." unique_id=1212933792]
+transform = Transform3D(-4.569698e-08, 0, 1.0000001, 0, 12.555652, 0, -1.045425, 0, -4.3711395e-08, 280.2998, 140.39714, -402.70605)
+modulate = Color(0.6052743, 0.6052743, 0.6052743, 1)
+shaded = true
+texture = SubResource("CompressedTexture2D_s8ibu")
+
+[node name="Toldoventana" parent="." unique_id=1261729155 instance=ExtResource("49_mrbpr")]
+transform = Transform3D(-6.556708e-08, 0, 1.5, 0, 1.5, 0, -1.5, 0, -6.556708e-08, -54.184002, 32.92938, -201.38527)
+
+[node name="Toldoventana2" parent="." unique_id=502177371 instance=ExtResource("49_mrbpr")]
+transform = Transform3D(-6.556708e-08, 0, 1.5, 0, 1.5, 0, -1.5, 0, -6.556708e-08, -87.375175, 32.92938, -201.38527)
+
+[node name="Toldoventana3" parent="." unique_id=370370971 instance=ExtResource("49_mrbpr")]
+transform = Transform3D(-6.556708e-08, 0, 1.5, 0, 1.5, 0, -1.5, 0, -6.556708e-08, -120.09412, 32.92938, -201.38527)
+
+[node name="Toldoventana4" parent="." unique_id=1775228505 instance=ExtResource("49_mrbpr")]
+transform = Transform3D(-8.742278e-08, 0, 2, 0, 2, 0, -2, 0, -8.742278e-08, -90.453926, 80.99887, -180.62276)
+
+[node name="Toldoventana5" parent="." unique_id=1730649915 instance=ExtResource("49_mrbpr")]
+transform = Transform3D(-7.86805e-08, 0, 1.8, 0, 1.8, 0, -1.8, 0, -7.86805e-08, -132.53268, 79.62127, -180.62276)
+
+[node name="Toldoventana6" parent="." unique_id=777002175 instance=ExtResource("49_mrbpr")]
+transform = Transform3D(-8.742278e-08, 0, 2, 0, 2, 0, -2, 0, -8.742278e-08, -173.75441, 80.99887, -180.62276)
+
+[node name="Toldoventana7" parent="." unique_id=34605165 instance=ExtResource("49_mrbpr")]
+transform = Transform3D(-7.86805e-08, 0, 1.8, 0, 1.8, 0, -1.8, 0, -7.86805e-08, -215.83316, 79.62127, -180.62276)
+
+[node name="Toldoventana8" parent="." unique_id=1744194132 instance=ExtResource("49_mrbpr")]
+transform = Transform3D(-8.742278e-08, 0, 2, 0, 2, 0, -2, 0, -8.742278e-08, 63.9536, 80.99887, -179.69946)
+
+[node name="Toldoventana9" parent="." unique_id=1482617140 instance=ExtResource("49_mrbpr")]
+transform = Transform3D(-7.86805e-08, 0, 1.8, 0, 1.8, 0, -1.8, 0, -7.86805e-08, 21.874847, 79.62127, -179.69946)
+
+[node name="Toldoventana10" parent="." unique_id=1580523044 instance=ExtResource("49_mrbpr")]
+transform = Transform3D(-8.742278e-08, 0, 2, 0, 2, 0, -2, 0, -8.742278e-08, 147.02449, 80.99887, -179.69946)
+
+[node name="Toldoventana11" parent="." unique_id=270297948 instance=ExtResource("49_mrbpr")]
+transform = Transform3D(-7.86805e-08, 0, 1.8, 0, 1.8, 0, -1.8, 0, -7.86805e-08, 104.94574, 79.62127, -179.69946)
+
+[node name="Toldoventana12" parent="." unique_id=796993442 instance=ExtResource("49_mrbpr")]
+transform = Transform3D(-8.742278e-08, 0, 2, 0, 2, 0, -2, 0, -8.742278e-08, 229.97353, 80.99887, -179.69946)
+
+[node name="Toldoventana13" parent="." unique_id=662027601 instance=ExtResource("49_mrbpr")]
+transform = Transform3D(-7.86805e-08, 0, 1.8, 0, 1.8, 0, -1.8, 0, -7.86805e-08, 187.89478, 79.62127, -179.69946)
+
+[node name="Toldoventana14" parent="." unique_id=854441946 instance=ExtResource("49_mrbpr")]
+transform = Transform3D(-8.742278e-08, 0, 2, 0, 2, 0, -2, 0, -8.742278e-08, 313.20187, 80.99887, -179.69946)
+
+[node name="Toldoventana15" parent="." unique_id=324988226 instance=ExtResource("49_mrbpr")]
+transform = Transform3D(-7.86805e-08, 0, 1.8, 0, 1.8, 0, -1.8, 0, -7.86805e-08, 271.12314, 79.62127, -179.69946)
+
+[node name="Toldoventana16" parent="." unique_id=1667633897 instance=ExtResource("49_mrbpr")]
+transform = Transform3D(-8.742278e-08, 0, 2, 0, 2, 0, -2, 0, -8.742278e-08, 258.0033, 37.905422, -170.86362)
+
+[node name="Toldoventana17" parent="." unique_id=626949850 instance=ExtResource("49_mrbpr")]
+transform = Transform3D(-7.86805e-08, 0, 1.8, 0, 1.8, 0, -1.8, 0, -7.86805e-08, 215.92458, 36.52782, -170.86362)
+
+[node name="Toldoventana18" parent="." unique_id=428681626 instance=ExtResource("49_mrbpr")]
+transform = Transform3D(-8.742278e-08, 0, 2, 0, 2, 0, -2, 0, -8.742278e-08, 341.11957, 37.905422, -170.86362)
+
+[node name="Toldoventana19" parent="." unique_id=556114337 instance=ExtResource("49_mrbpr")]
+transform = Transform3D(-7.86805e-08, 0, 1.8, 0, 1.8, 0, -1.8, 0, -7.86805e-08, 299.04083, 36.52782, -170.86362)
+
+[node name="Toldoventana20" parent="." unique_id=1183014918 instance=ExtResource("49_mrbpr")]
+transform = Transform3D(-8.742278e-08, 0, 2, 0, 2, 0, -2, 0, -8.742278e-08, 424.13345, 37.905422, -170.86362)
+
+[node name="Toldoventana21" parent="." unique_id=553858700 instance=ExtResource("49_mrbpr")]
+transform = Transform3D(-7.86805e-08, 0, 1.8, 0, 1.8, 0, -1.8, 0, -7.86805e-08, 382.05472, 36.52782, -170.86362)
 
 [editable path="Node3D13"]
 [editable path="Node3D14"]

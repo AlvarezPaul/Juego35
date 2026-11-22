@@ -11,7 +11,7 @@ emission = Color(1, 1, 1, 1)
 size = Vector3(1.1479492, 1, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vbimc"]
-albedo_color = Color(0.09239689, 0.09239716, 0.092396714, 1)
+albedo_color = Color(0.7882353, 0.7882353, 0.7882353, 1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_vbimc"]
 size = Vector3(0.16015625, 1.3676758, 1)

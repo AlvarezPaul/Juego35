@@ -1,0 +1,122 @@
+[gd_scene format=3 uid="uid://h1ev0vtpe816"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_xrivr"]
+size = Vector3(0.3095703, 1.8808594, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_13qdw"]
+albedo_color = Color(0.09239707, 0.09239706, 0.09239706, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_mcn61"]
+size = Vector3(0.85894775, 11.168488, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0xoed"]
+albedo_color = Color(0.5609549, 0.5609549, 0.5609549, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_p5bmu"]
+size = Vector3(0.85894775, 9.684578, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_jwa7s"]
+size = Vector3(0.45388794, 1.1031799, 20.338135)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_y723u"]
+albedo_color = Color(0.8560673, 0.8560673, 0.85606724, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_0xoed"]
+size = Vector3(0.45388794, 2.3123322, 17.13916)
+
+[node name="Toldoventana" type="Node3D" unique_id=1261729155]
+
+[node name="BloqueToldo" type="MeshInstance3D" parent="." unique_id=1081731017]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.34521484, 0.4404297, 11.670698)
+mesh = SubResource("BoxMesh_xrivr")
+surface_material_override/0 = SubResource("StandardMaterial3D_13qdw")
+
+[node name="BloqueToldo2" type="MeshInstance3D" parent="." unique_id=1448577223]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.34521484, -5.1587186, 11.670698)
+mesh = SubResource("BoxMesh_xrivr")
+surface_material_override/0 = SubResource("StandardMaterial3D_13qdw")
+
+[node name="BloqueToldo3" type="MeshInstance3D" parent="." unique_id=234754535]
+transform = Transform3D(0.5507773, -0.7433282, 0, 0.8346521, 0.49051377, 0, 0, 0, 0.8379085, 3.8988447, -2.0571003, 11.670698)
+mesh = SubResource("BoxMesh_mcn61")
+surface_material_override/0 = SubResource("StandardMaterial3D_0xoed")
+
+[node name="BloqueToldo4" type="MeshInstance3D" parent="." unique_id=1556235903]
+transform = Transform3D(-4.3711385e-08, -0.89058447, 0, 0.99999994, -3.8928682e-08, 0, 0, 0, 0.83790857, 3.911328, -5.177342, 11.670698)
+mesh = SubResource("BoxMesh_p5bmu")
+surface_material_override/0 = SubResource("StandardMaterial3D_0xoed")
+
+[node name="BloqueToldo5" type="MeshInstance3D" parent="." unique_id=460358326]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.34521484, -5.1587186, -6.1942124)
+mesh = SubResource("BoxMesh_xrivr")
+surface_material_override/0 = SubResource("StandardMaterial3D_13qdw")
+
+[node name="BloqueToldo6" type="MeshInstance3D" parent="." unique_id=1035331381]
+transform = Transform3D(0.4905039, -0.77608997, 0, 0.8714389, 0.43683523, 0, 0, 0, 0.83790857, 4.045801, -1.7450616, -6.1942124)
+mesh = SubResource("BoxMesh_mcn61")
+surface_material_override/0 = SubResource("StandardMaterial3D_0xoed")
+
+[node name="BloqueToldo9" type="MeshInstance3D" parent="." unique_id=592368653]
+transform = Transform3D(0.42113087, -0.7143074, 0, 0.74818945, 0.4020599, 0, 0, 0, 0.83790857, 0.26552665, 0.65281594, 2.7675385)
+mesh = SubResource("BoxMesh_jwa7s")
+surface_material_override/0 = SubResource("StandardMaterial3D_y723u")
+
+[node name="BloqueToldo10" type="MeshInstance3D" parent="." unique_id=722842298]
+transform = Transform3D(0.4008316, -0.6962292, 0, 0.71212536, 0.39188427, 0, 0, 0, 0.83790857, 1.0107027, 0.10983145, 2.7498617)
+mesh = SubResource("BoxMesh_jwa7s")
+surface_material_override/0 = SubResource("StandardMaterial3D_y723u")
+
+[node name="BloqueToldo11" type="MeshInstance3D" parent="." unique_id=75565459]
+transform = Transform3D(0.4008316, -0.6962292, 0, 0.71212536, 0.39188427, 0, 0, 0, 0.83790857, 1.8115883, -0.3989352, 2.7675385)
+mesh = SubResource("BoxMesh_jwa7s")
+surface_material_override/0 = SubResource("StandardMaterial3D_y723u")
+
+[node name="BloqueToldo12" type="MeshInstance3D" parent="." unique_id=848498772]
+transform = Transform3D(0.42113087, -0.7143074, 0, 0.74818945, 0.4020599, 0, 0, 0, 0.83790857, 2.5551457, -0.9574102, 2.7675385)
+mesh = SubResource("BoxMesh_jwa7s")
+surface_material_override/0 = SubResource("StandardMaterial3D_y723u")
+
+[node name="BloqueToldo13" type="MeshInstance3D" parent="." unique_id=118068468]
+transform = Transform3D(0.4008316, -0.6962292, 0, 0.71212536, 0.39188427, 0, 0, 0, 0.83790857, 3.300322, -1.5003947, 2.7675385)
+mesh = SubResource("BoxMesh_jwa7s")
+surface_material_override/0 = SubResource("StandardMaterial3D_y723u")
+
+[node name="BloqueToldo14" type="MeshInstance3D" parent="." unique_id=1842273463]
+transform = Transform3D(0.38902345, -0.7026024, 0, 0.7186441, 0.3803397, 0, 0, 0, 0.83790857, 4.0797186, -2.0188637, 2.7675385)
+mesh = SubResource("BoxMesh_jwa7s")
+surface_material_override/0 = SubResource("StandardMaterial3D_y723u")
+
+[node name="BloqueToldo15" type="MeshInstance3D" parent="." unique_id=466406631]
+transform = Transform3D(0.38902345, -0.7026024, 0, 0.7186441, 0.3803397, 0, 0, 0, 0.83790857, 4.846978, -2.526626, 2.7675385)
+mesh = SubResource("BoxMesh_jwa7s")
+surface_material_override/0 = SubResource("StandardMaterial3D_y723u")
+
+[node name="BloqueToldo16" type="MeshInstance3D" parent="." unique_id=87919693]
+transform = Transform3D(0.2973835, -0.69573164, 0, 0.66889673, 0.30931398, 0, 0, 0, 0.83790857, 5.650139, -2.9875236, 2.7675385)
+mesh = SubResource("BoxMesh_jwa7s")
+surface_material_override/0 = SubResource("StandardMaterial3D_y723u")
+
+[node name="BloqueToldo17" type="MeshInstance3D" parent="." unique_id=1045739847]
+transform = Transform3D(0.31244394, -0.713797, 0, 0.7027717, 0.3173457, 0, 0, 0, 0.83790857, 6.4429903, -3.4181995, 2.7675385)
+mesh = SubResource("BoxMesh_jwa7s")
+surface_material_override/0 = SubResource("StandardMaterial3D_y723u")
+
+[node name="BloqueToldo18" type="MeshInstance3D" parent="." unique_id=1590477226]
+transform = Transform3D(0.2973835, -0.69573164, 0, 0.66889673, 0.30931398, 0, 0, 0, 0.83790857, 7.2359943, -3.835074, 2.7675385)
+mesh = SubResource("BoxMesh_jwa7s")
+surface_material_override/0 = SubResource("StandardMaterial3D_y723u")
+
+[node name="BloqueToldo19" type="MeshInstance3D" parent="." unique_id=1512422426]
+transform = Transform3D(0.6738303, -0.29750377, 0, 0.2860289, 0.70086306, 0, 0, 0, 0.98940814, 8.095112, -4.8724766, 2.7675385)
+mesh = SubResource("BoxMesh_0xoed")
+surface_material_override/0 = SubResource("StandardMaterial3D_y723u")
+
+[node name="BloqueToldo8" type="MeshInstance3D" parent="." unique_id=2106271993]
+transform = Transform3D(-4.3711385e-08, -0.89058447, 0, 0.99999994, -3.8928682e-08, 0, 0, 0, 0.83790857, 4.099137, -5.1276474, -6.1942124)
+mesh = SubResource("BoxMesh_p5bmu")
+surface_material_override/0 = SubResource("StandardMaterial3D_0xoed")
+
+[node name="BloqueToldo7" type="MeshInstance3D" parent="." unique_id=1358983519]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.34521484, 0.4404297, -6.1971245)
+mesh = SubResource("BoxMesh_xrivr")
+surface_material_override/0 = SubResource("StandardMaterial3D_13qdw")
