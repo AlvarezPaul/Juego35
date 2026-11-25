@@ -8,6 +8,7 @@
 [ext_resource type="AudioStream" uid="uid://dimkkvvcf7gu8" path="res://UI/sonidocanilla.mp3" id="6_igtkx"]
 [ext_resource type="Texture2D" uid="uid://rswg2oixpof8" path="res://fotos/aguantela35png.png" id="7_igide"]
 [ext_resource type="PackedScene" uid="uid://dgfv10n6t31c1" path="res://esceneria/muebles/lampara_encendida.tscn" id="8_gaxx6"]
+[ext_resource type="PackedScene" uid="uid://gu0ikvv7ot5u" path="res://esceneria/muebles/lampara_apagada.tscn" id="9_4nfin"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nfqsi"]
 
@@ -113,7 +114,7 @@ albedo_color = Color(0.70380783, 0.70380783, 0.70380783, 1)
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_46w4g"]
 transparency = 1
 cull_mode = 1
-albedo_color = Color(0.76660067, 0.9999997, 0.9974275, 1)
+albedo_color = Color(0.7647059, 1, 0.99607843, 0.654902)
 
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_wvsfd"]
 data = PackedVector3Array(-0.5, 3.363, 3.3056, 0.5, 3.363, 3.3056, -0.5, -3.363, 3.3056, 0.5, 3.363, 3.3056, 0.5, -3.363, 3.3056, -0.5, -3.363, 3.3056, 0.5, 3.363, -3.3056, -0.5, 3.363, -3.3056, 0.5, -3.363, -3.3056, -0.5, 3.363, -3.3056, -0.5, -3.363, -3.3056, 0.5, -3.363, -3.3056, 0.5, 3.363, 3.3056, 0.5, 3.363, -3.3056, 0.5, -3.363, 3.3056, 0.5, 3.363, -3.3056, 0.5, -3.363, -3.3056, 0.5, -3.363, 3.3056, -0.5, 3.363, -3.3056, -0.5, 3.363, 3.3056, -0.5, -3.363, -3.3056, -0.5, 3.363, 3.3056, -0.5, -3.363, 3.3056, -0.5, -3.363, -3.3056, 0.5, 3.363, 3.3056, -0.5, 3.363, 3.3056, 0.5, 3.363, -3.3056, -0.5, 3.363, 3.3056, -0.5, 3.363, -3.3056, 0.5, 3.363, -3.3056, -0.5, -3.363, 3.3056, 0.5, -3.363, 3.3056, -0.5, -3.363, -3.3056, 0.5, -3.363, 3.3056, 0.5, -3.363, -3.3056, -0.5, -3.363, -3.3056)
@@ -471,7 +472,7 @@ transform = Transform3D(1.9999999, 0, 0, 0, 5.412482, 0, 0, 0, 5.0474486, 0, -1.
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.249, 3.472)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="lavamanos" unique_id=182467657]
-transform = Transform3D(0.34952152, 0, 0, 0, 1, 0, 0, 0, 1, 9.664733, 8.193037, -18.87228)
+transform = Transform3D(0.34952152, 0, 0, 0, 0.7096163, 0, 0, 0, 1, 9.664733, 7.699889, -18.87228)
 mesh = SubResource("BoxMesh_kcw23")
 skeleton = NodePath("../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_ink1u")
@@ -531,7 +532,7 @@ skeleton = NodePath("../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_wqt78")
 
 [node name="MeshInstance3D2" type="MeshInstance3D" parent="lavamanos" unique_id=612797779]
-transform = Transform3D(0.40919295, 0, 0, 0, 1.0104232, 0, 0, 0, 1.0182463, 9.665603, 8.193037, -18.87228)
+transform = Transform3D(0.40919295, 0, 0, 0, 0.71701276, 0, 0, 0, 1.0182463, 9.638217, 7.699889, -18.87228)
 mesh = SubResource("BoxMesh_kcw23")
 skeleton = NodePath("../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_46w4g")
@@ -881,12 +882,15 @@ surface_material_override/0 = SubResource("StandardMaterial3D_8xuoa")
 shape = SubResource("ConcavePolygonShape3D_acu16")
 
 [node name="Sprite3D" type="Sprite3D" parent="." unique_id=1646404319]
-transform = Transform3D(-3.934025e-08, 0, 0.9, 0, 0.9, 0, -0.9, 0, -3.934025e-08, -20.389, 6.654959, -1.8425655)
+transform = Transform3D(-0.7, 0, -1.0569706e-07, 0, 0.7, 0, 1.0569706e-07, 0, -0.7, -15.705861, 9.889112, 1.2180135)
 modulate = Color(0.5251013, 0.5251013, 0.5251013, 1)
 texture = ExtResource("7_igide")
 
 [node name="lampara_encendida" parent="." unique_id=1101667733 instance=ExtResource("8_gaxx6")]
-transform = Transform3D(2.5, 0, 0, 0, 2.5, 0, 0, 0, 2.5, -1.90061, 14.351329, -10.082736)
+transform = Transform3D(2.5, 0, 0, 0, 2.5, 0, 0, 0, 2.5, -1.619597, 14.351329, -8.467121)
+
+[node name="lampara_apagada" parent="." unique_id=1444847670 instance=ExtResource("9_4nfin")]
+transform = Transform3D(-1.04907336e-07, 0, 2.4, 0, 2.4, 0, -2.4, 0, -1.04907336e-07, 3.3629315, 13.216743, 9.992692)
 
 [editable path="inodoro"]
 [editable path="inodoro2"]

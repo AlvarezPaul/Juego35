@@ -1,0 +1,58 @@
+[gd_scene format=3 uid="uid://r2o0eilqhk5k"]
+
+[ext_resource type="Texture2D" uid="uid://cppf47q2oiqoq" path="res://fotos/TecladoSarmiento.png" id="1_lb0lw"]
+[ext_resource type="Texture2D" uid="uid://wl1572d40u1j" path="res://fotos/SarmientoLogo.png" id="2_6pu6r"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_xrivr"]
+size = Vector3(2.182602, 0.09094238, 0.88494873)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_13qdw"]
+albedo_color = Color(0.0142752165, 0.014275218, 0.014275218, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_qiiqy"]
+size = Vector3(2.1682587, 0.08081055, 1.2540894)
+
+[sub_resource type="BoxMesh" id="BoxMesh_nmpef"]
+size = Vector3(2.2040825, 0.053955078, 1.2381592)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_j2u68"]
+albedo_color = Color(0.23031491, 0.23031494, 0.23031494, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_xrivr"]
+top_radius = 0.044433594
+bottom_radius = 0.044433594
+height = 0.06591797
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_b1lj4"]
+albedo_color = Color(0.16924527, 0.1692453, 0.1692453, 1)
+
+[node name="CompuSarmientoBa" type="Node3D" unique_id=755703815]
+
+[node name="Compu" type="MeshInstance3D" parent="." unique_id=86264925]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5189896, -0.34381104, -0.16036987)
+mesh = SubResource("BoxMesh_xrivr")
+surface_material_override/0 = SubResource("StandardMaterial3D_13qdw")
+
+[node name="Compu2" type="MeshInstance3D" parent="." unique_id=1404066528]
+transform = Transform3D(1, 0, 0, 0, 0.23307572, -0.9724586, 0, 0.9724586, 0.23307572, 1.5238724, 0.25538158, -0.7640926)
+mesh = SubResource("BoxMesh_qiiqy")
+surface_material_override/0 = SubResource("StandardMaterial3D_13qdw")
+
+[node name="Compu3" type="MeshInstance3D" parent="." unique_id=1325861287]
+transform = Transform3D(0.86462384, 0, 0, 0, 0.24916999, -0.6837847, 0, 1.0396086, 0.1638873, 1.5199349, 0.2915927, -0.7287144)
+mesh = SubResource("BoxMesh_nmpef")
+surface_material_override/0 = SubResource("StandardMaterial3D_j2u68")
+
+[node name="Teclado" type="Sprite3D" parent="." unique_id=783196150]
+transform = Transform3D(0.48251703, 0, 0, 0, -2.4132623e-08, 0.7, 0, -0.55209005, -3.059797e-08, 1.5283504, -0.28610986, -0.15806729)
+texture = ExtResource("1_lb0lw")
+
+[node name="Camarita" type="MeshInstance3D" parent="." unique_id=1541648861]
+transform = Transform3D(1, 0, 0, 0, 0.13528183, -0.9908072, 0, 0.9908072, 0.13528183, 1.4966307, 0.7905546, -0.86656773)
+mesh = SubResource("CylinderMesh_xrivr")
+surface_material_override/0 = SubResource("StandardMaterial3D_b1lj4")
+
+[node name="Sprite3D" type="Sprite3D" parent="." unique_id=2085031939]
+transform = Transform3D(-0.29999998, -5.687439e-16, -2.6226832e-08, 6.0949863e-09, 0.29178643, -0.06971853, 2.5508776e-08, -0.06971853, -0.29178643, 1.4422154, 0.11039841, -0.7784421)
+shaded = true
+texture = ExtResource("2_6pu6r")
