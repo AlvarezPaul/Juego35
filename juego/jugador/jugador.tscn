@@ -65,8 +65,10 @@ visible = false
 transform = Transform3D(-0.01, 1.5099579e-09, 6.600236e-17, 0, -4.3711387e-10, 0.01, 1.5099579e-09, 0.01, 4.3711387e-10, 0.42666197, -0.19906473, -0.40653378)
 
 [node name="SpotLight3D" type="SpotLight3D" parent="Cabeza/Camera3D" unique_id=1591149388]
-transform = Transform3D(1, 0, 0, 0, 1, 4.743386e-22, 0, -4.743386e-22, 1, 0.4393829, -0.25113702, -1.1017106)
-spot_range = 70.766
+transform = Transform3D(1, 0, 0, 0, 1, 4.743386e-22, 0, -4.743386e-22, 1, 0.439, -0.251, -0.15)
+light_energy = 3.005
+light_size = 0.035
+spot_range = 36.618
 spot_angle = 35.0
 
 [node name="RayCast3D" type="RayCast3D" parent="Cabeza/Camera3D" unique_id=1053585050]

@@ -52,6 +52,8 @@
 [ext_resource type="Script" uid="uid://bqo3hti17uyho" path="res://salas/label.gd" id="62_timerlabel"]
 
 [sub_resource type="Environment" id="Environment_0j2i0"]
+ambient_light_source = 2
+ambient_light_color = Color(0.053729184, 0.05182802, 0.04802584, 1)
 
 [sub_resource type="Animation" id="Animation_vwwu6"]
 length = 0.001
@@ -1273,8 +1275,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 51.182686, 13.8012, -27.44814
 texture = ExtResource("50_4x8yr")
 
 [connection signal="pressed" from="Jugador/Node2D/CanvasLayer/Control/VBoxContainer/controles" to="Jugador/Node2D/CanvasLayer/Control" method="_on_controles_pressed"]
-[connection signal="pressed" from="Jugador/Node2D/CanvasLayer/Control/VBoxContainer/reiniciar" to="Jugador/Node2D/CanvasLayer/Control" method="_on_salir_2_pressed"]
 [connection signal="pressed" from="Jugador/Node2D/CanvasLayer/Control/VBoxContainer/reiniciar" to="Jugador/Node2D/CanvasLayer/Control" method="_on_reiniciar_pressed"]
+[connection signal="pressed" from="Jugador/Node2D/CanvasLayer/Control/VBoxContainer/reiniciar" to="Jugador/Node2D/CanvasLayer/Control" method="_on_salir_2_pressed"]
 [connection signal="pressed" from="Jugador/Node2D/CanvasLayer/ConfirmarSalir/Si" to="Jugador/Node2D/CanvasLayer/ConfirmarSalir" method="_on_si_pressed"]
 [connection signal="pressed" from="Jugador/Node2D/CanvasLayer/ConfirmarSalir/No" to="Jugador/Node2D/CanvasLayer/ConfirmarSalir" method="_on_no_pressed"]
 [connection signal="pressed" from="Jugador/Node2D/CanvasLayer/Ajustes/Cerrar" to="Jugador/Node2D/CanvasLayer/Ajustes" method="_on_cerrar_pressed"]
